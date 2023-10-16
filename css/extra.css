@@ -1,0 +1,3 @@
+.md-typeset{font-size:.7rem;}
+nav.md-nav.md-nav--secondary a.md-nav__link{white-space:normal;}
+a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
