@@ -9,7 +9,7 @@
         <meta name="description" content="记录 Bio+IT 相关的知识，沉淀生活，记录点滴。">
       
       
-        <meta name="author" content="['shenweiyan']">
+        <meta name="author" content="Steven Shum">
       
       
         <link rel="canonical" href="https://shenweiyan.github.io/Knowledge-Garden/blog/2023/10/16/material-for-mkdocs/">
@@ -9721,6 +9721,20 @@
               </div>
             </div>
             
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/26101369" alt="Steven Shum">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>Steven Shum</strong><br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
+            
             <ul class="md-post__meta md-nav__list">
               <li class="md-nav__item md-nav__item--section">
                 <div class="md-post__title">
@@ -9801,12 +9815,12 @@
 <p>存在的一些问题和使用体验：</p>
 <ol>
 <li>在 Markdown 中使用 <code>&lt;!-- more --&gt;</code> 的写法分割 description 和全文，总感觉有点别扭；</li>
-<li>Pagination 分页与 <code>git-revision-date</code> 冲突，会引发构建错误 - 参考 <a href="https://github.com/squidfunk/mkdocs-material/discussions/6156">mkdocs-material/discussions/6156</a></li>
+<li>Pagination 分页与 <code>git-revision-date</code> 冲突，会引发构建错误 - 参考 <a href="https://github.com/squidfunk/mkdocs-material/discussions/6156">mkdocs-material/discussions#6156</a></li>
 </ol>
 <h2 id="_1">写博客<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>有感于 Material for MkDocs 的博客结构，现在基本上可以实现使用 Discussions 进行 MkDocs blog 编辑与写作 —— 在 Discussions 上写完文章，借助第三方工具或者 GitHub Actions 导出为 Markdown 文件，保存到 <code>docs/blog/posts</code> 就可以啦！</p>
 <h2 id="_2">加评论<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>借助 <a href="https://giscus.app/zh-CN">giscus</a>，可以非常方便在文章页中插入指定的 discussions，及在导出 discussions 的时候，在文章尾部增加类似以下 JavaScript 即可：
+<p>借助 <a href="https://giscus.app/zh-CN">giscus</a>，可以非常方便在文章页中插入指定的 discussions —— 在导出 discussions 的时候，在文章尾部增加类似以下 JavaScript 即可：
 <div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://giscus.app/client.js&quot;</span>
 <span class="w">        </span><span class="nx">data</span><span class="o">-</span><span class="nx">repo</span><span class="o">=</span><span class="s2">&quot;shenweiyan/Knowledge-Garden&quot;</span>
 <span class="w">        </span><span class="nx">data</span><span class="o">-</span><span class="nx">repo</span><span class="o">-</span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;R_kgDOKgxWlg&quot;</span>
