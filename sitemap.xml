@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://doc.weiyan.cc/blog/2023/10/18/2023/</loc>
+         <lastmod>2023-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://doc.weiyan.cc/blog/2023/10/16/material-for-mkdocs/</loc>
          <lastmod>2023-10-18</lastmod>
          <changefreq>daily</changefreq>
