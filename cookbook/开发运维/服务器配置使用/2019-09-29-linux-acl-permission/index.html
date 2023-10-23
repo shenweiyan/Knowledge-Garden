@@ -100,6 +100,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1-acl" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -4997,6 +5002,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    在 Linux 上给用户赋予指定目录的读写权限
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -5006,6 +5022,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-acl" class="md-nav__link">
+    1. 使用 ACL 来为用户赋予目录的读写权限
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 使用用户组来为用户赋予指定目录的读写权限
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考资料：
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -9683,6 +9737,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-acl" class="md-nav__link">
+    1. 使用 ACL 来为用户赋予目录的读写权限
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 使用用户组来为用户赋予指定目录的读写权限
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考资料：
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9724,8 +9807,8 @@
 <p>请确认所有的命令都是使用 root 用户执行的，或者使用 sudo 命令来享受与之同样的权限。让我们开始吧！下面，先使用 mkdir 命令来创建一个名为 share 的目录。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/data/share
 </code></pre></div>
-<p><strong>1. 使用 ACL 来为用户赋予目录的读写权限</strong></p>
-<p>**重要提示：**打算使用此方法的话，您需要确认您的 Linux 文件系统类型（如 ext3 和 ext4, NTFS, BTRFS）支持 ACL。</p>
+<h2 id="1-acl">1. 使用 ACL 来为用户赋予目录的读写权限<a class="headerlink" href="#1-acl" title="Permanent link">&para;</a></h2>
+<p><strong>重要提示：</strong> 打算使用此方法的话，您需要确认您的 Linux 文件系统类型（如 ext3 和 ext4, NTFS, BTRFS）支持 ACL。</p>
 <p><strong>1.1. 首先， 依照以下命令在您的系统中检查当前文件系统类型，并且查看内核是否支持 ACL：</strong></p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>df<span class="w"> </span>-T<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1,$2,$NF}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;^/dev&quot;</span>
 $<span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>acl<span class="w"> </span>/boot/config*
@@ -9758,7 +9841,7 @@ $<span class="w"> </span>getfacl<span class="w"> </span>/data/share
 <li><a href="http://www.tecmint.com/set-access-control-lists-acls-and-disk-quotas-for-users-groups/">如何使用访问控制列表（ACL）为用户/组设置磁盘配额</a></li>
 <li><a href="http://www.tecmint.com/rhcsa-exam-configure-acls-and-mount-nfs-samba-shares/">如何使用访问控制列表（ACL）挂载网络共享</a></li>
 </ul>
-<p><strong>2. 使用用户组来为用户赋予指定目录的读写权限</strong></p>
+<h2 id="2">2. 使用用户组来为用户赋予指定目录的读写权限<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p><strong>2.1. 如果用户已经拥有了默认的用户组（通常组名与用户名相同），就可以简单的通过变更文件夹的所属用户组来完成。</strong></p>
 <div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">chgrp</span> <span class="n">shenweiyan</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">share</span>
 </code></pre></div>
@@ -9782,11 +9865,24 @@ $<span class="w"> </span>getfacl<span class="w"> </span>/data/share
 $<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>/data/share
 </code></pre></div>
 <p>ok，在 Linux 上给用户赋予指定目录的读写权限就介绍到这里 ！</p>
-<p><strong>参考资料：</strong></p>
+<h2 id="_1">参考资料：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>高延斌，《<a href="https://www.ibm.com/developerworks/cn/linux/l-acl/index.html">Linux ACL 体验</a>》，IBM Developer</li>
 <li>Mr-Ping，《在 Linux 上给用户赋予指定目录的读写权限》，Linux 中国</li>
 </ul>
+<script src="https://giscus.app/client.js"
+        data-repo="shenweiyan/Knowledge-Garden"
+        data-repo-id="R_kgDOKgxWlg"
+        data-mapping="number"
+        data-term="9"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 
   <hr>
 <div class="md-source-file">
