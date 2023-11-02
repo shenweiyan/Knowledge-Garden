@@ -25,15 +25,15 @@
         <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.7">
     
     
       
-        <title>Python 中 tkinter 中文乱码 - 维燕的知识花园</title>
+        <title>Python 中 tkinter 源码安装使用与中文乱码 - 维燕的知识花园</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4b4a2bd9.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.356b1318.min.css">
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#_tkinter-not-found" class="md-skip">
           跳转至
         </a>
       
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python 中 tkinter 中文乱码
+              Python 中 tkinter 源码安装使用与中文乱码
             
           </span>
         </div>
@@ -4319,18 +4319,113 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Python 中 tkinter 源码安装使用与中文乱码
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Python 中 tkinter 中文乱码
+    Python 中 tkinter 源码安装使用与中文乱码
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_tkinter-not-found" class="md-nav__link">
+    _tkinter not found
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    中文乱码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcl-tk-tkinter" class="md-nav__link">
+    什么是 tcl, tk, tkinter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activetcl" class="md-nav__link">
+    ActiveTcl 安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python 重新编译安装
+  </a>
+  
+    <nav class="md-nav" aria-label="Python 重新编译安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-3" class="md-nav__link">
+    Python 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-2" class="md-nav__link">
+    Python 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tkinter" class="md-nav__link">
+    调用 Tkinter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    参考资料
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -9647,7 +9742,7 @@
         
   
   <span class="md-ellipsis">
-    乱弹
+    好玩
   </span>
   
 
@@ -9689,8 +9784,83 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_tkinter-not-found" class="md-nav__link">
+    _tkinter not found
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    中文乱码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcl-tk-tkinter" class="md-nav__link">
+    什么是 tcl, tk, tkinter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activetcl" class="md-nav__link">
+    ActiveTcl 安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python 重新编译安装
+  </a>
+  
+    <nav class="md-nav" aria-label="Python 重新编译安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-3" class="md-nav__link">
+    Python 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-2" class="md-nav__link">
+    Python 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tkinter" class="md-nav__link">
+    调用 Tkinter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    参考资料
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -9721,7 +9891,17 @@
   
 
 
-<h1 id="_1">引言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+  <h1>Python 中 tkinter 源码安装使用与中文乱码</h1>
+
+<h2 id="_tkinter-not-found">_tkinter not found<a class="headerlink" href="#_tkinter-not-found" title="Permanent link">&para;</a></h2>
+<p>Python 3 源码编译安装，执行 <code>make</code> 过程中提示 <code>_tkinter not found</code>，如下：
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>make
+......
+Python<span class="w"> </span>build<span class="w"> </span>finished<span class="w"> </span>successfully!
+The<span class="w"> </span>necessary<span class="w"> </span>bits<span class="w"> </span>to<span class="w"> </span>build<span class="w"> </span>these<span class="w"> </span>optional<span class="w"> </span>modules<span class="w"> </span>were<span class="w"> </span>not<span class="w"> </span>found:
+_tkinter<span class="w"> </span>
+</code></pre></div></p>
+<h2 id="_1">中文乱码<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>使用 Anaconda 3（conda 4.5.11）的 tkinter python 包（conda install -c conda-forge tk）开发 GUI 界面程序过程中，发现 UI 界面出现的中文 Unicode 乱码一直没办法解决。</p>
 <div class="highlight"><pre><span></span><code><span class="c1">#-*- coding: utf-8 -*-</span>
 
@@ -9756,21 +9936,21 @@
 <span class="n">top</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh22i487OzvY-uSXvAuFs6rEXXvu.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh22i487OzvY-uSXvAuFs6rEXXvu.png" /></a></p>
-<p>一<strong>些参考资料：</strong></p>
+<p><strong>一些参考资料：</strong></p>
 <ul>
 <li>Python3.x 中文编码转换的问题：<a href="https://bbs.bccn.net/thread-479560-1-1.html">https://bbs.bccn.net/thread-479560-1-1.html</a></li>
-<li>Python 2.6 Tk 中文亂碼問題解決方法：<a href="http://blogkrogh.blogspot.com/2011/03/python-26-tk.html">http://blogkrogh.blogspot.com/2011/03/python-26-tk.html</a></li>
+<li>Python 2.6 Tk 中文乱码解決方法：<a href="http://blogkrogh.blogspot.com/2011/03/python-26-tk.html">http://blogkrogh.blogspot.com/2011/03/python-26-tk.html</a></li>
 <li>tkinter 乱码，pyqt4 乱码：<a href="http://aboutweb.lofter.com/post/11743e_6f7e4a5">http://aboutweb.lofter.com/post/11743e_6f7e4a5</a></li>
 </ul>
 <p>上面几种方法测试后，问题依然存在。在 google 上一番搜索和来回测试之后，发现了几点信息：</p>
 <ul>
 <li>有人说，可能是 tcl/tk 安装不完整造成的。</li>
 <li>tcl/tk 重装后需要对 Python 重新编译 tkinter 才能起作用。</li>
-<li>conda install -c conda-forge tk，虽然没有任何报错，python 中 import tkinter 也正常，但 conda 的软件安装就像一个黑盒子，无法确认 tcl/tk 是否完整安装。</li>
+<li>conda install -c conda-forge tk，虽然没有任何报错，python2 中 import tkinter 也正常，但 conda 的软件安装就像一个黑盒子，无法确认 tcl/tk 是否完整安装。</li>
 <li>python 的 PyPI 仓库中是没有 tkinter 包的，想要使用 <code>pip install tkinter</code> 卸载或者重装都是行不通的。</li>
 <li>网上也有人说可以使用 <code>yum install python3-tk/python-tk</code> 解决，但对于本人来说，没用。</li>
 </ul>
-<h1 id="tcl-tk-tkinter">什么是 tcl, tk, tkinter<a class="headerlink" href="#tcl-tk-tkinter" title="Permanent link">&para;</a></h1>
+<h2 id="tcl-tk-tkinter">什么是 tcl, tk, tkinter<a class="headerlink" href="#tcl-tk-tkinter" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>The <a href="https://docs.python.org/3.6/library/tkinter.html#module-tkinter">tkinter</a> package (“Tk interface”) is the standard Python interface to the Tk GUI toolkit. Both Tk and <a href="https://docs.python.org/3.6/library/tkinter.html#module-tkinter">tkinter</a> are available on most Unix platforms, as well as on Windows systems. (Tk itself is not part of Python; it is maintained at ActiveState.)</p>
 <p>Running <code>python -m tkinter</code> from the command line should open a window demonstrating a simple Tk interface, letting you know that <a href="https://docs.python.org/3.6/library/tkinter.html#module-tkinter">tkinter</a> is properly installed on your system, and also showing what version of Tcl/Tk is installed, so you can read the Tcl/Tk documentation specific to that version.</p>
@@ -9781,12 +9961,12 @@
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWx6rSTKaQ1BXXPQJzchNbviKYd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWx6rSTKaQ1BXXPQJzchNbviKYd.png" /></a></p>
 <p>如果  tkinter  没有安装，则会提示找不到该包（注意在 Python 2 中该包包名为 Tkinter，Python 3 中为 tkinter）：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrRwzLFA1tIq2VfwS4p7i0dVLTjP.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrRwzLFA1tIq2VfwS4p7i0dVLTjP.png" /></a></p>
-<p>接下来我们将尝试在 Python 2 中安装 Tcl/Tk，并重新编译 python 2，已完成 Tkinter 安装（tkinter 为 Python 的标准库，标准库的安装需要重新编译 Python ?）。</p>
-<h1 id="activetcl">ActiveTcl 安装<a class="headerlink" href="#activetcl" title="Permanent link">&para;</a></h1>
+<p>接下来我们将尝试在 Python 2/3 中安装 Tcl/Tk，并重新编译 Python 2/3，已完成 Tkinter 安装（tkinter 为 Python 的标准库，标准库的安装需要重新编译 Python ？）。</p>
+<h2 id="activetcl">ActiveTcl 安装<a class="headerlink" href="#activetcl" title="Permanent link">&para;</a></h2>
 <p>ActiveTcl 是 ActiveState 发布的关于 Tcl/Tk 的发行版本，该发行版本包含了最新版本的 Tk 和 Tcl 程序，我们下载其免费的社区版本进行安装即可。</p>
 <p>参考下载链接：<a href="https://www.activestate.com/products/activetcl/downloads/">https://www.activestate.com/products/activetcl/downloads/</a>
 参考安装教程：<a href="https://tkdocs.com/tutorial/install.html">https://tkdocs.com/tutorial/install.html</a></p>
-<p>以下为 CentOS 7 下 **ActiveTcl-8.6.8.0 **的一些安装记录，仅作参考。</p>
+<p>以下为 CentOS 7 下 <strong>ActiveTcl-8.6.8.0</strong> 的一些安装记录，仅作参考。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://downloads.activestate.com/ActiveTcl/releases/8.6.8.0/ActiveTcl-8.6.8.0-x86_64-linux-glibc-2.5.tar.gz
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>ActiveTcl-8.6.8.0-x86_64-linux-glibc-2.5.tar.gz
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>ActiveTcl-8.6.8.0-x86_64-linux-glibc-2.5-28eabcbe7
@@ -9848,18 +10028,30 @@ Finish<span class="w"> </span>&gt;&gt;
 
 Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>download<span class="w"> </span>a<span class="w"> </span>free<span class="w"> </span>trial<span class="w"> </span>of<span class="w"> </span>Komodo<span class="w"> </span>IDE?<span class="w"> </span><span class="o">[</span>Y/n<span class="o">]</span>
 </code></pre></div>
-<p>ActiveTcl 安装完成后，需要把 path 添加至环境变量（\~/.bashrc）:</p>
+<p>ActiveTcl 安装完成后，需要把 path 添加至环境变量（\~/.bashrc）:
 <div class="highlight"><pre><span></span><code>export PATH=&quot;/usr/local/software/ActiveTcl-8.6/bin:$PATH&quot;
-</code></pre></div>
-<h1 id="python">Python 重新编译安装<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
-<p>想要在 Python 2.7 安装 Tkinter，需要在编译过程中通过 <code>--with-tcltk-includes</code> 和 <code>--with-tcltk-libs</code> 中指定 ActiveTcl 的头文件以及库所在路径。</p>
+</code></pre></div></p>
+<h2 id="python">Python 重新编译安装<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
+<p>参考：<a href="https://docs.python.org/3/whatsnew/3.11.html">What’s New In Python 3.11</a> - doc.python.org</p>
 <blockquote>
-<p>📢 <strong>值得注意的是：</strong></p>
+<p>📢 <strong>注意：</strong></p>
 <ol>
-<li>Python 3.11.x（如 Python-3.11.3）中的 configure 是没有 <code>--with-tcltk-includes</code>和<code>--with-tcltk-libs</code>这两个参数的！—— 目前尚没搞明白在 Python-3.11.3 应该要怎么弄！！！</li>
-<li>Python 3.9.x（如 Python-3.9.16）在 configure 中<code>--with-tcltk-includes</code>和<code>--with-tcltk-libs</code>都是有的！而且通过这两个参数的确可以解决 Tkinter 的问题！！</li>
+<li>Python 3.11.x 起（如 Python-3.11.3）中的 <code>configure</code> 已经把 <code>--with-tcltk-includes</code>和<code>--with-tcltk-libs</code>这两个参数移除！并使用 <code>TCLTK_CFLAGS</code> 和 <code>TCLTK_LIBS</code> ！！！</li>
+<li>Python 3.10.x (及以下版本，如 Python-3.9.16) 以及 Python 2.x.x 在 <code>configure</code> 中 <code>--with-tcltk-includes</code>和<code>--with-tcltk-libs</code>都是有的！而且通过这两个参数的确可以解决 Tkinter 的问题！！</li>
 </ol>
 </blockquote>
+<h3 id="python-3">Python 3<a class="headerlink" href="#python-3" title="Permanent link">&para;</a></h3>
+<p>这里以 Python-3.11.6 为例，参考 <a href="https://github.com/pyenv/pyenv/issues/2499">Python 3.11.0 install doesn’t recognize homebrew Tcl/Tk due to &ndash;with-tcltk-libs, &ndash;with-tcltk-includes switches being removed from 3.11 - pyenv#2499</a>，在编译安装过程中使用 <code>TCLTK_CFLAGS</code> 和 <code>TCLTK_LIBS</code> 解决 <code>_tkinter</code> 缺失的问题。
+<div class="highlight"><pre><span></span><code>export TCLTK_LIBS=&quot;-L/usr/local/software/ActiveTcl-8.6/lib -ltcl8.6 -ltk8.6&quot;
+export TCLTK_CFLAGS=&quot;-I/usr/local/software/ActiveTcl-8.6/include&quot;
+
+cd Python-3.11.6
+/configure --prefix=/usr/local/software/python-3.11.6 ......
+make &amp;&amp; make install
+</code></pre></div></p>
+<p><a class="glightbox" href="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/python-3-tkinter.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="python3-confiigure-tkinter-yes" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/python-3-tkinter.png" /></a></p>
+<h3 id="python-2">Python 2<a class="headerlink" href="#python-2" title="Permanent link">&para;</a></h3>
+<p>想要在 Python 2.7 安装 Tkinter，需要在编译过程中通过 <code>--with-tcltk-includes</code> 和 <code>--with-tcltk-libs</code> 中指定 ActiveTcl 的头文件以及库所在路径。</p>
 <p>如果在执行编译安装过程中，出现无法找到 libXss.so.1 共享动态库报错：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>Python-2.7.15.tgz
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>Python-2.7.15
@@ -9887,15 +10079,15 @@ running<span class="w"> </span>build_scripts
 
 ......
 </code></pre></div>
-<p>CentOS 下请参考以下解决方法：</p>
+<p>CentOS 下请参考以下解决方法：
 <div class="highlight"><pre><span></span><code>$ sudo yum install libXScrnSaver libXScrnSaver-devel
-</code></pre></div>
-<h1 id="tkinter">调用 Tkinter<a class="headerlink" href="#tkinter" title="Permanent link">&para;</a></h1>
+</code></pre></div></p>
+<h2 id="tkinter">调用 Tkinter<a class="headerlink" href="#tkinter" title="Permanent link">&para;</a></h2>
 <p>Python 2 重新编译完后，执行<code>python2 -m Tkinter</code> 显示 Tk 的 ui 界面，以及相应的 Tcl/Tk 版本。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBtb14ZgZFZXIRhOdt6efbYz7fd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBtb14ZgZFZXIRhOdt6efbYz7fd.png" /></a></p>
 <p>这时候，我们重新运行开头的 GUI 界面程序，可以看到中文已经正常显示：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqRHUXczPdHrQjFUXNQr_Cg_j2B4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqRHUXczPdHrQjFUXNQr_Cg_j2B4.png" /></a></p>
-<h1 id="_2">参考资料<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h2 id="_2">参考资料<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>Download And Install Tcl: ActiveTcl，<a href="https://www.activestate.com/products/activetcl/downloads/">https://www.activestate.com/products/activetcl/downloads/</a>
 Installing Tk，<a href="https://tkdocs.com/tutorial/install.html">https://tkdocs.com/tutorial/install.html</a>
 Python 下&rdquo;No module named _tkinter&rdquo;问题解决过程分析，<a href="https://www.jianshu.com/p/0baa9657377f">https://www.jianshu.com/p/0baa9657377f</a>
@@ -9906,7 +10098,7 @@ Python GUI 编程(Tkinter)文件对话框，<a href="https://my.oschina.net/u/22
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-10-24</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-11-02</span>
       
     
   </small>
