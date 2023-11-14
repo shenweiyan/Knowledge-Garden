@@ -13,8 +13,8 @@
     <language>en-None</language>
 
     
-    <pubDate>Tue, 14 Nov 2023 07:03:24 -0000</pubDate>
-    <lastBuildDate>Tue, 14 Nov 2023 07:03:24 -0000</lastBuildDate>
+    <pubDate>Tue, 14 Nov 2023 07:12:31 -0000</pubDate>
+    <lastBuildDate>Tue, 14 Nov 2023 07:12:31 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -39,7 +39,7 @@
       
       <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/category/page/2/</link>
-      <pubDate>Tue, 14 Nov 2023 07:03:34 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 07:12:39 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/category/page/2/</guid>
@@ -54,7 +54,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/archive/2023/page/2/</link>
-      <pubDate>Tue, 14 Nov 2023 07:03:34 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 07:12:39 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/archive/2023/page/2/</guid>
@@ -69,7 +69,7 @@
       
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/page/2/</link>
-      <pubDate>Tue, 14 Nov 2023 07:03:34 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 07:12:39 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/page/2/</guid>
@@ -84,7 +84,7 @@
       
       <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/category/</link>
-      <pubDate>Tue, 14 Nov 2023 07:03:34 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 07:12:39 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/category/</guid>
@@ -99,7 +99,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/archive/2023/</link>
-      <pubDate>Tue, 14 Nov 2023 07:03:34 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 07:12:39 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/archive/2023/</guid>
@@ -324,7 +324,7 @@
       
       
       
-      <description>&lt;p&gt;搜集的一些 Mkdocs 主题与站点，以供参考。&lt;/p&gt;</description>
+      <description>&lt;p&gt;鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 &lt;a href=&#34;https://sspai.com/link?target=https%3A%2F%2Fwww.django-rest-framework.org%2F&#34;&gt;django-rest-framework&lt;/a&gt;、&lt;a href=&#34;https://sspai.com/link?target=https%3A%2F%2Ffastapi.tiangolo.com%2F&#34;&gt;FastAPI&lt;/a&gt; 以及基于 Go 编写的云网关代理服务器 &lt;a href=&#34;https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2Ftraefik%2Ftraefik&#34;&gt;traefik&lt;/a&gt; 等项目的官方文档站点，都是通过 MkDocs 进行搭建。&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/blog/2023/11/08/discussion-14/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
