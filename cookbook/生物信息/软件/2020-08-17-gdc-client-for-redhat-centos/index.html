@@ -29,7 +29,7 @@
     
     
       
-        <title>在 RedHat 使用 gdc-client 下载 TCGA 数据 - 维燕的知识花园</title>
+        <title>在 RHEL 使用 gdc-client 下载 TCGA 数据 - 维燕的知识花园</title>
       
     
     
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              在 RedHat 使用 gdc-client 下载 TCGA 数据
+              在 RHEL 使用 gdc-client 下载 TCGA 数据
             
           </span>
         </div>
@@ -1336,7 +1336,7 @@
           
   
   <span class="md-ellipsis">
-    在 RedHat 使用 gdc-client 下载 TCGA 数据
+    在 RHEL 使用 gdc-client 下载 TCGA 数据
   </span>
   
 
@@ -1347,7 +1347,7 @@
         
   
   <span class="md-ellipsis">
-    在 RedHat 使用 gdc-client 下载 TCGA 数据
+    在 RHEL 使用 gdc-client 下载 TCGA 数据
   </span>
   
 
@@ -9795,15 +9795,15 @@
   
 
 
-  <h1>在 RedHat 使用 gdc-client 下载 TCGA 数据</h1>
+  <h1>在 RHEL 使用 gdc-client 下载 TCGA 数据</h1>
 
-<p>今天，只聊一下 RedHat/CentOS 下 gdc-client 安装的那些事\~</p>
+<p>今天，只聊一下 RedHat/CentOS 下 gdc-client 安装的那些事~</p>
 <p>gdc-client（<a href="https://gdc.cancer.gov/access-data/gdc-data-transfer-tool">https://gdc.cancer.gov/access-data/gdc-data-transfer-tool</a>）是由 GDC 官方提供的一个可以在命令行下批量下载 TCGA 数据的客户端工具。</p>
 <p>在 gdc-client 官网可以看到 Mac、Windows 和 Ubuntu 的二进制版本下载，却唯独没看到 CentOS/RedHat 版本的！而且还给了我们一个提示说，如果你想要安装 RedHat Enterprise Release 6  版本的 gdc-client 需要跟 GDC 进行联系！！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbXuAPJHZiZqpBVCEwgBZ0wsYgt.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="gdc.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbXuAPJHZiZqpBVCEwgBZ0wsYgt.png" /></a>
-如果你用 &ldquo;gdc-client&rdquo; + &ldquo;centos6&rdquo; 的关键字去谷歌，会发现大部分的答案都是教你用 Python2 的虚拟环境去安装 gdc-client。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjz_5OxHOVj_DEDt6G_24tUvuMQ.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="gdc-client-centos6-Google.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjz_5OxHOVj_DEDt6G_24tUvuMQ.png" /></a>
-其实，这些大部分都存在误导的成分，虽然 gdc-client 官网虽然没有提供 CentOS 6 的二进制程序包，但它托管在 GitHub 的源码我们是可以直接安装的，而且是只支持 Python 3！！</p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbXuAPJHZiZqpBVCEwgBZ0wsYgt.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="gdc.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbXuAPJHZiZqpBVCEwgBZ0wsYgt.png" /></a></p>
+<p>如果你用 &ldquo;gdc-client&rdquo; + &ldquo;centos6&rdquo; 的关键字去谷歌，会发现大部分的答案都是教你用 Python2 的虚拟环境去安装 gdc-client。
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjz_5OxHOVj_DEDt6G_24tUvuMQ.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="gdc-client-centos6-Google.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjz_5OxHOVj_DEDt6G_24tUvuMQ.png" /></a></p>
+<p>其实，这些大部分都存在误导的成分，虽然 gdc-client 官网虽然没有提供 CentOS 6 的二进制程序包，但它托管在 GitHub 的源码我们是可以直接安装的，而且是只支持 Python 3！！</p>
 <h3 id="python-2-parse">坑一：Python 2 引发 parse 模块异常<a class="headerlink" href="#python-2-parse" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>Python2<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">2</span>.7
 <span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>Python2
@@ -9839,7 +9839,7 @@ python<span class="w"> </span>setup.py<span class="w"> </span>install<span class
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-11-08</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-11-14</span>
       
     
   </small>

@@ -13,8 +13,8 @@
     <language>en-None</language>
 
     
-    <pubDate>Wed, 08 Nov 2023 03:25:08 -0000</pubDate>
-    <lastBuildDate>Wed, 08 Nov 2023 03:25:08 -0000</lastBuildDate>
+    <pubDate>Tue, 14 Nov 2023 01:24:01 -0000</pubDate>
+    <lastBuildDate>Tue, 14 Nov 2023 01:24:01 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -38,8 +38,53 @@
       
       
       <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
+      <link>https://doc.weiyan.cc/blog/category/page/2/</link>
+      <pubDate>Tue, 14 Nov 2023 01:24:11 +0000</pubDate>
+      <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://doc.weiyan.cc/blog/category/page/2/</guid>
+      
+    </item>
+    
+    <item>
+      <title>2023</title>
+      
+      
+      
+      
+      <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
+      <link>https://doc.weiyan.cc/blog/archive/2023/page/2/</link>
+      <pubDate>Tue, 14 Nov 2023 01:24:11 +0000</pubDate>
+      <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://doc.weiyan.cc/blog/archive/2023/page/2/</guid>
+      
+    </item>
+    
+    <item>
+      <title>博客文章</title>
+      
+      
+      
+      
+      <description>&lt;h1&gt;博客文章&lt;/h1&gt;</description>
+      <link>https://doc.weiyan.cc/blog/page/2/</link>
+      <pubDate>Tue, 14 Nov 2023 01:24:11 +0000</pubDate>
+      <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://doc.weiyan.cc/blog/page/2/</guid>
+      
+    </item>
+    
+    <item>
+      <title>好玩</title>
+      
+      
+      
+      
+      <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/category/</link>
-      <pubDate>Wed, 08 Nov 2023 03:25:16 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:24:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/category/</guid>
@@ -54,7 +99,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/archive/2023/</link>
-      <pubDate>Wed, 08 Nov 2023 03:25:16 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:24:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/archive/2023/</guid>
@@ -121,7 +166,7 @@
 &lt;figcaption&gt;Random acts of kindness.&lt;/figcaption&gt;
 &lt;/figure&gt;</description>
       <link>https://doc.weiyan.cc/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/</guid>
@@ -137,7 +182,7 @@
       <description>&lt;p&gt;语雀，是一个非常优秀的文档和知识库工具，也曾经是个人知识和文档记录的一个非常重要的平台。但由于工作和其他的一些原因，逐渐从语雀转移到了 GitHub，作为历史文章的一个备份，你可以通过下面的链接访问我的语雀花园主页，感谢你的支持，我们一定会越来越好！&lt;/p&gt;
 &lt;p align=center&gt;&lt;b&gt;&lt;a href=&#34;https://www.yuque.com/shenweiyan&#34; target=&#34;_blank&#34;&gt;www.yuque.com/shenweiyan&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/YUQUE/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/YUQUE/</guid>
@@ -153,7 +198,7 @@
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;
 &lt;p&gt;这是首发于 GitHub Discussion/Issues，并定期同步更新至 Material for MkDocs 上的博客文章。&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/blog/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/</guid>
@@ -168,7 +213,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</guid>
@@ -183,7 +228,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
@@ -198,7 +243,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
@@ -213,7 +258,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E7%9F%A5%E8%AF%86%E6%9D%82%E9%A1%B9/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E7%9F%A5%E8%AF%86%E6%9D%82%E9%A1%B9/</guid>
@@ -228,7 +273,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</guid>
@@ -243,10 +288,90 @@
       
       <description>&lt;p&gt;本文件于 2023-07-19 21:51:59 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/css/</link>
-      <pubDate>Wed, 08 Nov 2023 03:24:29 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 01:23:13 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/css/</guid>
+      
+    </item>
+    
+    <item>
+      <title>基于 GitHub Discussions 的博客与站点</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/YeungKC/Hakuba&#34;&gt;Hakuba&lt;/a&gt; - 一个通过 Github Discussion 驱动的 Blog 启动器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/lencx/gg&#34;&gt;GG&lt;/a&gt; - Gatsby + GitHub&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://lencx.tech/#/&#34;&gt;lencx.tech&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/LeetaoGoooo/pure&#34;&gt;Pure&lt;/a&gt; 一个基于 Github Discussion 的极简博客&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#34;https://giscus.app/client.js&#34;
+    data-repo=&#34;shenweiyan/Knowledge-Garden&#34;
+    data-repo-id=&#34;R_kgDOKgxWlg&#34;
+    data-mapping=&#34;number&#34;
+    data-term=&#34;15&#34;
+    data-reactions-enabled=&#34;1&#34;
+    data-emit-metadata=&#34;0&#34;
+    data-input-position=&#34;bottom&#34;
+    data-theme=&#34;light&#34;
+    data-lang=&#34;zh-CN&#34;
+    crossorigin=&#34;anonymous&#34;
+    async&gt;
+&lt;/script&gt;</description>
+      <link>https://doc.weiyan.cc/blog/2023/11/09/github-discussions/</link>
+      <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
+      <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://doc.weiyan.cc/blog/2023/11/09/github-discussions/</guid>
+      
+    </item>
+    
+    <item>
+      <title>一些优秀的 Mkdocs 主题与站点</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;搜集的一些优秀的 Mkdocs 主题与站点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hello 算法 - &lt;a href=&#34;https://www.hello-algo.com/&#34;&gt;https://www.hello-algo.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#34;https://giscus.app/client.js&#34;
+    data-repo=&#34;shenweiyan/Knowledge-Garden&#34;
+    data-repo-id=&#34;R_kgDOKgxWlg&#34;
+    data-mapping=&#34;number&#34;
+    data-term=&#34;14&#34;
+    data-reactions-enabled=&#34;1&#34;
+    data-emit-metadata=&#34;0&#34;
+    data-input-position=&#34;bottom&#34;
+    data-theme=&#34;light&#34;
+    data-lang=&#34;zh-CN&#34;
+    crossorigin=&#34;anonymous&#34;
+    async&gt;
+&lt;/script&gt;</description>
+      <link>https://doc.weiyan.cc/blog/2023/11/08/mkdocs/</link>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
+      <source url="https://doc.weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://doc.weiyan.cc/blog/2023/11/08/mkdocs/</guid>
       
     </item>
     
@@ -10446,7 +10571,7 @@ tar zvxf atlassian-agent-v1.2.3.tar.gz -C /data/apps/atlassian&lt;/code&gt;&lt;/
     </item>
     
     <item>
-      <title>在 RedHat 使用 gdc-client 下载 TCGA 数据</title>
+      <title>在 RHEL 使用 gdc-client 下载 TCGA 数据</title>
       
       
         
@@ -10455,13 +10580,13 @@ tar zvxf atlassian-agent-v1.2.3.tar.gz -C /data/apps/atlassian&lt;/code&gt;&lt;/
       
       
       
-      <description>&lt;p&gt;今天，只聊一下 RedHat/CentOS 下 gdc-client 安装的那些事\~&lt;/p&gt;
+      <description>&lt;p&gt;今天，只聊一下 RedHat/CentOS 下 gdc-client 安装的那些事~&lt;/p&gt;
 &lt;p&gt;gdc-client（&lt;a href=&#34;https://gdc.cancer.gov/access-data/gdc-data-transfer-tool&#34;&gt;https://gdc.cancer.gov/access-data/gdc-data-transfer-tool&lt;/a&gt;）是由 GDC 官方提供的一个可以在命令行下批量下载 TCGA 数据的客户端工具。&lt;/p&gt;
 &lt;p&gt;在 gdc-client 官网可以看到 Mac、Windows 和 Ubuntu 的二进制版本下载，却唯独没看到 CentOS/RedHat 版本的！而且还给了我们一个提示说，如果你想要安装 RedHat Enterprise Release 6  版本的 gdc-client 需要跟 GDC 进行联系！！
-&lt;img alt=&#34;gdc.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbXuAPJHZiZqpBVCEwgBZ0wsYgt.png&#34;&gt;
-如果你用 &#34;gdc-client&#34; + &#34;centos6&#34; 的关键字去谷歌，会发现大部分的答案都是教你用 Python2 的虚拟环境去安装 gdc-client。
-&lt;img alt=&#34;gdc-client-centos6-Google.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjz_5OxHOVj_DEDt6G_24tUvuMQ.png&#34;&gt;
-其实，这些大部分都存在误导的成分，虽然 gdc-client 官网虽然没有提供 CentOS 6 的二进制程序包，但它托管在 GitHub 的源码我们是可以直接安装的，而且是只支持 Python 3！！&lt;/p&gt;
+&lt;img alt=&#34;gdc.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbXuAPJHZiZqpBVCEwgBZ0wsYgt.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果你用 &#34;gdc-client&#34; + &#34;centos6&#34; 的关键字去谷歌，会发现大部分的答案都是教你用 Python2 的虚拟环境去安装 gdc-client。
+&lt;img alt=&#34;gdc-client-centos6-Google.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjz_5OxHOVj_DEDt6G_24tUvuMQ.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;其实，这些大部分都存在误导的成分，虽然 gdc-client 官网虽然没有提供 CentOS 6 的二进制程序包，但它托管在 GitHub 的源码我们是可以直接安装的，而且是只支持 Python 3！！&lt;/p&gt;
 &lt;h3&gt;坑一：Python 2 引发 parse 模块异常&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;bash
 conda create -n Python2 python=2.7
