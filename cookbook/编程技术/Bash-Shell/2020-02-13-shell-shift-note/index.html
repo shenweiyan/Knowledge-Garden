@@ -9493,7 +9493,7 @@ A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<spa
 <span class="m">24946</span><span class="w">         </span><span class="c1"># $_, 上一个命令的最后一个参数。</span>
 <span class="w">              </span><span class="c1"># $!, 后台运行的最后一个进程的 ID 号。</span>
 </code></pre></div>
-<p><code>$*</code> 和 <code>$@</code> 都表示传递给函数或脚本的所有参数，不被双引号 (&ldquo;&rdquo;) 包含时，都以 &ldquo;$1&rdquo;&ldquo;$2&rdquo; … &ldquo;$n&rdquo; 的形式输出所有参数。但是当它们被双引号 (&ldquo;&rdquo;) 包含时，&rdquo;<code>$*</code>&ldquo;会将所有的参数作为一个整体，以 &ldquo;$1 $2 … $n&rdquo; 的形式输出所有参数； &ldquo;<code>$@</code>&ldquo;会将各个参数分开，以 &ldquo;$1&rdquo;、&rdquo;$2&rdquo;、…、&rdquo;$n&rdquo; 的形式输出所有参数。</p>
+<p><code>$*</code> 和 <code>$@</code> 都表示传递给函数或脚本的所有参数，不被双引号 (&ldquo;&rdquo;) 包含时，都以 &ldquo;<span class="arithmatex">\(1""\)</span>2&rdquo; … &ldquo;<span class="arithmatex">\(n&rdquo; 的形式输出所有参数。但是当它们被双引号 (&ldquo;&rdquo;) 包含时，&rdquo;<code>$*</code>"会将所有的参数作为一个整体，以 "\)</span>1 <span class="arithmatex">\(2 … <span class="arithmatex">(n&rdquo; 的形式输出所有参数； &ldquo;<code>$@</code>"会将各个参数分开，以 "\)</span>1"、"\)</span>2&rdquo;、…、&rdquo;$n&rdquo; 的形式输出所有参数。</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;\$* = &quot;</span><span class="w"> </span><span class="nv">$*</span>
@@ -9578,7 +9578,7 @@ E
 </code></pre></div>
 <p><strong>每次运行 shift(不带参数的)，销毁一个参数（变量的个数($#)减一），后面的参数前移（不管参数之间相隔一个或者多个空格）。</strong></p>
 <h3 id="2">2.  每次移动多个参数<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p>shift 命令一次移动参数的个数由其所带的参数指定。例如，现在有 $1, $2, $3, &hellip;，$9 个参数，当 shell 程序处理完前 4 个命令行参数后(即还剩下后面 5 个参数)，可以使用 <code>shift 4</code>  命令把 $9 移到 $1。</p>
+<p>shift 命令一次移动参数的个数由其所带的参数指定。例如，现在有 $1, $2, <span class="arithmatex">\(3, ...，\)</span>9 个参数，当 shell 程序处理完前 4 个命令行参数后(即还剩下后面 5 个参数)，可以使用 <code>shift 4</code>  命令把 $9 移到 $1。</p>
 <p>示例：自定义 shift 每次移动的参数个数。</p>
 <ul>
 <li>shift2.sh</li>
@@ -9786,9 +9786,11 @@ E
     
       <script src="../../../../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="../../../../javascripts/mathjax.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

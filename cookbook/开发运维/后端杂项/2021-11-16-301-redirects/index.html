@@ -9884,7 +9884,7 @@ caroline.dnspod.net
 </blockquote>
 <h5 id="_6">页面规则中允许哪些模式？<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h5>
 <blockquote>
-<p>如果使用的是转发页面规则，则可以将这些通配符映射到变量。在转发 URL 中，可以按照从左到右的顺序指定与原始 URL 中的通配符相匹配的 $1、$2，以此类推。</p>
+<p>如果使用的是转发页面规则，则可以将这些通配符映射到变量。在转发 URL 中，可以按照从左到右的顺序指定与原始 URL 中的通配符相匹配的 <span class="arithmatex">\(1、\)</span>2，以此类推。</p>
 <p>例如，可以将 <code>http://.example.com/</code> 转发到 <code>http://$2.example.com/$1.jpg</code>。此规则将与 <a href="http://cloud.example.com/flare">http://cloud.example.com/flare</a> 相匹配，这最终将转发到 <a href="http://flare.example.com/cloud.jpg">http://flare.example.com/cloud.jpg</a>。</p>
 </blockquote>
 <h5 id="_7">一些有用的提示：<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
@@ -10049,9 +10049,11 @@ caroline.dnspod.net
     
       <script src="../../../../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="../../../../javascripts/mathjax.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

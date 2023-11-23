@@ -9473,7 +9473,7 @@
 <p>B (Byte)：字节。8 个二进制位构成 1 个&rdquo;字节(Byte)&rdquo;，它是电脑存储空间的基本计量单位。1 字节 (Byte)=8(bit) 位，就是有 8 个二进制数组成。1 个英文字符是 1 个字节,也就是 1B；1 个汉字为 2 个字符，也就是 2B。</p>
 <p>GB (Gigabyte)：吉字节，是一种<strong>十进制</strong>的信息计量单位。Gibibyte（giga binary byte 的缩写）则是<strong>二进制</strong>信息计量的一个单位，简称 GiB。吉字节（Gigabyte）常容易和二进制的信息计量单位 Gibibyte 混淆。</p>
 <blockquote>
-<p>Gibibyte 与 Gigabyte 常常被混淆，前者的计算方式是二进制，后者的计算方式是十进制。现今的计算上，常把 Gigabyte 以二进制的方式计算，即 $2^{30} = 1,073,741,824 $。(因为 Windows 对 GB 这个信息计量单位的误用，因此在 Windows 中显示的 &ldquo;1GB&rdquo;，其实应是指 &ldquo;1GiB&rdquo;，但 Windows 却显示为 &ldquo;1GB&rdquo;，而常造成误解。误用会普遍化的一大因素，是因为 Windows 的操作系统占有率高)，由于两种换算方法的不同，使容量在计算上相差了 7.3%，所以常有 Windows 系统报告的容量比硬盘标示的容量还要小的情况发生。但在苹果公司的 OS X 操作系统中，对于存储设备的容量计算方式与硬盘厂商一致，均为 1GB = 1,000,000,000 ( $10^{9}$ ) 字节的十进制，避免了计算和使用上的麻烦。</p>
+<p>Gibibyte 与 Gigabyte 常常被混淆，前者的计算方式是二进制，后者的计算方式是十进制。现今的计算上，常把 Gigabyte 以二进制的方式计算，即 <span class="arithmatex">\(2^{30} = 1,073,741,824\)</span> 。(因为 Windows 对 GB 这个信息计量单位的误用，因此在 Windows 中显示的 &ldquo;1GB&rdquo;，其实应是指 &ldquo;1GiB&rdquo;，但 Windows 却显示为 &ldquo;1GB&rdquo;，而常造成误解。误用会普遍化的一大因素，是因为 Windows 的操作系统占有率高)，由于两种换算方法的不同，使容量在计算上相差了 7.3%，所以常有 Windows 系统报告的容量比硬盘标示的容量还要小的情况发生。但在苹果公司的 OS X 操作系统中，对于存储设备的容量计算方式与硬盘厂商一致，均为 1GB = 1,000,000,000 ( <span class="arithmatex">\(10^{9}\)</span> ) 字节的十进制，避免了计算和使用上的麻烦。</p>
 <p>—— 维基百科 - Gibibyte，<a href="https://zh.wikipedia.org/wiki/Gibibyte">https://zh.wikipedia.org/wiki/Gibibyte</a></p>
 </blockquote>
 <p>K、M、G 都是 KB、MB、GB 的简称。由于混淆已经普遍化，Gigabyte 往往是指 Gibibyte，所以平时我们说的 1 兆存储就是 1M（MB），1G 存储就是 1GB）。我们的照片一般是 104KB、209KB、1.45MB、2.45MB、3.32MB 等等。</p>
@@ -9484,7 +9484,7 @@
 <p>国际电工委员会（IEC, International Electrotechnical Commission）成立于 1906 年，至今已有 90 多年的历史。它是世界上成立最早的国际性电工标准化机构，负责有关电气工程和电子工程领域中的国际标准化工作。</p>
 <p>IEC 的宗旨是，促进电气、电子工程领域中标准化及有关问题的国际合作，增进国际间的相互了解。为实现这一目的，IEC 出版包括国际标准在内的各种出版物，并希望各成员在本国条件允许的情况下，在本国的标准化工作中使用这些标准。</p>
 <p>目前 IEC 的工作领域已由单纯研究电气设备、电机的名词术语和功率等问题扩展到电子、电力、微电子及其应用、通讯、视听、机器人、信息技术、新型医疗器械和核仪表等电工技术的各个方面。IEC 标准的权威性是世界公认的，截止到 2008 年 12 月底，IEC 已制定了 5425 个国际标准。</p>
-<p>不同标准下储存单位的次方单位 ( $2^{10}=1024$ )：</p>
+<p>不同标准下储存单位的次方单位 ( <span class="arithmatex">\(2^{10}=1024\)</span> )：</p>
 <p><a class="glightbox" href="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/byte-wiki.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="字节的次方单位" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/byte-wiki.png" /></a></p>
 <h2 id="_2">比特率单位<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>在电信和计算领域，比特率（Bit rate）是指单位时间内传输送或处理的比特的数量。比特率经常在电信领域用作连接速度、传输速度、信息传输速率和数字带宽容量的同义词。</p>
@@ -9688,9 +9688,11 @@
     
       <script src="../../../../../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="../../../../../javascripts/mathjax.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
