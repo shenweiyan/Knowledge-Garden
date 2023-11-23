@@ -56,6 +56,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://doc.weiyan.cc/blog/2023/11/23/discussion-20/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://doc.weiyan.cc/blog/2023/11/23/discussion-23/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://doc.weiyan.cc/blog/2023/11/23/discussion-19/</loc>
          <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
@@ -1471,12 +1481,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://doc.weiyan.cc/blog/page/3/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://doc.weiyan.cc/blog/archive/2023/page/2/</loc>
          <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://doc.weiyan.cc/blog/archive/2023/page/3/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://doc.weiyan.cc/blog/category/page/2/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://doc.weiyan.cc/blog/category/page/3/</loc>
          <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
