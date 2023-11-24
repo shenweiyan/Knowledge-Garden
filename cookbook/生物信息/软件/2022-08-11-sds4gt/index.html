@@ -29,7 +29,7 @@
     
     
       
-        <title>Htslib 软件库安装的一些注意事项 - 维燕的知识花园</title>
+        <title>Htslib 软件库安装与注意 - 维燕的知识花园</title>
       
     
     
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Htslib 软件库安装的一些注意事项
+              Htslib 软件库安装与注意
             
           </span>
         </div>
@@ -1269,7 +1269,7 @@
         
   
   <span class="md-ellipsis">
-    Htslib 软件库安装的一些注意事项
+    Htslib 软件库安装与注意
   </span>
   
 
@@ -9305,18 +9305,19 @@
   
 
 
-  <h1>Htslib 软件库安装的一些注意事项</h1>
+  <h1>Htslib 软件库安装与注意</h1>
 
-<p>Htslib 系列的软件主要包括：Samtools、BCFtools、HTSlib，其中 HTSlib 是前两个都需要用到的 C 语言依赖库。
-<a href="https://www.htslib.org/">Samtools</a>
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqQNhgz8QJz79Lb_H6gPBpGIu7pe.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqQNhgz8QJz79Lb_H6gPBpGIu7pe.png" /></a>
-其他的一些软件有时候也会用到 HTSlib，所以，有时候可以单独安装 HTSlib，主要步骤：</p>
+<p>Htslib (官网：<a href="https://www.htslib.org/">https://www.htslib.org/</a>) 系列的软件主要包括：Samtools、BCFtools、HTSlib，其中 HTSlib 是前两个都需要用到的 C 语言依赖库。</p>
+<!-- more -->
+
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqQNhgz8QJz79Lb_H6gPBpGIu7pe.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqQNhgz8QJz79Lb_H6gPBpGIu7pe.png" /></a></p>
+<p>其他的一些软件有时候也会用到 HTSlib，所以，有时候可以单独安装 HTSlib，主要步骤：</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/samtools/htslib.git
 git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive
 autoconf<span class="w"> </span>-i<span class="w">  </span><span class="c1"># Autoconf version 2.64 or higher is required</span>
 ./configure<span class="w"> </span>--prefix<span class="o">=</span>/PATH/TO/htslib
 </code></pre></div>
-<p>如果 configure 过程提示：error: cannot find input file: <code>config.h.in'</code>，参考 <a href="https://github.com/samtools/htslib/issues/1422">htslib - issues:1422</a> 下载 <a href="https://github.com/samtools/htslib/releases/download/1.15.1/htslib-1.15.1.tar.bz2">htslib-1.15.1.tar.bz2</a>，然后继续后面的操作。</p>
+<p>如果 <code>configure</code> 过程提示：<code>error: cannot find input file: 'config.h.in'</code>，参考 <a href="https://github.com/samtools/htslib/issues/1422">htslib - issues:1422</a> 下载 <a href="https://github.com/samtools/htslib/releases/download/1.15.1/htslib-1.15.1.tar.bz2">htslib-1.15.1.tar.bz2</a>，然后继续后面的操作。</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>--no-check-certificate<span class="w"> </span>--content-disposition<span class="w"> </span>https://github.com/samtools/htslib/releases/download/1.15.1/htslib-1.15.1.tar.bz2
 tar<span class="w"> </span>-jxvf<span class="w"> </span>htslib-1.15.1.tar.bz2
 <span class="nb">cd</span><span class="w"> </span>htslib-1.15.1
