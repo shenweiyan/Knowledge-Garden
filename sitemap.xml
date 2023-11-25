@@ -1101,26 +1101,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Bash-Shell/2020-01-13-shell-coding/</loc>
-         <lastmod>2023-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Bash-Shell/2020-02-13-shell-shift-note/</loc>
-         <lastmod>2023-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Bash-Shell/2020-04-17-mv-skill/</loc>
-         <lastmod>2023-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Bash-Shell/2020-12-03-xvwc74/</loc>
-         <lastmod>2023-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Go/2019-09-18-ygzmzn/</loc>
          <lastmod>2023-11-25</lastmod>
          <changefreq>daily</changefreq>
@@ -1232,6 +1212,26 @@
     </url>
     <url>
          <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2020-03-18-tallkr/</loc>
+         <lastmod>2023-11-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-01-13-shell-coding/</loc>
+         <lastmod>2023-11-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-02-13-shell-shift-note/</loc>
+         <lastmod>2023-11-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-04-17-mv-skill/</loc>
+         <lastmod>2023-11-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-12-03-xvwc74/</loc>
          <lastmod>2023-11-25</lastmod>
          <changefreq>daily</changefreq>
     </url>

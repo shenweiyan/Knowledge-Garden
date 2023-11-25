@@ -12,13 +12,13 @@
         <meta name="author" content="章鱼猫先生">
       
       
-        <link rel="canonical" href="https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Bash-Shell/2020-02-13-shell-shift-note/">
+        <link rel="canonical" href="https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-12-03-xvwc74/">
       
       
-        <link rel="prev" href="../2020-04-17-mv-skill/">
+        <link rel="prev" href="../../R/2019-07-01-r-packages-guide/">
       
       
-        <link rel="next" href="../2020-01-13-shell-coding/">
+        <link rel="next" href="../2020-04-17-mv-skill/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../../../../feed_rss_created.xml">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Linux shift 命令用法笔记 - 维燕的知识花园</title>
+        <title>Linux fuser 命令详解 - 维燕的知识花园</title>
       
     
     
@@ -100,11 +100,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#_1" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -135,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linux shift 命令用法笔记
+              Linux fuser 命令详解
             
           </span>
         </div>
@@ -6851,238 +6846,6 @@
                 
   
   
-    
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Bash-Shell
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Bash-Shell
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../2020-12-03-xvwc74/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Linux fuser 命令详解
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../2020-04-17-mv-skill/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    使用 mv 重命名文件无需两次键入文件名称
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Linux shift 命令用法笔记
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Linux shift 命令用法笔记
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      特殊变量
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shift" class="md-nav__link">
-    <span class="md-ellipsis">
-      shift 使用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="shift 使用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 每次移动一个参数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.  每次移动多个参数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 常与 case 条件配合使用
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      简单总结
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../2020-01-13-shell-coding/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Linux shell 编程笔记
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
     
     
@@ -7098,10 +6861,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_3" id="__nav_2_6_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -7112,8 +6875,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Go
           </label>
@@ -7166,10 +6929,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_4" id="__nav_2_6_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_3" id="__nav_2_6_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -7180,8 +6943,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_3">
             <span class="md-nav__icon md-icon"></span>
             Perl
           </label>
@@ -7264,10 +7027,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_5" id="__nav_2_6_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_4" id="__nav_2_6_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -7278,8 +7041,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_4">
             <span class="md-nav__icon md-icon"></span>
             Python
           </label>
@@ -7640,10 +7403,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_6" id="__nav_2_6_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_5" id="__nav_2_6_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -7654,8 +7417,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_5">
             <span class="md-nav__icon md-icon"></span>
             R
           </label>
@@ -7752,6 +7515,150 @@
   
   <span class="md-ellipsis">
     R 包初学者指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_6" id="__nav_2_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Shell
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Shell
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Linux fuser 命令详解
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2020-04-17-mv-skill/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    使用 mv 重命名文件无需两次键入文件名称
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2020-02-13-shell-shift-note/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux shift 命令用法笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2020-01-13-shell-coding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux shell 编程笔记
   </span>
   
 
@@ -9435,74 +9342,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      特殊变量
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shift" class="md-nav__link">
-    <span class="md-ellipsis">
-      shift 使用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="shift 使用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 每次移动一个参数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.  每次移动多个参数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 常与 case 条件配合使用
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      简单总结
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -9516,7 +9355,7 @@
                   
 
   
-    <a href="https://github.com/shenweiyan/Knowledge-Garden/edit/main/docs/cookbook/编程技术/Bash-Shell/2020-02-13-shell-shift-note.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/shenweiyan/Knowledge-Garden/edit/main/docs/cookbook/编程技术/Shell/2020-12-03-xvwc74.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -9525,209 +9364,22 @@
     
       
     
-    <a href="https://github.com/shenweiyan/Knowledge-Garden/raw/main/docs/cookbook/编程技术/Bash-Shell/2020-02-13-shell-shift-note.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/shenweiyan/Knowledge-Garden/raw/main/docs/cookbook/编程技术/Shell/2020-12-03-xvwc74.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>Linux shift 命令用法笔记</h1>
+  <h1>Linux fuser 命令详解</h1>
 
-<h2 id="_1">特殊变量<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>首先来看几个特殊变量：</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$0</span><span class="w">    </span><span class="c1"># 当前脚本的文件名（间接运行时还包括绝对路径）。</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$n</span><span class="w">    </span><span class="c1"># 传递给脚本或函数的参数。n 是一个数字，表示第几个参数。例如，第一个参数是 $1 。</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$#</span><span class="w">    </span><span class="c1"># 传递给脚本或函数的参数个数。</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$*</span><span class="w">    </span><span class="c1"># 传递给脚本或函数的所有参数。</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$@</span><span class="w">    </span><span class="c1"># 传递给脚本或函数的所有参数。被双引号 (&quot; &quot;) 包含时，与 $* 不同，下面将会讲到。</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span><span class="w">    </span><span class="c1"># 上个命令的退出状态，或函数的返回值。</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$$</span><span class="w">    </span><span class="c1"># 当前 Shell 进程 ID。对于 Shell 脚本，就是这些脚本所在的进程 ID。</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$_</span><span class="w">    </span><span class="c1"># 上一个命令的最后一个参数。</span>
-<span class="nb">echo</span><span class="w"> </span><span class="nv">$!</span><span class="w">    </span><span class="c1"># 后台运行的最后一个进程的 ID 号。</span>
-</code></pre></div>
-<p>保存为一个脚本，然后加上几个参数运行，结果如下：</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>./test.sh<span class="w"> </span>A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E
-./test.sh<span class="w">     </span><span class="c1"># $0, 当前脚本的文件名（间接运行时还包括绝对路径）。</span>
-<span class="w">              </span><span class="c1"># $n, 传递给脚本或函数的参数。n 是一个数字，表示第几个参数。例如，第一个参数是 $1。</span>
-<span class="m">5</span><span class="w">             </span><span class="c1"># $#, 传递给脚本或函数的参数个数。</span>
-A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E<span class="w">     </span><span class="c1"># $*, 传递给脚本或函数的所有参数。</span>
-A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E<span class="w">     </span><span class="c1"># $@, 传递给脚本或函数的所有参数。被双引号 (&quot; &quot;) 包含时，与 $* 不同，下面将会讲到。</span>
-<span class="m">0</span><span class="w">             </span><span class="c1"># $?, 上个命令的退出状态，或函数的返回值。</span>
-<span class="m">24946</span><span class="w">         </span><span class="c1"># $$, 当前 Shell 进程 ID。对于 Shell 脚本，就是这些脚本所在的进程 ID。</span>
-<span class="m">24946</span><span class="w">         </span><span class="c1"># $_, 上一个命令的最后一个参数。</span>
-<span class="w">              </span><span class="c1"># $!, 后台运行的最后一个进程的 ID 号。</span>
-</code></pre></div>
-<p><code>$*</code> 和 <code>$@</code> 都表示传递给函数或脚本的所有参数，不被双引号 (&ldquo;&rdquo;) 包含时，都以 &ldquo;<span class="arithmatex">\(1""\)</span>2&rdquo; … &ldquo;<span class="arithmatex">\(n&rdquo; 的形式输出所有参数。但是当它们被双引号 (&ldquo;&rdquo;) 包含时，&rdquo;<code>$*</code>"会将所有的参数作为一个整体，以 "\)</span>1 <span class="arithmatex">\(2 … <span class="arithmatex">(n&rdquo; 的形式输出所有参数； &ldquo;<code>$@</code>"会将各个参数分开，以 "\)</span>1"、"\)</span>2&rdquo;、…、&rdquo;$n&rdquo; 的形式输出所有参数。</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;\$* = &quot;</span><span class="w"> </span><span class="nv">$*</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;\&quot;\$*\&quot; = &quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$*</span><span class="s2">&quot;</span>
-
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;\$@ = &quot;</span><span class="w"> </span><span class="nv">$@</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;\&quot;\$@\&quot; = &quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
-
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;打印 \$* 中的每一个参数: &quot;</span>
-<span class="k">for</span><span class="w"> </span>var<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$*</span>
-<span class="k">do</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$var</span><span class="s2">&quot;</span>
-<span class="k">done</span>
-
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;打印 \$@ 中的每一个参数: &quot;</span>
-<span class="k">for</span><span class="w"> </span>var<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$@</span>
-<span class="k">do</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$var</span><span class="s2">&quot;</span>
-<span class="k">done</span>
-
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;从 \&quot;\$*\&quot; 获取并打印每一个参数: &quot;</span>
-<span class="k">for</span><span class="w"> </span>var<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$*</span><span class="s2">&quot;</span>
-<span class="k">do</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$var</span><span class="s2">&quot;</span>
-<span class="k">done</span>
-
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;从 \&quot;\$@\&quot; 获取并打印每一个参数: &quot;</span>
-<span class="k">for</span><span class="w"> </span>var<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
-<span class="k">do</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$var</span><span class="s2">&quot;</span>
-<span class="k">done</span>
-</code></pre></div>
-<p>运行及输出：</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>./test.sh<span class="w"> </span>A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E
-<span class="nv">$*</span><span class="w"> </span><span class="o">=</span><span class="w">  </span>A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E
-<span class="s2">&quot;</span><span class="nv">$*</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w">  </span>A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E
-<span class="nv">$@</span><span class="w"> </span><span class="o">=</span><span class="w">  </span>A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E
-<span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w">  </span>A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E
-打印<span class="w"> </span><span class="nv">$*</span><span class="w"> </span>中的每一个参数:
-A
-B
-B
-D
-E
-打印<span class="w"> </span><span class="nv">$@</span><span class="w"> </span>中的每一个参数:
-A
-B
-B
-D
-E
-从<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$*</span><span class="s2">&quot;</span><span class="w"> </span>获取并打印每一个参数:
-A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<span class="w"> </span>E
-从<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span>获取并打印每一个参数:
-A
-B
-B
-D
-E
-</code></pre></div>
-<h2 id="shift">shift 使用<a class="headerlink" href="#shift" title="Permanent link">&para;</a></h2>
-<p><code>shift</code>  命令用于对参数的移动(左移)，通常用于在不知道传入参数个数的情况下依次遍历每个参数然后进行相应处理,常见于 Linux 中各种程序的启动脚本。</p>
-<h3 id="1">1. 每次移动一个参数<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<p>示例：依次读取输入的参数并打印参数个数</p>
 <ul>
-<li>shift1.sh</li>
+<li><a href="https://www.4spaces.org/how-to-use-the-linux-fuser-command/">Linux 系统如何使用 Fuser 命令</a></li>
+<li><a href="https://man.linuxde.net/fuser">fuse 命令</a></li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-<span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$#</span><span class="w"> </span>!<span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span>
-<span class="k">do</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;参数值为 </span><span class="nv">$1</span><span class="s2">, 参数个数为 </span><span class="nv">$#</span><span class="s2">&quot;</span>
-<span class="w">    </span><span class="nb">shift</span>
-<span class="k">done</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 杀掉占用此设备的进程</span>
+$<span class="w"> </span>sudo<span class="w"> </span>fuser<span class="w"> </span>-m<span class="w"> </span>-v<span class="w"> </span>-k<span class="w"> </span>/mnt/textlive/
 </code></pre></div>
-<ul>
-<li>输入如下命令运行：</li>
-</ul>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sh<span class="w"> </span>shift1.sh<span class="w"> </span>a<span class="w"> </span>b<span class="w"> </span>c<span class="w">  </span>d
-参数值为<span class="w"> </span>a,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">4</span>
-参数值为<span class="w"> </span>b,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">3</span>
-参数值为<span class="w"> </span>c,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">2</span>
-参数值为<span class="w"> </span>d,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">1</span>
-</code></pre></div>
-<p><strong>每次运行 shift(不带参数的)，销毁一个参数（变量的个数($#)减一），后面的参数前移（不管参数之间相隔一个或者多个空格）。</strong></p>
-<h3 id="2">2.  每次移动多个参数<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p>shift 命令一次移动参数的个数由其所带的参数指定。例如，现在有 $1, $2, <span class="arithmatex">\(3, ...，\)</span>9 个参数，当 shell 程序处理完前 4 个命令行参数后(即还剩下后面 5 个参数)，可以使用 <code>shift 4</code>  命令把 $9 移到 $1。</p>
-<p>示例：自定义 shift 每次移动的参数个数。</p>
-<ul>
-<li>shift2.sh</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-<span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$#</span><span class="w"> </span>-gt<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">]</span>
-<span class="k">do</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;参数值为 </span><span class="nv">$1</span><span class="s2">, 参数个数为 </span><span class="nv">$#</span><span class="s2">&quot;</span>
-<span class="w">    </span><span class="nb">shift</span>
-<span class="k">done</span>
-<span class="nb">shift</span><span class="w"> </span><span class="m">4</span>
-<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;参数值为 </span><span class="nv">$1</span><span class="s2">, 参数个数为 </span><span class="nv">$#</span><span class="s2">&quot;</span>
-</code></pre></div>
-<ul>
-<li>输入如下命令运行</li>
-</ul>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sh<span class="w"> </span>shift2.sh<span class="w"> </span>a1<span class="w"> </span>b2<span class="w"> </span>c3<span class="w"> </span>d4<span class="w"> </span>e5<span class="w"> </span>f6<span class="w"> </span>g7<span class="w"> </span>h8<span class="w"> </span>i9
-参数值为<span class="w"> </span>a1,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">9</span>
-参数值为<span class="w"> </span>b2,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">8</span>
-参数值为<span class="w"> </span>c3,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">7</span>
-参数值为<span class="w"> </span>d4,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">6</span>
-参数值为<span class="w"> </span>i9,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">1</span>
-</code></pre></div>
-<h3 id="3-case">3. 常与 case 条件配合使用<a class="headerlink" href="#3-case" title="Permanent link">&para;</a></h3>
-<p><code>case ..... esac</code>  和 <code>if ... then ... fi</code>  一样，都是条件判断式的语句结构，它们用倒序的字母单词和正序的单词配对，比如 <code>if</code>  语句，结束时用 <code>fi</code>  来配对， <code>esac</code>  和 <code>case</code>  配对，是多路分支的语句，类似于 C 中的 <code>switch/case</code>  语句，大致形式如下：</p>
-<div class="highlight"><pre><span></span><code><span class="k">case</span><span class="w"> </span>$参数变量<span class="w"> </span><span class="k">in</span><span class="w">   </span><span class="c1"># 以关键字 case 作为开始</span>
-<span class="s2">&quot;变量值1&quot;</span>）<span class="w">         </span><span class="c1"># 变量值用双引号括起来，关键字用小括号括起来</span>
-<span class="w">    </span>程序段1<span class="w">         </span><span class="c1"># 对应的逻辑</span>
-<span class="w">    </span><span class="p">;;</span><span class="w">              </span><span class="c1"># 每个类别结尾使用两个连续的分号来处理</span>
-<span class="s2">&quot;变量值2&quot;</span>）
-<span class="w">    </span>程序段2
-<span class="w">    </span><span class="p">;;</span>
-<span class="s2">&quot;变量值3&quot;</span>）
-<span class="w">    </span>程序段3
-<span class="w">    </span><span class="p">;;</span>
-*<span class="o">)</span><span class="w">                 </span><span class="c1"># 最后一个位置参数值会用*来代替所有其他值</span>
-<span class="w">    </span>程序段4
-<span class="w">    </span><span class="p">;;</span>
-<span class="k">esac</span><span class="w">               </span><span class="c1"># 关键字 esac(case 的反写) 结束</span>
-</code></pre></div>
-<p><code>shift</code>  操作经常与 <code>case ... esac</code>  条件分支配合使用。</p>
-<p>示例： <code>shift</code>  搭配 <code>case ... esac</code>  实现 shell 脚本手动传递参数处理</p>
-<ul>
-<li>shift3.sh</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span>
-<span class="k">do</span>
-<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">in</span>
-<span class="w">    </span>-a<span class="o">)</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;发现 -a 选项&quot;</span>
-<span class="w">        </span><span class="p">;;</span>
-<span class="w">    </span>-b<span class="o">)</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;发现 -b 选项&quot;</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;-b 选项的参数值是：</span><span class="nv">$2</span><span class="s2">&quot;</span>
-<span class="w">        </span><span class="nb">shift</span>
-<span class="w">        </span><span class="p">;;</span>
-<span class="w">    </span>-c<span class="o">)</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;发现 -c 选项&quot;</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;-c 选项的参数值是：</span><span class="nv">$2</span><span class="s2">&quot;</span>
-<span class="w">        </span><span class="nb">shift</span>
-<span class="w">        </span><span class="p">;;</span>
-<span class="w">    </span>*<span class="o">)</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2"> 是一个未知选项&quot;</span>
-<span class="w">        </span><span class="p">;;</span>
-<span class="w">  </span><span class="k">esac</span>
-<span class="w">  </span><span class="nb">shift</span>
-<span class="k">done</span>
-</code></pre></div>
-<ul>
-<li>输入如下命令运行</li>
-</ul>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sh<span class="w"> </span>shift3.sh<span class="w"> </span>-a<span class="w"> </span>-b<span class="w"> </span><span class="m">200</span><span class="w"> </span>-c<span class="w"> </span><span class="m">300</span><span class="w"> </span>-d<span class="w"> </span><span class="m">400</span>
-发现<span class="w"> </span>-a<span class="w"> </span>选项
-发现<span class="w"> </span>-b<span class="w"> </span>选项
--b<span class="w"> </span>选项的参数值是：200
-发现<span class="w"> </span>-c<span class="w"> </span>选项
--c<span class="w"> </span>选项的参数值是：300
--d<span class="w"> </span>是一个未知选项
-<span class="m">400</span><span class="w"> </span>是一个未知选项
-</code></pre></div>
-<h2 id="_2">简单总结<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>在 bash shell 中解析命令行参数的方法有很多，网络上介绍的各种方法中，都可以看到它们与 <code>shift</code>  命令搭配使用的身影，因此在深入这一部分编程前，很有必要先了解一下 <code>shift</code>  的作用。这里只是抛砖引玉简单介绍一下，更多技巧还请大家不断去实践理解。</p>
-<p>本篇文章的部分内容和代码来源于网络，但都经本人一一验证过，如有侵权或者其他问题，欢迎留言。</p>
 
   <hr>
 <div class="md-source-file">
@@ -9766,7 +9418,7 @@ E
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../2020-04-17-mv-skill/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 使用 mv 重命名文件无需两次键入文件名称">
+          <a href="../../R/2019-07-01-r-packages-guide/" class="md-footer__link md-footer__link--prev" aria-label="上一页: R 包初学者指南">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -9776,20 +9428,20 @@ E
                 上一页
               </span>
               <div class="md-ellipsis">
-                使用 mv 重命名文件无需两次键入文件名称
+                R 包初学者指南
               </div>
             </div>
           </a>
         
         
           
-          <a href="../2020-01-13-shell-coding/" class="md-footer__link md-footer__link--next" aria-label="下一页: Linux shell 编程笔记">
+          <a href="../2020-04-17-mv-skill/" class="md-footer__link md-footer__link--next" aria-label="下一页: 使用 mv 重命名文件无需两次键入文件名称">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Linux shell 编程笔记
+                使用 mv 重命名文件无需两次键入文件名称
               </div>
             </div>
             <div class="md-footer__button md-icon">
