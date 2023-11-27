@@ -6,3 +6,5 @@
 .md-typeset{font-size:.7rem;}
 nav.md-nav.md-nav--secondary a.md-nav__link{white-space:normal;}
 a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+.md-typeset h1, .md-typeset h2{font-weight: 700;}

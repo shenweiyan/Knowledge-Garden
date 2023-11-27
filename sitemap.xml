@@ -1231,11 +1231,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://doc.weiyan.cc/css/</loc>
-         <lastmod>2023-11-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://doc.weiyan.cc/notebook/</loc>
          <lastmod>2023-11-27</lastmod>
          <changefreq>daily</changefreq>
