@@ -13,8 +13,8 @@
     <language>en-None</language>
 
     
-    <pubDate>Fri, 01 Dec 2023 05:42:04 -0000</pubDate>
-    <lastBuildDate>Fri, 01 Dec 2023 05:42:04 -0000</lastBuildDate>
+    <pubDate>Fri, 01 Dec 2023 06:11:03 -0000</pubDate>
+    <lastBuildDate>Fri, 01 Dec 2023 06:11:03 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -39,7 +39,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/archive/2023/page/2/</link>
-      <pubDate>Fri, 01 Dec 2023 05:42:11 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:11:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/archive/2023/page/2/</guid>
@@ -54,7 +54,7 @@
       
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/page/2/</link>
-      <pubDate>Fri, 01 Dec 2023 05:42:11 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:11:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/page/2/</guid>
@@ -69,7 +69,7 @@
       
       <description>&lt;h1&gt;知识&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/category/%E7%9F%A5%E8%AF%86/</link>
-      <pubDate>Fri, 01 Dec 2023 05:42:11 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:11:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/category/%E7%9F%A5%E8%AF%86/</guid>
@@ -84,7 +84,7 @@
       
       <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/category/%E5%A5%BD%E7%8E%A9/</link>
-      <pubDate>Fri, 01 Dec 2023 05:42:11 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:11:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/category/%E5%A5%BD%E7%8E%A9/</guid>
@@ -99,7 +99,7 @@
       
       <description>&lt;h1&gt;乱弹&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/category/%E4%B9%B1%E5%BC%B9/</link>
-      <pubDate>Fri, 01 Dec 2023 05:42:11 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:11:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/category/%E4%B9%B1%E5%BC%B9/</guid>
@@ -114,7 +114,7 @@
       
       <description>&lt;h1&gt;资讯&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/category/%E8%B5%84%E8%AE%AF/</link>
-      <pubDate>Fri, 01 Dec 2023 05:42:11 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:11:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/category/%E8%B5%84%E8%AE%AF/</guid>
@@ -129,7 +129,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       <link>https://doc.weiyan.cc/blog/archive/2023/</link>
-      <pubDate>Fri, 01 Dec 2023 05:42:11 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:11:11 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/archive/2023/</guid>
@@ -171,8 +171,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;特别说明&lt;/h2&gt;
 &lt;p&gt;很长一段时间以来，一直都在使用 &lt;a href=&#34;https://www.yuque.com/shenweiyan&#34;&gt;语雀&lt;/a&gt; 来记录个人工作、生活的各种知识。&lt;/p&gt;
-&lt;p&gt;从 2023 年下半年起出于某些原因，开始考虑数据多平台使用+备份+搜索的一些使用场景，几经考虑于是决定开始 All in GitHub 的一些探索，把语雀的一些文章记录同步到这里。同时开始探索 Issues + Discussions 来替换语雀小记，并最终选择了 All in GitHub &lt;a href=&#34;https://github.com/shenweiyan/Knowledge-Garden/discussions&#34;&gt;Discussions&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;我希望这是我最后一次折腾个人的站点(博客)，从为知笔记、&lt;a href=&#34;https://www.cnblogs.com/shenweiyan/&#34;&gt;博客园&lt;/a&gt;、&lt;a href=&#34;https://leanote.com/&#34;&gt;蚂蚁笔记&lt;/a&gt;、Jekyll、Hexo、Hugo ... 一路过来的人，曾经把太多的时间和精力都花费到 Themes/Html/CSS 的装潢上面了。内容才是核心，老老实实回归最简单的 Issues 和 Discussions 已经足够，另外，需要知道的是，博客其实就是写给自己看的，什么 SEO 流量、关注度、知名度还是需要一颗随缘的心态。&lt;/p&gt;
+&lt;p&gt;从 2023 年下半年起出于某些原因，开始考虑数据多平台使用+备份+搜索的一些使用场景，几经考虑于是决定开始 All in GitHub 的一些探索，把语雀的一些文章记录同步到这里。同时开始探索 Issues + Discussions 来替换语雀小记，并最终选择了 All in &lt;a href=&#34;https://github.com/shenweiyan/Knowledge-Garden/discussions&#34;&gt;GitHub Discussions&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;我希望这是我&lt;strong&gt;最后一次&lt;/strong&gt;折腾个人的站点（博客），作为从为知笔记、&lt;a href=&#34;https://www.cnblogs.com/shenweiyan/&#34;&gt;博客园&lt;/a&gt;、&lt;a href=&#34;https://leanote.com/&#34;&gt;蚂蚁笔记&lt;/a&gt;、Jekyll、Hexo、Hugo ... 一路过来的人，曾经把太多的时间和精力都花费到 Themes/Html/CSS 的装潢上面了。内容才是核心，老老实实回归最简单的 Issues 或者 Discussions 对我来说已经足够了，另外，需要知道的是，博客其实就是写给自己看的，什么 SEO 流量、关注度、知名度，只需要保持一颗随缘的心态就好。&lt;/p&gt;
 &lt;p&gt;至于为什么选择 Mkdocs，尤其是 &lt;a href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;&gt;Material for MkDocs&lt;/a&gt;，主要基于下面几点考虑：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;这是一个基于 Python 的静态站点生成器，而自己对 Python 也比较熟悉；&lt;/li&gt;
@@ -196,7 +196,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;致谢&lt;/h2&gt;
-&lt;p&gt;本知识库受 Openbiox &lt;a href=&#34;https://github.com/openbiox/weekly&#34;&gt;《生信爱好者周刊》&lt;/a&gt;启发开始使用 &lt;a href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;&gt;Material for MkDocs&lt;/a&gt; 进行部署。&lt;/p&gt;
+&lt;p&gt;本知识库最开始受 Openbiox &lt;a href=&#34;https://github.com/openbiox/weekly&#34;&gt;《生信爱好者周刊》&lt;/a&gt;启发，经过各种折腾后决定开始使用 &lt;a href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;&gt;Material for MkDocs&lt;/a&gt; 进行部署和更新。&lt;/p&gt;
 &lt;p&gt;感谢 &lt;a href=&#34;https://github.com/LetTTGACO&#34;&gt;LetTTGACO&lt;/a&gt; 提供的 &lt;a href=&#34;https://elog.1874.cool/&#34;&gt;Elog&lt;/a&gt; 工具，提供了一个可以从语雀到本平台的优雅同步方案。&lt;/p&gt;
 &lt;h2&gt;赞赏&lt;/h2&gt;
 &lt;p&gt;如果你觉得到本知识库对你有帮助，欢迎赞赏，有你的支持，我们一定会越来越好！&lt;/p&gt;
@@ -205,7 +205,7 @@
 &lt;figcaption&gt;Random acts of kindness.&lt;/figcaption&gt;
 &lt;/figure&gt;</description>
       <link>https://doc.weiyan.cc/</link>
-      <pubDate>Fri, 01 Dec 2023 05:28:05 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:10:22 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/</guid>
@@ -221,7 +221,7 @@
       <description>&lt;p&gt;语雀，是一个非常优秀的文档和知识库工具，也曾经是个人知识和文档记录的一个非常重要的平台。但由于工作和其他的一些原因，逐渐从语雀转移到了 GitHub，作为历史文章的一个备份，你可以通过下面的链接访问我的语雀花园主页，感谢你的支持，我们一定会越来越好！&lt;/p&gt;
 &lt;p align=center&gt;&lt;b&gt;&lt;a href=&#34;https://www.yuque.com/shenweiyan&#34; target=&#34;_blank&#34;&gt;www.yuque.com/shenweiyan&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/yuque/</link>
-      <pubDate>Fri, 01 Dec 2023 05:28:05 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:10:22 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/yuque/</guid>
@@ -237,7 +237,7 @@
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;
 &lt;p&gt;这是首发于 &lt;a href=&#34;https://github.com/shenweiyan/Knowledge-Garden/discussions&#34;&gt;GitHub Discussions&lt;/a&gt;，并定期同步更新至 Material for MkDocs 本站点上的博客文章。&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/blog/</link>
-      <pubDate>Fri, 01 Dec 2023 05:28:05 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:10:22 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/</guid>
@@ -252,7 +252,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</link>
-      <pubDate>Fri, 01 Dec 2023 05:28:05 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:10:22 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</guid>
@@ -267,7 +267,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
-      <pubDate>Fri, 01 Dec 2023 05:28:05 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:10:22 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
@@ -282,7 +282,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-      <pubDate>Fri, 01 Dec 2023 05:28:05 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:10:22 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
@@ -297,7 +297,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       <link>https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Fri, 01 Dec 2023 05:28:05 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 06:10:22 +0000</pubDate>
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/cookbook/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</guid>
@@ -606,6 +606,25 @@
       <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://doc.weiyan.cc/blog/2023/10/18/discussion-6/</guid>
+      
+    </item>
+    
+    <item>
+      <title>MkDocs Material 安装部署和使用</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;MkDocs 是一个快速、简单、华丽的静态网站生成器，适用于构建项目文档。文档源文件以 Markdown 编写，并使用一个 YAML 文件来进行配置。&lt;a href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;&gt;Material for MkDocs&lt;/a&gt; 是 &lt;a href=&#34;https://www.mkdocs.org/&#34;&gt;MkDocs&lt;/a&gt; 的一个主题配置，更加简洁美观，更新和维护也更加及时和频繁，且社区也更加活跃。&lt;/p&gt;</description>
+      <link>https://doc.weiyan.cc/blog/2023/10/16/discussion-5/</link>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      <source url="https://doc.weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://doc.weiyan.cc/blog/2023/10/16/discussion-5/</guid>
       
     </item>
     
