@@ -9698,6 +9698,85 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2023-12-01 00:00:00">2023年12月1日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="./" class="md-meta__link">好玩</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 2 分钟阅读时间
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2023/12/01/discussion-31/">那些年，和微信公众号编辑器战斗的日子</a></h2>
+<p>看到 HelloGitHub 公众号在 2019-09-25 发表的这篇文章《<a href="https://mp.weixin.qq.com/s/3-A_iSZYD88Cy467qOnNOw">和微信公众号编辑器战斗的日子</a>》，结合自己最近折腾的 React 版本应用 <a href="https://github.com/shenweiyan/Markdown2Html">Markdown2Html</a>，也想着来聊几句。</p>
+<h3 id="md2all"><a class="toclink" href="../../2023/12/01/discussion-31/#md2all">Md2All</a></h3>
+<p>在使用 Mdnice 前，一直在用 <a href="https://md.aclickall.com">Md2All</a> 的自搭建版本 <a href="https://github.com/shenweiyan/Md2XEditor">Md2XEditor</a>，这是一个源自 <a href="https://github.com/barretlee">barretlee</a> 最早在 2017 年的 <a href="https://github.com/barretlee/online-markdown">online-markdown</a> 项目，经过二次开发而来的 Markdown 在线转换工具。</p>
+<p>个人在 2021 年的时候，浏览 GitHub 无意中发现了 <a href="https://md.aclickall.com">Md2All</a> 托管在 GitHub 的源码仓库 <a href="https://github.com/aclickall/aclickall.github.io&gt;">github.com/aclickall/aclickall.github.io</a>，Fork 过来，利用自己微薄的前端知识做了一点点修改，才形成了一直使用到今天的 <a href="https://github.com/shenweiyan/Md2XEditor">Md2XEditor</a>。  <br />
+<img alt="Md2XEditor v-2.8.5" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/md2xeditor-v2.8.5.png" /></p>
+<p>虽然说，Md2All 已经把 Markdown2Html 或者说把 Markdown2WeChat 的大部分功能实现了，但由于它目前能找到的源码都是 <strong>经过 build 构建后可以在生产环境中使用的最终版本的代码</strong>（诸如压缩和优化代码、打包文件、生成静态文件等），功能调整实在太费劲，而且自己对 Node/React 的开发基本是零基础。在没有找到好的替代品前，也只能将就着用，一直用到了 2023 年。</p>
+<h3 id="markdown-nice"><a class="toclink" href="../../2023/12/01/discussion-31/#markdown-nice">markdown-nice</a></h3>
+<p><a href="https://github.com/mdnice/markdown-nice/">Mdnice</a> 的项目虽然很早就听说，也曾经试用过一段时间，但是由于收费，加上同样存在 <strong>超链接文字复制到公众号颜色失效</strong> 的问题，所以一直没有深入了解和使用。直到 2023 年下半年看到不少在关注的公众号推文都变换了风格，才知道原来都在用着 Mdnice，于是重新回来一看，发现这个应用原来还是<strong>开源的</strong>，还可以<strong>自己搭建和部署</strong>！</p>
+<p>回来搜了一波 Mdnice，发现 UI 都大同小异，但也发现了 <a href="https://wechat.bmpi.dev/">https://wechat.bmpi.dev/</a> 这一个长得很像 Mdnice 又不完全像的平台，从功能和 UI 上它似乎更符合个人的需求和审美，于是去搜源码，果然在 <a href="https://github.com/TaleAi/markdown2html">github.com/TaleAi/markdown2html</a> 上找到了（虽然这个仓库里面包括 README 在内提供的链接已经失效），但还是果断 Fork 过来，开始了自己部署和折腾之旅。   <br />
+<img alt="wechat-bmpi-dev" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/wechat-bmpi-dev.png" /></p>
+<h3 id="_2"><a class="toclink" href="../../2023/12/01/discussion-31/#_2">一点折腾</a></h3>
+<p>把自己的 Markdown2Html 站点部署起来后，一切看起来都很顺利，但在使用过程中就发现了这个一直存在的问题：<strong>超链接文字复制到公众号颜色失效</strong>！</p>
+<p>于是开始去尝试看看 Mdnice 的源码，从最开始的一头雾水开始到慢慢摸到一点点头绪，也第一次知道了 <a href="https://github.com/markdown-it/markdown-it">markdown-it</a> 这个目前使用最广泛的 markdown 解析器工具。但功夫不负有心人，借助 ChatGPT 的帮助，最后终于勉勉强强把 <strong>超链接文字复制到公众号颜色失效</strong> 给解决了。</p>
+<p>后面还陆陆续续增加了一些自己喜欢的文章主题，增加了一些网格化的背景等等。由于 Mdnice 使用了非常多的开源插件，所以很多东西改动起来都非常方便。 
+<img alt="markdown2weixin" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/markdown2wechat.png" /></p>
+<h3 id="_3"><a class="toclink" href="../../2023/12/01/discussion-31/#_3">继续更新</a></h3>
+<p>个人 (包括本公众号) 很多的文章都是先写在 GitHub <a href="https://github.com/shenweiyan/Knowledge-Garden">Knowledge-Garden</a> 仓库的 <a href="https://github.com/shenweiyan/Knowledge-Garden/discussions">Discussions</a> 上，有了 Markdown2Html 后面想要转到公众号也就很方便了。</p>
+<p>到这里，轮子也总算造完了，又该好好搬砖了。</p>
+<p>希望后面能有更多的东西跟大家分享吧，也希望大家在 GitHub 上多多关注我，一起交流。</p>
+<h3 id="_4"><a class="toclink" href="../../2023/12/01/discussion-31/#_4">参考资料</a></h3>
+<ol>
+<li><a href="https://lq782655835.github.io/blogs/project/markdown-it-code.html">Markdown-It 解析原理</a> - <a href="https://lq782655835.github.io/blogs/">springleo&rsquo;s blog</a></li>
+</ol>
+<script src="https://giscus.app/client.js"
+    data-repo="shenweiyan/Knowledge-Garden"
+    data-repo-id="R_kgDOKgxWlg"
+    data-mapping="number"
+    data-term="31"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+    <nav class="md-post__action">
+      <a href="../../2023/12/01/discussion-31/">
+        继续阅读
+      </a>
+    </nav>
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://weiyan.cc/assets/logo.png" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2023-11-23 00:00:00">2023年11月23日</time></li>
         
           <li class="md-meta__item">
@@ -10061,7 +10140,7 @@
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://cdn.bootcss.com/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
