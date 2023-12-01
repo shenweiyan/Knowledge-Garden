@@ -8,3 +8,8 @@ nav.md-nav.md-nav--secondary a.md-nav__link{white-space:normal;}
 a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 
 .md-typeset h1, .md-typeset h2{font-weight: 700;}
+
+/* Grid background */
+.md-main {
+  background-image: linear-gradient(rgba(50,0,0,0.05) 1px,transparent 0),linear-gradient(90deg,rgba(50,0,0,0.05) 1px,transparent 0);
+  background-size: 20px 20px;
