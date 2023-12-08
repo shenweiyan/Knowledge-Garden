@@ -16,7 +16,7 @@
       
       
       
-        <link rel="next" href="readme/work/">
+        <link rel="next" href="cookbook/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="feed_rss_created.xml">
@@ -245,7 +245,7 @@
   
     
   
-  阅读说明
+  主页
 
         </a>
       </li>
@@ -334,6 +334,26 @@
   
   
   
+    
+    
+      <li class="md-tabs__item">
+        <a href="readme/" class="md-tabs__link">
+          
+  
+    
+  
+  关于
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
     <li class="md-tabs__item">
       <a href="https://shenweiyan.github.io/Knowledge-Garden/feed_rss_created.xml" class="md-tabs__link">
         
@@ -407,10 +427,6 @@
           
         
       
-        
-      
-        
-      
     
     
     
@@ -432,68 +448,21 @@
               
   
   <span class="md-ellipsis">
-    阅读说明
+    主页
   </span>
   
 
             </a>
-            
-              
-              <label class="md-nav__link md-nav__link--active" for="__nav_1" id="__nav_1_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
             
           </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            阅读说明
+            主页
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="readme/work/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    作品
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="readme/res/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    资源
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -9712,6 +9681,115 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="readme/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    关于
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            关于
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="readme/work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开源作品
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="readme/res/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用资源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="https://shenweiyan.github.io/Knowledge-Garden/feed_rss_created.xml" class="md-nav__link">
         
@@ -9819,11 +9897,78 @@
 
   <h1>维燕的知识花园</h1>
 
+<!--center><font  color= #518FC1 size=6 class="ml3">循此苦旅，以达星辰</font></center-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 <p>本知识库基于 <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> 进行部署，有一部分文章来源于个人的 <strong><a href="https://www.yuque.com/shenweiyan">语雀知识库</a></strong>，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。</p>
+<div id="rcorners">
+    <body>
+      <font color="#4351AF">
+        <p class="p1"></p>
+<script defer>
+    //格式：2020年04月12日 10:20:00 星期二
+    function format(newDate) {
+        var day = newDate.getDay();
+        var y = newDate.getFullYear();
+        var m =
+            newDate.getMonth() + 1 < 10
+                ? "0" + (newDate.getMonth() + 1)
+                : newDate.getMonth() + 1;
+        var d =
+            newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
+        var h =
+            newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours();
+        var min =
+            newDate.getMinutes() < 10
+                ? "0" + newDate.getMinutes()
+                : newDate.getMinutes();
+        var s =
+            newDate.getSeconds() < 10
+                ? "0" + newDate.getSeconds()
+                : newDate.getSeconds();
+        var dict = {
+            1: "一",
+            2: "二",
+            3: "三",
+            4: "四",
+            5: "五",
+            6: "六",
+            0: "天",
+        };
+        //var week=["日","一","二","三","四","五","六"]
+        return (
+            y +
+            "年" +
+            m +
+            "月" +
+            d +
+            "日" +
+            " " +
+            h +
+            ":" +
+            min +
+            ":" +
+            s +
+            " 星期" +
+            dict[day]
+        );
+    }
+    var timerId = setInterval(function () {
+        var newDate = new Date();
+        var p1 = document.querySelector(".p1");
+        if (p1) {
+            p1.textContent = format(newDate);
+        }
+    }, 1000);
+</script>
+      </font>
+    <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+  </div>
+
 <p>以下两个地址都可以访问本站点：     </p>
 <ul>
 <li><a href="https://weiyan.cc">weiyan.cc</a>：基于 <a href="https://pages.cloudflare.com/">Cloudflare Pages</a>，国内访问相对快一些；     </li>
-<li><a href="https://doc.weiyan.cc">doc.weiyan.cc</a>：基于 <a href="https://pages.github.com/">GitHub Pages</a>，国内访问可能有一定延迟；</li>
+<li><a href="https://doc.weiyan.cc">doc.weiyan.cc</a>：基于 <a href="https://pages.github.com/">GitHub Pages</a>，国内访问可能有一定延迟。</li>
 </ul>
 <p align="center">
     <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/mkdocs/kg-readme-cover.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/mkdocs/kg-readme-cover.gif" alt></a><br>
@@ -9929,13 +10074,13 @@
         
         
           
-          <a href="readme/work/" class="md-footer__link md-footer__link--next" aria-label="下一页: 作品">
+          <a href="cookbook/" class="md-footer__link md-footer__link--next" aria-label="下一页: 技术私房菜">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                作品
+                技术私房菜
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -10041,5 +10186,5 @@
         <script src="https://cdn.bootcss.com/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
       
     
-  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+  </body>
 </html>

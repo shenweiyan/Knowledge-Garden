@@ -1501,6 +1501,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://doc.weiyan.cc/readme/</loc>
+         <lastmod>2023-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://doc.weiyan.cc/readme/res/</loc>
          <lastmod>2023-12-08</lastmod>
          <changefreq>daily</changefreq>
