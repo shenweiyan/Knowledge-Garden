@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://doc.weiyan.cc/message/</loc>
+         <lastmod>2023-12-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://doc.weiyan.cc/yuque/</loc>
          <lastmod>2023-12-11</lastmod>
          <changefreq>daily</changefreq>
