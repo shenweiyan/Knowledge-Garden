@@ -93,6 +93,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -9857,6 +9862,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      专业书籍文档
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录和分类标签
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9974,8 +10005,24 @@
 <p>从2023年7月起我的文档都保存在了 GitHub Discussions 上，作为博客、IED 编辑器，以及评论使用，GitHub Discussions 是完全没问题的。</p>
 <!-- more -->
 
+<h2 id="_1">专业书籍文档<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>今天忽然想到的一个问题，即如果作为专业性比较强的系列文档写作，如《<a href="https://www.hello-algo.com/">Hello 算法</a>》 这样专业性和逻辑性非常明确的专业书籍，使用 GitHub Discussions 写作应该是有点不太合适。</p>
 <p>但又仔细想了一下，如果只是写作应该是没问题的 —— 我们可以用 sections 或者 categories，甚至是 tags 进行书籍分类，最后在导出的时候借助这些标签把相关的文档整合到一块，再借助 nav 梳理成大纲展现给读者阅读就可以。所以，总的来说<strong>可以用于专业书籍写作，但不太适合用于专业书籍的呈现和阅读</strong> —— 主要是大纲和逻辑性会变得不明显。</p>
+<h2 id="_2">目录和分类标签<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>GitHub Discussions 目前<a href="https://github.com/orgs/community/discussions/7960">最多支持 25 个 categories</a>，这是一个限制。第二个问题是只能通过 section+category 实现最多两级的目录结构，所以对于三级和三级以上的目录结构目前暂时无能为力。</p>
+<p>因此，想到一个折中的解决方法：使用 labels 来区分第三级目录结构。
+<div class="highlight"><pre><span></span><code>1.1-生信
+  - 1.1.1-算法
+  - 1.1.2-数据
+  - 1.1.2-软件
+</code></pre></div></p>
+<p>然后，导出 Discussions 的时候需要在本地先在本地建立一个 <code>section+category: dictory</code> 一一对应的字典，最后通过这个字典把不同的讨论 md 归档至对应的目录。
+<div class="highlight"><pre><span></span><code>1.1-生信:
+    1.1.1-算法: docs/cookbook/生物信息/算法
+    1.1.2-数据: docs/cookbook/生物信息/数据
+    1.1.2-软件: docs/cookbook/生物信息/软件
+    ...
+</code></pre></div></p>
 <script src="https://giscus.app/client.js"
     data-repo="shenweiyan/Knowledge-Garden"
     data-repo-id="R_kgDOKgxWlg"
@@ -10009,7 +10056,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-28</span>
   </span>
 
     
