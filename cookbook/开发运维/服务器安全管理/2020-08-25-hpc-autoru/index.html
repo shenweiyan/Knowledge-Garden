@@ -9897,7 +9897,7 @@
   <h1>一次 HPC 病毒感染与解决经历</h1>
 
 <p>周一的时候，有同事反馈说，HPC 的项目报告路径正在不断产生 *.exe 和 *.pif 文件，怀疑是不是被病毒感染！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FruWFOZWN1SO32k60dIGJ0k2RW4C.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FruWFOZWN1SO32k60dIGJ0k2RW4C.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FruWFOZWN1SO32k60dIGJ0k2RW4C.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FruWFOZWN1SO32k60dIGJ0k2RW4C.png" /></a>
 收到信息，第一时间进去目录，的确发现该目录每个几秒钟就自动生成一个 *.exe 和 *.pif 二进制文件。</p>
 <p>于是：</p>
 <ol>
@@ -9908,7 +9908,7 @@
 <p>由于发生问题所在的目录是通过 Samba 服务与本地的几台 Windows 台式机进行了同步，用于客户数据上传下载的拷贝。我们排查了 HPC 发生问题的时间，以及相关时间段的服务记录，没发现什么异常，服务器 io 也正常，而且生成的 exe 二进制文件正常来说在 Linux 上也是无法执行的，一般只有 Windows 对 exe 可执行文件比较敏感。</p>
 <p>于是，初步怀疑基于 Samba 服务的台式电脑存在异常，在不断自我复制产生 *.exe 和 *.pif 二进制文件。</p>
 <p>接下来，我们一个个去查看当天用于上传下载目标目录的移动硬盘的文件，终于发现一个名字为 autorun.inf 的可疑文件，同时也发现了这个程序里面的 tpkv.exe 程序：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkg9mQR4tnY1isIy18-Katshmgry.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="autorun-inf.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkg9mQR4tnY1isIy18-Katshmgry.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkg9mQR4tnY1isIy18-Katshmgry.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="autorun-inf.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkg9mQR4tnY1isIy18-Katshmgry.png" /></a></p>
 <p>针对 autorun.inf，谷歌了一下，发现：</p>
 <blockquote>
 <p>Autorun 病毒是一种专门针对 Windows 系列操作系统的病毒，它是依靠 Windows 的 Autorun/Autoplay 功能发作传播的。这个功能的目的是在电脑上插入闪存盘等可移动设备或是光盘之后，自动执行一系列的指令。在 Windows XP 之前， Autorun 和 Autoplay 指的是同一个功能，但是在 Windows XP 之后，这两个单词指不同的功能。在中文版的 XP 里，前者被翻译为“自动运行”，而后者叫“自动播放”。其中自动运行是指：</p>
@@ -9942,7 +9942,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

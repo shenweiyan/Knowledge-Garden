@@ -9908,7 +9908,7 @@
 <li><strong>如果你使用的是 Linux，字体应该位于 <code>/usr/share/fonts</code>  目录下。</strong></li>
 </ul>
 <p><strong>来一个示例，示例的各个函数解释后面有：</strong>
-<strong><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk5E_pjjk6BQ9qIfpqDHOUYWl_9b.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk5E_pjjk6BQ9qIfpqDHOUYWl_9b.png" /></a></strong></p>
+<strong><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk5E_pjjk6BQ9qIfpqDHOUYWl_9b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk5E_pjjk6BQ9qIfpqDHOUYWl_9b.png" /></a></strong></p>
 <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">showtext</span><span class="p">)</span>
 <span class="nf">showtext_auto</span><span class="p">(</span><span class="n">enable</span><span class="o">=</span><span class="n">True</span><span class="p">)</span>
 <span class="nf">font_add</span><span class="p">(</span><span class="s">&#39;SimSun&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;simsun.ttc&quot;</span><span class="p">)</span>
@@ -9955,7 +9955,7 @@
 <span class="n">loaded</span><span class="w"> </span><span class="n">via</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="nf">namespace </span><span class="p">(</span><span class="n">and</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">attached</span><span class="p">)</span><span class="o">:</span>
 <span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="n">compiler_3.6.2</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FklrZ3cPvkoxh2TrPfSw0koCTyHF.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FklrZ3cPvkoxh2TrPfSw0koCTyHF.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FklrZ3cPvkoxh2TrPfSw0koCTyHF.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FklrZ3cPvkoxh2TrPfSw0koCTyHF.png" /></a></p>
 <p><strong>runif() 是  R 语言生成均匀分布随机数的函数，句法是：runif(n, min=0, max=1)，其中 n 表示生成的随机数数量，min 表示均匀分布的下限，max 表示均匀分布的上限；若省略参数 min、max，则默认生成 [0,1] 上的均匀分布随机数。例子如下：</strong></p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">runif</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">     </span><span class="c1"># 生成5个[0,1]的均匀分布的随机数</span>
 <span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="m">0.5993</span><span class="w"> </span><span class="m">0.7391</span><span class="w"> </span><span class="m">0.2617</span><span class="w"> </span><span class="m">0.5077</span><span class="w"> </span><span class="m">0.7199</span>
@@ -9976,7 +9976,7 @@
 <span class="o">&gt;</span><span class="w"> </span><span class="nf">intToUtf8</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">27784</span><span class="p">,</span><span class="w"> </span><span class="m">32500</span><span class="p">,</span><span class="m">29141</span><span class="p">),</span><span class="w"> </span><span class="n">multiple</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span><span class="w">   </span><span class="c1"># multiple: 转换为单个字符串还是多个单独的字符</span>
 <span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="s">&quot;沈&quot;</span><span class="w"> </span><span class="s">&quot;维&quot;</span><span class="w"> </span><span class="s">&quot;燕&quot;</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlMO8jnjfaW7QalT7nyPkxQ4d37w.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="comment.gif" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlMO8jnjfaW7QalT7nyPkxQ4d37w.gif" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlMO8jnjfaW7QalT7nyPkxQ4d37w.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="comment.gif" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlMO8jnjfaW7QalT7nyPkxQ4d37w.gif" /></a></p>
 
 
 
@@ -9997,7 +9997,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

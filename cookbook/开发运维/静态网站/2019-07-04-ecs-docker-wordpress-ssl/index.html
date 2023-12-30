@@ -9995,16 +9995,16 @@ http {
 </code></pre></div>
 <h2 id="54">5.4 添加域名解析<a class="headerlink" href="#54" title="Permanent link">&para;</a></h2>
 <p>登入阿里域名解析：<a href="https://netcn.console.aliyun.com/core/domain/list，点击相应域名的">https://netcn.console.aliyun.com/core/domain/list，点击相应域名的</a> &ldquo;解析&rdquo; 链接，根据提示添加域名的 A 记录，解析到你的服务器 ip 下。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm-MQeQpFEqp0LeZEAXEySUs16i_.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm-MQeQpFEqp0LeZEAXEySUs16i_.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm-MQeQpFEqp0LeZEAXEySUs16i_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm-MQeQpFEqp0LeZEAXEySUs16i_.png" /></a></p>
 <h2 id="55-wordpress">5.5 安装 wordpress<a class="headerlink" href="#55-wordpress" title="Permanent link">&para;</a></h2>
 <p>添加完域名解析后，打开浏览器，输入 <a href="http://youdomain.com，然后就可以看到">http://youdomain.com，然后就可以看到</a> WordPress 了。按照提示输入用户名等信息，然后安装 WordPress。等到它提示安装完成，那么 WordPress 的安装就算大功告成了。</p>
 <h1 id="6-ssl-https">6. 安装 SSL 证书开启 https 访问<a class="headerlink" href="#6-ssl-https" title="Permanent link">&para;</a></h1>
 <h2 id="61">6.1 单域名免费证书申请<a class="headerlink" href="#61" title="Permanent link">&para;</a></h2>
 <p>登入阿里域名解析：<a href="https://netcn.console.aliyun.com/core/domain/list，点击相应域名的">https://netcn.console.aliyun.com/core/domain/list，点击相应域名的</a> &ldquo;SSL 证书&rdquo; 链接，设置单域名免费证书。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuBDrUkhJAGUHmJMSmoAv9A30FG3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuBDrUkhJAGUHmJMSmoAv9A30FG3.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuBDrUkhJAGUHmJMSmoAv9A30FG3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuBDrUkhJAGUHmJMSmoAv9A30FG3.png" /></a></p>
 <h2 id="62-ssl">6.2 SSL 证书下载<a class="headerlink" href="#62-ssl" title="Permanent link">&para;</a></h2>
 <p>单域名免费证书提交申请后，一般十分钟就会审批下来。这时候，我们登陆 &ldquo;<a href="https://yundun.console.aliyun.com/?spm=5176.2020520163.aliyun_sidebar.24.4eb62b7auFTPPK&amp;p=cas#/cas/home">CA 证书服务（数据安全）</a>&ldquo;，在 &ldquo;我的订单&rdquo; 中找到已经签发的域名证书，点击 &ldquo;下载&rdquo; 链接，通过 &ldquo;下载证书 for Nginx&rdquo; 下载证书。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkqqJGGi5jsGXc4BDQ9LN0NcOoth.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkqqJGGi5jsGXc4BDQ9LN0NcOoth.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkqqJGGi5jsGXc4BDQ9LN0NcOoth.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkqqJGGi5jsGXc4BDQ9LN0NcOoth.png" /></a></p>
 <h2 id="63-ssl">6.3 SSL 证书安装<a class="headerlink" href="#63-ssl" title="Permanent link">&para;</a></h2>
 <p>( 1 ) 在 Nginx 的安装目录下创建 cert 目录，并且将下载的全部文件拷贝到 cert 目录中。
 ( 2 ) 将 wordpress.conf 修改为：</p>
@@ -10071,7 +10071,7 @@ define(&#39;FORCE_SSL_ADMIN&#39;, true);
 </code></pre></div>
 <p>登录后台安装此插件。</p>
 <p>或者登陆 wordpress 后台，在&rdquo;设置&rdquo;→ &ldquo;常规&rdquo; 中设置 &ldquo;WordPress 地址（URL）&rdquo; 和 &ldquo;站点地址（URL）&rdquo;为 https 链接地址。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlaMAwW6wsKGgbgxOVbDyv8MafLl.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlaMAwW6wsKGgbgxOVbDyv8MafLl.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlaMAwW6wsKGgbgxOVbDyv8MafLl.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlaMAwW6wsKGgbgxOVbDyv8MafLl.png" /></a></p>
 <p>至此，真正意义上解决 wordpress 全站开启 https 的 ssl 证书问题。</p>
 <h1 id="7">7. 填坑总结<a class="headerlink" href="#7" title="Permanent link">&para;</a></h1>
 <h2 id="71">7.1. 更换域名无法登陆后台<a class="headerlink" href="#71" title="Permanent link">&para;</a></h2>
@@ -10105,7 +10105,7 @@ define(&#39;WP_SITEURL&#39;, &#39;http://要修改的域名&#39;);
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

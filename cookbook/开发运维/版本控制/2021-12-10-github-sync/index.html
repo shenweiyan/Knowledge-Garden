@@ -10146,7 +10146,7 @@
 </blockquote>
 <p>密钥的配置步骤如下。</p>
 <p>首先，在命令行终端或 Git Bash 使用命令 <strong>ssh-keygen -t rsa -C &ldquo;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#111;&#117;&#114;&#101;&#109;&#97;&#105;&#108;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#121;&#111;&#117;&#114;&#101;&#109;&#97;&#105;&#108;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a></strong>&rdquo; 生成 SSH Key，注意替换为自己的邮箱。生成的 <strong>id_rsa 是私钥</strong>，<strong>id_rsa.pub 是公钥</strong>。(注意此处不要设置密码，生成的公私钥用于下面 GitHub / Gitee 的配置，以保证公私钥成对，否则从 GitHub -&gt; Gitee 的同步将会失败。)
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnLtojw2-D77uJnv9XmlQRGFrXoZ.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnLtojw2-D77uJnv9XmlQRGFrXoZ.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnLtojw2-D77uJnv9XmlQRGFrXoZ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnLtojw2-D77uJnv9XmlQRGFrXoZ.png" /></a>
 第二，在 GitHub 项目的「<strong>Settings</strong> -&gt; <strong>Secrets</strong> → <strong>New repository secret</strong>」路径下配置好命名为 <strong>GITEE_RSA_PRIVATE_KEY</strong> 和 <strong>GITEE_PASSWORD</strong> 的两个密钥。其中：</p>
 <ul>
 <li><strong>GITEE_RSA_PRIVATE_KEY</strong> 存放 <strong>id_rsa 私钥</strong>；</li>
@@ -10174,9 +10174,9 @@ XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
 <div class="highlight"><pre><span></span><code>ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAu8Y+QEgYbQG2g01THpSqG3SAEt9JrH0TvFGZI3DS0HjbRz467qkiT+TXju7ilAEfX26JkstIxKDA9rOMlndsuhFpWAS1rFRkq5jj6phHAoGAc2t6PYMLPAgKKbQL+nCXBpK7pOduT3JTvyzFe5lYktj1GzAgX7Pu1w== ishenweiyan@foxmail.com
 </code></pre></div></p>
 <p>第三，在 GitHub 的个人设置页面「<a href="https://github.com/settings/keys">Settings -&gt; SSH and GPG keys</a>」配置 SSH Keys 公钥（即：<strong>id_rsa.pub</strong>），命名随意。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtcUhF3OCjBv7i0AZpOHWVpUoGkr.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtcUhF3OCjBv7i0AZpOHWVpUoGkr.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtcUhF3OCjBv7i0AZpOHWVpUoGkr.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtcUhF3OCjBv7i0AZpOHWVpUoGkr.png" /></a></p>
 <p>第四，在 Gitee 的个人设置页面「<a href="https://gitee.com/profile/sshkeys">安全设置 -&gt; SSH 公钥</a>」配置 SSH 公钥（即：<strong>id_rsa.pub</strong>），命名随意。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsey-rTV7Z0rZMAvirujPTPobsL5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsey-rTV7Z0rZMAvirujPTPobsL5.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsey-rTV7Z0rZMAvirujPTPobsL5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsey-rTV7Z0rZMAvirujPTPobsL5.png" /></a></p>
 <h3 id="workflow">创建 workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h3>
 <p>在你的 GitHub 项目 <strong>.github/workflows/</strong> 文件夹下创建一个 .yml 文件，如 <strong>sync.yml</strong>，内容如下：</p>
 <div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SyncToGitee</span>
@@ -10203,9 +10203,9 @@ XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
 </code></pre></div>
 <h3 id="_3">执行同步<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>最后，修改代码（如修改 README），提交，成功触发同步！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhNciqJ2JAce216HOdJhqNMLNylJ.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhNciqJ2JAce216HOdJhqNMLNylJ.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8zbEMkhW6KnY1RqwtOwMX0ezP_.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8zbEMkhW6KnY1RqwtOwMX0ezP_.png" /></a>
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhC-7z6OHx5gKOtXGRdFbh3JL60z.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhC-7z6OHx5gKOtXGRdFbh3JL60z.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhNciqJ2JAce216HOdJhqNMLNylJ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhNciqJ2JAce216HOdJhqNMLNylJ.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8zbEMkhW6KnY1RqwtOwMX0ezP_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8zbEMkhW6KnY1RqwtOwMX0ezP_.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhC-7z6OHx5gKOtXGRdFbh3JL60z.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhC-7z6OHx5gKOtXGRdFbh3JL60z.png" /></a></p>
 <h2 id="_4">使用账号密码的方式<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>这个方法参考的是 <a href="https://github.com/abersheeran">@abersheeran</a> 的 <a href="https://github.com/abersheeran/index.py/blob/a9ef1e2dca0c975108b942657679ec47908c7bcc/.github/workflows/setup.yml#L55-L82">push-to-mirror </a>方法，可以同步到 gitee 以及任何一个支持 git 的平台，其原理很简单，就拉取然后推送。</p>
 <h3 id="_5">配置账号密码<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
@@ -10216,8 +10216,8 @@ XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
 <li><strong>CODING_USERNAME</strong> 存放 <strong>Coding 的账号</strong>；</li>
 <li><strong>CODING_PASSWORD</strong> 存放 <strong>Coding</strong> <strong>帐号的密码</strong>；</li>
 </ul>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsW8HjkaxCtwI0YVC4DHrFPceXmD.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsW8HjkaxCtwI0YVC4DHrFPceXmD.png" /></a>
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrllDsG6dnVD9N553JIP4a1GVOZA.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrllDsG6dnVD9N553JIP4a1GVOZA.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsW8HjkaxCtwI0YVC4DHrFPceXmD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsW8HjkaxCtwI0YVC4DHrFPceXmD.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrllDsG6dnVD9N553JIP4a1GVOZA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrllDsG6dnVD9N553JIP4a1GVOZA.png" /></a></p>
 <h3 id="workflow_1">创建 workflow<a class="headerlink" href="#workflow_1" title="Permanent link">&para;</a></h3>
 <p>在你的 GitHub 项目 <strong>.github/workflows/</strong> 文件夹下创建一个 <code>.yml</code> 文件，如 <strong>sync.yml</strong>，内容如下：</p>
 <div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Sync-To-Gitee-and-Coding</span>
@@ -10276,10 +10276,10 @@ XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
 </code></pre></div>
 <h3 id="_6">执行同步<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>最后，修改代码（如修改 README），提交，成功触发同步！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnPI_f183sRTBRgB6Gh5bVbzJE7b.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnPI_f183sRTBRgB6Gh5bVbzJE7b.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn7B-rFuN_RYsSuuraS0H7YpBx-f.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="同步 workflows 执行成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn7B-rFuN_RYsSuuraS0H7YpBx-f.png" title="同步 workflows 执行成功！" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqGnfZCiqR_Jd1EiWghqmztpcfe2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="GitHub 代码同步 Coding 成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqGnfZCiqR_Jd1EiWghqmztpcfe2.png" title="GitHub 代码同步 Coding 成功！" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlfUfgGFbwojp08rLox4EwsFVP4d.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="GitHub 代码同步 Gitee 成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlfUfgGFbwojp08rLox4EwsFVP4d.png" title="GitHub 代码同步 Gitee 成功！" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnPI_f183sRTBRgB6Gh5bVbzJE7b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnPI_f183sRTBRgB6Gh5bVbzJE7b.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn7B-rFuN_RYsSuuraS0H7YpBx-f.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="同步 workflows 执行成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn7B-rFuN_RYsSuuraS0H7YpBx-f.png" title="同步 workflows 执行成功！" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqGnfZCiqR_Jd1EiWghqmztpcfe2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GitHub 代码同步 Coding 成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqGnfZCiqR_Jd1EiWghqmztpcfe2.png" title="GitHub 代码同步 Coding 成功！" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlfUfgGFbwojp08rLox4EwsFVP4d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GitHub 代码同步 Gitee 成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlfUfgGFbwojp08rLox4EwsFVP4d.png" title="GitHub 代码同步 Gitee 成功！" /></a></p>
 <h2 id="_7">总结<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>文章中参考前人的一些成果成功把 GitHub 的代码同步到了 gitee 和 coding，可能还有可以改进的地方，但不管怎么说，基本满足了个人的需求。</p>
 <p>最后，GitHub 是一个非常棒的平台，希望大家拥抱开源，多多分享。</p>
@@ -10303,7 +10303,7 @@ XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

@@ -9956,14 +9956,14 @@
   <h1>RHEL6 ssh 到 RHEL9 的 no hostkey alg 错误</h1>
 
 <p>昨天把阿里云的一个轻量云服务器升级到了 AlmaLinux release 9.0 (Emerald Puma)，开启 RHEL 9 系列的新体验。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp2J6etLXPMJzUxy_TqI3q4deG0A.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp2J6etLXPMJzUxy_TqI3q4deG0A.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp2J6etLXPMJzUxy_TqI3q4deG0A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp2J6etLXPMJzUxy_TqI3q4deG0A.png" /></a></p>
 <p>发现的第一个比较直观的问题：
 <strong>从 RHEL 6.x 的服务器 ssh 到 AlmaLinux 9 的轻量云服务器时候出现 no hostkey alg 错误！</strong></p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>ssh<span class="w"> </span>root@xxx.123.456.xx
 no<span class="w"> </span>hostkey<span class="w"> </span>alg
 </code></pre></div>
 <p>一开始拿着这个错误去谷歌，找了不少答案（例如，KexAlgorithms 算法支持问题；<code>/etc/ssh/ssh_host_*key</code>问题；权限问题，等等）都没办法解决，后来去 AlmaLinux 社区提问，才最终把这个问题解决了。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flgu92Si4SO1GDPjqVHq-UPUBRCX.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flgu92Si4SO1GDPjqVHq-UPUBRCX.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flgu92Si4SO1GDPjqVHq-UPUBRCX.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flgu92Si4SO1GDPjqVHq-UPUBRCX.png" /></a>
 从 RHEL9 的官网文档《<a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/considerations_in_adopting_rhel_9/index#ref_considerations-security-crypto_changes-to-security">1.0.2. Crypto-policies, RHEL core cryptographic components, and protocols</a>（加密策略、RHEL 核心加密组件和协议）》可以看到 SHA-1 已经在 RHEL9 中弃用了！</p>
 <blockquote>
 <p>In RHEL 9, SHA-1 usage for signatures is restricted in the DEFAULT system-wide cryptographic policy. Except for HMAC, SHA-1 is no longer allowed in TLS, DTLS, SSH, IKEv2, DNSSEC, and Kerberos protocols. Individual applications not controlled by the RHEL system-wide crypto policies are also moving away from using SHA-1 hashes in RHEL 9.</p>
@@ -10001,7 +10001,7 @@ no<span class="w"> </span>hostkey<span class="w"> </span>alg
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

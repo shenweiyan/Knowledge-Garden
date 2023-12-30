@@ -9919,7 +9919,7 @@ $ make install
 <p>From Python Issue27685, <a href="https://bugs.python.org/issue27685">https://bugs.python.org/issue27685</a></p>
 </blockquote>
 <p>即是说，在大多数 Unix 系统上（除了 Mac OS X 之外），共享库的路径不是绝对路径。 因此，如果我们在非标准位置安装 Python，为了不和相同版本的系统 Python 产生干扰，我们需要配置非标准位置安装的 Python 共享库的路径，或者通过设置运行时的环境变量，如 LD_LIBRARY_PATH。 为了避免这个问题，我们最好避免使用 <code>--enable-shared</code>。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu3mNt-6GcKZPAlp-GyEH2qfCVOm.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu3mNt-6GcKZPAlp-GyEH2qfCVOm.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu3mNt-6GcKZPAlp-GyEH2qfCVOm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu3mNt-6GcKZPAlp-GyEH2qfCVOm.png" /></a></p>
 <p>或者我们也可以使用以下预编译命令，以避免开启 <code>--enable-shared</code> 时，默认只有一个版本的 python：</p>
 <div class="highlight"><pre><span></span><code>./configure<span class="w"> </span>--enable-shared<span class="w"> </span>--prefix<span class="o">=</span>/opt/python<span class="w"> </span><span class="nv">LDFLAGS</span><span class="o">=</span>-Wl,-rpath<span class="o">=</span>/opt/python/lib
 </code></pre></div>
@@ -9943,7 +9943,7 @@ $ make install
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

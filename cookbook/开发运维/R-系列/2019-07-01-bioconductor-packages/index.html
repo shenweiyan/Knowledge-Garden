@@ -10301,7 +10301,7 @@
 <p>总所周知，Bioconductor 是和 R 版本绑定的，这是为了确保用户不把包安装在错误的版本上。Bioconductor 发行版每年更新两次，它在任何时候都有一个发行版本（release version），对应于 R 的发行版本。此外，Bioconductor 还有一个开发版本（development version），它对应于 R 的开发版本。</p>
 <p>R 每年（通常是 4 月中旬）在 &lsquo;x.y.z&rsquo; 中发布一个 &lsquo;.y&rsquo; 版本，但 Bioconductor 每 6 个月（4 月中旬和 10 月中旬）发布一个 &lsquo;.y&rsquo; 版本。</p>
 <p>Bioconductor 与 R 各自对应的版本如下：（参考：<a href="https://bioconductor.org/about/release-announcements/">Bioconductor releases</a>）
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuWsjeYOiJKjpvrMD1vvWkclbemC.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuWsjeYOiJKjpvrMD1vvWkclbemC.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuWsjeYOiJKjpvrMD1vvWkclbemC.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuWsjeYOiJKjpvrMD1vvWkclbemC.png" /></a></p>
 <h2 id="bioclite">biocLite 使用<a class="headerlink" href="#bioclite" title="Permanent link">&para;</a></h2>
 <p>在 R-3.5（Bioconductor-3.7） 前，Bioconductor 都是通过 biocLite 安装相关的 R 包：</p>
 <div class="highlight"><pre><span></span><code><span class="nf">source</span><span class="p">(</span><span class="s">&quot;https://bioconductor.org/biocLite.R&quot;</span><span class="p">)</span>
@@ -10439,7 +10439,7 @@
 <span class="c1">## [10] &quot;BSgenome.Hsapiens.UCSC.hg38.masked&quot;</span>
 </code></pre></div>
 <h2 id="bioconductor-r">安装旧版本的 Bioconductor R 包<a class="headerlink" href="#bioconductor-r" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsWdeAuTnAbrncvAU1q5kl7QcebP.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsWdeAuTnAbrncvAU1q5kl7QcebP.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsWdeAuTnAbrncvAU1q5kl7QcebP.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsWdeAuTnAbrncvAU1q5kl7QcebP.png" /></a></p>
 <h3 id="r35bioconductor37">R≥3.5，Bioconductor≥3.7<a class="headerlink" href="#r35bioconductor37" title="Permanent link">&para;</a></h3>
 <p>可以使用 BiocManager 安装相关与版本匹配的 R 包。或者通过源码的方式安装旧版本 R 包。</p>
 <h3 id="r35bioconductor37_1">R&lt;3.5，Bioconductor&lt;3.7<a class="headerlink" href="#r35bioconductor37_1" title="Permanent link">&para;</a></h3>
@@ -10473,9 +10473,9 @@
 <p>From：<a href="https://cran.r-project.org/web/packages/BiocManager/vignettes/BiocManager.html">https://cran.r-project.org/web/packages/BiocManager/vignettes/BiocManager.html</a></p>
 </blockquote>
 <p>所以，当有些 R 包是基于高版本的 Bioconductor 开发的，在低版本的 Bioconductor/R 中直接执行 <code>BiocManager::install("package")</code>，安装得到的 package 版本默认是与当前版本 Bioconductor/R 相匹配的，而并非是最新的版本。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrfiotBKifOnRNkqsPWL2co_udL6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrfiotBKifOnRNkqsPWL2co_udL6.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrfiotBKifOnRNkqsPWL2co_udL6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrfiotBKifOnRNkqsPWL2co_udL6.png" /></a>
 以 <strong>DiffBind</strong> 包为例，<a href="https://bioconductor.org/packages/3.14/bioc/html/DiffBind.html">DiffBind==3.4.0</a> 是基于 Bioconductor==3.14（对应 R-4.1）开发的；我们在 Bioconductor==3.13（对应 R-4.0）中执行 <code>BiocManager::install("DiffBind")</code>，默认安装的是 <a href="https://bioconductor.org/packages/3.12/bioc/html/DiffBind.html">DiffBind==3.0.15</a>！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fidxv_6XZ_eQf1AEOOj52EQdgkME.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fidxv_6XZ_eQf1AEOOj52EQdgkME.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fidxv_6XZ_eQf1AEOOj52EQdgkME.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fidxv_6XZ_eQf1AEOOj52EQdgkME.png" /></a></p>
 <h3 id="1_1">1. 源码方式安装<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <p>如果想要在 Bioconductor==3.13（对应 R-4.0）中安装 <a href="https://bioconductor.org/packages/3.14/bioc/html/DiffBind.html">DiffBind==3.4.0</a>，可以直接通过源码包的方式安装：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="n">packageurl</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;http://bioconductor.org/packages/release/bioc/src/contrib/DiffBind_3.4.0.tar.gz&quot;</span>
@@ -10542,14 +10542,14 @@
 </blockquote>
 <h2 id="r">安装体积比较大的 R 包<a class="headerlink" href="#r" title="Permanent link">&para;</a></h2>
 <p>安装 CRAN 或者 Bioconductor 中一些体积比较大的 R 包，如果网络不太好，经常可能会出现包下载不完（Timeout of 60 seconds was reached），从而导致无法正常安装。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkT19wEWbN-7DeYe42UDzDiZJKsR.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkT19wEWbN-7DeYe42UDzDiZJKsR.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkT19wEWbN-7DeYe42UDzDiZJKsR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkT19wEWbN-7DeYe42UDzDiZJKsR.png" /></a>
 参考 <a href="https://stackoverflow.com/questions/35282928/how-do-i-set-a-timeout-for-utilsdownload-file-in-r/35283374">How do i set a timeout for utils::download.file() in R - Stack Overflow</a>，增加 timeout 时长的同时使用国内的镜像进行加速：</p>
 <div class="highlight"><pre><span></span><code><span class="nf">getOption</span><span class="p">(</span><span class="s">&#39;timeout&#39;</span><span class="p">)</span>
 <span class="c1"># [1] 60</span>
 
 <span class="nf">options</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="m">100</span><span class="p">)</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv20PVmbB48T5yQ79Us0sXjVJiZy.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv20PVmbB48T5yQ79Us0sXjVJiZy.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv20PVmbB48T5yQ79Us0sXjVJiZy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv20PVmbB48T5yQ79Us0sXjVJiZy.png" /></a></p>
 <p>以上，就是  Bioconductor R 包安装和使用的全部内容，希望对大家有所帮助。</p>
 <h2 id="_1">参考资料<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ol>
@@ -10576,7 +10576,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

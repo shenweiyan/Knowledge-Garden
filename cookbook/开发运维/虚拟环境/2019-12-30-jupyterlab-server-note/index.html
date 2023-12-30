@@ -10229,7 +10229,7 @@
 <blockquote>
 <p>JupyterLab is a next-generation web-based user interface for Project Jupyter. JupyterLab enables you to work with documents and activities such as <a href="https://jupyterlab.readthedocs.io/en/stable/user/notebook.html#notebook">Jupyter notebooks</a>, text editors, terminals, and custom components in a flexible, integrated, and extensible manner.</p>
 </blockquote>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fpq9ObNYavMIyXe5rmYWRmGLBNDw.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fpq9ObNYavMIyXe5rmYWRmGLBNDw.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fpq9ObNYavMIyXe5rmYWRmGLBNDw.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fpq9ObNYavMIyXe5rmYWRmGLBNDw.png" /></a></p>
 <h2 id="_1">安装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>JupyterLab 可以通过 <code>conda</code> ， <code>pip</code> ， <code>pipenv</code> or <code>docker</code>  的方式安装。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># conda</span>
@@ -10274,10 +10274,10 @@ $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>a
 <span class="c1"># 启动 JupyterLab</span>
 $<span class="w"> </span>jupyter<span class="w"> </span>lab<span class="w"> </span>--ip<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">9090</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqhJp4xMpbPY3IB4o8VQOYW9RjPg.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="jupyterlab-with-ip.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqhJp4xMpbPY3IB4o8VQOYW9RjPg.png" /></a>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqhJp4xMpbPY3IB4o8VQOYW9RjPg.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="jupyterlab-with-ip.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqhJp4xMpbPY3IB4o8VQOYW9RjPg.png" /></a>
 JupyterLab 各种 Conda 环境与语言版本</p>
 <p>这样就可以在单一一个 JupyterLab 界面中同时使用不同 Conda 环境下的各种语言与版本了。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhU7QRtOnp-HFCm1VQwT1Mme44P3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="jupyterlab-multi-env.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhU7QRtOnp-HFCm1VQwT1Mme44P3.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhU7QRtOnp-HFCm1VQwT1Mme44P3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="jupyterlab-multi-env.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhU7QRtOnp-HFCm1VQwT1Mme44P3.png" /></a></p>
 <h2 id="_3">配置远程访问<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="1-ipython">1. 进入 ipython 环境，生成秘钥<a class="headerlink" href="#1-ipython" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># 假设你已经进入了ipython</span>
@@ -10308,7 +10308,7 @@ Writing<span class="w"> </span>default<span class="w"> </span>config<span class=
 <span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">allow_remote_access</span> <span class="o">=</span> <span class="kc">True</span>
 </code></pre></div>
 <p>接下来输入<code>jupyter lab</code> 就可以启动 jupyter-lab 服务啦！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtVANgfX9_hkr7wXWf9zHQgVOSMo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="jupyter-lab.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtVANgfX9_hkr7wXWf9zHQgVOSMo.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtVANgfX9_hkr7wXWf9zHQgVOSMo.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="jupyter-lab.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtVANgfX9_hkr7wXWf9zHQgVOSMo.png" /></a></p>
 <h2 id="_4">域名配置<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>JupyterLab 通过 nginx 转发的一个示例。</p>
 <div class="highlight"><pre><span></span><code><span class="vg">upstream</span><span class="w"> </span><span class="vg">jupyter</span><span class="w"> </span><span class="p">{</span>
@@ -10359,7 +10359,7 @@ Writing<span class="w"> </span>default<span class="w"> </span>config<span class=
 <span class="w">    </span><span class="vg">error_log</span><span class="w">   </span><span class="vg">logs</span><span class="o">/</span><span class="vg">jupyterlab_err</span><span class="o">.</span><span class="vg">log</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuau3xcI0zxDGpwoDM__RS-Xe-l5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="jupyterlab-domain.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuau3xcI0zxDGpwoDM__RS-Xe-l5.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuau3xcI0zxDGpwoDM__RS-Xe-l5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="jupyterlab-domain.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuau3xcI0zxDGpwoDM__RS-Xe-l5.png" /></a></p>
 <h2 id="_5">遇到的问题<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ol>
 <li>jupyter lab 启动的过程中，如果使用 &ndash;config=\~/.jupyter/jupyter_notebook_config.py 作为启动参数之一，会导致其他的 Conda 环境在 web 端消失，只剩下一个 Python 3 的 Notebook 和 Console，具体原因目前没搞明白。</li>
@@ -10409,7 +10409,7 @@ Writing<span class="w"> </span>default<span class="w"> </span>config<span class=
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

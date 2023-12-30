@@ -10153,7 +10153,7 @@ _tkinter<span class="w"> </span>
 <span class="n">top</span><span class="p">[</span><span class="s1">&#39;menu&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">menubar</span>
 <span class="n">top</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh22i487OzvY-uSXvAuFs6rEXXvu.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh22i487OzvY-uSXvAuFs6rEXXvu.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh22i487OzvY-uSXvAuFs6rEXXvu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh22i487OzvY-uSXvAuFs6rEXXvu.png" /></a></p>
 <p><strong>一些参考资料：</strong></p>
 <ul>
 <li>Python3.x 中文编码转换的问题：<a href="https://bbs.bccn.net/thread-479560-1-1.html">https://bbs.bccn.net/thread-479560-1-1.html</a></li>
@@ -10176,9 +10176,9 @@ _tkinter<span class="w"> </span>
 </blockquote>
 <p>Tcl 是&rdquo;工具控制语言（Tool Control Language）&rdquo;的缩写。Tk 是 Tcl &ldquo;图形工具箱&rdquo; 的扩展，它提供各种标准的 GUI 接口项，以利于迅速进行高级应用程序开发。</p>
 <p>tkinter 包（&rdquo;Tk 接口&rdquo;）是 Tk GUI 工具包的标准 Python 接口。 Tk 和  tkinter 在大多数 Unix 平台以及 Windows 系统上都可用（Tk 本身不是 Python 的一部分，它在 ActiveState 中维护）。您可以通过从命令行运行  <code>python -m tkinter</code>来检查  tkinter 是否已正确安装在系统上。如果已经安装该命令会打开一个简单的 Tk 界面，该界面除了让我们知道 tkinter 已正确安装，并且还显示安装了哪个版本的 Tcl/Tk，因此我们可以阅读特定于该版本的 Tcl/Tk 文档。</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWx6rSTKaQ1BXXPQJzchNbviKYd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWx6rSTKaQ1BXXPQJzchNbviKYd.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWx6rSTKaQ1BXXPQJzchNbviKYd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWx6rSTKaQ1BXXPQJzchNbviKYd.png" /></a></p>
 <p>如果  tkinter  没有安装，则会提示找不到该包（注意在 Python 2 中该包包名为 Tkinter，Python 3 中为 tkinter）：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrRwzLFA1tIq2VfwS4p7i0dVLTjP.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrRwzLFA1tIq2VfwS4p7i0dVLTjP.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrRwzLFA1tIq2VfwS4p7i0dVLTjP.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrRwzLFA1tIq2VfwS4p7i0dVLTjP.png" /></a></p>
 <p>接下来我们将尝试在 Python 2/3 中安装 Tcl/Tk，并重新编译 Python 2/3，已完成 Tkinter 安装（tkinter 为 Python 的标准库，标准库的安装需要重新编译 Python ？）。</p>
 <h2 id="activetcl">ActiveTcl 安装<a class="headerlink" href="#activetcl" title="Permanent link">&para;</a></h2>
 <p>ActiveTcl 是 ActiveState 发布的关于 Tcl/Tk 的发行版本，该发行版本包含了最新版本的 Tk 和 Tcl 程序，我们下载其免费的社区版本进行安装即可。</p>
@@ -10267,7 +10267,7 @@ cd Python-3.11.6
 /configure --prefix=/usr/local/software/python-3.11.6 ......
 make &amp;&amp; make install
 </code></pre></div></p>
-<p><a class="glightbox" href="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/python-3-tkinter.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="python3-confiigure-tkinter-yes" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/python-3-tkinter.png" /></a></p>
+<p><a class="glightbox" href="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/python-3-tkinter.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="python3-confiigure-tkinter-yes" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/python-3-tkinter.png" /></a></p>
 <h3 id="python-2">Python 2<a class="headerlink" href="#python-2" title="Permanent link">&para;</a></h3>
 <p>想要在 Python 2.7 安装 Tkinter，需要在编译过程中通过 <code>--with-tcltk-includes</code> 和 <code>--with-tcltk-libs</code> 中指定 ActiveTcl 的头文件以及库所在路径。</p>
 <p>如果在执行编译安装过程中，出现无法找到 libXss.so.1 共享动态库报错：</p>
@@ -10302,9 +10302,9 @@ running<span class="w"> </span>build_scripts
 </code></pre></div></p>
 <h2 id="tkinter">调用 Tkinter<a class="headerlink" href="#tkinter" title="Permanent link">&para;</a></h2>
 <p>Python 2 重新编译完后，执行<code>python2 -m Tkinter</code> 显示 Tk 的 ui 界面，以及相应的 Tcl/Tk 版本。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBtb14ZgZFZXIRhOdt6efbYz7fd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBtb14ZgZFZXIRhOdt6efbYz7fd.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBtb14ZgZFZXIRhOdt6efbYz7fd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBtb14ZgZFZXIRhOdt6efbYz7fd.png" /></a></p>
 <p>这时候，我们重新运行开头的 GUI 界面程序，可以看到中文已经正常显示：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqRHUXczPdHrQjFUXNQr_Cg_j2B4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqRHUXczPdHrQjFUXNQr_Cg_j2B4.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqRHUXczPdHrQjFUXNQr_Cg_j2B4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqRHUXczPdHrQjFUXNQr_Cg_j2B4.png" /></a></p>
 <h2 id="_2">参考资料<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>Download And Install Tcl: ActiveTcl，<a href="https://www.activestate.com/products/activetcl/downloads/">https://www.activestate.com/products/activetcl/downloads/</a>
 Installing Tk，<a href="https://tkdocs.com/tutorial/install.html">https://tkdocs.com/tutorial/install.html</a>
@@ -10330,7 +10330,7 @@ Python GUI 编程(Tkinter)文件对话框，<a href="https://my.oschina.net/u/22
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

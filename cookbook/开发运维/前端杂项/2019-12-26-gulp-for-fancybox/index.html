@@ -10066,7 +10066,7 @@
 <p>前不久，处理生信分析网页版自动化报告的时候就使用过 fancybox，今天在优化个人博客，为博文增加图片缩放效果，解决一些滚动条问题时，才从 fancybox 的 Github 源码中接触到 gulp —— 一个基于流的前端自动化构建工具，记录一下学习的过程。</p>
 <h2 id="1-fancybox">1. fancybox 简单介绍<a class="headerlink" href="#1-fancybox" title="Permanent link">&para;</a></h2>
 <p>关于 fancybox，其官网的介绍是：JavaScript lightbox library for presenting various types of media. Responsive, touch-enabled and customizable. 翻译过来就是，Fancybox 是一个 JavaScript 库，用于以优雅的方式呈现图像，视频和任何 HTML 内容。它具有您期望的所有功能——触摸启用，响应和完全可定制。我们来看一下 fancybox 官网提供的 demo 效果。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/lm6qacxnx4eYVOB5vgQoa3nl-ImJ.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="fancybox-demo-86.gif" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/lm6qacxnx4eYVOB5vgQoa3nl-ImJ.gif" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/lm6qacxnx4eYVOB5vgQoa3nl-ImJ.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="fancybox-demo-86.gif" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/lm6qacxnx4eYVOB5vgQoa3nl-ImJ.gif" /></a></p>
 <h2 id="2-fancybox">2. fancybox 的安装使用<a class="headerlink" href="#2-fancybox" title="Permanent link">&para;</a></h2>
 <p>我们这里所说的 fancybox，主要指的是它的 3.x 版本（即 fancybox3），网络上还有不少 1.x、2.x 的版本，我们不讨论。fancybox3 的使用很简单，只需要简单的 2 步。</p>
 <ol>
@@ -10104,7 +10104,7 @@
 <h2 id="4-gulp">4. Gulp 简单介绍<a class="headerlink" href="#4-gulp" title="Permanent link">&para;</a></h2>
 <p>Gulp 在官网的 title 是：用自动化构建工具增强你的工作流程，即一款基于流的前端自动化构建工具**。**作为前端的菜鸟，第一次听到这样的描述，是不是跟小编一样满头雾水？那么，下面摘录  segmentfault 前端分享专栏中《<a href="https://segmentfault.com/a/1190000007137199">gulp 前端构建工具白话讲解，也包含自己使用的一些心得体</a>》的一些回答，让大家直观了解一下。</p>
 <blockquote>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlGCZhuxcY6aND9Z8-2iFe2EsYDq.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlGCZhuxcY6aND9Z8-2iFe2EsYDq.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlGCZhuxcY6aND9Z8-2iFe2EsYDq.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlGCZhuxcY6aND9Z8-2iFe2EsYDq.png" /></a></p>
 <p>大家现在看到的这个图片是我使用 gulp 的一个基本的项目结构，而这边的 src 文件就是我们的源文件，dist 是通过 gulp 编译过后的文件（稍后会详细说明每一个文件的作用）。</p>
 <p><strong>现在请大家思考这样一个问题</strong></p>
 <ol>
@@ -10171,7 +10171,7 @@ $<span class="w"> </span>./node_modules/gulp/bin/gulp.js
 <span class="o">[</span><span class="m">11</span>:14:34<span class="o">]</span><span class="w"> </span>Starting<span class="w"> </span><span class="s1">&#39;default&#39;</span>...
 <span class="o">[</span><span class="m">11</span>:14:34<span class="o">]</span><span class="w"> </span>Finished<span class="w"> </span><span class="s1">&#39;default&#39;</span><span class="w"> </span>after<span class="w"> </span><span class="m">23</span><span class="w"> </span>μs
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsXa7tQEFSYvduI-37gPCncD900S.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsXa7tQEFSYvduI-37gPCncD900S.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsXa7tQEFSYvduI-37gPCncD900S.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsXa7tQEFSYvduI-37gPCncD900S.png" /></a></p>
 <p>最后，把编译后的 <code>dist/jquery.fancybox.min.js</code>  文件应用到博客或者其他网站页面，完成最后设置。</p>
 <h2 id="6">6. 几点总结<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <ul>
@@ -10227,7 +10227,7 @@ $<span class="w"> </span>./node_modules/gulp/bin/gulp.js
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

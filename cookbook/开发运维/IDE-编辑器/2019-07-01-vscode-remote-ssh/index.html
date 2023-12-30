@@ -9911,7 +9911,7 @@
 <li>Remote - WSL</li>
 </ul>
 <p>第一个是基于 SSH 的远程连接主机，第二个用于连接容器，第三个用于连接 WSL，也就是 Linux 子系统。在 <strong>Remote - SSH</strong>  插件的介绍中这样写到：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtTZMviUvX0VC5fzt-QqNSPKopWN.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtTZMviUvX0VC5fzt-QqNSPKopWN.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtTZMviUvX0VC5fzt-QqNSPKopWN.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtTZMviUvX0VC5fzt-QqNSPKopWN.png" /></a></p>
 <p>简单翻译一下就是：</p>
 <blockquote>
 <p>Remote - SSH 扩展允许您使用任何带有 SSH 服务器的远程计算机作为开发环境。由于几乎每个桌面和服务器操作系统都有可配置的 SSH 服务器，因此该扩展可以在各种情况下大大简化开发。
@@ -9928,36 +9928,36 @@
 <h1 id="remote-ssh">安装 **Remote-SSH **相关插件<a class="headerlink" href="#remote-ssh" title="Permanent link">&para;</a></h1>
 <p>截止 2019.06.26，<strong>Remote - SSH</strong>（预览版）已经可以在 VSCode 稳定版本中下载和安装使用了。安装步骤如下。</p>
 <p>打开安装好的 VSCode，然后在最左边的侧边栏中找到 Extensions 项，即扩展选项卡，并进入，然后再搜索窗口中输入：Remote - SSH（或者 ssh 关键字）。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FioQyhREZ8JkJzjJiLjTpIi9fKvU.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FioQyhREZ8JkJzjJiLjTpIi9fKvU.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FioQyhREZ8JkJzjJiLjTpIi9fKvU.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FioQyhREZ8JkJzjJiLjTpIi9fKvU.png" /></a></p>
 <p>找到所对应的插件之后，点击绿色的 &ldquo;<strong>Install(安装)</strong>&rdquo; 即可开始安装。稍等片刻，在安装完成之后，在侧边栏中会出现一个 <strong>Remote-SSh</strong> 选项卡，即表示安装成功。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj_kb_8AZReCeSAS8ruXXBANR2j2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj_kb_8AZReCeSAS8ruXXBANR2j2.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj_kb_8AZReCeSAS8ruXXBANR2j2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj_kb_8AZReCeSAS8ruXXBANR2j2.png" /></a></p>
 <h1 id="remote-ssh_1">利用 Remote-SSH 连接服务器<a class="headerlink" href="#remote-ssh_1" title="Permanent link">&para;</a></h1>
 <p>在安装完成之后，点击左侧的 Remote-SSH 选项卡，再将鼠标移向 CONNECTIONS 栏，点击出现的 configure：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiRbwerTS7xdAozjJGX3fkfecDEB.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiRbwerTS7xdAozjJGX3fkfecDEB.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiRbwerTS7xdAozjJGX3fkfecDEB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiRbwerTS7xdAozjJGX3fkfecDEB.png" /></a></p>
 <p>在 Select SSH configuration file to edit 中，选择第一项即可，开始对里面的内容进行编辑：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpZQA0eMxzdA7LIt7a0GlJGRf7rK.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpZQA0eMxzdA7LIt7a0GlJGRf7rK.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG5NrP6UsBrRnSXq6RqO2vtZQDs.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG5NrP6UsBrRnSXq6RqO2vtZQDs.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpZQA0eMxzdA7LIt7a0GlJGRf7rK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpZQA0eMxzdA7LIt7a0GlJGRf7rK.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG5NrP6UsBrRnSXq6RqO2vtZQDs.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG5NrP6UsBrRnSXq6RqO2vtZQDs.png" /></a></p>
 <p>在上图中为初始情况下的 .ssh 文件夹下的 config 文件中的内容，需要将其修改为所需要的内容，修改之后不要忘记保存（若 SSH 端口不是默认的 22，则还需加一行 Port）。</p>
 <p>**注意：**VSCode 的这个远程连接的插件是基于 OpenSSH 的，因此在本机需要装有 OpenSSH 的客户端，在服务器上也要装有 OpenSSH 的服务端，并且密钥文件已经放置在服务器中，即需要在 <code>cmd</code>  中可以直接通过命令 <code>ssh IP_ADDRESS -l USERNAME -p PORT</code> （其中 IP_ADDRESS、USERNAME、PORT 要修改为所需变量）连接的情况下，才可以通过这个插件连接到服务器。如果前面的这些配置还没有完成，VSCode 会报出以下错误：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmlRuiNu9SCeBGZfVb5rN5w7MoQb.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmlRuiNu9SCeBGZfVb5rN5w7MoQb.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmlRuiNu9SCeBGZfVb5rN5w7MoQb.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmlRuiNu9SCeBGZfVb5rN5w7MoQb.png" /></a></p>
 <h2 id="1-openssh">1. 安装  OpenSSH 客户端<a class="headerlink" href="#1-openssh" title="Permanent link">&para;</a></h2>
 <p>各个平台下 OpenSSH 客户端的安装参考 VSCode 官方文档《<a href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client">Installing a supported SSH client</a>》一节的内容。这里以 windows 7 为例，官方推荐：</p>
 <blockquote>
 <p>Install <a href="https://git-scm.com/download/win">Git for Windows</a> and select the <strong>Use Git and optional Unix tools from the Command Prompt</strong> option or manually add <code>C:\Program Files\Git\usr\bin</code> into your PATH.</p>
 </blockquote>
 <p>首先，安装  <a href="https://git-scm.com/download/win">Git for Windows</a>，安装过程中注意勾选 &ldquo;<strong>Use Git and optional Unix tools from the Command Prompt</strong>&ldquo;。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsJA94LK5FeLej-9HhwWuH0kM9R2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsJA94LK5FeLej-9HhwWuH0kM9R2.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsJA94LK5FeLej-9HhwWuH0kM9R2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsJA94LK5FeLej-9HhwWuH0kM9R2.png" /></a></p>
 <p>其次，git 安装完后， <code>bash</code> 、 <code>ssh</code> 、 <code>ssh-keygen</code>  等一些常用的 linux 命令工具都已经安装到  <code>C:\Program Files\Git\usr\bin</code>  下，我们需要把这个目录添加到 windows 的系统环境变量中（我的电脑 → 属性 → 高级系统设置 → 环境变量 →path）。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrHE6rQNoX0ApslYEI05BZQJ6XB.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrHE6rQNoX0ApslYEI05BZQJ6XB.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrHE6rQNoX0ApslYEI05BZQJ6XB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrHE6rQNoX0ApslYEI05BZQJ6XB.png" /></a></p>
 <p>第三，在 DOC 中测试 ssh 连接到远程服务器成功！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkRk0YhX6ckkcSYOlZQYTGofJGVa.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkRk0YhX6ckkcSYOlZQYTGofJGVa.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkRk0YhX6ckkcSYOlZQYTGofJGVa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkRk0YhX6ckkcSYOlZQYTGofJGVa.png" /></a></p>
 <h2 id="2-ssh-key">2. SSH KEY 配置<a class="headerlink" href="#2-ssh-key" title="Permanent link">&para;</a></h2>
 <ol>
 <li>创建本地机器的 ssh 公钥</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="n">ssh-keygen</span> <span class="n">-t</span> <span class="n">rsa</span> <span class="n">-b</span> <span class="n">4096</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirkYn9u8CbaQPU8MRRwf5T5LTHg.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirkYn9u8CbaQPU8MRRwf5T5LTHg.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirkYn9u8CbaQPU8MRRwf5T5LTHg.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirkYn9u8CbaQPU8MRRwf5T5LTHg.png" /></a></p>
 <ol>
 <li>把本地公钥拷贝至远程服务器，windows 下执行命令如下：</li>
 </ol>
@@ -9972,12 +9972,12 @@
 </ol>
 <h2 id="3-remote-ssh">3. 使用 Remote-SSH 连接远端服务器<a class="headerlink" href="#3-remote-ssh" title="Permanent link">&para;</a></h2>
 <p>回到 VSCode 中  Remote-SSH 选项卡，在  Select SSH configuration file to edit 中将 config 文件修改完成之后，&rdquo;Ctrl+s&rdquo; 保存可以看到，在下面出现了我们所配置的远程连接，这里显示的是我设置的名称：&rdquo;<strong>GalaxyServer</strong>&ldquo;，即 Galaxy 在线生信分析平台的服务器，然后点击 &ldquo;<strong>GalaxyServer</strong>&rdquo; 右侧的连接按钮(图中箭头所指），便会弹出一个新的窗口，在新的窗口中选择打开文件夹，便可以看到，这个窗口中的打开的便是服务器中的文件了，接下来便可以访问服务器中的文件并远程修改了。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FonOgUdX0QYBvzv_uTs3556jXekf.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FonOgUdX0QYBvzv_uTs3556jXekf.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvNza0Vgksbe6XLmG9YVZd-hYnKw.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvNza0Vgksbe6XLmG9YVZd-hYnKw.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FonOgUdX0QYBvzv_uTs3556jXekf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FonOgUdX0QYBvzv_uTs3556jXekf.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvNza0Vgksbe6XLmG9YVZd-hYnKw.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvNza0Vgksbe6XLmG9YVZd-hYnKw.png" /></a></p>
 <p>更多详细的 Remote SSH 的说明与使用配置，参考官方文档：《<a href="https://code.visualstudio.com/docs/remote/ssh">Remote Development using SSH</a>》。</p>
 <h2 id="4-remote-ssh">4. 在 Remote-SSH 中使用终端<a class="headerlink" href="#4-remote-ssh" title="Permanent link">&para;</a></h2>
 <p>Remote SSH 还有个强大的功能，就是在添加了工作区文件夹后，可以直接在 VSCode 上使用终端，执行远程 Linux 的命令：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjEZ5Awz4zDccUlJo02zfvbLTdXV.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjEZ5Awz4zDccUlJo02zfvbLTdXV.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjEZ5Awz4zDccUlJo02zfvbLTdXV.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjEZ5Awz4zDccUlJo02zfvbLTdXV.png" /></a></p>
 <p>以上就是 Visual Studio Code 上关于 Remote SSH 插件的一些简单安装、配置和使用心得体验，喜欢使用 VSCode 的童鞋可以去尝试一下。</p>
 
 
@@ -9999,7 +9999,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

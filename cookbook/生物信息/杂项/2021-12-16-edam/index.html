@@ -10044,11 +10044,11 @@
 </blockquote>
 <h1 id="edam">EDAM<a class="headerlink" href="#edam" title="Permanent link">&para;</a></h1>
 <p>EDAM 是生物医学领域研究除 GO、OBI 以外的又一个例子，个人最开始是从 Galaxy Project 了解得到，EDAM 在 Galaxy 项目中主要用于解决海量生物医学工具在 Galaxy 平台面板中分类不统一，用户难以查找的难题而被纳入使用。最早在 Galaxy Release 21.09 版本中上线（<a href="https://www.yuque.com/shenweiyan/biox/release-21.09?view=doc_embed">Galaxy Release (v 21.09)，新的工具面板视图</a>）。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv6PvOlE9Mfam6G836k_f-0v-yfc.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="galaxy-edam.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv6PvOlE9Mfam6G836k_f-0v-yfc.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv6PvOlE9Mfam6G836k_f-0v-yfc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="galaxy-edam.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv6PvOlE9Mfam6G836k_f-0v-yfc.png" /></a></p>
 <h2 id="_5">简介<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>EDAM - Ontology of bioscientific data analysis and data management，是一个全面的本体论，包含了在生物科学数据分析和数据管理(包括计算生物学、生物信息学和生物图像信息学)中广泛存在的既定的、熟悉的概念。EDAM 包括与生命科学中的数据分析和数据管理相关的主题（topics）、操作（operations）、数据类型（types of data）和数据标识符（data identifiers）以及数据格式（data formats）。EDAM 提供了一组包含首选术语和同义词、相关术语、定义和其他信息的概念，组织成一个简单直观的层次结构，以方便使用（见下图）。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FocvwtruP49TGXYE3hvJOQ8AzVt5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FocvwtruP49TGXYE3hvJOQ8AzVt5.png" /></a>
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnD1uGI1VLNhgjvfSlq0hPukz02k.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnD1uGI1VLNhgjvfSlq0hPukz02k.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FocvwtruP49TGXYE3hvJOQ8AzVt5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FocvwtruP49TGXYE3hvJOQ8AzVt5.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnD1uGI1VLNhgjvfSlq0hPukz02k.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnD1uGI1VLNhgjvfSlq0hPukz02k.png" /></a></p>
 <h2 id="biotools">Bio.Tools<a class="headerlink" href="#biotools" title="Permanent link">&para;</a></h2>
 <p>EDAM 目前包含了一下几个子项目，Galaxy Project 的工具面板正好是使用了 <a href="https://bioportal.bioontology.org/projects/Bio.Tools">Bio.Tools</a> 这一本体库。</p>
 <ul>
@@ -10068,7 +10068,7 @@
 <p><strong>Everything from simple command-line tools and online services, through to databases and complex, multi-functional analysis workflows is included. Resources are described in a rigorous semantics and syntax, providing end-users with the convenience of concise, consistent and therefore comparable information.</strong></p>
 <p>Each bio.tools entry is assigned a human-readable, unique identifier based on the resource name, e.g. <a href="https://bio.tools/signalp">biotools:signalp</a>. These identifiers provide a persistent reference to our &ldquo;Tool Cards&rdquo; of essential information, as well as a means to trace resources and integrate bio.tools data with other resources.</p>
 <p>每个 bio.tools 条目都会根据资源名称分配一个人类可读的唯一标识符，例如 <a href="https://bio.tools/signalp">biotools: signalp</a>（或者 <a href="https://bio.tools/samtools">biotools: ssamtools</a>）。这些标识符提供了对基本信息的“工具卡”的持久引用，以及跟踪资源并将 bio.tools 数据与其他资源集成的手段。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiL0wmF9y1fCbNfxg1rT5Db25LZz.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiL0wmF9y1fCbNfxg1rT5Db25LZz.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiL0wmF9y1fCbNfxg1rT5Db25LZz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiL0wmF9y1fCbNfxg1rT5Db25LZz.png" /></a></p>
 <p>All the bio.tools data and technical components are available under open license and we warmly welcome you to <a href="https://biotools.readthedocs.io/en/latest/what_is_biotools.html#getting-involved-a-quick-start-guide">get involved</a>.</p>
 <p>所有的生物工具数据和技术组件都是开放许可的，此外，Bio.Tools 是由 ELIXIR 通过 ELIXIR-exgelerate 补助金支持的，该补助金由欧盟的 European Union Horizon 2020 项目根据补助金协议 <a href="https://cordis.europa.eu/project/rcn/198519_en.html">676559</a> 资助。</p>
 <h1 id="_6">总结<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
@@ -10094,7 +10094,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

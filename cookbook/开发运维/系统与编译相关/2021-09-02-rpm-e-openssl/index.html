@@ -9899,19 +9899,19 @@
 <p>最开始是想安装 Bioconductor 中的 <strong>minfi</strong>（<a href="https://github.com/hansenlab/minfi">https://github.com/hansenlab/minfi</a>） 这个 R 包，但是发现不管是 <strong>conda</strong> 还是 <strong>BiocManager::install(&ldquo;minfi&rdquo;)</strong> 总不能成功，依赖包贼多不说，有些依赖包还特别坑爹。</p>
 <p>首先要说的是 <strong>sparseMatrixStats</strong>（<a href="https://github.com/const-ae/sparseMatrixStats">https://github.com/const-ae/sparseMatrixStats</a>），虽然这个包比较坑，但作者起码在 GitHub 上给出了说明和解决方法。</p>
 <p>最坑的应该是一个叫 <strong>rhdf5filters</strong>（<a href="https://github.com/grimbough/rhdf5filters">https://github.com/grimbough/rhdf5filters</a>）的 R 包，费劲了九牛二虎之力都搞不定，尤其是在 GCC-4.8.5 编译器下有人说 &ldquo;assume it is just obsolete compiler&rdquo;，让我感觉到我的 CentOS-6.5 +gcc-4.8.5 想要安装好它基本是没戏了！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoOXwmZROQd1XwDFz-4mtZ1pi1pd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoOXwmZROQd1XwDFz-4mtZ1pi1pd.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoOXwmZROQd1XwDFz-4mtZ1pi1pd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoOXwmZROQd1XwDFz-4mtZ1pi1pd.png" /></a></p>
 <p>几经折腾，虽然最终在 R-3.4 中倒腾成功了，但是对于 R&gt;=3.5 总是耿耿于怀想再尝试一下（不见棺材不落泪 😭😭😭），结合到前几天看到的 <strong>devtoolset</strong>，于是想着去折腾一下。</p>
 <p>有时候现实就是这么残酷，摩拳擦掌蠢蠢欲试，有时候结果会让你直接吐血——在安装 devtoolset 的时候总发现有这么一条重复出现且让人讨厌的 openssl 错误信息：</p>
 <p>:::warning
 **** Found 1 pre-existing rpmdb problem(s), &lsquo;yum check&rsquo; output follows:**
 <strong>openssl-1.0.1e-57.el6.x86_64 is a duplicate with openssl-1.0.1e-15.el6.x86_64</strong>
 :::
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fnp6xcyM-ONQ59j7zXvNHfjROnQF.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fnp6xcyM-ONQ59j7zXvNHfjROnQF.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fnp6xcyM-ONQ59j7zXvNHfjROnQF.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fnp6xcyM-ONQ59j7zXvNHfjROnQF.png" /></a>
 初生牛犊不怕虎（其实当时应该先谷歌一下能不能卸载 😳😳😳），也没想太多于是就把重复的 openssl-1.0.1e-57.el6.x86_64 卸载了！！！
 :::warning
 $ <strong>rpm -e openssl-1.0.1e-57.el6.x86_64</strong>
 :::
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkiSscAxEaz0nSb3OSipjfFB3PVH.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkiSscAxEaz0nSb3OSipjfFB3PVH.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkiSscAxEaz0nSb3OSipjfFB3PVH.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkiSscAxEaz0nSb3OSipjfFB3PVH.png" /></a>
 接下来，惊魂的酸爽时刻来了：</p>
 <ol>
 <li><strong>yum</strong> 不能用了，开始提示 libssl.so.10 不存在！</li>
@@ -10039,14 +10039,14 @@ POD<span class="w"> </span>document<span class="w"> </span>had<span class="w"> <
 make:<span class="w"> </span>***<span class="w"> </span><span class="o">[</span>install_docs<span class="o">]</span><span class="w"> </span>Error<span class="w"> </span><span class="m">1</span>
 </code></pre></div>
 <p>其实，<strong>make 这一步已经在当前目录（注意是当前执行编译的目录）生成我们想要的 libssl.so.1.0.0 和 libcrypto.so.1.0.0 了</strong>！！！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj77r67kKv8Saz7Y-KkWlJjoJPXH.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj77r67kKv8Saz7Y-KkWlJjoJPXH.png" /></a>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj77r67kKv8Saz7Y-KkWlJjoJPXH.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj77r67kKv8Saz7Y-KkWlJjoJPXH.png" /></a>
 第五，把这两个文件 <strong>ln -s</strong> 到 <strong>/usr/lib64</strong>，神奇的发现 yum 居然恢复正常了，虽然 SSH 还是不能登录。</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@log01<span class="w"> </span>lib64<span class="o">]</span><span class="c1"># ln -s /home/bioadmin/src/openssl-1.0.1e/libssl.so.1.0.0 /usr/lib64/libssl.so.10</span>
 <span class="o">[</span>root@log01<span class="w"> </span>lib64<span class="o">]</span><span class="c1"># ln -s /home/bioadmin/src/openssl-1.0.1e/libcrypto.so.1.0.0 /usr/lib64/libcrypto.so.10</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fls9aK8rtEOM2EMkiuKRWgcRN_aj.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fls9aK8rtEOM2EMkiuKRWgcRN_aj.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fls9aK8rtEOM2EMkiuKRWgcRN_aj.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fls9aK8rtEOM2EMkiuKRWgcRN_aj.png" /></a></p>
 <p>最后，尝试着使用 <strong>yum</strong> 把 <strong>openssl</strong> 重新安装一下。这一次发现，一切都恢复正常了！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlR7XtilMiDQqHBm5laTX7qrvGj9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlR7XtilMiDQqHBm5laTX7qrvGj9.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlR7XtilMiDQqHBm5laTX7qrvGj9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlR7XtilMiDQqHBm5laTX7qrvGj9.png" /></a></p>
 <p><strong>参考资料：</strong></p>
 <ol>
 <li>程序员宅基地，《<a href="https://www.cxyzjd.com/article/baidu_33864675/93332571">Centos6 卸载 OpenSSL 后重装提示 libssl.so.10: cannot open shared object file: No such file or directory</a>》，<a href="https://www.cxybb.com/">程序员宝宝</a></li>
@@ -10074,7 +10074,7 @@ make:<span class="w"> </span>***<span class="w"> </span><span class="o">[</span>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

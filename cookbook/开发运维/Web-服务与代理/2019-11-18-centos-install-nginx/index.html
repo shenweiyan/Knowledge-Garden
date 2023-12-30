@@ -10221,7 +10221,7 @@ useradd<span class="w"> </span>nginx<span class="w"> </span>-g<span class="w"> <
 </code></pre></div>
 <h3 id="22">2.2 下载解压<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
 <p>Nginx 的下载地址在：<a href="http://nginx.org/en/download.html">http://nginx.org/en/download.html</a>，我们推荐下载  Stable 的稳定版本。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk-UCu4rvnkkZA3nRizwZ-CJiSfX.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="nginx-download.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk-UCu4rvnkkZA3nRizwZ-CJiSfX.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk-UCu4rvnkkZA3nRizwZ-CJiSfX.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="nginx-download.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk-UCu4rvnkkZA3nRizwZ-CJiSfX.png" /></a></p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>http://nginx.org/download/nginx-1.18.0.tar.gz
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>nginx-1.18.0.tar.gz
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>nginx-1.18.0
@@ -10409,10 +10409,10 @@ Configuration<span class="w"> </span>summary
 <p>使用下面的命令执行测试：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>curl<span class="w"> </span>localhost
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlzwvP17jTxavBAndazgmWoFGYQE.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="nginx-curl-localhost.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlzwvP17jTxavBAndazgmWoFGYQE.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlzwvP17jTxavBAndazgmWoFGYQE.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="nginx-curl-localhost.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlzwvP17jTxavBAndazgmWoFGYQE.png" /></a></p>
 <p>若返回类似如上的结果，证明已成功启动。其实，上面返回的是目录<code>/Nginx/html/</code>下的<code>index.html</code>文件，可以使用<code>cat /Nginx/html/index.html</code>命令进行验证。</p>
 <p>若是有图形界面，在浏览器访问 <a href="https://links.jianshu.com/go?to=localhost">localhost</a> 或者你本机的公网 ip，可以看到类似下图的页面：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg8DlX9CsT8zQEpdzOBtLnS8lMaM.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="welcome-to-nginx.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg8DlX9CsT8zQEpdzOBtLnS8lMaM.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg8DlX9CsT8zQEpdzOBtLnS8lMaM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="welcome-to-nginx.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg8DlX9CsT8zQEpdzOBtLnS8lMaM.png" /></a></p>
 <h2 id="_4">四、常用命令<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>附上一些 nginx 的常用命令。</p>
 <div class="highlight"><pre><span></span><code>nginx<span class="w">                   </span><span class="c1"># 启动nginx</span>
@@ -10446,7 +10446,7 @@ nginx<span class="w"> </span>-h<span class="w">                </span><span clas
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

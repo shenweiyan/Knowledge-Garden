@@ -9974,7 +9974,7 @@
   <h1>为什么 Biopython 的在线 BLAST 这么慢？</h1>
 
 <p>用过网页版本 BLAST 的童鞋都会发现，提交的序列比对往往在几分钟，甚至几十秒就可以得到比对的结果；而通过调用 API 却要花费几十分钟或者更长的时间！这到底是为什么呢？
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm0tIZZDylBAvcBlSTvd_01Oh-yA.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="ncbi_blast.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm0tIZZDylBAvcBlSTvd_01Oh-yA.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm0tIZZDylBAvcBlSTvd_01Oh-yA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ncbi_blast.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm0tIZZDylBAvcBlSTvd_01Oh-yA.png" /></a></p>
 <h2 id="ncbiwww">NCBIWWW 基本用法<a class="headerlink" href="#ncbiwww" title="Permanent link">&para;</a></h2>
 <p>首先，我们来看一下提供了基于 API 在线比对的  <code>Biopython</code> 模块。</p>
 <p><code>Biopython</code> 中的 BLAST 提供了  over the Internet 和 locally 两种选择：<code>Bio.Blast.NCBIWWW</code> 主要是基于 NCBI BLAST API 用于在线比对；<code>Bio.Blast.Applications</code> 模块则是调用本地安装好的 BLAST 程序以及数据库执行比对。在这里我们来重点看一下  <code>Bio.Blast.NCBIWWW</code> 。</p>
@@ -10064,7 +10064,7 @@
 <p>现在我们已经将 BLAST 结果重新放回了句柄中，下一步，如果我们准备对它们进行处理，我们可以参考 Biopython 中 <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:parsing-blast">Parsing BLAST output</a> 部分的内容，这里不再说明。</p>
 <h2 id="ncbiwww_1">NCBIWWW 实现<a class="headerlink" href="#ncbiwww_1" title="Permanent link">&para;</a></h2>
 <p>在了解  NCBIWWW 的实现前，我们先来看一下 NCBI BLAST 对于 API 使用 <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=DeveloperInfo">Overview — BLASTHelp  documentation</a> 的一些说明：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBJQE8WrsY1EPlHMljkXOyCmKih.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="biopython.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBJQE8WrsY1EPlHMljkXOyCmKih.png" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBJQE8WrsY1EPlHMljkXOyCmKih.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="biopython.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBJQE8WrsY1EPlHMljkXOyCmKih.png" /></a></p>
 <ul>
 <li>NCBI BLAST 服务器是共享资源。为了确保整个社区都能使用该服务，他们可能会限制某些高流量用户的搜索。</li>
 <li>他们会将在 24 小时内提交 100 次以上搜索的用户的搜索移到较慢的队列中，或者在极端情况下将阻止请求。</li>
@@ -10078,7 +10078,7 @@
 <li>如果将提交超过 50 个搜索，则在周末或东部时间东部时间晚上 9 点至凌晨 5 点之间运行脚本。</li>
 </ul>
 <p>我们再来看一下  NCBIWWW 在源码层面的处理：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpX7eRpUzLiJEZ2wRJ41evQhiYmj.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpX7eRpUzLiJEZ2wRJ41evQhiYmj.png" /></a></p>
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpX7eRpUzLiJEZ2wRJ41evQhiYmj.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpX7eRpUzLiJEZ2wRJ41evQhiYmj.png" /></a></p>
 <p>可以看到  NCBIWWW 从 20 秒的延迟开始，然后开始每隔一分钟执行一次 request  轮询，直至任务完成或者任务出现异常。</p>
 <p>所以，总的来说，NCBI BLAST API 的使用准则，加上  NCBI BLAST 对用户请求的任务队列处理，甚至  NCBI BLAST 服务器共享资源的限制，以及总用户请求数，这些都可能成为  <code>NCBIWWW.qblast()</code> 异常耗时的原因，这其中还不算个人服务器的网络影响。综上种种原因，如果考虑使用  <code>NCBIWWW.qblast()</code>  执行频繁的序列在线批处理，或许不是一个好的解决方案。</p>
 <p>最后，基于 Python 的 NCBI BLAST 在线批处理，如果你有更好的方法，欢迎留言交流。</p>
@@ -10102,7 +10102,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     

@@ -9994,14 +9994,14 @@ cp: cannot stat `03.2.Peak_mrg/*/*_treat_minus_control.sort.norm.bw&#39;: No suc
 cp: cannot stat `03.3.Peak_idr/*/*.conservative.regionPeak.gz*&#39;: No such file or directory
 cp: cannot stat `StatInfo/*&#39;: No such file or directory
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirC_PY6pW40EQs1hqCu1MTHyX2I.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="docker-error.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirC_PY6pW40EQs1hqCu1MTHyX2I.jpeg" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirC_PY6pW40EQs1hqCu1MTHyX2I.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="docker-error.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirC_PY6pW40EQs1hqCu1MTHyX2I.jpeg" /></a></p>
 <p>出于学习和折腾，针对这个问题，个人在 <strong>hubq/tanginstall:latest</strong> 的镜像基础上做了一点小调整，并重新打包成一个名为 <strong>shenweiyan/tanginstall:latest</strong> 的新镜像 push 到了 Docker Hub，抛砖引玉，供大家学习参考。</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgSRFBvzOjGE7lr9xgQZ-TesY5oP.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="docker-chip.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgSRFBvzOjGE7lr9xgQZ-TesY5oP.jpeg" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgSRFBvzOjGE7lr9xgQZ-TesY5oP.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="docker-chip.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgSRFBvzOjGE7lr9xgQZ-TesY5oP.jpeg" /></a></p>
 <p>简单说一下这个镜像的几点细节。</p>
 <ol>
 <li>
 <p>整个镜像体积比较大，总共约 7.37GB，pull 下来可能比较慢。</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu0orywtHuCSuf_-s0aSQ56KK_VN.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="docker-images.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu0orywtHuCSuf_-s0aSQ56KK_VN.jpeg" /></a></p>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu0orywtHuCSuf_-s0aSQ56KK_VN.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="docker-images.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu0orywtHuCSuf_-s0aSQ56KK_VN.jpeg" /></a></p>
 </li>
 <li>
 <p>如果没有 ref（hg19/hg38 or mm9/mm10），镜像执行过程中会首先执行下载，然后拆分合并，建立 index。</p>
@@ -10170,7 +10170,7 @@ wget http://hgdownload.soe.ucsc.edu/goldenPath/${ref}/database/rmsk.txt.gz
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-12-30</span>
   </span>
 
     
