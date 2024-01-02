@@ -27,7 +27,7 @@
     
     
       
-        <title>Python 获取 NCBI 基因名 SSL 证书出现异常？ - 维燕的知识花园</title>
+        <title>Python 获取 NCBI 基因名 SSL 证书出现异常 - 维燕的知识花园</title>
       
     
     
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python 获取 NCBI 基因名 SSL 证书出现异常？
+              Python 获取 NCBI 基因名 SSL 证书出现异常
             
           </span>
         </div>
@@ -710,7 +710,7 @@
           
   
   <span class="md-ellipsis">
-    Python 获取 NCBI 基因名 SSL 证书出现异常？
+    Python 获取 NCBI 基因名 SSL 证书出现异常
   </span>
   
 
@@ -721,7 +721,7 @@
         
   
   <span class="md-ellipsis">
-    Python 获取 NCBI 基因名 SSL 证书出现异常？
+    Python 获取 NCBI 基因名 SSL 证书出现异常
   </span>
   
 
@@ -9917,7 +9917,7 @@
   
 
 
-  <h1>Python 获取 NCBI 基因名 SSL 证书出现异常？</h1>
+  <h1>Python 获取 NCBI 基因名 SSL 证书出现异常</h1>
 
 <p>源自于前几天对一批转录本的批量化操作的一些记录。</p>
 <p>即想要通过 Python 在线获取某个转录本对应的基因 Symbol 时，发现出现 SSL 无法获取本地证书：<strong>unable to get local issuer certificate (_ssl.c:1056)</strong>！</p>
@@ -9970,7 +9970,7 @@
     <span class="k">raise</span> <span class="n">URLError</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
 <span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">URLError</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">urlopen</span> <span class="n">error</span> <span class="p">[</span><span class="n">SSL</span><span class="p">:</span> <span class="n">CERTIFICATE_VERIFY_FAILED</span><span class="p">]</span> <span class="n">certificate</span> <span class="n">verify</span> <span class="n">failed</span><span class="p">:</span> <span class="n">unable</span> <span class="n">to</span> <span class="n">get</span> <span class="n">local</span> <span class="n">issuer</span> <span class="n">certificate</span> <span class="p">(</span><span class="n">_ssl</span><span class="o">.</span><span class="n">c</span><span class="p">:</span><span class="mi">1056</span><span class="p">)</span><span class="o">&gt;</span>
 </code></pre></div>
-<p>根据网络上的解析，当使用 <strong>urllib.urlope</strong>n 打开一个 https 链接时，会验证一次 SSL 证书。而当目标网站使用的是自签名的证书时就会抛出如下异常：</p>
+<p>根据网络上的解析，当使用 <strong>urllib.urlopen</strong> 打开一个 https 链接时，会验证一次 SSL 证书。而当目标网站使用的是自签名的证书时就会抛出如下异常：</p>
 <p><strong>ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)</strong></p>
 <p>解决方法也很简单，下面是个人简单总结的 3 种常用解决方法。</p>
 <h3 id="_1">方法一，全局取消证书验证<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
@@ -9985,9 +9985,9 @@
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">ssl</span><span class="o">.</span><span class="n">get_default_verify_paths</span><span class="p">())</span>
 <span class="n">DefaultVerifyPaths</span><span class="p">(</span><span class="n">cafile</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">capath</span><span class="o">=</span><span class="s1">&#39;/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/certs&#39;</span><span class="p">,</span> <span class="n">openssl_cafile_env</span><span class="o">=</span><span class="s1">&#39;SSL_CERT_FILE&#39;</span><span class="p">,</span> <span class="n">openssl_cafile</span><span class="o">=</span><span class="s1">&#39;/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/cert.pem&#39;</span><span class="p">,</span> <span class="n">openssl_capath_env</span><span class="o">=</span><span class="s1">&#39;SSL_CERT_DIR&#39;</span><span class="p">,</span> <span class="n">openssl_capath</span><span class="o">=</span><span class="s1">&#39;/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/certs&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p>由于在 <strong>openssl_cafile</strong> 中指定的 ca 文件（<strong>cert.pem</strong>）不存在，所以导致上面的错误。</p>
+<p>由于在 <strong>openssl_cafile</strong> 中指定的 CA 文件（<strong>cert.pem</strong>）不存在，所以导致上面的错误。</p>
 <ol>
-<li>下载 ca 文件，将下载的 ca 文件放到 <strong>openssl_cafile</strong> 指定位置。注意，如果放到 **openssl_capath **目录下还会出现类似的问题，一定要放到 <strong>openssl_cafile</strong> 指定的位置。</li>
+<li>下载 CA 文件，将下载的 CA 文件放到 <strong>openssl_cafile</strong> 指定位置。注意，如果放到 <strong>openssl_capath</strong> 目录下还会出现类似的问题，一定要放到 <strong>openssl_cafile</strong> 指定的位置。</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">cd</span> <span class="o">/</span><span class="n">Bioinfo</span><span class="o">/</span><span class="n">Pipeline</span><span class="o">/</span><span class="n">SoftWare</span><span class="o">/</span><span class="n">LibDependence</span><span class="o">/</span><span class="n">openssl</span><span class="o">-</span><span class="mf">1.1.1</span><span class="o">/</span><span class="n">ssl</span>
 <span class="err">$</span> <span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">curl</span><span class="o">.</span><span class="n">haxx</span><span class="o">.</span><span class="n">se</span><span class="o">/</span><span class="n">ca</span><span class="o">/</span><span class="n">cacert</span><span class="o">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">O</span> <span class="n">cert</span><span class="o">.</span><span class="n">pem</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">check</span><span class="o">-</span><span class="n">certificate</span>
