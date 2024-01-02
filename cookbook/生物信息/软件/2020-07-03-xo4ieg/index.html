@@ -980,7 +980,7 @@
         
   
   <span class="md-ellipsis">
-    为什么 Biopython 的在线 BLAST 这么慢？
+    为什么 Biopython 的在线 BLAST 这么慢
   </span>
   
 
@@ -1213,7 +1213,7 @@
         
   
   <span class="md-ellipsis">
-    折腾了一天，终于把这个 R 包装上了
+    这个 R 包折腾了一天终于安装上了
   </span>
   
 
@@ -9960,7 +9960,7 @@
 </blockquote>
 <p>SCI 期刊对分辨率大多都有一定的要求，例如一段来自 Elsevier 旗下期刊的稿约：</p>
 <blockquote>
-<p>**Formats **</p>
+<p><strong>Formats</strong></p>
 <ul>
 <li>If your electronic artwork is created in a Microsoft Office application (Word, PowerPoint, Excel) then please supply &lsquo;as is&rsquo; in the native document format.</li>
 <li>Regardless of the application used other than Microsoft Office, when your electronic artwork is finalized, please &lsquo;Save as&rsquo; or convert the images to one of the following formats (note the resolution requirements for line drawings, halftones, and line/halftone combinations given below):</li>
@@ -9991,8 +9991,11 @@
 <p>作为小白，如果你第一次看到这些信息，是不是很懵？像素、分辨率、dpi、ppi 这些都是什么鬼？下面，我们来聊一下这些容易混淆的概念，顺便讲点图像大小和印刷输出的一些基本知识。</p>
 <h2 id="1">1. 关于像素<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <p>像素是图像显示的基本单位，它可以表示图形尺寸的大小。</p>
-<p>像素主要是相对位图而言的，无论其格式是哪种，只要是位图如果不停放大，最终你都会看到图片实际上都是以一个个的彩色方块相互堆叠而成，这样的一个彩色方块就是一个像素，英文名为 Pixel，简写为 PX。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpW2jx5Or4xHmxLR7Ans5pOj5qOa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpW2jx5Or4xHmxLR7Ans5pOj5qOa.png" /></a></p>
+<p>像素主要是相对位图而言的，无论其格式是哪种，只要是位图如果不停放大，最终你都会看到图片实际上都是以一个个的彩色方块相互堆叠而成，这样的一个彩色方块就是一个像素，英文名为 Pixel，简写为 PX。</p>
+<p align="center">
+    <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpW2jx5Or4xHmxLR7Ans5pOj5qOa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpW2jx5Or4xHmxLR7Ans5pOj5qOa.png" alt='像素'></a><br>
+</p>
+
 <h2 id="2-dpi">2. 关于分辨率和 DPI<a class="headerlink" href="#2-dpi" title="Permanent link">&para;</a></h2>
 <p>提起分辨率，我们需要了解两个概念，图像分辨率和输出分辨率。</p>
 <p>图像分辨率的基本计量单位是每英寸的像素数，简写为 ppi。一张图的分辨率是用横向像素量 x 纵向像素量来表示，比如 640×480 像素、1280×960 像素等，一张分辨率为 640 x 480 的图片它的分辨率就达到了 307,200 像素，也就是我们常说的 30 万像素;而一张分辨率为 1600 x 1200 的图片，它的像素就是 200 万。图片的分辨率和图片的宽、高尺寸一起决定了图像文件的大小及图像质量。比如，一幅图宽 12 英寸、高 6 英寸，分辨率为 66PPI，如果保持图像文件的大小不变，也就是总的像素数不变，将分辨率降为 33PPI，在宽高比不变的情况下，图像的宽将变为 24 英寸、高将变为 12 英寸。
@@ -10004,64 +10007,76 @@
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fs0G63wiyZcjlbCQQOJr7bh9MXxW.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图像分辨率对照表.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fs0G63wiyZcjlbCQQOJr7bh9MXxW.png" /></a></p>
 <p>从技术角度说，“像素”只存在于电脑显示领域，而“点”只出现于打印或印刷领域。对电脑显示屏，分辨率是用像素数目衡量;对数字文件印刷，分辨率是通常用每英寸所含点或像素〔dpi〕来衡量。</p>
 <h2 id="3-dpi">3. 相同的分辨率，更高的 DPI 表现为物理尺寸更小<a class="headerlink" href="#3-dpi" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fi-4JSWW1z88XPAY0OtvShNlWljN.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-1.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fi-4JSWW1z88XPAY0OtvShNlWljN.png" /></a>
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoqHtQCddg97JfCM3gzgICM39CkK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-2.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoqHtQCddg97JfCM3gzgICM39CkK.png" /></a>
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fi-4JSWW1z88XPAY0OtvShNlWljN.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-1.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fi-4JSWW1z88XPAY0OtvShNlWljN.png" /></a>  <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoqHtQCddg97JfCM3gzgICM39CkK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-2.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoqHtQCddg97JfCM3gzgICM39CkK.png" /></a>  <br />
 在这里，右图中的像素跟左边的原始图像是一样，我们将 DPI 值从 72 提高到了 300，效果是每英寸现在有更多的点，但是由于构成图像的总像素数没有变化，所以数学上表现的是图像变小，构成图像的每个像素变得更小。</p>
-<p>以简化的图像表达就是：
+<p>以简化的图像表达就是：  <br />
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FszZTCCvOBe-NcaE2N3MgVJO9m7R.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-3.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FszZTCCvOBe-NcaE2N3MgVJO9m7R.png" /></a></p>
 <h2 id="4-dpi">4. 物理尺寸相同，DPI 较低表现为较低的分辨率<a class="headerlink" href="#4-dpi" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoLUNgtUAjC8RsaEj204MUtwQ3tz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-a.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoLUNgtUAjC8RsaEj204MUtwQ3tz.png" /></a>
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtQWH2FpCBvxqYND2lCpWsTuu5ii.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-b.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtQWH2FpCBvxqYND2lCpWsTuu5ii.png" /></a></p>
-<p>简单的来说，图像分辨率(每英寸像素数)和 DPI (每英寸点数)两者相互影响，这点希望你得搞清楚。
+<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoLUNgtUAjC8RsaEj204MUtwQ3tz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-a.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoLUNgtUAjC8RsaEj204MUtwQ3tz.png" /></a>  <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtQWH2FpCBvxqYND2lCpWsTuu5ii.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-b.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtQWH2FpCBvxqYND2lCpWsTuu5ii.png" /></a>     </p>
+<p>简单的来说，图像分辨率(每英寸像素数)和 DPI (每英寸点数)两者相互影响，这点希望你得搞清楚。   <br />
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiGNzn4C-GEjPc-FvK3p_4FwHKSf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="px-dpi-c.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiGNzn4C-GEjPc-FvK3p_4FwHKSf.png" /></a></p>
-<h2 id="5">5. <strong>修改图片分辨率</strong><a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<p>**
-把基本的一些概念搞清楚，明确图片的要求后，接下来就是动手操作的时候了。这里参考的是筑研医学公众号《<a href="https://mp.weixin.qq.com/s/F6yDgJ0tz9Wttn2qiCuXyA">投稿教学 | SCI 投稿之图片分辨率问题</a>》的操作，即 Adobe Photoshop CC 2019，其他的版本在操作上也是几乎一样的。</p>
+<h2 id="5">5. 修改图片分辨率<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>把基本的一些概念搞清楚，明确图片的要求后，接下来就是动手操作的时候了。这里参考的是筑研医学公众号《<a href="https://mp.weixin.qq.com/s/F6yDgJ0tz9Wttn2qiCuXyA">投稿教学 | SCI 投稿之图片分辨率问题</a>》的操作，即 Adobe Photoshop CC 2019，其他的版本在操作上也是几乎一样的。</p>
 <ol>
-<li>用 Photoshop（PS）打开图片，点击【图像】-【图像大小】。</li>
-</ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhrJgkUyKWGHBa4Ytap4f7PnBGq-.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="01.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhrJgkUyKWGHBa4Ytap4f7PnBGq-.jpeg" /></a></p>
-<ol>
-<li>然后就可以看到如下界面，是不是看到了上面梳理过的概念？</li>
-</ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8J_c-6O5bM5uGCW0aqJV4MU3nw.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="02.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8J_c-6O5bM5uGCW0aqJV4MU3nw.jpeg" /></a>
+<li>
+<p>用 Photoshop（PS）打开图片，点击【图像】-【图像大小】。    <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhrJgkUyKWGHBa4Ytap4f7PnBGq-.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="01.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhrJgkUyKWGHBa4Ytap4f7PnBGq-.jpeg" /></a></p>
+</li>
+<li>
+<p>然后就可以看到如下界面，是不是看到了上面梳理过的概念？      <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8J_c-6O5bM5uGCW0aqJV4MU3nw.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="02.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8J_c-6O5bM5uGCW0aqJV4MU3nw.jpeg" /></a>      <br />
 默认情况下，分辨率用像素密度来表示，单位是 ppi；宽度和高度则以厘米为单位，说明以目前指定的像素密度来呈现该尺寸的图片，在实际的物理世界中会是 141.11 x 115.57 cm 的大小；</p>
-<ol>
-<li>当然，我们可以自由地更改图像大小和分辨率的表示方式，比如我们将高度和宽度的单位从默认的【厘米】换成【像素】，数值就会和上面的【尺寸】是一样的啦：</li>
-</ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FviO799ox3l6_KF1jgfV3Xr4Hy9A.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="03.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FviO799ox3l6_KF1jgfV3Xr4Hy9A.jpeg" /></a></p>
-<ol>
-<li>我们记住这张图的宽度是 4000 像素，然后按照期刊的要求，将这张彩色照片的分辨率调整为 300 像素/英寸，然后 PS 就自动用插值的方式，帮我们保留了图片的物理尺寸 141.11 x 115.57 cm，让这张图片的像素数暴涨：</li>
-</ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk76_f5TMqkkTRThd5Ifj6f5rwQ7.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="04.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk76_f5TMqkkTRThd5Ifj6f5rwQ7.jpeg" /></a></p>
-<ol>
-<li>这不是我们想要的，我们需要手动将图片的像素数纠正过来，在【宽度】里重新填入原先的 4000 像素，一切就正常了：</li>
-</ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlRjvWqhoKOsmoTUVpFjACLTHDTU.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="05.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlRjvWqhoKOsmoTUVpFjACLTHDTU.jpeg" /></a></p>
-<ol>
-<li>接下来还没完哦！把【宽度】的单位修改成【英寸】、【厘米】，或者【毫米】这样的物理单位，检查一下这张图片修改成 300 ppi 分辨率后，其“物理尺寸”是否符合期刊的要求：</li>
-</ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl8c7Jt2hNt8SATdijMWo9BrgC3z.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="06.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl8c7Jt2hNt8SATdijMWo9BrgC3z.jpeg" /></a>
+</li>
+<li>
+<p>当然，我们可以自由地更改图像大小和分辨率的表示方式，比如我们将高度和宽度的单位从默认的【厘米】换成【像素】，数值就会和上面的【尺寸】是一样的啦：    <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FviO799ox3l6_KF1jgfV3Xr4Hy9A.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="03.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FviO799ox3l6_KF1jgfV3Xr4Hy9A.jpeg" /></a></p>
+</li>
+<li>
+<p>我们记住这张图的宽度是 4000 像素，然后按照期刊的要求，将这张彩色照片的分辨率调整为 300 像素/英寸，然后 PS 就自动用插值的方式，帮我们保留了图片的物理尺寸 141.11 x 115.57 cm，让这张图片的像素数暴涨：   <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk76_f5TMqkkTRThd5Ifj6f5rwQ7.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="04.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk76_f5TMqkkTRThd5Ifj6f5rwQ7.jpeg" /></a></p>
+</li>
+<li>
+<p>这不是我们想要的，我们需要手动将图片的像素数纠正过来，在【宽度】里重新填入原先的 4000 像素，一切就正常了：   <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlRjvWqhoKOsmoTUVpFjACLTHDTU.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="05.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlRjvWqhoKOsmoTUVpFjACLTHDTU.jpeg" /></a></p>
+</li>
+<li>
+<p>接下来还没完哦！把【宽度】的单位修改成【英寸】、【厘米】，或者【毫米】这样的物理单位，检查一下这张图片修改成 300 ppi 分辨率后，其“物理尺寸”是否符合期刊的要求：   <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl8c7Jt2hNt8SATdijMWo9BrgC3z.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="06.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl8c7Jt2hNt8SATdijMWo9BrgC3z.jpeg" /></a>   <br />
 有些出版社对作者提交的图片的物理尺寸是有要求的，除了分辨率要达到指定的清晰度，图片的尺寸也不能超过一定的版面大小，否则无法正常印刷。我们来看 Springer 旗下某期刊对图片大小的要求：</p>
+</li>
+</ol>
 <blockquote>
-<p><strong><em>Figure placement and size:</em></strong> &gt; <em>When preparing your figures, size figures to fit in the column width.</em> &gt; <em>Figures should be 39 mm, 84 mm, 129 mm, or 174 mm wide and not higher than 234 mm.</em> &gt; <em>The publisher reserves the right to reduce or enlarge figures.</em></p>
+<p><strong>Figure placement and size:</strong>    <br />
+When preparing your figures, size figures to fit in the column width.   <br />
+Figures should be 39 mm, 84 mm, 129 mm, or 174 mm wide and not higher than 234 mm.   <br />
+The publisher reserves the right to reduce or enlarge figures._</p>
 </blockquote>
-<p>可见，该期刊要求图片尺寸至少要满足“不大于 174 x 234 mm”的要求，那我们这张图明显是超出了的：
+<p>可见，该期刊要求图片尺寸至少要满足“不大于 174 x 234 mm”的要求，那我们这张图明显是超出了的：   <br />
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flhs01Nqee_vnldPW4iBStzvjOR8.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-0.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flhs01Nqee_vnldPW4iBStzvjOR8.jpeg" /></a></p>
-<p>遇到这种问题，我们要分情况讨论：</p>
+<p>遇到这种问题，我们要分情况讨论：     </p>
 <ol>
-<li>如果这张图是多张小图拼合而成的，那么我们可以考虑重新换一种排版方式来拼图，比如这张（已打码），是 2x2 的排列方式，我们可以改成 4x1 的纵列，然后把总的宽度控制在 174mm 以内即可：
-    <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk6AgkPr65tCPB1PhC4RU1yigF81.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-1.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk6AgkPr65tCPB1PhC4RU1yigF81.jpeg" /></a></li>
-</ol>
-<p>2) 如果这张图是一张照片，那么在不影响可读性的情况下，我们直接把宽度改成 174mm，进行缩小的操作，并保存：
-   <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FleZx3qUBM2Uxrw1QVWvoZyrOYH0.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-2.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FleZx3qUBM2Uxrw1QVWvoZyrOYH0.jpeg" /></a>
-3) 如果缩小后会导致看不清照片的细节，那么可以考虑适当裁剪，舍弃照片中无意义或不重要的部分：
+<li>
+<p>如果这张图是多张小图拼合而成的，那么我们可以考虑重新换一种排版方式来拼图，比如这张（已打码），是 2x2 的排列方式，我们可以改成 4x1 的纵列，然后把总的宽度控制在 174mm 以内即可：   <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk6AgkPr65tCPB1PhC4RU1yigF81.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-1.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk6AgkPr65tCPB1PhC4RU1yigF81.jpeg" /></a></p>
+</li>
+<li>
+<p>如果这张图是一张照片，那么在不影响可读性的情况下，我们直接把宽度改成 174mm，进行缩小的操作，并保存：   <br />
+<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FleZx3qUBM2Uxrw1QVWvoZyrOYH0.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-2.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FleZx3qUBM2Uxrw1QVWvoZyrOYH0.jpeg" /></a>     </p>
+</li>
+<li>
+<p>如果缩小后会导致看不清照片的细节，那么可以考虑适当裁剪，舍弃照片中无意义或不重要的部分：
    <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FglwV-frlXaDDn_XauJre49yAKn4.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-3.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FglwV-frlXaDDn_XauJre49yAKn4.jpeg" /></a></p>
-<ol>
-<li>如果缩小会影响图片的可读性，比如图片中的含有较多字号比较小的文字，可以提高分辨率，到 600 ppi，试试宽度是否可以控制在期刊要求内，这张就可以：
-    <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fs2XuJPxMWacCj4Kk6ULqg_YicLn.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-4.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fs2XuJPxMWacCj4Kk6ULqg_YicLn.jpeg" /></a></li>
+</li>
+<li>
+<p>如果缩小会影响图片的可读性，比如图片中的含有较多字号比较小的文字，可以提高分辨率，到 600 ppi，试试宽度是否可以控制在期刊要求内，这张就可以：
+   <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fs2XuJPxMWacCj4Kk6ULqg_YicLn.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-4.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fs2XuJPxMWacCj4Kk6ULqg_YicLn.jpeg" /></a></p>
+</li>
+<li>
+<p>如果上述方法都不理想，比如图片中有大量非矢量的图线和文字不方便缩放，或缩放效果不佳，建议重新用作图软件导出为矢量图，或修改图片中的文字，保证至少有 8 pt 的大小（注意，是阿拉伯数字的“8”号字，不是“小四”这种字号）再导出。</p>
+</li>
 </ol>
-<p>5) 如果上述方法都不理想，比如图片中有大量非矢量的图线和文字不方便缩放，或缩放效果不佳，建议重新用作图软件导出为矢量图，或修改图片中的文字，保证至少有 8 pt 的大小（注意，是阿拉伯数字的“8”号字，不是“小四”这种字号）再导出。</p>
 <p>以上就是 SCI 投稿中像素、DPI、图片分辨率的一些基础知识，以及期刊对图片大小和分辨率的要求，并参考一些前辈的做法来调整自己的图片来符合期刊要求。</p>
 <p>本文章的内容主要来源于搜狐秒秒学的《<a href="https://www.sohu.com/a/139247123_409010">搞不清像素、DPI、图片分辨率的看过来!</a> 》和筑研医学公众号的《<a href="https://mp.weixin.qq.com/s/F6yDgJ0tz9Wttn2qiCuXyA">投稿教学 | SCI 投稿之图片分辨率问题</a>》一文，部分内容有增删改，仅作交流与学习使用。</p>
 
