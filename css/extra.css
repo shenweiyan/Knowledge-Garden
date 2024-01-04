@@ -19,7 +19,7 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
   border-radius: 10px;
   background: linear-gradient(to right, rgba(189,224,245),rgba(218,232,241), rgba(238,237,238));
   /* #F0EFEB; F5F4F1*/
-  padding: 20px; 
+  padding: 25px; 
   width: 100%;
   height: 100px;
   text-align: center;
