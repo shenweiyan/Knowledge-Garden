@@ -9693,6 +9693,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#github-graphql-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub GraphQL API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphql" class="md-nav__link">
+    <span class="md-ellipsis">
+      GraphQL 有什么用？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GraphQL 有什么用？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discussions" class="md-nav__link">
+    <span class="md-ellipsis">
+      获取 discussions 主要信息
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discussions-categoryid" class="md-nav__link">
+    <span class="md-ellipsis">
+      获取 discussions categoryId
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -9830,6 +9881,77 @@
     1.1.2-软件: docs/cookbook/生物信息/软件
     ...
 </code></pre></div></p>
+<h2 id="github-graphql-api">GitHub GraphQL API<a class="headerlink" href="#github-graphql-api" title="Permanent link">&para;</a></h2>
+<p>GitHub Discussions 的 API 操作主要依赖 <a href="https://docs.github.com/zh/graphql/overview/about-the-graphql-api">GitHub GraphQL API</a>。</p>
+<blockquote>
+<h2 id="_3">概述<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>GraphQL 是一种用于<a href="https://www.redhat.com/zh/topics/api/what-are-application-programming-interfaces">应用编程接口（API）</a>的查询语言和服务器端运行时，它可以使客户端准确地获得所需的数据，没有任何冗余。</p>
+<h2 id="graphql">GraphQL 有什么用？<a class="headerlink" href="#graphql" title="Permanent link">&para;</a></h2>
+<p>GraphQL 旨在让 API 变得快速、灵活并且为开发人员提供便利。它甚至可以部署在名为 <a href="https://github.com/graphql/graphiql">GraphiQL</a> 的<a href="https://www.redhat.com/zh/topics/middleware/what-is-ide">集成开发环境（IDE）</a>中。作为 <a href="https://www.redhat.com/zh/topics/integration/whats-the-difference-between-soap-rest">REST</a> 的替代方案，GraphQL 允许开发人员构建相应的请求，从而通过单个 API 调用从多个数据源中提取数据。</p>
+<p>此外，GraphQL 还可让 API 维护人员灵活地添加或弃用字段，而不会影响现有查询。开发人员可以使用自己喜欢的方法来构建 API，并且 GraphQL 规范将确保它们以可预测的方式在客户端发挥作用。</p>
+<p>From：《<a href="https://www.redhat.com/zh/topics/api/what-is-graphql">什么是 GraphQL？核心概念解析</a>》- 红帽</p>
+</blockquote>
+<ul>
+<li>中文文档：https://docs.github.com/zh/graphql/guides/introduction-to-graphql</li>
+<li>在线使用：https://docs.github.com/en/graphql/overview/explorer</li>
+</ul>
+<h3 id="discussions">获取 discussions 主要信息<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>{
+  repository(owner: &quot;shenweiyan&quot;, name: &quot;Knowledge-Garden&quot;) {
+    discussions(orderBy: {field: CREATED_AT, direction: DESC}, categoryId: null, first: 5) {
+      nodes {
+        title
+        number
+        url
+        createdAt
+        lastEditedAt
+        updatedAt
+        body
+        bodyText
+        bodyHTML
+        author {
+          login
+        }
+        category {
+          name
+        }
+        labels(first: 100) {
+          nodes {
+            name
+          }
+        }
+        comments(first: 10) {
+          nodes {
+            body
+            author {
+              login
+            }
+          }
+        }
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+    }
+  }
+}
+</code></pre></div>
+<h3 id="discussions-categoryid">获取 discussions categoryId<a class="headerlink" href="#discussions-categoryid" title="Permanent link">&para;</a></h3>
+<p>参考：《<a href="https://qiita.com/shooter/items/d59fbb43d0f118c95092">how to get github discussions categoryId</a>》</p>
+<div class="highlight"><pre><span></span><code>{
+  repository(owner: &quot;shenweiyan&quot;, name: &quot;Knowledge-Garden&quot;) {
+    id
+    name
+    discussionCategories(first: 30) {
+      nodes {
+        id
+        name
+      }
+    }
+  }
+}
+</code></pre></div>
 <script src="https://giscus.app/client.js"
     data-repo="shenweiyan/Knowledge-Garden"
     data-repo-id="R_kgDOKgxWlg"
@@ -9863,7 +9985,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-10</span>
   </span>
 
     
