@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Fri, 12 Jan 2024 05:58:05 -0000</pubDate>
-    <lastBuildDate>Fri, 12 Jan 2024 05:58:05 -0000</lastBuildDate>
+    <pubDate>Fri, 12 Jan 2024 06:34:53 -0000</pubDate>
+    <lastBuildDate>Fri, 12 Jan 2024 06:34:53 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -32,29 +32,14 @@
     
     
     <item>
-      <title>好玩</title>
+      <title>2.2-好玩</title>
       
       
       
       
-      <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
+      <description>&lt;h1&gt;2.2-好玩&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
-      
-      
-      
-      
-    </item>
-    
-    <item>
-      <title>2023</title>
-      
-      
-      
-      
-      <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
-      
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -69,7 +54,22 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>2023</title>
+      
+      
+      
+      
+      <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
+      
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -84,7 +84,7 @@
       
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -99,7 +99,7 @@
       
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -107,29 +107,14 @@
     </item>
     
     <item>
-      <title>知识</title>
+      <title>2.4-知识</title>
       
       
       
       
-      <description>&lt;h1&gt;知识&lt;/h1&gt;</description>
+      <description>&lt;h1&gt;2.4-知识&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
-      
-      
-      
-      
-    </item>
-    
-    <item>
-      <title>资讯</title>
-      
-      
-      
-      
-      <description>&lt;h1&gt;资讯&lt;/h1&gt;</description>
-      
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -137,14 +122,14 @@
     </item>
     
     <item>
-      <title>乱弹</title>
+      <title>2.3-资讯</title>
       
       
       
       
-      <description>&lt;h1&gt;乱弹&lt;/h1&gt;</description>
+      <description>&lt;h1&gt;2.3-资讯&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -152,14 +137,29 @@
     </item>
     
     <item>
-      <title>好玩</title>
+      <title>2.1-乱弹</title>
       
       
       
       
-      <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
+      <description>&lt;h1&gt;2.1-乱弹&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>2.2-好玩</title>
+      
+      
+      
+      
+      <description>&lt;h1&gt;2.2-好玩&lt;/h1&gt;</description>
+      
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -174,7 +174,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -189,7 +189,7 @@
       
       <description>&lt;h1&gt;2024&lt;/h1&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:58:10 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:34:58 +0000</pubDate>
       
       
       
@@ -329,7 +329,7 @@
 &lt;figcaption&gt;Random acts of kindness.&lt;/figcaption&gt;
 &lt;/figure&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -368,7 +368,7 @@
     async&gt;
 &lt;/script&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -384,7 +384,7 @@
       <description>&lt;p&gt;语雀，是一个非常优秀的文档和知识库工具，也曾经是个人知识和文档记录的一个非常重要的平台。但由于工作和其他的一些原因，逐渐从语雀转移到了 GitHub，作为历史文章的一个备份，你可以通过下面的链接访问我的语雀花园主页，感谢你的支持，我们一定会越来越好！&lt;/p&gt;
 &lt;p align=center&gt;&lt;b&gt;&lt;a href=&#34;https://www.yuque.com/shenweiyan&#34; target=&#34;_blank&#34;&gt;www.yuque.com/shenweiyan&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -400,7 +400,7 @@
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;
 &lt;p&gt;这是首发于 &lt;a href=&#34;https://github.com/shenweiyan/Knowledge-Garden/discussions&#34;&gt;GitHub Discussions&lt;/a&gt;，并定期同步更新至 Material for MkDocs 本站点上的博客文章。&lt;/p&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -415,7 +415,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -430,7 +430,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -445,7 +445,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -460,7 +460,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -548,7 +548,7 @@
 &lt;figcaption&gt;Random acts of kindness.&lt;/figcaption&gt;
 &lt;/figure&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -607,7 +607,7 @@
 &lt;p&gt;国内虽然不少人都在使用 Gitee，但 Gitee 时不时恶心你一下（前不久就无缘无故把我的 oschina 的账号封了，而且要加 QQ 群去申诉，最后我是直接通过邮件反馈解封了），而且有时候有些资源用起来限制太多，很麻烦。&lt;/p&gt;
 &lt;p&gt;极狐从 2024 年 1 月 2 日起要付费才能使用，1898元/人/年的价格估计会劝退 90% 的个人用户吧！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -647,7 +647,7 @@
     &lt;img style=&#34;max-widrh:600px&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/portfolio/webstack-hugo.jpg&#34; alt=&#34;WebStack-Hugo&#34;&gt;
 &lt;/p&gt;</description>
       
-      <pubDate>Fri, 12 Jan 2024 05:57:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2024 06:33:43 +0000</pubDate>
       
       
       
@@ -694,6 +694,81 @@
     </item>
     
     <item>
+      <title>苹果字体 PingFang SC 的一些踩坑记录</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;曾经在 《&lt;a href=&#34;https://www.weiyan.cc/cookbook/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/windows/2021-02-19-win-font/&#34;&gt;为 Windows 系统替换优雅的苹果字体&lt;/a&gt;》中提到可在 Windows 中使用苹方字体替代默认的微软雅黑，这里就有一个问题即需要在 Wondows 下安装苹方字体 —— 如果你的字体安装错误，很有可能导致你的浏览器或其他应用出现乱码。&lt;/p&gt;
+&lt;h2&gt;浏览器乱码&lt;/h2&gt;
+&lt;p&gt;出现这个的原因主要是站点使用了 &lt;code&gt;PingFang SC&lt;/code&gt; 的字体设置。
+&lt;code&gt;body {
+    font-family: PingFang SC,microsoft yahei,sans-serif;
+}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;我们可以看到使用 F12 检查源码模式把 &lt;code&gt;font-family&lt;/code&gt; 中的 &lt;code&gt;PingFang SC&lt;/code&gt; 去掉后即可显示正常。&lt;/p&gt;
+&lt;h2&gt;字体安装后不起作用&lt;/h2&gt;
+&lt;p&gt;这里就涉及一个 &lt;strong&gt;萍方&lt;/strong&gt; vs &lt;strong&gt;苹方&lt;/strong&gt; vs &lt;strong&gt;PingFang&lt;/strong&gt; 区别的一个问题。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;猛地看上去，萍方/苹方/pingfang 应该是同一个字体。但是，实际上的效果，却并不相同。那么，到底谁是真正的 pingfang sc呢？    &lt;/p&gt;
+&lt;p&gt;这里以能否&lt;strong&gt;以 pingfang sc 为名称识别出来，作为标准&lt;/strong&gt;。为什么这么说呢？因为网页里面的 font-family，写的都是pingfang sc，也许萍方/苹方都是差不多的字体，但是不能在网页里面自动识别出来。所以，就等于零。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;body {
+   font-family: PingFang SC,microsoft yahei,sans-serif;
+}&lt;/code&gt;
+比如，上述css定义，就来自于腾讯云主页。在实际的应用过程中，只有安装好的 pingfang sc 系列字体才能被识别【如下图中的右侧字体】。&lt;strong&gt;注意：萍方/苹方，在安装的时候，文件名也都是 pingfang-sc 之类的文件名。但是，安装完成的真正成品，可不是这个拼音名字。进而导致字体不能识别。&lt;/strong&gt;
+&lt;img alt=&#34;pingfang sc 区别&#34; src=&#34;https://shub.weiyan.tech/kgarden/2024/01/fingfang-sc.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;From 《&lt;a href=&#34;https://newsn.net/say/css-font-family-pingfang.html&#34;&gt;由 pingfang sc 字体缺失，所暴露的字体加载顺序的潜规则&lt;/a&gt;》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;解决方案&lt;/h2&gt;
+&lt;p&gt;参考 《&lt;a href=&#34;https://newsn.net/say/css-font-family-pingfang.html&#34;&gt;由 pingfang sc 字体缺失，所暴露的字体加载顺序的潜规则&lt;/a&gt;》 一文的方案。&lt;/p&gt;
+&lt;h3&gt;安装 PingFang SC&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;国内大多数网页，在定义网页字体的时候，都是先定义pingfang sc，然后定义微软雅黑。那么：
+- 正常来说，win 系统是不会安装 pingfang sc 字体的，所以，显示微软雅黑，页面正常。
+- 但是，一旦单独安装了 pingfang sc light，页面就会识别出这个 light 字体，页面不正常。
+- 解决方案是：再安装一个 pingfang sc regular，页面会在 light 之前优先识别 regular，页面正常。&lt;/p&gt;
+&lt;p&gt;如果您非要在 win 下面安装 pingfang sc 字体，可能要三思而后安装了。李鬼似乎有点多...&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;PingFang SC Regular&#34; src=&#34;https://shub.weiyan.tech/kgarden/2024/01/pingfang-sc-regular.png&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;删除 PingFang SC&lt;/h3&gt;
+&lt;p&gt;个人用的就是这一个方法，但是在 &lt;code&gt;C:\Windows\Fonts&lt;/code&gt; 中删除的时候会提示 &lt;strong&gt;该字体正在使用无法删除！所以，必须要关闭使用苹方字体的程序。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因此，我们需要：&lt;/p&gt;
+&lt;p&gt;参考：《&lt;a href=&#34;https://www.bilibili.com/video/BV1nc411575s/&#34;&gt;电脑安装新字体，浏览器字体全变了，如何删除正在使用的苹方字体&lt;/a&gt;》 - 哔哩哔哩&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 Windows 任务管理的进程中把浏览器相关的全部结束掉，如 360 浏览器相关的进程、Microsoft edge、Google Chrome 等等，全部选择结束任务。&lt;/li&gt;
+&lt;li&gt;把其他可能使用苹方字体的，如 OneNote、WPS、微信、... 这些的进程也全部结束掉。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最后，回到 &lt;code&gt;C:\Windows\Fonts&lt;/code&gt; 中再次删除相应的苹方字体，发现即可成功删除。删除了这些苹方字体，浏览器上的字体显示也就恢复正常了。&lt;/p&gt;
+&lt;h2&gt;参考资料&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;苏南大叔，《&lt;a href=&#34;https://newsn.net/say/css-font-family-pingfang.html&#34;&gt;由 pingfang sc 字体缺失，所暴露的字体加载顺序的潜规则&lt;/a&gt;》&lt;/li&gt;
+&lt;li&gt;科技猎手2023，《&lt;a href=&#34;https://www.bilibili.com/video/BV1nc411575s/&#34;&gt;电脑安装新字体，浏览器字体全变了，如何删除正在使用的苹方字体&lt;/a&gt;》 - 哔哩哔哩&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script src=&#34;https://giscus.app/client.js&#34;
+    data-repo=&#34;shenweiyan/Knowledge-Garden&#34;
+    data-repo-id=&#34;R_kgDOKgxWlg&#34;
+    data-mapping=&#34;number&#34;
+    data-term=&#34;49&#34;
+    data-reactions-enabled=&#34;1&#34;
+    data-emit-metadata=&#34;0&#34;
+    data-input-position=&#34;bottom&#34;
+    data-theme=&#34;light&#34;
+    data-lang=&#34;zh-CN&#34;
+    crossorigin=&#34;anonymous&#34;
+    async&gt;
+&lt;/script&gt;</description>
+      
+      <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
+      
+      
+      
+      
+    </item>
+    
+    <item>
       <title>3211-支持的 Python 版本</title>
       
       
@@ -704,7 +779,7 @@
       
       
       <description>&lt;blockquote&gt;
-&lt;p&gt;编译：&lt;a href=&#34;https://www.weiyan.cc&#34;&gt;沈维燕&lt;/a&gt;   &lt;br&gt;
+&lt;p&gt;编译：&lt;a href=&#34;https://www.weiyan.cc&#34;&gt;沈维燕&lt;/a&gt;
 原文: https://docs.galaxyproject.org/en/master/admin/python.html&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Galaxy 的核心功能目前支持 Python &amp;gt;=3.7。&lt;/p&gt;
@@ -772,7 +847,7 @@
       
       
       <description>&lt;blockquote&gt;
-&lt;p&gt;编译：&lt;a href=&#34;https://www.weiyan.cc&#34;&gt;沈维燕&lt;/a&gt;   &lt;br&gt;
+&lt;p&gt;编译：&lt;a href=&#34;https://www.weiyan.cc&#34;&gt;沈维燕&lt;/a&gt;
 原文: https://docs.galaxyproject.org/en/master/admin/python.html&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;script src=&#34;https://giscus.app/client.js&#34;
@@ -790,6 +865,35 @@
 &lt;/script&gt;</description>
       
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>不要使用 requirements.txt</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;作者：&lt;a href=&#34;https://miikka.me/&#34;&gt;Miikka Koskinen&lt;/a&gt;     &lt;br&gt;
+编译：&lt;a href=&#34;https://weiyan.cc&#34;&gt;沈维燕&lt;/a&gt;     &lt;br&gt;
+时间：原文发表于 2023-10-31     &lt;br&gt;
+原文：&lt;a href=&#34;https://quanttype.net/posts/2023-10-31-do-not-use-requirements.txt.html&#34;&gt;Do not use requirements.txt&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;你是否在用 Python 开发后端服务？我有两条建议：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不要使用 &lt;code&gt;pip&lt;/code&gt; 和 &lt;code&gt;requirements.txt&lt;/code&gt; 来管理 Python 依赖。它们缺乏一些应该内置的关键功能。&lt;/li&gt;
+&lt;li&gt;改用 &lt;a href=&#34;https://python-poetry.org/&#34;&gt;Poetry&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
       
       
       
@@ -828,6 +932,105 @@
       <description>&lt;p&gt;很多时候阅读别人的博客（站点），总能发现一些好玩的人和事物。2023 年被&lt;a href=&#34;https://blog.douchi.space/&#34;&gt;椒盐豆豉&lt;/a&gt;的一篇《&lt;a href=&#34;https://blog.douchi.space/2023-why-you-need-a-blog/&#34;&gt;2023 年了你为什么需要写博客&lt;/a&gt;》所吸引，尤其是 &lt;strong&gt;&#34;博客是赛博空间的另一个你，也能反过来定义你&#34;&lt;/strong&gt; 这一句，写出了很多心声。&lt;/p&gt;</description>
       
       <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>Pandas 处理 Excel 常用方法技巧</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;学习了解了 Series 和 DataFrame 的基本数据结构和索引的相关概念之后，就可以练习基本的 Excel操作。Pandas 读取一个 Excel 文件后会将其转化为 DataFrame 对象，每一列或行就是一个 Series 对象。这里我们看下如何对一个 excel 进行读写，以及 Sheet、行列、表头处理的一些常用技巧。&lt;/p&gt;
+&lt;h2&gt;读取 Excel&lt;/h2&gt;
+&lt;p&gt;如果您想读取 Excel 表格中的数据，可以使用 &lt;code&gt;read_excel()&lt;/code&gt; 方法，其语法格式如下：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pd.read_excel(io, sheet_name=0, header=0, names=None, index_col=None,
+              usecols=None, squeeze=False,dtype=None, engine=None,
+              converters=None, true_values=None, false_values=None,
+              skiprows=None, nrows=None, na_values=None, parse_dates=False,
+              date_parser=None, thousands=None, comment=None, skipfooter=0,
+              convert_float=True, **kwds)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;下表对常用参数做了说明：&lt;/p&gt;
+&lt;p&gt;|参数名称|说明|
+|:----|:----|
+|io|表示 Excel 文件的存储路径。|
+|sheet_name|要读取的工作表名称，默认0，即读取第一个工作表作为 DataFrame(一定要加&lt;code&gt;sheet_name=None&lt;/code&gt;，才能读取出所有的 sheet，否则默认读取第一个 sheet)。|
+|header|指定作为列名的行，默认0，即取第一行的值为列名；若数据不包含列名，则设定 header = None。若将其设置为 header=2，则表示将前两行作为多重索引。|
+|names|一般适用于Excel缺少列名，或者需要重新定义列名的情况；names的长度必须等于Excel表格列的长度，否则会报错。|
+|index_col|用做行索引的列，可以是工作表的列名称，如 index_col = &#39;列名&#39;，也可以是整数或者列表。|
+|usecols|int或list类型，默认为None，表示需要读取所有列。|
+|squeeze|boolean，默认为False，如果解析的数据只包含一列，则返回一个Series。|
+|converters|规定每一列的数据类型。|
+|skiprows|接受一个列表，表示跳过指定行数的数据，从头部第一行开始。|
+|nrows|需要读取的行数。|
+|skipfooter|接受一个列表，省略指定行数的数据，从尾部最后一行开始。|&lt;/p&gt;
+&lt;p&gt;示例如下所示：
+```python
+import pandas as pd&lt;/p&gt;
+&lt;h1&gt;读取所有Sheet&lt;/h1&gt;
+&lt;p&gt;df = pd.read_excel(&#39;example.xlsx&#39;, sheet_name=None)&lt;/p&gt;
+&lt;h1&gt;读取第一个、第二个和名为&#34;Sheet5&#34;的工作表作为 DataFrame 的字典&lt;/h1&gt;
+&lt;p&gt;df = pd.read_excel(&#39;example.xlsx&#39;, sheet_name=[0, 1, &#34;Sheet5&#34;])
+```&lt;/p&gt;
+&lt;h2&gt;获取行数和列数&lt;/h2&gt;
+&lt;p&gt;```python
+import pandas as pd&lt;/p&gt;
+&lt;p&gt;df = pd.read_excel(&#39;example.xlsx&#39;)&lt;/p&gt;
+&lt;h1&gt;行索引&lt;/h1&gt;
+&lt;p&gt;print(df.index)  &lt;/p&gt;
+&lt;h1&gt;RangeIndex(start=0, stop=3747, step=1)&lt;/h1&gt;
+&lt;h1&gt;输出元祖,分别为行数和列数,默认第一行是表头不算行数&lt;/h1&gt;
+&lt;p&gt;print(df.shape) &lt;/p&gt;
+&lt;h1&gt;(3747, 4)&lt;/h1&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;h2&gt;获取表头&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;read_excel&lt;/code&gt; 默认是把 excel 的第一行当成表头。注意：如果 &lt;code&gt;read_excel&lt;/code&gt; 的 &lt;code&gt;sheet_name=None&lt;/code&gt;，读取的是所有 excel 的 sheet_name(key) 和 sheet_values(values) 组成的字典，&lt;code&gt;df.keys()&lt;/code&gt; 的结果是所有 sheet_name，即名字(字典的键)。&lt;/p&gt;
+&lt;h3&gt;获取第一个 sheet&lt;/h3&gt;
+&lt;p&gt;这时候 &lt;code&gt;df.keys()&lt;/code&gt; 和 &lt;code&gt;df.columns&lt;/code&gt; 的结果是一样的，都是第一个 sheet 的表头。&lt;/p&gt;
+&lt;p&gt;```python
+import pandas as pd&lt;/p&gt;
+&lt;p&gt;df = pd.read_excel(&#39;input.xlsx&#39;)
+print(df.keys())
+print(&#39;---------------&#39;)
+print(df.columns)
+```&lt;/p&gt;
+&lt;h3&gt;获取所有 sheet&lt;/h3&gt;
+&lt;p&gt;```python
+import pandas as pd&lt;/p&gt;
+&lt;h1&gt;参数为 None 代表读取所有 sheet&lt;/h1&gt;
+&lt;p&gt;df = pd.read_excel(&#39;input.xlsx&#39;,sheet_name=None)&lt;/p&gt;
+&lt;h1&gt;获取所有sheet名字, 如果read_excel参数不是None, 则df.keys()为表头&lt;/h1&gt;
+&lt;p&gt;sheet_names = list(df.keys())
+print(sheet_names)
+```&lt;/p&gt;
+&lt;h2&gt;参考资料&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;老董，《&lt;a href=&#34;https://www.python66.com/pandasshujufenxi/268.html&#34;&gt;pandas获取excel的行数,列数,表头,sheet,前后行等数据&lt;/a&gt;》，&lt;a href=&#34;https://www.python66.com/&#34;&gt;Python编程网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;《&lt;a href=&#34;https://c.biancheng.net/pandas/excel.html&#34;&gt;Pandas Excel读写操作详解&lt;/a&gt;》，&lt;a href=&#34;https://c.biancheng.net/&#34;&gt;C语言中文网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;《&lt;a href=&#34;https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html&#34;&gt;pandas.read_excel — pandas 2.1.4 documentation&lt;/a&gt;》，&lt;a href=&#34;https://pandas.pydata.org/docs/index.html&#34;&gt;pandas documentation — pandas 2.1.4 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script src=&#34;https://giscus.app/client.js&#34;
+    data-repo=&#34;shenweiyan/Knowledge-Garden&#34;
+    data-repo-id=&#34;R_kgDOKgxWlg&#34;
+    data-mapping=&#34;number&#34;
+    data-term=&#34;40&#34;
+    data-reactions-enabled=&#34;1&#34;
+    data-emit-metadata=&#34;0&#34;
+    data-input-position=&#34;bottom&#34;
+    data-theme=&#34;light&#34;
+    data-lang=&#34;zh-CN&#34;
+    crossorigin=&#34;anonymous&#34;
+    async&gt;
+&lt;/script&gt;</description>
+      
+      <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
       
       
       
@@ -1035,6 +1238,28 @@
     </item>
     
     <item>
+      <title>单行 Python 代码片段</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Via：https://muhammadraza.me/2023/python-oneliners&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我已经沉浸在 Python 编程世界大约三年了。在这段时间里，我开始欣赏这种多功能语言的优雅和强大。在这篇既有趣又具有教育意义的文章中，我将展示一系列单行 Python 代码片段。无论您是经验丰富的开发人员还是初学者，这些简洁的代码行都可以让您深入了解 Python 的简单性和有效性，它们展示一行代码如何完成在其他语言中可能需要几行代码才能完成的任务。&lt;/p&gt;</description>
+      
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      
+      
+      
+      
+    </item>
+    
+    <item>
       <title>2023 年 Galaxy 社区大会会议报告</title>
       
       
@@ -1210,6 +1435,309 @@
       <description>&lt;p&gt;2023 年的 1024 程序员节前一天，语雀服务器崩溃长达 8 个小时的余温还没消，就迫不及待再去体验了一把飞书文档，说几点个人感受。&lt;/p&gt;</description>
       
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>WebStack-Hugo | 一个静态响应式导航主题</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Via：&lt;a href=&#34;https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag&#34;&gt;我给自己做了一个导航网站&lt;/a&gt; | &lt;a href=&#34;https://www.bioitee.com&#34;&gt;BioIT爱好者&lt;/a&gt;
+&lt;strong&gt;让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 &lt;a href=&#34;https://camo.githubusercontent.com/a0a10133ed4ec653ab71072c03c1a23d096c3c8261c9ae939ade3d521e2cf95a/68747470733a2f2f736875622d313235313730383731352e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f656c6f672d636f6f6b626f6f6b2d696d672f466834353377663644625a6f7175415f473677424d575333755947432e6a706567&#34;&gt;喝杯咖啡&lt;/a&gt; &amp;gt;.&amp;lt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;主题开源地址&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Gitee：&lt;a href=&#34;https://gitee.com/shenweiyan/WebStack-Hugo&#34;&gt;https://gitee.com/shenweiyan/WebStack-Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub：&lt;a href=&#34;https://github.com/shenweiyan/WebStack-Hugo&#34;&gt;https://github.com/shenweiyan/WebStack-Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;主题展示地址&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;~~&lt;a href=&#34;https://nav.bioitee.com/&#34;&gt;https://nav.bioitee.com&lt;/a&gt; - Bio &amp;amp; IT 网址导航~~（&lt;strong&gt;该链接后续将不可用&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bioit.top/&#34;&gt;https://www.bioit.top/&lt;/a&gt; - WebStack-Hugo 网址导航&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hao.bioitee.com/&#34;&gt;https://hao.bioitee.com/&lt;/a&gt; - 生信网址导航&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://so.gd.cn/&#34;&gt;https://so.gd.cn&lt;/a&gt; - 搜搜化州 | 信息导航**&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;为什么做这个网站&lt;/h2&gt;
+&lt;p&gt;之所以想着要给自己倒腾一个导航网站，主要有几个原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;购买了一个域名，且也备案成功了，总想折腾点跟它有关的事情；&lt;/li&gt;
+&lt;li&gt;经常在公司、家里（有时候还有其他的临时场所）更换电脑，每次同步书签（或者登陆一些导航网站）需要各种登陆，麻烦。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;说干就干，从 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;WebStack 的开源项目&lt;/a&gt;开始，断断续续的折腾了好几天，终于把轮子造起来了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/webstack-hugo-collapse.png&#34; width=800&gt;
+&lt;img src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/webstack-hugo-expand.png&#34; width=800&gt;
+&lt;img src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/webstack-hugo-search.png&#34; width=800&gt;
+&lt;img src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/webstack-hugo-phone.png&#34; alt=&#34;webstack-apple&#34; width=600&gt;&lt;/p&gt;
+&lt;h2&gt;跟其他导航网站有什么区别&lt;/h2&gt;
+&lt;p&gt;这是 Hugo 版 WebStack 主题。可以借助 Github/Gitee Pages 或者云平台直接托管部署，无需服务器。&lt;/p&gt;
+&lt;p&gt;本项目是基于纯静态的网址导航网站 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;webstack.cc&lt;/a&gt; 制作的 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 主题，其中部分代码参考了以下几个开源项目：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;https://github.com/WebStackPage/WebStackPage.github.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;https://github.com/liutongxu/liutongxu.github.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/iplaycode/webstack-hugo&#34;&gt;https://github.com/iplaycode/webstack-hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总体说一下特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;采用了一直以来最喜欢的 hugo 部署方式，方便高效。&lt;/li&gt;
+&lt;li&gt;主要的配置信息都集成到了 &lt;strong&gt;config.toml&lt;/strong&gt;，一键完成各种自定义的配置。&lt;/li&gt;
+&lt;li&gt;导航的各个信息都集成在 &lt;strong&gt;data/webstack.yml&lt;/strong&gt; 文件中，方便后续增删改动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;yaml
+- taxonomy: 科研办公
+  icon: fas fa-flask fa-lg
+  list:
+    - term: 生物信息
+      links:
+        - title: NCBI
+          logo: ncbi.jpg
+          url: https://www.ncbi.nlm.nih.gov/
+          description: National Center for Biotechnology Information.
+        - title: Bioconda
+          logo: bioconda.jpg
+          url: https://anaconda.org/bioconda/
+          description: &#34;Bioconda :: Anaconda.org.&#34;
+    - term: 云服务器
+      links:
+        - title: 阿里云
+          logo: 阿里云.jpg
+          url: https://www.aliyun.com/
+          description: 上云就上阿里云。
+        - title: 腾讯云
+          logo: 腾讯云.jpg
+          url: https://cloud.tencent.com/
+          description: 产业智变，云启未来。&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;做了手机电脑自适应以及夜间模式。&lt;/li&gt;
+&lt;li&gt;增加了搜索功能，以及下拉的热词选项（基于百度 API）。&lt;/li&gt;
+&lt;li&gt;增加了一言、和风天气的 API。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Windows 下安装部署&lt;/h2&gt;
+&lt;p&gt;本安装部署在 Windows 7 x64 上测试没问题，相关操作同样适用于 Windows 10，如有任何问题，欢迎留言或者微信与我联系。&lt;/p&gt;
+&lt;h3&gt;第一，下载 Windows 版本的 hugo&lt;/h3&gt;
+&lt;p&gt;下载链接：&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;，在这里我们下载 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip&#34;&gt;hugo_0.89.4_Windows-64bit.zip&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkm43Bi3mi71qf16MaRdUJKjBWWx.png&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;第二，解压&lt;/h3&gt;
+&lt;p&gt;我们把 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip&#34;&gt;hugo_0.89.4_Windows-64bit.zip&lt;/a&gt; 下载到 &lt;strong&gt;F:\WebStack&lt;/strong&gt; 目录下，然后解压到当前文件夹。&lt;/p&gt;
+&lt;p&gt;解压完成后，在该目录会多出 &lt;code&gt;hugo.exe&lt;/code&gt;、&lt;code&gt;LICENSE&lt;/code&gt;、&lt;code&gt;README.md&lt;/code&gt; 三个文件：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;unzip hugo_0.89.4_Windows-64bit&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBKVo5JoTzgOY1QsAczSYRmgv0k.png&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;第三，看 hugo 安装是否安装成功&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;🏷️ 温馨提示：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows 命令运行窗口中可以使用 Tab 进行命令行补全，例如你当前目录下有一个 WebStack-Hugo 目录，你在命令行窗口中输入一个 w 后按下 Tab 键，命令行就会自动出现 WebStack-Hugo！&lt;/p&gt;
+&lt;p&gt;使用命令行补全，可以减少代码（或者文件名）的输入，方便快捷，又能减少错误！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;在 Windows 中使用 &lt;strong&gt;Win+R&lt;/strong&gt; 打开“&lt;strong&gt;运行&lt;/strong&gt;”对话框，在对话框中输入“&lt;strong&gt;cmd&lt;/strong&gt;”，点击确认。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmIW4HA2hWImM7IrtsdCtWwWqcdi.png&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在 Windows 运行窗口，先切换盘符到 &lt;strong&gt;F&lt;/strong&gt; 盘，然后进入 hugo 的解压缩目录（&lt;strong&gt;F:\WebStack&lt;/strong&gt;），具体操作如下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在光标处输入&lt;strong&gt;F:&lt;/strong&gt;，然后按回车；&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsp03gEdM-de5enU1ivNJInfUtHv.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我们就将盘符切换为 F 盘；&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnwKctq7i0hX_iWQgymrJge8BeSX.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着输入 &lt;strong&gt;cd WebStack&lt;/strong&gt;，回车，就进入了 &lt;strong&gt;F:\WebStack&lt;/strong&gt; 目录；使用 &lt;strong&gt;ls&lt;/strong&gt; 可以看到当前目录下的文件。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqzY-gqYycHnCN43FlNkfWHYOvmc.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最后，输入 &lt;strong&gt;hugo.exe version&lt;/strong&gt;，回车，如图所示，则代表安装成功。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvT_Dc50_SaiA8SmT6Y62ENOhE0A.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;第四，下载 WebStack-Hugo&lt;/h3&gt;
+&lt;p&gt;浏览器打开 &lt;a href=&#34;https://github.com/shenweiyan/WebStack-Hugo&#34;&gt;https://github.com/shenweiyan/WebStack-Hugo&lt;/a&gt;，点击 Code 下的 &lt;strong&gt;&#34;Download ZIP&#34;&lt;/strong&gt;，把 &lt;strong&gt;WebStack-hugo-main.zip&lt;/strong&gt; 下载到刚才 hugo 解压缩的目录（&lt;strong&gt;F:\WebStack&lt;/strong&gt;）。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2022.09.26-11.47.12.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBB_DzuGlOUFs1Nt4iseGF6yhN0.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fqyg5wJJpttIrC7LVXg9bnCf6Wgv.png&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;第五，解压，重命名&lt;/h3&gt;
+&lt;p&gt;把 &lt;strong&gt;WebStack-Hugo-main.zip&lt;/strong&gt; 解压到当前目录。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWA394pXnu7TxElb-XP4StAHp3T.png&#34;&gt;
+&lt;img alt=&#34;webstack.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtlBhjh4sOB7bHiz0eZU6zNVtfmX.png&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;第六，安装主题&lt;/h3&gt;
+&lt;p&gt;首先，进入 &lt;strong&gt;F:\WebStack&lt;/strong&gt; 目录；&lt;/p&gt;
+&lt;p&gt;然后，创建一个 &lt;strong&gt;themes&lt;/strong&gt; 的文件夹；&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fo3KJHf8MPeoCWDadu_eJcLWa6Er.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;接着，把解压后的 WebStack-Hugo 整个文件夹移动到 themes 中。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvzuDBR38TFwp7O094GSMOm1BPGs.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;第四，将 themes/WebStack-Hugo/exampleSite 目录下的所有文件复制到 hugo 站点根目录（即 F:\WebStack）。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpgjrR-xAq7fT8DRgT2iMyqGrPyZ.png&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;第七，启动 Hugo 预览服务器&lt;/h3&gt;
+&lt;p&gt;在刚才已经打开的 Windows 命令运行窗口中，使用下面的命令执行 &lt;strong&gt;hugo server&lt;/strong&gt;，启动站点——Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;shell
+hugo.exe server&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjE4vkK_X_EIF9Via0K8rbuhHBFr.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;最后，在浏览器中打开 &lt;a href=&#34;http://127.0.0.1:1313/&#34;&gt;&lt;strong&gt;http://127.0.0.1:1313/&lt;/strong&gt;&lt;/a&gt;，即可看到生成的站点。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FisfN1Ak2zU2xiyjXkjE-qkyHri3.png&#34;&gt;&lt;/p&gt;
+&lt;h2&gt;Linux 下安装部署&lt;/h2&gt;
+&lt;p&gt;安装完本 WebStack-Hugo 主题后，将 exampleSite 目录下的文件复制到 hugo 站点根目录，根据需要把 config.toml 的一些信息改成自己的，导航的网址信息可通过 data 目录下 webstack.yml 修改。&lt;/p&gt;
+&lt;p&gt;具体执行步骤如下：&lt;/p&gt;
+&lt;p&gt;```bash
+mkdir /home/shenweiyan/mysite
+cd /home/shenweiyan/mysite&lt;/p&gt;
+&lt;h1&gt;安装 WebStack-Hugo 主题&lt;/h1&gt;
+&lt;p&gt;git clone https://github.com/shenweiyan/WebStack-Hugo.git themes/WebStack-Hugo&lt;/p&gt;
+&lt;h1&gt;将 exampleSite 目录下的文件复制到 hugo 站点根目录&lt;/h1&gt;
+&lt;p&gt;cd /home/shenweiyan/mysite
+cp -r themes/WebStack-Hugo/exampleSite/* ./&lt;/p&gt;
+&lt;h1&gt;启动 hugo 站点&lt;/h1&gt;
+&lt;p&gt;hugo server&lt;/p&gt;
+&lt;h1&gt;如果你知道你的公网 ip, 如下面的 132.76.230.31, 可以使用下面的方式执行 hugo server&lt;/h1&gt;
+&lt;p&gt;hugo server --baseUrl=132.76.230.31 --bind=0.0.0.0
+```&lt;/p&gt;
+&lt;p&gt;也可以参考 &lt;a href=&#34;https://github.com/jetsung&#34;&gt;@jetsung&lt;/a&gt; 在 &lt;a href=&#34;https://github.com/shenweiyan/WebStack-Hugo/pull/15&#34;&gt;pull 15&lt;/a&gt; 所用的方法安装部署：&lt;/p&gt;
+&lt;p&gt;```bash&lt;/p&gt;
+&lt;h1&gt;创建项目&lt;/h1&gt;
+&lt;p&gt;mkdir navsites
+cd $_&lt;/p&gt;
+&lt;h1&gt;初始化项目&lt;/h1&gt;
+&lt;p&gt;git init&lt;/p&gt;
+&lt;h1&gt;将 WebStack-Hugo 源下载到 themes/WebStack-Hugo 文件夹&lt;/h1&gt;
+&lt;p&gt;git submodule add https://github.com/shenweiyan/WebStack-Hugo.git themes/WebStack-Hugo
+cp -r themes/WebStack-Hugo/exampleSite/* ./&lt;/p&gt;
+&lt;h1&gt;安装 hugo&lt;/h1&gt;
+&lt;p&gt;go install github.com/gohugoio/hugo@latest&lt;/p&gt;
+&lt;h1&gt;本地测试&lt;/h1&gt;
+&lt;p&gt;hugo server&lt;/p&gt;
+&lt;h1&gt;生成 docs 文件夹，将并静态内容生成至此处&lt;/h1&gt;
+&lt;p&gt;hugo -D
+```&lt;/p&gt;
+&lt;h2&gt;导出 HTML 静态网页至 publishDir&lt;/h2&gt;
+&lt;p&gt;Windows/Linux 下执行的 &lt;strong&gt;hugo server&lt;/strong&gt; 命令将会通过热加载的方式临时启动一个 Hugo 服务器（Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改），这个时候我们打开浏览器 &lt;a href=&#34;http://127.0.0.1:1313/&#34;&gt;http://127.0.0.1:1313/&lt;/a&gt;，就可以看到我们站点的样子了。&lt;/p&gt;
+&lt;p&gt;如果我们想要把我们的站点部署到 GitHub/Gitee Pages（或者本地的服务器），我们可以：&lt;/p&gt;
+&lt;h3&gt;1. 生成静态页面内容&lt;/h3&gt;
+&lt;p&gt;可以通过下面的命令，生成(构建)静态页面内容。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python
+hugo -D 或者 hugo --minify&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这个命令会默认在&lt;code&gt;**public/**&lt;/code&gt;目录中生成您的网站，当然您可以通过改变站点配置中的&lt;code&gt;**publishDir**&lt;/code&gt;选项来配置这个输出目录。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;🏷️ Hugo 小知识 - 草案、未来和过期内容&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hugo 允许您在网站内容的前言设定中设置文档的&lt;code&gt;draft&lt;/code&gt;，&lt;code&gt;publishdate&lt;/code&gt;甚至&lt;code&gt;expirydate&lt;/code&gt;字段。默认情况下，Hugo 不会发布下面内容：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;publishdate&lt;/code&gt; 发布日期值设定在未来的内容；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;draft:true&lt;/code&gt; 草案状态设置为真的内容；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;expirydate&lt;/code&gt; 过期日期值设置为过去某事件的内容。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这三个可以在本地开发和部署编译时通过对&lt;code&gt;hugo&lt;/code&gt;和&lt;code&gt;hugo server&lt;/code&gt;分别添加如下参数来重新设定，或者在配置文件中设定对应(不包含&lt;code&gt;--&lt;/code&gt;)域的 boolean 值：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;-F, --buildFuture include content with publishdate in the future&lt;/li&gt;
+&lt;li&gt;-D, --buildDrafts include content marked as draft&lt;/li&gt;
+&lt;li&gt;-E, --buildExpired include expired content&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;2. 部署站点&lt;/h3&gt;
+&lt;p&gt;把生成的 &lt;code&gt;public/&lt;/code&gt; 静态内容目录上传到 GitHub，开启 GitHub/Gitee Pages，并且绑定 cname 域名即可。&lt;/p&gt;
+&lt;h2&gt;使用说明与技巧&lt;/h2&gt;
+&lt;p&gt;这是一个开源的公益项目，你可以拿来制作自己的网址导航，也可以做与导航无关的网站。&lt;/p&gt;
+&lt;h3&gt;左导航栏图标&lt;/h3&gt;
+&lt;p&gt;左侧、顶部导航栏图标用的都是 &lt;strong&gt;Font Awesome&lt;/strong&gt; 图标库 &lt;strong&gt;v5&lt;/strong&gt; 版本 &lt;strong&gt;Free&lt;/strong&gt; 的图标。链接如下：&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://fontawesome.com/v5/search?o=r&amp;amp;m=free&#34;&gt;https://fontawesome.com/v5/search?o=r&amp;amp;m=free&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoHd7w72AykJGSrbzttHgGi4VqlY.png&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;调整头部搜索栏&lt;/h3&gt;
+&lt;p&gt;头部搜索栏的默认位置可以通过下面的方法进行修改。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;直接修改 &lt;strong&gt;layouts/partials/content_search.html&lt;/strong&gt;，调整对应部分的位置。&lt;/li&gt;
+&lt;li&gt;调整默认的搜索（即点击&#34;常用/搜索/工具 ....&#34; 时下指箭头的指向），把对应的 id 添加到对应的 label 里面。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoPMASsgrgPyFSsJy8HvPrgq8ELN.png&#34;&gt;
+&lt;img alt=&#34;2022.09.21-10.48.55.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp0fJmbfJVdg_hVP1ULdh_MmjCcX.png&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;自定义头部导航&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/shenweiyan/WebStack-Hugo&#34;&gt;WebStack-Hugo&lt;/a&gt; 把头部的导航菜单的各个信息集成在了 &lt;strong&gt;data/header.yml&lt;/strong&gt; 文件中，每个人可以根据自己的需要调整。&lt;/p&gt;
+&lt;p&gt;```yaml
+- item: 首页
+  icon: fa fa-home
+  link: &#34;./&#34;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;item: 作者
+  icon: fa fa-book
+  link: https://www.yuque.com/shenweiyan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;item: 配置
+  icon: fa fa-cog
+  link: &#34;&#34;
+  list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;name: 源码
+  url: &#34;#&#34;&lt;/li&gt;
+&lt;li&gt;name: 图标
+  url: &#34;#&#34;
+```&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;获取网站图标&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://nav.bioitee.com/&#34;&gt;Bio &amp;amp; IT 网址导航&lt;/a&gt;默认使用的是个人收集的网站图标，主要是查看网站源码、百度、谷歌等途径把对应导航的图标下载下来，这个方法比较原始繁琐，适合导航不是很多的情况。&lt;/p&gt;
+&lt;p&gt;你也可以使用一为提供的的 &lt;a href=&#34;https://www.iowen.cn/tag/favicon/&#34;&gt;Favicon&lt;/a&gt; 图标 &lt;a href=&#34;https://www.iowen.cn/tag/api/&#34;&gt;API&lt;/a&gt;：&lt;a href=&#34;https://api.iowen.cn/doc/favicon.html&#34;&gt;获取网站 Favicon - 免费API数据接口调用服务平台&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;获取 Favicon 图标
+&lt;code&gt;https://api.iowen.cn/favicon/www.iowen.cn.png&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刷新缓存
+&lt;code&gt;https://api.iowen.cn/favicon/www.iowen.cn.png?refresh=true&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将上方代码中的 &lt;code&gt;www.iowen.cn&lt;/code&gt; 替换为你需要获取的网址域名。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;已知问题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;日间模式与夜间模式切换时候，头部搜索栏的背景图片切换不够流畅（个人的 js 知识有限，在 footer.html 做了一些简单的调整来实现），如果你有更好的想法，欢迎 PR 或者交流。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;感谢墙&lt;/h2&gt;
+&lt;p&gt;本主题的部分代码参考了以下几个开源项目，特此感谢。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;WebStackPage/WebStackPage.github.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/liutongxu/liutongxu.github.io&#34;&gt;liutongxu/liutongxu.github.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/iplaycode/webstack-hugo&#34;&gt;iplaycode/webstack-hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;感谢 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;WebStack&lt;/a&gt; 的作者 &lt;a href=&#34;https://twitter.com/decohack&#34;&gt;Viggo&lt;/a&gt; 的肯定和&lt;a href=&#34;https://twitter.com/decohack/status/1569188705478516738&#34;&gt;推广宣传&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuJQKMnwajVc-di8fIJO6Mu9w6a7.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;感谢以下所有朋友对本主题所做出的贡献。
+&lt;strong&gt;&lt;a href=&#34;https://github.com/yinhanghang&#34;&gt;@yanbeiyinhanghang&lt;/a&gt;&lt;/strong&gt;
+&lt;strong&gt;&lt;a href=&#34;https://github.com/jetsung&#34;&gt;@jetsung&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;赞赏&lt;/h2&gt;
+&lt;p&gt;如果你觉得本项目对你有所帮助，欢迎请作者喝杯热咖啡 &amp;gt;.&amp;lt;
+&lt;img alt=&#34;donate-wecaht-aliapy.jpg&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh453wf6DbZoquA_G6wBMWS3uYGC.jpeg&#34;&gt;&lt;/p&gt;
+&lt;h2&gt;反馈与交流&lt;/h2&gt;
+&lt;p&gt;最后，最重要的，秉承 WebStack 的宗旨，这是一个开源的公益项目，你可以拿来制作自己的网址导航，也可以做与导航无关的网站。&lt;/p&gt;
+&lt;p&gt;WebStack 有非常多的魔改版本，这是其中一个。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果你对本主题进行了一些个性化调整，欢迎在本项目中 &lt;/strong&gt;&lt;a href=&#34;https://github.com/shenweiyan/WebStack-Hugo/issues&#34;&gt;&lt;strong&gt;issues&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; 中一起分享交流！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果参考本主题构建了属于你自己的网址导航，欢迎在本评论区（或源码 &lt;/strong&gt;&lt;a href=&#34;https://github.com/shenweiyan/WebStack-Hugo/issues&#34;&gt;&lt;strong&gt;issues&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; 区）留下你网站的访问链接 &amp;gt;.&amp;lt;&lt;/strong&gt;&lt;/p&gt;
+&lt;script src=&#34;https://giscus.app/client.js&#34;
+    data-repo=&#34;shenweiyan/Knowledge-Garden&#34;
+    data-repo-id=&#34;R_kgDOKgxWlg&#34;
+    data-mapping=&#34;number&#34;
+    data-term=&#34;10&#34;
+    data-reactions-enabled=&#34;1&#34;
+    data-emit-metadata=&#34;0&#34;
+    data-input-position=&#34;bottom&#34;
+    data-theme=&#34;light&#34;
+    data-lang=&#34;zh-CN&#34;
+    crossorigin=&#34;anonymous&#34;
+    async&gt;
+&lt;/script&gt;</description>
+      
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
       
       
