@@ -27,7 +27,7 @@
     
     
       
-        <title>GitHub 代码实时同步 Gitee 和 Coding - 维燕的知识花园</title>
+        <title>GitHub 代码实时同步至国内 GIT 站点 - 维燕的知识花园</title>
       
     
     
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitHub 代码实时同步 Gitee 和 Coding
+              GitHub 代码实时同步至国内 GIT 站点
             
           </span>
         </div>
@@ -3518,7 +3518,7 @@
           
   
   <span class="md-ellipsis">
-    GitHub 代码实时同步 Gitee 和 Coding
+    GitHub 代码实时同步至国内 GIT 站点
   </span>
   
 
@@ -3529,7 +3529,7 @@
         
   
   <span class="md-ellipsis">
-    GitHub 代码实时同步 Gitee 和 Coding
+    GitHub 代码实时同步至国内 GIT 站点
   </span>
   
 
@@ -3559,9 +3559,78 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基于 SSH 配置公钥和私钥
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 将私钥传到 GitHub 仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gitee" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 将公钥传到 Gitee
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-gitee" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 在 Gitee 上创建一个私人令牌
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-github-gitee" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. GitHub 目标仓库粘贴 Gitee 私人令牌
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 修改配置文件中的源和目标设置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      配置密钥
+      使用账号密码的方式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用账号密码的方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置账号密码
     </span>
   </a>
   
@@ -3577,50 +3646,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      执行同步
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      使用账号密码的方式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="使用账号密码的方式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置账号密码
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#workflow_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      创建 workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
       执行同步
     </span>
   </a>
@@ -3633,7 +3660,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       总结
     </span>
@@ -10144,9 +10171,78 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基于 SSH 配置公钥和私钥
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 将私钥传到 GitHub 仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gitee" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 将公钥传到 Gitee
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-gitee" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 在 Gitee 上创建一个私人令牌
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-github-gitee" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. GitHub 目标仓库粘贴 Gitee 私人令牌
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 修改配置文件中的源和目标设置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      配置密钥
+      使用账号密码的方式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用账号密码的方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置账号密码
     </span>
   </a>
   
@@ -10162,50 +10258,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      执行同步
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      使用账号密码的方式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="使用账号密码的方式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置账号密码
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#workflow_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      创建 workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
       执行同步
     </span>
   </a>
@@ -10218,7 +10272,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       总结
     </span>
@@ -10257,7 +10311,7 @@
   
 
 
-  <h1>GitHub 代码实时同步 Gitee 和 Coding</h1>
+  <h1>GitHub 代码实时同步至国内 GIT 站点</h1>
 
 <p>GitHub 是一个神奇而强大的社区，它作为全世界最大的代码集中地，在上面，我们可以随意地下载或者参与各种著名开源项目和开源开发框架。</p>
 <p><strong>玩 GitHub 至少有以下几个好处：</strong></p>
@@ -10269,82 +10323,42 @@
 </ol>
 <p>但由于一些大家都知道的原因，国内访问 GitHub 有时候会不太稳定，这就可能导致你在安装 GitHub 上的一些软件（或者拉取代码）的时候，由于网络问题而失败。这时候你就想：</p>
 <ol>
-<li>把代码同步一份到 gitee，从 gitee 进行拉取下载；</li>
-<li>把代码同步一份到 coding，使用 coding 的网站托管/自动构建功能，实时部署你的站点应用。</li>
+<li>把代码同步一份到 gitee/coding/gitcode 等托管平台，从这些托管平台进行拉取下载；</li>
+<li>把代码同步一份到 gitee，使用 gitee 的网站托管/自动构建功能，实时部署你的站点应用。</li>
 </ol>
-<p>虽然，gitee 和 coding 都提供了从 GitHub 导入项目和强制更新的选项（coding 还提供了可以<strong>通过触发时间来自动同步</strong>），但都比较繁琐，在这里介绍一种通过 GitHub Actions 的方法是一步实现 GitHub 代码实时同步 gitee 和 coding。</p>
+<p>虽然，gitee/coding/gitcode 等平台都提供了从 GitHub 导入项目和强制更新的选项（coding 还提供了可以<strong>通过触发时间来自动同步</strong>），但都比较繁琐，在这里介绍一种通过 GitHub Actions 的方法是一步实现 GitHub 代码实时同步 gitee/coding/gitcode 等。</p>
 <h2 id="_1">使用秘钥的方式<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>首先说明一下，这种方式有点繁琐，而且只能把 GitHub 的代码同步到 gitee 码云上，暂时无法同步到 coding 上（至少在本人的测试中，coding 是没办法的）。</p>
-<p>基于秘钥的方式同步，主要参考 <a href="https://github.com/yanglbme/gitee-pages-action">Gitee Pages Action</a> 项目的做法，具体步骤如下。</p>
-<h3 id="_2">配置密钥<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><strong>本方法主要基于 <a href="https://github.com/Yikun/hub-mirror-action">https://github.com/Yikun/hub-mirror-action</a> 提供的 Actions 实现。</strong></p>
+<h3 id="1-ssh">1. 基于 SSH 配置公钥和私钥<a class="headerlink" href="#1-ssh" title="Permanent link">&para;</a></h3>
+<p>这一步可以参考或网上N多资料，如《<a href="https://help.gitee.com/enterprise/code-manage/%E6%9D%83%E9%99%90%E4%B8%8E%E8%AE%BE%E7%BD%AE/%E9%83%A8%E7%BD%B2%E5%85%AC%E9%92%A5%E7%AE%A1%E7%90%86/%E7%94%9F%E6%88%90%E6%88%96%E6%B7%BB%E5%8A%A0SSH%E5%85%AC%E9%92%A5">生成/添加SSH公钥 -Gitee</a>》。    <br />
+<a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/ssh-keygen-ed25519.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ssh-keygen-ed25519" src="https://shub.weiyan.tech/kgarden/2024/01/ssh-keygen-ed25519.png" /></a></p>
+<h3 id="2-github">2. 将私钥传到 GitHub 仓库<a class="headerlink" href="#2-github" title="Permanent link">&para;</a></h3>
+<p>通过 &ldquo;<strong>Settings → Secrets and variables → Actions → New repository secret</strong>&ldquo;，创建一个 <code>GITEE_PRIVATE_KEY</code> 变量，将私钥(<code>~/.ssh/id_ed25519</code>)内容拷贝到值区域。   <br />
+<a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/gitee_private_key.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GITEE_PRIVATE_KEY" src="https://shub.weiyan.tech/kgarden/2024/01/gitee_private_key.png" /></a></p>
+<h3 id="3-gitee">3. 将公钥传到 Gitee<a class="headerlink" href="#3-gitee" title="Permanent link">&para;</a></h3>
+<p>这样一来，就可以实现 GitHub 和 Gitee 之间的通信。而对于不同的公钥配置，Github 可以在<a href="https://github.com/settings/keys">这里</a>配置，Gitee 可以在<a href="https://gitee.com/profile/sshkeys">这里</a>配置，对于 GitHub → Giee 我们只需要配置 Giee 上配置公钥即可。  <br />
+<a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/ssh-pub-key.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ssh-pub-key" src="https://shub.weiyan.tech/kgarden/2024/01/ssh-pub-key.png" /></a></p>
+<h3 id="4-gitee">4. 在 Gitee 上创建一个私人令牌<a class="headerlink" href="#4-gitee" title="Permanent link">&para;</a></h3>
+<p>这个 token 记得保存，因为它只会出现一次。   <br />
+<a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/gitee-token.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="gitee-token" src="https://shub.weiyan.tech/kgarden/2024/01/gitee-token.png" /></a></p>
+<h3 id="5-github-gitee">5. GitHub 目标仓库粘贴 Gitee 私人令牌<a class="headerlink" href="#5-github-gitee" title="Permanent link">&para;</a></h3>
+<p>类似第 2 步，我们在想要同步到 Gitee 的 GitHub 源仓库中创建一个 <code>GITEE_TOKEN</code> 变量，将第 4 步生成的私人令牌作为值粘贴进去。   <br />
+<a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/add-gitee-token.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="add-gitee-token" src="https://shub.weiyan.tech/kgarden/2024/01/add-gitee-token.png" /></a></p>
+<h3 id="6">6. 修改配置文件中的源和目标设置<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<p>最后，我们将配置文件中的源和目标设置为你自己的账号即可。
+<div class="highlight"><pre><span></span><code>src: github/&lt;这里改成自己的GitHub名字&gt;
+dst: gitee/&lt;这里改成自己的Gitee名字&gt;
+</code></pre></div></p>
+<p>这样配置就完成了。提交你的修改，GitHub Action 就会开始启动并工作了。</p>
 <blockquote>
-<p><strong>⚠️ 注意：Github 上的 SSH Keys 公钥和 Gitee 的个人设置页面配置的 SSH Keys 公钥内容必须是完全一致的！</strong></p>
+<p><strong>注意</strong>：   <br />
+<a href="https://github.com/Yikun/hub-mirror-action"><strong>Hub Mirror Action</strong></a> 默认会同步你个人账号(或者组织) 下的全部仓库，如果你只想同步当前一个仓库，可以参考 <a href="https://github.com/Yikun/hub-mirror-action?tab=readme-ov-file#%E9%BB%91%E7%99%BD%E5%90%8D%E5%8D%95"><strong>黑/白名单</strong></a> 和 <a href="https://github.com/Yikun/hub-mirror-action?tab=readme-ov-file#%E9%9D%99%E6%80%81%E5%90%8D%E5%8D%95%E5%8F%AF%E7%94%A8%E4%BA%8E%E5%8D%95%E4%B8%80%E4%BB%93%E5%BA%93%E5%90%8C%E6%AD%A5"><strong>静态名单（可用于单一仓库同步）</strong></a> 的配置。</p>
 </blockquote>
-<p>密钥的配置步骤如下。</p>
-<p>首先，在命令行终端或 Git Bash 使用命令 <strong>ssh-keygen -t rsa -C &ldquo;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#111;&#117;&#114;&#101;&#109;&#97;&#105;&#108;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#121;&#111;&#117;&#114;&#101;&#109;&#97;&#105;&#108;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a></strong>&rdquo; 生成 SSH Key，注意替换为自己的邮箱。生成的 <strong>id_rsa 是私钥</strong>，<strong>id_rsa.pub 是公钥</strong>。(注意此处不要设置密码，生成的公私钥用于下面 GitHub / Gitee 的配置，以保证公私钥成对，否则从 GitHub -&gt; Gitee 的同步将会失败。)
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnLtojw2-D77uJnv9XmlQRGFrXoZ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnLtojw2-D77uJnv9XmlQRGFrXoZ.png" /></a>
-第二，在 GitHub 项目的「<strong>Settings</strong> -&gt; <strong>Secrets</strong> → <strong>New repository secret</strong>」路径下配置好命名为 <strong>GITEE_RSA_PRIVATE_KEY</strong> 和 <strong>GITEE_PASSWORD</strong> 的两个密钥。其中：</p>
-<ul>
-<li><strong>GITEE_RSA_PRIVATE_KEY</strong> 存放 <strong>id_rsa 私钥</strong>；</li>
-<li><strong>GITEE_PASSWORD</strong> 存放 Gitee <strong>帐号的密码</strong>；</li>
-</ul>
-<p>私钥文件内容 <strong>/home/shenweiyan/.ssh/id_rsa</strong>（如下仅为示例）：
-<div class="highlight"><pre><span></span><code>-----BEGIN RSA PRIVATE KEY-----
-MIIEoQIBAAKCAQEAu8Y+QEgYbQG2g01THpSqG3SAEt9JrH0TvFGZI3DS0HjbRz46
-7qkiT+TXju7ilAEfX26JkstIxKDA9rOMlndsuhFuzT1kCB6+iA6Uoauu5/xNnRqf
-+tchWhSroJeQLo7WUuaoKKBaU1OgViIYBf431vNee9vuJobve2lKCuN1I5yT86lt
-2O/5fOCgwPd0p8S9v+xe4IADu0dgFQijZtc5VnvHQk0RRwORJsyaJIr+0z6AycoR
-EY/ZBPsJ3gJ0naRS81eEwEv87fS/bq8iYBaaWNzpB/G4LLywKvD8Yuyv0q9zKSUV
-jTgWE0/CgH14T3JTvyzFe5lYktj1GzAgX7Pu1wIBIwKCAQEAgMJz1E6xqdVJ86K8
-p0Fes72Zpop7qXpWrQTAx9hWC0uPDEft5XtKunEI1wo098ZBZgKnepoGAyxnD5EP
-Pp+xQvAGRk2qnhNiY0D8iYBaaWNzpB/G4LLywKvD8YuyvL/AunpbLhLtkeCsdbiI
-q8IpWAS1rFRkq5jj6phHAoGAc2t6PYMLPAgKKbQL+nCXBpK7pOduaKsZrFpNGBF2
-JmV+GOR0aFSkyHHvViXWF5QvYDy26/ROEVGEcHcAMF0iEvtsRa3WHv9otVf7tPJ6
-FjzQYbYN0zNvRR+eJrE9NoelvKG4HIMWYLtQqap2H6p2oQlkXeIvkhFR/wUf3HVN
-8o0CgYA2BIrBgMx5LtEcsbht7/dl/sj4oRmQhl7X+uA/ISjtk9hwCALLhCb+yevr
-Y+N74xj4Q1hA1ro477z6axoS8E0fATb9s4rieG7KC61u8lII0epEzDdQQ348yA7Y
-XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
------END RSA PRIVATE KEY-----
-</code></pre></div></p>
-<p>公钥文件内容 <strong>/home/shenweiyan/.ssh/id_rsa.pub</strong>（如下仅为示例）：
-<div class="highlight"><pre><span></span><code>ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAu8Y+QEgYbQG2g01THpSqG3SAEt9JrH0TvFGZI3DS0HjbRz467qkiT+TXju7ilAEfX26JkstIxKDA9rOMlndsuhFpWAS1rFRkq5jj6phHAoGAc2t6PYMLPAgKKbQL+nCXBpK7pOduT3JTvyzFe5lYktj1GzAgX7Pu1w== ishenweiyan@foxmail.com
-</code></pre></div></p>
-<p>第三，在 GitHub 的个人设置页面「<a href="https://github.com/settings/keys">Settings -&gt; SSH and GPG keys</a>」配置 SSH Keys 公钥（即：<strong>id_rsa.pub</strong>），命名随意。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtcUhF3OCjBv7i0AZpOHWVpUoGkr.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtcUhF3OCjBv7i0AZpOHWVpUoGkr.png" /></a></p>
-<p>第四，在 Gitee 的个人设置页面「<a href="https://gitee.com/profile/sshkeys">安全设置 -&gt; SSH 公钥</a>」配置 SSH 公钥（即：<strong>id_rsa.pub</strong>），命名随意。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsey-rTV7Z0rZMAvirujPTPobsL5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsey-rTV7Z0rZMAvirujPTPobsL5.png" /></a></p>
-<h3 id="workflow">创建 workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h3>
-<p>在你的 GitHub 项目 <strong>.github/workflows/</strong> 文件夹下创建一个 .yml 文件，如 <strong>sync.yml</strong>，内容如下：</p>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SyncToGitee</span>
-
-<span class="nt">on</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">push</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span>
-
-<span class="nt">jobs</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">build</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Github Sync to Gitee</span>
-<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wearerequired/git-mirror-action@master</span>
-<span class="w">        </span><span class="nt">env</span><span class="p">:</span>
-<span class="w">          </span><span class="c1"># 注意在 Settings-&gt;Secrets 配置 GITEE_RSA_PRIVATE_KEY</span>
-<span class="w">          </span><span class="nt">SSH_PRIVATE_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITEE_RSA_PRIVATE_KEY }}</span>
-<span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<span class="w">          </span><span class="c1"># 注意替换为你的 GitHub 源仓库地址</span>
-<span class="w">          </span><span class="nt">source-repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git@github.com:shenweiyan/WebStack-Hugo.git</span>
-<span class="w">          </span><span class="c1"># 注意替换为你的 Gitee 目标仓库地址</span>
-<span class="w">          </span><span class="nt">destination-repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git@gitee.com:shenweiyan/WebStack-Hugo.git</span>
-</code></pre></div>
-<h3 id="_3">执行同步<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>最后，修改代码（如修改 README），提交，成功触发同步！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhNciqJ2JAce216HOdJhqNMLNylJ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhNciqJ2JAce216HOdJhqNMLNylJ.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8zbEMkhW6KnY1RqwtOwMX0ezP_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8zbEMkhW6KnY1RqwtOwMX0ezP_.png" /></a>
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhC-7z6OHx5gKOtXGRdFbh3JL60z.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhC-7z6OHx5gKOtXGRdFbh3JL60z.png" /></a></p>
-<h2 id="_4">使用账号密码的方式<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_2">使用账号密码的方式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>这个方法参考的是 <a href="https://github.com/abersheeran">@abersheeran</a> 的 <a href="https://github.com/abersheeran/index.py/blob/a9ef1e2dca0c975108b942657679ec47908c7bcc/.github/workflows/setup.yml#L55-L82">push-to-mirror </a>方法，可以同步到 gitee 以及任何一个支持 git 的平台，其原理很简单，就拉取然后推送。</p>
-<h3 id="_5">配置账号密码<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>从 2024-01 起，发现通过这种方法同步到 gitee，会提示 <code>Connection timed out</code>，但是同步 GitCode.com 是正常的，目前暂时没找到解决方法。   <br />
+<a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/sync-gitee-time-out.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="sync-gitee Connection timed out" src="https://shub.weiyan.tech/kgarden/2024/01/sync-gitee-time-out.png" /></a></p>
+<h3 id="_3">配置账号密码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>首先，在 GitHub 项目的「<strong>Settings</strong> -&gt; <strong>Secrets</strong> → <strong>New repository secret</strong>」路径下配置好你需要同步的 coding 和 gitee 账号密码（命名可以随便，只要求跟下面 <strong>sync.yml</strong> 的变量名称一致即可）。其中：</p>
 <ul>
 <li><strong>GITEE_USERNAME</strong> 存放 <strong>Gitee 的账号</strong>；</li>
@@ -10354,7 +10368,7 @@ XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
 </ul>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsW8HjkaxCtwI0YVC4DHrFPceXmD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsW8HjkaxCtwI0YVC4DHrFPceXmD.png" /></a>
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrllDsG6dnVD9N553JIP4a1GVOZA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrllDsG6dnVD9N553JIP4a1GVOZA.png" /></a></p>
-<h3 id="workflow_1">创建 workflow<a class="headerlink" href="#workflow_1" title="Permanent link">&para;</a></h3>
+<h3 id="workflow">创建 workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h3>
 <p>在你的 GitHub 项目 <strong>.github/workflows/</strong> 文件夹下创建一个 <code>.yml</code> 文件，如 <strong>sync.yml</strong>，内容如下：</p>
 <div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Sync-To-Gitee-and-Coding</span>
 
@@ -10410,13 +10424,13 @@ XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
 <span class="w">          </span><span class="nt">GITEE_USERNAME</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITEE_USERNAME }}</span>
 <span class="w">          </span><span class="nt">GITEE_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITEE_PASSWORD }}</span>
 </code></pre></div>
-<h3 id="_6">执行同步<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_4">执行同步<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>最后，修改代码（如修改 README），提交，成功触发同步！
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnPI_f183sRTBRgB6Gh5bVbzJE7b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnPI_f183sRTBRgB6Gh5bVbzJE7b.png" /></a></p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn7B-rFuN_RYsSuuraS0H7YpBx-f.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="同步 workflows 执行成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn7B-rFuN_RYsSuuraS0H7YpBx-f.png" title="同步 workflows 执行成功！" /></a></p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqGnfZCiqR_Jd1EiWghqmztpcfe2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GitHub 代码同步 Coding 成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqGnfZCiqR_Jd1EiWghqmztpcfe2.png" title="GitHub 代码同步 Coding 成功！" /></a></p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlfUfgGFbwojp08rLox4EwsFVP4d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GitHub 代码同步 Gitee 成功！" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlfUfgGFbwojp08rLox4EwsFVP4d.png" title="GitHub 代码同步 Gitee 成功！" /></a></p>
-<h2 id="_7">总结<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h2 id="_5">总结<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>文章中参考前人的一些成果成功把 GitHub 的代码同步到了 gitee 和 coding，可能还有可以改进的地方，但不管怎么说，基本满足了个人的需求。</p>
 <p>最后，GitHub 是一个非常棒的平台，希望大家拥抱开源，多多分享。</p>
 
