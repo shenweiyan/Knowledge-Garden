@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-安装命令" class="md-skip">
           跳转至
         </a>
       
@@ -10073,7 +10073,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="1">1. 安装命令<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
+<h1 id="1-安装命令">1. 安装命令<a class="headerlink" href="#1-安装命令" title="Permanent link">&para;</a></h1>
 <p>R 源码编译安装基本命令。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Rpy：--enable-R-shlib</span>
 <span class="c1"># download list：https://mirrors.ustc.edu.cn/CRAN/src/base/</span>
@@ -10088,7 +10088,7 @@ $<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class=
 <li>例如，如果不编译生成 <code>libR.so</code>，在安装 rpy2（Python 中的 R 语言接口模块） 时就无法正确编译。</li>
 <li>同时，确保同目录下 <code>libRblas.so</code>,<code>libRlapack.so</code> 两个链接库也被正确生成，这两个库默认会生成，如果没有，需要添加参数：<code>--enable-BLAS-shlib</code>,<code>--with-blas</code>,<code>--with-lapack</code>；</li>
 </ul>
-<h1 id="2">2. 基础环境<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<h1 id="2-基础环境">2. 基础环境<a class="headerlink" href="#2-基础环境" title="Permanent link">&para;</a></h1>
 <ul>
 <li><strong>configure: error: No Fortran compiler found</strong></li>
 </ul>
@@ -10109,9 +10109,9 @@ apt<span class="w"> </span>install<span class="w"> </span>g++
 yum<span class="w"> </span>install<span class="w"> </span>glibc-headers
 yum<span class="w"> </span>install<span class="w"> </span>gcc-c++
 </code></pre></div>
-<h1 id="3">3. 各种库和依赖解决<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<h1 id="3-各种库和依赖解决">3. 各种库和依赖解决<a class="headerlink" href="#3-各种库和依赖解决" title="Permanent link">&para;</a></h1>
 <p>R 源码编译安装的时候需要的各种依赖库比较多，如果你有 root 的权限，建议使用 <strong>yum/apt</strong> 等系统命令解决；如果没有 root 权限，可以手动一个个去解决。</p>
-<h2 id="31">3.1 自动处理<a class="headerlink" href="#31" title="Permanent link">&para;</a></h2>
+<h2 id="31-自动处理">3.1 自动处理<a class="headerlink" href="#31-自动处理" title="Permanent link">&para;</a></h2>
 <p>针对 RHEL/Debian 一些常见的依赖，使用 yum/apt 自动解决的示例。</p>
 <ul>
 <li><strong>configure: error: &ndash;with-readline=yes (default) and headers/libs are not available</strong></li>
@@ -10191,7 +10191,7 @@ apt<span class="w"> </span>install<span class="w"> </span>libicu-dev
 <span class="c1"># RHEL/openEluer</span>
 yum<span class="w"> </span>install<span class="w"> </span>libicu<span class="w"> </span>libicu-devel
 </code></pre></div>
-<h2 id="32">3.2 手动处理<a class="headerlink" href="#32" title="Permanent link">&para;</a></h2>
+<h2 id="32-手动处理">3.2 手动处理<a class="headerlink" href="#32-手动处理" title="Permanent link">&para;</a></h2>
 <p>以下是一些常见的依赖手动解决的示例，可以参考。</p>
 <h3 id="zlib">zlib<a class="headerlink" href="#zlib" title="Permanent link">&para;</a></h3>
 <p>根据《<a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries">R Installation and Administration: A.1 Essential programs and libraries</a>》官方文档，zlib (version 1.2.5 or later)，至少需要 1.2.5 及以上版本。</p>
@@ -10228,7 +10228,7 @@ $<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class=
 <span class="w">    </span>checking<span class="w"> </span>whether<span class="w"> </span>bzip2<span class="w"> </span>support<span class="w"> </span>suffices...<span class="w"> </span>configure:<span class="w"> </span>error:<span class="w"> </span>bzip2<span class="w"> </span>library<span class="w"> </span>and<span class="w"> </span>headers<span class="w"> </span>are<span class="w"> </span>required
 <span class="w">    </span><span class="c1">## zlib 版本已经符合要求，bzip2 版本要求 &gt;= 1.0.6</span>
 </code></pre></div>
-<h3 id="bzip2-or-libbz2">bzip2 or libbz2<a class="headerlink" href="#bzip2-or-libbz2" title="Permanent link">&para;</a></h3>
+<h3 id="bzip2-orlibbz2">bzip2 or libbz2<a class="headerlink" href="#bzip2-orlibbz2" title="Permanent link">&para;</a></h3>
 <p>根据《<a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries">R Installation and Administration: A.1 Essential programs and libraries</a>》官方文档, libbz2 (version 1.0.6 or later: called bzip2-libs/bzip2-devel or libbz2-1.0/libbz2-dev by some Linux distributions)，至少需要 1.0.6 及以上版本.</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>bzip2-1.0.6.tar.gz
@@ -10297,7 +10297,7 @@ $<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class=
 <span class="w">    </span>configure:<span class="w"> </span>error:<span class="w"> </span>libcurl<span class="w"> </span>&gt;<span class="o">=</span><span class="w"> </span><span class="m">7</span>.28.0<span class="w"> </span>library<span class="w"> </span>and<span class="w"> </span>headers<span class="w"> </span>are<span class="w"> </span>required<span class="w"> </span>with<span class="w"> </span>support<span class="w"> </span><span class="k">for</span><span class="w"> </span>https
 <span class="w">    </span><span class="c1"># 需要安装 curl &gt;= 7.28.0</span>
 </code></pre></div>
-<h3 id="curl-or-libcurl">curl or libcurl<a class="headerlink" href="#curl-or-libcurl" title="Permanent link">&para;</a></h3>
+<h3 id="curl-orlibcurl">curl or libcurl<a class="headerlink" href="#curl-orlibcurl" title="Permanent link">&para;</a></h3>
 <p>在《R Installation and Administration: <a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries">A.1 Essential programs and libraries</a>》要求, libcurl 大于或等于  7.22.0 版本。<strong>Library libcurl (version 7.22.0 or later) is required, with at least 7.28.0 being desirable.</strong></p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://curl.haxx.se/download/curl-7.64.1.tar.gz<span class="w"> </span>--no-check-certificate
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>curl-7.64.1.tar.gz
@@ -10432,7 +10432,7 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <ul>
 <li><a href="http://libjpeg.sourceforge.net/">http://libjpeg.sourceforge.net/</a></li>
 </ul>
-<h1 id="4">4. 完整编译安装命令<a class="headerlink" href="#4" title="Permanent link">&para;</a></h1>
+<h1 id="4-完整编译安装命令">4. 完整编译安装命令<a class="headerlink" href="#4-完整编译安装命令" title="Permanent link">&para;</a></h1>
 <p>如果使用了自定义安装的 gcc/c++ 进行编译, 需要在 configure 时候使用 CC/CXX 进行指定, 否则使用系统默认的 gcc/c++，由于 CentOS-6.5 默认的 gcc==4.4.7, 该版本的 gcc 会导致 R&gt;=3.5.0 编译出现各种错误，非 root 用户手动升级 gcc 可以参考：
 <a href="https://www.yuque.com/shenweiyan/cookbook/linux-gcc-install?view=doc_embed">非 root 用户手动编译安装 GCC</a></p>
 <p>最后，CentOS 下 R 源码安装的完整 configure 命令如下（同样适用于 Ubuntu/Debian）：</p>
@@ -10503,7 +10503,7 @@ configure:<span class="w"> </span>WARNING:<span class="w"> </span>neither<span c
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>make
 $<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
-<h1 id="5">5. 设置环境变量<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
+<h1 id="5-设置环境变量">5. 设置环境变量<a class="headerlink" href="#5-设置环境变量" title="Permanent link">&para;</a></h1>
 <p>最后, 把安装完成的 R 添加至环境变量:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">R_HOME</span><span class="o">=</span>path-to-R
 <span class="nb">export</span><span class="w"> </span><span class="nv">R_LIBS</span><span class="o">=</span><span class="nv">$R_HOME</span>/lib64/R/library
@@ -10582,7 +10582,7 @@ $<span class="w"> </span>ldd<span class="w"> </span>/Bioinfo/SoftWare/R-3.5.0/li
 <span class="w">        </span>libtinfo.so.5<span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span>/lib64/libtinfo.so.5<span class="w"> </span><span class="o">(</span>0x00007f6507038000<span class="o">)</span>
 </code></pre></div>
 <p>以上就是普通用户源码编译安装最新版本 R 的全部内容, <strong>总的一句话就是缺什么安装什么, 从最基本的 gcc 编译器开始到 R 所需要的各种依赖库</strong>，直至最终安装完成.。</p>
-<h1 id="6">6. 参考资料<a class="headerlink" href="#6" title="Permanent link">&para;</a></h1>
+<h1 id="6-参考资料">6. 参考资料<a class="headerlink" href="#6-参考资料" title="Permanent link">&para;</a></h1>
 <ul>
 <li>R 官方文档，《<a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html">R Installation and Administration</a>》，CRAN</li>
 <li>沈维燕，《<a href="https://www.yuque.com/shenweiyan/cookbook/linux-gcc-install">非 root 用户手动编译安装 GCC</a>》，语雀</li>

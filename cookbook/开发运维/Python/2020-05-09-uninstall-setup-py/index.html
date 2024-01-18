@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-pip" class="md-skip">
+        <a href="#1-pip-方法" class="md-skip">
           跳转至
         </a>
       
@@ -6225,7 +6225,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-pip" class="md-nav__link">
+  <a href="#1-pip-方法" class="md-nav__link">
     <span class="md-ellipsis">
       1. pip 方法
     </span>
@@ -6234,7 +6234,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-easy_install" class="md-nav__link">
+  <a href="#2easy_install-方法" class="md-nav__link">
     <span class="md-ellipsis">
       2. easy_install 方法
     </span>
@@ -6243,7 +6243,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-setuppy" class="md-nav__link">
+  <a href="#3-setuppy-方法" class="md-nav__link">
     <span class="md-ellipsis">
       3. setup.py 方法
     </span>
@@ -6252,7 +6252,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-pip" class="md-nav__link">
+  <a href="#4-卸载与-pip-的包依赖项" class="md-nav__link">
     <span class="md-ellipsis">
       4. 卸载与 Pip 的包依赖项
     </span>
@@ -6261,7 +6261,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-资料链接" class="md-nav__link">
     <span class="md-ellipsis">
       5. 资料链接
     </span>
@@ -10084,7 +10084,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-pip" class="md-nav__link">
+  <a href="#1-pip-方法" class="md-nav__link">
     <span class="md-ellipsis">
       1. pip 方法
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-easy_install" class="md-nav__link">
+  <a href="#2easy_install-方法" class="md-nav__link">
     <span class="md-ellipsis">
       2. easy_install 方法
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-setuppy" class="md-nav__link">
+  <a href="#3-setuppy-方法" class="md-nav__link">
     <span class="md-ellipsis">
       3. setup.py 方法
     </span>
@@ -10111,7 +10111,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-pip" class="md-nav__link">
+  <a href="#4-卸载与-pip-的包依赖项" class="md-nav__link">
     <span class="md-ellipsis">
       4. 卸载与 Pip 的包依赖项
     </span>
@@ -10120,7 +10120,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-资料链接" class="md-nav__link">
     <span class="md-ellipsis">
       5. 资料链接
     </span>
@@ -10162,17 +10162,17 @@
   <h1>如何卸载 python setup.py install 安装的包？</h1>
 
 <p>当我们半自动安装某些 python 包时，总是存在很多依赖关系的问题，而这些问题还是很难避免的，所以，当我们安装一个不确定的包的时候，最好提前收集一些相关资料，或者请教他人，同时最好把安装过程都记录下来。不然到时候想要卸载半天都卸不干净，即麻烦又白白浪费时间。</p>
-<h3 id="1-pip">1. pip 方法<a class="headerlink" href="#1-pip" title="Permanent link">&para;</a></h3>
+<h3 id="1-pip-方法">1. pip 方法<a class="headerlink" href="#1-pip-方法" title="Permanent link">&para;</a></h3>
 <p>**直接使用 **<code>**pip uninstall package**</code> 即可。</p>
 <div class="highlight"><pre><span></span><code><span class="c1">## 卸载 numpy</span>
 <span class="n">pip3</span> <span class="n">uninstall</span> <span class="n">numpy</span>
 </code></pre></div>
-<h3 id="2-easy_install">2. easy_install 方法<a class="headerlink" href="#2-easy_install" title="Permanent link">&para;</a></h3>
+<h3 id="2easy_install-方法">2. easy_install 方法<a class="headerlink" href="#2easy_install-方法" title="Permanent link">&para;</a></h3>
 <p>**直接使用 **<code>**easy_install -m lib**</code> 卸载。</p>
 <div class="highlight"><pre><span></span><code><span class="c1">## 卸载 numpy</span>
 <span class="n">easy_install</span> <span class="o">-</span><span class="n">m</span> <span class="n">numpy</span>
 </code></pre></div>
-<h3 id="3-setuppy">3. setup.py 方法<a class="headerlink" href="#3-setuppy" title="Permanent link">&para;</a></h3>
+<h3 id="3-setuppy-方法">3. setup.py 方法<a class="headerlink" href="#3-setuppy-方法" title="Permanent link">&para;</a></h3>
 <p><strong>安装前记录安装细节，以便日后卸载。</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1">## 记录安装日志</span>
 <span class="c1"># 安装numpy</span>
@@ -10182,7 +10182,7 @@
 </code></pre></div>
 <p><strong>与安装时创建这些文件相反，读取日志文件 install.log，删除安装时创建的所有文件和目录。</strong>
 **</p>
-<h3 id="4-pip">4. 卸载与 Pip 的包依赖项<a class="headerlink" href="#4-pip" title="Permanent link">&para;</a></h3>
+<h3 id="4-卸载与-pip-的包依赖项">4. 卸载与 Pip 的包依赖项<a class="headerlink" href="#4-卸载与-pip-的包依赖项" title="Permanent link">&para;</a></h3>
 <p>当使用 <code>pip</code> 安装包时，它还会安装包所需的所有依赖项。 不幸的是，当您卸载原始包时，<code>pip</code> 不会卸载依赖项。 这里有几个不同的过程可以用来卸载依赖项。</p>
 <ol>
 <li>如果一个软件包是通过 pip 需求文件安装的（即<code>pip install requirements.txt</code>），那么这个软件包的依赖项可以通过下面的命令卸载：</li>
@@ -10197,7 +10197,7 @@
 <p>例如，输入<code>pip show cryptography</code>，即可看到类似  <code>'Requires: six, cffi'</code>  的依赖提示：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiXQc_h02lAJdYuTKQux-GJM__xl.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pip-show.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiXQc_h02lAJdYuTKQux-GJM__xl.png" /></a></p>
 <p>然后，可以使用 <code>pip uninstall</code>  命令来卸载这些依赖项。 但是，在卸载之前，应确保这些软件包不与其他现有软件包相关。</p>
-<h3 id="5">5. 资料链接<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<h3 id="5-资料链接">5. 资料链接<a class="headerlink" href="#5-资料链接" title="Permanent link">&para;</a></h3>
 <ol>
 <li>activestate，<a href="https://www.activestate.com/resources/quick-reads/how-to-uninstall-python-packages/">How To Uninstall Python Packages</a>，ActiveState</li>
 </ol>

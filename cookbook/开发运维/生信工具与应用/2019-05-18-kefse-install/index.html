@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#问题" class="md-skip">
           跳转至
         </a>
       
@@ -3469,7 +3469,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#问题" class="md-nav__link">
     <span class="md-ellipsis">
       问题
     </span>
@@ -3478,7 +3478,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#原因" class="md-nav__link">
     <span class="md-ellipsis">
       原因
     </span>
@@ -3487,7 +3487,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#解决" class="md-nav__link">
     <span class="md-ellipsis">
       解决
     </span>
@@ -3496,7 +3496,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#重新测试" class="md-nav__link">
     <span class="md-ellipsis">
       重新测试
     </span>
@@ -10075,7 +10075,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#问题" class="md-nav__link">
     <span class="md-ellipsis">
       问题
     </span>
@@ -10084,7 +10084,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#原因" class="md-nav__link">
     <span class="md-ellipsis">
       原因
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#解决" class="md-nav__link">
     <span class="md-ellipsis">
       解决
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#重新测试" class="md-nav__link">
     <span class="md-ellipsis">
       重新测试
     </span>
@@ -10143,7 +10143,7 @@
 
   <h1>LEfSe 分析软件安装小记</h1>
 
-<h2 id="_1">问题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="问题">问题<a class="headerlink" href="#问题" title="Permanent link">&para;</a></h2>
 <p>源码下载的 LEfSe，或者使用 <code>conda install -c bioconda lefse</code> 安装完成后，执行分析出现报错：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>lefse-format_input.py<span class="w"> </span>hmp_aerobiosis_small.txt<span class="w"> </span>hmp_aerobiosis_small.in<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="w"> </span>-s<span class="w"> </span><span class="m">2</span><span class="w"> </span>-u<span class="w"> </span><span class="m">3</span><span class="w"> </span>-o<span class="w"> </span><span class="m">1000000</span>
 
@@ -10169,7 +10169,7 @@ Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </
 <span class="w">    </span>raise<span class="w"> </span>AttributeError<span class="o">(</span><span class="s1">&#39;Unknown property %s&#39;</span><span class="w"> </span>%<span class="w"> </span>k<span class="o">)</span>
 AttributeError:<span class="w"> </span>Unknown<span class="w"> </span>property<span class="w"> </span>axis_bgcolor
 </code></pre></div>
-<h2 id="_2">原因<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="原因">原因<a class="headerlink" href="#原因" title="Permanent link">&para;</a></h2>
 <p>出现报错主要原因是 matplotlib==2.2.0 起把部分功能函数移除了，我们需要回退 matplotlib 版本。</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsFXTJemjeJR4BJp87MySIjsQ4JN.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsFXTJemjeJR4BJp87MySIjsQ4JN.png" /></a></p>
 <div class="highlight"><pre><span></span><code>$ python
@@ -10181,10 +10181,10 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 &#39;2.2.2&#39;
 &gt;&gt;&gt;
 </code></pre></div>
-<h2 id="_3">解决<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="解决">解决<a class="headerlink" href="#解决" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">matplotlib</span><span class="o">==</span><span class="m">1</span>.5<span class="w">  </span><span class="c1">#注意不要用conda, 以免发生环境conflicts</span>
 </code></pre></div>
-<h2 id="_4">重新测试<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="重新测试">重新测试<a class="headerlink" href="#重新测试" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>$ wget http://huttenhower.sph.harvard.edu/webfm_send/129 -O hmp_aerobiosis_small.txt
 
 $ format_input.py hmp_aerobiosis_small.txt hmp_aerobiosis_small.in -c 1 -s 2 -u 3 -o 1000000

@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-前言" class="md-skip">
           跳转至
         </a>
       
@@ -1322,7 +1322,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-前言" class="md-nav__link">
     <span class="md-ellipsis">
       1. 前言
     </span>
@@ -1331,7 +1331,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-go" class="md-nav__link">
+  <a href="#2-go-功能分类分析" class="md-nav__link">
     <span class="md-ellipsis">
       2. GO 功能分类分析
     </span>
@@ -1341,7 +1341,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
+  <a href="#21-说明" class="md-nav__link">
     <span class="md-ellipsis">
       2.1 说明
     </span>
@@ -1350,7 +1350,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-go" class="md-nav__link">
+  <a href="#22-go-功能分类柱状图绘制" class="md-nav__link">
     <span class="md-ellipsis">
       2.2 GO 功能分类柱状图绘制
     </span>
@@ -1364,7 +1364,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-go" class="md-nav__link">
+  <a href="#3-go-功能富集分析" class="md-nav__link">
     <span class="md-ellipsis">
       3. GO 功能富集分析
     </span>
@@ -1374,7 +1374,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31" class="md-nav__link">
+  <a href="#31-说明" class="md-nav__link">
     <span class="md-ellipsis">
       3.1 说明
     </span>
@@ -1388,7 +1388,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10114,7 +10114,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-前言" class="md-nav__link">
     <span class="md-ellipsis">
       1. 前言
     </span>
@@ -10123,7 +10123,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-go" class="md-nav__link">
+  <a href="#2-go-功能分类分析" class="md-nav__link">
     <span class="md-ellipsis">
       2. GO 功能分类分析
     </span>
@@ -10133,7 +10133,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
+  <a href="#21-说明" class="md-nav__link">
     <span class="md-ellipsis">
       2.1 说明
     </span>
@@ -10142,7 +10142,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-go" class="md-nav__link">
+  <a href="#22-go-功能分类柱状图绘制" class="md-nav__link">
     <span class="md-ellipsis">
       2.2 GO 功能分类柱状图绘制
     </span>
@@ -10156,7 +10156,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-go" class="md-nav__link">
+  <a href="#3-go-功能富集分析" class="md-nav__link">
     <span class="md-ellipsis">
       3. GO 功能富集分析
     </span>
@@ -10166,7 +10166,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31" class="md-nav__link">
+  <a href="#31-说明" class="md-nav__link">
     <span class="md-ellipsis">
       3.1 说明
     </span>
@@ -10180,7 +10180,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10221,7 +10221,7 @@
 
   <h1>GO 功能富集分析结果绘图 R 代码</h1>
 
-<h2 id="1">1. 前言<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-前言">1. 前言<a class="headerlink" href="#1-前言" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>基因本体论 ( Gene Ontology, GO ) 是一个被广泛使用的生物学数据库，它由两个方面组成：其一为本体自身，即由生物学家定义好的词条以及它们之间的结构化关系；其二为基因产物和词条之间的关系，即基因本体注释。</p>
 <p>本体是某一专门领域的有严格约束的功能词汇或称作功能类，它们通过有向无环图（Directed Acyclic Graph, DAG）的形式将严格定义的不同功能类之间的关系组织起来。GO 是跨越原核生物与真核生物各物种的基因功能分类体系，分为三个独立的 ontology, 分别是生物过程(biological process, BP)，分子功能（molecular function, MF），和细胞组分(cellular component, CC)。</p>
@@ -10229,8 +10229,8 @@
 <p>GO 分析结果主要包括 GO 功能分类结果和 GO 功能富集结果。</p>
 <p>From: 《<a href="http://www.biorefer.com/biorefer/html/fenxifuwu/shengwuxinxifenxifuwu/2010/0806/42.html">Gene Ontology(GO)分析</a>》，上海生咨生物科技有限公司生物信息分析服务</p>
 </blockquote>
-<h2 id="2-go">2. GO 功能分类分析<a class="headerlink" href="#2-go" title="Permanent link">&para;</a></h2>
-<h3 id="21">2.1 说明<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<h2 id="2-go-功能分类分析">2. GO 功能分类分析<a class="headerlink" href="#2-go-功能分类分析" title="Permanent link">&para;</a></h2>
+<h3 id="21-说明">2.1 说明<a class="headerlink" href="#21-说明" title="Permanent link">&para;</a></h3>
 <p>GO 功能分类是在某一功能层次上统计蛋白或者基因的数目或组成，往往是在 GO 的第二层次。此外也有研究都挑选一些 Term，而后统计直接对应到该 Term 的基因或蛋白数。目的是展示数据集大概的 GO 功能情况，以下为几种不同风格的 GO 短信功能分类分析结果图形。</p>
 <ul>
 <li>图 1. 参考图注，GO categories assigned to all proteins. Y-axis represents the count of proteins. The proteins were categorized according to the annotation of GO, and the number of each category is displayed based on biological process, cellular components, and molecular functions.
@@ -10246,7 +10246,7 @@
 <li>图３：风格５
   <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtTfRE9prf5HUBMK7xM-1h7CFl0m.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtTfRE9prf5HUBMK7xM-1h7CFl0m.png" /></a></li>
 </ul>
-<h3 id="22-go">2.2 GO 功能分类柱状图绘制<a class="headerlink" href="#22-go" title="Permanent link">&para;</a></h3>
+<h3 id="22-go-功能分类柱状图绘制">2.2 GO 功能分类柱状图绘制<a class="headerlink" href="#22-go-功能分类柱状图绘制" title="Permanent link">&para;</a></h3>
 <p>本图的绘制主要参考：<a href="http://www.biotrainee.com/thread-242-1-1.html。">http://www.biotrainee.com/thread-242-1-1.html。</a></p>
 <div class="highlight"><pre><span></span><code>library(ggplot2)
 
@@ -10280,8 +10280,8 @@ gplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) + geom_bar(stat
 </code></pre></div>
 <p>得到 GO 功能分类柱状图如下：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnR20BEyMQXi_ig3eKArfNXfqH1n.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnR20BEyMQXi_ig3eKArfNXfqH1n.png" /></a></p>
-<h2 id="3-go">3. GO 功能富集分析<a class="headerlink" href="#3-go" title="Permanent link">&para;</a></h2>
-<h3 id="31">3.1 说明<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<h2 id="3-go-功能富集分析">3. GO 功能富集分析<a class="headerlink" href="#3-go-功能富集分析" title="Permanent link">&para;</a></h2>
+<h3 id="31-说明">3.1 说明<a class="headerlink" href="#31-说明" title="Permanent link">&para;</a></h3>
 <p>GO 功能富集目的是为了获得相对于本底参照显著富集的功能类别,通过该项分析可以找出在统计上显著富集的.该功能或者定位有可能与研究的目前有关。以下为几种不同风格的 GO 功能富集分析结果图形。</p>
 <ul>
 <li>图 4. 示例图 1. Top 10 enrichment GO categories. X-axis represents –log10 p-value. The count of proteins corresponds to circular size.
@@ -10297,7 +10297,7 @@ gplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) + geom_bar(stat
 <li>图 6. 示例图 3，气泡图 Top 20 enrichment GO categories.
   <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjimEFhwg7j9uHD41P5QoNVZXaas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjimEFhwg7j9uHD41P5QoNVZXaas.png" /></a></li>
 </ul>
-<h2 id="_1">参考资料<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h2>
 <ol>
 <li>生信宝典，《<a href="https://blog.csdn.net/qazplm12_3/article/details/76474671">R 学习 - 功能富集泡泡图</a>》，CSDN 博客</li>
 <li>ybzhao，《<a href="https://www.plob.org/article/9700.html">GO 和 KEGG 富集的 R 包 clusterProfiler</a>》，Public Library of Bioinformatics</li>

@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#写博客" class="md-skip">
           跳转至
         </a>
       
@@ -10003,7 +10003,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#写博客" class="md-nav__link">
     <span class="md-ellipsis">
       写博客
     </span>
@@ -10012,7 +10012,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#加评论" class="md-nav__link">
     <span class="md-ellipsis">
       加评论
     </span>
@@ -10021,7 +10021,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#自定义归档页面" class="md-nav__link">
     <span class="md-ellipsis">
       自定义归档页面
     </span>
@@ -10155,9 +10155,9 @@
 <li>在 Markdown 中使用 <code>&lt;!-- more --&gt;</code> 的写法分割 description 和全文，总感觉有点别扭；</li>
 <li>Pagination 分页与 <code>git-revision-date</code> 冲突，会引发构建错误 - 参考 <a href="https://github.com/squidfunk/mkdocs-material/discussions/6156">mkdocs-material/discussions#6156</a></li>
 </ol>
-<h2 id="_1">写博客<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="写博客">写博客<a class="headerlink" href="#写博客" title="Permanent link">&para;</a></h2>
 <p>有感于 Material for MkDocs 的博客结构，现在基本上可以实现使用 Discussions 进行 MkDocs blog 编辑与写作 —— 在 Discussions 上写完文章，借助第三方工具或者 GitHub Actions 导出为 Markdown 文件，保存到 <code>docs/blog/posts</code> 就可以啦！</p>
-<h2 id="_2">加评论<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="加评论">加评论<a class="headerlink" href="#加评论" title="Permanent link">&para;</a></h2>
 <p>借助 <a href="https://giscus.app/zh-CN">giscus</a>，可以非常方便在文章页中插入指定的 discussions —— 在导出 discussions 的时候，在文章尾部增加类似以下 JavaScript 即可：
 <div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://giscus.app/client.js&quot;</span>
 <span class="w">        </span><span class="nx">data</span><span class="o">-</span><span class="nx">repo</span><span class="o">=</span><span class="s2">&quot;shenweiyan/Knowledge-Garden&quot;</span>
@@ -10173,7 +10173,7 @@
 <span class="w">        </span><span class="k">async</span><span class="o">&gt;</span>
 <span class="o">&lt;</span><span class="err">/script&gt;</span>
 </code></pre></div></p>
-<h2 id="_3">自定义归档页面<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="自定义归档页面">自定义归档页面<a class="headerlink" href="#自定义归档页面" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/squidfunk/mkdocs-material">mkdocs-material</a> 的归档页面跟博客 index 主页面基本是一个样，如果想要列表式的自定义，可以参考 <a href="https://github.com/squidfunk/mkdocs-material/discussions/6324">squidfunk/mkdocs-material#6324</a> 和 <a href="https://github.com/squidfunk/mkdocs-material/issues/6383">squidfunk/mkdocs-material#6383</a>。</p>
 <p>官方在 <a href="https://github.com/squidfunk/mkdocs-material-insiders/commit/8ecee7b9dbdc5b2a0befd043a048ad25d56c784f">8ecee7b</a> (Insiders) 中增加了几个个性化的新设置参数：  </p>
 <ul>

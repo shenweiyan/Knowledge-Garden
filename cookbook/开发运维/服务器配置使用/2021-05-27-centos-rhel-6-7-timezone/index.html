@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#centosrhel-6" class="md-skip">
+        <a href="#在-centosrhel-6-中改变时区" class="md-skip">
           跳转至
         </a>
       
@@ -3848,7 +3848,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#centosrhel-6" class="md-nav__link">
+  <a href="#在-centosrhel-6-中改变时区" class="md-nav__link">
     <span class="md-ellipsis">
       在 CentOS/RHEL 6 中改变时区
     </span>
@@ -3857,7 +3857,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centosrhel-7" class="md-nav__link">
+  <a href="#在-centosrhel-7-中改变时区" class="md-nav__link">
     <span class="md-ellipsis">
       在 CentOS/RHEL 7 中改变时区
     </span>
@@ -10057,7 +10057,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#centosrhel-6" class="md-nav__link">
+  <a href="#在-centosrhel-6-中改变时区" class="md-nav__link">
     <span class="md-ellipsis">
       在 CentOS/RHEL 6 中改变时区
     </span>
@@ -10066,7 +10066,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centosrhel-7" class="md-nav__link">
+  <a href="#在-centosrhel-7-中改变时区" class="md-nav__link">
     <span class="md-ellipsis">
       在 CentOS/RHEL 7 中改变时区
     </span>
@@ -10111,7 +10111,7 @@
 <p>每次去修改的时候又有点不太记得 <code>timedatectl</code> 的具体命令，甚至跑一些基于 CentOS/RHEL 6 镜像的流程时发现根本没有 <code>timedatectl</code> 这个命令！</p>
 <p>虽然之前在《<a href="https://www.yuque.com/bioitee/mp/linux-timestamp-date">【原】生信服务器 | Linux 时间戳和标准时间 · 语雀</a>》这个推文专门写了一些 <code>timedatectl</code> 命令的具体用法，基本都是针对 CentOS/RHEL 7 的系统，不适用于已经停止维护的 CentOS/RHEL 6。</p>
 <p>所以，后来专门谷歌了一下，发现除了 <code>timedatectl</code>，还有更加简便的一些修改方法，记录一下。</p>
-<h2 id="centosrhel-6">在 CentOS/RHEL 6 中改变时区<a class="headerlink" href="#centosrhel-6" title="Permanent link">&para;</a></h2>
+<h2 id="在-centosrhel-6-中改变时区">在 CentOS/RHEL 6 中改变时区<a class="headerlink" href="#在-centosrhel-6-中改变时区" title="Permanent link">&para;</a></h2>
 <p>在 CentOS 6 中，时区文件位于 <strong>/usr/share/zoneinfo</strong> 下。所以，如果你的区域是美国/芝加哥(UTC-6) ，它应该是 <strong>/usr/share/zoneinfo/America/Chicago</strong> 等等。</p>
 <p>CentOS 6 使用位于 <code>/etc</code> 下的一个名为 &ldquo;localtime&rdquo; 的文件来确定当前设置的时区。</p>
 <div class="highlight"><pre><span></span><code>$ ls -la /etc/localtime
@@ -10122,7 +10122,7 @@ $<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/us
 $<span class="w"> </span>date
 </code></pre></div>
 <p>这将把当前时区设置为 CST 亚洲/上海时区，我所属的时区。</p>
-<h2 id="centosrhel-7">在 CentOS/RHEL 7 中改变时区<a class="headerlink" href="#centosrhel-7" title="Permanent link">&para;</a></h2>
+<h2 id="在-centosrhel-7-中改变时区">在 CentOS/RHEL 7 中改变时区<a class="headerlink" href="#在-centosrhel-7-中改变时区" title="Permanent link">&para;</a></h2>
 <p>CentOS 7 附带了一个叫做 timedatectl 的命令工具。这可以用来为您查找和设置符号链接，而不是完成 CentOS 6 中要求的工作。</p>
 <p>若要列出可用的时区，请运行：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>timedatectl<span class="w"> </span>list-timezones

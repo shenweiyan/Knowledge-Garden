@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-原图" class="md-skip">
           跳转至
         </a>
       
@@ -8077,7 +8077,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-原图" class="md-nav__link">
     <span class="md-ellipsis">
       1. 原图
     </span>
@@ -8086,7 +8086,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-第一次调整边界参数" class="md-nav__link">
     <span class="md-ellipsis">
       2. 第一次调整边界参数
     </span>
@@ -8095,7 +8095,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-第二次调整边界参数" class="md-nav__link">
     <span class="md-ellipsis">
       3. 第二次调整边界参数
     </span>
@@ -10066,7 +10066,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-原图" class="md-nav__link">
     <span class="md-ellipsis">
       1. 原图
     </span>
@@ -10075,7 +10075,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-第一次调整边界参数" class="md-nav__link">
     <span class="md-ellipsis">
       2. 第一次调整边界参数
     </span>
@@ -10084,7 +10084,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-第二次调整边界参数" class="md-nav__link">
     <span class="md-ellipsis">
       3. 第二次调整边界参数
     </span>
@@ -10127,7 +10127,7 @@
 
 <p>熟悉 R 绘图的朋友肯定知道，在普通绘图中，图片的大小可以直接在 <code>png()</code>  和 <code>pdf()</code>  中指定，而绘图区大小则可以用 <code>par()</code>  中的 <code>mar</code>  或 <code>mai</code>  来指定。</p>
 <p>但是在 ggplot2 中，图片大小依然可以在 <code>png</code>  和 <code>pdf</code>  中设定，但是边界大小， <code>par</code>  函数似乎就不奏效了。至今天探索，才发现原来这个参数隐藏在 <code>theme</code>  中，其名为 <code>plot.margin</code> 。</p>
-<h2 id="1">1. 原图<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-原图">1. 原图<a class="headerlink" href="#1-原图" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">ggthemes</span><span class="p">)</span>
 <span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span><span class="w"> </span><span class="n">wt</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">colour</span><span class="o">=</span><span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">)))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">guides</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="bp">F</span><span class="p">)</span>
@@ -10135,7 +10135,7 @@
 <span class="nf">ggsave</span><span class="p">(</span><span class="s">&quot;test0.png&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">units</span><span class="o">=</span><span class="s">&quot;in&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dpi</span><span class="o">=</span><span class="m">300</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="o">=</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="o">=</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">=</span><span class="s">&quot;png&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsVQvwY2GAZJJU8-Uc8wHbB001in.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="test0.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsVQvwY2GAZJJU8-Uc8wHbB001in.png" /></a></p>
-<h2 id="2">2. 第一次调整边界参数<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h2 id="2-第一次调整边界参数">2. 第一次调整边界参数<a class="headerlink" href="#2-第一次调整边界参数" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">ggthemes</span><span class="p">)</span>
 <span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span><span class="w"> </span><span class="n">wt</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">colour</span><span class="o">=</span><span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">)))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">guides</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="bp">F</span><span class="p">)</span>
@@ -10144,7 +10144,7 @@
 <span class="nf">ggsave</span><span class="p">(</span><span class="s">&quot;test1.png&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">units</span><span class="o">=</span><span class="s">&quot;in&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dpi</span><span class="o">=</span><span class="m">300</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="o">=</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="o">=</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">=</span><span class="s">&quot;png&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlT7xm5tQQjc489eE0zd9BaCBR2v.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="test1.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlT7xm5tQQjc489eE0zd9BaCBR2v.png" /></a></p>
-<h2 id="3">3. 第二次调整边界参数<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="3-第二次调整边界参数">3. 第二次调整边界参数<a class="headerlink" href="#3-第二次调整边界参数" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">ggthemes</span><span class="p">)</span>
 <span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span><span class="w"> </span><span class="n">wt</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">colour</span><span class="o">=</span><span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">)))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">guides</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="bp">F</span><span class="p">)</span>

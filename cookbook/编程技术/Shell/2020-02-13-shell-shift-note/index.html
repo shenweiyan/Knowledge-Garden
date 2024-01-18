@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#特殊变量" class="md-skip">
           跳转至
         </a>
       
@@ -7128,7 +7128,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#特殊变量" class="md-nav__link">
     <span class="md-ellipsis">
       特殊变量
     </span>
@@ -7137,7 +7137,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#shift" class="md-nav__link">
+  <a href="#shift-使用" class="md-nav__link">
     <span class="md-ellipsis">
       shift 使用
     </span>
@@ -7147,7 +7147,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-每次移动一个参数" class="md-nav__link">
     <span class="md-ellipsis">
       1. 每次移动一个参数
     </span>
@@ -7156,7 +7156,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-每次移动多个参数" class="md-nav__link">
     <span class="md-ellipsis">
       2.  每次移动多个参数
     </span>
@@ -7165,7 +7165,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-case" class="md-nav__link">
+  <a href="#3-常与-case-条件配合使用" class="md-nav__link">
     <span class="md-ellipsis">
       3. 常与 case 条件配合使用
     </span>
@@ -7179,7 +7179,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#简单总结" class="md-nav__link">
     <span class="md-ellipsis">
       简单总结
     </span>
@@ -10099,7 +10099,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#特殊变量" class="md-nav__link">
     <span class="md-ellipsis">
       特殊变量
     </span>
@@ -10108,7 +10108,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#shift" class="md-nav__link">
+  <a href="#shift-使用" class="md-nav__link">
     <span class="md-ellipsis">
       shift 使用
     </span>
@@ -10118,7 +10118,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-每次移动一个参数" class="md-nav__link">
     <span class="md-ellipsis">
       1. 每次移动一个参数
     </span>
@@ -10127,7 +10127,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-每次移动多个参数" class="md-nav__link">
     <span class="md-ellipsis">
       2.  每次移动多个参数
     </span>
@@ -10136,7 +10136,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-case" class="md-nav__link">
+  <a href="#3-常与-case-条件配合使用" class="md-nav__link">
     <span class="md-ellipsis">
       3. 常与 case 条件配合使用
     </span>
@@ -10150,7 +10150,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#简单总结" class="md-nav__link">
     <span class="md-ellipsis">
       简单总结
     </span>
@@ -10191,7 +10191,7 @@
 
   <h1>Linux shift 命令用法笔记</h1>
 
-<h2 id="_1">特殊变量<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="特殊变量">特殊变量<a class="headerlink" href="#特殊变量" title="Permanent link">&para;</a></h2>
 <p>首先来看几个特殊变量：</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 <span class="nb">echo</span><span class="w"> </span><span class="nv">$0</span><span class="w">    </span><span class="c1"># 当前脚本的文件名（间接运行时还包括绝对路径）。</span>
@@ -10276,9 +10276,9 @@ B
 D
 E
 </code></pre></div>
-<h2 id="shift">shift 使用<a class="headerlink" href="#shift" title="Permanent link">&para;</a></h2>
+<h2 id="shift-使用">shift 使用<a class="headerlink" href="#shift-使用" title="Permanent link">&para;</a></h2>
 <p><code>shift</code>  命令用于对参数的移动(左移)，通常用于在不知道传入参数个数的情况下依次遍历每个参数然后进行相应处理,常见于 Linux 中各种程序的启动脚本。</p>
-<h3 id="1">1. 每次移动一个参数<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<h3 id="1-每次移动一个参数">1. 每次移动一个参数<a class="headerlink" href="#1-每次移动一个参数" title="Permanent link">&para;</a></h3>
 <p>示例：依次读取输入的参数并打印参数个数</p>
 <ul>
 <li>shift1.sh</li>
@@ -10300,7 +10300,7 @@ E
 参数值为<span class="w"> </span>d,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">1</span>
 </code></pre></div>
 <p><strong>每次运行 shift(不带参数的)，销毁一个参数（变量的个数($#)减一），后面的参数前移（不管参数之间相隔一个或者多个空格）。</strong></p>
-<h3 id="2">2.  每次移动多个参数<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h3 id="2-每次移动多个参数">2.  每次移动多个参数<a class="headerlink" href="#2-每次移动多个参数" title="Permanent link">&para;</a></h3>
 <p>shift 命令一次移动参数的个数由其所带的参数指定。例如，现在有 $1, $2, <span class="arithmatex">\(3, ...，\)</span>9 个参数，当 shell 程序处理完前 4 个命令行参数后(即还剩下后面 5 个参数)，可以使用 <code>shift 4</code>  命令把 $9 移到 $1。</p>
 <p>示例：自定义 shift 每次移动的参数个数。</p>
 <ul>
@@ -10325,7 +10325,7 @@ E
 参数值为<span class="w"> </span>d4,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">6</span>
 参数值为<span class="w"> </span>i9,<span class="w"> </span>参数个数为<span class="w"> </span><span class="m">1</span>
 </code></pre></div>
-<h3 id="3-case">3. 常与 case 条件配合使用<a class="headerlink" href="#3-case" title="Permanent link">&para;</a></h3>
+<h3 id="3-常与-case-条件配合使用">3. 常与 case 条件配合使用<a class="headerlink" href="#3-常与-case-条件配合使用" title="Permanent link">&para;</a></h3>
 <p><code>case ..... esac</code>  和 <code>if ... then ... fi</code>  一样，都是条件判断式的语句结构，它们用倒序的字母单词和正序的单词配对，比如 <code>if</code>  语句，结束时用 <code>fi</code>  来配对， <code>esac</code>  和 <code>case</code>  配对，是多路分支的语句，类似于 C 中的 <code>switch/case</code>  语句，大致形式如下：</p>
 <div class="highlight"><pre><span></span><code><span class="k">case</span><span class="w"> </span>$参数变量<span class="w"> </span><span class="k">in</span><span class="w">   </span><span class="c1"># 以关键字 case 作为开始</span>
 <span class="s2">&quot;变量值1&quot;</span>）<span class="w">         </span><span class="c1"># 变量值用双引号括起来，关键字用小括号括起来</span>
@@ -10382,7 +10382,7 @@ E
 -d<span class="w"> </span>是一个未知选项
 <span class="m">400</span><span class="w"> </span>是一个未知选项
 </code></pre></div>
-<h2 id="_2">简单总结<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="简单总结">简单总结<a class="headerlink" href="#简单总结" title="Permanent link">&para;</a></h2>
 <p>在 bash shell 中解析命令行参数的方法有很多，网络上介绍的各种方法中，都可以看到它们与 <code>shift</code>  命令搭配使用的身影，因此在深入这一部分编程前，很有必要先了解一下 <code>shift</code>  的作用。这里只是抛砖引玉简单介绍一下，更多技巧还请大家不断去实践理解。</p>
 <p>本篇文章的部分内容和代码来源于网络，但都经本人一一验证过，如有侵权或者其他问题，欢迎留言。</p>
 

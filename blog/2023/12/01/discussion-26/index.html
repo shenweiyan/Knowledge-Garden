@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#嵌套列表" class="md-skip">
           跳转至
         </a>
       
@@ -10003,7 +10003,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#嵌套列表" class="md-nav__link">
     <span class="md-ellipsis">
       嵌套列表
     </span>
@@ -10135,7 +10135,7 @@
 <p><a class="glightbox" href="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/md-error.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Markdown 语法异常" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/md-error.png" /></a></p>
 <p>回到 GitHub，重新接触纯 Markdown 格式的写法，才真正感觉到这种模式的好处 —— 方便其他支持 Markdown 语法平台的转移，又可以最大限度解决 Markdown 语法错乱的尴尬。</p>
 <p>但也有不好的地方，就是对于多级有序缩进，插入代码后，有序序列(多级缩进)会被打断。。。。</p>
-<h2 id="_1">嵌套列表<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="嵌套列表">嵌套列表<a class="headerlink" href="#嵌套列表" title="Permanent link">&para;</a></h2>
 <p>通过增加空格，Github 可以实现在嵌套列表中插入代码块；但是这样的做法在 MkDocs 中是有问题的。关于 MkDocs 的嵌套列表，在 https://github.com/mkdocs/mkdocs/issues/545 有一个讨论。</p>
 <p>参考的一个方法：<a href="https://github.com/mkdocs/mkdocs/issues/2153">https://github.com/mkdocs/mkdocs/issues/2153</a>，即使用 <a href="https://facelessuser.github.io/pymdown-extensions/extensions/superfences/">superfences</a> 插件，加上基于 Python 特有的 4 的倍数个空格进行缩进，可以比较好解决这个问题。</p>
 <script src="https://giscus.app/client.js"

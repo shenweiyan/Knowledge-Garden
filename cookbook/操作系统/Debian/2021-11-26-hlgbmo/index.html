@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#没有-home-目录" class="md-skip">
           跳转至
         </a>
       
@@ -1884,7 +1884,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#home" class="md-nav__link">
+  <a href="#没有-home-目录" class="md-nav__link">
     <span class="md-ellipsis">
       没有 home 目录
     </span>
@@ -1893,7 +1893,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tab" class="md-nav__link">
+  <a href="#无法使用-tab-补全" class="md-nav__link">
     <span class="md-ellipsis">
       无法使用 tab 补全
     </span>
@@ -1902,7 +1902,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#正确创建用户" class="md-nav__link">
     <span class="md-ellipsis">
       正确创建用户
     </span>
@@ -1911,7 +1911,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bash-shell" class="md-nav__link">
+  <a href="#用-bash-作为默认-shell" class="md-nav__link">
     <span class="md-ellipsis">
       用 bash 作为默认 shell
     </span>
@@ -1920,7 +1920,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sudo-unable-to-resolve-host" class="md-nav__link">
+  <a href="#sudo-出现-unable-to-resolve-host" class="md-nav__link">
     <span class="md-ellipsis">
       sudo 出现 unable to resolve host
     </span>
@@ -10084,7 +10084,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#home" class="md-nav__link">
+  <a href="#没有-home-目录" class="md-nav__link">
     <span class="md-ellipsis">
       没有 home 目录
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tab" class="md-nav__link">
+  <a href="#无法使用-tab-补全" class="md-nav__link">
     <span class="md-ellipsis">
       无法使用 tab 补全
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#正确创建用户" class="md-nav__link">
     <span class="md-ellipsis">
       正确创建用户
     </span>
@@ -10111,7 +10111,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bash-shell" class="md-nav__link">
+  <a href="#用-bash-作为默认-shell" class="md-nav__link">
     <span class="md-ellipsis">
       用 bash 作为默认 shell
     </span>
@@ -10120,7 +10120,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sudo-unable-to-resolve-host" class="md-nav__link">
+  <a href="#sudo-出现-unable-to-resolve-host" class="md-nav__link">
     <span class="md-ellipsis">
       sudo 出现 unable to resolve host
     </span>
@@ -10169,7 +10169,7 @@
 <li>s<strong>u -</strong>：不但能切换到管理员权限，而且使用管理员登陆脚本和搜索路径。</li>
 </ul>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr7y6J-Cj_JgMAW87D3N2QFD-Y6a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr7y6J-Cj_JgMAW87D3N2QFD-Y6a.png" /></a></p>
-<h2 id="home">没有 home 目录<a class="headerlink" href="#home" title="Permanent link">&para;</a></h2>
+<h2 id="没有-home-目录">没有 home 目录<a class="headerlink" href="#没有-home-目录" title="Permanent link">&para;</a></h2>
 <p>如果我们安装最常规的方法，直接使用 useradd username -g groupname 创建用户，Debian 中默认是没有 /home/username 目录的，以至于在登录时出现报错。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmAcFO-y-gEkmCoD3kLFTxFpdEBD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmAcFO-y-gEkmCoD3kLFTxFpdEBD.png" /></a>
 因此，需要通过下面的方式创建用户。</p>
@@ -10184,7 +10184,7 @@ passwd your_username
 # 删除用户
 userdel your_username
 </code></pre></div>
-<h2 id="tab">无法使用 tab 补全<a class="headerlink" href="#tab" title="Permanent link">&para;</a></h2>
+<h2 id="无法使用-tab-补全">无法使用 tab 补全<a class="headerlink" href="#无法使用-tab-补全" title="Permanent link">&para;</a></h2>
 <p>这个问题，与其说有点坑爹。其实是不了解 Ubuntu 和 debian 的 shell 默认安装的是 dash，而不是 bash。参考网络《<a href="https://www.yangshengliang.com/kaiyuan-shijie/linux-shijie/452.html">解决 debian 终端命令行无法自动补全 _杨圣亮的技术博客</a>》的做法：</p>
 <ol>
 <li>安装命令补全：</li>
@@ -10215,7 +10215,7 @@ fi
 root@VM-8-4-debian:~#<span class="w"> </span>grep<span class="w"> </span>shenweiyan<span class="w"> </span>/etc/passwd
 shenweiyan:x:1001:1001::/home/shenweiyan:/bin/bash
 </code></pre></div>
-<h2 id="_1">正确创建用户<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="正确创建用户">正确创建用户<a class="headerlink" href="#正确创建用户" title="Permanent link">&para;</a></h2>
 <p>CentOS 和 Debian 使用 useradd 命令的区别，以下面的命令举例：</p>
 <div class="highlight"><pre><span></span><code>useradd<span class="w"> </span>shenweiyan
 </code></pre></div>
@@ -10228,14 +10228,14 @@ shenweiyan:x:1001:1001::/home/shenweiyan:/bin/bash
 <p>如果需要创建这些内容则必须指定参数：</p>
 <div class="highlight"><pre><span></span><code>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>shenweiyan
 </code></pre></div>
-<h2 id="bash-shell">用 bash 作为默认 shell<a class="headerlink" href="#bash-shell" title="Permanent link">&para;</a></h2>
+<h2 id="用-bash-作为默认-shell">用 bash 作为默认 shell<a class="headerlink" href="#用-bash-作为默认-shell" title="Permanent link">&para;</a></h2>
 <p>Debian 中/bin/sh 是 dash 的链接，如果大家想用 bash 作为默认 shell 的话，可以用以下的办法修改：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># https://unix.stackexchange.com/questions/442510/how-to-use-bash-for-sh-in-ubuntu</span>
 sudo<span class="w"> </span>dpkg-reconfigure<span class="w"> </span>dash
 </code></pre></div>
 <p>然后在弹出来的界面中选择“yes” 来保持使用 dash 作为 /bin/sh 首选；或者选择“no” 把 /bin/sh 切换为 bash！
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuj2yF_wJe2deQbiKeANFpV3oh87.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuj2yF_wJe2deQbiKeANFpV3oh87.png" /></a></p>
-<h2 id="sudo-unable-to-resolve-host">sudo 出现 unable to resolve host<a class="headerlink" href="#sudo-unable-to-resolve-host" title="Permanent link">&para;</a></h2>
+<h2 id="sudo-出现-unable-to-resolve-host">sudo 出现 unable to resolve host<a class="headerlink" href="#sudo-出现-unable-to-resolve-host" title="Permanent link">&para;</a></h2>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrgbwzbZts8TwZpsiNNh2UVm29uA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrgbwzbZts8TwZpsiNNh2UVm29uA.png" /></a>
 /etc/hosts 内容修改成如下：</p>
 <div class="highlight"><pre><span></span><code><span class="m">121</span>.23.19.88<span class="o">(</span>或者<span class="w"> </span><span class="m">127</span>.0.0.1<span class="o">)</span><span class="w">    </span>kvm-bioitee

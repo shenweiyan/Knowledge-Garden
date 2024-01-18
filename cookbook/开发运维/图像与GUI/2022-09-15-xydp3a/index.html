@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#异常信息" class="md-skip">
           跳转至
         </a>
       
@@ -4585,7 +4585,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#异常信息" class="md-nav__link">
     <span class="md-ellipsis">
       异常信息
     </span>
@@ -4594,7 +4594,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gd-library" class="md-nav__link">
+  <a href="#安装-gd-library-库" class="md-nav__link">
     <span class="md-ellipsis">
       安装 GD library 库
     </span>
@@ -4603,7 +4603,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gnuplot" class="md-nav__link">
+  <a href="#安装-gnuplot" class="md-nav__link">
     <span class="md-ellipsis">
       安装 Gnuplot
     </span>
@@ -4612,7 +4612,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#简单绘图" class="md-nav__link">
     <span class="md-ellipsis">
       简单绘图
     </span>
@@ -10075,7 +10075,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#异常信息" class="md-nav__link">
     <span class="md-ellipsis">
       异常信息
     </span>
@@ -10084,7 +10084,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gd-library" class="md-nav__link">
+  <a href="#安装-gd-library-库" class="md-nav__link">
     <span class="md-ellipsis">
       安装 GD library 库
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gnuplot" class="md-nav__link">
+  <a href="#安装-gnuplot" class="md-nav__link">
     <span class="md-ellipsis">
       安装 Gnuplot
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#简单绘图" class="md-nav__link">
     <span class="md-ellipsis">
       简单绘图
     </span>
@@ -10143,7 +10143,7 @@
 
   <h1>Gnuplot：安装与使用备忘</h1>
 
-<h2 id="_1">异常信息<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="异常信息">异常信息<a class="headerlink" href="#异常信息" title="Permanent link">&para;</a></h2>
 <p>问题起源于 signalp-4.1 调用 gnuplot 进行画图，在画图的时候提示不支持 png 格式结果：</p>
 <div class="highlight"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="n">gnuplot</span>
 
@@ -10190,7 +10190,7 @@
 <span class="w">             </span><span class="n">......</span>
 </code></pre></div>
 <p>因此考虑重装 gnuplot，以支持 png, jpeg, and gif terminals，具体步骤如下。</p>
-<h2 id="gd-library">安装 GD library 库<a class="headerlink" href="#gd-library" title="Permanent link">&para;</a></h2>
+<h2 id="安装-gd-library-库">安装 GD library 库<a class="headerlink" href="#安装-gd-library-库" title="Permanent link">&para;</a></h2>
 <p>GD （<a href="https://github.com/libgd/libgd">https://github.com/libgd/libgd</a>）是一个用于程序员动态创建和处理图像的开源库。手动安装步骤如下。</p>
 <div class="highlight"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="n">curl</span><span class="w"> </span><span class="o">-</span><span class="n">LjO</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">github.com</span><span class="o">/</span><span class="n">libgd</span><span class="o">/</span><span class="n">libgd</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">gd</span><span class="m">-2.2</span><span class="n">.</span><span class="m">5</span><span class="o">/</span><span class="n">libgd</span><span class="m">-2.2</span><span class="n">.</span><span class="m">5</span><span class="n">.tar.gz</span>
 <span class="o">$</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">zvxf</span><span class="w"> </span><span class="n">libgd</span><span class="m">-2.2</span><span class="n">.</span><span class="m">5</span><span class="n">.tar.gz</span>
@@ -10199,7 +10199,7 @@
 <span class="o">$</span><span class="w"> </span><span class="n">make</span>
 <span class="o">$</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">install</span>
 </code></pre></div>
-<h2 id="gnuplot">安装 Gnuplot<a class="headerlink" href="#gnuplot" title="Permanent link">&para;</a></h2>
+<h2 id="安装-gnuplot">安装 Gnuplot<a class="headerlink" href="#安装-gnuplot" title="Permanent link">&para;</a></h2>
 <p>官网：<a href="http://www.gnuplot.info/">http://www.gnuplot.info/</a>
 注意：</p>
 <ol>
@@ -10289,7 +10289,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">gnuplot</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="n">while</span><span class="w"> </span><span class="n">loading</span><span class="w"> </span><span class="n">shared</span><span class="w"> </span><span class="n">libraries</span><span class="o">:</span><span class="w"> </span><span class="n">libQtNetwork.so.4</span><span class="o">:</span><span class="w"> </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">shared</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">file</span><span class="o">:</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="n">such</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="n">or</span><span class="w"> </span><span class="n">directory</span>
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Ft6ClOMih9B9QcaFlzddhuXecFUM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Ft6ClOMih9B9QcaFlzddhuXecFUM.png" /></a></p>
-<h2 id="_2">简单绘图<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="简单绘图">简单绘图<a class="headerlink" href="#简单绘图" title="Permanent link">&para;</a></h2>
 <p>安装完成后，进入 gnuplot 简单画图并保存为 plot.png。</p>
 <div class="highlight"><pre><span></span><code><span class="n">gnuplot</span><span class="o">&gt;</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="n">term</span><span class="w"> </span><span class="n">png</span><span class="w"> </span><span class="n">font</span><span class="w"> </span><span class="s">&quot;Helvetica,12&quot;</span>
 

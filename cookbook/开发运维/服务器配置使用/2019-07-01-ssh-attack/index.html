@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#一查看记录错误登录的日志" class="md-skip">
           跳转至
         </a>
       
@@ -10039,7 +10039,7 @@
 
 <p>这是我在简书看到的一个作者经历，结合小编自己的一些实践，抛砖引玉，给大家分享一下。</p>
 <p>有段时间发现集群异常卡顿。担心的事情终于发生了，使用命令 <code>lastb</code> 查看了一下，我的天呢，好多未知的 IP，我随便复制粘贴了一个到百度查询了一下，我日，美国的。后来还在网上的 IP 黑名单中发现了攻击我们服务器的 IP。下面是从发现到解决的一个过程。</p>
-<h1 id="_1">一、查看记录错误登录的日志<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="一查看记录错误登录的日志">一、查看记录错误登录的日志<a class="headerlink" href="#一查看记录错误登录的日志" title="Permanent link">&para;</a></h1>
 <p><strong>/var/log/btmp</strong> 文件是记录错误登录的日志，就是说有很多人试图使用密码字典登录 ssh 服务，此日志需要使用 lastb 程序打开。</p>
 <p><code>lastb</code> 查看的是 /var/log/btmp 中的内容，而 /var/log/btmp 是一个二进制的文件；
 <code>last</code> 查看的是 /var/log/wtmp 中的内容，而  /var/log/wtmp 也是一个二进制的文件；
@@ -10047,9 +10047,9 @@
 <p>东北大学收集的发动 SSH 攻击的 IP 地址列表：<a href="http://antivirus.neu.edu.cn/scan/ssh.php">http://antivirus.neu.edu.cn/scan/ssh.php</a></p>
 <p>我们可以简单统计 ip 出现的次数，然后针对这些 ip 进行处理：
 <code>blastb | awk '{print $3}' |sort |uniq -c |sort -k 1 -n -r |head -20</code></p>
-<h1 id="varlogsecure">二、处理 /var/log/secure<a class="headerlink" href="#varlogsecure" title="Permanent link">&para;</a></h1>
+<h1 id="二处理-varlogsecure">二、处理 /var/log/secure<a class="headerlink" href="#二处理-varlogsecure" title="Permanent link">&para;</a></h1>
 <p><strong>/var/log/secure</strong> 一般用来记录安全相关的信息，记录最多的是哪些用户登录服务器的相关日志，如果该文件很大，说明有人在破解你的 root 密码。</p>
-<h1 id="ssh">三、处理 SSH 攻击的基本流程<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h1>
+<h1 id="三处理-ssh-攻击的基本流程">三、处理 SSH 攻击的基本流程<a class="headerlink" href="#三处理-ssh-攻击的基本流程" title="Permanent link">&para;</a></h1>
 <p><strong>首先，查看我们的服务器是否存在 SSH 攻击。</strong></p>
 <ul>
 <li>步骤一：使用命令 lastb -20 查看，如果有大量的未知 IP, 加上时间分析。极短时间内出现多次，则可以确定受到 SSH 攻击。</li>

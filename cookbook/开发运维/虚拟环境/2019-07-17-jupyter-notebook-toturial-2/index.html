@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-安装" class="md-skip">
           跳转至
         </a>
       
@@ -2834,7 +2834,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-安装" class="md-nav__link">
     <span class="md-ellipsis">
       1. 安装
     </span>
@@ -2843,7 +2843,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-配置" class="md-nav__link">
     <span class="md-ellipsis">
       2. 配置
     </span>
@@ -2852,7 +2852,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-运行" class="md-nav__link">
     <span class="md-ellipsis">
       3. 运行
     </span>
@@ -2861,7 +2861,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-域名解析" class="md-nav__link">
     <span class="md-ellipsis">
       4. 域名解析
     </span>
@@ -2870,7 +2870,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-nginx" class="md-nav__link">
+  <a href="#5-配置-nginx" class="md-nav__link">
     <span class="md-ellipsis">
       5. 配置 nginx
     </span>
@@ -2879,7 +2879,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#6-其他问题" class="md-nav__link">
     <span class="md-ellipsis">
       6. 其他问题
     </span>
@@ -10093,7 +10093,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-安装" class="md-nav__link">
     <span class="md-ellipsis">
       1. 安装
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-配置" class="md-nav__link">
     <span class="md-ellipsis">
       2. 配置
     </span>
@@ -10111,7 +10111,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-运行" class="md-nav__link">
     <span class="md-ellipsis">
       3. 运行
     </span>
@@ -10120,7 +10120,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-域名解析" class="md-nav__link">
     <span class="md-ellipsis">
       4. 域名解析
     </span>
@@ -10129,7 +10129,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-nginx" class="md-nav__link">
+  <a href="#5-配置-nginx" class="md-nav__link">
     <span class="md-ellipsis">
       5. 配置 nginx
     </span>
@@ -10138,7 +10138,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#6-其他问题" class="md-nav__link">
     <span class="md-ellipsis">
       6. 其他问题
     </span>
@@ -10182,9 +10182,9 @@
 <p>今天我们介绍一下 Python3+Nginx+SSL 下的 Jupyter Notebook 服务部署，也就是 Jupyter 服务器的搭建与配置。</p>
 <p>网上搜了一下 jupyter 服务器的搭建，官方给出了很好的多用户服务端 jupyterhub，但我的需求就是在 VPS 搭建好一个 jupyter 服务网页，完全自己用，所以搭建 jupyterhub 有些浪费资源，转而去寻找简单的 jupyter 服务搭建方案，别说，官网也写好文档给我们用了，但文档是用英文写的，看的不舒服，这里把要点写出来，供参考。</p>
 <p><a href="http://jupyter-notebook.readthedocs.io/en/latest/public_server.html">英文文档地址在此</a>，英文好的小伙伴可以直接去实施。</p>
-<h2 id="1">1. 安装<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-安装">1. 安装<a class="headerlink" href="#1-安装" title="Permanent link">&para;</a></h2>
 <p>Jupyter Notebook 的安装参考《<a href="https://www.yuque.com/shenweiyan/cookbook/jupyter-notebook-toturial-1">数据科学工具 Jupyter Notebook 教程(一)</a>》。</p>
-<h2 id="2">2. 配置<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h2 id="2-配置">2. 配置<a class="headerlink" href="#2-配置" title="Permanent link">&para;</a></h2>
 <p>下面的命令会在 <code>~/.jupyter</code> 自动创建一个配置文件 ** jupyter_notebook_config.py**。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>jupyter<span class="w"> </span>notebook<span class="w"> </span>--generate-config
 Writing<span class="w"> </span>default<span class="w"> </span>config<span class="w"> </span>to:<span class="w"> </span>/home/shenweiyan/.jupyter/jupyter_notebook_config.py
@@ -10206,7 +10206,7 @@ c.NotebookApp.open_browser<span class="w"> </span><span class="o">=</span><span 
 c.NotebookApp.port<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">8888</span>
 </code></pre></div>
 <p>如此这般之后，配置完成咯！</p>
-<h2 id="3">3. 运行<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="3-运行">3. 运行<a class="headerlink" href="#3-运行" title="Permanent link">&para;</a></h2>
 <p>执行命令，就可以看到 jupyter notebook 执行的日志信息：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>jupyter<span class="w"> </span>notebook
 <span class="o">[</span>I<span class="w"> </span><span class="m">14</span>:57:17.197<span class="w"> </span>NotebookApp<span class="o">]</span><span class="w"> </span>JupyterLab<span class="w"> </span>beta<span class="w"> </span>preview<span class="w"> </span>extension<span class="w"> </span>loaded<span class="w"> </span>from<span class="w"> </span>/usr/local/software/anaconda3/lib/python3.6/site-packages/jupyterlab
@@ -10229,10 +10229,10 @@ c.NotebookApp.port<span class="w"> </span><span class="o">=</span><span class="w
 <p>**解决：**运行 Jupyter 时增加 <code>--ip=0.0.0.0</code>  参数。</p>
 <div class="highlight"><pre><span></span><code>jupyter notebook --ip=0.0.0.0 --no-browser --allow-root
 </code></pre></div>
-<h2 id="4">4. 域名解析<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h2 id="4-域名解析">4. 域名解析<a class="headerlink" href="#4-域名解析" title="Permanent link">&para;</a></h2>
 <p>配置 nginx 前需要把你已经申请的域名跟 Jupyter Notebook 的服务器 ip 进行绑定解析。打开阿里云域名管理，增加 A 记录解析：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png" /></a></p>
-<h2 id="5-nginx">5. 配置 nginx<a class="headerlink" href="#5-nginx" title="Permanent link">&para;</a></h2>
+<h2 id="5-配置-nginx">5. 配置 nginx<a class="headerlink" href="#5-配置-nginx" title="Permanent link">&para;</a></h2>
 <p>Nginx 是一个高效的服务器，著名的 LNMP 中的 N，相信很多在 VPS 搭建过网站的小伙伴一定不陌生。我假设你已经安装好了 nginx，如果不会安装可以自行百度。</p>
 <p>Nginx 创建一个虚拟主机 vhost，然后配置文件参考下面：</p>
 <div class="highlight"><pre><span></span><code>upstream<span class="w"> </span>notebook<span class="w"> </span><span class="o">{</span>
@@ -10283,7 +10283,7 @@ server<span class="o">{</span>
 <p>至此，大功告成，打开你的网址 <strong>xxx.xxx.com</strong> 是不是可以看到熟悉的 jupyter 了呢？如有疑问，欢迎留言讨论。</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="jupyter_server.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png" /></a></p>
 <p>以上就是远程 Jupter Notebook 服务安装与配置的全部内容，下一篇我们介绍一下如何在  Jupyter Notebook  中使用不同内核（Kernel）实现支持包括 python2、python3、R 在的多种不同编程环境。</p>
-<h2 id="6">6. 其他问题<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h2 id="6-其他问题">6. 其他问题<a class="headerlink" href="#6-其他问题" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>missing react-dom js to package data</strong></li>
 </ul>

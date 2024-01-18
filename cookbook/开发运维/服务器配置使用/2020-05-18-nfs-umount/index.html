@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#环境描述" class="md-skip">
           跳转至
         </a>
       
@@ -3953,7 +3953,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#环境描述" class="md-nav__link">
     <span class="md-ellipsis">
       环境描述
     </span>
@@ -3962,7 +3962,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#故障描述" class="md-nav__link">
     <span class="md-ellipsis">
       故障描述
     </span>
@@ -3971,7 +3971,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#解决方法" class="md-nav__link">
     <span class="md-ellipsis">
       解决方法
     </span>
@@ -3980,7 +3980,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#原因分析" class="md-nav__link">
     <span class="md-ellipsis">
       原因分析
     </span>
@@ -3989,7 +3989,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nfs" class="md-nav__link">
+  <a href="#nfs-服务器的故障排除" class="md-nav__link">
     <span class="md-ellipsis">
       NFS 服务器的故障排除
     </span>
@@ -10084,7 +10084,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#环境描述" class="md-nav__link">
     <span class="md-ellipsis">
       环境描述
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#故障描述" class="md-nav__link">
     <span class="md-ellipsis">
       故障描述
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#解决方法" class="md-nav__link">
     <span class="md-ellipsis">
       解决方法
     </span>
@@ -10111,7 +10111,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#原因分析" class="md-nav__link">
     <span class="md-ellipsis">
       原因分析
     </span>
@@ -10120,7 +10120,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nfs" class="md-nav__link">
+  <a href="#nfs-服务器的故障排除" class="md-nav__link">
     <span class="md-ellipsis">
       NFS 服务器的故障排除
     </span>
@@ -10164,12 +10164,12 @@
 <blockquote>
 <p>集群的存储空间有限，把一些历史的归档数据放在了公司的另外一台老旧存储服务器上，并使用 NFS 把它挂载到了 log 节点。周末的时候机房空调故障，旧存储服务器挂掉了！周一上班，在集群登陆节点使用 df -Th 查看磁盘使用情况，发现 df 命令卡死，查看挂载盘目录的时候也卡死，本文为本次异常的一些处理记录。</p>
 </blockquote>
-<h2 id="_1">环境描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="环境描述">环境描述<a class="headerlink" href="#环境描述" title="Permanent link">&para;</a></h2>
 <p>A 机器（192.168.1.103）为数据的实际存储服务器。
 B 机器（即集群登 log 陆节点）上挂载了 A 机器上的 hiseq3000 目录到本机的 /mnt/hiseq3000 目录（命令： <code>mount -t nfs 192.168.1.103:/hiseq3000 /mnt/hiseq3000</code>）</p>
-<h2 id="_2">故障描述<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="故障描述">故障描述<a class="headerlink" href="#故障描述" title="Permanent link">&para;</a></h2>
 <p>现在因 A 机器（数据实际存储服务器）因故障无法访问，登录 B 机器以后执行 <code>mount</code> ， <code>df -h</code> ， <code>ll  /mnt/hiseq3000</code>  等关于 /mnt 挂载点的时候都会卡住，ctrl + c  、 ctrl + z 都不能结束，只能退出重新登录。</p>
-<h2 id="_3">解决方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="解决方法">解决方法<a class="headerlink" href="#解决方法" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@log<span class="w"> </span>~<span class="o">]</span><span class="c1"># umount -f /mnt/hiseq3000</span>
 umount2:<span class="w"> </span>Device<span class="w"> </span>or<span class="w"> </span>resource<span class="w"> </span>busy
 umount.nfs:<span class="w"> </span>/mnt/hiseq3000:<span class="w"> </span>device<span class="w"> </span>is<span class="w"> </span>busy
@@ -10186,7 +10186,7 @@ umount:<span class="w"> </span>/mnt/hiseq3000:<span class="w"> </span>not<span c
 <p><strong>前面貌似执行  umount -f /mnt/hiseq3000 强制卸载时不起作用的，但是最后是能卸载掉的！！！</strong>
 **
 **</p>
-<h2 id="_4">原因分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="原因分析">原因分析<a class="headerlink" href="#原因分析" title="Permanent link">&para;</a></h2>
 <p>**
 当 NFS 服务端（即数据实际存储的 A 服务器）停止提供挂载服务时，客户端（集群登陆 log 挂载节点）会出现卡死的情况，导致文件系统不能查看相关信息，此时可以重新启动 nfs 服务端来恢复客户端的查询功能；如果不重启  nfs 服务端的话，只能通过上面的 <code>umount -f</code>  进行强制卸载。
 **
@@ -10203,7 +10203,7 @@ umount:<span class="w"> </span>/mnt/hiseq3000:<span class="w"> </span>not<span c
 </blockquote>
 <div class="highlight"><pre><span></span><code>nfs-server:/share-path<span class="w">    </span>/local-path<span class="w">    </span>nfs<span class="w">    </span>rw,soft,intr<span class="w">    </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
 </code></pre></div>
-<h2 id="nfs"><strong>NFS 服务器的故障排除</strong><a class="headerlink" href="#nfs" title="Permanent link">&para;</a></h2>
+<h2 id="nfs-服务器的故障排除"><strong>NFS 服务器的故障排除</strong><a class="headerlink" href="#nfs-服务器的故障排除" title="Permanent link">&para;</a></h2>
 <p>NFS 出现了故障，可以从以下几个方面着手检查：</p>
 <ol>
 <li>NFS 客户机和服务器的负荷是否太高，服务器和客户端之间的网络是否正常。</li>

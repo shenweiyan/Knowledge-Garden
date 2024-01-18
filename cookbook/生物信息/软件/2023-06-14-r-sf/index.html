@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#第一个错误" class="md-skip">
           跳转至
         </a>
       
@@ -715,7 +715,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#第一个错误" class="md-nav__link">
     <span class="md-ellipsis">
       第一个错误
     </span>
@@ -724,7 +724,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sf" class="md-nav__link">
+  <a href="#sf-包依赖与解决" class="md-nav__link">
     <span class="md-ellipsis">
       sf 包依赖与解决
     </span>
@@ -761,7 +761,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#最终安装命令" class="md-nav__link">
     <span class="md-ellipsis">
       最终安装命令
     </span>
@@ -775,7 +775,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#使用说明" class="md-nav__link">
     <span class="md-ellipsis">
       使用说明
     </span>
@@ -10108,7 +10108,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#第一个错误" class="md-nav__link">
     <span class="md-ellipsis">
       第一个错误
     </span>
@@ -10117,7 +10117,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sf" class="md-nav__link">
+  <a href="#sf-包依赖与解决" class="md-nav__link">
     <span class="md-ellipsis">
       sf 包依赖与解决
     </span>
@@ -10154,7 +10154,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#最终安装命令" class="md-nav__link">
     <span class="md-ellipsis">
       最终安装命令
     </span>
@@ -10168,7 +10168,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#使用说明" class="md-nav__link">
     <span class="md-ellipsis">
       使用说明
     </span>
@@ -10210,14 +10210,14 @@
   <h1>这个 R 包折腾了一天终于安装上了</h1>
 
 <p>事情起因于在推特看到关于<code>ggVennDiagram</code>这个 R 包教程的一条推文，想着去复现一下，于是开始去安装，不料安装过程中出现了<code>sf</code>这个依赖包始终安装不成功的一堆错误，于是有了这一篇文章，特此记录一下，也希望给遇到类似问题的小伙伴一个参考。</p>
-<h2 id="_1">第一个错误<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="第一个错误">第一个错误<a class="headerlink" href="#第一个错误" title="Permanent link">&para;</a></h2>
 <p>首先说明一下，我用的 R 版本是 4.3.0，Linux 系统是 Red Hat 6.5。
 最开始安装<code>sf</code>这个 R 包遇到的第一个 error 是 GDAL/GEOS/Proj.4 版本不符合要求的提示。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtlKgbSLps692sB0pokkqd6pQBm4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtlKgbSLps692sB0pokkqd6pQBm4.png" /></a>
 于是，开始手动去安装 GDAL/GEOS/Proj.4，之所以选择基于普通用户手动去源码编译安装，主要一个原因是系统版本太老，第二出于安全考虑避免 root 带来的一系列麻烦。</p>
 <p>一番折腾，把 <strong>gdal-2.2.3+geos-3.4.0+proj-4.9.1</strong> 都装好了，设置完 <strong>PATH+LD_LIBRARY_PATH</strong> 后，却悲催的出现类似这个的报错：<a href="https://github.com/r-spatial/sf/issues/678">https://github.com/r-spatial/sf/issues/678</a> —— 这是<code>sf</code>包的一个错误！</p>
 <p>于是，问题变成了如何成功去安装<code>sf</code>包，或者说如何解决<code>sf</code>的 <strong>proj_conf_test.c:4:28: error: expected &lsquo;)&rsquo; before &lsquo;const&rsquo;</strong> 安装错误。</p>
-<h2 id="sf">sf 包依赖与解决<a class="headerlink" href="#sf" title="Permanent link">&para;</a></h2>
+<h2 id="sf-包依赖与解决">sf 包依赖与解决<a class="headerlink" href="#sf-包依赖与解决" title="Permanent link">&para;</a></h2>
 <p>在<code>sf</code>包的 <a href="https://github.com/r-spatial/sf#linux">https://github.com/r-spatial/sf#linux</a> 中明确提到了这个包需要依赖 GDAL/GEOS/Proj.4，具体版本要求如下。</p>
 <blockquote>
 <p>📢 <strong>For Unix-alikes, GDAL (&gt;= 2.0.1), GEOS (&gt;= 3.4.0) and Proj.4 (&gt;= 4.8.0) are required.</strong></p>
@@ -10267,7 +10267,7 @@ tar<span class="w"> </span>zvxf<span class="w"> </span>gdal-2.2.0.tar.gz<span cl
 ./configure<span class="w"> </span>--prefix<span class="o">=</span>/Bioinfo/Pipeline/SoftWare/gdal-2.2.0<span class="w"> </span>--with-static-proj4<span class="o">=</span>/Bioinfo/Pipeline/SoftWare/proj-4.8.0/
 make<span class="w"> </span>-j4<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
-<h3 id="_2">最终安装命令<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="最终安装命令">最终安装命令<a class="headerlink" href="#最终安装命令" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/gdal-2.2.0/bin:/Bioinfo/Pipeline/SoftWare/geos-3.4.0/bin:/Bioinfo/Pipeline/SoftWare/proj-4.8.0/bin:<span class="nv">$PATH</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/gdal-2.2.0/lib:/Bioinfo/Pipeline/SoftWare/geos-3.4.0/lib:/Bioinfo/Pipeline/SoftWare/proj-4.8.0/lib:<span class="nv">$LD_LIBRARY_PATH</span>
 </code></pre></div>
@@ -10276,7 +10276,7 @@ make<span class="w"> </span>-j4<span class="w"> </span><span class="o">&amp;&amp
 options<span class="o">(</span><span class="s2">&quot;repos&quot;</span><span class="o">=</span>c<span class="o">(</span><span class="nv">CRAN</span><span class="o">=</span><span class="s2">&quot;https://mirrors.tuna.tsinghua.edu.cn/CRAN/&quot;</span><span class="o">))</span>
 install.packages<span class="o">(</span><span class="s1">&#39;sf&#39;</span>,<span class="w"> </span>configure.args<span class="o">=</span><span class="s1">&#39;--with-gdal-config=/Bioinfo/Pipeline/SoftWare/gdal-2.2.0/bin/gdal-config --with-geos-config=/Bioinfo/Pipeline/SoftWare/geos-3.4.0/bin/geos-config --with-proj-include=/Bioinfo/Pipeline/SoftWare/proj-4.8.0/include --with-proj-lib=/Bioinfo/Pipeline/SoftWare/proj-4.8.0/lib&#39;</span>,<span class="w"> </span>configure.vars<span class="o">=</span><span class="s1">&#39;GDAL_DATA=/Bioinfo/Pipeline/SoftWare/gdal-2.2.0/share/gdal&#39;</span><span class="o">)</span>
 </code></pre></div>
-<h2 id="_3">使用说明<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="使用说明">使用说明<a class="headerlink" href="#使用说明" title="Permanent link">&para;</a></h2>
 <p>安装完<code>sf</code>和<code>ggVennDiagram</code> 后，如果要使用这两个包，则需要：</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/gdal-2.2.0/lib:/Bioinfo/Pipeline/SoftWare/geos-3.4.0/lib:/Bioinfo/Pipeline/SoftWare/proj-4.8.0/lib:<span class="nv">$LD_LIBRARY_PATH</span>
 </code></pre></div>

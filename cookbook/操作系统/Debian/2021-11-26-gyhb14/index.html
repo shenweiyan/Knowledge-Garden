@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#开机自动挂载硬盘" class="md-skip">
           跳转至
         </a>
       
@@ -1905,7 +1905,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#开机自动挂载硬盘" class="md-nav__link">
     <span class="md-ellipsis">
       开机自动挂载硬盘
     </span>
@@ -1915,7 +1915,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-uuid" class="md-nav__link">
+  <a href="#1-查看磁盘分区的-uuid" class="md-nav__link">
     <span class="md-ellipsis">
       1. 查看磁盘分区的 UUID
     </span>
@@ -1924,7 +1924,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-配置开机自动挂载" class="md-nav__link">
     <span class="md-ellipsis">
       2. 配置开机自动挂载
     </span>
@@ -1933,7 +1933,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-重启系统" class="md-nav__link">
     <span class="md-ellipsis">
       3. 重启系统
     </span>
@@ -10081,7 +10081,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#开机自动挂载硬盘" class="md-nav__link">
     <span class="md-ellipsis">
       开机自动挂载硬盘
     </span>
@@ -10091,7 +10091,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-uuid" class="md-nav__link">
+  <a href="#1-查看磁盘分区的-uuid" class="md-nav__link">
     <span class="md-ellipsis">
       1. 查看磁盘分区的 UUID
     </span>
@@ -10100,7 +10100,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-配置开机自动挂载" class="md-nav__link">
     <span class="md-ellipsis">
       2. 配置开机自动挂载
     </span>
@@ -10109,7 +10109,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-重启系统" class="md-nav__link">
     <span class="md-ellipsis">
       3. 重启系统
     </span>
@@ -10155,15 +10155,15 @@
 
   <h1>磁盘管理</h1>
 
-<h2 id="_1">开机自动挂载硬盘<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="1-uuid">1. 查看磁盘分区的 UUID<a class="headerlink" href="#1-uuid" title="Permanent link">&para;</a></h3>
+<h2 id="开机自动挂载硬盘">开机自动挂载硬盘<a class="headerlink" href="#开机自动挂载硬盘" title="Permanent link">&para;</a></h2>
+<h3 id="1-查看磁盘分区的-uuid">1. 查看磁盘分区的 UUID<a class="headerlink" href="#1-查看磁盘分区的-uuid" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>blkid
 /dev/sda1:<span class="w"> </span><span class="nv">UUID</span><span class="o">=</span><span class="s2">&quot;8048997a-16c9-447b-a209-82e4d380326e&quot;</span><span class="w"> </span><span class="nv">TYPE</span><span class="o">=</span><span class="s2">&quot;ext4&quot;</span>
 /dev/sda5:<span class="w"> </span><span class="nv">UUID</span><span class="o">=</span><span class="s2">&quot;0c5f073a-ad3f-414f-85c2-4af83f6a437f&quot;</span><span class="w"> </span><span class="nv">TYPE</span><span class="o">=</span><span class="s2">&quot;swap&quot;</span>
 /dev/sdb1:<span class="w"> </span><span class="nv">UUID</span><span class="o">=</span><span class="s2">&quot;11263962-9715-473f-9421-0b604e895aaa&quot;</span><span class="w"> </span><span class="nv">TYPE</span><span class="o">=</span><span class="s2">&quot;ext4&quot;</span>
 /dev/sr0:<span class="w"> </span><span class="nv">LABEL</span><span class="o">=</span><span class="s2">&quot;Join Me&quot;</span><span class="w"> </span><span class="nv">TYPE</span><span class="o">=</span><span class="s2">&quot;iso9660&quot;</span>
 </code></pre></div>
-<h3 id="2">2. 配置开机自动挂载<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h3 id="2-配置开机自动挂载">2. 配置开机自动挂载<a class="headerlink" href="#2-配置开机自动挂载" title="Permanent link">&para;</a></h3>
 <p>mount 命令重启后会失效，将分区信息写入 /etc/fstab 文件启动自动挂载：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/fstab
 </code></pre></div>
@@ -10233,7 +10233,7 @@
   这个参数用来决定在启动时需要被 <strong>fsck</strong> 扫描的文件系统的顺序，根文件系统 &ldquo;/&rdquo; 对应该字段的值应该为 1，其他的应该逐渐递增，如果设置为 0 则表示不扫描。</p>
 </li>
 </ul>
-<h3 id="3">3. 重启系统<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<h3 id="3-重启系统">3. 重启系统<a class="headerlink" href="#3-重启系统" title="Permanent link">&para;</a></h3>
 <p>修改完 /etc/fstab 文件后，运行：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mount<span class="w"> </span>-a
 </code></pre></div>

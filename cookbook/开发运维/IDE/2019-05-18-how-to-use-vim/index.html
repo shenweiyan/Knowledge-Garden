@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vim" class="md-skip">
+        <a href="#vim-常用小技巧" class="md-skip">
           跳转至
         </a>
       
@@ -6688,7 +6688,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tab" class="md-nav__link">
+  <a href="#tab-分隔文件列对齐" class="md-nav__link">
     <span class="md-ellipsis">
       tab 分隔文件列对齐
     </span>
@@ -6697,7 +6697,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vim_1" class="md-nav__link">
+  <a href="#vim-字体颜色看不清" class="md-nav__link">
     <span class="md-ellipsis">
       vim 字体颜色看不清
     </span>
@@ -6706,7 +6706,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vim_2" class="md-nav__link">
+  <a href="#撤消-vim-中的更改" class="md-nav__link">
     <span class="md-ellipsis">
       撤消 vim 中的更改
     </span>
@@ -6715,7 +6715,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vim_3" class="md-nav__link">
+  <a href="#恢复-vim-中的更改" class="md-nav__link">
     <span class="md-ellipsis">
       恢复 vim 中的更改
     </span>
@@ -10081,7 +10081,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tab" class="md-nav__link">
+  <a href="#tab-分隔文件列对齐" class="md-nav__link">
     <span class="md-ellipsis">
       tab 分隔文件列对齐
     </span>
@@ -10090,7 +10090,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vim_1" class="md-nav__link">
+  <a href="#vim-字体颜色看不清" class="md-nav__link">
     <span class="md-ellipsis">
       vim 字体颜色看不清
     </span>
@@ -10099,7 +10099,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vim_2" class="md-nav__link">
+  <a href="#撤消-vim-中的更改" class="md-nav__link">
     <span class="md-ellipsis">
       撤消 vim 中的更改
     </span>
@@ -10108,7 +10108,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vim_3" class="md-nav__link">
+  <a href="#恢复-vim-中的更改" class="md-nav__link">
     <span class="md-ellipsis">
       恢复 vim 中的更改
     </span>
@@ -10147,12 +10147,12 @@
   
 
 
-<h1 id="vim">vim 常用小技巧<a class="headerlink" href="#vim" title="Permanent link">&para;</a></h1>
+<h1 id="vim-常用小技巧">vim 常用小技巧<a class="headerlink" href="#vim-常用小技巧" title="Permanent link">&para;</a></h1>
 <p>vim 操作中常用的一些小技巧总结。</p>
-<h2 id="tab">tab 分隔文件列对齐<a class="headerlink" href="#tab" title="Permanent link">&para;</a></h2>
+<h2 id="tab-分隔文件列对齐">tab 分隔文件列对齐<a class="headerlink" href="#tab-分隔文件列对齐" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>:%!column<span class="w"> </span>-t
 </code></pre></div>
-<h2 id="vim_1">vim 字体颜色看不清<a class="headerlink" href="#vim_1" title="Permanent link">&para;</a></h2>
+<h2 id="vim-字体颜色看不清">vim 字体颜色看不清<a class="headerlink" href="#vim-字体颜色看不清" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># Ubuntu 中设置(在 /etc/vim/vimrc 中加入）</span>
 <span class="nb">set</span><span class="w"> </span><span class="nv">background</span><span class="o">=</span>dark
 
@@ -10163,7 +10163,7 @@ hi<span class="w"> </span>Comment<span class="w"> </span><span class="nv">ctermf
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj1HL8vk95C0qdSKZn7zuAe1qjl6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ubuntu_vim_1.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj1HL8vk95C0qdSKZn7zuAe1qjl6.png" /></a></p>
 <p>修改后：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvVDq6tpUUD6gjENp_Rxv9SAZv_P.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ubuntu_vim_2.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvVDq6tpUUD6gjENp_Rxv9SAZv_P.png" /></a></p>
-<h2 id="vim_2">撤消 vim 中的更改<a class="headerlink" href="#vim_2" title="Permanent link">&para;</a></h2>
+<h2 id="撤消-vim-中的更改">撤消 vim 中的更改<a class="headerlink" href="#撤消-vim-中的更改" title="Permanent link">&para;</a></h2>
 <p>vim 会跟踪您在当前会话中所做的所有更改。要撤消 vi 和 vim 中的更改，可以使用  <code>u</code>，<code>:u</code>  或  <code>:undo</code>  命令令：</p>
 <ul>
 <li>
@@ -10180,7 +10180,7 @@ hi<span class="w"> </span>Comment<span class="w"> </span><span class="nv">ctermf
 <p>在插入模式下工作时，对文本的所有更改都被视为撤消树中的一项。例如，如果你切换到插入模式并输入五行，然后返回普通模式并按 u 撤消更改，则所有五行都将被删除。</p>
 </li>
 </ul>
-<h2 id="vim_3">恢复 vim 中的更改<a class="headerlink" href="#vim_3" title="Permanent link">&para;</a></h2>
+<h2 id="恢复-vim-中的更改">恢复 vim 中的更改<a class="headerlink" href="#恢复-vim-中的更改" title="Permanent link">&para;</a></h2>
 <p>恢复（重做）功能可撤消撤消操作。恢复（重做）vi 和 vim 中的更改，可以使用  <code>Ctrl+R</code>  或  <code>:redo</code>：</p>
 <ul>
 <li>
@@ -10193,7 +10193,7 @@ hi<span class="w"> </span>Comment<span class="w"> </span><span class="nv">ctermf
 <p>每个撤消命令都可以由恢复（重做）命令撤消。</p>
 </li>
 </ul>
-<h1 id="_1">参考资料<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h1>
 <ol>
 <li>等会再说，《<a href="https://www.jianshu.com/p/6cc7278a6d50">如何在 Vi/Vim 中进行撤消和重做操作</a>》，简书</li>
 </ol>

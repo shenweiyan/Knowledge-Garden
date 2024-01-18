@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#开始" class="md-skip">
           跳转至
         </a>
       
@@ -10001,7 +10001,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#开始" class="md-nav__link">
     <span class="md-ellipsis">
       开始
     </span>
@@ -10010,7 +10010,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#使用" class="md-nav__link">
     <span class="md-ellipsis">
       使用
     </span>
@@ -10137,13 +10137,13 @@
 <p>很长一段时间都在使用 <a href="https://github.com/mysiki/mkdocs_include_dir_to_nav">mkdocs_include_dir_to_nav</a> 这个插件来自动包含目录下的所有 md 文件，但随着新需求的出现 —— <strong>如何给某一个指定的子目录使用 <code>reverse_sort_file</code>，即升序排列展示子目录相应的 markdown 内容</strong>。这才开始接触到 <a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a> 这个插件。</p>
 <!-- more -->
 
-<h2 id="_1">开始<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="开始">开始<a class="headerlink" href="#开始" title="Permanent link">&para;</a></h2>
 <p>从 GitHub 可以很直观看到的是 <a href="https://github.com/mysiki/mkdocs_include_dir_to_nav">mkdocs_include_dir_to_nav</a> 自从 2022-05-01 更新了 <a href="https://github.com/mysiki/mkdocs_include_dir_to_nav/releases/tag/v1.2.0">V1.2.0</a> 版本后基本就已经停止了更新，Star 也才 20 多人。     <br />
 <a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/mkdocs-include-dir-to-nav.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="mkdocs-include-dir-to-nav" src="https://shub.weiyan.tech/kgarden/2024/01/mkdocs-include-dir-to-nav.png" /></a></p>
 <p>反而是 <a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a> 一直保持着非常积极的更新频率，而且维护者和关注和使用用户也远远比 <a href="https://github.com/mysiki/mkdocs_include_dir_to_nav">mkdocs_include_dir_to_nav</a> 多得多。   <br />
 <a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/mkdocs-awesome-pages-plugin.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="mkdocs-awesome-pages-plugin" src="https://shub.weiyan.tech/kgarden/2024/01/mkdocs-awesome-pages-plugin.png" /></a></p>
 <p>于是，开始着入手 <a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a>。不得不说，Awesome-Pages 这个插件的功能很强大，可以很好解决我&rdquo;指定子目录自定义文档排序&rdquo;的需求。但不可否认的是 Awesome-Pages 的文档写的的确有点糙，不认真看还真不知道应该如何上手，这也是花费我最多时间的地方。</p>
-<h2 id="_2">使用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="使用">使用<a class="headerlink" href="#使用" title="Permanent link">&para;</a></h2>
 <p>使用 <a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a> 有两个很重要的前提：</p>
 <ol>
 <li>如果你在 <code>mkdocs.yml</code> 定义了 <code>nav</code> 或 <code>pages</code> 条目，则此插件不会执行任何操作。要使用该插件列出的功能，我们必须完全删除该条目或向其中添加 <code>...</code> 条目 (<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin?tab=readme-ov-file#combine-custom-navigation--file-structure">add a <code>...</code> entry to it</a>)。</li>

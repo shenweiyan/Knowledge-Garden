@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#简介" class="md-skip">
           跳转至
         </a>
       
@@ -10037,7 +10037,7 @@
   
 
 
-<h1 id="_1">简介<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="简介">简介<a class="headerlink" href="#简介" title="Permanent link">&para;</a></h1>
 <p><strong>rz</strong>，<strong>sz</strong> 是 GNU 免费工具 <strong>lrzsz</strong> 的两个子命令行程序，它们是 Linux/Unix 同 Windows 进行 ZModem 文件传输的命令行工具，但是 Windows 端需要支持 ZModem 的 telnet/ssh 客户端，比如 Xshell 或者 SecureCRT 下可以使用。</p>
 <p>官网：<a href="https://www.gnu.org/software/lrzsz/">https://www.gnu.org/software/lrzsz/</a></p>
 <p>网络有些文章说 Putty 和 MobaXterm 无法使用 lrzsz，其实通过安装插件 MobaXterm 是可以使用的，但体验没有 Xshell 或者 SecureCRT 好。</p>
@@ -10050,7 +10050,7 @@
 <li>sz：将选定的文件发送（send）到本地机器，s 作为 send 的简写；</li>
 <li>rz：运行该命令会弹出一个文件选择窗口，从本地选择文件上传到服务器(receive)，r 作为 receive 的简写。</li>
 </ul>
-<h1 id="_2">特点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h1 id="特点">特点<a class="headerlink" href="#特点" title="Permanent link">&para;</a></h1>
 <p>Features of lrzsz：</p>
 <ul>
 <li>非常便携，使用 GNU autoconf 自动配置。</li>
@@ -10062,7 +10062,7 @@
 <li>良好的块大小计算（尝试根据发生的错误数量计算最佳块大小）。</li>
 <li>它是免费软件。</li>
 </ul>
-<h1 id="_3">安装<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
+<h1 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h1>
 <p>安装也比较容易，这里以 openEuler 系统为例：</p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>lrzsz
 </code></pre></div>
@@ -10075,7 +10075,7 @@ $<span class="w"> </span>$<span class="w"> </span>./configure<span class="w"> </
 $<span class="w"> </span>make
 $<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
-<h1 id="_4">使用<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
+<h1 id="使用">使用<a class="headerlink" href="#使用" title="Permanent link">&para;</a></h1>
 <p>首先利用 Xshell 登录服务器，然后就可以直接使用 rz 与 sz 了。sz 与 rz 有很多选项参数，但是基本不用设置也可以。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sz<span class="w"> </span>--help
 $<span class="w"> </span>rz<span class="w"> </span>--help
@@ -10094,14 +10094,14 @@ $<span class="w"> </span>rz<span class="w"> </span>--help
 <span class="w">      </span>--ymodem<span class="w">          </span><span class="c1">#使用YMODEM协议</span>
 -Z,<span class="w"> </span>--zmodem<span class="w">            </span><span class="c1">#使用ZMODEM协议</span>
 </code></pre></div>
-<h2 id="sz"><strong>sz 下载案例</strong><a class="headerlink" href="#sz" title="Permanent link">&para;</a></h2>
+<h2 id="sz-下载案例"><strong>sz 下载案例</strong><a class="headerlink" href="#sz-下载案例" title="Permanent link">&para;</a></h2>
 <p>将两个文件传输到本地，直接 sz 发送，后面接文件名，回车之后就会弹出 Windows 对话框，选择要保存的位置即可，然后就开始传输了（一般传输小文件比较好）。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmS5BFdZPqw2HzVYsTJWzeqYPT5_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmS5BFdZPqw2HzVYsTJWzeqYPT5_.png" /></a></p>
-<h2 id="rz">rz 上传案例<a class="headerlink" href="#rz" title="Permanent link">&para;</a></h2>
+<h2 id="rz-上传案例">rz 上传案例<a class="headerlink" href="#rz-上传案例" title="Permanent link">&para;</a></h2>
 <p>直接在命令行输入 rz 命令，稍后就会弹出 Windows 对话框，选择要上传的文件，确认之后就开始传输了。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrdDeUAQEyMJP5_7SEWZz4vAunp1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrdDeUAQEyMJP5_7SEWZz4vAunp1.png" /></a>
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgyAQ4sZh3xxzFjemYlYGM8ZJSD0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgyAQ4sZh3xxzFjemYlYGM8ZJSD0.png" /></a></p>
-<h1 id="mobaxterm">MobaXterm 上使用<a class="headerlink" href="#mobaxterm" title="Permanent link">&para;</a></h1>
+<h1 id="mobaxterm-上使用">MobaXterm 上使用<a class="headerlink" href="#mobaxterm-上使用" title="Permanent link">&para;</a></h1>
 <p>不是所有工具都支持 rz 与 sz，必须支持 ZModem 协议才行，例如 putty 不能使用 rz 与 sz。MobaXterm 默认也不支持 rz 与 sz，但可以通过安装插件实现。</p>
 <p>首先，下载 CygUtils.plugin 和 lrzsz 插件，放到 mobaxterm.exe 目录。</p>
 <ul>

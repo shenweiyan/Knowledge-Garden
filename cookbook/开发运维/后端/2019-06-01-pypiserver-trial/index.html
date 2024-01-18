@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#背景" class="md-skip">
           跳转至
         </a>
       
@@ -4856,7 +4856,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#背景" class="md-nav__link">
     <span class="md-ellipsis">
       背景
     </span>
@@ -4865,7 +4865,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pypi" class="md-nav__link">
+  <a href="#pypi-私有源" class="md-nav__link">
     <span class="md-ellipsis">
       PyPI 私有源
     </span>
@@ -4874,7 +4874,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pypiserver" class="md-nav__link">
+  <a href="#pypiserver-简介" class="md-nav__link">
     <span class="md-ellipsis">
       pypiserver 简介
     </span>
@@ -4883,7 +4883,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pypiserver_1" class="md-nav__link">
+  <a href="#pypiserver-服务端配置" class="md-nav__link">
     <span class="md-ellipsis">
       pypiserver 服务端配置
     </span>
@@ -4892,7 +4892,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pypiserver_2" class="md-nav__link">
+  <a href="#pypiserver-客户端配置" class="md-nav__link">
     <span class="md-ellipsis">
       pypiserver 客户端配置
     </span>
@@ -4901,7 +4901,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirementstxt-pypi" class="md-nav__link">
+  <a href="#requirementstxt-离线-pypi-仓库" class="md-nav__link">
     <span class="md-ellipsis">
       requirements.txt 离线 PyPI 仓库
     </span>
@@ -4910,7 +4910,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10102,7 +10102,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#背景" class="md-nav__link">
     <span class="md-ellipsis">
       背景
     </span>
@@ -10111,7 +10111,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pypi" class="md-nav__link">
+  <a href="#pypi-私有源" class="md-nav__link">
     <span class="md-ellipsis">
       PyPI 私有源
     </span>
@@ -10120,7 +10120,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pypiserver" class="md-nav__link">
+  <a href="#pypiserver-简介" class="md-nav__link">
     <span class="md-ellipsis">
       pypiserver 简介
     </span>
@@ -10129,7 +10129,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pypiserver_1" class="md-nav__link">
+  <a href="#pypiserver-服务端配置" class="md-nav__link">
     <span class="md-ellipsis">
       pypiserver 服务端配置
     </span>
@@ -10138,7 +10138,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pypiserver_2" class="md-nav__link">
+  <a href="#pypiserver-客户端配置" class="md-nav__link">
     <span class="md-ellipsis">
       pypiserver 客户端配置
     </span>
@@ -10147,7 +10147,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirementstxt-pypi" class="md-nav__link">
+  <a href="#requirementstxt-离线-pypi-仓库" class="md-nav__link">
     <span class="md-ellipsis">
       requirements.txt 离线 PyPI 仓库
     </span>
@@ -10156,7 +10156,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10197,7 +10197,7 @@
 
   <h1>基于 pypiserver 的 PyPI 私有仓库搭建实践</h1>
 
-<h2 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="背景">背景<a class="headerlink" href="#背景" title="Permanent link">&para;</a></h2>
 <p>前几天，在不同的 CentOS 7 服务器上尝试部署同一个发行版本的 Galaxy 生物信息分析平台（<a href="https://galaxyproject.org/">Galaxy Project</a>：云计算背景下诞生的一个生物信息学可视化分析开源项目）的时候，发现在执行 sh run.sh 部署时，出现了由于网络限制导致的 requirements.txt 包安装 ReadTimeoutError。</p>
 <div class="highlight"><pre><span></span><code>galaxy@ecs-steven<span class="w"> </span><span class="m">08</span>:58:14<span class="w"> </span>/data/galaxy-dist/galaxy
 $<span class="w"> </span>sh<span class="w"> </span>run.sh
@@ -10227,7 +10227,7 @@ ReadTimeoutError:<span class="w"> </span>HTTPSConnectionPool<span class="o">(</s
 第一，Galaxy 的初始化部署，其中有一步就是通过 pip 去在线下载位于 <code>https://wheels.galaxyproject.org/simple</code> 和 <code>https://pypi.python.org/simple</code> 这两个 PyPI 库的 requirements.txt 包，并执行安装。</p>
 <p>第二，由于这两个 pypi 库位于国外，国内服务器想要下载里面的包可能会出现网络超时。
 从 <code>https://wheels.galaxyproject.org/</code> 的首页介绍，可以知道这是 Galaxy 基于 pypiserver-1.2.1 搭建的一个 PyPI 源（This instance is running version 1.2.1 of the pypiserver software.）。为了解决文章开头的 ReadTimeoutError，我们借着这个机会来学习一下如何使用 pypiserver 快速搭建一个属于自己的离线 PyPI 仓库(本文章使用 pip==18.1)。</p>
-<h2 id="pypi">PyPI 私有源<a class="headerlink" href="#pypi" title="Permanent link">&para;</a></h2>
+<h2 id="pypi-私有源">PyPI 私有源<a class="headerlink" href="#pypi-私有源" title="Permanent link">&para;</a></h2>
 <p>PyPI (Python Package Index，<a href="https://pypi.org/">https://pypi.org/</a>) 是 Python 官方的第三方库的仓库，所有人都可以下载第三方库或上传自己开发的库到 PyPI。</p>
 <p>通常我们使用 pip 安装 Python 包，默认就是从  <a href="https://pypi.python.org/pypi">https://pypi.python.org/pypi</a> (<a href="https://pypi.org/">https://pypi.org/</a>) 上安装。当然，我们也可以通过配置 pip.conf 或者使用命令行从指定的 PyPI 源安装。</p>
 <div class="highlight"><pre><span></span><code># 从阿里云的 PyPI 源安装
@@ -10245,11 +10245,11 @@ EOF
 <p>这里需要提到的是，有些是公司内部的项目，不方便放到外网上去，这个时候我们就要搭建自己的内网 PyPI 源服务器，需要安全并且拥有同样的舒适体验。关于 PyPI 私有源的实现，Python 官方的 <a href="http://wiki.python.org/moin/PyPiImplementations">PyPiImplementations</a> 说明中列出了几个比较成熟的实现方案：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG14MrzGCYLVk63aeJ1f_5Rhy7s.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG14MrzGCYLVk63aeJ1f_5Rhy7s.png" /></a>##</p>
 <p>这里选择 pypiserver，除了 Galaxy 的原因外，最重要的是因为它最小而且使用简单。</p>
-<h2 id="pypiserver">pypiserver 简介<a class="headerlink" href="#pypiserver" title="Permanent link">&para;</a></h2>
+<h2 id="pypiserver-简介">pypiserver 简介<a class="headerlink" href="#pypiserver-简介" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>pypiserver is a minimal PyPI compatible server for pip or easy_install. It is based on bottle and serves packages from regular directories. Wheels, bdists, eggs and accompanying PGP-signatures can be uploaded either with pip, setuptools, twine, pypi-uploader, or simply copied with scp.</p>
 </blockquote>
-<h2 id="pypiserver_1">pypiserver 服务端配置<a class="headerlink" href="#pypiserver_1" title="Permanent link">&para;</a></h2>
+<h2 id="pypiserver-服务端配置">pypiserver 服务端配置<a class="headerlink" href="#pypiserver-服务端配置" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>pypiserver &gt; 1.2.x works with Python 2.7 and 3.4+ or pypy. Older Python versions may still work, but they are not tested. For legacy Python versions, use pypiserver-1.1.x series.</p>
 </blockquote>
@@ -10281,7 +10281,7 @@ $ pip download -d /home/shenweiyan/packages mako
 # 启动 pypiserver 服务
 $ pypi-server -p 8080 ~/packages &amp;
 </code></pre></div>
-<h2 id="pypiserver_2">pypiserver 客户端配置<a class="headerlink" href="#pypiserver_2" title="Permanent link">&para;</a></h2>
+<h2 id="pypiserver-客户端配置">pypiserver 客户端配置<a class="headerlink" href="#pypiserver-客户端配置" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>$ python -c &quot;import mako&quot;
 Traceback (most recent call last):
   File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
@@ -10304,7 +10304,7 @@ extra-index-url = https://mirrors.aliyun.com/pypi/simple/
 trusted-host = 120.77.xx.xx
 EOF
 </code></pre></div>
-<h2 id="requirementstxt-pypi">requirements.txt 离线 PyPI 仓库<a class="headerlink" href="#requirementstxt-pypi" title="Permanent link">&para;</a></h2>
+<h2 id="requirementstxt-离线-pypi-仓库">requirements.txt 离线 PyPI 仓库<a class="headerlink" href="#requirementstxt-离线-pypi-仓库" title="Permanent link">&para;</a></h2>
 <p>一般 Python 项目使用 pip 安装的包，都可以通过 pip freeze &gt;requirements.txt 导出环境中已有的模块。搭建 requirements.txt 离线 PyPI 仓库，我们首先需要把 requirements.txt 所有的模块安装包下载到本地。</p>
 <div class="highlight"><pre><span></span><code>$ pip download -d /home/shenweiyan/packages -r /home/shenweiyan/galaxy/requirements.txt --index-url https://mirrors.aliyun.com/pypi/simple --extra-index-url https://wheels.galaxyproject.org/simple
 Looking in indexes: https://mirrors.aliyun.com/pypi/simple, https://wheels.galaxyproject.org/simple
@@ -10355,7 +10355,7 @@ Successfully installed bdbag-1.2.4 beaker-1.9.1 ...... warlock-1.2.0 webob-1.4.2
 <li>对于特定项目的第三方 PyPI 源，可考虑 pypiserver 实现离线本地化。</li>
 </ul>
 <p>pypiserver 的一些高级用法，如基于 systemd 和 supervisor 的自动化启动管理；基于 Docker 技术的部署与使用；基于 Nginx 反向代理的 pypiserver 运行等等，我们后面有时间再进行介绍。有需要的童鞋也可参考 pypiserver 的 GitHub 说明文档：<a href="https://github.com/pypiserver/pypiserver。">https://github.com/pypiserver/pypiserver。</a></p>
-<h2 id="_2">参考资料<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h2>
 <ol>
 <li><a href="https://www.aliyun.com/jiaocheng/439913.html">如何搭建自己的 pypi 私有源服务器</a>，阿里云教程中心</li>
 <li><a href="https://wsgzao.github.io/post/pypiserver/">使用 pypiserver 快速搭建内网离线 pypi 仓库实践</a>，HelloDog 博客</li>

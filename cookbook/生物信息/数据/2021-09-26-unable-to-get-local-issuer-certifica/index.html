@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#方法一全局取消证书验证" class="md-skip">
           跳转至
         </a>
       
@@ -1457,7 +1457,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#方法一全局取消证书验证" class="md-nav__link">
     <span class="md-ellipsis">
       方法一，全局取消证书验证
     </span>
@@ -1466,7 +1466,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#方法二指定位置安装证书" class="md-nav__link">
     <span class="md-ellipsis">
       方法二，指定位置安装证书
     </span>
@@ -1475,7 +1475,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#方法三设置环境变量" class="md-nav__link">
     <span class="md-ellipsis">
       方法三，设置环境变量
     </span>
@@ -10066,7 +10066,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#方法一全局取消证书验证" class="md-nav__link">
     <span class="md-ellipsis">
       方法一，全局取消证书验证
     </span>
@@ -10075,7 +10075,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#方法二指定位置安装证书" class="md-nav__link">
     <span class="md-ellipsis">
       方法二，指定位置安装证书
     </span>
@@ -10084,7 +10084,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#方法三设置环境变量" class="md-nav__link">
     <span class="md-ellipsis">
       方法三，设置环境变量
     </span>
@@ -10179,11 +10179,11 @@
 <p>根据网络上的解析，当使用 <strong>urllib.urlopen</strong> 打开一个 https 链接时，会验证一次 SSL 证书。而当目标网站使用的是自签名的证书时就会抛出如下异常：</p>
 <p><strong>ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)</strong></p>
 <p>解决方法也很简单，下面是个人简单总结的 3 种常用解决方法。</p>
-<h3 id="_1">方法一，全局取消证书验证<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="方法一全局取消证书验证">方法一，全局取消证书验证<a class="headerlink" href="#方法一全局取消证书验证" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">ssl</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">ssl</span><span class="o">.</span><span class="n">_create_default_https_context</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">_create_unverified_context</span>
 </code></pre></div>
-<h3 id="_2">方法二，指定位置安装证书<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="方法二指定位置安装证书">方法二，指定位置安装证书<a class="headerlink" href="#方法二指定位置安装证书" title="Permanent link">&para;</a></h3>
 <ol>
 <li>查看证书默认位置。</li>
 </ol>
@@ -10198,7 +10198,7 @@
 <div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">cd</span> <span class="o">/</span><span class="n">Bioinfo</span><span class="o">/</span><span class="n">Pipeline</span><span class="o">/</span><span class="n">SoftWare</span><span class="o">/</span><span class="n">LibDependence</span><span class="o">/</span><span class="n">openssl</span><span class="o">-</span><span class="mf">1.1.1</span><span class="o">/</span><span class="n">ssl</span>
 <span class="err">$</span> <span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">curl</span><span class="o">.</span><span class="n">haxx</span><span class="o">.</span><span class="n">se</span><span class="o">/</span><span class="n">ca</span><span class="o">/</span><span class="n">cacert</span><span class="o">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">O</span> <span class="n">cert</span><span class="o">.</span><span class="n">pem</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">check</span><span class="o">-</span><span class="n">certificate</span>
 </code></pre></div>
-<h3 id="_3">方法三，设置环境变量<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="方法三设置环境变量">方法三，设置环境变量<a class="headerlink" href="#方法三设置环境变量" title="Permanent link">&para;</a></h3>
 <p>也可以参考 <a href="https://stackoverflow.com/questions/55736855/how-to-change-the-cafile-argument-in-the-ssl-module-in-python3">stackoverflow</a> 上的做法，通过修改下面环境变量的方式解决（亲测可行）。</p>
 <div class="highlight"><pre><span></span><code><span class="n">export</span> <span class="n">SSL_CERT_FILE</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">openssl</span><span class="o">/</span><span class="n">cert</span><span class="o">.</span><span class="n">pem</span>
 <span class="n">export</span> <span class="n">REQUESTS_CA_BUNDLE</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">openssl</span><span class="o">/</span><span class="n">cert</span><span class="o">.</span><span class="n">pem</span>

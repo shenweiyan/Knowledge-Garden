@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python" class="md-skip">
+        <a href="#python-读写数据到文件" class="md-skip">
           跳转至
         </a>
       
@@ -10076,7 +10076,7 @@
 </ul>
 <p>Open multiple files using the fileinput module</p>
 <hr />
-<h1 id="python">Python 读写数据到文件<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
+<h1 id="python-读写数据到文件">Python 读写数据到文件<a class="headerlink" href="#python-读写数据到文件" title="Permanent link">&para;</a></h1>
 <p>使用 Python 读取和写入文件数据非常简单。 为此，我们必须首先以适当的模式打开文件。 以下是如何打开文本文件并读取其内容的示例：</p>
 <div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -10088,7 +10088,7 @@
 </code></pre></div>
 <p>在上面的示例中，<code>open()</code> 打开用于读取或写入的文件，并返回文件句柄（在本例中为 <code>f</code>），该句柄提供可用于读取或写入文件数据的方法。 更多有关如何读取和写入文件的更多信息，参考：<a href="https://dbader.org/blog/python-file-io">Working With File I/O in Python </a>。</p>
 <hr />
-<h1 id="_1">获取目录列表<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="获取目录列表">获取目录列表<a class="headerlink" href="#获取目录列表" title="Permanent link">&para;</a></h1>
 <p>假设您当前的工作目录有一个名为 my_directory 的子目录，其中包含以下内容：</p>
 <div class="highlight"><pre><span></span><code><span class="o">.</span>
 <span class="err">├──</span> <span class="n">file1</span><span class="o">.</span><span class="n">py</span>
@@ -10104,7 +10104,7 @@
     <span class="err">└──</span> <span class="n">file5</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
 <p>内置的<code>os</code>模块有许多有用的功能，可用于列出目录内容并过滤结果。 要获取文件系统中特定目录下的所有文件和文件夹的列表，请在旧版本的 Python 中使用<code>os.listdir()</code>；或在 Python 3.x 中使用<code>os.scandir()</code>。 如果你还想获取文件和目录属性（如文件大小和修改日期），则<code>os.scandir()</code>是首选方法。</p>
-<h2 id="python_1">在传统 Python 版本中获取目录列表<a class="headerlink" href="#python_1" title="Permanent link">&para;</a></h2>
+<h2 id="在传统-python-版本中获取目录列表">在传统 Python 版本中获取目录列表<a class="headerlink" href="#在传统-python-版本中获取目录列表" title="Permanent link">&para;</a></h2>
 <p>在 Python 3 之前的 Python 版本中，<code>os.listdir()</code> 是用于获取目录列表的方法：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">entries</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;my_directory/&#39;</span><span class="p">)</span>
@@ -10126,7 +10126,7 @@
 <span class="n">file2</span><span class="o">.</span><span class="n">csv</span>
 <span class="n">sub_dir</span>
 </code></pre></div>
-<h2 id="python_2">在现代 Python 版本中的获取目录列表<a class="headerlink" href="#python_2" title="Permanent link">&para;</a></h2>
+<h2 id="在现代-python-版本中的获取目录列表">在现代 Python 版本中的获取目录列表<a class="headerlink" href="#在现代-python-版本中的获取目录列表" title="Permanent link">&para;</a></h2>
 <p>在现代版本的 Python 中，<code>os.listdir()</code>的替代方法是使用<code>os.scandir()</code>和<code>pathlib.Path()</code>。</p>
 <p><code>os.scandir()</code> 是在 Python 3.5 中引入的，并在 <a href="https://www.python.org/dev/peps/pep-0471/">PEP 471</a> 中有记录。<code>os.scandir()</code>在调用时返回一个迭代器(iterator)而不是列表：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
@@ -10172,7 +10172,7 @@ sub_dir
 <p>以下是目录列表功能：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkAzAEk1Qnh6fnc4B0W8wFblUsj_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkAzAEk1Qnh6fnc4B0W8wFblUsj_.png" /></a></p>
 <p>这些函数返回了一个包含了目录中所有内容的列表，包括子目录。这些操作可能并不总是您想要的。下一节我们将介绍如何从目录列表中进行结果过滤。</p>
-<h2 id="_2">列出目录中的所有文件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="列出目录中的所有文件">列出目录中的所有文件<a class="headerlink" href="#列出目录中的所有文件" title="Permanent link">&para;</a></h2>
 <p>本节将向您展示如何使用<code>os.listdir()</code>，<code>os.scandir()</code>和<code>pathlib.Path()</code>打印出目录中文件的名称。 如果我们要过滤目录并仅列出由<code>os.listdir()</code>得到的目录列表中的文件，请使用<code>os.path</code>：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
@@ -10227,7 +10227,7 @@ file2.csv
     <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
 <p>这将产生与之前的示例完全相同的输出。本节展示了使用<code>os.scandir()</code>和<code>pathlib.Path()</code>过滤文件或目录，它们比使用<code>os.listdir()</code>和<code>os.path</code>更直观，看起来更干净。</p>
-<h2 id="_3">列出子目录<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="列出子目录">列出子目录<a class="headerlink" href="#列出子目录" title="Permanent link">&para;</a></h2>
 <p>要列出子目录而不是文件，请使用以下方法之一。</p>
 <p>如何使用<code>os.listdir()</code>和<code>os.path()</code>：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
@@ -10272,7 +10272,7 @@ sub_dir
 sub_dir_b
 sub_dir
 </code></pre></div>
-<h1 id="_4">获取文件属性<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
+<h1 id="获取文件属性">获取文件属性<a class="headerlink" href="#获取文件属性" title="Permanent link">&para;</a></h1>
 <p>Python 可以轻松检索文件大小和修改时间等文件属性。这是通过<code>os.stat()</code>，<code>os.scandir()</code>或<code>pathlib.Path()</code>完成的。</p>
 <p><code>os.scandir()</code>和<code>pathlib.Path()</code>检索具有文件属性组合的目录列表。这可能比使用<code>os.listdir()</code>列出文件然后获取每个文件的文件属性信息更有效。</p>
 <p>下面的示例显示了如何获取 my_directory 中文件的上次修改时间。输出以秒为单位：</p>
@@ -10334,10 +10334,10 @@ sub_dir
 <span class="n">file2</span><span class="o">.</span><span class="n">txt</span>       <span class="n">Last</span> <span class="n">modified</span><span class="p">:</span>  <span class="mi">17</span> <span class="n">Sep</span> <span class="mi">2018</span>
 </code></pre></div>
 <p>将日期和时间转换为字符串的语法可能非常混乱。要了解更多信息，请查看相关的<a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior">官方文档</a>。或者参考另一个更易于记忆的方法：<a href="http://strftime.org/">http://strftime.org/</a>。</p>
-<h1 id="_5">创建目录<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
+<h1 id="创建目录">创建目录<a class="headerlink" href="#创建目录" title="Permanent link">&para;</a></h1>
 <p>我们编写的程序需要创建目录以便在其中存储数据时，可以参考<code>os</code>和<code>pathlib</code>中包含用于创建目录的函数。</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmQolOuA8sSrkClyR9VM6f6sYjnQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmQolOuA8sSrkClyR9VM6f6sYjnQ.png" /></a></p>
-<h2 id="_6">创建单个目录<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="创建单个目录">创建单个目录<a class="headerlink" href="#创建单个目录" title="Permanent link">&para;</a></h2>
 <p>要创建单个目录，请将目录路径作为参数传递给<code>os.mkdir()</code>：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
@@ -10376,7 +10376,7 @@ sub_dir
 <span class="n">p</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>这样一来，如果目录已存在，则不会引发错误。</p>
-<h2 id="_7">创建多个目录<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h2 id="创建多个目录">创建多个目录<a class="headerlink" href="#创建多个目录" title="Permanent link">&para;</a></h2>
 <p><code>os.makedirs()</code>类似于<code>os.mkdir()</code>。两者之间的区别在于，<code>os.makedirs()</code>不仅可以创建单独的目录，还可以用于创建目录树。换句话说，它可以创建任何必要的中间文件夹，以确保存在完整路径。</p>
 <p><code>os.makedirs()</code>类似于在 Bash 中运行<code>mkdir -p</code>。例如，要创建一组目录，如<code>2018/10/05</code>，您只需执行以下操作：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
@@ -10418,7 +10418,7 @@ sub_dir
 <span class="w">        </span>└──<span class="w"> </span><span class="m">05</span>
 </code></pre></div>
 <p>我更喜欢在创建目录时使用<code>pathlib</code>，因为我可以使用相同的函数来创建单个或嵌套目录。</p>
-<h1 id="_8">文件名模式匹配<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h1>
+<h1 id="文件名模式匹配">文件名模式匹配<a class="headerlink" href="#文件名模式匹配" title="Permanent link">&para;</a></h1>
 <p>使用上述方法之一获取目录中的文件列表后，您很可能希望搜索与特定模式匹配的文件。</p>
 <p>这些是可以使用的方法和功能：</p>
 <ul>
@@ -10451,7 +10451,7 @@ $<span class="w"> </span>touch<span class="w"> </span>sub_dir/file1.py<span clas
 $<span class="w"> </span>touch<span class="w"> </span>data_<span class="o">{</span><span class="m">01</span>..03<span class="o">}</span>.txt<span class="w"> </span>data_<span class="o">{</span><span class="m">01</span>..03<span class="o">}</span>_backup.txt<span class="w"> </span>admin.py<span class="w"> </span>tests.py
 </code></pre></div>
 <p>这将创建 some_directory/ 目录，进入该目录，然后创建 sub_dir。第 4 行是在 sub_dir 中创建 file1.py 和 file2.py，最后一行使用扩展创建所有其他文件。 要了解有关 shell 扩展的更多信息，请访问此<a href="http://linuxcommand.org/lc3_lts0080.php">站点</a>。</p>
-<h2 id="_9">使用字符串方法<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h2 id="使用字符串方法">使用字符串方法<a class="headerlink" href="#使用字符串方法" title="Permanent link">&para;</a></h2>
 <p>Python 有几种用于修改和操作字符串的内置方法。当您在文件名中使用搜索模式时，其中两个方法<code>.startswith()</code> 和<code>.endswith()</code>非常有用。为此，首先获取目录列表，然后迭代它：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
 
@@ -10468,7 +10468,7 @@ data_02_backup.txt
 data_02.txt
 data_01_backup.txt
 </code></pre></div>
-<h2 id="fnmatch">使用 fnmatch 进行简单文件名模式匹配<a class="headerlink" href="#fnmatch" title="Permanent link">&para;</a></h2>
+<h2 id="使用-fnmatch-进行简单文件名模式匹配">使用 fnmatch 进行简单文件名模式匹配<a class="headerlink" href="#使用-fnmatch-进行简单文件名模式匹配" title="Permanent link">&para;</a></h2>
 <p>字符串方法的匹配能力有限。但 <code>fnmatch</code> 具有更高级的模式匹配功能和方法。 <code>fnmatch.fnmatch()</code> 是一个支持使用 * 和 ？ 等通配符的函数。例如，要使用<code>fnmatch</code>查找目录中的所有<code>.txt</code>文件：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">fnmatch</span>
@@ -10478,7 +10478,7 @@ data_01_backup.txt
 <span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
 </code></pre></div>
 <p>这将迭代<code>some_directory</code>中的文件列表，并使用<code>.fnmatch()</code>对具有<code>.txt</code>扩展名的文件执行通配符搜索。</p>
-<h2 id="_10">更高级的模式匹配<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h2 id="更高级的模式匹配">更高级的模式匹配<a class="headerlink" href="#更高级的模式匹配" title="Permanent link">&para;</a></h2>
 <p>假设我们要查找符合特定条件的<code>.txt</code>文件。例如，我们可能只想查找包含单词<code>data</code>的<code>.txt</code>文件，匹配一组下划线之间的数字，或者文件名中的包含单词 <code>backup</code>。 类似于<code>data_01_backup</code>，<code>data_02_backup</code>或<code>data_03_backup</code>的东西。</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">if</span> <span class="n">fnmatch</span><span class="o">.</span><span class="n">fnmatch</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;data_*_backup.txt&#39;</span><span class="p">):</span>
@@ -10489,7 +10489,7 @@ data_01_backup.txt
 data_02_backup.txt
 data_01_backup.txt
 </code></pre></div>
-<h2 id="glob">使用 glob 的文件名模式匹配<a class="headerlink" href="#glob" title="Permanent link">&para;</a></h2>
+<h2 id="使用-glob-的文件名模式匹配">使用 glob 的文件名模式匹配<a class="headerlink" href="#使用-glob-的文件名模式匹配" title="Permanent link">&para;</a></h2>
 <p>模式匹配的另一个有用模块是  <code>glob</code>。</p>
 <p><code>glob</code>模块中<code>的.glob()</code>作用就像<code>fnmatch.fnmatch()</code>一样，但与<code>fnmatch.fnmatch()</code>不同的是，它把以句点（.）为开头的文件当作特殊的文件进行处理。</p>
 <p>UNIX 和相关的系统使用 ？ 和 * 通配符来把名称模式转化成文件列表。这称为通配。</p>
@@ -10538,7 +10538,7 @@ sub_dir/file2.py
 <p><code>Path.glob()</code>类似于上面讨论的<code>os.glob()</code>。 正如我们所看到的，<code>pathlib</code>将<code>os</code>，<code>os.path</code>和<code>glob</code>模块的许多最佳功能组合到一个模块中，这使得使用起来非常愉快。</p>
 <p>回顾一下，这是我们在本节中介绍的功能表：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqqflHxqAIGJBSNRO6nOgjnwmruW.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqqflHxqAIGJBSNRO6nOgjnwmruW.png" /></a></p>
-<h1 id="_11">遍历目录和文件<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h1>
+<h1 id="遍历目录和文件">遍历目录和文件<a class="headerlink" href="#遍历目录和文件" title="Permanent link">&para;</a></h1>
 <p>遍历目录树并处理树中的文件是最常见的编程任务之一。 让我们来探索如何使用内置的 Python 函数 <code>os.walk()</code> 来实现这一点。<code>os.walk()</code>用于通过从上到下或从下到上的遍历来生成目录树中的文件名。出于本节的目的，我们将操作以下目录树：</p>
 <div class="highlight"><pre><span></span><code>.
 <span class="p">|</span>
@@ -10602,7 +10602,7 @@ test1.txt
 test2.txt
 </code></pre></div>
 <p>如我们所见，程序通过在列出根目录的内容之前列出子目录的内容来启动。 这在我们想要递归删除文件和目录的情况下非常有用(我们将在下面章节部分中学习如何执行此操作)。默认情况下，<code>os.walk</code>不会向下走到符号链接文件所指向的目录中。 我们可以通过使用<code>followlinks = True</code>参数调用此行为来覆盖此行为</p>
-<h1 id="_12">创建临时文件和目录<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h1>
+<h1 id="创建临时文件和目录">创建临时文件和目录<a class="headerlink" href="#创建临时文件和目录" title="Permanent link">&para;</a></h1>
 <p>Python 提供了一个名为 <code>tempfile</code> 方便的模块，用于创建临时文件和目录。</p>
 <p><code>tempfile</code> 可用于在程序运行时临时在文件或目录中打开和存储数据。另一方面，<code>tempfile</code> 会在程序完成后对临时文件执行删除处理。</p>
 <p>以下是创建临时文件的方法：</p>
@@ -10650,9 +10650,9 @@ test2.txt
 </code></pre></div>
 <p>调用<code>tempfile.TemporaryDirectory()</code>会在文件系统中创建一个临时目录，并返回一个表示该目录的对象。在上面的示例中，使用上下文管理器创建目录，目录的名称存储在<code>tmpdir</code>中。第三行打印出临时目录的名称，<code>os.path.exists(tmpdir)</code>确认目录是否实际在文件系统中创建。</p>
 <p>在上下文管理器退出上下文后，临时目录将被删除，并且对<code>os.path.exists(tmpdir)</code>的调用将返回 False，这意味着该目录已成功删除。</p>
-<h1 id="_13">删除文件和目录<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h1>
+<h1 id="删除文件和目录">删除文件和目录<a class="headerlink" href="#删除文件和目录" title="Permanent link">&para;</a></h1>
 <p>我们可以使用<code>os</code>，<code>shutil</code>和<code>pathlib</code>模块中的方法删除单个文件，目录和整个目录树。以下部分介绍如何删除不再需要的文件和目录。</p>
-<h2 id="python_3">在 Python 中删除文件<a class="headerlink" href="#python_3" title="Permanent link">&para;</a></h2>
+<h2 id="在-python-中删除文件">在 Python 中删除文件<a class="headerlink" href="#在-python-中删除文件" title="Permanent link">&para;</a></h2>
 <p>要删除单个文件，请使用<code>pathlib.Path.unlink()</code>，<code>os.remove()</code> 或者<code>os.unlink()</code>。</p>
 <p><code>os.remove()</code>和<code>os.unlink()</code>在语义上是相同的。要使用<code>os.remove()</code>删除文件，请执行以下操作：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
@@ -10701,7 +10701,7 @@ except IsADirectoryError as e:
     print(f&#39;Error: {data_file} : {e.strerror}&#39;)
 </code></pre></div>
 <p>上面的代码将创建一个名为<code>data_file</code>的 Path 对象，该对象指向文件。在<code>data_file上</code>调用<code>.remove()</code>将删除<code>home/data.txt</code>。 如果<code>data_file</code>指向目录，则引发<code>IsADirectoryError</code>。值得注意的是，上面的 Python 程序与运行它的用户具有相同的权限。如果用户没有删除文件的权限，则会引发<code>PermissionError</code>。</p>
-<h2 id="_14">删除目录<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h2 id="删除目录">删除目录<a class="headerlink" href="#删除目录" title="Permanent link">&para;</a></h2>
 <p>Python 的标准库提供以下删除目录的功能：</p>
 <ul>
 <li><code>os.rmdir()</code></li>
@@ -10734,7 +10734,7 @@ except IsADirectoryError as e:
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Error: </span><span class="si">{</span><span class="n">trash_dir</span><span class="si">}</span><span class="s1"> : </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">strerror</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>在这里，我们创建一个指向要删除的目录的 Path 对象。如果目录为空，则在 Path 对象上调用<code>.rmdir()</code>将它删除。</p>
-<h2 id="_15">删除整个目录树<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<h2 id="删除整个目录树">删除整个目录树<a class="headerlink" href="#删除整个目录树" title="Permanent link">&para;</a></h2>
 <p>要删除非空目录和整个目录树，Python 提供了<code>shutil.rmtree()</code>：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
 
@@ -10757,9 +10757,9 @@ except IsADirectoryError as e:
 <p>这将遍历目录树并尝试删除它找到的每个目录。如果目录不为空，则引发<code>OSError</code>并跳过该目录。</p>
 <p>下表列出了本节中涉及的功能：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhnGoA-AuSfdhwSq0vpk3LfI90mc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhnGoA-AuSfdhwSq0vpk3LfI90mc.png" /></a></p>
-<h1 id="_16">文件和目录复制，移动及重命名<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h1>
+<h1 id="文件和目录复制移动及重命名">文件和目录复制，移动及重命名<a class="headerlink" href="#文件和目录复制移动及重命名" title="Permanent link">&para;</a></h1>
 <p>Python 附带的<code>shutil</code>模块，是 shell 实用程序的缩写。它为文件提供了许多高级操作，以支持文件和目录的复制，存档和删除。在本节中，我们将学习如何移动和复制文件和目录。</p>
-<h2 id="python_4">Python 中的文件复制<a class="headerlink" href="#python_4" title="Permanent link">&para;</a></h2>
+<h2 id="python-中的文件复制">Python 中的文件复制<a class="headerlink" href="#python-中的文件复制" title="Permanent link">&para;</a></h2>
 <p><code>shutil</code> 提供了一些复制文件的功能。其中最常用的函数是<code>shutil.copy()</code>和<code>shutil.copy2()</code>。要使用<code>shutil.copy()</code>将文件从一个位置复制到另一个位置，请执行以下操作：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
 
@@ -10776,7 +10776,7 @@ except IsADirectoryError as e:
 <span class="n">shutil</span><span class="o">.</span><span class="n">copy2</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">)</span>
 </code></pre></div>
 <p>使用<code>.copy2()</code>可保留有关文件的详细信息，例如上次访问时间，权限位，上次修改时间和标志。</p>
-<h2 id="python_5">Python 中的目录复制<a class="headerlink" href="#python_5" title="Permanent link">&para;</a></h2>
+<h2 id="python-中的目录复制">Python 中的目录复制<a class="headerlink" href="#python-中的目录复制" title="Permanent link">&para;</a></h2>
 <p>虽然<code>shutil.copy()</code>只复制单个文件，但<code>shutil.copytree()</code>可以将复制整个目录及其中包含的所有内容。<code>shutil.copytree(src, dest)</code>有两个参数：源目录；将文件和文件夹复制到的目标目录。</p>
 <p>以下是如何将一个文件夹的内容复制到其他位置的示例：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">shutil</span>
@@ -10784,14 +10784,14 @@ except IsADirectoryError as e:
 <span class="s1">&#39;data1_backup&#39;</span>
 </code></pre></div>
 <p>在此示例中，<code>.copytree()</code> 将 <code>data_1</code> 的内容复制到新位置 <code>data1_backup</code> 并返回目标目录。如果目标目录不存在，它以及其缺少的父目录将被一起创建。<code>shutil.copytree()</code>是备份文件的好方法。</p>
-<h2 id="_17">移动文件和目录<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h2 id="移动文件和目录">移动文件和目录<a class="headerlink" href="#移动文件和目录" title="Permanent link">&para;</a></h2>
 <p>要将文件或目录移动到其他位置，请使用<code>shutil.move(src, dst)</code>，其中 src 是要移动的文件或目录，dst 是目标文件或者目录：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">shutil</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s1">&#39;dir_1/&#39;</span><span class="p">,</span> <span class="s1">&#39;backup/&#39;</span><span class="p">)</span>
 <span class="s1">&#39;backup&#39;</span>
 </code></pre></div>
 <p>如果<code>backup/</code>存在，<code>shutil.move('dir_1/', 'backup/')</code>将会把<code>dir_1/</code>移动到<code>backup/</code>目录；如果<code>backup/</code>目录不存在，则<code>dir_1/</code>将重命名为<code>backup</code>。</p>
-<h2 id="_18">重命名文件和目录<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h2 id="重命名文件和目录">重命名文件和目录<a class="headerlink" href="#重命名文件和目录" title="Permanent link">&para;</a></h2>
 <p>Python 内置的<code>os.rename(src, dst)</code>可用于文件和目录的重命名：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;first.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;first_01.zip&#39;</span><span class="p">)</span>
 </code></pre></div>
@@ -10802,9 +10802,9 @@ except IsADirectoryError as e:
 <span class="o">&gt;&gt;&gt;</span> <span class="n">data_file</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;data.txt&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>要使用<code>pathlib</code>重命名文件，首先要创建一个<code>pathlib.Path()</code>对象，该对象包含要替换的文件的路径。下一步是在路径对象上调用<code>rename()</code>并为我们要重命名的文件或目录传递新文件名。</p>
-<h1 id="_19">归档<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h1>
+<h1 id="归档">归档<a class="headerlink" href="#归档" title="Permanent link">&para;</a></h1>
 <p>归档是将多个文件打包成一个文件的便捷方式。两种最常见的存档类型是 ZIP 和 TAR。我们编写的 Python 程序可以从归档中创建，读取和提取数据。我们将在本节中学习如何从两种存档格式文件中读取和写入数据。</p>
-<h2 id="zip">读取 ZIP 文件<a class="headerlink" href="#zip" title="Permanent link">&para;</a></h2>
+<h2 id="读取-zip-文件">读取 ZIP 文件<a class="headerlink" href="#读取-zip-文件" title="Permanent link">&para;</a></h2>
 <p><code>zipfile</code>模块是一个低级模块，是 Python 标准库的一部分。<code>zipfile</code>具有可以轻松打开和提取 ZIP 文件的功能。要读取 ZIP 文件的内容，我们首先要做的是创建一个 ZipFile 对象。ZipFile 对象类似于使用 <code>open()</code>创建的文件对象。ZipFile 同时也是一个上下文管理器，因此支持 <code>with</code> 语句：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">zipfile</span>
 
@@ -10854,7 +10854,7 @@ except IsADirectoryError as e:
 <li>第一行显示了如何检索文件的上次修改日期。下一行显示了如何在压缩后获取文件的大小。最后一行显示了存档中 bar.py 的完整路径。</li>
 </ul>
 <p><code>ZipFile</code> 支持上下文管理器协议，这就是我们可以将它与 <code>with</code> 语句一起使用的原因。完成后，执行此操作会自动关闭 ZipFile 对象。如果我们尝试从已关闭的 ZipFile 对象中打开或提取文件将导致错误。</p>
-<h2 id="zip_1">提取 ZIP 归档<a class="headerlink" href="#zip_1" title="Permanent link">&para;</a></h2>
+<h2 id="提取-zip-归档">提取 ZIP 归档<a class="headerlink" href="#提取-zip-归档" title="Permanent link">&para;</a></h2>
 <p><code>zipfile</code>模块允许我们通过<code>.extract()</code>和<code>.extractall()</code>从 ZIP 压缩文件中提取一个或多个文件。</p>
 <p>默认情况下，这些方法将文件解压缩到当前目录。 它们都采用可选的路径参数，允许我们指定要将文件提取到的其他目录。 如果该目录不存在，则会自动创建该目录。 要从存档中提取文件，请执行以下操作：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">zipfile</span>
@@ -10886,7 +10886,7 @@ except IsADirectoryError as e:
 <p>第三行代码是对<code>os.listdir()</code>的调用，它显示当前目录只有一个文件<code>data.zip</code>。</p>
 <p>接下来，在读取模式下打开<code>data.zip</code>并调用<code>.extract()</code>从中提取<code>file1.py</code>。 <code>.extract()</code>返回解压缩文件的完整文件路径。 由于没有指定路径，<code>.extract()</code>会将 <code>file1.py</code> 提取到当前目录。</p>
 <p>下一行代码打印一个目录列表，显示当前目录除原始存档之外的解压缩文件。之后的行显示了如何将整个存档解压缩到<code>zip_extract</code>目录中。 <code>.extractall()</code> 创建 <code>extract_dir</code> 并将 <code>data.zip</code> 的内容提取到其中。最后一行关闭 ZIP 存档。</p>
-<h2 id="_20">从受密码保护的归档中提取数据<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<h2 id="从受密码保护的归档中提取数据">从受密码保护的归档中提取数据<a class="headerlink" href="#从受密码保护的归档中提取数据" title="Permanent link">&para;</a></h2>
 <p><code>zipfile</code>支持提取受密码保护的 ZIP。要提取受密码保护的 ZIP 文件，请将密码作为参数传递给<code>.extract()</code>或<code>.extractall()</code>方法：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">zipfile</span>
 
@@ -10895,7 +10895,7 @@ except IsADirectoryError as e:
 <span class="o">...</span>     <span class="n">pwd_zip</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;extract_dir&#39;</span><span class="p">,</span> <span class="n">pwd</span><span class="o">=</span><span class="s1">&#39;Quish3@o&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>这将以读取模式打开 secret.zip 存档。接下来，把密码提供给<code>.extractall()</code>，存档内容被提取到<code>extract_dir</code>。由于 with 语句，在完成提取后，存档会自动关闭。</p>
-<h2 id="zip_2">创建新的 ZIP 存档<a class="headerlink" href="#zip_2" title="Permanent link">&para;</a></h2>
+<h2 id="创建新的-zip-存档">创建新的 ZIP 存档<a class="headerlink" href="#创建新的-zip-存档" title="Permanent link">&para;</a></h2>
 <p>要创建新的 ZIP 存档，请以写入模式（w）打开 <code>ZipFile</code> 对象并添加要存档的文件：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">zipfile</span>
 
@@ -10912,7 +10912,7 @@ except IsADirectoryError as e:
 <span class="o">...</span>     <span class="n">new_zip</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;latin.txt&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>在这里，我们打开在上一个示例中以追加模式创建的 new.zip 存档。在追加模式下打开<code>ZipFile</code>对象允许您将新文件添加到 ZIP 文件而不删除其当前内容。将文件添加到 ZIP 文件后，<code>with</code> 语句将脱离上下文并关闭 ZIP 文件。</p>
-<h2 id="tar">打开 TAR 归档<a class="headerlink" href="#tar" title="Permanent link">&para;</a></h2>
+<h2 id="打开-tar-归档">打开 TAR 归档<a class="headerlink" href="#打开-tar-归档" title="Permanent link">&para;</a></h2>
 <p>TAR 文件是 ZIP 等未压缩文件的存档。它们可以使 用 gzip，bzip2 和 lzma 压缩方法进行压缩。<code>TarFile</code> 类允许读取和写入 TAR 存档。</p>
 <p>这样做是为了从存档中读取：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">tarfile</span>
@@ -10950,7 +10950,7 @@ app.py
  Size    : 6218 bytes
 </code></pre></div>
 <p>在此示例中，循环遍历<code>.getmembers()</code>返回的文件列表，并打印出每个文件的属性。<code>.getmembers()</code>返回的对象具有可以通过编程方式访问的属性，例如归档中每个文件的名称，大小和上次修改时间。在读取或写入存档后，我们必须关闭它以释放系统资源。</p>
-<h2 id="tar_1">从 TAR 存档中提取文件<a class="headerlink" href="#tar_1" title="Permanent link">&para;</a></h2>
+<h2 id="从-tar-存档中提取文件">从 TAR 存档中提取文件<a class="headerlink" href="#从-tar-存档中提取文件" title="Permanent link">&para;</a></h2>
 <p>在本节中，我们学习一下如何使用下面的方法从 TAR 存档中提取文件：</p>
 <ul>
 <li><code>.extract()</code></li>
@@ -10989,7 +10989,7 @@ app.py
 <span class="o">&gt;&gt;&gt;</span> <span class="n">tar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 <p>打开的存档文件应在读取或写入后始终关闭。要关闭存档，需要在存档文件句柄上调用<code>.close()</code>，或在创建<code>1tarfile</code>对象时使用<code>with</code>语句，以便在完成后自动关闭存档。这将释放系统资源，并把我们对存档所做的任何更改写入文件系统。</p>
-<h2 id="tar_2">创建新的 TAR 存档<a class="headerlink" href="#tar_2" title="Permanent link">&para;</a></h2>
+<h2 id="创建新的-tar-存档">创建新的 TAR 存档<a class="headerlink" href="#创建新的-tar-存档" title="Permanent link">&para;</a></h2>
 <p>创建新的 TAR 存档，可以参考下面的做法：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">tarfile</span>
 
@@ -11024,7 +11024,7 @@ app.py
 <span class="n">foo</span><span class="o">.</span><span class="n">bar</span>
 </code></pre></div>
 <p>在追加模式（&rsquo;a&rsquo;）下打开存档允许我们向其添加新文件而不删除其中已存在的文件。</p>
-<h2 id="_21">处理压缩归档<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<h2 id="处理压缩归档">处理压缩归档<a class="headerlink" href="#处理压缩归档" title="Permanent link">&para;</a></h2>
 <p><code>tarfile</code>还可以使用<code>gzip</code>，<code>bzip2</code>和<code>lzma</code> 来读取和写入 TAR 的压缩文件。要读取或写入压缩存档，请使用<code>tarfile.open()</code>，为压缩类型传递适当的模式。</p>
 <p>例如，要读取或写入使用 gzip 压缩的 TAR 存档数据，请分别使用 &lsquo;r：gz&rsquo; 或 &lsquo;w：gz&rsquo; 模式：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;app.py&#39;</span><span class="p">,</span> <span class="s1">&#39;config.py&#39;</span><span class="p">,</span> <span class="s1">&#39;tests.py&#39;</span><span class="p">]</span>
@@ -11041,9 +11041,9 @@ app.py
 <span class="n">tests</span><span class="o">.</span><span class="n">py</span>
 </code></pre></div>
 <p>&lsquo;w：gz&rsquo; 可以以 gzip 压缩写入的方式打开压缩的存档文件，&rsquo;r：gz&rsquo; 模式则可以以 gzip 压缩读取的方式打开压缩的存档文件。需要注意的是，我们无法在追加模式下打开压缩的存档。要将文件添加到压缩存档，我们必须创建新存档。</p>
-<h1 id="_22">创建归档更简单的方法<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h1>
+<h1 id="创建归档更简单的方法">创建归档更简单的方法<a class="headerlink" href="#创建归档更简单的方法" title="Permanent link">&para;</a></h1>
 <p>Python 标准库还支持使用<code>shutil</code>模块中的高级方法创建 TAR 和 ZIP 存档。<code>shutil</code>中的归档实用程序允许我们创建，读取和提取 ZIP 和 TAR 归档文件。这些实用程序依赖于较低级别的<code>tarfile</code>和<code>zipfile</code>模块。</p>
-<h2 id="shutilmake_archive">使用 <code>shutil.make_archive()</code> 处理存档<a class="headerlink" href="#shutilmake_archive" title="Permanent link">&para;</a></h2>
+<h2 id="使用-shutilmake_archive-处理存档">使用 <code>shutil.make_archive()</code> 处理存档<a class="headerlink" href="#使用-shutilmake_archive-处理存档" title="Permanent link">&para;</a></h2>
 <p><code>shutil.make_archive()</code>至少有两个参数：归档的名称和归档格式。</p>
 <p>默认情况下，它将当前目录中的所有文件压缩为<code>format</code>参数中指定的归档格式。我们也可以传入可选的<code>root_dir</code>参数来压缩不同目录中的文件。<code>.make_archive()</code>支持 zip，tar，bztar 和 gztar 存档格式。</p>
 <p>这是使用<code>shutil</code>创建 TAR 存档的方法：</p>
@@ -11056,14 +11056,14 @@ app.py
 <div class="highlight"><pre><span></span><code><span class="n">shutil</span><span class="o">.</span><span class="n">unpack_archive</span><span class="p">(</span><span class="s1">&#39;backup.tar&#39;</span><span class="p">,</span> <span class="s1">&#39;extract_dir/&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>这行代码调用了<code>.unpack_archive()</code>并传入存档名称和目标目录，它会将 <code>backup.tar</code> 的内容提取到 <code>extract_dir/</code> 中。 ZIP 存档也可以以相同的方式创建和提取。</p>
-<h1 id="_23">读取多个文件<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h1>
+<h1 id="读取多个文件">读取多个文件<a class="headerlink" href="#读取多个文件" title="Permanent link">&para;</a></h1>
 <p>Python 支持通过 <code>fileinput</code> 模块从多个输入流或文件列表中读取数据。此模块允许我们快速轻松地循环遍历一个或多个文本文件的内容。以下是使用 <code>fileinput</code> 的典型方法：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">fileinput</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="n">input</span><span class="p">()</span>
     <span class="n">process</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div>
 <p><code>fileinput</code> 默认从传递给 <code>sys.argv</code> 的命令行参数中获取其输入。</p>
-<h2 id="fileinput">使用 <code>fileinput</code> 循环遍历多个文件<a class="headerlink" href="#fileinput" title="Permanent link">&para;</a></h2>
+<h2 id="使用-fileinput-循环遍历多个文件">使用 <code>fileinput</code> 循环遍历多个文件<a class="headerlink" href="#使用-fileinput-循环遍历多个文件" title="Permanent link">&para;</a></h2>
 <p>让我们使用 <code>fileinput</code> 构建一个普通的 UNIX 实用程序 <code>cat</code> 的原始版本。<code>cat</code> 实用程序将按顺序读取文件，将它们写入标准输出。当在命令行参数中给出多个文件时，<code>cat</code> 将连接文本文件并在终端中显示结果：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># File: fileinput-example.py</span>
 <span class="kn">import</span> <span class="nn">fileinput</span>
@@ -11093,7 +11093,7 @@ app.py
  <span class="o">-&gt;</span> <span class="n">Gummies</span> <span class="n">macaroon</span> <span class="n">jujubes</span> <span class="n">jelly</span> <span class="n">beans</span> <span class="n">marzipan</span><span class="o">.</span>
 </code></pre></div>
 <p><code>fileinput</code> 允许我们检索有关每一行的更多信息，例如它是否是第一行(<code>.isfirstline()</code>)，行号(<code>.lineno()</code>) 和文件名(<code>.filename()</code>)。 更多关于 <code>fileinput</code> 的内容，我们可以点击<a href="https://docs.python.org/3/library/fileinput.html">这里</a>查看。</p>
-<h1 id="_24">总结<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h1>
+<h1 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h1>
 <p>现在我们已经知道如何使用 Python 对文件和文件组执行最常见的操作。同时也已经了解了用于读取，查找和操作它们的不同内置模块。</p>
 <p>现在我们可以使用 Python 来：</p>
 <ul>

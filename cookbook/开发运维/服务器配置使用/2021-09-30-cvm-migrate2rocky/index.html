@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#安装前准备" class="md-skip">
           跳转至
         </a>
       
@@ -3785,7 +3785,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#安装前准备" class="md-nav__link">
     <span class="md-ellipsis">
       安装前准备
     </span>
@@ -3794,7 +3794,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -3803,7 +3803,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#检查操作系统版本" class="md-nav__link">
     <span class="md-ellipsis">
       检查操作系统版本
     </span>
@@ -3812,7 +3812,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10075,7 +10075,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#安装前准备" class="md-nav__link">
     <span class="md-ellipsis">
       安装前准备
     </span>
@@ -10084,7 +10084,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#检查操作系统版本" class="md-nav__link">
     <span class="md-ellipsis">
       检查操作系统版本
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10146,7 +10146,7 @@
 <p>昨天在语雀开了一个话题讨论《<a href="https://www.yuque.com/bioitee/topics/3">CentOS 7 和 8 不维护停止更新之后，服务器选择使用什么系统好？</a>》，在<a href="https://www.v2ex.com/t/805300"> V2EX</a> 收到不少回复。</p>
 <p>在前几天正好入手了腾讯云/阿里云的一个 2 核 4G，80GB SSD 盘的轻量云服务器，首年才 74，作为尝鲜一开始装了个 Debian 10，不得不说，RH 系用久了，回到 Debian/Ubuntu 还真是一下子没适应过来。</p>
 <p>也看到不少朋友都已经在生产环境用上了 Rocky Linux 和 CentOS 8 无缝对接，突发奇想也想体验一下，搜了一圈发现虽然 Rocky Linux 迁移和安装的教程不少，但唯独没找到在云服务上的迁移的，而且目前国内的阿里云/腾讯云/华为云都没有提供 Rocky Linux 的镜像，于是开始自己折腾。</p>
-<h2 id="_1">安装前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="安装前准备">安装前准备<a class="headerlink" href="#安装前准备" title="Permanent link">&para;</a></h2>
 <p>步骤 1. 首先，把你的服务器变更成 CentOS 8.x 系统。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk1qd_KA0bQQGzVlj9Uu_tQQZ9uy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk1qd_KA0bQQGzVlj9Uu_tQQZ9uy.png" /></a>
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqaH_jPUZfUgkZAmwc4ArAdgoh9P.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqaH_jPUZfUgkZAmwc4ArAdgoh9P.png" /></a></p>
@@ -10166,7 +10166,7 @@ sudo<span class="w"> </span>dnf<span class="w"> </span>upgrade
 <div class="highlight"><pre><span></span><code>dnf<span class="w"> </span>install<span class="w"> </span>git
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rocky-linux/rocky-tools.git
 </code></pre></div>
-<h2 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h2>
 <p>这可能是最简单的一点。 登录到您的服务器，然后使用命令放终端 cd 到包含 migrate2rocky.sh 文件的文件目录。</p>
 <p>然后，确保文件是可执行的：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>migrate2rocky.sh
@@ -10225,7 +10225,7 @@ sudo<span class="w"> </span>reboot
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsTMKsGBRiRbvRM3DdeYrEfYgDU0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsTMKsGBRiRbvRM3DdeYrEfYgDU0.png" /></a>
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fus9rZsnBGvgLohr18SnW1ZKByPu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fus9rZsnBGvgLohr18SnW1ZKByPu.png" /></a></p>
-<h2 id="_3">检查操作系统版本<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="检查操作系统版本">检查操作系统版本<a class="headerlink" href="#检查操作系统版本" title="Permanent link">&para;</a></h2>
 <p>为了确认您已成功迁移到 Rocky Linux，请检查操作系统版本：</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/etc/redhat-release
 </code></pre></div>
@@ -10234,7 +10234,7 @@ sudo<span class="w"> </span>reboot
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlNtsYaHWfIDJhP9Vb5x1fq7gtsg.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlNtsYaHWfIDJhP9Vb5x1fq7gtsg.png" /></a></p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp801elk1r_VJpvx1bzvp4L0Q-ks.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp801elk1r_VJpvx1bzvp4L0Q-ks.png" /></a></p>
-<h2 id="_4">参考资料<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h2>
 <ol>
 <li><a href="https://docs.rockylinux.org/guides/migrate2rocky/">Migrating To Rocky Linux - Documentation</a>，官方文档</li>
 <li><a href="https://www.xtuos.com/2819.html">如何从 CentOS 8 迁移到 Rocky Linux 8</a> - 统信 UOS 之家</li>

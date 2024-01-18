@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-问题" class="md-skip">
           跳转至
         </a>
       
@@ -4814,7 +4814,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-问题" class="md-nav__link">
     <span class="md-ellipsis">
       1. 问题
     </span>
@@ -4823,7 +4823,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-原因" class="md-nav__link">
     <span class="md-ellipsis">
       2. 原因
     </span>
@@ -4832,7 +4832,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-开启端口" class="md-nav__link">
     <span class="md-ellipsis">
       3. 开启端口
     </span>
@@ -10066,7 +10066,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-问题" class="md-nav__link">
     <span class="md-ellipsis">
       1. 问题
     </span>
@@ -10075,7 +10075,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-原因" class="md-nav__link">
     <span class="md-ellipsis">
       2. 原因
     </span>
@@ -10084,7 +10084,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-开启端口" class="md-nav__link">
     <span class="md-ellipsis">
       3. 开启端口
     </span>
@@ -10125,11 +10125,11 @@
 
   <h1>Windows server 2008 开启端口</h1>
 
-<h2 id="1">1. 问题<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-问题">1. 问题<a class="headerlink" href="#1-问题" title="Permanent link">&para;</a></h2>
 <p>将项目部署到 Windows server 2008 服务器上，开启了 http/https 之后，在用服务器本身的浏览器访问：<a href="http://domain.com">http://domain.com</a>  就可以访问，可是在外用其他电脑就访问相同的 url 就不能够访问。</p>
-<h2 id="2">2. 原因<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h2 id="2-原因">2. 原因<a class="headerlink" href="#2-原因" title="Permanent link">&para;</a></h2>
 <p>造成以上问题，很大部分的原因在于服务器的防火墙限制了 80、443 对外的端口，也就是说没有开放这个端口给外部客户端访问。</p>
-<h2 id="3">3. 开启端口<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="3-开启端口">3. 开启端口<a class="headerlink" href="#3-开启端口" title="Permanent link">&para;</a></h2>
 <p>windows server 2008 大多数端口都是默认关闭的，这里我们使用 httpd 的 80 端口为例，演示如何开启一个端口。</p>
 <p>&ldquo;<strong>开始</strong>&rdquo; -&gt; &ldquo;<strong>控制面板</strong>&rdquo; -&gt;&rdquo;<strong>Windows 防火墙</strong>&rdquo; -&gt; &ldquo;<strong>高级设置</strong>&rdquo; -&gt; &ldquo;<strong>入站规则</strong>&ldquo;：</p>
 <p>选择 &ldquo;<strong>Windows 防火墙</strong>&ldquo;：

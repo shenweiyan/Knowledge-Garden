@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-背景" class="md-skip">
           跳转至
         </a>
       
@@ -10111,7 +10111,7 @@
   
 
 
-<h1 id="1">1. 背景<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
+<h1 id="1-背景">1. 背景<a class="headerlink" href="#1-背景" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>CentOS/RHEL Linux 发行版以稳定性著称，所有的软件都要尽可能 stable，导致的一个结果就是基础软件的版本非常的低，比如 CentOS 6.7（15 年发布） 中 gcc 版本还是 4.4.7（12 年的版本）。这对开发来说就不是很友好，比如我们想用 C++ 11 中的某个特性，就必须自己编译一个高版本的 gcc 出来，但是这会有另外一个问题，开发环境不好维护，如果自己有多台电脑或者多个人合作的项目，每台机器上都要自己编一份，维护起来就比较麻烦。</p>
 </blockquote>
@@ -10130,8 +10130,8 @@
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fqk1Hsa24eTzvUESvThxmNvHCnUJ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fqk1Hsa24eTzvUESvThxmNvHCnUJ.png" /></a>
 当然，除了 devtoolset 这些专门用于编译开发的工具集，SCL 上还有其他的很多工具集，如 <a href="https://www.softwarecollections.org/en/scls/rhscl/rh-ruby26/">Ruby</a>，<a href="https://www.softwarecollections.org/en/scls/rhscl/rh-redis5/">Redis</a>，<a href="https://www.softwarecollections.org/en/scls/rhscl/rh-nginx114/">nginx</a> 等等。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvAWwL60Wum2uXQtQxggO4CKtCeP.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvAWwL60Wum2uXQtQxggO4CKtCeP.png" /></a></p>
-<h1 id="2">2. 安装<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
-<h2 id="scl-yum">安装配置 SCL YUM 源<a class="headerlink" href="#scl-yum" title="Permanent link">&para;</a></h2>
+<h1 id="2-安装">2. 安装<a class="headerlink" href="#2-安装" title="Permanent link">&para;</a></h1>
+<h2 id="安装配置-scl-yum-源">安装配置 SCL YUM 源<a class="headerlink" href="#安装配置-scl-yum-源" title="Permanent link">&para;</a></h2>
 <p>首先，要解决的第一个问题就是 yum 源的问题。尤其是在 CentOS 6 已经停止了维护（2020 年 11 月 30 日）的前提下，yum 源如果失效/错误，一切都将免谈。</p>
 <h3 id="cenos-7">CenOS 7<a class="headerlink" href="#cenos-7" title="Permanent link">&para;</a></h3>
 <p>CentOS 7 最晚在 2024 年 6 月 30 后停止更新维护，在此之前在 CentOS 7 可以通过 yum 直接安装 SCL 源基本都是可以正常使用的。</p>
@@ -10238,7 +10238,7 @@ sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> <
 <blockquote>
 <p>**Important: **Please, mind, that packages build by SCLo SIG are not supported and are not part of the supported Red Hat portfolio. For installing supported Software Collections packages, install packages from official RHSCL repository only.</p>
 </blockquote>
-<h3 id="scl-yum_1">手动调整 SCL YUM 源<a class="headerlink" href="#scl-yum_1" title="Permanent link">&para;</a></h3>
+<h3 id="手动调整-scl-yum-源">手动调整 SCL YUM 源<a class="headerlink" href="#手动调整-scl-yum-源" title="Permanent link">&para;</a></h3>
 <p>如果您通过 rpm（或者其他的方式）成功安装了 centos-release-scl，但是安装 devtoolset（或者其他工具集时）提示 404 异常。</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@log01<span class="w"> </span>~<span class="o">]</span><span class="c1"># yum install devtoolset-3</span>
 Loaded<span class="w"> </span>plugins:<span class="w"> </span>product-id,<span class="w"> </span>refresh-packagekit,<span class="w"> </span>security,<span class="w"> </span>subscription-manager
@@ -10360,7 +10360,7 @@ $<span class="w"> </span>yum<span class="w"> </span>list<span class="w"> </span>
 <span class="c1"># 查看 centos-sclo-rh 源中名为 scl-utils 的软件包</span>
 $<span class="w"> </span>yum<span class="w"> </span>search<span class="w"> </span>scl-utils<span class="w"> </span>--enablerepo<span class="o">=</span><span class="s1">&#39;centos-sclo-rh&#39;</span>
 </code></pre></div>
-<h2 id="scl-utils">安装 scl-utils<a class="headerlink" href="#scl-utils" title="Permanent link">&para;</a></h2>
+<h2 id="安装-scl-utils">安装 scl-utils<a class="headerlink" href="#安装-scl-utils" title="Permanent link">&para;</a></h2>
 <p>scl-utils 是管理 SCL (Software Collection) 环境设置和运行软件的一套软件工具。</p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>scl-utils
 </code></pre></div>
@@ -10371,7 +10371,7 @@ $<span class="w"> </span>yum<span class="w"> </span>search<span class="w"> </spa
 yum<span class="w"> </span>install<span class="w"> </span>scl-utils<span class="w"> </span>--enablerepo<span class="o">=</span>centos-scl
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fok5q0BGjSkmvxSFFcTuxaXBoVnI.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fok5q0BGjSkmvxSFFcTuxaXBoVnI.png" /></a></p>
-<h2 id="devtoolset_1">安装 Devtoolset<a class="headerlink" href="#devtoolset_1" title="Permanent link">&para;</a></h2>
+<h2 id="安装-devtoolset">安装 Devtoolset<a class="headerlink" href="#安装-devtoolset" title="Permanent link">&para;</a></h2>
 <p>不同的 devtoolset 对应了不同的 gcc 版本，如：</p>
 <ul>
 <li>devtoolset-1 是 gcc 4.7</li>
@@ -10413,8 +10413,8 @@ CentOS 7 的 centos-sclo-rh/centos-sclo 默认支持 devtoolset-7 及以上，�
 </ol>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>devtoolset-4<span class="w"> </span>--enablerepo<span class="o">=</span><span class="s1">&#39;centos-devtools&#39;</span>
 </code></pre></div>
-<h1 id="3">3. 使用<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
-<h2 id="_1">激活与切换<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="3-使用">3. 使用<a class="headerlink" href="#3-使用" title="Permanent link">&para;</a></h1>
+<h2 id="激活与切换">激活与切换<a class="headerlink" href="#激活与切换" title="Permanent link">&para;</a></h2>
 <p>可以使用下面的命令查看通过 scl 安装了哪些软件：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>scl<span class="w"> </span>-l
 devtoolset-3
@@ -10433,14 +10433,14 @@ This<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </spa
 warranty<span class="p">;</span><span class="w"> </span>not<span class="w"> </span>even<span class="w"> </span><span class="k">for</span><span class="w"> </span>MERCHANTABILITY<span class="w"> </span>or<span class="w"> </span>FITNESS<span class="w"> </span>FOR<span class="w"> </span>A<span class="w"> </span>PARTICULAR<span class="w"> </span>PURPOSE.
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgsRX8bDdqMjLPQDL7U3YIIMZQV3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgsRX8bDdqMjLPQDL7U3YIIMZQV3.png" /></a></p>
-<h2 id="_2">卸载<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="卸载">卸载<a class="headerlink" href="#卸载" title="Permanent link">&para;</a></h2>
 <p>可能大家用完开发工具集后就会想要删除它，其实很简单，输入以下命令：</p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>remove<span class="w"> </span>devtoolset-3<span class="se">\*</span>
 </code></pre></div>
 <p>然后也可以删除 SCL 管理工具：</p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>remove<span class="w"> </span>scl-utils<span class="se">\*</span>
 </code></pre></div>
-<h1 id="3_1">3. 参考资料<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h1>
+<h1 id="3-参考资料">3. 参考资料<a class="headerlink" href="#3-参考资料" title="Permanent link">&para;</a></h1>
 <ol>
 <li><a href="https://kakts-tec.hatenablog.com/entry/2018/04/11/000613">Installing node.js v8.11.1 to centos 6.5 server. - kakts-log</a></li>
 <li><a href="https://segmentfault.com/a/1190000004193587">RedHat6 系列 Devtool-Set - SegmentFault 思否</a></li>

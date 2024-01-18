@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#前言" class="md-skip">
           跳转至
         </a>
       
@@ -10038,14 +10038,14 @@
 
 
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuZxpXjNWRsdlO7LmeQ5Zj9CxDMi.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="1200px-Linux_API.svg.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuZxpXjNWRsdlO7LmeQ5Zj9CxDMi.png" /></a></p>
-<h1 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="前言">前言<a class="headerlink" href="#前言" title="Permanent link">&para;</a></h1>
 <p>如果你不太了解 glibc，请不要随便升级，请不要随便升级，请不要随便升级！重要的事情说三遍！！！</p>
 <blockquote>
 <p>Glibc 是 GNU 发布的 libc 库，即 c 运行库。glibc 是 linux 系统中最底层的 api，几乎其它任何运行库都会依赖于 glibc。glibc 除了封装 linux 操作系统所提供的系统服务外，它本身也提供了许多其它一些必要功能服务的实现。由于 glibc 囊括了几乎所有的 UNIX 通行的标准，可以想见其内容包罗万象。而就像其他的 UNIX 系统一样，其内含的档案群分散于系统的树状目录结构中，像一个支架一般撑起整个作业系统。在 GNU/Linux 系统中，其 C 函式库发展史点出了 GNU/Linux   演进的几个重要里程碑，用 glibc 作为系统的 C 函式库，是 GNU/Linux 演进的一个重要里程碑。</p>
 </blockquote>
 <p>由于 Glibc 是一个比较底层的依赖库，为了 CentOS 6 安全，你可能不太想冒着风险直接升级，特别是对于一些运行这其他业务的服务器。前车之鉴就在这里！</p>
 <p><a href="https://www.yuque.com/shenweiyan/cookbook/hpc-experience-glibc?view=doc_embed">一次&rdquo;胆战心惊&rdquo;的真实集群运维经历</a></p>
-<h1 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h1 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h1>
 <p>CentOS 6.5，最高支持 glibc 的版本为 2.12，而有些程序要 2.14 或者更高版本，所以需要升级或者额外安装。</p>
 <div class="highlight"><pre><span></span><code>$ strings /lib64/libc.so.6 |grep GLIBC_
 GLIBC_2.2.5
@@ -10097,7 +10097,7 @@ configure:<span class="w"> </span>error:
 <div class="highlight"><pre><span></span><code><span class="nb">unset</span><span class="w"> </span>LD_LIBRARY_PATH
 <span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/path/to/prefix/dir/lib
 </code></pre></div>
-<h1 id="_3">使用<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
+<h1 id="使用">使用<a class="headerlink" href="#使用" title="Permanent link">&para;</a></h1>
 <h2 id="segmentation-fault"><strong>Segmentation fault</strong><a class="headerlink" href="#segmentation-fault" title="Permanent link">&para;</a></h2>
 <p>很多人喜欢在手动安装完以后，通过设置 LD_LIBRARY_PATH 环境，然后进行使用，但是这样的用法很容易会导致 **Segmentation fault (core dumped) **的异常。折中的解决方法如下：</p>
 <div class="highlight"><pre><span></span><code>/path/to/newglibc/lib/ld-linux-x86-64.so.2<span class="w"> </span>/path/to/your_app
@@ -10116,7 +10116,7 @@ configure:<span class="w"> </span>error:
 <p>PatchELF 是一个开源的工具，GitHub 链接：<a href="https://github.com/NixOS/patchelf">https://github.com/NixOS/patchelf</a>，用法可以参考：</p>
 <p><a href="https://zhuanlan.zhihu.com/p/344100889">找不到动态链接库？</a></p>
 <p><a href="https://www.baeldung.com/linux/multiple-glibc">Please Wait&hellip; | Cloudflare</a></p>
-<h1 id="_4">参考资料<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
+<h1 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h1>
 <ol>
 <li><a href="https://www.baeldung.com/linux/author/haidarali">Haidar Ali</a>，《<a href="https://www.baeldung.com/linux/multiple-glibc">Multiple glibc on a Single Linux Machine</a>》，Baeldung on Linux</li>
 <li><a href="https://www.zhihu.com/people/shou-hu-tian-xin-67">名本无名</a>，《<a href="https://zhuanlan.zhihu.com/p/344100889">找不到动态链接库？</a>》，知乎专栏</li>

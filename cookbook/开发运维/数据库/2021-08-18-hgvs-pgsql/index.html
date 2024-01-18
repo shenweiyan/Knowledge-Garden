@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python" class="md-skip">
+        <a href="#怎么查看-python-未安装包的依赖" class="md-skip">
           跳转至
         </a>
       
@@ -4444,7 +4444,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
+  <a href="#怎么查看-python-未安装包的依赖" class="md-nav__link">
     <span class="md-ellipsis">
       怎么查看 python 未安装包的依赖
     </span>
@@ -4453,7 +4453,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#psycopg-requires-libpq-91" class="md-nav__link">
+  <a href="#psycopg-requires-libpq--91" class="md-nav__link">
     <span class="md-ellipsis">
       Psycopg requires libpq &gt;= 9.1
     </span>
@@ -4462,7 +4462,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centosred-hat-postgresql" class="md-nav__link">
+  <a href="#centosred-hat-安装-postgresql" class="md-nav__link">
     <span class="md-ellipsis">
       CentOS/Red Hat 安装 PostgreSQL
     </span>
@@ -4472,7 +4472,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-yum" class="md-nav__link">
+  <a href="#1-配置-yum-源" class="md-nav__link">
     <span class="md-ellipsis">
       1. 配置 yum 源
     </span>
@@ -4481,7 +4481,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-安装" class="md-nav__link">
     <span class="md-ellipsis">
       2. 安装
     </span>
@@ -4490,7 +4490,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-初始化与启动" class="md-nav__link">
     <span class="md-ellipsis">
       3. 初始化与启动
     </span>
@@ -10108,7 +10108,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
+  <a href="#怎么查看-python-未安装包的依赖" class="md-nav__link">
     <span class="md-ellipsis">
       怎么查看 python 未安装包的依赖
     </span>
@@ -10117,7 +10117,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#psycopg-requires-libpq-91" class="md-nav__link">
+  <a href="#psycopg-requires-libpq--91" class="md-nav__link">
     <span class="md-ellipsis">
       Psycopg requires libpq &gt;= 9.1
     </span>
@@ -10126,7 +10126,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centosred-hat-postgresql" class="md-nav__link">
+  <a href="#centosred-hat-安装-postgresql" class="md-nav__link">
     <span class="md-ellipsis">
       CentOS/Red Hat 安装 PostgreSQL
     </span>
@@ -10136,7 +10136,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-yum" class="md-nav__link">
+  <a href="#1-配置-yum-源" class="md-nav__link">
     <span class="md-ellipsis">
       1. 配置 yum 源
     </span>
@@ -10145,7 +10145,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-安装" class="md-nav__link">
     <span class="md-ellipsis">
       2. 安装
     </span>
@@ -10154,7 +10154,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-初始化与启动" class="md-nav__link">
     <span class="md-ellipsis">
       3. 初始化与启动
     </span>
@@ -10213,7 +10213,7 @@
 <blockquote>
 <p>hgvs is a Python package to parse, format, validate, normalize, and map biological sequence variants according to recommendations of the Human Genome Variation Society.</p>
 </blockquote>
-<h2 id="python">怎么查看 python 未安装包的依赖<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
+<h2 id="怎么查看-python-未安装包的依赖">怎么查看 python 未安装包的依赖<a class="headerlink" href="#怎么查看-python-未安装包的依赖" title="Permanent link">&para;</a></h2>
 <p>我们知道的 <strong>pip show hgvs</strong> 和 <strong>pipdeptree -p hgvs</strong> 都只能看到<strong>已安装</strong> Python 包的依赖，但是<strong>未安装</strong>的 Python 包依赖目前通过 pip 应该是暂时没法看的。<a href="https://stackoverflow.com/questions/41816693/how-to-list-dependencies-for-a-python-library-without-installing">stackoverflow</a> 上看到一个折中的方法，比较繁琐。</p>
 <div class="highlight"><pre><span></span><code><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">requests</span>
 
@@ -10237,7 +10237,7 @@
 </code></pre></div>
 <p>除此之外，可以通过 conda 的方式查看（<strong>conda search hgvs &ndash;info</strong>）。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flw6SnwGbNRSvoRHx_41pZSFo1Pe.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flw6SnwGbNRSvoRHx_41pZSFo1Pe.png" /></a></p>
-<h2 id="psycopg-requires-libpq-91">Psycopg requires libpq &gt;= 9.1<a class="headerlink" href="#psycopg-requires-libpq-91" title="Permanent link">&para;</a></h2>
+<h2 id="psycopg-requires-libpq--91">Psycopg requires libpq &gt;= 9.1<a class="headerlink" href="#psycopg-requires-libpq--91" title="Permanent link">&para;</a></h2>
 <p>hgvs 的安装依赖于 psycopg2-binary，而 psycopg2-binary 又依赖于 psycopg2。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnNQMS7enSQOEFDZswwvcNDGCFZ0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnNQMS7enSQOEFDZswwvcNDGCFZ0.png" /></a></p>
 <div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">psycopg2</span>
@@ -10255,14 +10255,14 @@
      <span class="o">......</span>
 </code></pre></div>
 <p>CentOS 6 默认的 PostgreSQL 最高版本为 8.4.18，需要安装 9.1 以上版本的 postgresql 才可以解决以上出现的 &ldquo;<strong>Psycopg requires PostgreSQL client library (libpq) &gt;= 9.1</strong>&rdquo; 问题。</p>
-<h2 id="centosred-hat-postgresql">CentOS/Red Hat 安装 PostgreSQL<a class="headerlink" href="#centosred-hat-postgresql" title="Permanent link">&para;</a></h2>
+<h2 id="centosred-hat-安装-postgresql">CentOS/Red Hat 安装 PostgreSQL<a class="headerlink" href="#centosred-hat-安装-postgresql" title="Permanent link">&para;</a></h2>
 <p>使用 <strong>yum list postgresql</strong>* 命令可以看到：</p>
 <ul>
 <li>CentOS 6 默认的 PostgreSQL 最高版本为 8.4.18；</li>
 <li>CentOS 7 默认的 PostgreSQL 最高版本为 9.2.24。</li>
 </ul>
 <p>如果需要在 CentOS/Red Hat Enterprise Linux 中安装 PostgreSQL 9/10 以上版本，需要：</p>
-<h3 id="1-yum">1. 配置 yum 源<a class="headerlink" href="#1-yum" title="Permanent link">&para;</a></h3>
+<h3 id="1-配置-yum-源">1. 配置 yum 源<a class="headerlink" href="#1-配置-yum-源" title="Permanent link">&para;</a></h3>
 <p>该步骤安装完成后，会在 /etc/yum.repos.d 目录下生成一个 pgdg-redhat-all.repo，里面为 PostgreSQL 各个版本的源信息。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Red Hat Enterprise Linux 7 - x86_64</span>
 yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
@@ -10277,12 +10277,12 @@ yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </s
 yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>https://download.postgresql.org/pub/repos/yum/reporpms/EL-6-x86_64/pgdg-redhat-repo-latest.noarch.rpm
 </code></pre></div>
 <p>最新的 yum 源 rpm 包可以在这里找到：<a href="https://yum.postgresql.org/repopackages/">https://yum.postgresql.org/repopackages/</a></p>
-<h3 id="2">2. 安装<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h3 id="2-安装">2. 安装<a class="headerlink" href="#2-安装" title="Permanent link">&para;</a></h3>
 <p>yum 源安装完成后，再次执行 yum list postgresql* 命令可以看到 postgresql*、postgresql10*、postgresql11*、.... 各个版本的 PostgreSQL 列表，选择需要的版本安装。</p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>postgresql10<span class="w"> </span>postgresql10-devel
 </code></pre></div>
 <p><strong>yum 的方式安装的 PostgreSQL 默认保存在 /usr/pgsql-10（/usr/pgsql-9.6）下面。</strong></p>
-<h3 id="3">3. 初始化与启动<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<h3 id="3-初始化与启动">3. 初始化与启动<a class="headerlink" href="#3-初始化与启动" title="Permanent link">&para;</a></h3>
 <p>具体自己去谷歌，或者参考：《<a href="https://www.yuque.com/bioitee/mp/linux-postgresql-install?view=doc_embed">Linux 下 PostgreSQL 源码编译安装</a>》。</p>
 <h2 id="undefined-symbol-pqescapeidentifier">undefined symbol: PQescapeIdentifier<a class="headerlink" href="#undefined-symbol-pqescapeidentifier" title="Permanent link">&para;</a></h2>
 <p>安装完 psycopg2 和 hgvs 后，如果 import 过程中出现类似于 <strong>_psycopg.cpython-37m-x86_64-linux-gnu.so: undefined symbol: PQescapeIdentifier</strong> 的异常，可以查看一下 <strong>_psycopg.cpython-37m-x86_64-linux-gnu.so</strong> 的对应的动态库链接 <strong>libpq.so</strong> 是否正确。</p>

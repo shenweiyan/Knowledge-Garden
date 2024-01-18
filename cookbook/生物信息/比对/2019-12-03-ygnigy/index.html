@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ncbiwww" class="md-skip">
+        <a href="#ncbiwww-基本用法" class="md-skip">
           跳转至
         </a>
       
@@ -1155,7 +1155,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ncbiwww" class="md-nav__link">
+  <a href="#ncbiwww-基本用法" class="md-nav__link">
     <span class="md-ellipsis">
       NCBIWWW 基本用法
     </span>
@@ -1164,7 +1164,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ncbiwww_1" class="md-nav__link">
+  <a href="#ncbiwww-实现" class="md-nav__link">
     <span class="md-ellipsis">
       NCBIWWW 实现
     </span>
@@ -10057,7 +10057,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ncbiwww" class="md-nav__link">
+  <a href="#ncbiwww-基本用法" class="md-nav__link">
     <span class="md-ellipsis">
       NCBIWWW 基本用法
     </span>
@@ -10066,7 +10066,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ncbiwww_1" class="md-nav__link">
+  <a href="#ncbiwww-实现" class="md-nav__link">
     <span class="md-ellipsis">
       NCBIWWW 实现
     </span>
@@ -10109,7 +10109,7 @@
 
 <p>用过网页版本 BLAST 的童鞋都会发现，提交的序列比对往往在几分钟，甚至几十秒就可以得到比对的结果；而通过调用 API 却要花费几十分钟或者更长的时间！这到底是为什么呢？
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm0tIZZDylBAvcBlSTvd_01Oh-yA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ncbi_blast.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm0tIZZDylBAvcBlSTvd_01Oh-yA.png" /></a></p>
-<h2 id="ncbiwww">NCBIWWW 基本用法<a class="headerlink" href="#ncbiwww" title="Permanent link">&para;</a></h2>
+<h2 id="ncbiwww-基本用法">NCBIWWW 基本用法<a class="headerlink" href="#ncbiwww-基本用法" title="Permanent link">&para;</a></h2>
 <p>首先，我们来看一下提供了基于 API 在线比对的  <code>Biopython</code> 模块。</p>
 <p><code>Biopython</code> 中的 BLAST 提供了  over the Internet 和 locally 两种选择：<code>Bio.Blast.NCBIWWW</code> 主要是基于 NCBI BLAST API 用于在线比对；<code>Bio.Blast.Applications</code> 模块则是调用本地安装好的 BLAST 程序以及数据库执行比对。在这里我们来重点看一下  <code>Bio.Blast.NCBIWWW</code> 。</p>
 <p><code>Bio.Blast.NCBIWWW</code> 模块中主要是通过 <code>qblast()</code> 函数来调用 BLAST 的在线版本。它具有三个非可选参数：</p>
@@ -10196,7 +10196,7 @@
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">result_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;my_blast.xml&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>现在我们已经将 BLAST 结果重新放回了句柄中，下一步，如果我们准备对它们进行处理，我们可以参考 Biopython 中 <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:parsing-blast">Parsing BLAST output</a> 部分的内容，这里不再说明。</p>
-<h2 id="ncbiwww_1">NCBIWWW 实现<a class="headerlink" href="#ncbiwww_1" title="Permanent link">&para;</a></h2>
+<h2 id="ncbiwww-实现">NCBIWWW 实现<a class="headerlink" href="#ncbiwww-实现" title="Permanent link">&para;</a></h2>
 <p>在了解  NCBIWWW 的实现前，我们先来看一下 NCBI BLAST 对于 API 使用 <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=DeveloperInfo">Overview — BLASTHelp  documentation</a> 的一些说明：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBJQE8WrsY1EPlHMljkXOyCmKih.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="biopython.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBJQE8WrsY1EPlHMljkXOyCmKih.png" /></a></p>
 <ul>

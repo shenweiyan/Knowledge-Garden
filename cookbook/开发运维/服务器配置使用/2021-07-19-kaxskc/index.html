@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#查看自启动服务" class="md-skip">
           跳转至
         </a>
       
@@ -3806,7 +3806,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#查看自启动服务" class="md-nav__link">
     <span class="md-ellipsis">
       查看自启动服务
     </span>
@@ -3815,7 +3815,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#查看某服务的开机启动状态" class="md-nav__link">
     <span class="md-ellipsis">
       查看某服务的开机启动状态
     </span>
@@ -3824,7 +3824,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#启动关闭重启查看某个服务" class="md-nav__link">
     <span class="md-ellipsis">
       启动（关闭，重启，查看）某个服务
     </span>
@@ -3833,7 +3833,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#设置开机启动或者关闭某个服务" class="md-nav__link">
     <span class="md-ellipsis">
       设置开机启动或者关闭某个服务
     </span>
@@ -3842,7 +3842,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#systemd" class="md-nav__link">
+  <a href="#systemd-中自定义开机自启动命令脚本" class="md-nav__link">
     <span class="md-ellipsis">
       systemd 中自定义开机自启动命令/脚本
     </span>
@@ -10084,7 +10084,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#查看自启动服务" class="md-nav__link">
     <span class="md-ellipsis">
       查看自启动服务
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#查看某服务的开机启动状态" class="md-nav__link">
     <span class="md-ellipsis">
       查看某服务的开机启动状态
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#启动关闭重启查看某个服务" class="md-nav__link">
     <span class="md-ellipsis">
       启动（关闭，重启，查看）某个服务
     </span>
@@ -10111,7 +10111,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#设置开机启动或者关闭某个服务" class="md-nav__link">
     <span class="md-ellipsis">
       设置开机启动或者关闭某个服务
     </span>
@@ -10120,7 +10120,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#systemd" class="md-nav__link">
+  <a href="#systemd-中自定义开机自启动命令脚本" class="md-nav__link">
     <span class="md-ellipsis">
       systemd 中自定义开机自启动命令/脚本
     </span>
@@ -10178,14 +10178,14 @@ Removed<span class="w"> </span>symlink<span class="w"> </span>/etc/systemd/syste
 4：保留，未使用
 5：有网络支持有 X-Window 支持的多用户模式（多用户、有网络、X-Window 界面）
 6：重新引导系统，即重启</p>
-<h2 id="_1">查看自启动服务<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="查看自启动服务">查看自启动服务<a class="headerlink" href="#查看自启动服务" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># CentOS 6</span>
 chkconfig<span class="w"> </span>--list<span class="w">        </span><span class="c1"># 显示开机启动服务列表</span>
 
 <span class="c1"># CentOS 7</span>
 systemctl<span class="w"> </span>list-unit-files<span class="w"> </span>--type<span class="w"> </span>service<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>enabled
 </code></pre></div>
-<h2 id="_2">查看某服务的开机启动状态<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="查看某服务的开机启动状态">查看某服务的开机启动状态<a class="headerlink" href="#查看某服务的开机启动状态" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># CentOS 6</span>
 chkconfig<span class="w"> </span>--list<span class="w"> </span>servicename
 <span class="c1"># 例如</span>
@@ -10197,14 +10197,14 @@ chkconfig<span class="w"> </span>--list<span class="w"> </span>servicename
 <span class="c1"># CentOS 7</span>
 systemctl<span class="w"> </span>list-unit-files<span class="w"> </span>--type<span class="w"> </span>service<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>service_name
 </code></pre></div>
-<h2 id="_3">启动（关闭，重启，查看）某个服务<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="启动关闭重启查看某个服务">启动（关闭，重启，查看）某个服务<a class="headerlink" href="#启动关闭重启查看某个服务" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># CentOS 6</span>
 service<span class="w">  </span>service_name<span class="w">   </span><span class="o">(</span>start<span class="p">|</span>stop<span class="p">|</span>restart<span class="p">|</span>status<span class="o">)</span>
 
 <span class="c1"># CentOS 7</span>
 systemctl<span class="w"> </span><span class="o">(</span>start<span class="p">|</span>stop<span class="p">|</span>restart<span class="p">|</span>status<span class="o">)</span><span class="w"> </span>service_name
 </code></pre></div>
-<h2 id="_4">设置开机启动或者关闭某个服务<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="设置开机启动或者关闭某个服务">设置开机启动或者关闭某个服务<a class="headerlink" href="#设置开机启动或者关闭某个服务" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># CentOS 6</span>
 <span class="c1"># 1. 服务脚本必须存放在 /etc/ini.d/ 目录下</span>
 cp<span class="w"> </span>xxx<span class="w"> </span>/etc/ini.d/
@@ -10219,7 +10219,7 @@ systemctl<span class="w"> </span>disable<span class="w">  </span>service_name<sp
 </code></pre></div>
 <hr />
 <p>以下内容节选自《<a href="https://www.junmajinlong.com/linux/systemd/auto_tasks_on_boot/">systemd 时代的开机自启动任务 | 骏马金龙</a>》，供参考。</p>
-<h2 id="systemd">systemd 中自定义开机自启动命令/脚本<a class="headerlink" href="#systemd" title="Permanent link">&para;</a></h2>
+<h2 id="systemd-中自定义开机自启动命令脚本">systemd 中自定义开机自启动命令/脚本<a class="headerlink" href="#systemd-中自定义开机自启动命令脚本" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>在 SysV 系统中，要让某个命令或者某个脚本开机自启动，可以将命令或者脚本的命令行写入 /etc/rc.d/rc.local 文件中。</p>

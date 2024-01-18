@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#专业书籍文档" class="md-skip">
           跳转至
         </a>
       
@@ -10003,7 +10003,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#专业书籍文档" class="md-nav__link">
     <span class="md-ellipsis">
       专业书籍文档
     </span>
@@ -10012,7 +10012,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#目录和分类标签" class="md-nav__link">
     <span class="md-ellipsis">
       目录和分类标签
     </span>
@@ -10030,7 +10030,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#概述" class="md-nav__link">
     <span class="md-ellipsis">
       概述
     </span>
@@ -10039,7 +10039,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#graphql" class="md-nav__link">
+  <a href="#graphql-有什么用" class="md-nav__link">
     <span class="md-ellipsis">
       GraphQL 有什么用？
     </span>
@@ -10049,7 +10049,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#discussions" class="md-nav__link">
+  <a href="#获取-discussions-主要信息" class="md-nav__link">
     <span class="md-ellipsis">
       获取 discussions 主要信息
     </span>
@@ -10058,7 +10058,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#discussions-categoryid" class="md-nav__link">
+  <a href="#获取-discussions-categoryid" class="md-nav__link">
     <span class="md-ellipsis">
       获取 discussions categoryId
     </span>
@@ -10190,10 +10190,10 @@
 <p>从2023年7月起我的文档都保存在了 GitHub Discussions 上，作为博客、IED 编辑器，以及评论使用，GitHub Discussions 是完全没问题的。</p>
 <!-- more -->
 
-<h2 id="_1">专业书籍文档<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="专业书籍文档">专业书籍文档<a class="headerlink" href="#专业书籍文档" title="Permanent link">&para;</a></h2>
 <p>今天忽然想到的一个问题，即如果作为专业性比较强的系列文档写作，如《<a href="https://www.hello-algo.com/">Hello 算法</a>》 这样专业性和逻辑性非常明确的专业书籍，使用 GitHub Discussions 写作应该是有点不太合适。</p>
 <p>但又仔细想了一下，如果只是写作应该是没问题的 —— 我们可以用 sections 或者 categories，甚至是 tags 进行书籍分类，最后在导出的时候借助这些标签把相关的文档整合到一块，再借助 nav 梳理成大纲展现给读者阅读就可以。所以，总的来说<strong>可以用于专业书籍写作，但不太适合用于专业书籍的呈现和阅读</strong> —— 主要是大纲和逻辑性会变得不明显。</p>
-<h2 id="_2">目录和分类标签<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="目录和分类标签">目录和分类标签<a class="headerlink" href="#目录和分类标签" title="Permanent link">&para;</a></h2>
 <p>GitHub Discussions 目前<a href="https://github.com/orgs/community/discussions/7960">最多支持 25 个 categories</a>，这是一个限制。第二个问题是只能通过 section+category 实现最多两级的目录结构，所以对于三级和三级以上的目录结构目前暂时无能为力。</p>
 <p>因此，想到一个折中的解决方法：使用 labels 来区分第三级目录结构。
 <div class="highlight"><pre><span></span><code>1.1-生信
@@ -10211,9 +10211,9 @@
 <h2 id="github-graphql-api">GitHub GraphQL API<a class="headerlink" href="#github-graphql-api" title="Permanent link">&para;</a></h2>
 <p>GitHub Discussions 的 API 操作主要依赖 <a href="https://docs.github.com/zh/graphql/overview/about-the-graphql-api">GitHub GraphQL API</a>。</p>
 <blockquote>
-<h2 id="_3">概述<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="概述">概述<a class="headerlink" href="#概述" title="Permanent link">&para;</a></h2>
 <p>GraphQL 是一种用于<a href="https://www.redhat.com/zh/topics/api/what-are-application-programming-interfaces">应用编程接口（API）</a>的查询语言和服务器端运行时，它可以使客户端准确地获得所需的数据，没有任何冗余。</p>
-<h2 id="graphql">GraphQL 有什么用？<a class="headerlink" href="#graphql" title="Permanent link">&para;</a></h2>
+<h2 id="graphql-有什么用">GraphQL 有什么用？<a class="headerlink" href="#graphql-有什么用" title="Permanent link">&para;</a></h2>
 <p>GraphQL 旨在让 API 变得快速、灵活并且为开发人员提供便利。它甚至可以部署在名为 <a href="https://github.com/graphql/graphiql">GraphiQL</a> 的<a href="https://www.redhat.com/zh/topics/middleware/what-is-ide">集成开发环境（IDE）</a>中。作为 <a href="https://www.redhat.com/zh/topics/integration/whats-the-difference-between-soap-rest">REST</a> 的替代方案，GraphQL 允许开发人员构建相应的请求，从而通过单个 API 调用从多个数据源中提取数据。</p>
 <p>此外，GraphQL 还可让 API 维护人员灵活地添加或弃用字段，而不会影响现有查询。开发人员可以使用自己喜欢的方法来构建 API，并且 GraphQL 规范将确保它们以可预测的方式在客户端发挥作用。</p>
 <p>From：《<a href="https://www.redhat.com/zh/topics/api/what-is-graphql">什么是 GraphQL？核心概念解析</a>》- 红帽</p>
@@ -10222,7 +10222,7 @@
 <li>中文文档：https://docs.github.com/zh/graphql/guides/introduction-to-graphql</li>
 <li>在线使用：https://docs.github.com/en/graphql/overview/explorer</li>
 </ul>
-<h3 id="discussions">获取 discussions 主要信息<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
+<h3 id="获取-discussions-主要信息">获取 discussions 主要信息<a class="headerlink" href="#获取-discussions-主要信息" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>{
   repository(owner: &quot;shenweiyan&quot;, name: &quot;Knowledge-Garden&quot;) {
     discussions(orderBy: {field: CREATED_AT, direction: DESC}, categoryId: null, first: 5) {
@@ -10264,7 +10264,7 @@
   }
 }
 </code></pre></div>
-<h3 id="discussions-categoryid">获取 discussions categoryId<a class="headerlink" href="#discussions-categoryid" title="Permanent link">&para;</a></h3>
+<h3 id="获取-discussions-categoryid">获取 discussions categoryId<a class="headerlink" href="#获取-discussions-categoryid" title="Permanent link">&para;</a></h3>
 <p>参考：《<a href="https://qiita.com/shooter/items/d59fbb43d0f118c95092">how to get github discussions categoryId</a>》</p>
 <div class="highlight"><pre><span></span><code>{
   repository(owner: &quot;shenweiyan&quot;, name: &quot;Knowledge-Garden&quot;) {

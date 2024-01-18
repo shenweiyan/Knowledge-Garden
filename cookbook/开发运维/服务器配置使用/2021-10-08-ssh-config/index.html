@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ssh-failed-permission-denied" class="md-skip">
+        <a href="#解决-ssh-failed-permission-denied" class="md-skip">
           跳转至
         </a>
       
@@ -3768,7 +3768,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#前提条件" class="md-nav__link">
     <span class="md-ellipsis">
       前提条件
     </span>
@@ -3777,7 +3777,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
+  <a href="#ssh-权限拒绝" class="md-nav__link">
     <span class="md-ellipsis">
       SSH 权限拒绝
     </span>
@@ -3786,7 +3786,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ssh-permission-denied" class="md-nav__link">
+  <a href="#修复-ssh-permission-denied" class="md-nav__link">
     <span class="md-ellipsis">
       修复 SSH Permission denied
     </span>
@@ -3796,7 +3796,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#解决方案-1启用密码身份验证" class="md-nav__link">
     <span class="md-ellipsis">
       解决方案 1：启用密码身份验证
     </span>
@@ -3805,7 +3805,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#解决方案-2更改文件系统权限" class="md-nav__link">
     <span class="md-ellipsis">
       解决方案 2：更改文件系统权限
     </span>
@@ -3819,7 +3819,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#总结" class="md-nav__link">
     <span class="md-ellipsis">
       总结
     </span>
@@ -10105,7 +10105,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#前提条件" class="md-nav__link">
     <span class="md-ellipsis">
       前提条件
     </span>
@@ -10114,7 +10114,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
+  <a href="#ssh-权限拒绝" class="md-nav__link">
     <span class="md-ellipsis">
       SSH 权限拒绝
     </span>
@@ -10123,7 +10123,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ssh-permission-denied" class="md-nav__link">
+  <a href="#修复-ssh-permission-denied" class="md-nav__link">
     <span class="md-ellipsis">
       修复 SSH Permission denied
     </span>
@@ -10133,7 +10133,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#解决方案-1启用密码身份验证" class="md-nav__link">
     <span class="md-ellipsis">
       解决方案 1：启用密码身份验证
     </span>
@@ -10142,7 +10142,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#解决方案-2更改文件系统权限" class="md-nav__link">
     <span class="md-ellipsis">
       解决方案 2：更改文件系统权限
     </span>
@@ -10156,7 +10156,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#总结" class="md-nav__link">
     <span class="md-ellipsis">
       总结
     </span>
@@ -10195,26 +10195,26 @@
   
 
 
-<h1 id="ssh-failed-permission-denied">解决 SSH Failed Permission Denied<a class="headerlink" href="#ssh-failed-permission-denied" title="Permanent link">&para;</a></h1>
+<h1 id="解决-ssh-failed-permission-denied">解决 SSH Failed Permission Denied<a class="headerlink" href="#解决-ssh-failed-permission-denied" title="Permanent link">&para;</a></h1>
 <p>在 SSH 服务器上修改了与权限相关的设置之后，会出现 SSH 权限拒绝错误（SSH Permission denied error）。通常的场景包括安装新的软件包或创建新用户。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuDhlk0w8wDpdRM2uh0B508OzPs9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuDhlk0w8wDpdRM2uh0B508OzPs9.png" /></a>
 在本教程中，您将学习如何排除 SSH Permission denied 错误并重新连接到 SSH 服务器。</p>
-<h3 id="_1">前提条件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="前提条件">前提条件<a class="headerlink" href="#前提条件" title="Permanent link">&para;</a></h3>
 <ul>
 <li>以本地计算机作为 SSH Client 客户机和远程系统作为 SSH server 服务器。</li>
 <li>通过一个用户账号对远程服务器进行访问(用于基于密码的登录)。</li>
 <li>需要一个具有 sudo 或 root 特权的用户帐户(用于修改 SSH 相关配置)。</li>
 </ul>
-<h3 id="ssh">SSH 权限拒绝<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h3>
+<h3 id="ssh-权限拒绝">SSH 权限拒绝<a class="headerlink" href="#ssh-权限拒绝" title="Permanent link">&para;</a></h3>
 <p>当尝试通过 SSH 进入服务器时，会出现 SSH 权限拒绝错误：</p>
 <div class="highlight"><pre><span></span><code>Permission<span class="w"> </span>denied<span class="w"> </span><span class="o">(</span>publickey,gssapi-keyex,gssapi-with-mic<span class="o">)</span>
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl0Um1zz_a2haoBC95bM-E9iyATa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl0Um1zz_a2haoBC95bM-E9iyATa.png" /></a>
 在 Permission denied 语句之后，括号里面包含了在连接启动时失败时尝试的身份验证方法。这个错误表明公钥才是问题所在，这其实是一种误导。</p>
 <p>出现该错误的一个原因可能是与 <strong>sshd_config</strong> 的配置有关，这个文件包含了 SSH 服务器的配置。另一种可能性是授权的 <strong>authorized_keys</strong> 文件没有足够的权限，这个文件包含了允许从 Client 客户机 SSH 到远程服务器的公钥列表。因此，当系统无法正常读取文件就会导致“权限拒绝”错误。</p>
-<h3 id="ssh-permission-denied">修复 SSH Permission denied<a class="headerlink" href="#ssh-permission-denied" title="Permanent link">&para;</a></h3>
+<h3 id="修复-ssh-permission-denied">修复 SSH Permission denied<a class="headerlink" href="#修复-ssh-permission-denied" title="Permanent link">&para;</a></h3>
 <p>两个解决方案都包含需要在服务器端执行的步骤。首先打开服务器上的终端，然后执行下面的解决方案之一。</p>
-<h4 id="1">解决方案 1：启用密码身份验证<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<h4 id="解决方案-1启用密码身份验证">解决方案 1：启用密码身份验证<a class="headerlink" href="#解决方案-1启用密码身份验证" title="Permanent link">&para;</a></h4>
 <p>如果您想使用密码访问 SSH 服务器，修复 Permission denied 错误的解决方案是在 <strong>sshd_config</strong> 文件中启用密码登录。</p>
 <p>要做到这一点，在文本编辑器中打开文件：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/ssh/sshd_config
@@ -10229,7 +10229,7 @@
 <p>最后，通过输入以下命令重新启动 SSH 服务：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>sshd
 </code></pre></div>
-<h4 id="2">解决方案 2：更改文件系统权限<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<h4 id="解决方案-2更改文件系统权限">解决方案 2：更改文件系统权限<a class="headerlink" href="#解决方案-2更改文件系统权限" title="Permanent link">&para;</a></h4>
 <p>出于安全考虑，不推荐使用基于密码的登录作为 SSH 身份验证方法。因此，下面的解决方案可能是可取的，因为它解决了公共密钥认证的方法。</p>
 <p>首先，使用文本编辑器打开 sshd_config 文件：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/ssh/sshd_config
@@ -10280,11 +10280,11 @@ PubkeyAuthentication<span class="w"> </span>yes
 :::tips
 **注意：**有关 Linux 文件权限的详细信息，请阅读 Linux 文件权限教程。
 :::</p>
-<h2 id="_2">总结<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h2>
 <p>本教程介绍了解决 SSH Permission denied (publikey、 gssapi-keyex、 gssapi-with-mic) 错误所需的步骤。通过完成指南中的步骤，您应该可以修复错误并成功地通过 SSH 连接到服务器。</p>
-<h1 id="ssh_1">解决 SSH 一段时间不操作就退出<a class="headerlink" href="#ssh_1" title="Permanent link">&para;</a></h1>
+<h1 id="解决-ssh-一段时间不操作就退出">解决 SSH 一段时间不操作就退出<a class="headerlink" href="#解决-ssh-一段时间不操作就退出" title="Permanent link">&para;</a></h1>
 <p>在 CentOS/openEuler/Debian 系统上，发现了这个问题，SSH 登录后，一段时间吧不操作，SSH 就会自动退出。解决这个问题的办法，可以修改 SSH 服务器端的配置，也可以修改 SSH 客户端的配置。</p>
-<h2 id="ssh_2">修改 SSH 服务端的配置<a class="headerlink" href="#ssh_2" title="Permanent link">&para;</a></h2>
+<h2 id="修改-ssh-服务端的配置">修改 SSH 服务端的配置<a class="headerlink" href="#修改-ssh-服务端的配置" title="Permanent link">&para;</a></h2>
 <p><strong>sudo vim /etc/ssh/sshd_config</strong></p>
 <p>把下面这两行的注册打开，然后修改参数：
 <strong>ClientAliveInterval 30</strong> # 表示每 30 秒服务器向客户端发起一次心跳，如果客户端响应就保持连接
@@ -10297,7 +10297,7 @@ PubkeyAuthentication<span class="w"> </span>yes
 $<span class="w"> </span>service<span class="w"> </span>sshd<span class="w"> </span>restart
 </code></pre></div>
 <p>正常情况，客户端不会不响应服务器的心跳，因此 SSH 客户端就不会再自动退出了。</p>
-<h2 id="ssh_3">修改 SSH 客户端的配置<a class="headerlink" href="#ssh_3" title="Permanent link">&para;</a></h2>
+<h2 id="修改-ssh-客户端的配置">修改 SSH 客户端的配置<a class="headerlink" href="#修改-ssh-客户端的配置" title="Permanent link">&para;</a></h2>
 <p>修改客户端的配置的好处是，不需要重启服务端，如果你没有权限修改 SSH 服务器，也只能修改客户端的配置了。
 <strong>sudo vim /etc/ssh/ssh_config</strong></p>
 <p>增加：

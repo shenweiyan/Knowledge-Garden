@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#获取源代码" class="md-skip">
           跳转至
         </a>
       
@@ -3322,7 +3322,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#获取源代码" class="md-nav__link">
     <span class="md-ellipsis">
       获取源代码
     </span>
@@ -3331,7 +3331,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#安装与构建说明" class="md-nav__link">
     <span class="md-ellipsis">
       安装与构建说明
     </span>
@@ -3340,7 +3340,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#安装与说明" class="md-nav__link">
     <span class="md-ellipsis">
       安装与说明
     </span>
@@ -3350,7 +3350,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#指定安装路径" class="md-nav__link">
     <span class="md-ellipsis">
       指定安装路径
     </span>
@@ -3359,7 +3359,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gcc" class="md-nav__link">
+  <a href="#gcc-版本与环境配置" class="md-nav__link">
     <span class="md-ellipsis">
       GCC 版本与环境配置
     </span>
@@ -10090,7 +10090,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#获取源代码" class="md-nav__link">
     <span class="md-ellipsis">
       获取源代码
     </span>
@@ -10099,7 +10099,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#安装与构建说明" class="md-nav__link">
     <span class="md-ellipsis">
       安装与构建说明
     </span>
@@ -10108,7 +10108,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#安装与说明" class="md-nav__link">
     <span class="md-ellipsis">
       安装与说明
     </span>
@@ -10118,7 +10118,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#指定安装路径" class="md-nav__link">
     <span class="md-ellipsis">
       指定安装路径
     </span>
@@ -10127,7 +10127,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gcc" class="md-nav__link">
+  <a href="#gcc-版本与环境配置" class="md-nav__link">
     <span class="md-ellipsis">
       GCC 版本与环境配置
     </span>
@@ -10175,13 +10175,13 @@
 
 <p>CentOS 6.5 的老服务器没法直接使用官方提供的二进制版本，其中最要命的提示就是 Glibc 的版本太低，且非 root 用户手动升级 glibc 基本是个无解的难题。于是考虑从官方提供的 Blast+ 源码进行手动编译安装。</p>
 <p>虽然 Blast 官网的帮助文档中没有提到如何从源代码编译出 Blast，但是却在 <code>ncbi-blast-2.xx.x+-src/c++/src/algo/blast/core/README</code> 里面交代了在各个平台下编译 Blast 的方式。这里就直接把它的内容转发如下，以作补充：</p>
-<h3 id="_1">获取源代码<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="获取源代码">获取源代码<a class="headerlink" href="#获取源代码" title="Permanent link">&para;</a></h3>
 <p>Download the source distribution of BLAST+:</p>
 <ul>
 <li>ftp\://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/ncbi-blast-VERSION+-src.tar.gz</li>
 <li><a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/">https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/</a></li>
 </ul>
-<h3 id="_2">安装与构建说明<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="安装与构建说明">安装与构建说明<a class="headerlink" href="#安装与构建说明" title="Permanent link">&para;</a></h3>
 <p>Unpack the source archive in its installation directory and change working directory to ncbi-blast-VERSION+-src/c++.</p>
 <p><strong>UNIX</strong>
 To build these source files into a library without the rest of the NCBI BLAST+ applications/libraries, one should use the following commands:</p>
@@ -10204,8 +10204,8 @@ To build these source files into a library without the rest of the NCBI BLAST+ a
 <li>After the environment reloads, right click on blast.lib and select <strong>&ldquo;Build&rdquo;</strong>.</li>
 </ol>
 <p>The blast.lib library file will be found in c++\compilers\msvc800_prj\static\lib\CONF\blast.lib, where CONF represents the appropriate configuration (e.g.: debugdll, debugmt, releasedll, or releasemt), and the headers will be found in c++\compilers\msvc800_prj\static\inc and c++\include.</p>
-<h3 id="_3">安装与说明<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<h4 id="_4">指定安装路径<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<h3 id="安装与说明">安装与说明<a class="headerlink" href="#安装与说明" title="Permanent link">&para;</a></h3>
+<h4 id="指定安装路径">指定安装路径<a class="headerlink" href="#指定安装路径" title="Permanent link">&para;</a></h4>
 <p>在 <strong>configure</strong> 一步，我们可以使用<code>--with-build-root</code>指定 blast 的安装路径：</p>
 <ul>
 <li><code>--with-build-root=ReleaseMT</code>，将会安装到当前目录的 ReleaseMT 目录下；</li>
@@ -10214,7 +10214,7 @@ To build these source files into a library without the rest of the NCBI BLAST+ a
 <ul>
 <li><code>--with-build-root=/usr/local/shenweiyan/ncbi-blast-2.13.0+</code>，将会安装到该指定的路径中。</li>
 </ul>
-<h4 id="gcc">GCC 版本与环境配置<a class="headerlink" href="#gcc" title="Permanent link">&para;</a></h4>
+<h4 id="gcc-版本与环境配置">GCC 版本与环境配置<a class="headerlink" href="#gcc-版本与环境配置" title="Permanent link">&para;</a></h4>
 <p>ncbi-blast-2.13.0+ 的源码编译安装要求 <strong>GCC 7.1 or newer</strong>：</p>
 <div class="highlight"><pre><span></span><code><span class="n">configure</span><span class="p">:</span> <span class="n">error</span><span class="p">:</span> <span class="n">Please</span> <span class="n">upgrade</span> <span class="n">to</span> <span class="n">a</span> <span class="n">compiler</span> <span class="n">supporting</span> <span class="n">C</span><span class="o">++</span> <span class="s1">&#39;17, such as GCC 7.1 or newer.</span>
 </code></pre></div>

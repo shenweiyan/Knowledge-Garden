@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#一背景" class="md-skip">
           跳转至
         </a>
       
@@ -10037,14 +10037,14 @@
   
 
 
-<h1 id="_1">一、背景<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="一背景">一、背景<a class="headerlink" href="#一背景" title="Permanent link">&para;</a></h1>
 <p>前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9hxWhI_H98Nn23qhXB_PF-t6FC.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9hxWhI_H98Nn23qhXB_PF-t6FC.png" /></a>
 500 : Internal Server Error 如下：</p>
 <div class="highlight"><pre><span></span><code>nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
 </code></pre></div>
 <p>另外一点就是，对于经常做生信分析的童鞋而言，LaTeX，或者 Html+wkhtmltopdf 也许是当前生信报告生成与交付的两种主要解决方案（或许还有其他更好的，欢迎留言交流）。因此对于生信分析而言，LaTeX 也许并不陌生，但真正熟悉和掌握它的人却寥寥无几。</p>
-<h1 id="_2">二、概念<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h1 id="二概念">二、概念<a class="headerlink" href="#二概念" title="Permanent link">&para;</a></h1>
 <p>TEX 是诞生于 20 世纪 70 年代末到 80 年代初的一款计算机排版软件，而且是命令行格式的，用来排版高质量的书籍，特别是包含有数学公式的书籍。TEX 以追求高质量为目标，很早就实现了矢量描述的计算机字体、细致的分页断行算法和数学排版功能，因其数学排版能力得到了学术界的广泛使用，也启发了后来复杂的商业计算机排版软件。</p>
 <p>LATEX 开始于 20 世纪 80 年代初，是 Leslie Lamport 博士为了编写自己的一部书籍而设计的。LATEX 是对 TEX 的封装和拓展，实际上就是用 TEX 语言编写的一组宏代码，拥有比原来 TEX 格式（Plain TEX）更为规范的命令和一整套预定义的格式，隐藏了不少排版方面的细节，可以让完全不懂排版理论的学者们也可以比较容易地将书籍和文稿排版出来。</p>
 <p>TEXLive 是 Tex 的一种比较流行的发行版，它是由 TUG（TEX User Group，TEX 用户组）发布的，可以在类 UNIX/Linux、Mac OS X 和 Windows 等不同的操作系统平台下安装使用，并且提供相当可靠的工作环境。</p>
@@ -10150,13 +10150,13 @@
 </tbody>
 </table>
 <p><a href="http://www.ctex.org/CTeX">CTeX</a>  中文套装是基于 Windows 下的  <a href="http://www.ctex.org/MiKTeX">MiKTeX</a>  系统，集成了编辑器  <a href="http://www.ctex.org/WinEdt">WinEdt</a>  和  <a href="http://www.ctex.org/PostScript/edit">PostScript</a>  处理软件 Ghostscript 和 GSview 等主要工具。 <a href="http://www.ctex.org/CTeX">CTeX</a>  中文套装在  <a href="http://www.ctex.org/MiKTeX">MiKTeX</a>  的基础上增加了对中文的完整支持。 <a href="http://www.ctex.org/CTeX">CTeX</a>  中文套装支持 CJK, xeCJK, CCT, TY 等多种中文  <a href="http://www.ctex.org/TeX">TeX</a>  处理方式。</p>
-<h1 id="_3">三、安装<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
+<h1 id="三安装">三、安装<a class="headerlink" href="#三安装" title="Permanent link">&para;</a></h1>
 <p>TEXLive 常用有两种安装方式：从 TEXLive 光盘进行安装和从网络在线安装。这里我们介绍第二种。</p>
-<h2 id="1">1. 镜像文件下载<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-镜像文件下载">1. 镜像文件下载<a class="headerlink" href="#1-镜像文件下载" title="Permanent link">&para;</a></h2>
 <p>TexLive 历史版本下载地址：<a href="">ftp://tug.org/historic/systems/texlive/</a></p>
 <p>TexLive 的镜像文件下载推荐使用 <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">清华大学开源软件镜像站</a>，国内下载速度极快。
 <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso">https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso</a></p>
-<h2 id="2">2. 镜像挂载<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h2 id="2-镜像挂载">2. 镜像挂载<a class="headerlink" href="#2-镜像挂载" title="Permanent link">&para;</a></h2>
 <p>TEXLive 镜像文件下载完之后，推荐使用 root 用户进行安装。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>mkdir<span class="w"> </span>/mnt/textlive
 $<span class="w"> </span>sudo<span class="w"> </span>mount<span class="w"> </span>-o<span class="w"> </span>loop<span class="w"> </span>texlive2018.iso<span class="w"> </span>/mnt/textlive
@@ -10167,7 +10167,7 @@ mount:<span class="w"> </span>/dev/loop0<span class="w"> </span>is<span class="w
 <p>如果不想看到这个提示，就请在 mount 命令后面添加参数,指定以只读方式来挂载设备。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>mount<span class="w"> </span>-o<span class="w"> </span>loop<span class="w"> </span>texlive2018.iso<span class="w"> </span>/mnt/textlive<span class="w"> </span>-o<span class="w"> </span>ro
 </code></pre></div>
-<h2 id="3">3. 镜像安装<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="3-镜像安装">3. 镜像安装<a class="headerlink" href="#3-镜像安装" title="Permanent link">&para;</a></h2>
 <p>TEXLive 镜像的安装有两种方法：一是可以启动安装程序的图形化界面进行安装配置；二是直接在命令行中进行。这里主要介绍一下命令行下的安装。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/mnt/textlive
 $<span class="w"> </span>sudo<span class="w"> </span>./install-tl
@@ -10303,13 +10303,13 @@ $<span class="w"> </span>sudo<span class="w"> </span>fuser<span class="w"> </spa
 $<span class="w"> </span>sudo<span class="w"> </span>umount<span class="w"> </span>/mnt/textlive/
 </code></pre></div>
 <p>Texlive2017 有一个<a href="https://www.tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf">详细指南</a>，其中也有详细介绍各平台各种安装方法。</p>
-<h1 id="_4">四、设置环境变量<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
+<h1 id="四设置环境变量">四、设置环境变量<a class="headerlink" href="#四设置环境变量" title="Permanent link">&para;</a></h1>
 <p>将 texlive 部分目录添加到环境变量(\~/.bashrc)，编辑完记得 source 刷新一下：</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/software/texlive/2018/bin/x86_64-linux:<span class="nv">$PATH</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">MANPATH</span><span class="o">=</span>/usr/local/software/texlive/2018/texmf-dist/doc/man:<span class="nv">$MANPATH</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">INFOPATH</span><span class="o">=</span>/usr/local/software/texlive/2018/texmf-dist/doc/info:<span class="nv">$INFOPATH</span>
 </code></pre></div>
-<h1 id="_5">五、使用与测试<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
+<h1 id="五使用与测试">五、使用与测试<a class="headerlink" href="#五使用与测试" title="Permanent link">&para;</a></h1>
 <p>编辑一个 tex-test.tex 文件：</p>
 <div class="highlight"><pre><span></span><code>\documentclass{article}
 \begin{document}
@@ -10319,7 +10319,7 @@ Hello \LaTeX! 你好，这是一个测试文档。
 <p>使用命令，最后打开生成的 tex-test.pdf 文件：</p>
 <div class="highlight"><pre><span></span><code>xelatex tex-test.tex
 </code></pre></div>
-<h1 id="_6">六、中文支持<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
+<h1 id="六中文支持">六、中文支持<a class="headerlink" href="#六中文支持" title="Permanent link">&para;</a></h1>
 <p>LaTeX 默认是不支持中文的，想要支持中文排版，这里需要引入一个&rdquo;宏包&rdquo; 的概念。关于宏包，我们可以理解为一些指令的集合，用于专门处理某个特定的专题（如排版，字体等方面的细节问题），使用者可以方便地根据需要选用某个宏包。</p>
 <p>LaTeX 中比较常用的中文排版处理宏包主要有 ctex、CJK、xeCJK 等等，这里主要介绍一下后面两个。CJK 是由 Werner Lemberg 开发的，是中文（Chinese）、日文（Japanese）、韩文（Korean）三国文字的缩写。顾名思义，它能够支持这三种文字。实际上，CJK 能够支持在 LaTeX 中使用包括中文、日文、韩文在内的多种亚洲双字节文字。</p>
 <p>CJK 宏包提供了两种环境：CJK 环境和 CJK* 环境，这两种环境的区别为：对于汉字后面的空格，前者不忽略，后者忽略，我们推荐使用 CJK* 环境。</p>
@@ -10348,7 +10348,7 @@ $<span class="w"> </span>tlmgr<span class="w"> </span>install<span class="w"> </
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrniQGthPg4PVIqBj2AHm_GWJUk_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrniQGthPg4PVIqBj2AHm_GWJUk_.png" /></a></p>
 <hr />
-<h1 id="_7">七、参考资料<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h1>
+<h1 id="七参考资料">七、参考资料<a class="headerlink" href="#七参考资料" title="Permanent link">&para;</a></h1>
 <ul>
 <li>CTAN，<a href="https://ctan.org/pkg/xecjk">xecjk – Support for CJK documents in XeLaTeX</a></li>
 <li>Tass，Regular Tass Office Hour，《<a href="http://rtassoh.blogspot.com/2010/08/cjk-xecjk-cwtex.html">CJK, xeCJK 與 cwTeX 對於中文支援的比較</a>》</li>

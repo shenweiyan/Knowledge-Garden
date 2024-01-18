@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-2-parse" class="md-skip">
+        <a href="#坑一python-2-引发-parse-模块异常" class="md-skip">
           跳转至
         </a>
       
@@ -862,7 +862,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python-2-parse" class="md-nav__link">
+  <a href="#坑一python-2-引发-parse-模块异常" class="md-nav__link">
     <span class="md-ellipsis">
       坑一：Python 2 引发 parse 模块异常
     </span>
@@ -871,7 +871,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conda" class="md-nav__link">
+  <a href="#坑二conda-安装无法响应" class="md-nav__link">
     <span class="md-ellipsis">
       坑二：conda 安装无法响应
     </span>
@@ -880,7 +880,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centos-6" class="md-nav__link">
+  <a href="#最后centos-6-的正确解锁姿势" class="md-nav__link">
     <span class="md-ellipsis">
       最后，CentOS 6 的正确解锁姿势
     </span>
@@ -10066,7 +10066,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python-2-parse" class="md-nav__link">
+  <a href="#坑一python-2-引发-parse-模块异常" class="md-nav__link">
     <span class="md-ellipsis">
       坑一：Python 2 引发 parse 模块异常
     </span>
@@ -10075,7 +10075,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conda" class="md-nav__link">
+  <a href="#坑二conda-安装无法响应" class="md-nav__link">
     <span class="md-ellipsis">
       坑二：conda 安装无法响应
     </span>
@@ -10084,7 +10084,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centos-6" class="md-nav__link">
+  <a href="#最后centos-6-的正确解锁姿势" class="md-nav__link">
     <span class="md-ellipsis">
       最后，CentOS 6 的正确解锁姿势
     </span>
@@ -10132,7 +10132,7 @@
 <p>如果你用 &ldquo;gdc-client&rdquo; + &ldquo;centos6&rdquo; 的关键字去谷歌，会发现大部分的答案都是教你用 Python2 的虚拟环境去安装 gdc-client。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjz_5OxHOVj_DEDt6G_24tUvuMQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="gdc-client-centos6-Google.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjz_5OxHOVj_DEDt6G_24tUvuMQ.png" /></a></p>
 <p>其实，这些大部分都存在误导的成分，虽然 gdc-client 官网虽然没有提供 CentOS 6 的二进制程序包，但它托管在 GitHub 的源码我们是可以直接安装的，而且是只支持 Python 3！！</p>
-<h3 id="python-2-parse">坑一：Python 2 引发 parse 模块异常<a class="headerlink" href="#python-2-parse" title="Permanent link">&para;</a></h3>
+<h3 id="坑一python-2-引发-parse-模块异常">坑一：Python 2 引发 parse 模块异常<a class="headerlink" href="#坑一python-2-引发-parse-模块异常" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>Python2<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">2</span>.7
 <span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>Python2
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NCI-GDC/gdc-client
@@ -10147,10 +10147,10 @@ python<span class="w"> </span>setup.py<span class="w"> </span>install<span class
 <span class="kn">from</span> <span class="nn">urllib</span> <span class="kn">import</span> <span class="n">parse</span> <span class="k">as</span> <span class="n">urlparse</span>
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlPrmE8ny-JWm3fe_bQeAEMKbjXs.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="gdc-client-parser.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlPrmE8ny-JWm3fe_bQeAEMKbjXs.png" /></a></p>
-<h3 id="conda">坑二：conda 安装无法响应<a class="headerlink" href="#conda" title="Permanent link">&para;</a></h3>
+<h3 id="坑二conda-安装无法响应">坑二：conda 安装无法响应<a class="headerlink" href="#坑二conda-安装无法响应" title="Permanent link">&para;</a></h3>
 <p>bioconda 虽然也提供了 gdc-client，但是本人 一直没法安装成功，可能是我的运气不太好！
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpoqmI7dfG3xa5xgcfP9opZ_KRIS.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="bioconda-gdc-client.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpoqmI7dfG3xa5xgcfP9opZ_KRIS.png" /></a></p>
-<h3 id="centos-6">最后，CentOS 6 的正确解锁姿势<a class="headerlink" href="#centos-6" title="Permanent link">&para;</a></h3>
+<h3 id="最后centos-6-的正确解锁姿势">最后，CentOS 6 的正确解锁姿势<a class="headerlink" href="#最后centos-6-的正确解锁姿势" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>gdc<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.7
 <span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>gdc
 

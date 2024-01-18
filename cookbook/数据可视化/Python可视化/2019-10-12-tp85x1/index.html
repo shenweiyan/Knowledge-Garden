@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#安装" class="md-skip">
           跳转至
         </a>
       
@@ -8212,7 +8212,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -8335,7 +8335,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#总结" class="md-nav__link">
     <span class="md-ellipsis">
       总结
     </span>
@@ -8344,7 +8344,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10180,7 +10180,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -10303,7 +10303,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#总结" class="md-nav__link">
     <span class="md-ellipsis">
       总结
     </span>
@@ -10312,7 +10312,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10355,7 +10355,7 @@
 
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fi5esTnPH9t6x5p8HQx1TYY2fLrV.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="bio-dash.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fi5esTnPH9t6x5p8HQx1TYY2fLrV.png" /></a>
 <a href="https://plot.ly/dash/">Dash</a>  是用于搭建响应式 Web 应用的 Python 开源库。Dash Bio 是面向生物信息学，且与 Dash 兼容的组件，它可以将生物信息学领域中常见的数据整合到  Dash 应用程序，以实现响应式的生物信息学数据可视化。</p>
-<h2 id="_1">安装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">dash</span> <span class="n">dash</span><span class="o">-</span><span class="n">bio</span>
 </code></pre></div>
 <p>截止 2019.09.25，dash-bio 在 PyPI 的最新版本为 0.1.3，dash 的最新版本为  1.3.1。</p>
@@ -10417,12 +10417,12 @@
 <h3 id="sequence-viewer">Sequence Viewer<a class="headerlink" href="#sequence-viewer" title="Permanent link">&para;</a></h3>
 <p>Dash Bio SequenceViewer 组件是一个可用于基因组或蛋白质组序列注释的简单工具。它基于 <code>react-sequence-viewer</code> 库。该可视化图包括一个搜索功能，允许用户使用正则表达式搜索序列。另外，可以使用由起始位置、终止位置和颜色定义的选项，或可以编码一旦单击子序列即可显示的其他信息的覆盖范围来注释序列。选择和覆盖范围可在 Dash 应用程序中进行读取和写入，还可以通过鼠标悬停来选择和搜索结果。</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkmUUZHTSS2t0p2ZJztQtNCAwnch.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkmUUZHTSS2t0p2ZJztQtNCAwnch.png" /></a></p>
-<h2 id="_2">总结<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h2>
 <p>Dash Bio 组件有助于对生物信息学领域中收集和分析中常见的数据集类型进行可视化展示。它与 Plotly Dash 的声明性质保持一致，并允许用户创建可与其他 Dash 组件集成的交互响应式 Web 应用程序。</p>
 <p>除此之外，在 Dash Bio 中还有一个与 <code>dash-bio</code>  一起开发的  <code>dash-bio-utils</code> 包。它包含了生物信息学分析中常用文件类型的解析器。通过这个包的解析器可以将一些常用生物信息学文件中编码的数据转换为与 Dash Bio 组件兼容的输入，如将文件从一些最著名的生物信息学数据库（GEO 表达数据，PDB 蛋白质分子结构数据等）转换为熟悉的 Python 数据类型，例如字典。当与 <code>dash-bio</code> 软件包结合使用时，这使生物信息学家可以快速，简洁地相互之间以及与其他科学界人士交流信息。</p>
 <p>喜欢 R 语言的同学，也可以了解一下  <code>dashR</code> 这个包，它是 Dash 生态系统的 R 接口，可用于编写响应式的 Web 可视化应用程序。</p>
 <p>本文章只简单介绍了  <code>dash-bio</code>  的一些常用案例，没有涉及  <code>dash-bio-utils</code>  和 <code>dashR</code> 包，有兴趣的童鞋可以去研究学习一下，也欢迎留言交流。</p>
-<h2 id="_3">参考资料<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Plotly，<a href="https://medium.com/plotly/announcing-dash-bio-ed8835d5da0c">Announcing Dash Bio</a>，Medium</li>
 <li>Dash by Plotly，《<a href="https://dashr.plot.ly/?source=post_page">Dash for R User Guide</a>》，dashr.plot.ly</li>

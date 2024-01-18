@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-ss" class="md-skip">
+        <a href="#1-ss-特点" class="md-skip">
           跳转至
         </a>
       
@@ -10038,14 +10038,14 @@
 
 
 <p>Shadowsocks （中文名称：影梭，下面简称 SS）是使用 Python 等语言开发的、基于 Apache 许可证开源的代理软件。SS 使用 socks5 代理，由于其流量特征不明显，不太容易用技术手段拦截，因此用于保护网络流量。</p>
-<h1 id="1-ss">1. SS 特点<a class="headerlink" href="#1-ss" title="Permanent link">&para;</a></h1>
+<h1 id="1-ss-特点">1. SS 特点<a class="headerlink" href="#1-ss-特点" title="Permanent link">&para;</a></h1>
 <div class="highlight"><pre><span></span><code>省电，在电量查看里几乎看不到它的身影；
 支持开机自启动，且断网无影响，无需手动重连，方便网络不稳定或者 3G &amp; Wi-Fi 频繁切换的小伙伴；
 可使用自己的服务器，安全和速度的保证；
 支持区分国内外流量，传统 VPN 在翻出墙外后访问国内站点会变慢；
 可对应用设置单独代理，5.0 之后的系统无需 root。
 </code></pre></div>
-<h1 id="2-ss">2. SS 科学上网原理<a class="headerlink" href="#2-ss" title="Permanent link">&para;</a></h1>
+<h1 id="2-ss-科学上网原理">2. SS 科学上网原理<a class="headerlink" href="#2-ss-科学上网原理" title="Permanent link">&para;</a></h1>
 <p>Shadowsocks 客户端启动后会在本地开启一个代理，可以理解为一个数据的出入口。用户想通过 SS 访问墙外网站的请求都要经过这个本地代理。</p>
 <p>通过 SS 科学上网的过程是这样的：</p>
 <div class="highlight"><pre><span></span><code>用户发起一个网络访问请求，比如用浏览器访问 google.com，请求被发送到本地代理。
@@ -10055,8 +10055,8 @@
 客户端再通过本地代理把响应数据交给浏览器，google 首页就显示出来了。
 </code></pre></div>
 <p>整个过程中的第 2 步和第 4 步都是通过 SS 自定义的协议隐蔽地进行，很难被过滤，所以我们才能一直用它顺畅地科学上网。</p>
-<h1 id="3-ss">3. SS 服务搭建指南<a class="headerlink" href="#3-ss" title="Permanent link">&para;</a></h1>
-<h2 id="31-vps">3.1. 购买 VPS 服务器<a class="headerlink" href="#31-vps" title="Permanent link">&para;</a></h2>
+<h1 id="3-ss-服务搭建指南">3. SS 服务搭建指南<a class="headerlink" href="#3-ss-服务搭建指南" title="Permanent link">&para;</a></h1>
+<h2 id="31-购买-vps-服务器">3.1. 购买 VPS 服务器<a class="headerlink" href="#31-购买-vps-服务器" title="Permanent link">&para;</a></h2>
 <p>SS 的正常使用需要服务器端，其实，所有的科学上网软件都是通过服务器端，而搭建服务器端，你就需要有自己的 VPS，所以第一步你就是需要购买一个自己的 VPS (或者你可以跟别人合租)，现在普遍使用的搭建服务器端的 vps 有很多，在这里我们主要介绍性价比比较高的 4 种，一个是 <strong>Linode</strong>，一个是 <strong>DigitalOcean</strong>，一个是 <strong>BandwagonHOST (搬瓦工)</strong>，还有就是 <strong>vultr</strong>，这是从价格，性能等方面做出的推荐，当然，一分价钱一分货，你可以根据自己的实际需求以及支付能力自由选择。</p>
 <h3 id="311-linode">3.1.1. Linode<a class="headerlink" href="#311-linode" title="Permanent link">&para;</a></h3>
 <p>Linode 是国外非常著名的 VPS 商之一，目前在国内站长圈中备受推崇，被许多使用用户评为 &ldquo;高富帅&rdquo; 主机产品。Linode 目前最低的 1G 内存方案，1T 流量/月，25G 固态 SSD 硬盘仅需 5 美金一月，折合 RMB 也就在 35 元左右。截止 2018.07.01，Linode VPS   主机报价，详情参考：<a href="https://www.linode.com/pricing">https://www.linode.com/pricing</a>。
@@ -10096,7 +10096,7 @@
 <p>最后点击 &ldquo;Complete Order&rdquo; 完成订单，KiwiVM 会把所有买 VPS 主机的 IP、root 密码、SSH 端口信息发送到你的注册邮箱，当然你也可以登陆 BanwagonHOST (<a href="https://bwh1.net/clientarea.php)去查看。">https://bwh1.net/clientarea.php)去查看。<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkiEX-Lw2gbh7L8hZU2vcqzc641U.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkiEX-Lw2gbh7L8hZU2vcqzc641U.png" /></a></a></p>
 </li>
 </ol>
-<h2 id="32-ss">3.2. SS 服务端搭建<a class="headerlink" href="#32-ss" title="Permanent link">&para;</a></h2>
+<h2 id="32-ss-服务端搭建">3.2. SS 服务端搭建<a class="headerlink" href="#32-ss-服务端搭建" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>SecureCRT 或 putty 或者 xshell 连接服务器。</p>
@@ -10211,7 +10211,7 @@ Enjoy<span class="w"> </span>it!
 <span class="c1"># Shadowsocks-libev 版</span>
 /etc/shadowsocks-libev/config.json
 </code></pre></div>
-<h2 id="33-ss">3.3. SS 客户端使用<a class="headerlink" href="#33-ss" title="Permanent link">&para;</a></h2>
+<h2 id="33-ss-客户端使用">3.3. SS 客户端使用<a class="headerlink" href="#33-ss-客户端使用" title="Permanent link">&para;</a></h2>
 <p>各个平台下 SS 客户端列表：</p>
 <table>
 <thead>
@@ -10249,9 +10249,9 @@ Enjoy<span class="w"> </span>it!
 </tr>
 </tbody>
 </table>
-<h3 id="331-windows">3.3.1. windows 下使用<a class="headerlink" href="#331-windows" title="Permanent link">&para;</a></h3>
+<h3 id="331-windows-下使用">3.3.1. windows 下使用<a class="headerlink" href="#331-windows-下使用" title="Permanent link">&para;</a></h3>
 <p>SS 常规版 windowns 客户端下载地址：<a href="https://github.com/shadowsocks/shadowsocks-windows/releases">https://github.com/shadowsocks/shadowsocks-windows/releases</a>。客户端下载解压后，只需要按照服务器的配置填写服务器 IP 地址、服务器端口、本地端口（如果没有本地端口选项，就是默认的 1080）、密码、加密方式等参数就可以愉快地科学上网了。</p>
-<h3 id="332-linux">3.3.2. Linux 下使用<a class="headerlink" href="#332-linux" title="Permanent link">&para;</a></h3>
+<h3 id="332-linux-下使用">3.3.2. Linux 下使用<a class="headerlink" href="#332-linux-下使用" title="Permanent link">&para;</a></h3>
 <p>这里主要说一下 deepin linux 中 SS 的配置使用。</p>
 <p>① 进入&rdquo;深度商店&rdquo;，搜索 &ldquo;shadowsocks-qt5&rdquo;，点击完成安装。
 ② 在系统启动器中找到 SS，点击启动，设置连接。
@@ -10260,7 +10260,7 @@ Enjoy<span class="w"> </span>it!
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtxwGgKdj6wCLUO1MDEPlIQ7E07b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtxwGgKdj6wCLUO1MDEPlIQ7E07b.png" /></a></p>
 <p>⑥ 连接上网，登陆 YouTube 测试。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtswMpZkODct0fCF_yBlBqofNgQk.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtswMpZkODct0fCF_yBlBqofNgQk.png" /></a></p>
-<h1 id="5">5. 参考资料<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
+<h1 id="5-参考资料">5. 参考资料<a class="headerlink" href="#5-参考资料" title="Permanent link">&para;</a></h1>
 <ul>
 <li>Shadowsocks 一键安装脚本（四合一）：<a href="https://teddysun.com/486.html">https://teddysun.com/486.html</a></li>
 <li>GiuHub：shadowsocks/shadowsocks-windows 客户端：<a href="https://github.com/shadowsocks/shadowsocks-windows/releases">https://github.com/shadowsocks/shadowsocks-windows/releases</a></li>

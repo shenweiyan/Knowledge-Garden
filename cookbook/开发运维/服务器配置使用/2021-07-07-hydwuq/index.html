@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#阿里云" class="md-skip">
           跳转至
         </a>
       
@@ -3827,7 +3827,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#阿里云" class="md-nav__link">
     <span class="md-ellipsis">
       阿里云
     </span>
@@ -3846,7 +3846,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -3855,7 +3855,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#配置" class="md-nav__link">
     <span class="md-ellipsis">
       配置
     </span>
@@ -3864,7 +3864,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#设置开机自动挂载" class="md-nav__link">
     <span class="md-ellipsis">
       设置开机自动挂载
     </span>
@@ -3873,7 +3873,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#效果" class="md-nav__link">
     <span class="md-ellipsis">
       效果
     </span>
@@ -3887,7 +3887,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#腾讯云" class="md-nav__link">
     <span class="md-ellipsis">
       腾讯云
     </span>
@@ -10108,7 +10108,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#阿里云" class="md-nav__link">
     <span class="md-ellipsis">
       阿里云
     </span>
@@ -10127,7 +10127,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -10136,7 +10136,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#配置" class="md-nav__link">
     <span class="md-ellipsis">
       配置
     </span>
@@ -10145,7 +10145,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#设置开机自动挂载" class="md-nav__link">
     <span class="md-ellipsis">
       设置开机自动挂载
     </span>
@@ -10154,7 +10154,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#效果" class="md-nav__link">
     <span class="md-ellipsis">
       效果
     </span>
@@ -10168,7 +10168,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#腾讯云" class="md-nav__link">
     <span class="md-ellipsis">
       腾讯云
     </span>
@@ -10211,13 +10211,13 @@
 
 <p>最近在使用云筏的服务器倒腾一个用于方便自己日常工作的导航网站，免得经常在公司、家之间切换电脑时找不到一些常用的网站（虽然可以保存为书签进行同步，但在同步前也要账号登陆，甚至如果用的是某台临时 PC，浏览器登陆同步也是极为麻烦）。</p>
 <p>遇到一个问题，就是想把国外服务器的一些文件拷贝到阿里云 OSS（腾讯云 COS） 上，又不想使用国外服务器 → 本地电脑 →OSS 的拷贝路线，于是把之前用过的 ossfs（cosfs） 挂载在云筏服务器上又折腾了一次。</p>
-<h2 id="_1">阿里云<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="阿里云">阿里云<a class="headerlink" href="#阿里云" title="Permanent link">&para;</a></h2>
 <p>关于 OSS，阿里云 OSS 是对象存储服务，价格也比较便宜，算得上是一个免费的 CDN，我们可以利用 OSSFS 这个工具，将 OSS 挂载到阿里云 ECS 服务器上，可以达到存储、备份的目的。当然，最主要的是可以减轻服务器的压力。</p>
 <p>使用此工具之前，如果你手里没有阿里云的 ECS（或者你想经常从 OSS 拷贝数据到其他服务器） 那么我觉得没啥看下去的必要，因为目前阿里云 OSS 下行流量没有免费额度，都需要收费。这样进行数据传输的时候就会产生流量费用，而且速度可能也不是特别理想。如果有 ECS 那么可以进行内网数据传输，既保证了速度又省去了流量费用，岂不是美滋滋。
 <a href="https://www.aliyun.com/price/product?spm=a2c4g.11186623.2.5.5b7710f0N0ptLY#/oss/detail/ossbag"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsH7BsgN0OEmYTw4rtcC-nrXA01u.png" /></a></p>
 <h3 id="ossfs">ossfs<a class="headerlink" href="#ossfs" title="Permanent link">&para;</a></h3>
 <p>其实 ossfs 这个工具就是将你的 oss 存储桶 (bucket) 挂载成一个 linux 可以识别的分区，从而可以看成像系统上的一块本地磁盘。</p>
-<h3 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h3>
 <p>第一步，解决依赖。</p>
 <ul>
 <li>Ubuntu 14.04</li>
@@ -10243,7 +10243,7 @@
 <span class="o">$</span><span class="w"> </span><span class="n">sudo</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">install</span>
 </code></pre></div>
 <p>不出意外，ossfs 就这样被安装成功了，是不是非常的简单。接下来就是要配置的部分了。</p>
-<h3 id="_3">配置<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="配置">配置<a class="headerlink" href="#配置" title="Permanent link">&para;</a></h3>
 <p>在配置之前我们首先需要拿到阿里云的 AccesskeyID 和 Accesskeysecret。登录阿里云账号，然后打开<a href="https://usercenter.console.aliyun.com/#/manage/ak">密钥管理</a>页面，然后在列表里随便选择一个并记录下来。然后还需要去 oss 控制台创建一个 bucket，我这里 bucket 的名称叫做 disk-db。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr4CiOstajRhQ76t-xevfD-ArJAB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr4CiOstajRhQ76t-xevfD-ArJAB.png" /></a>
 为了演示假如我的 AccessKey ID 为 key123， Access Key Secret 为 secret456，接下来继续执行。</p>
@@ -10264,16 +10264,16 @@ ossfs<span class="w"> </span>vmfs<span class="w"> </span>/mnt/disk-db<span class
 <li>-o 表示运行非 root 用户使用此目录。</li>
 </ul>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiZgsHgCtKXBnwgdx3il9XJ9I7wB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiZgsHgCtKXBnwgdx3il9XJ9I7wB.png" /></a></p>
-<h3 id="_4">设置开机自动挂载<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="设置开机自动挂载">设置开机自动挂载<a class="headerlink" href="#设置开机自动挂载" title="Permanent link">&para;</a></h3>
 <p>通过 fstab 的方式自动 mount，在 /etc/fstab 中加入下面的类似的命令：</p>
 <div class="highlight"><pre><span></span><code>ossfs#your_bucket_name<span class="w"> </span>your_mount_point<span class="w"> </span>fuse_netdev,url<span class="o">=</span>your_url,allow_other<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
 </code></pre></div>
 <p>上面的根据提示替换成你自己的配置，比如我的为：</p>
 <div class="highlight"><pre><span></span><code>ossfs#disk-db<span class="w"> </span>/mnt/disk-db<span class="w"> </span>fuse_netdev,url<span class="o">=</span>oss-cn-shenshen.aliyuncs.com,allow_other<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
 </code></pre></div>
-<h3 id="_5">效果<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="效果">效果<a class="headerlink" href="#效果" title="Permanent link">&para;</a></h3>
 <p>到此，所有的操作就基本上结束了。想要看一下效果可以到 /mnt/disk-db 目录下新创建一个文件比如叫 ossfs_test.txt，然后我们再去阿里云的 oss 控制台就可以看到 ossfs_test.txt 已经创建成功的效果。</p>
-<h2 id="_6">腾讯云<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="腾讯云">腾讯云<a class="headerlink" href="#腾讯云" title="Permanent link">&para;</a></h2>
 <p>COSFS 工具支持将腾讯云的对象存储（Cloud Object Storage，COS）存储桶挂载到本地，像使用本地文件系统一样直接操作腾讯云对象存储中的对象， COSFS 提供的主要功能包括：</p>
 <ul>
 <li>支持 POSIX 文件系统的大部分功能，如：文件读写、目录操作、链接操作、权限管理、uid/gid 管理等功能。</li>

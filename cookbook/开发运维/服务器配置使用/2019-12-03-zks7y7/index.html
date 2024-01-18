@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-现象说明" class="md-skip">
           跳转至
         </a>
       
@@ -3995,7 +3995,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-现象说明" class="md-nav__link">
     <span class="md-ellipsis">
       1. 现象说明
     </span>
@@ -4004,7 +4004,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-产生原因" class="md-nav__link">
     <span class="md-ellipsis">
       2. 产生原因
     </span>
@@ -4013,7 +4013,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-解决方法" class="md-nav__link">
     <span class="md-ellipsis">
       3. 解决方法
     </span>
@@ -4022,7 +4022,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-后话" class="md-nav__link">
     <span class="md-ellipsis">
       4. 后话
     </span>
@@ -4031,7 +4031,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       5. 参考资料
     </span>
@@ -10084,7 +10084,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-现象说明" class="md-nav__link">
     <span class="md-ellipsis">
       1. 现象说明
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-产生原因" class="md-nav__link">
     <span class="md-ellipsis">
       2. 产生原因
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-解决方法" class="md-nav__link">
     <span class="md-ellipsis">
       3. 解决方法
     </span>
@@ -10111,7 +10111,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-后话" class="md-nav__link">
     <span class="md-ellipsis">
       4. 后话
     </span>
@@ -10120,7 +10120,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       5. 参考资料
     </span>
@@ -10171,7 +10171,7 @@
 </ul>
 <p>这个文章主要参考<a href="https://home.cnblogs.com/u/kevingrace/">散尽浮华</a>(高级 Linux 运维工程师)在博客园的相关文章，对  Linux 服务器更换主板后，网卡识别失败的处理进行一下记录与分享，希望对大家有用。</p>
 </blockquote>
-<h3 id="1">1. 现象说明<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<h3 id="1-现象说明">1. 现象说明<a class="headerlink" href="#1-现象说明" title="Permanent link">&para;</a></h3>
 <p>公司 IDC 机房里的一台线上服务器硬件报警，最后排查发现服务器主板坏了，随即联系厂商进行更换主板，最后更换后，登录服务器，发现网卡绑定及 ip 信息都在，但是 ip 却 ping 不通了，进一步排查，重启网卡，提示之前的 eth0 和 eth1 网卡设备发现不了了，也就是说服务器主板更换后，之前的网卡设备都识别不了了！</p>
 <p>主板更换后，重启并登陆服务器，发现之前的网卡设备（eth0、eth1、eth2、eth3）都没有了！</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@kevin01<span class="w"> </span>~<span class="o">]</span><span class="c1"># ifconfig -a</span>
@@ -10216,9 +10216,9 @@ ifcfg-eth3<span class="w">   </span>ifdown-eth<span class="w">   </span>ifdown-p
 <span class="o">[</span>root@kevin<span class="w"> </span>~<span class="o">]</span><span class="c1"># ipdown eth0</span>
 报错提示说没有发现eth0网卡
 </code></pre></div>
-<h3 id="2">2. 产生原因<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h3 id="2-产生原因">2. 产生原因<a class="headerlink" href="#2-产生原因" title="Permanent link">&para;</a></h3>
 <p>这是因为服务器更换了主板或网卡，mac 地址改变所导致的。系统加载网卡驱动后会去读一个文件（即 <code>/etc/udev/rules.d/70-persistent-net.rules</code> ），这个文件是一个缓冲文件，包含了网卡的 mac 地址，因为更换了主板，网卡的 mac 地址也变了，但是这个文件的 mac 地址还没变，还是之前坏了的主板的上面的网卡的 MAC 地址，这样系统在加载网卡，读取这个文件的时候读取的是之前网卡的 mac 地址，和现在更换后主板后的网卡 mac 地址不一致导致混乱，所以就识别不了当前网卡。</p>
-<h3 id="3">3. 解决方法<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<h3 id="3-解决方法">3. 解决方法<a class="headerlink" href="#3-解决方法" title="Permanent link">&para;</a></h3>
 <p>一般来说，删除 <code>/etc/udev/rules.d/70-persistent-net.rules</code>  文件（或者把这个文件重新命名　或者清空该文件内容），重启服务器就可以解决了，重启后会重新生成这个文件，这样就顺利解决这个问题了！这里注意下，由于我的这台服务器绑定了网卡，所以重启网卡后，还需要进行 <code>modprobe</code>  命令使得网卡绑定生效，大致步骤如下：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>mv<span class="w"> </span>/etc/udev/rules.d/70-persistent-net.rules<span class="w"> </span>/etc/udev/rules.d/70-persistent-net.rules.bak20180307
 $<span class="w"> </span>init<span class="w"> </span><span class="m">6</span>
@@ -10338,7 +10338,7 @@ PING<span class="w"> </span><span class="m">192</span>.168.10.23<span class="w">
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@kevin<span class="w"> </span>~<span class="o">]</span><span class="c1"># modprobe bonding</span>
 </code></pre></div>
 <p>**温馨提示：**有时候重启后还是出现以上情况，对比之前的 <code>/etc/udev/rules.d/70-persistent-net.rules</code>  文件，新的文件 mac 地址和 name 已经改变，name=eth0 和之前 name=em1 的名字不同；</p>
-<h3 id="4">4. 后话<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<h3 id="4-后话">4. 后话<a class="headerlink" href="#4-后话" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>如果你的服务器有 4 个网卡，重启后对比之前的 <code>/etc/udev/rules.d/70-persistent-net.rules</code> 文件，发现新文件 mac 地址和 name 已经改变，name 变成了 name=eth4，name=eth5，name=eth6，name=eth7，这也是正常的。使用 <code>ifconfig -a</code> 命令也是同样的道理。</p>
 <p>此外，如果你在  <code>/etc/sysconfig/network-scripts/</code> 中分别使用  ifcfg-eth0、ifcfg-eth1、ifcfg-eth2、ifcfg-eth3 对四个网卡进行 IP、网关等做了绑定，你需要：</p>
@@ -10348,7 +10348,7 @@ PING<span class="w"> </span><span class="m">192</span>.168.10.23<span class="w">
 <li>重启网络服务。</li>
 </ul>
 </blockquote>
-<h3 id="5">5. 参考资料<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<h3 id="5-参考资料">5. 参考资料<a class="headerlink" href="#5-参考资料" title="Permanent link">&para;</a></h3>
 <ul>
 <li>散尽浮华，《<a href="https://www.cnblogs.com/kevingrace/p/8524664.html">Linux 服务器更换主板后，网卡识别失败的处理方法</a>》，博客园</li>
 </ul>

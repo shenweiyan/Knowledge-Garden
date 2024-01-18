@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-安装" class="md-skip">
           跳转至
         </a>
       
@@ -10047,10 +10047,10 @@
 <li>自动检测系统默认编码；</li>
 <li>适用于 Python 2.7-3.6。</li>
 </ul>
-<h1 id="1">1. 安装<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
+<h1 id="1-安装">1. 安装<a class="headerlink" href="#1-安装" title="Permanent link">&para;</a></h1>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>webssh
 </code></pre></div>
-<h1 id="2">2. 启动<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<h1 id="2-启动">2. 启动<a class="headerlink" href="#2-启动" title="Permanent link">&para;</a></h1>
 <p>webssh 安装完成，我们可以通过 wssh 命令进行启动</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wssh
 <span class="o">[</span>I<span class="w"> </span><span class="m">180627</span><span class="w"> </span><span class="m">11</span>:14:55<span class="w"> </span>settings:67<span class="o">]</span><span class="w"> </span>WarningPolicy
@@ -10064,7 +10064,7 @@
 <p>这时候，在浏览器打开 <a href="http://ip:8000，输入登陆信息，登陆">http://ip:8000，输入登陆信息，登陆</a> web 终端：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsqW5kM2kU_rElrYV0WCyo0EFp9h.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="webt.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsqW5kM2kU_rElrYV0WCyo0EFp9h.png" /></a></p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlO0DMXBgSzrdAddMrEebbNUrw-p.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="webt-2.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlO0DMXBgSzrdAddMrEebbNUrw-p.png" /></a></p>
-<h1 id="3">3. 参数<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<h1 id="3-参数">3. 参数<a class="headerlink" href="#3-参数" title="Permanent link">&para;</a></h1>
 <p>wssh 的一些主要参数如下</p>
 <div class="highlight"><pre><span></span><code><span class="c1">#配置监听地址与服务端口</span>
 wssh<span class="w"> </span>--address<span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="w"> </span>--port<span class="o">=</span><span class="m">8000</span>
@@ -10098,7 +10098,7 @@ wssh<span class="w"> </span>--help
 <li>使用 Nginx 作为后台代理，并启用 SSL 访问，可以避免你的 ssh 证书被暴露。此外，你的浏览器和 Web 服务器之间的通信将使用安全的 Websockets 进行加密。</li>
 <li>尝试使用 reject policy 作为缺少主机密钥时的策略，以及经过验证的 known_hosts，可以防止中间人的攻击。其思路是，webssh 会依次检查系统主机密钥文件（&rdquo;\~/.ssh/known_hosts&rdquo;）和应用程序主机密钥文件（&rdquo;./known_hosts&rdquo;），如果 ssh 服务器的主机名（hostname）没有被发现或者密钥不匹配，连接将被中止。</li>
 </ul>
-<h1 id="5">5. 参考资料<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
+<h1 id="5-参考资料">5. 参考资料<a class="headerlink" href="#5-参考资料" title="Permanent link">&para;</a></h1>
 <ul>
 <li><a href="https://www.oschina.net/p/webterminal">https://www.oschina.net/p/webterminal</a></li>
 </ul>

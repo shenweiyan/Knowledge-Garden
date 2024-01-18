@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-channels" class="md-skip">
+        <a href="#1-channels-使用" class="md-skip">
           跳转至
         </a>
       
@@ -10037,7 +10037,7 @@
   
 
 
-<h1 id="1-channels">1. channels 使用<a class="headerlink" href="#1-channels" title="Permanent link">&para;</a></h1>
+<h1 id="1-channels-使用">1. channels 使用<a class="headerlink" href="#1-channels-使用" title="Permanent link">&para;</a></h1>
 <p>需要注意的是做生信分析的童鞋使用 conda 环境时一定要特别注意 conda channels 的设置，滥用 channels 很有可能会导致你的软件升降级（甚至环境）错乱。推荐设置如下（<strong>\~/.condarc</strong>）：</p>
 <div class="highlight"><pre><span></span><code>channels:
 <span class="w">  </span>-<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
@@ -10067,9 +10067,9 @@ show_channels_urls:<span class="w"> </span><span class="nb">true</span>
 show_channels_urls:<span class="w"> </span><span class="nb">true</span>
 </code></pre></div>
 <p>更多 Anaconda channels，可以参考：<a href="https://repo.continuum.io/pkgs/">https://repo.continuum.io/pkgs/</a>。</p>
-<h1 id="2">2. 软件安装使用<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<h1 id="2-软件安装使用">2. 软件安装使用<a class="headerlink" href="#2-软件安装使用" title="Permanent link">&para;</a></h1>
 <p>conda 环境下的软件尽量使用 conda、pip 命令去安装。但同时也产生了一个问题，即 conda 中安装了 R，有些使用了  <code>install.packages()</code> , <code>install_github</code> , <code>biocLite</code>  等方式安装的 R 包，在环境迁移的时候，这些包如何迁移？</p>
-<h1 id="3">3. 环境激活<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<h1 id="3-环境激活">3. 环境激活<a class="headerlink" href="#3-环境激活" title="Permanent link">&para;</a></h1>
 <p>conda 4.6.x  切换环境使用的是：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>bio-base
 </code></pre></div>
@@ -10116,7 +10116,7 @@ $<span class="w"> </span>conda<span class="w"> </span>deactivate
 <span class="o">(</span>bio-base<span class="o">)</span><span class="w"> </span>shenweiyan@ecs-steven<span class="w">  </span><span class="m">11</span>:03:57<span class="w"> </span>/home/shenweiyan
 $
 </code></pre></div>
-<h1 id="4">4. 环境导出与恢复<a class="headerlink" href="#4" title="Permanent link">&para;</a></h1>
+<h1 id="4-环境导出与恢复">4. 环境导出与恢复<a class="headerlink" href="#4-环境导出与恢复" title="Permanent link">&para;</a></h1>
 <p>使用 conda 命令安装的包，都可以使用下面的命令导出依赖包/环境并批量恢复：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># To create a requirements.txt file</span>
 <span class="c1"># Gives you list of packages used for the environment</span>
@@ -10140,13 +10140,13 @@ conda<span class="w"> </span>install<span class="w"> </span>--yes<span class="w"
 <span class="c1"># To go around issue above, one can iterate over all lines in the requirements.txt file.</span>
 <span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>requirement<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>conda<span class="w"> </span>install<span class="w"> </span>--yes<span class="w"> </span><span class="nv">$requirement</span><span class="p">;</span><span class="w"> </span><span class="k">done</span><span class="w"> </span>&lt;<span class="w"> </span>requirements.txt
 </code></pre></div>
-<h1 id="5-r-r">5. R 与 R 包安装<a class="headerlink" href="#5-r-r" title="Permanent link">&para;</a></h1>
+<h1 id="5-r-与-r-包安装">5. R 与 R 包安装<a class="headerlink" href="#5-r-与-r-包安装" title="Permanent link">&para;</a></h1>
 <p>R Essentials 软件包包含 IRKernel 和 80 多种最流行的数据科学 R 软件包，包括 dplyr，shiny，ggplot2，tidyr，caret 和 nnet 等。</p>
-<h2 id="51-r">5.1 R 软件<a class="headerlink" href="#51-r" title="Permanent link">&para;</a></h2>
+<h2 id="51-r-软件">5.1 R 软件<a class="headerlink" href="#51-r-软件" title="Permanent link">&para;</a></h2>
 <p>conda 安装 R 有很多种方法，如可以通过  r=3.6.x，或者 r-base、r-irkernel、r-essentials 都可以。需要注意：</p>
 <p>如果需要在 Anaconda 的 Jupyter Notebook 中使用 R，建议使用 <code>conda install -c r r-irkernel</code>  或者 <code>conda install -c r r-essentials</code>  的方式安装，因为 <code>conda install -c r r=3.6.x/r-base</code>  默认不会安装  irkernel，而且先安装的  r=3.6.x/r-base 可能与后安装的  r-irkernel/r-essentials 产生冲突。</p>
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h2 id="52-r">5.2 R 包<a class="headerlink" href="#52-r" title="Permanent link">&para;</a></h2>
+<h2 id="52-r-包">5.2 R 包<a class="headerlink" href="#52-r-包" title="Permanent link">&para;</a></h2>
 <p>通过 conda 安装的 R，在安装 R 包时，最好使用 conda 命令去安装，conda 无法安装的（如 github 的包）再考虑其他的安装方式。</p>
 <h3 id="1-installpackages">1. install.packages<a class="headerlink" href="#1-installpackages" title="Permanent link">&para;</a></h3>
 <p><code>install.packages()</code>  所有 R 包：</p>
@@ -10204,7 +10204,7 @@ biocLite<span class="o">(</span><span class="s2">&quot;包名&quot;</span><span 
 <span class="nf">library</span><span class="p">(</span><span class="n">devtools</span><span class="p">)</span>
 <span class="nf">install_github</span><span class="p">(</span><span class="s">&quot;jokergoo/ComplexHeatmap&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h1 id="6">6. 特别注意的软件<a class="headerlink" href="#6" title="Permanent link">&para;</a></h1>
+<h1 id="6-特别注意的软件">6. 特别注意的软件<a class="headerlink" href="#6-特别注意的软件" title="Permanent link">&para;</a></h1>
 <h2 id="61-gcc">6.1 gcc<a class="headerlink" href="#61-gcc" title="Permanent link">&para;</a></h2>
 <p>对于使用 <code>conda install --yes --file requirements.txt</code> 重装某一个环境的所有软件时，如果软件中包含了 gcc，安装了 R 后，在使用 R 时会可能会引发错误：</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">SoftWare</span><span class="o">/</span><span class="n">Anaconda</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">R</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">exec</span><span class="o">/</span><span class="n">R</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">SoftWare</span><span class="o">/</span><span class="n">Anaconda</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">R</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">exec</span><span class="o">/</span><span class="n">..</span><span class="o">/</span><span class="n">..</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">..</span><span class="o">/</span><span class="n">..</span><span class="o">/</span><span class="n">libgomp.so.1</span><span class="o">:</span><span class="w"> </span><span class="n">version</span><span class="w"> </span>`<span class="n">GOMP_4.0</span><span class="s">&#39;</span><span class="err"> not found (required by /path/to/SoftWare/Anaconda/v2/lib/R/bin/exec/../../lib/libR.so)</span>
@@ -10215,7 +10215,7 @@ biocLite<span class="o">(</span><span class="s2">&quot;包名&quot;</span><span 
 </blockquote>
 <p>有一些软件对于 glibc 的版本会有要求，如 cnvnator-0.3.3 要求 glibc &gt;= 2.14。虽然在 anaconda 中有很多 channel 都提供了 glibc，但<strong>千万注意一定要注意不要轻易去安装</strong>，否则有很大的概率会导致整个环境挂掉，甚至会导致当前环境中的 conda、python 出现动态库混乱错误，恢复起来相当麻烦！</p>
 <p>我在《<a href="https://www.yuque.com/shenweiyan/cookbook/hpc-experience-glibc">一次&rdquo;胆战心惊&rdquo;的真实集群运维经历</a>》记录了 gblic 的一些集群吐血经历，感兴趣的可以了解一下。</p>
-<h1 id="7-anaconda">7. 什么时候使用 Anaconda<a class="headerlink" href="#7-anaconda" title="Permanent link">&para;</a></h1>
+<h1 id="7-什么时候使用-anaconda">7. 什么时候使用 Anaconda<a class="headerlink" href="#7-什么时候使用-anaconda" title="Permanent link">&para;</a></h1>
 <p>对于 Anaconda(conda) 软件安装以及依赖解决的原理，我对这个黑盒子表示一头雾水。真实的情况是，如果在一个环境中安装了几百个软件(包)，再去新装软件，这时候 Anaconda 常常会卡在 Collecting package metadata 和  Solving environment 过程中，甚至一个晚上都没法解决环境的依赖。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmexuMleqUEMIkuex7HpLeY1BQKX.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmexuMleqUEMIkuex7HpLeY1BQKX.png" /></a></p>
 <p>conda 官方说他们在 conda-4.7 中花了很多的精力去提升了 conda 的速度（参考官方文章：《<a href="https://www.anaconda.com/how-we-made-conda-faster-4-7/">How We Made Conda Faster in 4.7</a>》），但从 4.6 升级到 4.7 过程很容易导致环境崩溃，修复起来极其麻烦（反正我折腾了一个晚上都没能把我的 base 给恢复回来，吐血的经历）！

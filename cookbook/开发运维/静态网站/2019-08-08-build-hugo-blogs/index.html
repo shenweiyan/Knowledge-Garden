@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#centos-7-go" class="md-skip">
+        <a href="#centos-7-安装-go" class="md-skip">
           跳转至
         </a>
       
@@ -2413,7 +2413,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#centos-7-go" class="md-nav__link">
+  <a href="#centos-7-安装-go" class="md-nav__link">
     <span class="md-ellipsis">
       CentOS 7 安装 Go
     </span>
@@ -2422,7 +2422,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centos-7-hugo" class="md-nav__link">
+  <a href="#centos-7-安装-hugo" class="md-nav__link">
     <span class="md-ellipsis">
       CentOS 7 安装 Hugo
     </span>
@@ -2431,7 +2431,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hugo" class="md-nav__link">
+  <a href="#启动-hugo-博客服务" class="md-nav__link">
     <span class="md-ellipsis">
       启动 hugo 博客服务
     </span>
@@ -2440,7 +2440,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#一些问题" class="md-nav__link">
     <span class="md-ellipsis">
       一些问题
     </span>
@@ -2449,7 +2449,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#一些资料" class="md-nav__link">
     <span class="md-ellipsis">
       一些资料
     </span>
@@ -10084,7 +10084,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#centos-7-go" class="md-nav__link">
+  <a href="#centos-7-安装-go" class="md-nav__link">
     <span class="md-ellipsis">
       CentOS 7 安装 Go
     </span>
@@ -10093,7 +10093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centos-7-hugo" class="md-nav__link">
+  <a href="#centos-7-安装-hugo" class="md-nav__link">
     <span class="md-ellipsis">
       CentOS 7 安装 Hugo
     </span>
@@ -10102,7 +10102,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hugo" class="md-nav__link">
+  <a href="#启动-hugo-博客服务" class="md-nav__link">
     <span class="md-ellipsis">
       启动 hugo 博客服务
     </span>
@@ -10111,7 +10111,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#一些问题" class="md-nav__link">
     <span class="md-ellipsis">
       一些问题
     </span>
@@ -10120,7 +10120,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#一些资料" class="md-nav__link">
     <span class="md-ellipsis">
       一些资料
     </span>
@@ -10169,7 +10169,7 @@
 <li>修复原博客 url 的一些 bug，shen.bioinit.com 部分链接被直接写死，想要复用的需要重新定义。</li>
 </ul>
 <hr />
-<h3 id="centos-7-go">CentOS 7 安装 Go<a class="headerlink" href="#centos-7-go" title="Permanent link">&para;</a></h3>
+<h3 id="centos-7-安装-go">CentOS 7 安装 Go<a class="headerlink" href="#centos-7-安装-go" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>go1.12.7.linux-amd64.tar.gz
 $<span class="w"> </span>mv<span class="w"> </span>go<span class="w"> </span>go-1.12.7
@@ -10182,13 +10182,13 @@ $<span class="w"> </span>vi<span class="w"> </span>~/.bashrc
 
 $<span class="w"> </span>go<span class="w"> </span>env<span class="w">        </span><span class="c1"># 查看 Go 的一些环境配置</span>
 </code></pre></div>
-<h3 id="centos-7-hugo">CentOS 7 安装 Hugo<a class="headerlink" href="#centos-7-hugo" title="Permanent link">&para;</a></h3>
+<h3 id="centos-7-安装-hugo">CentOS 7 安装 Hugo<a class="headerlink" href="#centos-7-安装-hugo" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>hugo_0.54.0_Linux-64bit.tar.gz<span class="w"> </span>-C<span class="w"> </span>/usr/local/software/hugo-0.54.0
 $<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export PATH=/usr/local/software/hugo-0.54.0:\$PATH&quot;</span><span class="w"> </span>&gt;&gt;~/.bashrc
 $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/.bashrc
 </code></pre></div>
-<h3 id="hugo">启动 hugo 博客服务<a class="headerlink" href="#hugo" title="Permanent link">&para;</a></h3>
+<h3 id="启动-hugo-博客服务">启动 hugo 博客服务<a class="headerlink" href="#启动-hugo-博客服务" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>shenweiyan@ecs-steven<span class="w"> </span><span class="m">15</span>:04:06<span class="w"> </span>~/shenweiyan/home
 $<span class="w"> </span>hugo<span class="w">      </span><span class="c1"># 渲染生成静态站点文件</span>
 
@@ -10222,7 +10222,7 @@ $<span class="w"> </span>hugo<span class="w"> </span>server<span class="w"> </sp
 <li>-E, &ndash;buildExpired include expired content</li>
 </ol>
 </blockquote>
-<h3 id="_1">一些问题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="一些问题">一些问题<a class="headerlink" href="#一些问题" title="Permanent link">&para;</a></h3>
 <p><strong>问题：</strong>
 hugo-ivy 主题在 0.55 后版本的 Hugo 中 RSS 无法使用，并且在编译时会有如下警告：</p>
 <div class="highlight"><pre><span></span><code>Building<span class="w"> </span>sites<span class="w"> </span>…
@@ -10249,7 +10249,7 @@ WARN<span class="w"> </span><span class="m">2019</span>/08/13<span class="w"> </
 <span class="w">    </span><span class="p">&lt;</span><span class="nx">link</span><span class="w"> </span><span class="nx">href</span><span class="p">=</span><span class="s">&quot;{{ .RelPermalink | relURL }}&quot;</span><span class="w"> </span><span class="nx">rel</span><span class="p">=</span><span class="s">&quot;alternate&quot;</span><span class="w"> </span><span class="kd">type</span><span class="p">=</span><span class="s">&quot;application/rss+xml&quot;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&quot;{{ $.Title }}&quot;</span><span class="w"> </span><span class="o">/</span><span class="p">&gt;</span>
 <span class="p">{{</span><span class="w"> </span><span class="nx">end</span><span class="w"> </span><span class="p">}}</span>
 </code></pre></div>
-<h3 id="_2">一些资料<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="一些资料">一些资料<a class="headerlink" href="#一些资料" title="Permanent link">&para;</a></h3>
 <p>记录一下，搭建部署过程中参考的一些资料：</p>
 <ul>
 <li>钟浩光，《<a href="https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/">用 R 语言的 blogdown+hugo+netlify+github 建博客</a>》，统计之都</li>

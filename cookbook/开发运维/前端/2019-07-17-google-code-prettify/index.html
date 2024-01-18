@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1主题" class="md-skip">
           跳转至
         </a>
       
@@ -10040,9 +10040,9 @@
 <p>Google Code Prettify 是 Google 的一款代码高亮插件，它由 js 代码和 css 代码构成，用来高亮显示 HTML 页面中的源代码。</p>
 <p>Google Code Prettify 支持的语言数量比较多、比较全，支持自动识别代码语言，不需要手动指定，渲染效果也不错。最重要的是，非常轻巧，加载速度远比 SyntaxHighlighter 快得多，而且可以直接使用 Markdown 的语法写代码。</p>
 <p>GitHub 地址：<a href="https://github.com/google/code-prettify">https://github.com/google/code-prettify</a></p>
-<h1 id="1"><strong>1、主题</strong><a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
+<h1 id="1主题"><strong>1、主题</strong><a class="headerlink" href="#1主题" title="Permanent link">&para;</a></h1>
 <p>google-code-prettify 提供了 5 个 css 主题可供选择，而且支持自定义 style。相关的 demo 及 style 文件参见：<a href="https://rawgit.com/google/code-prettify/master/styles/index.html">https://rawgit.com/google/code-prettify/master/styles/index.html</a>。</p>
-<h1 id="2"><strong>2、文件</strong><a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<h1 id="2文件"><strong>2、文件</strong><a class="headerlink" href="#2文件" title="Permanent link">&para;</a></h1>
 <p>google-code-prettify 需要两个文件，prettify.js 和 prettify.css，去官网下载。把这两个放到 head 模板中，如下：</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">link</span>
   <span class="na">href</span><span class="o">=</span><span class="s">&quot;http://alfred-sun.github.io/assets/google-code-prettify/prettify.css&quot;</span>
@@ -10055,20 +10055,20 @@
   <span class="na">src</span><span class="o">=</span><span class="s">&quot;http://alfred-sun.github.io/assets/google-code-prettify/prettify.js&quot;</span>
 <span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
-<h1 id="3"><strong>3、使用</strong><a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<h1 id="3使用"><strong>3、使用</strong><a class="headerlink" href="#3使用" title="Permanent link">&para;</a></h1>
 <p>考虑到加载速度，最好 js 写到文档末尾，body 闭合标签之前，css 写到头部之后，还需要在合适位置（如：$(document).ready）添加如下代码，用于识别并高亮代码块，这个需要使用 jQuery：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nb">window</span><span class="p">.</span><span class="nx">prettyPrint</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">prettyPrint</span><span class="p">();</span>
 <span class="p">});</span>
 </code></pre></div>
 <p>到这里，我们就可以使用 <code>&lt;pre&gt;&lt;/pre&gt;</code> 标签进行高亮了。</p>
-<h2 id="31">3.1. 基本用法<a class="headerlink" href="#31" title="Permanent link">&para;</a></h2>
+<h2 id="31-基本用法">3.1. 基本用法<a class="headerlink" href="#31-基本用法" title="Permanent link">&para;</a></h2>
 <p>Google 的高亮插件使用比较方便，只需要在  <code>&lt;pre&gt;</code>  的标签上加入 <code>prettyprint</code>  即可。</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">pre</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;prettyPrint&quot;</span><span class="p">&gt;</span>
     // code here
 <span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
 </code></pre></div>
-<h2 id="32">3.2. 行号设置<a class="headerlink" href="#32" title="Permanent link">&para;</a></h2>
+<h2 id="32-行号设置">3.2. 行号设置<a class="headerlink" href="#32-行号设置" title="Permanent link">&para;</a></h2>
 <p>google-code-prettify 默认每五行显示一次行号，如果想要显示所有的行号，我们只需要在 google-code-prettify 对应主题的 css 文件中找到下面一样把它注释掉即可：</p>
 <div class="highlight"><pre><span></span><code>li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
 </code></pre></div>
@@ -10080,7 +10080,7 @@
 <span class="p">});</span>
 </code></pre></div>
 <p>这样就没有问题了，可以直接用 markdown 的前置 4 空格来写代码了。其中 <code>addClass('prettyprint linenums')</code>  的 linenums 是添加行号的意思。默认只显示第 5、10、15&hellip; 行，可以在 css 文件中 li 的格式添加 <code>list-style-type: decimal;</code> ，以显示全部行号。</p>
-<h2 id="34-bootstrap">3.4. Bootstrap 代码框滚动<a class="headerlink" href="#34-bootstrap" title="Permanent link">&para;</a></h2>
+<h2 id="34-bootstrap-代码框滚动">3.4. Bootstrap 代码框滚动<a class="headerlink" href="#34-bootstrap-代码框滚动" title="Permanent link">&para;</a></h2>
 <p>如果博客中有用 Bootstrap，其中对 pre 有如下几句：</p>
 <div class="highlight"><pre><span></span><code><span class="nt">white-space</span><span class="o">:</span><span class="w"> </span><span class="nt">pre</span><span class="o">;</span>
 <span class="nt">white-space</span><span class="o">:</span><span class="w"> </span><span class="nt">pre-wrap</span><span class="o">;</span>
@@ -10089,9 +10089,9 @@
 </code></pre></div>
 <p>这会使得 pre 中的代码自动换行，而不是溢出形成滚动条。如果不希望如此，可以注释掉。看个人喜好。</p>
 <p>如果是滚动条，默认的滚动太难看而且还有个 Bug（stripe 的高亮背景色无法固定，随着滚动条位置改变而改变，可以考虑去掉 stripe，或者禁用横向滚动条），可以修改一下样式，看一下：<a href="http://ju.outofmemory.cn/entry/149458">CSS 自定义浏览器滚动条样式</a>。</p>
-<h1 id="4leanote"><strong>4、Leanote 博客</strong><a class="headerlink" href="#4leanote" title="Permanent link">&para;</a></h1>
+<h1 id="4leanote-博客"><strong>4、Leanote 博客</strong><a class="headerlink" href="#4leanote-博客" title="Permanent link">&para;</a></h1>
 <p>这里主要讲一下如何在 leanote 博客中使用 Google Code Prettify，并实现代码框左右滚动的效果。</p>
-<h2 id="41-bootstrap">4.1. bootstrap 文件<a class="headerlink" href="#41-bootstrap" title="Permanent link">&para;</a></h2>
+<h2 id="41-bootstrap-文件">4.1. bootstrap 文件<a class="headerlink" href="#41-bootstrap-文件" title="Permanent link">&para;</a></h2>
 <p>由于 leanote 应用了 bootstrap 的样式，其内置的 pre 代码会自动换行，而不是溢出形成滚动条，因此我们需要自定义样式（以下为完整 customHilight.css 文件内容）：</p>
 <div class="highlight"><pre><span></span><code>/*自定义 ol 列表数字距离*/
 code.prettyprint ol.linenums, pre.prettyprint ol.linenums{
@@ -10119,7 +10119,7 @@ code.prettyprint .linenums, pre.prettyprint .linenums{
 }
 </code></pre></div>
 <p>最后，清空浏览器缓存，就可以看到 <a href="http://blog.leanote.com/shenweiyan">leanote 博客</a>代码框左右滚动的效果。</p>
-<h1 id="5">5. 参考资料<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
+<h1 id="5-参考资料">5. 参考资料<a class="headerlink" href="#5-参考资料" title="Permanent link">&para;</a></h1>
 <ul>
 <li><a href="http://ju.outofmemory.cn/entry/149451">Jekyll 中用 Google Code Prettify</a>，Vermillion Phoinix by Alfred Sun，2014-12-15</li>
 </ul>

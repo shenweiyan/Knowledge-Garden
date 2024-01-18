@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-u" class="md-skip">
+        <a href="#1-u-盘启动盘制作" class="md-skip">
           跳转至
         </a>
       
@@ -2567,7 +2567,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-u" class="md-nav__link">
+  <a href="#1-u-盘启动盘制作" class="md-nav__link">
     <span class="md-ellipsis">
       1. U 盘启动盘制作
     </span>
@@ -2576,7 +2576,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-linux-rescue" class="md-nav__link">
+  <a href="#2-linux-rescue-模式" class="md-nav__link">
     <span class="md-ellipsis">
       2. Linux rescue 模式
     </span>
@@ -2586,7 +2586,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
+  <a href="#21-说明" class="md-nav__link">
     <span class="md-ellipsis">
       2.1. 说明
     </span>
@@ -2595,7 +2595,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-rescue" class="md-nav__link">
+  <a href="#22-rescue-模式步骤" class="md-nav__link">
     <span class="md-ellipsis">
       2.2. rescue 模式步骤
     </span>
@@ -2609,7 +2609,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-总结" class="md-nav__link">
     <span class="md-ellipsis">
       3. 总结
     </span>
@@ -10090,7 +10090,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-u" class="md-nav__link">
+  <a href="#1-u-盘启动盘制作" class="md-nav__link">
     <span class="md-ellipsis">
       1. U 盘启动盘制作
     </span>
@@ -10099,7 +10099,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-linux-rescue" class="md-nav__link">
+  <a href="#2-linux-rescue-模式" class="md-nav__link">
     <span class="md-ellipsis">
       2. Linux rescue 模式
     </span>
@@ -10109,7 +10109,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
+  <a href="#21-说明" class="md-nav__link">
     <span class="md-ellipsis">
       2.1. 说明
     </span>
@@ -10118,7 +10118,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-rescue" class="md-nav__link">
+  <a href="#22-rescue-模式步骤" class="md-nav__link">
     <span class="md-ellipsis">
       2.2. rescue 模式步骤
     </span>
@@ -10132,7 +10132,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-总结" class="md-nav__link">
     <span class="md-ellipsis">
       3. 总结
     </span>
@@ -10201,7 +10201,7 @@ ls: error while loading shared libraries: libc.so.6: cannot open shared object f
 <li>已经退出 root 登录：重装系统或者使用 Linux rescue 模式修复。</li>
 </ul>
 <p>作为 HPC 整个集群的 log 节点，不到万不得已是不会轻易重装系统的，于是我们选择了使用 Linux rescue 模式修复，以下是一些记录。</p>
-<h2 id="1-u">1. U 盘启动盘制作<a class="headerlink" href="#1-u" title="Permanent link">&para;</a></h2>
+<h2 id="1-u-盘启动盘制作">1. U 盘启动盘制作<a class="headerlink" href="#1-u-盘启动盘制作" title="Permanent link">&para;</a></h2>
 <p>由于原来的 log 节点是 rhel-server-6.5-x86_64 的操作系统，所以我们需要制作与之相对应的启动 U 盘。</p>
 <p>首先，要下载 rhel-server-6.5-x86_64 镜像。</p>
 <ul>
@@ -10218,12 +10218,12 @@ ls: error while loading shared libraries: libc.so.6: cannot open shared object f
 <p>文件大小：3,675 MB</p>
 <p>其次，将启动文件写入 u 盘。以 UltraISO 软碟通为例，打开 UltraISO 软件，菜单 “文件” 打开 rhel-server-6.5-x86_64-boot.iso ，菜单 “启动” ==&gt; “写入硬盘映像”，弹出对话框，点击 “格式化”，格式化完成点击 “写入”。</p>
 <p>最后，将安装光盘镜像 rhel-server-6.5-x86_64-dvd.iso   拷贝到 u 盘根目录。</p>
-<h2 id="2-linux-rescue">2. Linux rescue 模式<a class="headerlink" href="#2-linux-rescue" title="Permanent link">&para;</a></h2>
-<h3 id="21">2.1. 说明<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<h2 id="2-linux-rescue-模式">2. Linux rescue 模式<a class="headerlink" href="#2-linux-rescue-模式" title="Permanent link">&para;</a></h2>
+<h3 id="21-说明">2.1. 说明<a class="headerlink" href="#21-说明" title="Permanent link">&para;</a></h3>
 <p>Linux 下用光盘进行 rescue 模式的方法，需要注意的是实体机跟虚拟机还是有很大差别的，在实体机中通过光盘启动，可能会自动进入到安装界面，所有我们需要在进入安装界面前（会提示 press any key 之类）快速按键盘上的按键（只有三秒钟需要关注。）</p>
 <p>如果不理会就会进入以下界面：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flr1CrojXmnEg_2em-aHFB_ZyMid.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flr1CrojXmnEg_2em-aHFB_ZyMid.png" /></a></p>
-<h3 id="22-rescue">2.2. rescue 模式步骤<a class="headerlink" href="#22-rescue" title="Permanent link">&para;</a></h3>
+<h3 id="22-rescue-模式步骤">2.2. rescue 模式步骤<a class="headerlink" href="#22-rescue-模式步骤" title="Permanent link">&para;</a></h3>
 <p>① 选择 rescue 模式</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FowJrdDDjjJBtVov9_xukgxLYjKZ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FowJrdDDjjJBtVov9_xukgxLYjKZ.png" /></a></p>
 <p>② 选择语言</p>
@@ -10246,7 +10246,7 @@ ls: error while loading shared libraries: libc.so.6: cannot open shared object f
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Ftqf2nKZyurMm59dtSgjcxsAXXTd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Ftqf2nKZyurMm59dtSgjcxsAXXTd.png" /></a></p>
 <p>⑨ 重启后重新进入系统一切正常。
 ⑩ 作为集群，需要重新执行一些必须的挂载、开启必要服务，在这里不详述。</p>
-<h2 id="3">3. 总结<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="3-总结">3. 总结<a class="headerlink" href="#3-总结" title="Permanent link">&para;</a></h2>
 <ol>
 <li>对于系统的库文件，一定不要轻易去修改，特别是在使用 root 权限下。</li>
 <li>HPC 软件安装最好使用非 root 进行安装，如 conda；对于必须要使用 root 安装的软件，应进一步评估该软件使用的必要性，同时应该明确每一步的文件改动所带来的后果。</li>

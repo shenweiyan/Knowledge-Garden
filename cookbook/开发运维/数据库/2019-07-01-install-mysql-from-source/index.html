@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mysql" class="md-skip">
+        <a href="#一mysql-各个版本区别" class="md-skip">
           跳转至
         </a>
       
@@ -10044,7 +10044,7 @@
 </blockquote>
 <p>From：<a href="https://www.blast2go.com/images/b2g_pdfs/blast2go_cli_manual.pdf">Blast2GO Command Line User Manual</a></p>
 <p>作为 Blast2GO 本地化所依赖的数据库，下面我们介绍一下 MySQL 的安装配置、存储位置修改及新版中低级密码设置不允许的解决方法。</p>
-<h1 id="mysql">一、MySQL 各个版本区别<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h1>
+<h1 id="一mysql-各个版本区别">一、MySQL 各个版本区别<a class="headerlink" href="#一mysql-各个版本区别" title="Permanent link">&para;</a></h1>
 <p>MySQL 的官网下载地址 <a href="https://www.mysql.com/downloads/">https://www.mysql.com/downloads/</a> 的界面会有几个版本的选择，这几个版本的区别如下。</p>
 <ul>
 <li>
@@ -10065,13 +10065,13 @@
 </li>
 </ul>
 <p>MySQL Community Edition(社区免费版，<a href="https://dev.mysql.com/downloads/">https://dev.mysql.com/downloads/</a>) 又分为 MySQL Community Server、MySQL Cluster、MySQL Router、MySQL Shell、MySQL Workbench、MySQL on Windows、&hellip;、MySQL SUSE Repository 等根据不同的操作系统平台细分为多个版本。其中 MySQL Community Server 是开源免费的，这也是我们通常用的 MySQL 的版本。</p>
-<h1 id="mysql_1">二、MySQL 免安装版<a class="headerlink" href="#mysql_1" title="Permanent link">&para;</a></h1>
+<h1 id="二mysql-免安装版">二、MySQL 免安装版<a class="headerlink" href="#二mysql-免安装版" title="Permanent link">&para;</a></h1>
 <p>MySQL 提供了 rpm、源码、免安装等多种安装方式，其中通过源码编译安装是比较耗时，过程相对复杂的一个过程。对于不想使用源码编译安装的童鞋，MySQL 提供了免安装直接解压可用的版本。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh5NUAWJ25GUb2vn7p982emfFEMd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh5NUAWJ25GUb2vn7p982emfFEMd.png" /></a>
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoWgUlawC4kF4iH8tajp8oE2fFNM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoWgUlawC4kF4iH8tajp8oE2fFNM.png" /></a></p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://cdn.mysql.com/archives/mysql-8.0/mysql-8.0.12-el7-x86_64.tar.gz
 </code></pre></div>
-<h1 id="mysql_2">三、MySQL 源码包下载<a class="headerlink" href="#mysql_2" title="Permanent link">&para;</a></h1>
+<h1 id="三mysql-源码包下载">三、MySQL 源码包下载<a class="headerlink" href="#三mysql-源码包下载" title="Permanent link">&para;</a></h1>
 <p>我们以 CentOS/RedHat 平台为例来说明。进入 MySQL Community Server 下载页面 <a href="https://dev.mysql.com/downloads/mysql/">https://dev.mysql.com/downloads/mysql/</a> ，在适合 Linux 系统的 Source Code 源码中选择带有 Boost 头的压缩包（MySQL 需要 Boost C++ 库构建）进行下载。</p>
 <ul>
 <li>
@@ -10093,21 +10093,21 @@
 </ul>
 <p>如果想要下载其他版本的 MySQL，可以在 <a href="https://downloads.mysql.com/archives/community/">https://downloads.mysql.com/archives/community/</a> 选择符合自己服务器的版本进行下载。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsNFOVdmpE8AX7AQf5GWHNtDwF5I.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsNFOVdmpE8AX7AQf5GWHNtDwF5I.png" /></a></p>
-<h1 id="mysql_3">四、MySQL 源码编译安装<a class="headerlink" href="#mysql_3" title="Permanent link">&para;</a></h1>
-<h2 id="1">1. 安装依赖包<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h1 id="四mysql-源码编译安装">四、MySQL 源码编译安装<a class="headerlink" href="#四mysql-源码编译安装" title="Permanent link">&para;</a></h1>
+<h2 id="1-安装依赖包">1. 安装依赖包<a class="headerlink" href="#1-安装依赖包" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ecs-steven<span class="w"> </span>~<span class="o">]</span><span class="c1"># yum -y install gcc gcc-c++ ncurses ncurses-devel cmake bison doxygen</span>
 </code></pre></div>
-<h2 id="2-mysql">2. 新建 MySQL 用户和用户组<a class="headerlink" href="#2-mysql" title="Permanent link">&para;</a></h2>
+<h2 id="2-新建-mysql-用户和用户组">2. 新建 MySQL 用户和用户组<a class="headerlink" href="#2-新建-mysql-用户和用户组" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ecs-steven<span class="w"> </span>~<span class="o">]</span><span class="c1"># groupadd -r mysql &amp;&amp; useradd -r -g mysql -s /sbin/nologin -M mysql</span>
 </code></pre></div>
-<h2 id="3-mysql">3. 新建 MySQL 数据库数据文件目录<a class="headerlink" href="#3-mysql" title="Permanent link">&para;</a></h2>
+<h2 id="3-新建-mysql-数据库数据文件目录">3. 新建 MySQL 数据库数据文件目录<a class="headerlink" href="#3-新建-mysql-数据库数据文件目录" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ecs-steven<span class="w"> </span>~<span class="o">]</span><span class="c1"># mkdir /usr/local/software/mysql</span>
 
 <span class="c1"># mysql-8.0.12 中可以不用新建数据保存的路径，在初始化 MySQL 数据库时可通过 --datadir 参数自动生成</span>
 <span class="o">[</span>root@ecs-steven<span class="w"> </span>~<span class="o">]</span><span class="c1"># mkdir /usr/local/software/mysql/{log,data} -p</span>
 </code></pre></div>
 <p>Tip：真实的生产环境一般来说会把数据独立放在根目录下，方便磁盘挂载上去。</p>
-<h2 id="4">4. 执行预编译<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h2 id="4-执行预编译">4. 执行预编译<a class="headerlink" href="#4-执行预编译" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ecs-steven<span class="w"> </span>mysql-8.0.12<span class="o">]</span><span class="c1"># cmake . -DCMAKE_INSTALL_PREFIX=/usr/local/software/mysql \</span>
 -DMYSQL_DATADIR<span class="o">=</span>/usr/local/software/mysql/data<span class="w"> </span><span class="se">\</span>
 -DWITH_BOOST<span class="o">=</span>./boost<span class="w"> </span><span class="se">\</span>
@@ -10146,12 +10146,12 @@
 -DWITH_SSL<span class="o">=</span>system<span class="w">                                 </span>//启用系统<span class="w"> </span>OpenSSL<span class="w"> </span>库支持（yes<span class="w"> </span>等同于<span class="w"> </span>system<span class="w"> </span>）
 -DMYSQL_UNIX_ADDR<span class="o">=</span>/usr/local/software/mysql/mysqld.sock<span class="w"> </span>//指定<span class="w"> </span>mysql.sock<span class="w"> </span>路径
 </code></pre></div>
-<h2 id="5">5. 编译安装<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h2 id="5-编译安装">5. 编译安装<a class="headerlink" href="#5-编译安装" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ecs-steven<span class="w"> </span>mysql-8.0.12<span class="o">]</span><span class="c1"># make -j `grep processor /proc/cpuinfo | wc -l`</span>
 <span class="c1">#编译很消耗系统资源，小内存可能编译通不过</span>
 <span class="o">[</span>root@ecs-steven<span class="w"> </span>mysql-8.0.12<span class="o">]</span><span class="c1"># make install</span>
 </code></pre></div>
-<h2 id="6-mycnf">6. 配置 my.cnf 文件<a class="headerlink" href="#6-mycnf" title="Permanent link">&para;</a></h2>
+<h2 id="6-配置-mycnf-文件">6. 配置 my.cnf 文件<a class="headerlink" href="#6-配置-mycnf-文件" title="Permanent link">&para;</a></h2>
 <p>MySQL 服务器有许多操作参数，我们可以使用命令行选项或配置文件（option files）在服务器启动时更改这些参数。</p>
 <p>在 Windows 上，MySQL 安装程序会在基本安装目录中创建名为 my.ini 的文件作为默认选项文件（没有的话，可以自行创建）。在 Linux 中，MySQL 服务会依次从 /etc/my.cnf、/etc/mysql/my.cnf、/usr/local/mysql/etc/my.cnf、\~/.my.cnf 读取默认的 my.cnf 配置文件；在命令行下可使用 mysqld &ndash;verbose &ndash;help 命令查看 MySQL 读取配置文件后启动的参数。</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ecs-steven<span class="w"> </span>etc<span class="o">]</span><span class="c1"># cat /etc/my.cnf</span>
@@ -10227,10 +10227,10 @@ quick
 <span class="nv">read_buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>4M
 <span class="nv">write_buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>4M
 </code></pre></div>
-<h2 id="7-mysql">7. 初始化 MySQL 数据库<a class="headerlink" href="#7-mysql" title="Permanent link">&para;</a></h2>
+<h2 id="7-初始化-mysql-数据库">7. 初始化 MySQL 数据库<a class="headerlink" href="#7-初始化-mysql-数据库" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ecs-steven<span class="w"> </span>mysql-5.7.13<span class="o">]</span><span class="c1"># /usr/local/software/mysql/bin/mysqld  --defaults-file=/etc/my.cnf --initialize-insecure --user=mysql --basedir=/usr/local/software/mysql --datadir=/usr/local/software/mysql/data</span>
 </code></pre></div>
-<h2 id="8-mysql">8. MySQL 服务启动与关闭<a class="headerlink" href="#8-mysql" title="Permanent link">&para;</a></h2>
+<h2 id="8-mysql-服务启动与关闭">8. MySQL 服务启动与关闭<a class="headerlink" href="#8-mysql-服务启动与关闭" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>mysqld_safe is the recommended way to start a mysqld server on Unix. mysqld_safe adds some safety features such as restarting the server when an error occurs and logging runtime information to an error log.</p>
 </blockquote>
@@ -10245,20 +10245,20 @@ quick
 <span class="o">[</span>root@ecs-steven<span class="w"> </span>~<span class="o">]</span><span class="c1"># /usr/local/software/mysql/bin/mysqladmin shutdown</span>
 <span class="m">2018</span>-09-22T01:48:11.500105Z<span class="w"> </span>mysqld_safe<span class="w"> </span>mysqld<span class="w"> </span>from<span class="w"> </span>pid<span class="w"> </span>file<span class="w"> </span>/usr/local/software/mysql/data/mysql.pid<span class="w"> </span>ended
 </code></pre></div>
-<h2 id="9">9. 登陆数据库<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<h2 id="9-登陆数据库">9. 登陆数据库<a class="headerlink" href="#9-登陆数据库" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>/usr/local/software/mysql/bin/mysql<span class="w"> </span>-uroot
 </code></pre></div>
 <p>MySQL 第一次安装完成后，是没有设置 root 密码的，直接回车 Enter 即可登陆：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fpuu6dEhzbjLu__GrRbGu3sS_dDG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fpuu6dEhzbjLu__GrRbGu3sS_dDG.png" /></a></p>
-<h2 id="10">10. 数据库其他配置<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
-<h3 id="101-root">10.1 修改 root 账号密码<a class="headerlink" href="#101-root" title="Permanent link">&para;</a></h3>
+<h2 id="10-数据库其他配置">10. 数据库其他配置<a class="headerlink" href="#10-数据库其他配置" title="Permanent link">&para;</a></h2>
+<h3 id="101-修改-root-账号密码">10.1 修改 root 账号密码<a class="headerlink" href="#101-修改-root-账号密码" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>mysql<span class="w"> </span>-u<span class="w"> </span>root
 mysql&gt;<span class="w"> </span>use<span class="w"> </span>mysql<span class="p">;</span>
 mysql&gt;<span class="w"> </span>ALTER<span class="w"> </span>USER<span class="w"> </span><span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span><span class="w"> </span>IDENTIFIED<span class="w"> </span>BY<span class="w"> </span><span class="s1">&#39;your password&#39;</span><span class="p">;</span>
 Query<span class="w"> </span>OK,<span class="w"> </span><span class="m">0</span><span class="w"> </span>rows<span class="w"> </span>affected<span class="w"> </span><span class="o">(</span><span class="m">0</span>.01<span class="w"> </span>sec<span class="o">)</span>
 <span class="c1"># 我们也可以通过该命令直接重置 root 账号密码</span>
 </code></pre></div>
-<h3 id="102">10.2 查看目前的用户账号<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
+<h3 id="102-查看目前的用户账号">10.2 查看目前的用户账号<a class="headerlink" href="#102-查看目前的用户账号" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="k">user</span><span class="p">,</span><span class="k">host</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">mysql</span><span class="p">.</span><span class="k">user</span><span class="p">;</span>
 <span class="o">+</span><span class="c1">------------------+-----------+</span>
 <span class="o">|</span><span class="w"> </span><span class="k">user</span><span class="w">             </span><span class="o">|</span><span class="w"> </span><span class="k">host</span><span class="w">      </span><span class="o">|</span>
@@ -10272,7 +10272,7 @@ Query<span class="w"> </span>OK,<span class="w"> </span><span class="m">0</span>
 
 <span class="n">mysql</span><span class="o">&gt;</span>
 </code></pre></div>
-<h3 id="103-root">10.3 忘记 root 账号密码<a class="headerlink" href="#103-root" title="Permanent link">&para;</a></h3>
+<h3 id="103-忘记-root-账号密码">10.3 忘记 root 账号密码<a class="headerlink" href="#103-忘记-root-账号密码" title="Permanent link">&para;</a></h3>
 <p>① mysqladmin 关闭失败</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ecs-steven<span class="w"> </span>~<span class="o">]</span><span class="c1"># /usr/local/software/mysql/bin/mysqladmin shutdown</span>
 mysqladmin:<span class="w"> </span>connect<span class="w"> </span>to<span class="w"> </span>server<span class="w"> </span>at<span class="w"> </span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span>failed
@@ -10349,7 +10349,7 @@ Enter<span class="w"> </span>password:
 <span class="o">[</span>root@ecs-steven<span class="w"> </span>~<span class="o">]</span><span class="c1"># 2018-11-15T03:36:28.876747Z mysqld_safe Logging to &#39;/usr/local/software/mysql/data/mysql-error.log&#39;.</span>
 <span class="m">2018</span>-11-15T03:36:28.910624Z<span class="w"> </span>mysqld_safe<span class="w"> </span>Starting<span class="w"> </span>mysqld<span class="w"> </span>daemon<span class="w"> </span>with<span class="w"> </span>databases<span class="w"> </span>from<span class="w"> </span>/usr/local/software/mysql/data
 </code></pre></div>
-<h1 id="_1">五、设置启动脚本，开机自启动<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="五设置启动脚本开机自启动">五、设置启动脚本，开机自启动<a class="headerlink" href="#五设置启动脚本开机自启动" title="Permanent link">&para;</a></h1>
 <p>注意：如果是使用免安装版本的 MySQL，需要补充 mysql.server 中的 basedir 和 datadir：</p>
 <div class="highlight"><pre><span></span><code><span class="nv">basedir</span><span class="o">=</span>/usr/local/software/mysql
 <span class="nv">datadir</span><span class="o">=</span>/usr/local/software/mysql/data
@@ -10370,7 +10370,7 @@ Executing<span class="w"> </span>/sbin/chkconfig<span class="w"> </span>mysqld<s
 <div class="highlight"><pre><span></span><code>[root@ecs-steven ~]# ps -ef | grep mysql
 [root@ecs-steven ~]# netstat -tunpl | grep 3306
 </code></pre></div>
-<h1 id="_2">参考资料<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h1 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h1>
 <ul>
 <li>
 <p><a href="https://www.blast2go.com/images/b2g_pdfs/blast2go_cli_manual_1.1.pdf">Blast2GO Command Line User Manual</a> - Version 1.1 October 2015</p>

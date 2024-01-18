@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#背景" class="md-skip">
           跳转至
         </a>
       
@@ -5805,7 +5805,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#背景" class="md-nav__link">
     <span class="md-ellipsis">
       背景
     </span>
@@ -5814,7 +5814,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -5842,7 +5842,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#源码编译" class="md-nav__link">
     <span class="md-ellipsis">
       源码编译
     </span>
@@ -5852,7 +5852,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#go" class="md-nav__link">
+  <a href="#安装-go" class="md-nav__link">
     <span class="md-ellipsis">
       安装 Go
     </span>
@@ -5861,7 +5861,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#singularity" class="md-nav__link">
+  <a href="#安装-singularity" class="md-nav__link">
     <span class="md-ellipsis">
       安装 singularity
     </span>
@@ -5870,7 +5870,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#使用测试" class="md-nav__link">
     <span class="md-ellipsis">
       使用测试
     </span>
@@ -10123,7 +10123,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#背景" class="md-nav__link">
     <span class="md-ellipsis">
       背景
     </span>
@@ -10132,7 +10132,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -10160,7 +10160,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#源码编译" class="md-nav__link">
     <span class="md-ellipsis">
       源码编译
     </span>
@@ -10170,7 +10170,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#go" class="md-nav__link">
+  <a href="#安装-go" class="md-nav__link">
     <span class="md-ellipsis">
       安装 Go
     </span>
@@ -10179,7 +10179,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#singularity" class="md-nav__link">
+  <a href="#安装-singularity" class="md-nav__link">
     <span class="md-ellipsis">
       安装 singularity
     </span>
@@ -10188,7 +10188,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#使用测试" class="md-nav__link">
     <span class="md-ellipsis">
       使用测试
     </span>
@@ -10239,7 +10239,7 @@
 
   <h1>Singularity 初探之安装部署与避坑</h1>
 
-<h2 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="背景">背景<a class="headerlink" href="#背景" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>怎么样高效的搭建分析流程且能保证分析流程稳定运行的使用效果呢？目前主流的是 <strong>conda</strong> 和 <strong>容器技术(container)</strong>。</p>
 <p>conda 在很多文章中中已经介绍，在这不再过多叙述。虽然 <strong>conda 能解决大部分生信软件安装问题</strong>，但是若<strong>软件安装多了</strong>，会出现<strong>兼容性</strong>问题以及 <strong>&ldquo;臃肿&rdquo;</strong> 现象，为此，引入容器技术 (container) 来解决这些问题。</p>
@@ -10252,7 +10252,7 @@
 <p>Singularity 是一种专为科学计算和 HPC 环境设计的容器技术，具有与 HPC 环境的无缝集成、高度的可移植性和兼容性、安全性和可控性等优势。在处理大规模数据、模拟和深度学习等领域中，具有广泛的应用价值。</p>
 <p>🔗 来源：《<a href="https://mp.weixin.qq.com/s/PU3orRKAT5XziBsyJdhP3Q">Singularity 使用真简单</a>！——&ldquo;HPCLIB&rdquo;公众号》</p>
 </blockquote>
-<h2 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h2>
 <p>最开始选择从 GitHub 的源码库 <a href="https://github.com/sylabs/singularity/">https://github.com/sylabs/singularity/</a> 中进行<strong>非 root 的普通用户</strong>手动安装。
 服务器系统版本和内核版本：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>lsb_release<span class="w"> </span>-a
@@ -10386,14 +10386,14 @@ FATAL:<span class="w">   </span>While<span class="w"> </span>performing<span cla
 </code></pre></div>
 <p>使用<code>yum install squashfs-tools</code>安装了<code>unsquashfs</code>并添加到 $PATH 中问题依然没法解决！！！
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbnpUiB0x8v8X1EhUpD3Xm7dznd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="16f4cadef5c03cdafaae5847f3e0672.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbnpUiB0x8v8X1EhUpD3Xm7dznd.png" /></a></p>
-<h3 id="_3">源码编译<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="源码编译">源码编译<a class="headerlink" href="#源码编译" title="Permanent link">&para;</a></h3>
 <p>最后还是选择从源码安装。</p>
-<h4 id="go">安装 Go<a class="headerlink" href="#go" title="Permanent link">&para;</a></h4>
+<h4 id="安装-go">安装 Go<a class="headerlink" href="#安装-go" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://dl.google.com/go/go1.20.1.linux-amd64.tar.gz
 tar<span class="w"> </span>-xzvf<span class="w"> </span>go1.20.1.linux-amd64.tar.gz
 sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>go<span class="w"> </span>/usr/local/bin
 </code></pre></div>
-<h4 id="singularity">安装 singularity<a class="headerlink" href="#singularity" title="Permanent link">&para;</a></h4>
+<h4 id="安装-singularity">安装 singularity<a class="headerlink" href="#安装-singularity" title="Permanent link">&para;</a></h4>
 <p>如果想要非 root 的普通用户也能正常使用，mconfig 时候需要加上 <strong>&ndash;without-suid</strong>。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://github.com/apptainer/singularity/releases/download/v3.8.7/singularity-3.8.7.tar.gz
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>singularity-3.8.7.tar.gz
@@ -10402,7 +10402,7 @@ $<span class="w"> </span>./mconfig<span class="w"> </span>--prefix<span class="o
 $<span class="w"> </span>make<span class="w"> </span>-C<span class="w"> </span>./builddir
 $<span class="w"> </span>make<span class="w"> </span>-C<span class="w"> </span>./builddir<span class="w"> </span>install
 </code></pre></div>
-<h4 id="_4">使用测试<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<h4 id="使用测试">使用测试<a class="headerlink" href="#使用测试" title="Permanent link">&para;</a></h4>
 <p>初步测试 singularity build 也能正常使用了。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg7yJ8XqLya8z_7rI38Te4cVl3YG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg7yJ8XqLya8z_7rI38Te4cVl3YG.png" /></a></p>
 

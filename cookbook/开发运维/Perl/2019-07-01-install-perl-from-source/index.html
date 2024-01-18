@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#centos-7-perl" class="md-skip">
+        <a href="#一centos-7-下安装-perl" class="md-skip">
           跳转至
         </a>
       
@@ -6364,7 +6364,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-源码包下载" class="md-nav__link">
     <span class="md-ellipsis">
       1. 源码包下载
     </span>
@@ -6373,7 +6373,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-解压设置源码" class="md-nav__link">
     <span class="md-ellipsis">
       2. 解压，设置源码
     </span>
@@ -6382,7 +6382,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-编译安装" class="md-nav__link">
     <span class="md-ellipsis">
       3. 编译安装
     </span>
@@ -6391,7 +6391,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-调整环境变量" class="md-nav__link">
     <span class="md-ellipsis">
       4. 调整环境变量
     </span>
@@ -6400,7 +6400,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-安装完成" class="md-nav__link">
     <span class="md-ellipsis">
       5. 安装完成
     </span>
@@ -10090,7 +10090,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-源码包下载" class="md-nav__link">
     <span class="md-ellipsis">
       1. 源码包下载
     </span>
@@ -10099,7 +10099,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-解压设置源码" class="md-nav__link">
     <span class="md-ellipsis">
       2. 解压，设置源码
     </span>
@@ -10108,7 +10108,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-编译安装" class="md-nav__link">
     <span class="md-ellipsis">
       3. 编译安装
     </span>
@@ -10117,7 +10117,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-调整环境变量" class="md-nav__link">
     <span class="md-ellipsis">
       4. 调整环境变量
     </span>
@@ -10126,7 +10126,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-安装完成" class="md-nav__link">
     <span class="md-ellipsis">
       5. 安装完成
     </span>
@@ -10167,10 +10167,10 @@
 
 <p>!<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpxbOJPB_b-KaVp9LYgc4uRgF1a0.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="How-To-Install-Perl.jpeg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpxbOJPB_b-KaVp9LYgc4uRgF1a0.jpeg" /></a>
 Perl 是一种功能丰富的计算机程序语言，运行在超过 100 种计算机平台上，适用广泛，从大型机到便携设备，从快速原型创建到大规模可扩展开发。在生物信息分析领域，Perl 主要是做数据预处理、文本处理和格式转换、对算法效率要求不高的分析软件开发，系统管理和 pipeline 搭建等工作。这里对 Linux（主要是 CentOS）、windows 下 Perl 的安装做一个备忘。</p>
-<h1 id="centos-7-perl">一、CentOS 7 下安装 Perl<a class="headerlink" href="#centos-7-perl" title="Permanent link">&para;</a></h1>
-<h2 id="1">1. 源码包下载<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h1 id="一centos-7-下安装-perl">一、CentOS 7 下安装 Perl<a class="headerlink" href="#一centos-7-下安装-perl" title="Permanent link">&para;</a></h1>
+<h2 id="1-源码包下载">1. 源码包下载<a class="headerlink" href="#1-源码包下载" title="Permanent link">&para;</a></h2>
 <p>在官方网站下载新版本的源码包：<a href="http://www.perl.org/get.html">http://www.perl.org/get.html</a>，我下载的是 <a href="http://www.cpan.org/src/5.0/perl-5.26.1.tar.gz">perl-5.26.1.tar.gz</a>。</p>
-<h2 id="2">2. 解压，设置源码<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h2 id="2-解压设置源码">2. 解压，设置源码<a class="headerlink" href="#2-解压设置源码" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>perl-5.26.1.tar.gz
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>perl-5.26.1
 $<span class="w"> </span>./Configure<span class="w"> </span>--help
@@ -10218,7 +10218,7 @@ Usage:<span class="w"> </span>Configure<span class="w"> </span><span class="o">[
 <span class="c1"># 设置源码</span>
 $<span class="w"> </span>./Configure<span class="w"> </span>-des<span class="w"> </span>-Dprefix<span class="o">=</span>/usr/local/software/Perl-5.26<span class="w"> </span>-Dusethreads<span class="w"> </span>-Uversiononly
 </code></pre></div>
-<h2 id="3">3. 编译安装<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="3-编译安装">3. 编译安装<a class="headerlink" href="#3-编译安装" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>make
 ......
 make<span class="o">[</span><span class="m">1</span><span class="o">]</span>:<span class="w"> </span>***<span class="w"> </span><span class="o">[</span>IO.o<span class="o">]</span><span class="w"> </span>Error<span class="w"> </span><span class="m">1</span>
@@ -10236,11 +10236,11 @@ $<span class="w"> </span>make
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>make<span class="w"> </span><span class="nb">test</span>
 $<span class="w"> </span>make<span class="w"> </span>install<span class="w">   </span><span class="c1"># 命令完成后，基本安装就完成了</span>
 </code></pre></div>
-<h2 id="4">4. 调整环境变量<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h2 id="4-调整环境变量">4. 调整环境变量<a class="headerlink" href="#4-调整环境变量" title="Permanent link">&para;</a></h2>
 <p>在 \~/.bashrc 中把 perl 添加到 PATH 中，然后 source \~/.bashrc 刷新。</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/usr/local/software/Perl-5.26/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
 </code></pre></div>
-<h2 id="5">5. 安装完成<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h2 id="5-安装完成">5. 安装完成<a class="headerlink" href="#5-安装完成" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>perl<span class="w"> </span>-version
 
 This<span class="w"> </span>is<span class="w"> </span>perl<span class="w"> </span><span class="m">5</span>,<span class="w"> </span>version<span class="w"> </span><span class="m">26</span>,<span class="w"> </span>subversion<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">(</span>v5.26.1<span class="o">)</span><span class="w"> </span>built<span class="w"> </span><span class="k">for</span><span class="w"> </span>x86_64-linux-thread
@@ -10271,11 +10271,11 @@ Built<span class="w"> </span>under<span class="w"> </span>linux
 <span class="w">    </span>/usr/local/software/Perl-5.26/lib/perl5/5.26.1/x86_64-linux
 <span class="w">    </span>/usr/local/software/Perl-5.26/lib/perl5/5.26.1
 </code></pre></div>
-<h1 id="windows-7-perl">二、Windows 7 下安装 Perl<a class="headerlink" href="#windows-7-perl" title="Permanent link">&para;</a></h1>
+<h1 id="二windows-7-下安装-perl">二、Windows 7 下安装 Perl<a class="headerlink" href="#二windows-7-下安装-perl" title="Permanent link">&para;</a></h1>
 <p>windows 下的 Perl 安装推荐使用 ActivePerl（<a href="https://www.activestate.com/products/activeperl/">https://www.activestate.com/products/activeperl/</a>），安装步骤如下。</p>
-<h2 id="21">2.1 安装包下载<a class="headerlink" href="#21" title="Permanent link">&para;</a></h2>
+<h2 id="21-安装包下载">2.1 安装包下载<a class="headerlink" href="#21-安装包下载" title="Permanent link">&para;</a></h2>
 <p>在这里我们下载 64-bit 的 <a href="https://www.activestate.com/products/activeperl/downloads/thank-you/?dl=https://downloads.activestate.com/ActivePerl/releases/5.26.3.2603/ActivePerl-5.26.3.2603-MSWin32-x64-a95bce075.exe">Perl-5.26.3</a>。</p>
-<h2 id="22">2.2 安装与设置<a class="headerlink" href="#22" title="Permanent link">&para;</a></h2>
+<h2 id="22-安装与设置">2.2 安装与设置<a class="headerlink" href="#22-安装与设置" title="Permanent link">&para;</a></h2>
 <p>ActivePerl-5.26.3.2603-MSWin32-x64-a95bce075.exe 安装包下载完后，我们直接点击进行安装。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FltQ3ily8fUf7jsc8lkAaa1S6j2C.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FltQ3ily8fUf7jsc8lkAaa1S6j2C.png" /></a></p>
 <p>选择 &ldquo;Custom&rdquo; 自定义安装：
@@ -10288,10 +10288,10 @@ Built<span class="w"> </span>under<span class="w"> </span>linux
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtVmx_MsNHaXijdtfSGVjZM3irE3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtVmx_MsNHaXijdtfSGVjZM3irE3.png" /></a></p>
 <p>如果我们在安装过程中没有勾选把 Perl 添加到系统环境变量，DOC 中直接执行 perl -V 会出现 <strong>&ldquo;&lsquo;perl&rsquo; is not recognized as an internal or external command&rdquo;</strong> 提示，这时候我们需要手动把 perl 添加到 Windows 的系统环境变量中就可以了。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FozuAmdNUImdIzTJhZmE2SIVFA6o.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FozuAmdNUImdIzTJhZmE2SIVFA6o.png" /></a></p>
-<h2 id="23-cpan">2.3 配置 cpan<a class="headerlink" href="#23-cpan" title="Permanent link">&para;</a></h2>
+<h2 id="23-配置-cpan">2.3 配置 cpan<a class="headerlink" href="#23-配置-cpan" title="Permanent link">&para;</a></h2>
 <p>为了更好对 Perl 进行扩展，方便以后的模块安装，我们最好配置一下 cpan。ActivePerl 有个好处就是在初始化 cpan 的时候会自动把 dmake、gcc、g++、mingw32-make 等 windows 常用的编译工具一起安装到 &ldquo;<strong>$Dprefix/site/bin</strong>&rdquo; 目录下，免去了我们手动安装这些编译器的各种麻烦。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk2vzpGMiygw3YHFIf3vV7_hj-5-.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk2vzpGMiygw3YHFIf3vV7_hj-5-.png" /></a></p>
-<h2 id="24">2.4 安装完成<a class="headerlink" href="#24" title="Permanent link">&para;</a></h2>
+<h2 id="24-安装完成">2.4 安装完成<a class="headerlink" href="#24-安装完成" title="Permanent link">&para;</a></h2>
 <p>到这里，windows 下的 ActivePerl（perl-5.26）就安装完成了！</p>
 
 

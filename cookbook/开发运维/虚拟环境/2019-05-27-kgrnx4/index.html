@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#一引言" class="md-skip">
           跳转至
         </a>
       
@@ -10037,12 +10037,12 @@
   
 
 
-<h1 id="_1">一、引言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="一引言">一、引言<a class="headerlink" href="#一引言" title="Permanent link">&para;</a></h1>
 <p>Jupyter（以前叫 iPython）已经被数据科学家，研究人员和分析师广泛采用。Jupyter 的笔记本用户界面可以将可执行代码与叙述性文本，方程式，交互式可视化和图像混合在一起，以加强团队合作，并推动可重复的研究和培训向前发展。Jupyter 开始于 Python 语言，现在拥有 50 种不同语言的内核，而 IRKernel 是用于 Jupyter 的本地 R 内核。</p>
 <p>数据科学家、研究人员和分析师使用 conda   软件包管理器来安装和组织项目依赖。通过 conda，他们可以轻松地构建和共享元数据包，这些元数据包是可下载的软件包。conda 可以在 Linux, OS X, 和 Windows 下工作，并且是与语言无关的，因此我们可以将它用于任何编程语言以及依赖于多种语言的项目。</p>
 <p>接下来，让我们使用 conda 和 Jupyter 在 R 中开始一个数据科学项目。</p>
-<h1 id="_2">二、安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
-<h2 id="1-r-essentials">1. 创建&rdquo;R Essentials&rdquo;<a class="headerlink" href="#1-r-essentials" title="Permanent link">&para;</a></h2>
+<h1 id="二安装">二、安装<a class="headerlink" href="#二安装" title="Permanent link">&para;</a></h1>
+<h2 id="1-创建r-essentials">1. 创建&rdquo;R Essentials&rdquo;<a class="headerlink" href="#1-创建r-essentials" title="Permanent link">&para;</a></h2>
 <p>Anaconda 团队已经创建了一个 &ldquo;<a href="https://anaconda.org/r/r-essentials">R Essentials</a>&rdquo; 把 IRKernel 和数据科学分析中最常用的超过 80 个 R 包捆绑在了一起，这些包包括：<strong>dplyr、shiny、ggplot2、tidyr、caret</strong> 和 <strong>nnet</strong>。</p>
 <p>&ldquo;R Essentials&rdquo; 下载需要通过 conda 命令。<a href="https://conda.io/miniconda.html">Miniconda</a> 已经包含了 conda、Python 以及其他的一些必须包，而 <a href="https://www.anaconda.com/download/#linux">Anaconda</a> 则包含了 miniconda 的所有东西，以及用于科学，数学，工程和数据分析的 200 多个最受欢迎的 Python 软件包。用户可以选择安装 Anaconda 一次安装所有的包；也可以先安装 Miniconda ，然后再使用 conda 命令安装他们需要的包，包括在 Anaconda 中的任何包。</p>
 <p>如果你已经拥有了 conda，你可以为当前环境安装 &ldquo;R Essentials&rdquo;：</p>
@@ -10051,7 +10051,7 @@
 <p>或者创建一个专门用于 &ldquo;R essentials&rdquo; 的新环境：</p>
 <div class="highlight"><pre><span></span><code>conda create -n my-r-env -c r r-essentials
 </code></pre></div>
-<h2 id="2">2. 常见问题与解决<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h2 id="2-常见问题与解决">2. 常见问题与解决<a class="headerlink" href="#2-常见问题与解决" title="Permanent link">&para;</a></h2>
 <p>① conda 安装完 r-essentials，命令行下启动 R 出错：</p>
 <div class="highlight"><pre><span></span><code>$ R
 ......
@@ -10080,14 +10080,14 @@ In doTryCatch(return(expr), name, parentenv, handler) :
 <p>解决方法：</p>
 <div class="highlight"><pre><span></span><code>conda install -c clinicalgraphics libxdmcp
 </code></pre></div>
-<h1 id="jupyter-notebook-r">三、在 Jupyter Notebook 中使用 R<a class="headerlink" href="#jupyter-notebook-r" title="Permanent link">&para;</a></h1>
+<h1 id="三在-jupyter-notebook-中使用-r">三、在 Jupyter Notebook 中使用 R<a class="headerlink" href="#三在-jupyter-notebook-中使用-r" title="Permanent link">&para;</a></h1>
 <p>Jupyter 提供了一个强大的笔记本交互界面来写你的分析，并与同行分享。打开一个 shell 并运行下面这个命令来启动浏览器中的 Jupyter 笔记本界面：</p>
 <div class="highlight"><pre><span></span><code>jupyter notebook
 </code></pre></div>
 <p>创建一个新的 R 笔记：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsL1JJCzuG8hmI3NEaJrbVnhNv6k.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsL1JJCzuG8hmI3NEaJrbVnhNv6k.png" /></a></p>
 <p>接下来，你就可以在 notebook cells 中编写和运行你的 R 代码了。</p>
-<h2 id="1-jupyter-notebook-r">1. Jupyter Notebook R 笔记示例<a class="headerlink" href="#1-jupyter-notebook-r" title="Permanent link">&para;</a></h2>
+<h2 id="1-jupyter-notebook-r-笔记示例">1. Jupyter Notebook R 笔记示例<a class="headerlink" href="#1-jupyter-notebook-r-笔记示例" title="Permanent link">&para;</a></h2>
 <ul>
 <li>导入数据整理 R 包，dplyr：</li>
 </ul>
@@ -10139,7 +10139,7 @@ Out [3]:
 <div class="highlight"><pre><span></span><code>In [5]: ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point(size=3)
 </code></pre></div>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjEL3LUSDzeV3Kass0TykjC6ePDK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjEL3LUSDzeV3Kass0TykjC6ePDK.png" /></a></p>
-<h2 id="2_1">2. 转换笔记为幻灯片<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h2>
+<h2 id="2-转换笔记为幻灯片">2. 转换笔记为幻灯片<a class="headerlink" href="#2-转换笔记为幻灯片" title="Permanent link">&para;</a></h2>
 <p>Jupyter 可以把笔记转换为在线幻灯片，供讲座和教程使用。</p>
 <p>要将笔记本转换为 <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> 演示文稿，请将 &ldquo;单元格工具栏(Cell Toolbar)&rdquo; 设置为“幻灯片放映(Slideshow”)”：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvcE5wErriZpC6bTN4U-7AopHDao.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvcE5wErriZpC6bTN4U-7AopHDao.png" /></a></p>
@@ -10150,7 +10150,7 @@ Out [3]:
 </code></pre></div>
 <p>最后，打开浏览器展示幻灯片：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FouaL1PI0pjnWcTrpMcTCsveezUg.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FouaL1PI0pjnWcTrpMcTCsveezUg.png" /></a></p>
-<h2 id="3">3. 常见问题与解决<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="3-常见问题与解决">3. 常见问题与解决<a class="headerlink" href="#3-常见问题与解决" title="Permanent link">&para;</a></h2>
 <p>① jupyter notebook 中 R 画图，不显示文字、标签。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoTBAmgy7qKqdljYICkmVWmgL_-T.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoTBAmgy7qKqdljYICkmVWmgL_-T.png" /></a></p>
 <p>解决方法：</p>
@@ -10158,7 +10158,7 @@ Out [3]:
 conda install -c anaconda fonts-anaconda
 </code></pre></div>
 <p>参考：<a href="https://github.com/ContinuumIO/anaconda-issues/issues/7455">https://github.com/ContinuumIO/anaconda-issues/issues/7455</a></p>
-<h1 id="r">四、创建自定义 R 包<a class="headerlink" href="#r" title="Permanent link">&para;</a></h1>
+<h1 id="四创建自定义-r-包">四、创建自定义 R 包<a class="headerlink" href="#四创建自定义-r-包" title="Permanent link">&para;</a></h1>
 <p>出于用户使用方便考虑，Anaconda 已经在 “R Essentials” 中打包了一些最常用的数据科学 R 包。使用 <code>conda metapackage</code> 命令创建您自己的 R 软件包以便与同行共享也非常容易。例如，提供一个只包含在我们的示例笔记本中使用的库，名字为 custom-r-bundle 的下载程序，只需创建 metapackage 即可：</p>
 <div class="highlight"><pre><span></span><code>conda metapackage custom-r-bundle 0.1.0 --dependencies r-irkernel jupyter r-ggplot2 r-dplyr --summary &quot;My custom R bundle&quot;
 </code></pre></div>
@@ -10170,9 +10170,9 @@ anaconda upload path/to/custom-r-bundle-0.1.0-0.tar.bz2
 <p>现在，任何人都可以通过运行下面的命令来获取所有这些包和依赖关系：</p>
 <div class="highlight"><pre><span></span><code>conda install -c &lt;your anaconda.org username&gt; custom-r-bundle
 </code></pre></div>
-<h1 id="_3">五、总结<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
+<h1 id="五总结">五、总结<a class="headerlink" href="#五总结" title="Permanent link">&para;</a></h1>
 <p>本博客文章探讨 Jupyter 如何为 R 用户提供一个漂亮的笔记本界面来进行开发，叙述和分享 R 中的数据科学项目。同样的，对于开始，打包和跟踪必要的依赖关系以便用 conda 和 &ldquo;R essentials&rdquo; 复制分析和结果，也是非常简单的。</p>
-<h1 id="_4">六、参考资料<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
+<h1 id="六参考资料">六、参考资料<a class="headerlink" href="#六参考资料" title="Permanent link">&para;</a></h1>
 <ol>
 <li><a href="https://www.anaconda.com/developer-blog/jupyter-and-conda-r/">https://www.anaconda.com/developer-blog/jupyter-and-conda-r/</a></li>
 </ol>

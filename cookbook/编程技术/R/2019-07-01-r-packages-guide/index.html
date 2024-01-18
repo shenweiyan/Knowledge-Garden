@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-什么是包" class="md-skip">
           跳转至
         </a>
       
@@ -10051,7 +10051,7 @@
 <li>在 R 包之间进行选择：您如何找到适合您的分析的包？</li>
 </ul>
 <p>如果您是一位经验丰富的用户，您可以随时学习新内容（例如我在前一段中提到的三个软件包的名称）。 无论如何，欢迎阅读 R 包的介绍以及如何使用它们！</p>
-<h1 id="1">1. 什么是包<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
+<h1 id="1-什么是包">1. 什么是包<a class="headerlink" href="#1-什么是包" title="Permanent link">&para;</a></h1>
 <p>让我们从一些定义开始。 包是用于组织您自己工作的一种合适方式（a suitable way），如果您愿意，也可以与他人分享。 通常，包将包含代码（不仅仅 是 R 代码！），包及内部函数相关的文档，一些以检查一切是否正常工作的测试（some tests to check everything works as it should），以及数据集。</p>
 <p><a href="https://cran.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file">DESCRIPTION 文件</a> 提供了有关包的基本信息，您可以在其中找到包的功能，作者是谁，文档所属的版本，日期，使用的许可类型以及包依赖性。</p>
 <p>请注意，您也可以单击 <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/DESCRIPTION">此处</a> 查看 DESCRIPTION 文件。</p>
@@ -10060,15 +10060,15 @@
 <div class="highlight"><pre><span></span><code><span class="nf">packageDescription</span><span class="p">(</span><span class="s">&quot;stats&quot;</span><span class="p">)</span>
 <span class="nf">help</span><span class="p">(</span><span class="n">package</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;stats&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h1 id="2">2. 什么是存储库<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<h1 id="2-什么是存储库">2. 什么是存储库<a class="headerlink" href="#2-什么是存储库" title="Permanent link">&para;</a></h1>
 <p>存储库（repository）是包所在的位置，因此您可以从存储库中安装 R 包。 虽然您或您的组织可能拥有本地存储库，但通常它们是在线并且可供所有人访问的。 R 软件包最受欢迎的三个存储库是：</p>
 <ul>
 <li><a href="https://cran.r-project.org/">CRAN</a>：官方存储库，它是一个由全球 R 社区维护的 ftp 和 Web 服务器网络。 它是由 R 基金会协调的，对于要在此发布的包，它需要通过几个测试，以确保包遵循 CRAN 策略。 你可以在 <a href="https://cran.r-project.org/web/packages/policies.html">这里</a> 找到更多细节。</li>
 <li><a href="https://www.bioconductor.org/">Bioconductor</a>：这是一个专题库，用于生物信息学的开源软件。 作为 CRAN，它有自己的 <a href="https://www.bioconductor.org/developers/package-submission/">提交和审核流程</a>，其社区非常活跃，每年举行多次会议。</li>
 <li><a href="https://github.com/">Github</a>：虽然这不是 R 特有的，但 github 可能是开源项目中最受欢迎的存储库。 它的受欢迎程度来自于开源的无限空间，与 git 的集成，版本控制软件以及与其他人共享和协作的便利性。 但请注意，没有与之相关的审核流程。</li>
 </ul>
-<h1 id="3-r">3. 如何安装 R 包<a class="headerlink" href="#3-r" title="Permanent link">&para;</a></h1>
-<h2 id="cran">从 CRAN 安装<a class="headerlink" href="#cran" title="Permanent link">&para;</a></h2>
+<h1 id="3-如何安装-r-包">3. 如何安装 R 包<a class="headerlink" href="#3-如何安装-r-包" title="Permanent link">&para;</a></h1>
+<h2 id="从-cran-安装">从 CRAN 安装<a class="headerlink" href="#从-cran-安装" title="Permanent link">&para;</a></h2>
 <p>如何安装软件包取决于它的位置。 因此，对于公开可用的包，这意味着它属于哪个存储库。 最常见的方法是使用 CRAN 存储库，然后只需要包的名称并使用命令 <code>install.packages（"package"）</code>。</p>
 <p>例如，y 已经在 CRAN 中发布，并且仍然在线并正在更新的最早的软件包是来自 Daniel Adler 的 <code>vioplot</code> 软件包。</p>
 <p>你能找到它的发布日期吗？ 线索：在包装说明中。</p>
@@ -10105,7 +10105,7 @@
 <p>最后，要一次安装多个包，只需在 <code>install.packages()</code>函数的第一个参数中将它们写为字符向量：</p>
 <div class="highlight"><pre><span></span><code><span class="nf">install.packages</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;vioplot&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;MASS&quot;</span><span class="p">))</span>
 </code></pre></div>
-<h2 id="cran_1">从 CRAN 镜像中安装<a class="headerlink" href="#cran_1" title="Permanent link">&para;</a></h2>
+<h2 id="从-cran-镜像中安装">从 CRAN 镜像中安装<a class="headerlink" href="#从-cran-镜像中安装" title="Permanent link">&para;</a></h2>
 <p>请记住，CRAN 是一个服务器网络（每个服务器称为&rdquo;镜像（mirror）&rdquo;），因此您可以指定要使用的服务器。 如果您通过 RGui 接口使用 R，则可以通过从使用 <code>install.packages()</code>命令后出现的列表中选择它来完成。 在 RStudio 上，默认情况下已选择镜像。</p>
 <p>您还可以使用 <code>chooseCRANmirror()</code>选择镜像，或使用 <code>repo</code> 参数直接在 <code>install.packages()</code>函数内选择镜像。 您可以使用<code>getCRANmirrors()</code>或直接在此 <a href="https://cran.r-project.org/mirrors.html">链接</a> 上查看可用镜像列表。</p>
 <p>示例：要使用 Ghent University Library 镜像（比利时）安装 vioplot 软件包，您可以运行以下命令：</p>
@@ -10115,7 +10115,7 @@
 <div class="highlight"><pre><span></span><code><span class="nf">options</span><span class="p">(</span><span class="s">&quot;repos&quot;</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="n">CRAN</span><span class="o">=</span><span class="s">&quot;https://mirrors.tuna.tsinghua.edu.cn/CRAN/&quot;</span><span class="p">))</span>
 <span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;vioplot&#39;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="bioconductor">安装 Bioconductor 包<a class="headerlink" href="#bioconductor" title="Permanent link">&para;</a></h2>
+<h2 id="安装-bioconductor-包">安装 Bioconductor 包<a class="headerlink" href="#安装-bioconductor-包" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Bioconductor 是和 R 版本绑定的，这是为了确保用户不把包安装在错误的版本上。Bioconductor 发行版每年更新两次，它在任何时候都有一个发行版本（release version），对应于 R 的发行版本。此外，Bioconductor 还有一个开发版本（development version），它对应于 R 的开发版本。</p>
 <p>R 每年（通常是 4 月中旬）在 &lsquo;x.y.z&rsquo; 中发布一个 &lsquo;.y&rsquo; 版本，但 Bioconductor 每 6 个月（4 月中旬和 10 月中旬）发布一个 &lsquo;.y&rsquo; 版本。</p>
@@ -10125,7 +10125,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">BiocManager</span><span class="o">::</span><span class="nf">version</span><span class="p">()</span>
 <span class="c1">## &#39;3.8&#39;</span>
 </code></pre></div>
-<h3 id="bioconductor-37">Bioconductor &lt;= 3.7<a class="headerlink" href="#bioconductor-37" title="Permanent link">&para;</a></h3>
+<h3 id="bioconductor--37">Bioconductor &lt;= 3.7<a class="headerlink" href="#bioconductor--37" title="Permanent link">&para;</a></h3>
 <p>对于 Bioconductor，在 R-3.5（Bioconductor-3.7） 前安装包的标准方法是首先执行以下脚本：</p>
 <div class="highlight"><pre><span></span><code><span class="nf">source</span><span class="p">(</span><span class="s">&quot;https://bioconductor.org/biocLite.R&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -10135,7 +10135,7 @@
 <p>但是，如果您只对此存储库中的一些特定包感兴趣，则可以直接键入它们的名称作为字符向量：</p>
 <div class="highlight"><pre><span></span><code><span class="nf">biocLite</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;GenomicFeatures&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;AnnotationDbi&quot;</span><span class="p">))</span>
 </code></pre></div>
-<h3 id="bioconductor-38">Bioconductor &gt;= 3.8<a class="headerlink" href="#bioconductor-38" title="Permanent link">&para;</a></h3>
+<h3 id="bioconductor--38">Bioconductor &gt;= 3.8<a class="headerlink" href="#bioconductor--38" title="Permanent link">&para;</a></h3>
 <p>从 R-3.5（Bioconductor-3.8）起，Bioconductor 更改了 R 包的安装方式：它们通过发布在 CRAN 的 <code>[BiocManager](https://cran.r-project.org/web/packages/BiocManager/index.html)</code> 包来对 Bioconductor 的包进行安装和管理——通过 CRAN 安装 <code>BiocManager</code>，再通过这个包来安装 Bioconductor 的包。</p>
 <div class="highlight"><pre><span></span><code><span class="c1">#设置 Bioconductor 镜像</span>
 <span class="nf">options</span><span class="p">(</span><span class="n">BioC_mirror</span><span class="o">=</span><span class="s">&quot;https://mirrors.tuna.tsinghua.edu.cn/bioconductor&quot;</span><span class="p">)</span>
@@ -10143,7 +10143,7 @@
 <span class="c1"># 安装 Bioconductor 的 R 包</span>
 <span class="n">BiocManager</span><span class="o">::</span><span class="nf">install</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;GenomicRanges&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Organism.dplyr&quot;</span><span class="p">))</span>
 </code></pre></div>
-<h2 id="devtools">通过 devtools 安装<a class="headerlink" href="#devtools" title="Permanent link">&para;</a></h2>
+<h2 id="通过-devtools-安装">通过 devtools 安装<a class="headerlink" href="#通过-devtools-安装" title="Permanent link">&para;</a></h2>
 <p>如上所述，每个存储库都有自己的方法安装各自对应的包，因此，如果您经常使用来自不同来源的包，这可能会有点令人沮丧。 更有效的方法可能是使用 devtools 包来简化此过程，因为它包含了每个存储库的特定功能，包括 CRAN。</p>
 <p>您可以像往常一样使用 <code>install.packages("devtools")</code> 安装 <code>devtools</code>，但您可能还需要在 Windows 上安装 Rtools，在 Mac 上安装 Xcode 命令行工具，或在 Linux 上安装 <code>r-base-dev</code> 和 <code>r-devel</code>。 <a href="https://www.rstudio.com/products/rpackages/devtools/">这里</a> 有关于 devtools 和安装的更多细节。</p>
 <p>安装 devtools 后，您将能够使用实用程序功能来安装另一个软件包。 选项是：</p>
@@ -10165,7 +10165,7 @@
 <span class="c1"># From local</span>
 <span class="n">devtools</span><span class="o">::</span><span class="nf">install_local</span><span class="p">(</span><span class="s">&quot;babynames.zip&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h1 id="4">4. 如何更新，删除和检查已安装的软件包<a class="headerlink" href="#4" title="Permanent link">&para;</a></h1>
+<h1 id="4-如何更新删除和检查已安装的软件包">4. 如何更新，删除和检查已安装的软件包<a class="headerlink" href="#4-如何更新删除和检查已安装的软件包" title="Permanent link">&para;</a></h1>
 <p>在你花费更多时间使用 R 之后，你每周甚至每天都会使用<code>install.packages()</code> 几次是正常的，考虑到 R 软件包的开发速度，你可能需要更新或者更换你心爱的 R 包。 在本节中，您将找到一些可以帮助您管理集合的功能。</p>
 <ul>
 <li>要检查计算机上已经安装的 R 软件包，您可以使用：</li>
@@ -10192,12 +10192,12 @@
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;vioplot&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h1 id="5">5. 是否有用于安装包的用户界面<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
+<h1 id="5-是否有用于安装包的用户界面">5. 是否有用于安装包的用户界面<a class="headerlink" href="#5-是否有用于安装包的用户界面" title="Permanent link">&para;</a></h1>
 <p>如果您更喜欢图形用户界面来安装包，则 RStudio 和 RGui 都包含它们。 在 RStudio 中，您可以在&rdquo;工具&rdquo; -&gt; &ldquo;安装包&rdquo;中找到它，然后您将在弹出窗口中键入要安装的包：
 <a class="glightbox" href="https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rstudio1.png/bioinit#id=jTQdU&amp;originHeight=354&amp;originWidth=485&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=&amp;width=" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rstudio1.png/bioinit#id=jTQdU&amp;originHeight=354&amp;originWidth=485&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=&amp;width=" /></a></p>
 <p>在 RGui 中，您将在&rdquo;包（Packages）&rdquo;菜单下找到实用程序。
 <a class="glightbox" href="https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rgui1.png/bioinit#id=h2fxg&amp;originHeight=195&amp;originWidth=422&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=&amp;width=" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rgui1.png/bioinit#id=h2fxg&amp;originHeight=195&amp;originWidth=422&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=&amp;width=" /></a></p>
-<h1 id="6">6. 如何加载程序包<a class="headerlink" href="#6" title="Permanent link">&para;</a></h1>
+<h1 id="6-如何加载程序包">6. 如何加载程序包<a class="headerlink" href="#6-如何加载程序包" title="Permanent link">&para;</a></h1>
 <p>安装软件包后，您就可以使用其功能了。 如果您只需要在包中偶尔使用一些函数或数据，则可以使用符号 <code>packagename::functionname()</code> 来访问它们。 例如，由于您已安装 <code>babynames</code> 包，因此可以浏览其中一个数据集。</p>
 <p>您还记得如何查看包中包含哪些功能和数据的概述？是的，<code>help(package = "babynames")</code> 可以告诉你这个。</p>
 <p>要访问 <code>babynames</code> 包中的 <code>births</code> 数据集，只需键入：</p>
@@ -10239,7 +10239,7 @@
 </code></pre></div>
 <p>您可能已经听说过 <code>require()</code> 函数：确实可以使用此函数加载包，但区别在于如果未安装包，它不会引发错误。所以请仔细使用此功能！</p>
 <p>提示：<a href="https://yihui.name/en/2014/07/library-vs-require/">这里</a> 强烈推荐一篇关于此主题的文章。</p>
-<h1 id="7-package-library">7. Package 和 Library 的区别<a class="headerlink" href="#7-package-library" title="Permanent link">&para;</a></h1>
+<h1 id="7-package-和-library-的区别">7. Package 和 Library 的区别<a class="headerlink" href="#7-package-和-library-的区别" title="Permanent link">&para;</a></h1>
 <p>说到 <code>library()</code> 函数，有时候包和库之间会有混淆，有时候你可以返现人们会把库（libraries）也叫成包（packages）。</p>
 <p>请不要混淆：<code>library()</code> 是用于加载包的命令，它指的是包含包的位置，通常是计算机上的文件夹，而包（package）是方便地捆绑的函数的集合。</p>
 <p>也许可以引用来自 RStudio 的首席数据科学家 Hadley Wickham 以及 &ldquo;Writing functions in R&rdquo; DataCamp 课程讲师的对话说明一下：</p>
@@ -10250,14 +10250,14 @@
 <p>关于这两者之间的区别，一个更好的例子是运行不带参数的 <code>library()</code>。它将为您提供计算机上不同库中安装的软件包列表：</p>
 <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">()</span>
 </code></pre></div>
-<h1 id="8">8. 如何一次加载多个包<a class="headerlink" href="#8" title="Permanent link">&para;</a></h1>
+<h1 id="8-如何一次加载多个包">8. 如何一次加载多个包<a class="headerlink" href="#8-如何一次加载多个包" title="Permanent link">&para;</a></h1>
 <p>虽然您可以在 <code>install.packages()</code> 函数中输入一组名称向量来同时安装多个包，但在 <code>library()</code> 函数的情况下，这是不可能的。 您可以一次加载一组软件包，或者如果您愿意，可以使用 R 用户开发的众多解决方法之一。</p>
 <p>您可以在 <a href="https://stackoverflow.com/questions/8175912/load-multiple-packages-at-once">this Stack Overflow discussion</a>，<a href="https://cran.r-project.org/web/packages/easypackages/README.html">this R package</a> 和 <a href="https://gist.github.com/stevenworthington/3178163">this GitHub repository</a> 中找到示例。</p>
-<h1 id="9">9. 如何卸除已加载的包<a class="headerlink" href="#9" title="Permanent link">&para;</a></h1>
+<h1 id="9-如何卸除已加载的包">9. 如何卸除已加载的包<a class="headerlink" href="#9-如何卸除已加载的包" title="Permanent link">&para;</a></h1>
 <p>要卸除已加载的包，可以使用 <code>detach()</code> 函数。</p>
 <div class="highlight"><pre><span></span><code><span class="nf">detach</span><span class="p">(</span><span class="s">&quot;package:babynames&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">unload</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
 </code></pre></div>
-<h1 id="10">10. 有什么文档和帮助的替代来源<a class="headerlink" href="#10" title="Permanent link">&para;</a></h1>
+<h1 id="10-有什么文档和帮助的替代来源">10. 有什么文档和帮助的替代来源<a class="headerlink" href="#10-有什么文档和帮助的替代来源" title="Permanent link">&para;</a></h1>
 <p>正如您在上面的部分中所读到的那样，DESCRIPTION 文件包含有关包的基本信息，即使该信息非常有用，也无法帮助您使用此包进行分析。 然后，您将需要另外两个文档源：帮助文件和小品文（vignettes）。</p>
 <h2 id="help-files">Help Files<a class="headerlink" href="#help-files" title="Permanent link">&para;</a></h2>
 <p>与基础的 R 一样，命令 <code>?()</code> 和 <code>help()</code>是开始使用软件包时的第一个文档源。 你可能记得你可以使用 <code>help(package = "packagename") 来获得包的一般概述，但是如果尚未加载包得情况下，每个函数都可以通过</code>help(&ldquo;name of the function&rdquo;)<code>或</code>help(function, package = &ldquo;package&rdquo;)` 来单独探讨，您通常会在其中找到函数及其参数的描述以及应用程序示例。</p>
@@ -10289,7 +10289,7 @@
 </code></pre></div>
 <p>在 RStudio 上，这将显示在右侧的 &ldquo;帮助&rdquo; 选项卡上，而在 RGui 或命令行中，这将打开带有 vignette 的浏览器窗口。</p>
 <p>在 <a href="https://www.r-project.org/help.html">此链接</a> 上，您可以找到更多有关从 R 获得帮助的选项。</p>
-<h1 id="11-r">11. 如何选择合适的 R 包<a class="headerlink" href="#11-r" title="Permanent link">&para;</a></h1>
+<h1 id="11-如何选择合适的-r-包">11. 如何选择合适的 R 包<a class="headerlink" href="#11-如何选择合适的-r-包" title="Permanent link">&para;</a></h1>
 <p>此时，你应该可以安装并从你的 R 包中获得最大的收益，但仍然有一个最后的问题：你在哪里找到你需要的软件包？</p>
 <p>发现包的典型方法是通过学习 R，在许多教程和课程中，通常会提到最流行的包。 DataCamp 课程在这里就是一个很好的例子：&rdquo;<a href="https://www.datacamp.com/courses/cleaning-data-in-r">Cleaning Data in R</a>&rdquo; 教授了所有关于 &lsquo;tidyr&rsquo; 包的使用知识，&rdquo;<a href="https://www.datacamp.com/courses/data-table-data-manipulation-r-tutorial">Data Analysis in R, the data.table Way</a>&rdquo; 讲述如何使用 <code>data.table</code> 包进行数据处理，等等。</p>
 <p>对于您想要通过 R 中去解决的每个主题，您可以找到一个有趣的包。但是如果你有一个特定的问题并且你不知道从哪里开始怎么办，例如，正如我在这篇文章的介绍中所说的那样，如果你有兴趣分析一些韩文的文本怎么办？或者如果你想收集一些天气数据怎么办？ 或估计蒸发蒸腾量？</p>
@@ -10348,7 +10348,7 @@
 <ul>
 <li><a href="https://www.rdocumentation.org/docs/">RDocumentation API</a>。最后，RDocumentation 不仅是一个网站和一个 R 包，还是一个 API。 对于需要更多灵活性的更高级用户，<a href="http://RDocumentation.org">RDocumentation.org</a> 提供了具有其网页功能的 JSON API。</li>
 </ul>
-<h1 id="_1">总结<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h1>
 <p>本文章涵盖了广泛的通过使用包来从 R 中获得最大收益的相关技术（techniques）和功能（functions）。 像往常一样，在 R 中执行某项任务的方法不止一种，管理包也不例外。</p>
 <p>我希望今天您已经学习了最常用的和一些替代方法来发现，安装，加载，更新，获取帮助或删除软件包。</p>
 <p>我知道这篇文章没有详细介绍有关包的内部结构或如何创建自己的包。 请继续关注 DataCamp 的博客以及这些和其他主题相关的课程，但与此同时，您可以在 <a href="http://r-pkgs.had.co.nz/">这里</a> 找到一本很好的 &ldquo;R packages&rdquo; 参考书。</p>

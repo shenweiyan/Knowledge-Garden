@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#前提条件与思路" class="md-skip">
           跳转至
         </a>
       
@@ -10003,7 +10003,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#前提条件与思路" class="md-nav__link">
     <span class="md-ellipsis">
       前提条件与思路
     </span>
@@ -10012,7 +10012,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#获取已发表文章数" class="md-nav__link">
     <span class="md-ellipsis">
       获取已发表文章数
     </span>
@@ -10021,7 +10021,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#获取所有的文章信息" class="md-nav__link">
     <span class="md-ellipsis">
       获取所有的文章信息
     </span>
@@ -10157,7 +10157,7 @@
 <p>记录一下个人使用 Python3 爬取个人公众号的所有文章，并把文章保存为 Markdown 格式的一些操作记录，主要介绍一下思路和一些简单的代码。</p>
 <!-- more -->
 
-<h2 id="_1">前提条件与思路<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="前提条件与思路">前提条件与思路<a class="headerlink" href="#前提条件与思路" title="Permanent link">&para;</a></h2>
 <ol>
 <li>需要登录网页端微信公众号，获取对应 Cookies；</li>
 <li>通过获取的 Cookies 爬取所有的文章 url 以及其他信息；</li>
@@ -10165,7 +10165,7 @@
 <li>最后，把 HTML 转化为 Markdown。</li>
 </ol>
 <p>之所以选择通过文章公开访问的 url 爬取对应文章的 HTML，而不是直接沿用 Cookies，主要是怕 Cookies 滥用导致其他不可预知的问题，例如封号之类。截止本文章发布前，个人公众号全部已发表的文章大约有 400 多篇，通过这个方法都能正常爬取下来。</p>
-<h2 id="_2">获取已发表文章数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="获取已发表文章数">获取已发表文章数<a class="headerlink" href="#获取已发表文章数" title="Permanent link">&para;</a></h2>
 <p>登录公众号，按下 F12 打开开发者工具，在 <code>网络</code> 栏中找到 <code>appmsgpublish</code> 名称的请求。</p>
 <ul>
 <li>
@@ -10191,7 +10191,7 @@
 <span class="c1"># total_count 即为已发表文章的总数</span>
 </code></pre></div>
 <a class="glightbox" href="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/Gitbook/total_count.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Wecaht posts total_count" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/Gitbook/total_count.png" /></a></p>
-<h2 id="_3">获取所有的文章信息<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="获取所有的文章信息">获取所有的文章信息<a class="headerlink" href="#获取所有的文章信息" title="Permanent link">&para;</a></h2>
 <p>以下程序的 <code>mp.txt</code> 就是得到的该公众号所有文章信息的列表。</p>
 <div class="highlight"><pre><span></span><code><span class="n">allPostList</span> <span class="o">=</span> <span class="p">[]</span>
 

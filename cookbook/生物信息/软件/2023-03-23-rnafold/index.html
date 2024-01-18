@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#主要参数" class="md-skip">
           跳转至
         </a>
       
@@ -757,7 +757,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#主要参数" class="md-nav__link">
     <span class="md-ellipsis">
       主要参数
     </span>
@@ -766,7 +766,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#输出结果" class="md-nav__link">
     <span class="md-ellipsis">
       输出结果
     </span>
@@ -775,7 +775,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -784,7 +784,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#使用示例" class="md-nav__link">
     <span class="md-ellipsis">
       使用示例
     </span>
@@ -817,7 +817,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10108,7 +10108,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#主要参数" class="md-nav__link">
     <span class="md-ellipsis">
       主要参数
     </span>
@@ -10117,7 +10117,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#输出结果" class="md-nav__link">
     <span class="md-ellipsis">
       输出结果
     </span>
@@ -10126,7 +10126,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -10135,7 +10135,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#使用示例" class="md-nav__link">
     <span class="md-ellipsis">
       使用示例
     </span>
@@ -10168,7 +10168,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#参考资料" class="md-nav__link">
     <span class="md-ellipsis">
       参考资料
     </span>
@@ -10212,7 +10212,7 @@
 <p><a href="http://www.tbi.univie.ac.at/~ivo/RNA/man/RNAfold.html">RNAfold</a> 是 <a href="http://www.tbi.univie.ac.at/~ivo/RNA/index.html">Vienna RNA Package</a> 里的一种通过计算最小自由能 (MFE: minimum free energy) 来预测 RNA 二级结构的软件。它的算法和理论支持主要来源于 M. Zuker 和 P. Stiegler 在 1981 年发表的这篇 <a href="http://nar.oxfordjournals.org/content/9/1/133.short">Optimal computer folding of large RNA sequences using thermodynamic and auxiliary information</a>。想了解 Michael Zuker 教授小组的一系列研究情况和 MFE 算法计算依据的可以点<a href="http://www.bioinfo.rpi.edu/zukerm/rna/energy/">这里</a>。</p>
 <!-- more -->
 
-<h2 id="_1">主要参数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="主要参数">主要参数<a class="headerlink" href="#主要参数" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>RNAfold<span class="w"> </span>-p<span class="w"> </span>-d2<span class="w"> </span>--noLP<span class="w"> </span>&lt;<span class="w"> </span>sequence1.fa<span class="w"> </span>&gt;<span class="w"> </span>sequence1.out
 </code></pre></div>
 <p>详细的参数参考：<a href="https://www.tbi.univie.ac.at/RNA/RNAfold.1.html">https://www.tbi.univie.ac.at/RNA/RNAfold.1.html</a>。
@@ -10224,13 +10224,13 @@
 <li><strong>d1</strong> 指的是 &ldquo;dangling end&rdquo; (悬挂端)的能量计算按照 d1 模式（有且仅有未配对的碱基可以参与最多一个悬挂端），返回值就是“点-弧”结构图和预测的能量值。</li>
 </ul>
 <p>关于 dangling end(dangling bases) 的中文翻译在国内未能查到，这里暂翻译为“悬挂端”。可以参考这篇 <a href="http://pubs.acs.org/doi/abs/10.1021/ja0255406">Long RNA Dangling End Has Large Energetic Contribution to Duplex Stability</a>，dangling end 指的就是在双链中未配对、会参与旁边“链栈”(stacks) 能量增益的碱基。不同的悬挂组合产生的不同的能量增益，这在 RNAfold 计算中也会被考虑（寻求最好的 dangle）。</p>
-<h2 id="_2">输出结果<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="输出结果">输出结果<a class="headerlink" href="#输出结果" title="Permanent link">&para;</a></h2>
 <p>默认参数会输出以下两种二级结构：</p>
 <ol>
 <li><strong>optimal secondary structure</strong>。最佳二级结构，保证对应的自由能最小，最小自由能简称 MFE，结果示意如下</li>
 <li><strong>centroid secondary structure</strong>。自由能表征改变这个结构需要注入的能量大小，对应的数值越小，该结构越稳定。</li>
 </ol>
-<h2 id="_3">安装<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h2>
 <p>ViennaRNA-2.5.x 要求 C++17 标准的更高版本的编译器，即 GCC 需要 5 及以上版本。</p>
 <blockquote>
 <p>That is unfortunate! We added dlib to our source tree for version 2.5.0 to efficiently compute concentration dependencies upon multi-strand interactions. Apparently, dlib requires a more recent compiler that actually implements the C++17 standard, which is only available since GCC 5. —— From <a href="https://github.com/ViennaRNA/ViennaRNA/issues/146">issues 146</a>
@@ -10330,7 +10330,7 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <p>命令行使用示例。</p>
 <div class="highlight"><pre><span></span><code>RNAfold<span class="w"> </span>-p<span class="w"> </span>-d2<span class="w"> </span>--noLP<span class="w"> </span>&lt;<span class="w"> </span>sequence1.fa<span class="w"> </span>&gt;<span class="w"> </span>sequence1.out
 </code></pre></div>
-<h2 id="_4">使用示例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="使用示例">使用示例<a class="headerlink" href="#使用示例" title="Permanent link">&para;</a></h2>
 <h3 id="rnalib-python">RNAlib Python<a class="headerlink" href="#rnalib-python" title="Permanent link">&para;</a></h3>
 <p>参考教程：</p>
 <ul>
@@ -10375,7 +10375,7 @@ RNAfold -p -d0 --noLP &lt; test_sequenc.fa &gt; test_sequenc.out
 <div class="highlight"><pre><span></span><code># Results have been computed using RNAfold 2.4.17. An equivalent command line call would have been
 RNAfold -d0 --noLP --noClosingGU &lt; test_sequenc.fa &gt; test_sequenc.out
 </code></pre></div></p>
-<h2 id="_5">参考资料<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.tbi.univie.ac.at/RNA/RNAfold.1.html">TBI - RNAfold - Manpage</a></li>
 <li><a href="http://www.tbi.univie.ac.at/RNA/">TBI - ViennaRNA Package 2</a></li>

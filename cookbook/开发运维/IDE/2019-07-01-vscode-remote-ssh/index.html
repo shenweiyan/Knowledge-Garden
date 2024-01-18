@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#引言" class="md-skip">
           跳转至
         </a>
       
@@ -10037,7 +10037,7 @@
   
 
 
-<h1 id="_1">引言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="引言">引言<a class="headerlink" href="#引言" title="Permanent link">&para;</a></h1>
 <p>北京时间 2019 年 5 月 3 日，在 PyCon 2019 大会上，<a href="https://zhuanlan.zhihu.com/p/64505333">微软发布了 VS Code Remote</a>。这是一个用来实现远程开发的功能插件，对于许多使用 Windows 进行开发，但是需要将程序部署在服务器的用户来说，提供了非常大的便利。这些插件包括了：</p>
 <ul>
 <li>Remote - SSH</li>
@@ -10059,13 +10059,13 @@
 <p>由于扩展程序直接在远程计算机上运行命令和其他扩展，因此本地计算机上不需要源代码即可获得这些好处。您可以打开远程计算机上的任何文件夹并使用它，就像文件夹在您自己的计算机上一样。</p>
 </blockquote>
 <p>在本文中，将对于基本的 <strong>Remote - SSH</strong>  的使用简单地进行介绍。</p>
-<h1 id="remote-ssh">安装 **Remote-SSH **相关插件<a class="headerlink" href="#remote-ssh" title="Permanent link">&para;</a></h1>
+<h1 id="安装-remote-ssh相关插件">安装 **Remote-SSH **相关插件<a class="headerlink" href="#安装-remote-ssh相关插件" title="Permanent link">&para;</a></h1>
 <p>截止 2019.06.26，<strong>Remote - SSH</strong>（预览版）已经可以在 VSCode 稳定版本中下载和安装使用了。安装步骤如下。</p>
 <p>打开安装好的 VSCode，然后在最左边的侧边栏中找到 Extensions 项，即扩展选项卡，并进入，然后再搜索窗口中输入：Remote - SSH（或者 ssh 关键字）。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FioQyhREZ8JkJzjJiLjTpIi9fKvU.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FioQyhREZ8JkJzjJiLjTpIi9fKvU.png" /></a></p>
 <p>找到所对应的插件之后，点击绿色的 &ldquo;<strong>Install(安装)</strong>&rdquo; 即可开始安装。稍等片刻，在安装完成之后，在侧边栏中会出现一个 <strong>Remote-SSh</strong> 选项卡，即表示安装成功。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj_kb_8AZReCeSAS8ruXXBANR2j2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj_kb_8AZReCeSAS8ruXXBANR2j2.png" /></a></p>
-<h1 id="remote-ssh_1">利用 Remote-SSH 连接服务器<a class="headerlink" href="#remote-ssh_1" title="Permanent link">&para;</a></h1>
+<h1 id="利用-remote-ssh-连接服务器">利用 Remote-SSH 连接服务器<a class="headerlink" href="#利用-remote-ssh-连接服务器" title="Permanent link">&para;</a></h1>
 <p>在安装完成之后，点击左侧的 Remote-SSH 选项卡，再将鼠标移向 CONNECTIONS 栏，点击出现的 configure：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiRbwerTS7xdAozjJGX3fkfecDEB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiRbwerTS7xdAozjJGX3fkfecDEB.png" /></a></p>
 <p>在 Select SSH configuration file to edit 中，选择第一项即可，开始对里面的内容进行编辑：
@@ -10074,7 +10074,7 @@
 <p>在上图中为初始情况下的 .ssh 文件夹下的 config 文件中的内容，需要将其修改为所需要的内容，修改之后不要忘记保存（若 SSH 端口不是默认的 22，则还需加一行 Port）。</p>
 <p>**注意：**VSCode 的这个远程连接的插件是基于 OpenSSH 的，因此在本机需要装有 OpenSSH 的客户端，在服务器上也要装有 OpenSSH 的服务端，并且密钥文件已经放置在服务器中，即需要在 <code>cmd</code>  中可以直接通过命令 <code>ssh IP_ADDRESS -l USERNAME -p PORT</code> （其中 IP_ADDRESS、USERNAME、PORT 要修改为所需变量）连接的情况下，才可以通过这个插件连接到服务器。如果前面的这些配置还没有完成，VSCode 会报出以下错误：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmlRuiNu9SCeBGZfVb5rN5w7MoQb.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmlRuiNu9SCeBGZfVb5rN5w7MoQb.png" /></a></p>
-<h2 id="1-openssh">1. 安装  OpenSSH 客户端<a class="headerlink" href="#1-openssh" title="Permanent link">&para;</a></h2>
+<h2 id="1-安装-openssh-客户端">1. 安装  OpenSSH 客户端<a class="headerlink" href="#1-安装-openssh-客户端" title="Permanent link">&para;</a></h2>
 <p>各个平台下 OpenSSH 客户端的安装参考 VSCode 官方文档《<a href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client">Installing a supported SSH client</a>》一节的内容。这里以 windows 7 为例，官方推荐：</p>
 <blockquote>
 <p>Install <a href="https://git-scm.com/download/win">Git for Windows</a> and select the <strong>Use Git and optional Unix tools from the Command Prompt</strong> option or manually add <code>C:\Program Files\Git\usr\bin</code> into your PATH.</p>
@@ -10085,7 +10085,7 @@
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrHE6rQNoX0ApslYEI05BZQJ6XB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrHE6rQNoX0ApslYEI05BZQJ6XB.png" /></a></p>
 <p>第三，在 DOC 中测试 ssh 连接到远程服务器成功！
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkRk0YhX6ckkcSYOlZQYTGofJGVa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkRk0YhX6ckkcSYOlZQYTGofJGVa.png" /></a></p>
-<h2 id="2-ssh-key">2. SSH KEY 配置<a class="headerlink" href="#2-ssh-key" title="Permanent link">&para;</a></h2>
+<h2 id="2-ssh-key-配置">2. SSH KEY 配置<a class="headerlink" href="#2-ssh-key-配置" title="Permanent link">&para;</a></h2>
 <ol>
 <li>创建本地机器的 ssh 公钥</li>
 </ol>
@@ -10104,12 +10104,12 @@
 <li>配置完成后，在 DOC 中再次执行  <code>ssh IP_ADDRESS -l USERNAME -p PORT</code>  命令，如果可以免密码登陆远程的服务器，说明配置成功。</li>
 <li>更多详细的 ssh key 设置，请参考官方文档：《<a href="https://code.visualstudio.com/docs/remote/troubleshooting">Remote Development Tips and Tricks</a>》。</li>
 </ol>
-<h2 id="3-remote-ssh">3. 使用 Remote-SSH 连接远端服务器<a class="headerlink" href="#3-remote-ssh" title="Permanent link">&para;</a></h2>
+<h2 id="3-使用-remote-ssh-连接远端服务器">3. 使用 Remote-SSH 连接远端服务器<a class="headerlink" href="#3-使用-remote-ssh-连接远端服务器" title="Permanent link">&para;</a></h2>
 <p>回到 VSCode 中  Remote-SSH 选项卡，在  Select SSH configuration file to edit 中将 config 文件修改完成之后，&rdquo;Ctrl+s&rdquo; 保存可以看到，在下面出现了我们所配置的远程连接，这里显示的是我设置的名称：&rdquo;<strong>GalaxyServer</strong>&ldquo;，即 Galaxy 在线生信分析平台的服务器，然后点击 &ldquo;<strong>GalaxyServer</strong>&rdquo; 右侧的连接按钮(图中箭头所指），便会弹出一个新的窗口，在新的窗口中选择打开文件夹，便可以看到，这个窗口中的打开的便是服务器中的文件了，接下来便可以访问服务器中的文件并远程修改了。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FonOgUdX0QYBvzv_uTs3556jXekf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FonOgUdX0QYBvzv_uTs3556jXekf.png" /></a></p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvNza0Vgksbe6XLmG9YVZd-hYnKw.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvNza0Vgksbe6XLmG9YVZd-hYnKw.png" /></a></p>
 <p>更多详细的 Remote SSH 的说明与使用配置，参考官方文档：《<a href="https://code.visualstudio.com/docs/remote/ssh">Remote Development using SSH</a>》。</p>
-<h2 id="4-remote-ssh">4. 在 Remote-SSH 中使用终端<a class="headerlink" href="#4-remote-ssh" title="Permanent link">&para;</a></h2>
+<h2 id="4-在-remote-ssh-中使用终端">4. 在 Remote-SSH 中使用终端<a class="headerlink" href="#4-在-remote-ssh-中使用终端" title="Permanent link">&para;</a></h2>
 <p>Remote SSH 还有个强大的功能，就是在添加了工作区文件夹后，可以直接在 VSCode 上使用终端，执行远程 Linux 的命令：
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjEZ5Awz4zDccUlJo02zfvbLTdXV.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjEZ5Awz4zDccUlJo02zfvbLTdXV.png" /></a></p>
 <p>以上就是 Visual Studio Code 上关于 Remote SSH 插件的一些简单安装、配置和使用心得体验，喜欢使用 VSCode 的童鞋可以去尝试一下。</p>

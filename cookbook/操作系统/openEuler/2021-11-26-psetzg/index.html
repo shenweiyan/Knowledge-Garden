@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sudo" class="md-skip">
+        <a href="#创建启用-sudo-新用户" class="md-skip">
           跳转至
         </a>
       
@@ -1599,7 +1599,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sudo" class="md-nav__link">
+  <a href="#创建启用-sudo-新用户" class="md-nav__link">
     <span class="md-ellipsis">
       创建启用 sudo 新用户
     </span>
@@ -1609,7 +1609,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#第-1-步登录到服务器" class="md-nav__link">
     <span class="md-ellipsis">
       第 1 步，登录到服务器
     </span>
@@ -1618,7 +1618,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#第-2-步将新用户添加到系统" class="md-nav__link">
     <span class="md-ellipsis">
       第 2 步，将新用户添加到系统
     </span>
@@ -1627,7 +1627,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-wheel" class="md-nav__link">
+  <a href="#步骤-3将用户添加到-wheel-组" class="md-nav__link">
     <span class="md-ellipsis">
       步骤 3，将用户添加到 wheel 组
     </span>
@@ -1636,7 +1636,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-sudo" class="md-nav__link">
+  <a href="#第-4-步测试-sudo-访问权限" class="md-nav__link">
     <span class="md-ellipsis">
       第 4 步，测试 sudo 访问权限
     </span>
@@ -1645,7 +1645,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#总结" class="md-nav__link">
     <span class="md-ellipsis">
       总结
     </span>
@@ -1654,7 +1654,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
     </span>
@@ -10108,7 +10108,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sudo" class="md-nav__link">
+  <a href="#创建启用-sudo-新用户" class="md-nav__link">
     <span class="md-ellipsis">
       创建启用 sudo 新用户
     </span>
@@ -10118,7 +10118,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#第-1-步登录到服务器" class="md-nav__link">
     <span class="md-ellipsis">
       第 1 步，登录到服务器
     </span>
@@ -10127,7 +10127,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#第-2-步将新用户添加到系统" class="md-nav__link">
     <span class="md-ellipsis">
       第 2 步，将新用户添加到系统
     </span>
@@ -10136,7 +10136,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-wheel" class="md-nav__link">
+  <a href="#步骤-3将用户添加到-wheel-组" class="md-nav__link">
     <span class="md-ellipsis">
       步骤 3，将用户添加到 wheel 组
     </span>
@@ -10145,7 +10145,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-sudo" class="md-nav__link">
+  <a href="#第-4-步测试-sudo-访问权限" class="md-nav__link">
     <span class="md-ellipsis">
       第 4 步，测试 sudo 访问权限
     </span>
@@ -10154,7 +10154,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#总结" class="md-nav__link">
     <span class="md-ellipsis">
       总结
     </span>
@@ -10163,7 +10163,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
     </span>
@@ -10210,17 +10210,17 @@
   <h1>管理用户和用户组</h1>
 
 <p>openEuler-20.03 LTS 管理用户和用户组的官方文档，在<a href="https://docs.openeuler.org/zh/docs/20.03_LTS/docs/Administration/%E7%AE%A1%E7%90%86%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84.html">这里</a>。补充一下关于如何在 openeuler 上创建启用 sudo 新用户（无需修改服务器 /etc/sudoers 文件）的一个小知识点。</p>
-<h2 id="sudo">创建启用 sudo 新用户<a class="headerlink" href="#sudo" title="Permanent link">&para;</a></h2>
+<h2 id="创建启用-sudo-新用户">创建启用 sudo 新用户<a class="headerlink" href="#创建启用-sudo-新用户" title="Permanent link">&para;</a></h2>
 <p>该 sudo 命令提供了一种向普通用户授予管理员特权（通常仅对 root 用户可用）的机制。本指南将向您展示如何 sudo 在 openeuler 上创建具有访问权限的新用户，而无需修改服务器 /etc/sudoers 文件。
 :::tips
 注意：如果要 sudo 为现有的 openeuler 用户配置，请跳至步骤 3。
 :::</p>
-<h3 id="1">第 1 步，登录到服务器<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<h3 id="第-1-步登录到服务器">第 1 步，登录到服务器<a class="headerlink" href="#第-1-步登录到服务器" title="Permanent link">&para;</a></h3>
 <p>以 root 用户身份登录到服务器：</p>
 <div class="highlight"><pre><span></span><code><span class="c1">#使用服务器的IP地址或主机名代替your_server_ip_address上面的名称</span>
 ssh<span class="w"> </span>root@your_server_ip_address
 </code></pre></div>
-<h3 id="2">第 2 步，将新用户添加到系统<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h3 id="第-2-步将新用户添加到系统">第 2 步，将新用户添加到系统<a class="headerlink" href="#第-2-步将新用户添加到系统" title="Permanent link">&para;</a></h3>
 <p>使用 adduser 命令将新用户添加到系统中：</p>
 <div class="highlight"><pre><span></span><code><span class="c1">#确保sammy用您要创建的用户名替换</span>
 adduser<span class="w"> </span>sammy
@@ -10233,12 +10233,12 @@ adduser<span class="w"> </span>sammy
 New<span class="w"> </span>password:
 Retype<span class="w"> </span>new<span class="w"> </span>password:
 </code></pre></div>
-<h3 id="3-wheel">步骤 3，将用户添加到 wheel 组<a class="headerlink" href="#3-wheel" title="Permanent link">&para;</a></h3>
+<h3 id="步骤-3将用户添加到-wheel-组">步骤 3，将用户添加到 wheel 组<a class="headerlink" href="#步骤-3将用户添加到-wheel-组" title="Permanent link">&para;</a></h3>
 <p>使用 usermod 命令将用户添加到 wheel 组：</p>
 <div class="highlight"><pre><span></span><code>usermod<span class="w"> </span>-aG<span class="w"> </span>wheel<span class="w"> </span>sammy
 </code></pre></div>
 <p>再一次，请确保替换 sammy 为您要赋予 sudo 特权的用户名。<strong>默认情况下，在 CentOS 上，wheel 组的所有成员都具有完全 sudo 访问权限。</strong></p>
-<h3 id="4-sudo">第 4 步，测试 sudo 访问权限<a class="headerlink" href="#4-sudo" title="Permanent link">&para;</a></h3>
+<h3 id="第-4-步测试-sudo-访问权限">第 4 步，测试 sudo 访问权限<a class="headerlink" href="#第-4-步测试-sudo-访问权限" title="Permanent link">&para;</a></h3>
 <p>要测试新 sudo 权限是否正常运行，请首先使用以下 su 命令从 root 用户切换到新用户帐户：</p>
 <div class="highlight"><pre><span></span><code>su<span class="w"> </span>-<span class="w"> </span>sammy
 </code></pre></div>
@@ -10255,9 +10255,9 @@ Retype<span class="w"> </span>new<span class="w"> </span>password:
 <strong>注意：</strong>这不是要求输入<strong> root</strong> 密码！输入启用了 sudo 的用户的密码，而不是 <strong>root</strong> 密码。
 :::</p>
 <p>如果您的用户在适当的组中，并且您正确输入了密码，则发出的命令 sudo 将以 root 特权运行。</p>
-<h3 id="_1">总结<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h3>
 <p>在本快速入门教程中，我们创建了一个新的用户帐户，并将其添加到 wheel 组以启用 sudo 访问权限。</p>
-<h3 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 
 
 

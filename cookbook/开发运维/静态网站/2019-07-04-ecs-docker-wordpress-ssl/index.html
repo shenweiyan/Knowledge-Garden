@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-ecs" class="md-skip">
+        <a href="#1-购买-ecs-主机" class="md-skip">
           跳转至
         </a>
       
@@ -10048,21 +10048,21 @@
 <li>安装 SSL 证书开启 https 访问</li>
 </ol>
 <hr />
-<h1 id="1-ecs">1. 购买 ECS 主机<a class="headerlink" href="#1-ecs" title="Permanent link">&para;</a></h1>
+<h1 id="1-购买-ecs-主机">1. 购买 ECS 主机<a class="headerlink" href="#1-购买-ecs-主机" title="Permanent link">&para;</a></h1>
 <p>如果只用来做简单的个人博客，1 核 1G 足够，当然后面也可以根据需求自己扩容。本人用的阿里的主机，平时工作需要搭其他环境，用的 2 核 4G，价钱就不说了，如果经济紧张，或只是搭个玩的，可以入搬瓦工或者腾讯云，具体价格可以去各自的官网查看。</p>
 <p>阿里云：<a href="https://ecs-buy.aliyun.com/">https://ecs-buy.aliyun.com/</a>
 腾讯云：<a href="https://buy.cloud.tencent.com/cvm">https://buy.cloud.tencent.com/cvm</a>
 搬瓦工：<a href="https://bandwagonhost.com/vps-hosting.php">https://bandwagonhost.com/vps-hosting.php</a>
 国外服务器详细对比（要翻墙）：<a href="https://shadowsocks.blogspot.jp/">https://shadowsocks.blogspot.jp/</a></p>
 <p>百度上有详细的购买流程，这不重复造轮子了，实在不明白可以留言。</p>
-<h1 id="2">2. 购买域名<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<h1 id="2-购买域名">2. 购买域名<a class="headerlink" href="#2-购买域名" title="Permanent link">&para;</a></h1>
 <p>这个没什么说的，直接进网站找自己喜欢域名，支付就 OK。</p>
 <p>万网：<a href="https://wanwang.aliyun.com/">https://wanwang.aliyun.com/</a></p>
-<h1 id="3">3. 申请备案<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<h1 id="3-申请备案">3. 申请备案<a class="headerlink" href="#3-申请备案" title="Permanent link">&para;</a></h1>
 <p>阿里云网站备案：<a href="https://beian.aliyun.com/">https://beian.aliyun.com/</a></p>
 <p>需要提醒大家的是，如果你买了阿里云的服务器，并且想要通过域名访问，那域名是必须要备案的，总结一句：必须先将域名备案，才能通过域名访问阿里云的服务器。</p>
 <p>一提到备案，可能你会觉得备案这个事情很麻烦，各种流程啊，手续啊。其实没这么麻烦，因为阿里云已经提供了一条龙服务，通过阿里云的代备案系统，一些都会变得容易很多，不管是个人网站的备案，还是企业网站的备案，都只是时间上的问题，一般备案审核需要二十天左右。</p>
-<h1 id="4">4. 环境配置<a class="headerlink" href="#4" title="Permanent link">&para;</a></h1>
+<h1 id="4-环境配置">4. 环境配置<a class="headerlink" href="#4-环境配置" title="Permanent link">&para;</a></h1>
 <p>WordPress 是一个非常著名的 PHP 编写的博客平台，发展到目前为止已经形成了一个庞大的网站平台系统。在 WP 上有规模庞大的插件和主题，可以帮助我们快速建立一个博客甚至网站。</p>
 <p>在 Windows 上可以非常方便的安装 WordPress，因为 IIS 上 集成了 WordPress 的一键安装包。而在 Linux 上安装 WordPress 就比较复杂了，我们需要配置 php 环境、Apache 或者 Nginx 服务器、MySQ L 数据库以及各种权限和访问问题。所以在 Linux 上最好的办法就是使用 Docker 来安装 WordPress。</p>
 <p>本人购买的 ECS 预装的 CentOS 7.4，通过 XShell 登入。</p>
@@ -10088,12 +10088,12 @@ docker run -itd --name wordpress -p 127.0.0.1:8090:80 --link mysql:mysql -v /hom
 <li><code>-p 127.0.0.1:8090:80</code> 会启用 docker 的 ipv4 网络，方便后面 Nginx 做域名和端口映射；如果直接使用 <code>-p 8090:80</code>，会默认使用 docker 的 ipv6 网络，ECS 中对于 ipv6 的监听和基于 Nginx 域名绑定比较麻烦，个人在这个坑尝试了很久，目前还没找到好的解决方法。</li>
 </ul>
 <p>到这里，docker+wordpress 就安装完成了。这时候尚不能打开网页，因为是配置在 127.0.0.1 上的，只有本机可以访问。</p>
-<h1 id="5">5. 域名解析<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
-<h2 id="51-nginx">5.1 安装并启动 nginx<a class="headerlink" href="#51-nginx" title="Permanent link">&para;</a></h2>
+<h1 id="5-域名解析">5. 域名解析<a class="headerlink" href="#5-域名解析" title="Permanent link">&para;</a></h1>
+<h2 id="51-安装并启动-nginx">5.1 安装并启动 nginx<a class="headerlink" href="#51-安装并启动-nginx" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>yum install nginx
 systemctl start nginx
 </code></pre></div>
-<h2 id="52-nginxconf">5.2 配置 nginx.conf<a class="headerlink" href="#52-nginxconf" title="Permanent link">&para;</a></h2>
+<h2 id="52-配置-nginxconf">5.2 配置 nginx.conf<a class="headerlink" href="#52-配置-nginxconf" title="Permanent link">&para;</a></h2>
 <p>进入服务器 nginx 安装路径，进入 conf 文件夹，编辑 nginx.conf，加入一行 <code>include sites-available/*.conf</code>。</p>
 <div class="highlight"><pre><span></span><code>user  nobody;
 worker_processes  1;
@@ -10111,7 +10111,7 @@ http {
     include sites-available/*.conf;
 }
 </code></pre></div>
-<h2 id="53-wordpressconf">5.3 配置 wordpress.conf<a class="headerlink" href="#53-wordpressconf" title="Permanent link">&para;</a></h2>
+<h2 id="53-配置-wordpressconf">5.3 配置 wordpress.conf<a class="headerlink" href="#53-配置-wordpressconf" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>server {
     listen       80;
     server_name  youdomain.com;
@@ -10127,19 +10127,19 @@ http {
     error_log   logs/wordpress_error.log;
 }
 </code></pre></div>
-<h2 id="54">5.4 添加域名解析<a class="headerlink" href="#54" title="Permanent link">&para;</a></h2>
+<h2 id="54-添加域名解析">5.4 添加域名解析<a class="headerlink" href="#54-添加域名解析" title="Permanent link">&para;</a></h2>
 <p>登入阿里域名解析：<a href="https://netcn.console.aliyun.com/core/domain/list，点击相应域名的">https://netcn.console.aliyun.com/core/domain/list，点击相应域名的</a> &ldquo;解析&rdquo; 链接，根据提示添加域名的 A 记录，解析到你的服务器 ip 下。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm-MQeQpFEqp0LeZEAXEySUs16i_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm-MQeQpFEqp0LeZEAXEySUs16i_.png" /></a></p>
-<h2 id="55-wordpress">5.5 安装 wordpress<a class="headerlink" href="#55-wordpress" title="Permanent link">&para;</a></h2>
+<h2 id="55-安装-wordpress">5.5 安装 wordpress<a class="headerlink" href="#55-安装-wordpress" title="Permanent link">&para;</a></h2>
 <p>添加完域名解析后，打开浏览器，输入 <a href="http://youdomain.com，然后就可以看到">http://youdomain.com，然后就可以看到</a> WordPress 了。按照提示输入用户名等信息，然后安装 WordPress。等到它提示安装完成，那么 WordPress 的安装就算大功告成了。</p>
-<h1 id="6-ssl-https">6. 安装 SSL 证书开启 https 访问<a class="headerlink" href="#6-ssl-https" title="Permanent link">&para;</a></h1>
-<h2 id="61">6.1 单域名免费证书申请<a class="headerlink" href="#61" title="Permanent link">&para;</a></h2>
+<h1 id="6-安装-ssl-证书开启-https-访问">6. 安装 SSL 证书开启 https 访问<a class="headerlink" href="#6-安装-ssl-证书开启-https-访问" title="Permanent link">&para;</a></h1>
+<h2 id="61-单域名免费证书申请">6.1 单域名免费证书申请<a class="headerlink" href="#61-单域名免费证书申请" title="Permanent link">&para;</a></h2>
 <p>登入阿里域名解析：<a href="https://netcn.console.aliyun.com/core/domain/list，点击相应域名的">https://netcn.console.aliyun.com/core/domain/list，点击相应域名的</a> &ldquo;SSL 证书&rdquo; 链接，设置单域名免费证书。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuBDrUkhJAGUHmJMSmoAv9A30FG3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuBDrUkhJAGUHmJMSmoAv9A30FG3.png" /></a></p>
-<h2 id="62-ssl">6.2 SSL 证书下载<a class="headerlink" href="#62-ssl" title="Permanent link">&para;</a></h2>
+<h2 id="62-ssl-证书下载">6.2 SSL 证书下载<a class="headerlink" href="#62-ssl-证书下载" title="Permanent link">&para;</a></h2>
 <p>单域名免费证书提交申请后，一般十分钟就会审批下来。这时候，我们登陆 &ldquo;<a href="https://yundun.console.aliyun.com/?spm=5176.2020520163.aliyun_sidebar.24.4eb62b7auFTPPK&amp;p=cas#/cas/home">CA 证书服务（数据安全）</a>&ldquo;，在 &ldquo;我的订单&rdquo; 中找到已经签发的域名证书，点击 &ldquo;下载&rdquo; 链接，通过 &ldquo;下载证书 for Nginx&rdquo; 下载证书。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkqqJGGi5jsGXc4BDQ9LN0NcOoth.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkqqJGGi5jsGXc4BDQ9LN0NcOoth.png" /></a></p>
-<h2 id="63-ssl">6.3 SSL 证书安装<a class="headerlink" href="#63-ssl" title="Permanent link">&para;</a></h2>
+<h2 id="63-ssl-证书安装">6.3 SSL 证书安装<a class="headerlink" href="#63-ssl-证书安装" title="Permanent link">&para;</a></h2>
 <p>( 1 ) 在 Nginx 的安装目录下创建 cert 目录，并且将下载的全部文件拷贝到 cert 目录中。
 ( 2 ) 将 wordpress.conf 修改为：</p>
 <div class="highlight"><pre><span></span><code>server {
@@ -10179,7 +10179,7 @@ http {
 <li>等等。。。</li>
 </ol>
 <p>请按照 6.4 方法修改，本人亲测，wordpress4.9.1-4.9.2 完美解决。</p>
-<h2 id="64-https">6.4 全站开启 https<a class="headerlink" href="#64-https" title="Permanent link">&para;</a></h2>
+<h2 id="64-全站开启-https">6.4 全站开启 https<a class="headerlink" href="#64-全站开启-https" title="Permanent link">&para;</a></h2>
 <p><strong>1、系统文件修改</strong></p>
 <div class="highlight"><pre><span></span><code>路径：网站根目录（/home/shenweiyan/wordpress）/wp-includes/functions.php
 找到代码：require( ABSPATH . WPINC . &#39;/option.php&#39; );
@@ -10207,8 +10207,8 @@ define(&#39;FORCE_SSL_ADMIN&#39;, true);
 <p>或者登陆 wordpress 后台，在&rdquo;设置&rdquo;→ &ldquo;常规&rdquo; 中设置 &ldquo;WordPress 地址（URL）&rdquo; 和 &ldquo;站点地址（URL）&rdquo;为 https 链接地址。
 <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlaMAwW6wsKGgbgxOVbDyv8MafLl.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlaMAwW6wsKGgbgxOVbDyv8MafLl.png" /></a></p>
 <p>至此，真正意义上解决 wordpress 全站开启 https 的 ssl 证书问题。</p>
-<h1 id="7">7. 填坑总结<a class="headerlink" href="#7" title="Permanent link">&para;</a></h1>
-<h2 id="71">7.1. 更换域名无法登陆后台<a class="headerlink" href="#71" title="Permanent link">&para;</a></h2>
+<h1 id="7-填坑总结">7. 填坑总结<a class="headerlink" href="#7-填坑总结" title="Permanent link">&para;</a></h1>
+<h2 id="71-更换域名无法登陆后台">7.1. 更换域名无法登陆后台<a class="headerlink" href="#71-更换域名无法登陆后台" title="Permanent link">&para;</a></h2>
 <p>在后台—设置—常规—WordPress 地址或者网站域名处设置了别的域名，结果导致后台无法登录了，这是一种情况；还有一种情况就是网站搬家了，或者是换域名了，也会出现这类问题，那么就需要重新配置下当前域名才能使得网站正常运行。</p>
 <p>方法：修改 wp-config.php 文件</p>
 <p>第一步：在网站根目录找到 wp-config.php 文件，在其中添加以下两行内容：</p>
