@@ -27,7 +27,7 @@
     
     
       
-        <title>LaTeX 2018 安装与使用教程 - 维燕的知识花园</title>
+        <title>LaTeX 安装教程 - 维燕的知识花园</title>
       
     
     
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LaTeX 2018 安装与使用教程
+              LaTeX 安装教程
             
           </span>
         </div>
@@ -6422,7 +6422,7 @@
           
   
   <span class="md-ellipsis">
-    LaTeX 2018 安装与使用教程
+    LaTeX 安装教程
   </span>
   
 
@@ -6433,7 +6433,7 @@
         
   
   <span class="md-ellipsis">
-    LaTeX 2018 安装与使用教程
+    LaTeX 安装教程
   </span>
   
 
@@ -6489,20 +6489,14 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#2-镜像挂载" class="md-nav__link">
     <span class="md-ellipsis">
       2. 镜像挂载
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. 镜像挂载">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#3-镜像安装" class="md-nav__link">
@@ -10177,20 +10171,14 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#2-镜像挂载" class="md-nav__link">
     <span class="md-ellipsis">
       2. 镜像挂载
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. 镜像挂载">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#3-镜像安装" class="md-nav__link">
@@ -10273,15 +10261,15 @@
   
 
 
-  <h1>LaTeX 2018 安装与使用教程</h1>
+  <h1>LaTeX 安装教程</h1>
 
 <h2 id="一背景">一、背景<a class="headerlink" href="#一背景" title="Permanent link">&para;</a></h2>
 <p>前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装：</p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9hxWhI_H98Nn23qhXB_PF-t6FC.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9hxWhI_H98Nn23qhXB_PF-t6FC.png" /></a>
-500 : Internal Server Error 如下：</p>
-<div class="highlight"><pre><span></span><code>nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
-</code></pre></div>
-<p>另外一点就是，对于经常做生信分析的童鞋而言，LaTeX，或者 Html+wkhtmltopdf 也许是当前生信报告生成与交付的两种主要解决方案（或许还有其他更好的，欢迎留言交流）。因此对于生信分析而言，LaTeX 也许并不陌生，但真正熟悉和掌握它的人却寥寥无几。</p>
+500 : Internal Server Error 如下：
+<div class="highlight"><pre><span></span><code>nbconvert<span class="w"> </span>failed:<span class="w"> </span>xelatex<span class="w"> </span>not<span class="w"> </span>found<span class="w"> </span>on<span class="w"> </span>PATH,<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>have<span class="w"> </span>not<span class="w"> </span>installed<span class="w"> </span>xelatex<span class="w"> </span>you<span class="w"> </span>may<span class="w"> </span>need<span class="w"> </span>to<span class="w"> </span><span class="k">do</span><span class="w"> </span>so.<span class="w"> </span>Find<span class="w"> </span>further<span class="w"> </span>instructions<span class="w"> </span>at<span class="w"> </span>https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+</code></pre></div></p>
+<p>另外一点就是，对于经常做生信分析的童鞋而言，LaTeX，或者 Html+wkhtmltopdf 也许是当前生信报告生成与交付的两种主要解决方案（如果还有其他更好的，欢迎留言告诉我）。因此对于生信分析而言，LaTeX 也许并不陌生，但真正熟悉和掌握它的人却寥寥无几。</p>
 <h2 id="二概念">二、概念<a class="headerlink" href="#二概念" title="Permanent link">&para;</a></h2>
 <p>TEX 是诞生于 20 世纪 70 年代末到 80 年代初的一款计算机排版软件，而且是命令行格式的，用来排版高质量的书籍，特别是包含有数学公式的书籍。TEX 以追求高质量为目标，很早就实现了矢量描述的计算机字体、细致的分页断行算法和数学排版功能，因其数学排版能力得到了学术界的广泛使用，也启发了后来复杂的商业计算机排版软件。</p>
 <p>LATEX 开始于 20 世纪 80 年代初，是 Leslie Lamport 博士为了编写自己的一部书籍而设计的。LATEX 是对 TEX 的封装和拓展，实际上就是用 TEX 语言编写的一组宏代码，拥有比原来 TEX 格式（Plain TEX）更为规范的命令和一整套预定义的格式，隐藏了不少排版方面的细节，可以让完全不懂排版理论的学者们也可以比较容易地将书籍和文稿排版出来。</p>
@@ -10389,7 +10377,7 @@
 </table>
 <p><a href="http://www.ctex.org/CTeX">CTeX</a>  中文套装是基于 Windows 下的  <a href="http://www.ctex.org/MiKTeX">MiKTeX</a>  系统，集成了编辑器  <a href="http://www.ctex.org/WinEdt">WinEdt</a>  和  <a href="http://www.ctex.org/PostScript/edit">PostScript</a>  处理软件 Ghostscript 和 GSview 等主要工具。 <a href="http://www.ctex.org/CTeX">CTeX</a>  中文套装在  <a href="http://www.ctex.org/MiKTeX">MiKTeX</a>  的基础上增加了对中文的完整支持。 <a href="http://www.ctex.org/CTeX">CTeX</a>  中文套装支持 CJK, xeCJK, CCT, TY 等多种中文  <a href="http://www.ctex.org/TeX">TeX</a>  处理方式。</p>
 <h2 id="三安装">三、安装<a class="headerlink" href="#三安装" title="Permanent link">&para;</a></h2>
-<p>TEXLive 常用有两种安装方式：从 TEXLive 光盘进行安装和从网络在线安装。这里我们介绍第二种。</p>
+<p>TEXLive 常用有两种安装方式：从 TEXLive 光盘进行安装和从网络在线安装。这里我们以 TexLive 2018 版本为例介绍第二种安装方法。</p>
 <h3 id="1-镜像文件下载">1. 镜像文件下载<a class="headerlink" href="#1-镜像文件下载" title="Permanent link">&para;</a></h3>
 <p>TexLive 历史版本下载地址：<a href="https://www.tug.org/historic/">https://www.tug.org/historic/</a>。</p>
 <p>TexLive 的镜像文件下载推荐使用 <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">清华大学开源软件镜像站</a>，国内下载速度极快。</p>
@@ -10397,7 +10385,7 @@
 <li>最新版本：<a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/</a></li>
 <li>历史版本：<a href="https://mirrors.tuna.tsinghua.edu.cn/tex-historic-archive/systems/texlive/">https://mirrors.tuna.tsinghua.edu.cn/tex-historic-archive/systems/texlive/</a></li>
 </ul>
-<h2 id="2-镜像挂载">2. 镜像挂载<a class="headerlink" href="#2-镜像挂载" title="Permanent link">&para;</a></h2>
+<h3 id="2-镜像挂载">2. 镜像挂载<a class="headerlink" href="#2-镜像挂载" title="Permanent link">&para;</a></h3>
 <p>TEXLive 镜像文件下载完之后，推荐使用 root 用户进行安装。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>mkdir<span class="w"> </span>/mnt/textlive
 $<span class="w"> </span>sudo<span class="w"> </span>mount<span class="w"> </span>-o<span class="w"> </span>loop<span class="w"> </span>texlive2018.iso<span class="w"> </span>/mnt/textlive
@@ -10505,7 +10493,7 @@ finished<span class="w"> </span>with<span class="w"> </span>package-specific<spa
 Welcome<span class="w"> </span>to<span class="w"> </span>TeX<span class="w"> </span>Live!
 ......
 </code></pre></div>
-<p>** FAQ-1：Digest::MD5 **</p>
+<p><strong>FAQ-1：Digest::MD5</strong></p>
 <div class="highlight"><pre><span></span><code>Can<span class="err">&#39;</span>t<span class="w"> </span>locate<span class="w"> </span>Digest/MD5.pm<span class="w"> </span><span class="k">in</span><span class="w"> </span>@INC<span class="w"> </span><span class="o">(</span>@INC<span class="w"> </span>contains:<span class="w"> </span>./tlpkg<span class="w"> </span>/usr/local/lib64/perl5<span class="w"> </span>/usr/local/share/perl5<span class="w"> </span>/usr/lib64/perl5/vendor_perl<span class="w"> </span>/usr/share/perl5/vendor_perl<span class="w"> </span>/usr/lib64/perl5<span class="w"> </span>/usr/share/perl5<span class="w"> </span>.<span class="o">)</span><span class="w"> </span>at<span class="w"> </span>tlpkg/TeXLive/TLCrypto.pm<span class="w"> </span>line<span class="w"> </span><span class="m">9</span>.
 BEGIN<span class="w"> </span>failed--compilation<span class="w"> </span>aborted<span class="w"> </span>at<span class="w"> </span>tlpkg/TeXLive/TLCrypto.pm<span class="w"> </span>line<span class="w"> </span><span class="m">9</span>.
 Compilation<span class="w"> </span>failed<span class="w"> </span><span class="k">in</span><span class="w"> </span>require<span class="w"> </span>at<span class="w"> </span>tlpkg/TeXLive/TLPOBJ.pm<span class="w"> </span>line<span class="w"> </span><span class="m">16</span>.
@@ -10513,16 +10501,17 @@ BEGIN<span class="w"> </span>failed--compilation<span class="w"> </span>aborted<
 Compilation<span class="w"> </span>failed<span class="w"> </span><span class="k">in</span><span class="w"> </span>require<span class="w"> </span>at<span class="w"> </span>./install-tl<span class="w"> </span>line<span class="w"> </span><span class="m">55</span>.
 BEGIN<span class="w"> </span>failed--compilation<span class="w"> </span>aborted<span class="w"> </span>at<span class="w"> </span>./install-tl<span class="w"> </span>line<span class="w"> </span><span class="m">55</span>.
 </code></pre></div>
-<p><code>Can't locate Digest/MD5.pm</code>  是因为系统的 perl(/usr/bin/perl) 中没有安装 <code>Digest::MD5</code>  模块，我们可以去 <a href="https://metacpan.org/pod/Digest::MD5">CPAN</a>  下载手动安装，也可以在线安装：</p>
+<p><code>Can't locate Digest/MD5.pm</code>  是因为系统的 perl(<code>/usr/bin/perl</code>) 中没有安装 <code>Digest::MD5</code>  模块，我们可以去 <a href="https://metacpan.org/pod/Digest::MD5">CPAN</a>  下载手动安装，也可以在线安装：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>perl-Digest-MD5
 </code></pre></div>
-<p>** FAQ-2：perl-TK**</p>
+<p><strong>FAQ-2：perl-TK</strong></p>
 <div class="highlight"><pre><span></span><code>Error<span class="w"> </span>message<span class="w"> </span>from<span class="w"> </span>loading<span class="w"> </span>Tk:
 <span class="w">  </span>Can<span class="err">&#39;</span>t<span class="w"> </span>locate<span class="w"> </span>Tk.pm<span class="w"> </span><span class="k">in</span><span class="w"> </span>@INC<span class="w"> </span><span class="o">(</span>@INC<span class="w"> </span>contains:<span class="w"> </span>./tlpkg<span class="w"> </span>/usr/local/lib64/perl5<span class="w"> </span>/usr/local/share/perl5<span class="w"> </span>/usr/lib64/perl5/vendor_perl<span class="w"> </span>/usr/share/perl5/vendor_perl<span class="w"> </span>/usr/lib64/perl5<span class="w"> </span>/usr/share/perl5<span class="w"> </span>.<span class="o">)</span><span class="w"> </span>at<span class="w"> </span>./install-tl<span class="w"> </span>line<span class="w"> </span><span class="m">398</span>.
 </code></pre></div>
-<p>在线安装 Tk 的 perl 模块(通过 <a href="https://metacpan.org/pod/distribution/Tk/Tk.pod">CPAN</a>手动安装，这里不详述，有兴趣的可自行谷歌一下)：</p>
-<div class="highlight"><pre><span></span><code>$ sudo yum install perl-Tk
-</code></pre></div>
+<p>在线安装 Tk 的 perl 模块(通过 <a href="https://metacpan.org/pod/distribution/Tk/Tk.pod">CPAN</a>手动安装，这里不详述，有兴趣的可自行谷歌一下)：
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>perl-Tk
+$<span class="w"> </span>perl<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;use Tk&quot;</span><span class="w">   </span><span class="c1"># 测试 TK 是否安装成功</span>
+</code></pre></div></p>
 <p>最后，卸载镜像：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>umount<span class="w"> </span>/mnt/textlive/
 umount:<span class="w"> </span>/mnt/textlive:<span class="w"> </span>target<span class="w"> </span>is<span class="w"> </span>busy.
@@ -10542,7 +10531,7 @@ $<span class="w"> </span>sudo<span class="w"> </span>fuser<span class="w"> </spa
 <span class="c1"># 执行 umount 就可以正常卸载</span>
 $<span class="w"> </span>sudo<span class="w"> </span>umount<span class="w"> </span>/mnt/textlive/
 </code></pre></div>
-<p>Texlive2017 有一个<a href="https://www.tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf">详细指南</a>，其中也有详细介绍各平台各种安装方法。</p>
+<p>这里有一个更加详细的<a href="https://www.tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf">TEX Live 指南</a>，其中也有详细介绍各平台各种安装方法。</p>
 <h2 id="四设置环境变量">四、设置环境变量<a class="headerlink" href="#四设置环境变量" title="Permanent link">&para;</a></h2>
 <p>将 texlive 部分目录添加到环境变量(\~/.bashrc)，编辑完记得 source 刷新一下：</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/software/texlive/2018/bin/x86_64-linux:<span class="nv">$PATH</span>
@@ -10556,9 +10545,9 @@ $<span class="w"> </span>sudo<span class="w"> </span>umount<span class="w"> </sp
 Hello \LaTeX! 你好，这是一个测试文档。
 \end{document}
 </code></pre></div>
-<p>使用命令，最后打开生成的 tex-test.pdf 文件：</p>
-<div class="highlight"><pre><span></span><code>xelatex tex-test.tex
-</code></pre></div>
+<p>使用命令，最后打开生成的 tex-test.pdf 文件：
+<div class="highlight"><pre><span></span><code>xelatex<span class="w"> </span>tex-test.tex
+</code></pre></div></p>
 <h2 id="六中文支持">六、中文支持<a class="headerlink" href="#六中文支持" title="Permanent link">&para;</a></h2>
 <p>LaTeX 默认是不支持中文的，想要支持中文排版，这里需要引入一个&rdquo;宏包&rdquo; 的概念。关于宏包，我们可以理解为一些指令的集合，用于专门处理某个特定的专题（如排版，字体等方面的细节问题），使用者可以方便地根据需要选用某个宏包。</p>
 <p>LaTeX 中比较常用的中文排版处理宏包主要有 ctex、CJK、xeCJK 等等，这里主要介绍一下后面两个。CJK 是由 Werner Lemberg 开发的，是中文（Chinese）、日文（Japanese）、韩文（Korean）三国文字的缩写。顾名思义，它能够支持这三种文字。实际上，CJK 能够支持在 LaTeX 中使用包括中文、日文、韩文在内的多种亚洲双字节文字。</p>
@@ -10578,16 +10567,15 @@ $<span class="w"> </span>tlmgr<span class="w"> </span>info<span class="w"> </spa
 <span class="c1"># 安装新的宏包</span>
 $<span class="w"> </span>tlmgr<span class="w"> </span>install<span class="w"> </span>pkgname
 </code></pre></div>
-<p>结合 xeCJK 宏包来配置字体，下面是一个小例子：</p>
+<p>结合 xeCJK 宏包来配置字体，下面是一个小例子：
 <div class="highlight"><pre><span></span><code>\documentclass{article}
 \usepackage{xeCJK}
 \setCJKmainfont{SimSun}
 \begin{document}
 你好，TeX Live 2018！
 \end{document}
-</code></pre></div>
+</code></pre></div></p>
 <p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrniQGthPg4PVIqBj2AHm_GWJUk_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrniQGthPg4PVIqBj2AHm_GWJUk_.png" /></a></p>
-<hr />
 <h2 id="七参考资料">七、参考资料<a class="headerlink" href="#七参考资料" title="Permanent link">&para;</a></h2>
 <ul>
 <li>CTAN，<a href="https://ctan.org/pkg/xecjk">xecjk – Support for CJK documents in XeLaTeX</a></li>
