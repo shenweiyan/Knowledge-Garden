@@ -27,7 +27,7 @@
     
     
       
-        <title>LaTeX 折腾系列 | Linux 字体安装的一点记录 - 维燕的知识花园</title>
+        <title>Linux 字体安装 - 维燕的知识花园</title>
       
     
     
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LaTeX 折腾系列 | Linux 字体安装的一点记录
+              Linux 字体安装
             
           </span>
         </div>
@@ -6396,7 +6396,7 @@
         
   
   <span class="md-ellipsis">
-    LaTeX 折腾系列 | Linux 字体安装的一点记录
+    Linux 字体安装
   </span>
   
 
@@ -10028,20 +10028,28 @@
   
 
 
-  <h1>LaTeX 折腾系列 | Linux 字体安装的一点记录</h1>
+  <h1>Linux 字体安装</h1>
 
-<p>在使用 LaTeX 进行中文字体编译排版过程中，发现 CentOS 6.5 中缺乏很大一部分中文字体，以至于在编译过程中频繁抛出缺乏字体的错误。 现在基于 windows 的 ttf 字体，以 <strong>“微软雅黑”</strong>  体为例，简单记录一下 Linux 下如何安装 windows 字体。</p>
-<p>1 . 首先获得一套”微软雅黑”字体库( Google 去下载，或者去 <code>C:\Windows\Fonts</code> 下直接复制)，包含两个文件 msyh.ttf （普通）、 msyhbd.ttf （加粗）；</p>
-<p>2 . 在 <code>/usr/share/fonts</code> 目录下建立一个子目录，例如 <code>win</code> ，命令如下：</p>
+<p>在使用 LaTeX 进行中文字体编译排版过程中，发现 CentOS 6.5 中缺乏很大一部分中文字体，以至于在编译过程中频繁抛出缺乏字体的错误。现在基于 windows 的 ttf 字体，以 <strong>“微软雅黑”</strong> 体为例，简单记录一下 Linux 下如何安装 windows 字体。</p>
+<ol>
+<li>
+<p>首先获得一套”微软雅黑”字体库( Google 去下载，或者去 <code>C:\Windows\Fonts</code> 下直接复制)，包含两个文件 msyh.ttf （普通）、 msyhbd.ttf （加粗）；</p>
+</li>
+<li>
+<p>在 <code>/usr/share/fonts</code> 目录下建立一个子目录，例如 <code>win</code> ，命令如下：</p>
+</li>
+</ol>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>/usr/share/fonts/win
 </code></pre></div>
 <ol>
-<li>将 <code>msyh.ttf</code>  和 <code>msyhbd.ttf</code>  复制到该目录下，例如这两个文件放在 <code>/home/shenweiyan</code>  下，使用命令：</li>
+<li>将 <code>msyh.ttf</code> 和 <code>msyhbd.ttf</code> 复制到该目录下，例如这两个文件放在 <code>/home/shenweiyan</code> 下，使用命令：</li>
 </ol>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/home/shenweiyan
 $<span class="w"> </span>cp<span class="w"> </span>msyh.ttf<span class="w"> </span>msyhbd.ttf<span class="w">  </span>/usr/share/fonts/win/
 </code></pre></div>
-<p>4 . 建立字体索引信息，更新字体缓存：</p>
+<ol>
+<li>建立字体索引信息，更新字体缓存：</li>
+</ol>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/usr/share/fonts/win
 $<span class="w"> </span>mkfontscale
 $<span class="w"> </span>mkfontdir
