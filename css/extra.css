@@ -25,3 +25,33 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
   text-align: center;
   font-size:14px;
 }
+
+
+/* rounded button */
+.rounded-button {
+  display: inline-flex; /* Use flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  border-radius: 100px; /* Circular corners */
+  padding: 9px 18px; /* Padding around the text */
+  margin: 0.15em 0;
+  border: none; /* Removes default border */
+  background-color: #55aea6; /* Background color */
+  color: #22272e !important; /* Text color */
+  font-size: 0.85em; /* Font size */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from anchor text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.rounded-button:hover {
+  background-color: #52bbb1;
+}
+
+.rounded-button svg {
+  fill: 22272e; /* Fill SVG icon with text color */
+  width: 1.2em;
+  height: auto;
+  margin-right: 0.5em; /* Add some space between the SVG icon and the text */
+}
+
