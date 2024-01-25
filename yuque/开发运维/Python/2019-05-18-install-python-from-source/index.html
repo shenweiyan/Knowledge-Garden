@@ -27,7 +27,7 @@
     
     
       
-        <title>生物信息学 Python 入门之源码安装 - 维燕的知识花园</title>
+        <title>Python 源码编译安装 - 维燕的知识花园</title>
       
     
     
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              生物信息学 Python 入门之源码安装
+              Python 源码编译安装
             
           </span>
         </div>
@@ -7041,7 +7041,7 @@
           
   
   <span class="md-ellipsis">
-    生物信息学 Python 入门之源码安装
+    Python 源码编译安装
   </span>
   
 
@@ -7052,7 +7052,7 @@
         
   
   <span class="md-ellipsis">
-    生物信息学 Python 入门之源码安装
+    Python 源码编译安装
   </span>
   
 
@@ -7182,6 +7182,15 @@
   <a href="#151_bz2" class="md-nav__link">
     <span class="md-ellipsis">
       1.5.1 _bz2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152init_import_site" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.2 init_import_site
     </span>
   </a>
   
@@ -10837,6 +10846,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#152init_import_site" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.2 init_import_site
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -10929,11 +10947,12 @@
   
 
 
-  <h1>生物信息学 Python 入门之源码安装</h1>
+  <h1>Python 源码编译安装</h1>
 
 <p>编程，作为生物信息学的一个基础性技能，是任何一个生信工程师都无法绕开话题。也许有些人还在纠结 Perl 和 Python 到底应该学习哪一个，但作为目前最火最流行的编程语言 Python 还是非常值得尝试的。它不但可以进行文本处理，在统计、网站、游戏、爬虫、数据可视化等方面也有非常强大的应用，比起曾经的 Perl 真的强大和全面很多，且比 Perl 更容易入手。不管从长远发展，还是短期需要，学会 Python，看懂 Perl (或者先学   Python，后学 Perl) 应该是每一个生信工程必备的基础技能之一。</p>
 <p>工欲善其事，必先利其器。关于 Python 安装教程在网上一搜一大把，但总感觉不够全面，尤其对于中间出现的一些问题的解决方法不尽如人意。鉴于此，本文基于  CentOS/Ubuntu Linux 对 Python 的源码编译安装进行了一下简单的总结，记录如下。</p>
 <ul>
+<li><strong>Update 2024-01-25：</strong> 基于本文档在 CentOS 7.7.1908 安装 Python-3.11.6 成功！</li>
 <li><strong>Update 2021-12-21：</strong> 基于本文档在 Ubuntu 20.04 LTS 安装 Python-3.10.1 成功！</li>
 <li><strong>Update 2021-09-15：</strong> 参考此文档在 Red Hat Enterprise 6.5 安装 Python-3.9.5 成功！</li>
 </ul>
@@ -11353,6 +11372,21 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <li>Python-3.6.9 中的 <code>./configure --help</code> 中没有 <code>--with-openssl</code> 参数！有点神奇，我也不知道原因。</li>
 <li>安装完成可以用 <code>from _bz2 import BZ2Compressor, BZ2Decompressor</code> 测试一下 <code>_bz2</code>  是否可用。</li>
 </ul>
+<h4 id="152init_import_site">1.5.2 init_import_site<a class="headerlink" href="#152init_import_site" title="Permanent link">&para;</a></h4>
+<p>如果在 <code>make</code> 过程中提示 <code>init_import_site: Failed to import the site module</code>：</p>
+<div class="highlight"><pre><span></span><code>Fatal<span class="w"> </span>Python<span class="w"> </span>error:<span class="w"> </span>init_import_site:<span class="w"> </span>Failed<span class="w"> </span>to<span class="w"> </span>import<span class="w"> </span>the<span class="w"> </span>site<span class="w"> </span>module
+Python<span class="w"> </span>runtime<span class="w"> </span>state:<span class="w"> </span>initialized
+Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/shenweiyan/src/Python-3.11.6/Lib/site.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">73</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
+<span class="w">    </span>import<span class="w"> </span>os
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/shenweiyan/src/Python-3.11.6/Lib/os.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">29</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
+<span class="w">    </span>from<span class="w"> </span>_collections_abc<span class="w"> </span>import<span class="w"> </span>_check_methods
+SystemError:<span class="w"> </span>&lt;built-in<span class="w"> </span><span class="k">function</span><span class="w"> </span>compile&gt;<span class="w"> </span>returned<span class="w"> </span>NULL<span class="w"> </span>without<span class="w"> </span>setting<span class="w"> </span>an<span class="w"> </span>exception
+make<span class="o">[</span><span class="m">1</span><span class="o">]</span>:<span class="w"> </span>***<span class="w"> </span><span class="o">[</span>Python/frozen_modules/abc.h<span class="o">]</span><span class="w"> </span>Error<span class="w"> </span><span class="m">1</span>
+make<span class="o">[</span><span class="m">1</span><span class="o">]</span>:<span class="w"> </span>Leaving<span class="w"> </span>directory<span class="w"> </span><span class="sb">`</span>/home/shenweiyan/src/Python-3.11.6<span class="err">&#39;</span>
+make:<span class="w"> </span>***<span class="w"> </span><span class="o">[</span>profile-opt<span class="o">]</span><span class="w"> </span>Error<span class="w"> </span><span class="m">2</span>
+</code></pre></div>
+<p>个人在 CentOS 7.7.1908 + GCC 4.8.5 安装 Python 3.11.6 就遇到了这个问题，最后在 <a href="https://www.linuxquestions.org/questions/centos-111/build-python-3-11-from-source-on-centos-7-a-4175719297/">这里</a> 找到了原因 —— GCC 版本太低了，因此我们只需要升级一下 GCC 的版本就可以。</p>
 <h2 id="2-ubuntudebian">2. Ubuntu/Debian<a class="headerlink" href="#2-ubuntudebian" title="Permanent link">&para;</a></h2>
 <h3 id="21-安装环境">2.1 安装环境<a class="headerlink" href="#21-安装环境" title="Permanent link">&para;</a></h3>
 <p>Ubuntu 20.04 + GCC 9.3.0。</p>
