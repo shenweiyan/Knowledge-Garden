@@ -27,7 +27,7 @@
     
     
       
-        <title>GitHub Pages 一些好玩的技巧 - 维燕的知识花园</title>
+        <title>使用 meta 实现页面的定时刷新或跳转 - 维燕的知识花园</title>
       
     
     
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitHub Pages 一些好玩的技巧
+              使用 meta 实现页面的定时刷新或跳转
             
           </span>
         </div>
@@ -10517,6 +10517,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#页面定时跳转与刷新" class="md-nav__link">
+    <span class="md-ellipsis">
+      页面定时跳转与刷新
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="页面定时跳转与刷新">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meta-源信息功能之页面定时跳转与刷新" class="md-nav__link">
+    <span class="md-ellipsis">
+      meta 源信息功能之页面定时跳转与刷新
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#问题来了为何-meta-跳转不火呢" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题来了：为何 meta 跳转不火呢？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10615,7 +10648,7 @@
         
 
   
-    <a href="https://github.com/shenweiyan/Knowledge-Garden/edit/main/docs/blog/posts/2023-12-05-GitHub-Pages-一些好玩的技巧.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/shenweiyan/Knowledge-Garden/edit/main/docs/blog/posts/2023-12-05-使用-meta-实现页面的定时刷新或跳转.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -10624,16 +10657,16 @@
     
       
     
-    <a href="https://github.com/shenweiyan/Knowledge-Garden/raw/main/docs/blog/posts/2023-12-05-GitHub-Pages-一些好玩的技巧.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/shenweiyan/Knowledge-Garden/raw/main/docs/blog/posts/2023-12-05-使用-meta-实现页面的定时刷新或跳转.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>GitHub Pages 一些好玩的技巧</h1>
+  <h1>使用 meta 实现页面的定时刷新或跳转</h1>
 
-<p>搜集一下 GitHub Pages 一些好玩的技巧。</p>
+<p>这个方法最开始是在 <a href="https://github.com/yanlinlin82">Linlin Yan (颜林林)</a> 的 GitHub Pages 上第一次看到。后来，随着自己也用上了，就开始有了更深一些的认识。</p>
 <!-- more -->
 
 <h2 id="跳转域名">跳转域名<a class="headerlink" href="#跳转域名" title="Permanent link">&para;</a></h2>
@@ -10644,6 +10677,41 @@
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></p>
+<h2 id="页面定时跳转与刷新">页面定时跳转与刷新<a class="headerlink" href="#页面定时跳转与刷新" title="Permanent link">&para;</a></h2>
+<p>这部分的内容主要来源自：《<a href="https://www.zhangxinxu.com/wordpress/2015/03/meta-http-equiv-refresh-content/">小tip: 使用meta实现页面的定时刷新或跳转</a>》。</p>
+<blockquote>
+<h3 id="meta-源信息功能之页面定时跳转与刷新">meta 源信息功能之页面定时跳转与刷新<a class="headerlink" href="#meta-源信息功能之页面定时跳转与刷新" title="Permanent link">&para;</a></h3>
+<p>几乎所有的网页头部都有<code>&lt;meta&gt;</code>源信息。除了我们常用的定义编码、关键字(name=”keywords”)、描述(name=”description”)(for SEO)，还可以定义视区大小、缩放比例等(for 移动端)，如下：</p>
+<div class="highlight"><pre><span></span><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
+</code></pre></div>
+<p>以及，定义网页的过期时间，Cookie 的过期时间等等。</p>
+<p>文本要介绍的内容，科科，跟上面都没关系。哦，抱歉，都有关系，只是名称我故意没提到。主角嘛，总要最后闪亮登场！</p>
+<p>就是我们网页平时跳转，还可以使用 <code>&lt;meta&gt;</code> 实现，下面几个典型代码示例：  <br />
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;refresh&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+这个表示当前页面每5秒钟刷一下，刷一下~</p>
+<p><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;refresh&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;2; url=&#39;/&#39;&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+这个表示当前页面2秒后跳到首页~    </p>
+<p><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;refresh&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;0; url=&#39;http://www.qq.com/&#39;&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+页面直接跳转到腾讯网~</p>
+<p>所以，当我们下次遇到“登录成功，正在跳转到您之前访问页面……”的时候，可以使用<code>&lt;meta&gt;</code>的这个<code>refresh</code>刷新，跳转功能，可以说是成本最低的。    <br />
+您可以狠狠地点击这里：<a href="http://www.zhangxinxu.com/study/201503/meta-fresh-content.html">meta与当前页面定时刷新Demo</a>   <br />
+<a class="glightbox" href="https://shub.weiyan.tech/kgarden/2024/01/meta-refresh.37epe9yaam80.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="meta-refresh" src="https://shub.weiyan.tech/kgarden/2024/01/meta-refresh.37epe9yaam80.png" /></a></p>
+<p>上面 Demo 效果就是上面第1个示例代码效果。        </p>
+<p>根据我的测试，此特性包括IE7在内的浏览器都是支持的。    </p>
+<h3 id="问题来了为何-meta-跳转不火呢">问题来了：为何 meta 跳转不火呢？<a class="headerlink" href="#问题来了为何-meta-跳转不火呢" title="Permanent link">&para;</a></h3>
+<p>大家可以看到，<code>meta</code> 跳转，使用方便，不用写 JS，不用会后台代码，定时跳转刷新什么的玩得照样很溜，而且兼容性好，为啥总感觉不温不火，很少看见有人提及呢？    </p>
+<p>新晋的小伙伴不知有没有听过这么一个词，叫做“万恶的IE6年代”。</p>
+<p>据说，当年，这一批老旧的浏览器，问题很多，其中就有对<code>meta</code> 两个小小的不友好。我也是听说，不一定准确。坊间是这么传闻的：    </p>
+<ul>
+<li>时间设为0的跳转，有时候页面会闪一下；    </li>
+<li>跳转到其他页面，浏览器后退按钮是不能用的；     </li>
+</ul>
+<p>但是啊，现在是什么年代啊，监狱风云都拍到第二季了，这些老问题，我觉得就可以忽略不计了。    </p>
+<p>不妨大胆试试 <code>meta</code> 跳转，好好利用下浏览器的原生特性，说不定就会发现比什么 JS 跳转之流用得更开心。</p>
+</blockquote>
 <script src="https://giscus.app/client.js"
     data-repo="shenweiyan/Knowledge-Garden"
     data-repo-id="R_kgDOKgxWlg"
@@ -10677,7 +10745,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-30</span>
   </span>
 
     
