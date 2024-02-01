@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#体验与感受" class="md-skip">
+        <a href="#开源的代名词" class="md-skip">
           跳转至
         </a>
       
@@ -1121,6 +1121,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1170,6 +1176,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../../../release" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    版本说明
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1187,10 +1214,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1201,8 +1228,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             管理员文档
           </label>
@@ -1230,24 +1257,24 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
         
           
-          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    管理
+    Administration
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1">
             <span class="md-nav__icon md-icon"></span>
-            管理
+            Administration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1304,6 +1331,48 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../devel" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开发者文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../other" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    其他文档
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -10486,6 +10555,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#开源的代名词" class="md-nav__link">
+    <span class="md-ellipsis">
+      开源的代名词
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#体验与感受" class="md-nav__link">
     <span class="md-ellipsis">
       体验与感受
@@ -10691,14 +10769,19 @@
 <p>从2023年7月起我所有可公开的文档都保存在了 GitHub Discussions 上，作为博客、IED 编辑器，以及评论使用，GitHub Discussions 是完全没问题的。</p>
 <!-- more -->
 
+<h2 id="开源的代名词">开源的代名词<a class="headerlink" href="#开源的代名词" title="Permanent link">&para;</a></h2>
+<p>开源已成为 GitHub 的代名词。</p>
+<blockquote>
+<p>当开发者谈论开源时，通常会想到 GitHub，它不仅仅是一个代码托管平台，更是一个汇聚了全球开发者的社交中心。过去，开发者发布一款软件后，都是在自己的小圈子里默默努力和交流，现在通过 GitHub 平台可以方便地与全球的开发者分享、交流和协作。贡献者在这里展示自己的才华，追随者在这里寻找强者的脚印，等待着被世人认可的时刻。</p>
+</blockquote>
 <h2 id="体验与感受">体验与感受<a class="headerlink" href="#体验与感受" title="Permanent link">&para;</a></h2>
 <p>由于 GitHub 是直接 markdown 源码进行书写，正常的导出基本不会有格式错乱的问题，这一点非常好。不像有一些富文本的编辑器，动不动就给你增加几个换行或者空格什么的额外字符。</p>
-<p>借助 GitHub GraphQL API + Python 进行导出非常顺滑，导出来的文档可以随意折腾，可玩性非常大。</p>
+<p>借助 GitHub GraphQL API + Python + GitHub Actions 进行每天定时导出非常顺滑，导出来的文档可以随意折腾，可玩性非常大。</p>
 <h2 id="专业书籍文档">专业书籍文档<a class="headerlink" href="#专业书籍文档" title="Permanent link">&para;</a></h2>
 <p>今天忽然想到的一个问题，即如果作为专业性比较强的系列文档写作，如《<a href="https://www.hello-algo.com/">Hello 算法</a>》 这样专业性和逻辑性非常明确的专业书籍，使用 GitHub Discussions 写作应该是有点不太合适。</p>
-<p>但又仔细想了一下，如果只是写作应该是没问题的 —— 我们可以用 sections 或者 categories，甚至是 tags 进行书籍分类，最后在导出的时候借助这些标签把相关的文档整合到一块，再借助 nav 梳理成大纲展现给读者阅读就可以。所以，总的来说<strong>可以用于专业书籍写作，但不太适合用于专业书籍的呈现和阅读</strong> —— 主要是大纲和逻辑性会变得不明显。</p>
+<p>但又仔细想了一下，如果<strong>只是写作</strong>应该是没问题的 —— 我们可以用 sections 或者 categories，甚至是 tags 进行书籍分类，最后在导出的时候借助这些标签把相关的文档整合到一块，再借助 nav 梳理成大纲展现给读者阅读就可以。所以，总的来说可以用于专业书籍<strong>写作(编辑)</strong>，但<strong>不太适合用于专业书籍的呈现和阅读</strong> —— 主要是大纲和逻辑性会变得不明显。</p>
 <h2 id="目录和分类标签">目录和分类标签<a class="headerlink" href="#目录和分类标签" title="Permanent link">&para;</a></h2>
-<p>GitHub Discussions 目前<a href="https://github.com/orgs/community/discussions/7960">最多支持 25 个 categories</a>，这是一个限制。第二个问题是只能通过 section+category 实现最多两级的目录结构，所以对于三级和三级以上的目录结构目前暂时无能为力。</p>
+<p>GitHub Discussions 目前<a href="https://github.com/orgs/community/discussions/7960">最多支持 25 个 categories</a>，这是一个限制。因此，通过 section+category 我们在 Discussions 上最多只能实现两级的目录结构，所以对于三级和三级以上的目录结构目前暂时无能为力。</p>
 <p>因此，想到一个折中的解决方法：使用 labels 来区分第三级目录结构。
 <div class="highlight"><pre><span></span><code>1.1-生信
   - 1.1.1-算法
