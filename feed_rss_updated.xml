@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Sat, 03 Feb 2024 19:02:04 -0000</pubDate>
-    <lastBuildDate>Sat, 03 Feb 2024 19:02:04 -0000</lastBuildDate>
+    <pubDate>Sun, 04 Feb 2024 19:03:39 -0000</pubDate>
+    <lastBuildDate>Sun, 04 Feb 2024 19:03:39 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -39,7 +39,7 @@
       
       <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -54,7 +54,7 @@
       
       <description>&lt;h1&gt;乱弹&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -69,7 +69,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -84,7 +84,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -99,7 +99,7 @@
       
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -114,7 +114,7 @@
       
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -129,7 +129,7 @@
       
       <description>&lt;h1&gt;知识&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -144,7 +144,7 @@
       
       <description>&lt;h1&gt;资讯&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -159,7 +159,7 @@
       
       <description>&lt;h1&gt;好玩&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -174,7 +174,7 @@
       
       <description>&lt;h1&gt;乱弹&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -189,7 +189,7 @@
       
       <description>&lt;h1&gt;2023&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
       
       
       
@@ -204,7 +204,33 @@
       
       <description>&lt;h1&gt;2024&lt;/h1&gt;</description>
       
-      <pubDate>Sat, 03 Feb 2024 19:02:09 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 19:03:44 +0000</pubDate>
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>使用 Planemo 进行 Galaxy 工具开发</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;blockquote&gt;
+&lt;p&gt;说明：本文章原文发布于 《&lt;a href=&#34;https://www.yuque.com/shenweiyan/biox/planemo-for-galaxy&#34;&gt;使用 Planemo 进行 Galaxy 工具开发 - 语雀&lt;/a&gt;》，部分内容已更新。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;文章开始前，我们先了解一下 Planemo 到底是个什么东西。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Command-line utilities to assist in developing &lt;a href=&#34;http://galaxyproject.org/&#34;&gt;Galaxy&lt;/a&gt; and &lt;a href=&#34;https://www.commonwl.org/&#34;&gt;Common Workflow Language&lt;/a&gt; artifacts - including tools, workflows, and training materials.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;说白了，Planemo 就是用于 Galaxy 平台工具和 WDL 通用工作流语言相关产品辅助开发的一个命令行工具，这个程序集可以用于工具、流程，以及培训教材的开发。&lt;/p&gt;</description>
+      
+      <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
       
       
       
@@ -344,7 +370,7 @@
 &lt;figcaption&gt;Random acts of kindness.&lt;/figcaption&gt;
 &lt;/figure&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -383,7 +409,7 @@
     async&gt;
 &lt;/script&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -399,7 +425,7 @@
       <description>&lt;h1&gt;博客文章&lt;/h1&gt;
 &lt;p&gt;这是首发于 &lt;a href=&#34;https://github.com/shenweiyan/Knowledge-Garden/discussions&#34;&gt;GitHub Discussions&lt;/a&gt;，并定期同步更新至 Material for MkDocs 本站点上的博客文章。&lt;/p&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -498,7 +524,7 @@
 &lt;p&gt;!!! tip &#34;请备注真名实姓，让我感受到一个真实的人的气息&#34;
     如果给我发&lt;strong&gt;邮件&lt;/strong&gt;，或者通过&lt;strong&gt;微信添加好友&lt;/strong&gt;，请写上您的&lt;strong&gt;真名实姓&lt;/strong&gt;，让我感受到一个&lt;strong&gt;真实的人&lt;/strong&gt;的气息。我不太愿意跟&lt;strong&gt;网名&lt;/strong&gt;打交道，对于那些不知来路、上来就问问题的微信和邮件，我通常会直接忽略。&lt;/p&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -557,7 +583,7 @@
 &lt;p&gt;国内虽然不少人都在使用 Gitee，但 Gitee 时不时恶心你一下（前不久就无缘无故把我的 oschina 的账号封了，而且要加 QQ 群去申诉，最后我是直接通过邮件反馈解封了），而且有时候有些资源用起来限制太多，很麻烦。&lt;/p&gt;
 &lt;p&gt;极狐从 2024 年 1 月 2 日起要付费才能使用，1898元/人/年的价格估计会劝退 90% 的个人用户吧！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -597,7 +623,7 @@
     &lt;img style=&#34;max-widrh:600px&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/portfolio/webstack-hugo.jpg&#34; alt=&#34;WebStack-Hugo&#34;&gt;
 &lt;/p&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -612,7 +638,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -627,7 +653,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -642,7 +668,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
@@ -657,7 +683,7 @@
       
       <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
       
-      <pubDate>Fri, 02 Feb 2024 19:01:45 +0000</pubDate>
+      <pubDate>Sat, 03 Feb 2024 19:01:47 +0000</pubDate>
       
       
       
