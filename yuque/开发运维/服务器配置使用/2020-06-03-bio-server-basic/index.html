@@ -11427,7 +11427,7 @@
 
 <p>前两天拿到了云筏科技提供的一台 4 核 16G 内存，1TB 硬盘，300M 带宽的服务器（看了一下 IP，应该是位于加拿大的服务器）！虽然是国外的服务器，但从国内 ssh 上去后的各种操作还是非常流畅的，而且前期白菜般的体验价格和飞一般的带宽的确也很有吸引力，像我用来做 Galaxy 和一些 web 开发测试完全是没问题。另外该服务器还自带了一个开箱即用的 RStudio-Server，对生信入门者来说也算是比较友好了，最起码节省了不少部署设置的功夫。</p>
 <p>作为体验性服务器，这里简单介绍一下拿到服务器后的一些基本设置。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl7tAv0j29yaClshZLBsurEvzHKR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cr-rstudio.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl7tAv0j29yaClshZLBsurEvzHKR.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl7tAv0j29yaClshZLBsurEvzHKR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cr-rstudio.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl7tAv0j29yaClshZLBsurEvzHKR.png" /></a></p>
 <h2 id="1-查看配置信息">1. 查看配置信息<a class="headerlink" href="#1-查看配置信息" title="Permanent link">&para;</a></h2>
 <ul>
 <li>查看内核版本</li>
@@ -11475,7 +11475,7 @@ cat<span class="w"> </span>/proc/cpuinfo<span class="p">|</span><span class="w">
 <span class="c1"># 查看内存、CPU</span>
 <span class="o">[</span>root@r0sasd1bQi<span class="w"> </span>~<span class="o">]</span><span class="c1"># htop</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqKKMNZ9J75Qb40n5iChJmY3cSIH.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="htop.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqKKMNZ9J75Qb40n5iChJmY3cSIH.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqKKMNZ9J75Qb40n5iChJmY3cSIH.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="htop.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqKKMNZ9J75Qb40n5iChJmY3cSIH.png" /></a></p>
 <h2 id="2-账号与用户名管理">2. 账号与用户名管理<a class="headerlink" href="#2-账号与用户名管理" title="Permanent link">&para;</a></h2>
 <p>拿到服务器第一件事就是修改用户名密码，以及创建新账号，毕竟 root 权限太大！</p>
 <ul>
@@ -11556,14 +11556,14 @@ passwd:<span class="w"> </span>all<span class="w"> </span>authentication<span cl
 版权声明：本文为 CSDN 博主「点亮梦想那束光」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：<a href="https://blog.csdn.net/solaraceboy/java/article/details/78563537">https://blog.csdn.net/solaraceboy/java/article/details/78563537</a></p>
 </blockquote>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fmcf0bFiRfvZF4V66GmwxJvEj8GG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hostname.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fmcf0bFiRfvZF4V66GmwxJvEj8GG.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmcf0bFiRfvZF4V66GmwxJvEj8GG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hostname.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmcf0bFiRfvZF4V66GmwxJvEj8GG.png" /></a></p>
 <h3 id="个性化命令行提示符">个性化命令行提示符<a class="headerlink" href="#个性化命令行提示符" title="Permanent link">&para;</a></h3>
 <p>bash 中命令行提示符的格式是由 PS1 来控制的。 <code>/etc/bashrc</code>  中 PS1 的格式定义用于控制全局用户的命令行提示符样式；而针对个人用户的  PS1 设置，位于 <code>~/.bashrc</code>  中。</p>
 <p>我自己的 PS1 定义：</p>
 <div class="highlight"><pre><span></span><code><span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;\033[35;1m\u@\h \[\e[m\]\t \[\033[36;1m\]$(pwd) \n$ \[\e[m\]&#39;</span>
 <span class="nb">cd</span><span class="w"> </span>/data<span class="p">;</span><span class="w"> </span>clear<span class="p">;</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvpFQwosMTxV8Ulwu342gWjOXSkg.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="bashrc.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvpFQwosMTxV8Ulwu342gWjOXSkg.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvpFQwosMTxV8Ulwu342gWjOXSkg.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="bashrc.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvpFQwosMTxV8Ulwu342gWjOXSkg.png" /></a></p>
 <p>有关于 PS1 的格式介绍如下：</p>
 <div class="highlight"><pre><span></span><code>序列<span class="w">                  </span>说明
 <span class="se">\a</span><span class="w">          </span>ASCII<span class="w"> </span>响铃字符（也可以键入<span class="w"> </span><span class="se">\0</span><span class="m">07</span>）
@@ -11614,7 +11614,7 @@ passwd:<span class="w"> </span>all<span class="w"> </span>authentication<span cl
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

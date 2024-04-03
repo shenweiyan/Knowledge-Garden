@@ -11462,43 +11462,43 @@
 <h1 id="一使用七牛云的镜像存储">一、使用七牛云的镜像存储<a class="headerlink" href="#一使用七牛云的镜像存储" title="Permanent link">&para;</a></h1>
 <h2 id="11-注册并新建对象存储的存储空间">1.1 注册，并新建对象存储的存储空间<a class="headerlink" href="#11-注册并新建对象存储的存储空间" title="Permanent link">&para;</a></h2>
 <p>七牛云注册，实名认证，这里不细说，很简单。新建对象存储的存储空间也很简单：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhD1lAfu-UV6bpzBTXa7vns2waaO.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhD1lAfu-UV6bpzBTXa7vns2waaO.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhD1lAfu-UV6bpzBTXa7vns2waaO.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhD1lAfu-UV6bpzBTXa7vns2waaO.png" /></a></p>
 <h2 id="12-增加镜像存储的镜像源">1.2 增加镜像存储的镜像源<a class="headerlink" href="#12-增加镜像存储的镜像源" title="Permanent link">&para;</a></h2>
 <p>在创建好的对象存储空间（note-db）中，选择 &ldquo;镜像存储&rdquo;，添加语雀镜像源地址：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqnSjqQ1h_AGmImexpTVpUuHqrGf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqnSjqQ1h_AGmImexpTVpUuHqrGf.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqnSjqQ1h_AGmImexpTVpUuHqrGf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqnSjqQ1h_AGmImexpTVpUuHqrGf.png" /></a></p>
 <h2 id="13-绑定域名">1.3 绑定域名<a class="headerlink" href="#13-绑定域名" title="Permanent link">&para;</a></h2>
 <p>七牛云绑定域名，并且设置 CNAME 的一个重要前提是：域名必须备案成功了才可以使用的！</p>
 <p>简单说一下绑定了域名的作用：我们在七牛云上存储了图片文件什么的，访问地址都需要加上一个域名的。起初我们开通对象存储的时候，七牛云会给我们一个测试域名。但是测试域名会被收回，公告如下：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FijLo6r-uVq2ZLTbH_MvILEk3piD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FijLo6r-uVq2ZLTbH_MvILEk3piD.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FijLo6r-uVq2ZLTbH_MvILEk3piD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FijLo6r-uVq2ZLTbH_MvILEk3piD.png" /></a></p>
 <p>所以我们需要用我们自己的二级域名来绑定七牛云进行访问（最好不用 www 开头的二级域名来绑定，因为 www 开头的域名，我们都是作为主域名的），具体绑定步骤如下。</p>
 <h3 id="131-绑定域名">1.3.1 绑定域名<a class="headerlink" href="#131-绑定域名" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fjq2sidHfcWc1BP9pZn9EM2jQvq2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fjq2sidHfcWc1BP9pZn9EM2jQvq2.png" /></a>
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg2gkw0JFg8QVidXq5rQ7NqVDM7h.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg2gkw0JFg8QVidXq5rQ7NqVDM7h.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fjq2sidHfcWc1BP9pZn9EM2jQvq2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fjq2sidHfcWc1BP9pZn9EM2jQvq2.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg2gkw0JFg8QVidXq5rQ7NqVDM7h.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg2gkw0JFg8QVidXq5rQ7NqVDM7h.png" /></a></p>
 <h3 id="132-配置-cname">1.3.2 配置 CNAME<a class="headerlink" href="#132-配置-cname" title="Permanent link">&para;</a></h3>
 <p><strong>首先</strong>，上面 3.1 步骤，点击 &ldquo;确认&rdquo; 完成后，即可看到新增加域名的 CNAME 信息：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjBW4--eURX63coCfMwPmOTkE_oR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjBW4--eURX63coCfMwPmOTkE_oR.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjBW4--eURX63coCfMwPmOTkE_oR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjBW4--eURX63coCfMwPmOTkE_oR.png" /></a></p>
 <p><strong>第二步</strong>，到你买域名的地方去配置。我是在阿里云上面买的，下面以阿里云为例：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmVa6wK7g8yWzYayK-NCR1HeFHSQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmVa6wK7g8yWzYayK-NCR1HeFHSQ.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmVa6wK7g8yWzYayK-NCR1HeFHSQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmVa6wK7g8yWzYayK-NCR1HeFHSQ.png" /></a>
 **做到这一步就算已经完成了。成功之后，回到七牛云对象存储，在存储空间的概览也可以看到 CNAME 状态显示为&rdquo;成功&rdquo;：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqUy4JQdwDQ1EM_k1dRzGZCTUtVu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqUy4JQdwDQ1EM_k1dRzGZCTUtVu.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqUy4JQdwDQ1EM_k1dRzGZCTUtVu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqUy4JQdwDQ1EM_k1dRzGZCTUtVu.png" /></a></p>
 <p><strong>第三</strong>，在博客中把博客所有  <a href="https://cdn.nlark.com/">https://cdn.nlark.com</a>  的域名都替换成  <a href="http://qiniu.bioinit.com/">http://qiniu.bioinit.com</a>  即可。</p>
 <p><strong>第四</strong>，如果想要换成  <a href="http://qiniu.bioinit.com/">https://qiniu.bioinit.com</a>，需要在存储空间的 <strong>&ldquo;域名管理&rdquo;</strong>  中修改 https 配置。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpYa6F1OQtJVZ7_8n4raCIyNU40b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpYa6F1OQtJVZ7_8n4raCIyNU40b.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpYa6F1OQtJVZ7_8n4raCIyNU40b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpYa6F1OQtJVZ7_8n4raCIyNU40b.png" /></a></p>
 <p>HTTPS 配置中的 SSL 证书可以选择申请七牛与的免费证书；也可以申请阿里云的** &ldquo;免费型 DV SSL&rdquo; <strong>证书，然后选择本地上传 </strong>&ldquo;证书内容&rdquo;<strong> 和 </strong>&ldquo;证书私钥&rdquo;<strong>，我这里选择的是阿里云的</strong> &ldquo;免费型 DV SSL&rdquo; **证书。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq5JW6xmF4nNAp4LU1HUH3Ymmlar.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq5JW6xmF4nNAp4LU1HUH3Ymmlar.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkezkzI6uURpQNZfRzZjTtVGWWvz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkezkzI6uURpQNZfRzZjTtVGWWvz.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgFHSAFRhVRDMysAoCY4vHN1x9Bw.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgFHSAFRhVRDMysAoCY4vHN1x9Bw.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq5JW6xmF4nNAp4LU1HUH3Ymmlar.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq5JW6xmF4nNAp4LU1HUH3Ymmlar.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkezkzI6uURpQNZfRzZjTtVGWWvz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkezkzI6uURpQNZfRzZjTtVGWWvz.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgFHSAFRhVRDMysAoCY4vHN1x9Bw.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgFHSAFRhVRDMysAoCY4vHN1x9Bw.png" /></a></p>
 <p><strong>&ldquo;确认&rdquo;</strong>  提交后，等待大约 10 分钟，可以在七牛云对象存储空间的 <strong>&ldquo;域名管理&rdquo;</strong> → <strong>&ldquo;HPPTS 配置&rdquo;</strong>  看到 HTTPS 已经开启。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuv4WG_FNYVPd_ntz4H4xht6NGAa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuv4WG_FNYVPd_ntz4H4xht6NGAa.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fuv4WG_FNYVPd_ntz4H4xht6NGAa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fuv4WG_FNYVPd_ntz4H4xht6NGAa.png" /></a></p>
 <p><strong>最后</strong>，在博客中把博客所有  <a href="https://cdn.nlark.com/">https://cdn.nlark.com</a>  的域名都替换成  <a href="http://qiniu.bioinit.com/">https://qiniu.bioinit.com</a>，并检查图片是否正常显示。</p>
 <h1 id="二使用对象存储的镜像回源">二、使用对象存储的镜像回源<a class="headerlink" href="#二使用对象存储的镜像回源" title="Permanent link">&para;</a></h1>
 <p>关于对象存储的镜像回源，我们以阿里云的 oss 对象存储为例。</p>
 <h2 id="21-创建-bucket选择镜像回源">2.1 创建 bucket，选择镜像回源<a class="headerlink" href="#21-创建-bucket选择镜像回源" title="Permanent link">&para;</a></h2>
 <p>我们可以在 oss 的 bucket 中选择 &ldquo;<strong>基础设置</strong>&rdquo; 页面的   &ldquo;<strong>镜像回源</strong>&rdquo; 设置。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkuic0mx5CeObKnuCjAaIZC1nh-D.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkuic0mx5CeObKnuCjAaIZC1nh-D.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fkuic0mx5CeObKnuCjAaIZC1nh-D.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fkuic0mx5CeObKnuCjAaIZC1nh-D.png" /></a></p>
 <h2 id="22-添加镜像回源规则">2.2 添加镜像回源规则<a class="headerlink" href="#22-添加镜像回源规则" title="Permanent link">&para;</a></h2>
 <p>在 &ldquo;<strong>镜像回源</strong>&rdquo; 设置中 &ldquo;<strong>添加规则</strong>&ldquo;，添加规则时，会问你是否需要镜像，如果不镜像，就不会自动备份迁移一个到 OSS 中，下次访问的时候，虽然还会回源，但不一定正常显示图片，因此这里选择&rdquo;<strong>镜像</strong>&ldquo;。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoqlqaHkkKXxB0avqMsrInEc_GVM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoqlqaHkkKXxB0avqMsrInEc_GVM.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FoqlqaHkkKXxB0avqMsrInEc_GVM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FoqlqaHkkKXxB0avqMsrInEc_GVM.png" /></a></p>
 <p>这里有两个前缀的选项，比较好玩：</p>
 <ul>
 <li>
@@ -11514,13 +11514,13 @@
 <h2 id="23-变更链接">2.3 变更链接<a class="headerlink" href="#23-变更链接" title="Permanent link">&para;</a></h2>
 <p>上一步镜像回源的规则创建好，点击 &ldquo;确定&rdquo; 后，在博客中我们只需要把博客所有 <code>https://cdn.nlark.com</code> 的域名都替换成你 oss 对应的外网访问 Bucket 域名（如， <code>https://bucketname.oss-endpoint.com</code>  即可），并检查图片是否正常显示。</p>
 <p>对于其他镜像回源规则的链接变更：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhwUMa1xlPdbZ91XKtVQ-hTWQpin.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhwUMa1xlPdbZ91XKtVQ-hTWQpin.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhwUMa1xlPdbZ91XKtVQ-hTWQpin.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhwUMa1xlPdbZ91XKtVQ-hTWQpin.png" /></a></p>
 <ul>
 <li>把 cdn.nlark.com/yuque/0 替换成 notedb.oss-cn-shenzhen.aliyuncs.com 即可。</li>
 </ul>
 <h1 id="三个人博客">三、个人博客<a class="headerlink" href="#三个人博客" title="Permanent link">&para;</a></h1>
 <p>最后，附上与语雀文章同步更新，基于 Hugo 的个人博客。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjMPtnGLbxm5-GoDa34mLICaFti5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="shen-bioitee.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjMPtnGLbxm5-GoDa34mLICaFti5.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjMPtnGLbxm5-GoDa34mLICaFti5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="shen-bioitee.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjMPtnGLbxm5-GoDa34mLICaFti5.png" /></a></p>
 
 
 
@@ -11541,7 +11541,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

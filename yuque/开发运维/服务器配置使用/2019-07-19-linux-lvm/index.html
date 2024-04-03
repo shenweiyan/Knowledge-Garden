@@ -11516,11 +11516,11 @@
   <h1>Linux 磁盘管理之 LVM 原理与操作</h1>
 
 <p>LVM （ <strong>L</strong>ogical <strong>V</strong> olume <strong>M</strong>anager,  逻辑卷管理器）  是  Linux  环境下对硬盘分区进行管理的一种机制，开创这项技术的初衷是为了解决传统硬盘分区创建后不易更改其大小的弱点。对于传统硬盘分区进行强制扩容和缩小技术理论上虽然是可行的，但却有可能造成数据的丢失，LVM  逻辑卷管理器技术能够将多块硬盘进行卷组合并，让用户不必关心设备底层的架构和布局，拿来即用。</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frz-TAZRHf6dF6dw2pwpnQDdTBkY.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frz-TAZRHf6dF6dw2pwpnQDdTBkY.jpeg" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Frz-TAZRHf6dF6dw2pwpnQDdTBkY.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Frz-TAZRHf6dF6dw2pwpnQDdTBkY.jpeg" /></a></p>
 <p>LVM  逻辑卷管理器是在磁盘分区和文件系统之间添加的逻辑层，它提供了一个抽象的卷组，可以使得多块硬盘进行卷组合并，让用户不必关心物理硬盘设备的底层结构，从而实现对分区的灵活动态调整。</p>
 <blockquote>
 <p>LVM  逻辑卷管理器的技术结构如图 2  所示，刘遄老师来举个吃货的例子帮助同学们理解吧，比如家里想吃馒头但面粉不够了，妈妈分别从隔壁老王家、老李家、老张家借来一些面粉，蒸出馒头后大家一起来吃，首先咱们需要将这些面粉（<strong>物理卷  PV</strong>，Physical Volume）合并成一个大面团（<strong>卷组  VG</strong>，Volume Group），然后把这一大团面再分割成一个个小馒头（<strong>逻辑卷  LV</strong>，Logical Volume），每个小馒头的重量必须是每勺面粉（<strong>基本单元  PE</strong>，Physical Extent）的倍数。物理卷是处于逻辑卷管理器中最底层的资源，可以理解成是物理硬盘、硬盘分区或者 RAID 磁盘阵列组都可以，而卷组是建立在物理卷之上的，一个卷组中可以包含多个物理卷，当然在卷组创建之后也可以继续向其中添加新的物理卷，而逻辑卷是建立于卷组之上的，将卷组中空闲的资源建立出新的逻辑卷，并且逻辑卷建立后可以动态的扩展或缩小空间，这也就是  LVM  逻辑卷管理器的核心理念。（<a href="http://www.linuxprobe.com/chapter-07.html">第 7 章   使用 RAID 与 LVM 磁盘阵列技术</a>）</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvR0YydWrGOCat-HuBQQ21vHyogG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvR0YydWrGOCat-HuBQQ21vHyogG.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvR0YydWrGOCat-HuBQQ21vHyogG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvR0YydWrGOCat-HuBQQ21vHyogG.png" /></a></p>
 </blockquote>
 <h5 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h5>
 <h2 id="常用命令">常用命令<a class="headerlink" href="#常用命令" title="Permanent link">&para;</a></h2>
@@ -11843,7 +11843,7 @@ tmpfs<span class="w">                </span>tmpfs<span class="w">  </span><span 
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

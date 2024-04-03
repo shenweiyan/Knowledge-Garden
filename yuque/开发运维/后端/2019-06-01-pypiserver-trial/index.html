@@ -11495,7 +11495,7 @@ trusted-host= mirrors.aliyun.com
 EOF
 </code></pre></div>
 <p>这里需要提到的是，有些是公司内部的项目，不方便放到外网上去，这个时候我们就要搭建自己的内网 PyPI 源服务器，需要安全并且拥有同样的舒适体验。关于 PyPI 私有源的实现，Python 官方的 <a href="http://wiki.python.org/moin/PyPiImplementations">PyPiImplementations</a> 说明中列出了几个比较成熟的实现方案：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG14MrzGCYLVk63aeJ1f_5Rhy7s.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG14MrzGCYLVk63aeJ1f_5Rhy7s.png" /></a>##</p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqG14MrzGCYLVk63aeJ1f_5Rhy7s.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqG14MrzGCYLVk63aeJ1f_5Rhy7s.png" /></a>##</p>
 <p>这里选择 pypiserver，除了 Galaxy 的原因外，最重要的是因为它最小而且使用简单。</p>
 <h2 id="pypiserver-简介">pypiserver 简介<a class="headerlink" href="#pypiserver-简介" title="Permanent link">&para;</a></h2>
 <blockquote>
@@ -11546,7 +11546,7 @@ Mako (1.0.7)  - 1.0.7
 # 从指定的本地镜像安装包
 pip install -i http://localhost:8080/simple/ mako
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjyycQ6LC4MbZHyK7OhH1iH-FLiS.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjyycQ6LC4MbZHyK7OhH1iH-FLiS.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjyycQ6LC4MbZHyK7OhH1iH-FLiS.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjyycQ6LC4MbZHyK7OhH1iH-FLiS.png" /></a></p>
 <p>pypiserver 客户端推荐的个人配置：</p>
 <div class="highlight"><pre><span></span><code>tee ~/.pip/pip.conf &lt;&lt;-&#39;EOF&#39;
 [global]
@@ -11635,7 +11635,7 @@ Successfully installed bdbag-1.2.4 beaker-1.9.1 ...... warlock-1.2.0 webob-1.4.2
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

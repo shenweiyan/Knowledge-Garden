@@ -11291,13 +11291,13 @@
 
 <p><strong>作者 |</strong> <a href="https://medium.com/@lukaskfrei?source=user_profile----------------------------------------">Lukas Frei</a>
 <strong>编译 |</strong> <a href="https://www.yuque.com/shenweiyan">史提芬先森</a>
-**原文 | **<a href="https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129">How to Use ggplot2 in Python</a><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fhj9qSY3gT5PR2pZhEyuNGpQVBa8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fhj9qSY3gT5PR2pZhEyuNGpQVBa8.png" /></a></p>
+**原文 | **<a href="https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129">How to Use ggplot2 in Python</a><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fhj9qSY3gT5PR2pZhEyuNGpQVBa8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fhj9qSY3gT5PR2pZhEyuNGpQVBa8.png" /></a></p>
 <h1 id="简介">简介<a class="headerlink" href="#简介" title="Permanent link">&para;</a></h1>
 <p>由于严格执行图形语法，ggplot2 提供了一种极其直观且一致的数据绘制方式。 ggplot2 的绘图方法不仅确保每个绘图都包含某些基本元素，而且在很大程度上简化了代码的可读性。</p>
 <p>但是，如果您是 Python 的频繁使用用户，那么由于 matplotlib 或 seaborn 等流行绘图库中缺乏标准化语法，因此实现图形语法可能会非常具有挑战性。 如果您仍想使用图形语法，那么 Python 包 <a href="https://plotnine.readthedocs.io/en/stable/index.html">plotnine</a> 为您提供了另一种选择。</p>
 <h1 id="图形语法">图形语法<a class="headerlink" href="#图形语法" title="Permanent link">&para;</a></h1>
 <p>如果您不熟悉图形的语法，这里有一个快速概述：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fgrj6NPiMNKMvW6hxMl0OvyY-c3n.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图形语法（Grammar of Graphics）的主要组成部分" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fgrj6NPiMNKMvW6hxMl0OvyY-c3n.png" title="图形语法（Grammar of Graphics）的主要组成部分" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fgrj6NPiMNKMvW6hxMl0OvyY-c3n.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图形语法（Grammar of Graphics）的主要组成部分" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fgrj6NPiMNKMvW6hxMl0OvyY-c3n.png" title="图形语法（Grammar of Graphics）的主要组成部分" /></a>
 如您所见，从您的数据开始，有几个组件构成了图形的语法。在确定要可视化的数据后，您必须指定您感兴趣的变量。例如，您可能希望在 x 轴上显示一个变量，在 y 轴上显示另一个变量。第三，你必须定义你想使用什么类型的几何对象（geometric object，简称 geom）。这可以是从条形图到散点图或任何其他现有绘图类型的任何东西。</p>
 <p>所有的组件中，前三个组件是强制性的。没有数据，就没有什么可绘制的。没有轴定义，也没有什么可以绘制的。最后，如果不定义几何对象，您只会看到一个空坐标系。构成图形语法的其余组件是可选的，可以它们的实现以改进可视化。分面（facet） 指的是子图（subplots）的规范，也就是说，在单独的图中，将数据中的几个变量挨个绘制出来。统计转换主要是指在绘图中包含汇总统计信息，例如中位数或百分位数。坐标描述了可供您使用的不同坐标系。最常用和默认的坐标系是笛卡尔坐标系。根据您要绘制的数据结构，较少使用的坐标系（例如极坐标系）可能会提供更好的数据可视化方式。最后，主题提供了多种选项来设计绘图的所有非数据元素，例如图例、背景或注释。</p>
 <p>虽然有许多可视化图形语法的方法，但我特别喜欢我在上面创建的那个，因为它暗示了这些层的可加性以及它们相互构建的事实。如果您曾经使用过 ggplot2，那么您就会熟悉其语法中的“+”，它象征着上述相同的想法。</p>
@@ -11313,7 +11313,7 @@ conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
 </code></pre></div>
 <h1 id="绘图">绘图<a class="headerlink" href="#绘图" title="Permanent link">&para;</a></h1>
 <p>安装了 plotnine 之后，就可以开始使用图形语法绘制图形了。让我们开始构建一个非常简单的绘图，只使用三个必不可少的组成部分：数据、aesthetics 组件和几何对象。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpSVj4i3xkaxuYugmFgde3-A20v_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="使用图形语法构建绘图" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpSVj4i3xkaxuYugmFgde3-A20v_.png" title="使用图形语法构建绘图" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpSVj4i3xkaxuYugmFgde3-A20v_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="使用图形语法构建绘图" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpSVj4i3xkaxuYugmFgde3-A20v_.png" title="使用图形语法构建绘图" /></a>
 如您所见，语法非常类似于 ggplot2。首先，我们指定数据源。在我们的例子中，我们使用的数据是典型的 mpg 数据集。接下来，我们定义变量 &ldquo;class&rdquo; 将显示在 x 轴上。最后，我们说，我们想使用大小为 20 的条形图来可视化我们的数据。让我们来看看完整的代码和结果图：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11328,7 +11328,7 @@ conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
 <span class="p">)</span>
 </code></pre></div>
 <p>上面的代码将产生以下输出：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgfImN28Xhbb1598BjRGsb0Eo-rQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgfImN28Xhbb1598BjRGsb0Eo-rQ.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgfImN28Xhbb1598BjRGsb0Eo-rQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgfImN28Xhbb1598BjRGsb0Eo-rQ.png" /></a>
 虽然这是一个好的开始，但看起来还不是很好。让我们用图形的语法的其他组成部分来美化我们的图形。</p>
 <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">)</span>
  <span class="o">+</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;class&#39;</span><span class="p">)</span>
@@ -11338,7 +11338,7 @@ conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
 <span class="p">)</span>
 </code></pre></div>
 <p>例如，我们可以使用<code>coord_flip()</code>翻转坐标轴，并使用<code>labs()</code>自定义绘图和坐标轴标题以改进我们的绘图。使用上面的代码块，我们的绘图将如下所示：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fvf7e57OhZ-C4uCwL0EyWvSMJBVi.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fvf7e57OhZ-C4uCwL0EyWvSMJBVi.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fvf7e57OhZ-C4uCwL0EyWvSMJBVi.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fvf7e57OhZ-C4uCwL0EyWvSMJBVi.png" /></a></p>
 <h1 id="绘制多维数据">绘制多维数据<a class="headerlink" href="#绘制多维数据" title="Permanent link">&para;</a></h1>
 <p>除了基本的绘图之外，您还可以在 ggplot2 中完成几乎所有可以做的事情，比如绘制多维数据。如果你想将三个变量之间的关系可视化，你可以在平面图上添加美学元素：</p>
 <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">)</span>
@@ -11348,7 +11348,7 @@ conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
 <span class="p">)</span>
 </code></pre></div>
 <p>将 <strong>color</strong> 添加到 aesthetics 组件中将会促使 plotnine 呈现一个在 x 轴上使用 <strong>displ</strong>（发动机排量，以升为单位）和在 y 轴上使用 <strong>hwy</strong>（每加仑高速公路英里数），并根据 <strong>class</strong> 变量为数据着色的二维图。我们还可以将几何对象切换到 <code>geom_point()</code>，这将为我们提供散点图而不是条形图。 让我们来看看会是什么样子：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn4CPQ7BvgXq12KKAefzIkVDiBgC.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn4CPQ7BvgXq12KKAefzIkVDiBgC.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fn4CPQ7BvgXq12KKAefzIkVDiBgC.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fn4CPQ7BvgXq12KKAefzIkVDiBgC.png" /></a></p>
 <h1 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h1>
 <p>如您所见，plotnine 为您提供了在 Python 中利用图形语法的能力。这增加了代码的可读性，并允许您将部分数据专门映射到可视对象。如果您已经熟悉 ggplot2，那么您无需学习任何新知识即可掌握 plotnine。如果没有，这里是 <a href="https://ggplot2.tidyverse.org/">ggplot2 网站的链接</a>，您可以在该网站上找到更多关于图形语法和所有类型的可用几何对象的信息。</p>
 
@@ -11371,7 +11371,7 @@ conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

@@ -11466,7 +11466,7 @@
 <h2 id="阿里云">阿里云<a class="headerlink" href="#阿里云" title="Permanent link">&para;</a></h2>
 <p>关于 OSS，阿里云 OSS 是对象存储服务，价格也比较便宜，算得上是一个免费的 CDN，我们可以利用 OSSFS 这个工具，将 OSS 挂载到阿里云 ECS 服务器上，可以达到存储、备份的目的。当然，最主要的是可以减轻服务器的压力。</p>
 <p>使用此工具之前，如果你手里没有阿里云的 ECS（或者你想经常从 OSS 拷贝数据到其他服务器） 那么我觉得没啥看下去的必要，因为目前阿里云 OSS 下行流量没有免费额度，都需要收费。这样进行数据传输的时候就会产生流量费用，而且速度可能也不是特别理想。如果有 ECS 那么可以进行内网数据传输，既保证了速度又省去了流量费用，岂不是美滋滋。
-<a href="https://www.aliyun.com/price/product?spm=a2c4g.11186623.2.5.5b7710f0N0ptLY#/oss/detail/ossbag"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsH7BsgN0OEmYTw4rtcC-nrXA01u.png" /></a></p>
+<a href="https://www.aliyun.com/price/product?spm=a2c4g.11186623.2.5.5b7710f0N0ptLY#/oss/detail/ossbag"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsH7BsgN0OEmYTw4rtcC-nrXA01u.png" /></a></p>
 <h3 id="ossfs">ossfs<a class="headerlink" href="#ossfs" title="Permanent link">&para;</a></h3>
 <p>其实 ossfs 这个工具就是将你的 oss 存储桶 (bucket) 挂载成一个 linux 可以识别的分区，从而可以看成像系统上的一块本地磁盘。</p>
 <h3 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h3>
@@ -11497,7 +11497,7 @@
 <p>不出意外，ossfs 就这样被安装成功了，是不是非常的简单。接下来就是要配置的部分了。</p>
 <h3 id="配置">配置<a class="headerlink" href="#配置" title="Permanent link">&para;</a></h3>
 <p>在配置之前我们首先需要拿到阿里云的 AccesskeyID 和 Accesskeysecret。登录阿里云账号，然后打开<a href="https://usercenter.console.aliyun.com/#/manage/ak">密钥管理</a>页面，然后在列表里随便选择一个并记录下来。然后还需要去 oss 控制台创建一个 bucket，我这里 bucket 的名称叫做 disk-db。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr4CiOstajRhQ76t-xevfD-ArJAB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr4CiOstajRhQ76t-xevfD-ArJAB.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fr4CiOstajRhQ76t-xevfD-ArJAB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fr4CiOstajRhQ76t-xevfD-ArJAB.png" /></a>
 为了演示假如我的 AccessKey ID 为 key123， Access Key Secret 为 secret456，接下来继续执行。</p>
 <div class="highlight"><pre><span></span><code><span class="n">echo</span><span class="w"> </span><span class="n">disk</span><span class="o">-</span><span class="n">db</span><span class="o">:</span><span class="n">key123</span><span class="o">:</span><span class="n">secret456</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">passwd</span><span class="o">-</span><span class="n">ossfs</span>
 
@@ -11515,7 +11515,7 @@ ossfs<span class="w"> </span>vmfs<span class="w"> </span>/mnt/disk-db<span class
 <li>-ourl 表示的是 oss 的 EndPoint 地址，这个地址如果你手持 ECS 那么强烈建议你使用和你 ECS 同区域的内网地址。</li>
 <li>-o 表示运行非 root 用户使用此目录。</li>
 </ul>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiZgsHgCtKXBnwgdx3il9XJ9I7wB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiZgsHgCtKXBnwgdx3il9XJ9I7wB.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FiZgsHgCtKXBnwgdx3il9XJ9I7wB.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FiZgsHgCtKXBnwgdx3il9XJ9I7wB.png" /></a></p>
 <h3 id="设置开机自动挂载">设置开机自动挂载<a class="headerlink" href="#设置开机自动挂载" title="Permanent link">&para;</a></h3>
 <p>通过 fstab 的方式自动 mount，在 /etc/fstab 中加入下面的类似的命令：</p>
 <div class="highlight"><pre><span></span><code>ossfs#your_bucket_name<span class="w"> </span>your_mount_point<span class="w"> </span>fuse_netdev,url<span class="o">=</span>your_url,allow_other<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
@@ -11555,7 +11555,7 @@ ossfs<span class="w"> </span>vmfs<span class="w"> </span>/mnt/disk-db<span class
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

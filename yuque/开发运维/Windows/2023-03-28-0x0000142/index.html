@@ -11396,7 +11396,7 @@
   <h1>微信 | 解决企业微信启动报错 0x0000142</h1>
 
 <p>在公司 Win10 x64 的电脑使用企业微信，一直都被企业微信启动报错 <strong>0x0000142</strong> 无法打开这个问题<a href="https://www.yuque.com/r/notes/share/c4c8db4e-c6fe-4d41-b8b0-4484defb6ade"><strong>困扰了很久</strong></a>。    </p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlGSQU2kMVAFkkbkR2dnknWRzvUL.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlGSQU2kMVAFkkbkR2dnknWRzvUL.png" /></a>    </p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FlGSQU2kMVAFkkbkR2dnknWRzvUL.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FlGSQU2kMVAFkkbkR2dnknWRzvUL.png" /></a>    </p>
 <p>今天，终于找到了一个靠谱的解决方案。</p>
 <blockquote>
 <p>📢 以下内容来源于《<a href="https://blog.csdn.net/qq_35132089/article/details/128632145">解决企业微信启动报错：0x0000142 无法打开</a> - CSDN》，作者李晋江    </p>
@@ -11407,7 +11407,7 @@
 <p>不知道从啥时候开始，打开企业微信会报错（见下图），报错代码是：0x0000142，不过我点击确定，多试几次也能正常打开，就是有点麻烦，今天突然要打开企业微信给同事远程操作，死活启动不了，一直报错，而我电脑开着一大堆编程软件，重启的话就非常麻烦，所以下定决心把这个 Bug 解决掉，后来花费一番功夫终于处理了，这里将处理过程记录下来，给大家一个参考。</p>
 <h2 id="2-问题查找">2. 问题查找<a class="headerlink" href="#2-问题查找" title="Permanent link">&para;</a></h2>
 <p>这里我们的系统是 Windows 系统，直接打开事件管理器（鼠标右击 Win10 界面的“此电脑”图标。在右键菜单中，点击打开 &ldquo;管理&rdquo;，打开计算机管理，然后在左侧菜单中，就可以看到事件查看器了），在 <strong>&ldquo;Windows 日志&rdquo;</strong> 下的 <strong>&ldquo;应用程序&rdquo; </strong>模块下找到该时间点对应的系统报错，这里我们看下错误应用程序，确认是 WXWork 报的错，那就定位没错。然后看下错误模块路径，这里给出的是 <strong>KernelEs.dll</strong>，这样我们基本确认了问题出在 KernelEs.dll 动态链接文件上，现在就简单了，我们只需要去搜索系统为什么会报这个错误以及如何解决这个问题即可。  <br />
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpG6SK1Y0I6Gi8rLRRYVZ15cE3vm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpG6SK1Y0I6Gi8rLRRYVZ15cE3vm.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpG6SK1Y0I6Gi8rLRRYVZ15cE3vm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpG6SK1Y0I6Gi8rLRRYVZ15cE3vm.png" /></a></p>
 <p>这里大致说一下为什么有这个错误，根据网上找到的资料，是说出现这个问题一般是单位的电脑或者是自己电脑安装过<strong>亿赛通</strong>的防泄密软件：数据安全卫士。正巧我们公司装了亿赛通软件，感觉就是他的锅！</p>
 <h2 id="3-问题解决">3. 问题解决<a class="headerlink" href="#3-问题解决" title="Permanent link">&para;</a></h2>
 <p>Win10 根据处理器不同位数打开如下目录：    </p>
@@ -11416,7 +11416,7 @@
 <li>64 位：C:\Windows\SysWOW64    </li>
 </ul>
 <p>我电脑是 64 位的，就打开：<strong>C:\Windows\SysWOW64</strong> 资源路径，然后搜索：<strong>kernel</strong>  <br />
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvNYSLylxoKjj3yqUo4SYSkTwn_b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvNYSLylxoKjj3yqUo4SYSkTwn_b.png" /></a>    </p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvNYSLylxoKjj3yqUo4SYSkTwn_b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvNYSLylxoKjj3yqUo4SYSkTwn_b.png" /></a>    </p>
 <p>复制一份这个文件至桌面，然后重命名为：<strong>kernelEs.dll</strong>，再将这个 <strong>kernelEs.dll</strong> 文件，剪切到 <strong>C:\Windows\SysWOW64</strong> 目录下。</p>
 <p>这时候再打开企业微信就能正常打开了！</p>
 <h2 id="4-事后感悟">4. 事后感悟<a class="headerlink" href="#4-事后感悟" title="Permanent link">&para;</a></h2>
@@ -11441,7 +11441,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

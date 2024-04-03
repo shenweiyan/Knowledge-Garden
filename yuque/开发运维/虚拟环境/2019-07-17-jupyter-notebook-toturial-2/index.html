@@ -11477,13 +11477,13 @@ c.NotebookApp.port<span class="w"> </span><span class="o">=</span><span class="w
 <span class="o">[</span>I<span class="w"> </span><span class="m">16</span>:12:57.449<span class="w"> </span>NotebookApp<span class="o">]</span><span class="w"> </span>Use<span class="w"> </span>Control-C<span class="w"> </span>to<span class="w"> </span>stop<span class="w"> </span>this<span class="w"> </span>server<span class="w"> </span>and<span class="w"> </span>shut<span class="w"> </span>down<span class="w"> </span>all<span class="w"> </span>kernels<span class="w"> </span><span class="o">(</span>twice<span class="w"> </span>to<span class="w"> </span>skip<span class="w"> </span>confirmation<span class="o">)</span>.
 </code></pre></div>
 <p>如果在启动过程中出现：OSError: [Errno 99] Cannot assign requested address，请参考下面的方法解决。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqT8n9qwwYgNtlidpEI2XMzHH7rf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqT8n9qwwYgNtlidpEI2XMzHH7rf.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqT8n9qwwYgNtlidpEI2XMzHH7rf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqT8n9qwwYgNtlidpEI2XMzHH7rf.png" /></a></p>
 <p>**解决：**运行 Jupyter 时增加 <code>--ip=0.0.0.0</code>  参数。</p>
 <div class="highlight"><pre><span></span><code>jupyter notebook --ip=0.0.0.0 --no-browser --allow-root
 </code></pre></div>
 <h2 id="4-域名解析">4. 域名解析<a class="headerlink" href="#4-域名解析" title="Permanent link">&para;</a></h2>
 <p>配置 nginx 前需要把你已经申请的域名跟 Jupyter Notebook 的服务器 ip 进行绑定解析。打开阿里云域名管理，增加 A 记录解析：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png" /></a></p>
 <h2 id="5-配置-nginx">5. 配置 nginx<a class="headerlink" href="#5-配置-nginx" title="Permanent link">&para;</a></h2>
 <p>Nginx 是一个高效的服务器，著名的 LNMP 中的 N，相信很多在 VPS 搭建过网站的小伙伴一定不陌生。我假设你已经安装好了 nginx，如果不会安装可以自行百度。</p>
 <p>Nginx 创建一个虚拟主机 vhost，然后配置文件参考下面：</p>
@@ -11533,7 +11533,7 @@ server<span class="o">{</span>
 </code></pre></div>
 <p>其中 <strong>fullchain.pem</strong> 与 <strong>privkey.pem</strong> 是你的网址的 SSL 证书，如果没有，可以参考 Letsencrypt 免费证书。</p>
 <p>至此，大功告成，打开你的网址 <strong>xxx.xxx.com</strong> 是不是可以看到熟悉的 jupyter 了呢？如有疑问，欢迎留言讨论。</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="jupyter_server.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="jupyter_server.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png" /></a></p>
 <p>以上就是远程 Jupter Notebook 服务安装与配置的全部内容，下一篇我们介绍一下如何在  Jupyter Notebook  中使用不同内核（Kernel）实现支持包括 python2、python3、R 在的多种不同编程环境。</p>
 <h2 id="6-其他问题">6. 其他问题<a class="headerlink" href="#6-其他问题" title="Permanent link">&para;</a></h2>
 <ul>
@@ -11569,7 +11569,7 @@ $<span class="w"> </span>wget<span class="w"> </span>https://unpkg.com/react-dom
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

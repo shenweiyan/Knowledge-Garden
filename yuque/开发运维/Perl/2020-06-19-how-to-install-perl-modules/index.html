@@ -11740,7 +11740,7 @@ $<span class="w"> </span>perl<span class="w"> </span>-MBio::SeqIO<span class="w"
 <span class="c1"># 如果指定 PREFIX 安装路径，模块安装完成后，需要把模块安装的新路径添加到 PERL5LIB 环境变量</span>
 $<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">PERL5LIB</span><span class="o">=</span><span class="nv">$PERL5LIB</span>:/home/shenweiyan/perl_modules/lib/site_perl<span class="w">  </span>//或者把该行内容添加到<span class="w"> </span>~/.bashrc
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhLB4yFtOuNLVOxoTHdk3Zdn6bI3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="bioperl-install.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhLB4yFtOuNLVOxoTHdk3Zdn6bI3.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhLB4yFtOuNLVOxoTHdk3Zdn6bI3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="bioperl-install.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhLB4yFtOuNLVOxoTHdk3Zdn6bI3.png" /></a></p>
 <p>上述步骤适合于 Linux/Unix 下绝大多数的 Perl 模块。可能还有少数模块的安装方法略有差别，所以最好先看看安装目录里的 README 或 INSTALL。</p>
 <p>有的时候如果是 Build.PL 的需要以下安装步骤：（需要 Module::Build 模块支持）</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>perl<span class="w"> </span>Build.PL
@@ -11755,12 +11755,12 @@ $<span class="w"> </span>./Build<span class="w"> </span>install
 <ul>
 <li>执行 <code>perl -MCPAN -e shell</code>  命令，或者直接运行 <code>cpan</code>  命令，都可以进入 cpan 交互模式。</li>
 </ul>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrNJmN-R_EWHmfd9gkTml9QAgPYi.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cpan-linux.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrNJmN-R_EWHmfd9gkTml9QAgPYi.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrNJmN-R_EWHmfd9gkTml9QAgPYi.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cpan-linux.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrNJmN-R_EWHmfd9gkTml9QAgPYi.png" /></a></p>
 <ul>
 <li>安装前需要先联上网，有无 root 权限均可。对于非 root 用户，Perl 提供了 &lsquo;<strong>local::lib</strong>&lsquo;、&rsquo;<strong>sudo</strong>&rsquo; or &lsquo;<strong>manual</strong>&rsquo; 三种使用 CPAN 模块自动安装的方式，初次运行 CPAN 时需要用户自行进行选择设置，默认为  <strong>&lsquo;local::lib</strong>&lsquo;。</li>
 <li>初次运行 CPAN 时需要做一些设置，如果我们的机器是直接与因特网相联，那么一路回车就行了。</li>
 </ul>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9FTaXM_d0X4ICluF8bE1-hocoI.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cpan-setting.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9FTaXM_d0X4ICluF8bE1-hocoI.jpeg" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp9FTaXM_d0X4ICluF8bE1-hocoI.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cpan-setting.jpg" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp9FTaXM_d0X4ICluF8bE1-hocoI.jpeg" /></a></p>
 <ul>
 <li>常用 cpan 命令：</li>
 </ul>
@@ -11916,7 +11916,7 @@ cpan<span class="o">[</span><span class="m">1</span><span class="o">]</span>&gt;
 <span class="w">        </span><span class="m">1</span><span class="w"> </span><span class="o">[</span>http://mirrors.aliyun.com/CPAN/<span class="o">]</span>
 Type<span class="w"> </span><span class="s1">&#39;o conf&#39;</span><span class="w"> </span>to<span class="w"> </span>view<span class="w"> </span>all<span class="w"> </span>configuration<span class="w"> </span>items
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpK9DQ7f5IGk-5Mu17d9IPdBCVAn.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpK9DQ7f5IGk-5Mu17d9IPdBCVAn.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpK9DQ7f5IGk-5Mu17d9IPdBCVAn.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpK9DQ7f5IGk-5Mu17d9IPdBCVAn.png" /></a></p>
 <ul>
 <li>如果对当前的当前所有的 cpan shell 的配置不满意，也可以通过命令重新初始化该文件，如下：</li>
 </ul>
@@ -12081,7 +12081,7 @@ c:\perl\bin\ppm install YAML-Syck
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

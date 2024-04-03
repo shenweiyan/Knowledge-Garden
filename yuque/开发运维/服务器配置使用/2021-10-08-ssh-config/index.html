@@ -11449,7 +11449,7 @@
 
 <h1 id="解决-ssh-failed-permission-denied">解决 SSH Failed Permission Denied<a class="headerlink" href="#解决-ssh-failed-permission-denied" title="Permanent link">&para;</a></h1>
 <p>在 SSH 服务器上修改了与权限相关的设置之后，会出现 SSH 权限拒绝错误（SSH Permission denied error）。通常的场景包括安装新的软件包或创建新用户。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuDhlk0w8wDpdRM2uh0B508OzPs9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuDhlk0w8wDpdRM2uh0B508OzPs9.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuDhlk0w8wDpdRM2uh0B508OzPs9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuDhlk0w8wDpdRM2uh0B508OzPs9.png" /></a>
 在本教程中，您将学习如何排除 SSH Permission denied 错误并重新连接到 SSH 服务器。</p>
 <h3 id="前提条件">前提条件<a class="headerlink" href="#前提条件" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11461,7 +11461,7 @@
 <p>当尝试通过 SSH 进入服务器时，会出现 SSH 权限拒绝错误：</p>
 <div class="highlight"><pre><span></span><code>Permission<span class="w"> </span>denied<span class="w"> </span><span class="o">(</span>publickey,gssapi-keyex,gssapi-with-mic<span class="o">)</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl0Um1zz_a2haoBC95bM-E9iyATa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl0Um1zz_a2haoBC95bM-E9iyATa.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl0Um1zz_a2haoBC95bM-E9iyATa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl0Um1zz_a2haoBC95bM-E9iyATa.png" /></a>
 在 Permission denied 语句之后，括号里面包含了在连接启动时失败时尝试的身份验证方法。这个错误表明公钥才是问题所在，这其实是一种误导。</p>
 <p>出现该错误的一个原因可能是与 <strong>sshd_config</strong> 的配置有关，这个文件包含了 SSH 服务器的配置。另一种可能性是授权的 <strong>authorized_keys</strong> 文件没有足够的权限，这个文件包含了允许从 Client 客户机 SSH 到远程服务器的公钥列表。因此，当系统无法正常读取文件就会导致“权限拒绝”错误。</p>
 <h3 id="修复-ssh-permission-denied">修复 SSH Permission denied<a class="headerlink" href="#修复-ssh-permission-denied" title="Permanent link">&para;</a></h3>
@@ -11476,7 +11476,7 @@
 <li>在文件中，找到 <strong>ChallengeResponseAuthentication</strong> 选项，并通过添加 <strong>no</strong> 来禁用它。</li>
 <li>如果行被注释掉了，删除散列符号** #** 以取消注释。</li>
 </ul>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvmtituWoEUKfE68c3lIOvjlQZJD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvmtituWoEUKfE68c3lIOvjlQZJD.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvmtituWoEUKfE68c3lIOvjlQZJD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvmtituWoEUKfE68c3lIOvjlQZJD.png" /></a>
 保存文件并退出。</p>
 <p>最后，通过输入以下命令重新启动 SSH 服务：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>sshd
@@ -11490,7 +11490,7 @@
 <div class="highlight"><pre><span></span><code>PermitRootLogin<span class="w"> </span>no
 PubkeyAuthentication<span class="w"> </span>yes
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmBtxXXzvWUgnE0hmbGqc99dOFBz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmBtxXXzvWUgnE0hmbGqc99dOFBz.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmBtxXXzvWUgnE0hmbGqc99dOFBz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmBtxXXzvWUgnE0hmbGqc99dOFBz.png" /></a>
 :::tips
 **注意: **以上步骤被认为是最佳安全实践。如果需要使用 root 登录，请将相关行设置为 <strong>yes</strong>。
 :::</p>
@@ -11498,37 +11498,37 @@ PubkeyAuthentication<span class="w"> </span>yes
 <div class="highlight"><pre><span></span><code><span class="c1">#GSSAPIAuthentication yes</span>
 <span class="c1">#GSSAPICleanupCredentials no</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrgRKB3xIKFGJ5YH8CCouJtb_O1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrgRKB3xIKFGJ5YH8CCouJtb_O1.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvrgRKB3xIKFGJ5YH8CCouJtb_O1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvrgRKB3xIKFGJ5YH8CCouJtb_O1.png" /></a>
 另外，确保 <strong>UsePAM</strong> 行设置为 <strong>yes</strong>：</p>
 <div class="highlight"><pre><span></span><code>UsePAM<span class="w"> </span>yes
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuoChiJxnlCg3somKCSt5EKyBI1C.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuoChiJxnlCg3somKCSt5EKyBI1C.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuoChiJxnlCg3somKCSt5EKyBI1C.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuoChiJxnlCg3somKCSt5EKyBI1C.png" /></a>
 保存文件并重新启动 sshd 服务：</p>
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>restart<span class="w"> </span>sshd
 </code></pre></div>
 <p>接下来，导航到你的主文件夹并检查权限：</p>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-ld
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhsXKH2Qsd6vgBpZnwUkkWShZw2A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhsXKH2Qsd6vgBpZnwUkkWShZw2A.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhsXKH2Qsd6vgBpZnwUkkWShZw2A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhsXKH2Qsd6vgBpZnwUkkWShZw2A.png" /></a>
 如果您的所有者权限没有设置为读、写和执行(<strong>drwx------</strong>) ，请使用 <strong>chmod</strong> 命令更改它们：</p>
 <div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">0700</span><span class="w"> </span>/home/<span class="o">[</span>your-username<span class="o">]</span>
 </code></pre></div>
 <p>现在进入 <strong>.ssh</strong> 文件夹，并重新检查该目录的权限：</p>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-ld
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuSd31JgCeH2hRZ4FZ3xWed-sWtJ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuSd31JgCeH2hRZ4FZ3xWed-sWtJ.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuSd31JgCeH2hRZ4FZ3xWed-sWtJ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuSd31JgCeH2hRZ4FZ3xWed-sWtJ.png" /></a>
 这个目录还应该具有文件所有者的读、写和执行权限，如果没有，请使用 <strong>chmod</strong> 命令更改它们：</p>
 <div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">0700</span><span class="w"> </span>/home/your_home/.ssh
 </code></pre></div>
 <p>接着，再来检查 .<strong>ssh</strong> 文件夹包含授权的 <strong>authorized_keys</strong> 文件的权限：</p>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>–ld<span class="w"> </span>authorized_keys
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnrHAhLGh4q6rv9bfwj9izV45_wd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnrHAhLGh4q6rv9bfwj9izV45_wd.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FnrHAhLGh4q6rv9bfwj9izV45_wd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FnrHAhLGh4q6rv9bfwj9izV45_wd.png" /></a>
 文件所有者应该具有该 <strong>authorized_keys</strong> 文件的读写权限。如果没有，请使用下面的方法修改：</p>
 <div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">0600</span><span class="w"> </span>/home/<span class="o">[</span>username<span class="o">]</span>/.ssh/authorized_keys
 </code></pre></div>
 <p>现在再次尝试使用密钥对登录。下面的输出显示了一次成功的登录尝试。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv4k89FRw83fFI31fSukTwPzjJ0X.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv4k89FRw83fFI31fSukTwPzjJ0X.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fv4k89FRw83fFI31fSukTwPzjJ0X.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fv4k89FRw83fFI31fSukTwPzjJ0X.png" /></a>
 :::tips
 **注意：**有关 Linux 文件权限的详细信息，请阅读 Linux 文件权限教程。
 :::</p>
@@ -11580,7 +11580,7 @@ $<span class="w"> </span>service<span class="w"> </span>sshd<span class="w"> </s
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

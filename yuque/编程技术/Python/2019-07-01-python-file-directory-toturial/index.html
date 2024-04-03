@@ -11422,7 +11422,7 @@ sub_dir
 </code></pre></div>
 <p>使用<code>pathlib.Path()</code>或<code>os.scandir()</code>而不是<code>os.listdir()</code>是获取目录列表的首选方法，尤其是在处理需要文件类型和文件属性信息的代码时。 <code>pathlib.Path()</code>提供了<code>os</code>和<code>shutil</code>中的大部分文件和路径处理功能，它的方法比这些模块中的方法更有效。 接下来我们将讨论如何快速获取文件属性。</p>
 <p>以下是目录列表功能：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkAzAEk1Qnh6fnc4B0W8wFblUsj_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkAzAEk1Qnh6fnc4B0W8wFblUsj_.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkAzAEk1Qnh6fnc4B0W8wFblUsj_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkAzAEk1Qnh6fnc4B0W8wFblUsj_.png" /></a></p>
 <p>这些函数返回了一个包含了目录中所有内容的列表，包括子目录。这些操作可能并不总是您想要的。下一节我们将介绍如何从目录列表中进行结果过滤。</p>
 <h2 id="列出目录中的所有文件">列出目录中的所有文件<a class="headerlink" href="#列出目录中的所有文件" title="Permanent link">&para;</a></h2>
 <p>本节将向您展示如何使用<code>os.listdir()</code>，<code>os.scandir()</code>和<code>pathlib.Path()</code>打印出目录中文件的名称。 如果我们要过滤目录并仅列出由<code>os.listdir()</code>得到的目录列表中的文件，请使用<code>os.path</code>：</p>
@@ -11588,7 +11588,7 @@ sub_dir
 <p>将日期和时间转换为字符串的语法可能非常混乱。要了解更多信息，请查看相关的<a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior">官方文档</a>。或者参考另一个更易于记忆的方法：<a href="http://strftime.org/">http://strftime.org/</a>。</p>
 <h1 id="创建目录">创建目录<a class="headerlink" href="#创建目录" title="Permanent link">&para;</a></h1>
 <p>我们编写的程序需要创建目录以便在其中存储数据时，可以参考<code>os</code>和<code>pathlib</code>中包含用于创建目录的函数。</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmQolOuA8sSrkClyR9VM6f6sYjnQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmQolOuA8sSrkClyR9VM6f6sYjnQ.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmQolOuA8sSrkClyR9VM6f6sYjnQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmQolOuA8sSrkClyR9VM6f6sYjnQ.png" /></a></p>
 <h2 id="创建单个目录">创建单个目录<a class="headerlink" href="#创建单个目录" title="Permanent link">&para;</a></h2>
 <p>要创建单个目录，请将目录路径作为参数传递给<code>os.mkdir()</code>：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
@@ -11789,7 +11789,7 @@ sub_dir/file2.py
 <p>调用<code>p.glob('*.p*')</code>将返回一个生成器对象，该对象指向当前目录中以文件扩展名中的字母 p 开头的所有文件。</p>
 <p><code>Path.glob()</code>类似于上面讨论的<code>os.glob()</code>。 正如我们所看到的，<code>pathlib</code>将<code>os</code>，<code>os.path</code>和<code>glob</code>模块的许多最佳功能组合到一个模块中，这使得使用起来非常愉快。</p>
 <p>回顾一下，这是我们在本节中介绍的功能表：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqqflHxqAIGJBSNRO6nOgjnwmruW.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqqflHxqAIGJBSNRO6nOgjnwmruW.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqqflHxqAIGJBSNRO6nOgjnwmruW.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqqflHxqAIGJBSNRO6nOgjnwmruW.png" /></a></p>
 <h1 id="遍历目录和文件">遍历目录和文件<a class="headerlink" href="#遍历目录和文件" title="Permanent link">&para;</a></h1>
 <p>遍历目录树并处理树中的文件是最常见的编程任务之一。 让我们来探索如何使用内置的 Python 函数 <code>os.walk()</code> 来实现这一点。<code>os.walk()</code>用于通过从上到下或从下到上的遍历来生成目录树中的文件名。出于本节的目的，我们将操作以下目录树：</p>
 <div class="highlight"><pre><span></span><code>.
@@ -12008,7 +12008,7 @@ except IsADirectoryError as e:
 </code></pre></div>
 <p>这将遍历目录树并尝试删除它找到的每个目录。如果目录不为空，则引发<code>OSError</code>并跳过该目录。</p>
 <p>下表列出了本节中涉及的功能：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhnGoA-AuSfdhwSq0vpk3LfI90mc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhnGoA-AuSfdhwSq0vpk3LfI90mc.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhnGoA-AuSfdhwSq0vpk3LfI90mc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhnGoA-AuSfdhwSq0vpk3LfI90mc.png" /></a></p>
 <h1 id="文件和目录复制移动及重命名">文件和目录复制，移动及重命名<a class="headerlink" href="#文件和目录复制移动及重命名" title="Permanent link">&para;</a></h1>
 <p>Python 附带的<code>shutil</code>模块，是 shell 实用程序的缩写。它为文件提供了许多高级操作，以支持文件和目录的复制，存档和删除。在本节中，我们将学习如何移动和复制文件和目录。</p>
 <h2 id="python-中的文件复制">Python 中的文件复制<a class="headerlink" href="#python-中的文件复制" title="Permanent link">&para;</a></h2>
@@ -12174,7 +12174,7 @@ except IsADirectoryError as e:
 </code></pre></div>
 <p><code>tarfile</code>对象的打开方式跟大多数类似文件对象的打开方式一样。它们有一个<code>open()</code>函数，并采用一种模式来确定文件的打开方式。</p>
 <p>使用 &ldquo;r&rdquo;，&rdquo;w&rdquo; 或 &ldquo;a&rdquo; 模式分别打开未压缩的 TAR 文件以进行读取，写入和追加。要打开压缩的 TAR 文件，需要将模式参数传递给<code>tarfile.open()</code>，其格式为<code>filemode [:compression]</code>。下表列出了可以打开 TAR 文件的可能模式：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgziSqW07iV6C4R7KR0e66AkoSuO.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgziSqW07iV6C4R7KR0e66AkoSuO.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgziSqW07iV6C4R7KR0e66AkoSuO.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgziSqW07iV6C4R7KR0e66AkoSuO.png" /></a></p>
 <p><code>.open()</code> 默认以 &lsquo;r&rsquo; 模式打开文件。要读取未压缩的 TAR 文件并检索其中的文件名，可以使用<code>.getnames()</code>：</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">tarfile</span>
 
@@ -12378,7 +12378,7 @@ app.py
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

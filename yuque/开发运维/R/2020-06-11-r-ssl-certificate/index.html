@@ -11497,7 +11497,7 @@
 
   <h1>R 语言关于 SSL 证书异常处理笔记</h1>
 
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fud21xdJYwOyX5x2rMd29G6uNZYl.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ssl.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fud21xdJYwOyX5x2rMd29G6uNZYl.jpeg" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fud21xdJYwOyX5x2rMd29G6uNZYl.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ssl.jpg" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fud21xdJYwOyX5x2rMd29G6uNZYl.jpeg" /></a></p>
 <h2 id="一关于-tcgabiolinks">一、关于 TCGAbiolinks<a class="headerlink" href="#一关于-tcgabiolinks" title="Permanent link">&para;</a></h2>
 <p>TCGAbiolinks 是一个用于 TCGA 数据综合分析的 R/BioConductor 软件包，能够通过 GDC Application Programming Interface (API) 访问 National Cancer Institute (NCI) Genomic Data Commons (GDC) ，来搜索、下载和准备相关数据，以便在 R 中进行分析。</p>
 <h2 id="二问题">二、问题<a class="headerlink" href="#二问题" title="Permanent link">&para;</a></h2>
@@ -11508,16 +11508,16 @@
 <span class="w">                  </span><span class="n">data.type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Gene Expression Quantification&quot;</span><span class="p">,</span>
 <span class="w">                  </span><span class="n">workflow.type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;HTSeq - Counts&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp1rdqfkUkqDET2HNBAeyAsaIFIp.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="gdc-server-down.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp1rdqfkUkqDET2HNBAeyAsaIFIp.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp1rdqfkUkqDET2HNBAeyAsaIFIp.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="gdc-server-down.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp1rdqfkUkqDET2HNBAeyAsaIFIp.png" /></a>
 拿着这个 error 去谷歌，看到的结果都是教你用 devtools 或者 TCGAbiolink 官网提供的方法从 github 重装一遍这个包：</p>
 <div class="highlight"><pre><span></span><code><span class="n">devtools</span><span class="o">::</span><span class="nf">install_github</span><span class="p">(</span><span class="s">&quot;BioinformaticsFMRP/TCGAbiolinks&quot;</span><span class="p">)</span>
 <span class="n">BiocManager</span><span class="o">::</span><span class="nf">install</span><span class="p">(</span><span class="s">&quot;BioinformaticsFMRP/TCGAbiolinks&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FotaPM7dMID-C-ktkZKEwJ85WoYy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="google-gdc-error.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FotaPM7dMID-C-ktkZKEwJ85WoYy.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FotaPM7dMID-C-ktkZKEwJ85WoYy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="google-gdc-error.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FotaPM7dMID-C-ktkZKEwJ85WoYy.png" /></a>
 然而这些方法都未能解决我的问题，于是乎有了下面的一些探索。</p>
 <h2 id="三源码分析">三、源码分析<a class="headerlink" href="#三源码分析" title="Permanent link">&para;</a></h2>
 <p>首先，我去 TCGAbiolink 中的源码看这个异常是在哪里导致的，在 R/internal.R 中发现：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtJNUd5A5Wc5zmqnd1Jf913oyu6q.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="get-gdc-info.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtJNUd5A5Wc5zmqnd1Jf913oyu6q.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FtJNUd5A5Wc5zmqnd1Jf913oyu6q.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="get-gdc-info.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FtJNUd5A5Wc5zmqnd1Jf913oyu6q.png" /></a></p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
 <span class="o">&gt;</span><span class="w"> </span><span class="nf">fromJSON</span><span class="p">(</span><span class="s">&quot;https://api.gdc.cancer.gov/status&quot;</span><span class="p">,</span><span class="n">simplifyDataFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
 <span class="n">Error</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="nf">open.connection</span><span class="p">(</span><span class="n">con</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rb&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">:</span>
@@ -11527,7 +11527,7 @@
 <blockquote>
 <p>The curl package provides bindings to the <a href="https://curl.haxx.se/libcurl/">libcurl</a> C library for R. The package supports retrieving data in-memory, downloading to disk, or streaming using the <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/connections.html">R “connection” interface</a>. Some knowledge of curl is recommended to use this package. For a more user-friendly HTTP client, have a look at the <a href="https://cran.r-project.org/package=httr/vignettes/quickstart.html">httr</a> package which builds on curl with HTTP specific tools and logic.</p>
 </blockquote>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjYgbIsfonnHL2KbOs-3psDhzZtM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="curl-fail.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjYgbIsfonnHL2KbOs-3psDhzZtM.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjYgbIsfonnHL2KbOs-3psDhzZtM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="curl-fail.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjYgbIsfonnHL2KbOs-3psDhzZtM.png" /></a>
 curl 去访问 https 的站点报错</p>
 <p>看了一下 curl 和 curl 命令都是支持 ssl 的：</p>
 <div class="highlight"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="n">curl</span><span class="w"> </span><span class="o">-</span><span class="n">V</span>
@@ -11553,7 +11553,7 @@ $<span class="w"> </span>curl-config<span class="w"> </span>--ca
 <p>在前面 <code>jsonlite</code> 的 <code>fromJSON</code> 报错信息中有一个 More details here 的提示，里面给了证书下载地址：</p>
 <div class="highlight"><pre><span></span><code>http://curl.haxx.se/docs/sslcerts.html
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoBx529dQMZYOUY3aEizYeedqHKI.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ca.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoBx529dQMZYOUY3aEizYeedqHKI.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FoBx529dQMZYOUY3aEizYeedqHKI.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ca.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FoBx529dQMZYOUY3aEizYeedqHKI.png" /></a>
 下载并绑定证书：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://curl.haxx.se/ca/cacert.pem<span class="w"> </span>--no-check-certificate
 $<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">CURL_CA_BUNDLE</span><span class="o">=</span><span class="s2">&quot;/home/shenweiyan/certs/cacert.pem&quot;</span>
@@ -11691,7 +11691,7 @@ $<span class="w"> </span>make<span class="w"> </span>install
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

@@ -11420,10 +11420,10 @@
 <li><strong>su</strong>：只能切换到管理员用户权限，不使用管理员的登陆脚本和搜索路径。</li>
 <li>s<strong>u -</strong>：不但能切换到管理员权限，而且使用管理员登陆脚本和搜索路径。</li>
 </ul>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr7y6J-Cj_JgMAW87D3N2QFD-Y6a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr7y6J-Cj_JgMAW87D3N2QFD-Y6a.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fr7y6J-Cj_JgMAW87D3N2QFD-Y6a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fr7y6J-Cj_JgMAW87D3N2QFD-Y6a.png" /></a></p>
 <h2 id="没有-home-目录">没有 home 目录<a class="headerlink" href="#没有-home-目录" title="Permanent link">&para;</a></h2>
 <p>如果我们安装最常规的方法，直接使用 useradd username -g groupname 创建用户，Debian 中默认是没有 /home/username 目录的，以至于在登录时出现报错。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmAcFO-y-gEkmCoD3kLFTxFpdEBD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmAcFO-y-gEkmCoD3kLFTxFpdEBD.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmAcFO-y-gEkmCoD3kLFTxFpdEBD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmAcFO-y-gEkmCoD3kLFTxFpdEBD.png" /></a>
 因此，需要通过下面的方式创建用户。</p>
 <div class="highlight"><pre><span></span><code># 添加用户，参数-m，自动创建用户的家目录，注意一定要添加 -s /bin/bash，原因下面细说
 useradd -m -s /bin/bash your_username -g your_groupname
@@ -11461,7 +11461,7 @@ fi
 
 <div class="highlight"><pre><span></span><code>source /etc/profile
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fmgxt3-ojNfOAEgVIpr3LrqL8fdh.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fmgxt3-ojNfOAEgVIpr3LrqL8fdh.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmgxt3-ojNfOAEgVIpr3LrqL8fdh.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmgxt3-ojNfOAEgVIpr3LrqL8fdh.png" /></a>
 这是因为 Ubuntu 和 debian 的 shell 默认安装的是 dash，而不是 bash！解决方法如下：</p>
 <div class="highlight"><pre><span></span><code>root@VM-8-4-debian:~#<span class="w"> </span>usermod<span class="w"> </span>--shell<span class="w"> </span>/bin/bash<span class="w"> </span>shenweiyan
 root@VM-8-4-debian:~#<span class="w"> </span>grep<span class="w"> </span>shenweiyan<span class="w"> </span>/etc/passwd
@@ -11486,9 +11486,9 @@ shenweiyan:x:1001:1001::/home/shenweiyan:/bin/bash
 sudo<span class="w"> </span>dpkg-reconfigure<span class="w"> </span>dash
 </code></pre></div>
 <p>然后在弹出来的界面中选择“yes” 来保持使用 dash 作为 /bin/sh 首选；或者选择“no” 把 /bin/sh 切换为 bash！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuj2yF_wJe2deQbiKeANFpV3oh87.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuj2yF_wJe2deQbiKeANFpV3oh87.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fuj2yF_wJe2deQbiKeANFpV3oh87.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fuj2yF_wJe2deQbiKeANFpV3oh87.png" /></a></p>
 <h2 id="sudo-出现-unable-to-resolve-host">sudo 出现 unable to resolve host<a class="headerlink" href="#sudo-出现-unable-to-resolve-host" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrgbwzbZts8TwZpsiNNh2UVm29uA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrgbwzbZts8TwZpsiNNh2UVm29uA.png" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrgbwzbZts8TwZpsiNNh2UVm29uA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrgbwzbZts8TwZpsiNNh2UVm29uA.png" /></a>
 /etc/hosts 内容修改成如下：</p>
 <div class="highlight"><pre><span></span><code><span class="m">121</span>.23.19.88<span class="o">(</span>或者<span class="w"> </span><span class="m">127</span>.0.0.1<span class="o">)</span><span class="w">    </span>kvm-bioitee
 </code></pre></div>
@@ -11512,7 +11512,7 @@ sudo<span class="w"> </span>dpkg-reconfigure<span class="w"> </span>dash
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

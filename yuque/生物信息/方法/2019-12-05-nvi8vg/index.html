@@ -11486,17 +11486,17 @@
 <p>GO 功能分类是在某一功能层次上统计蛋白或者基因的数目或组成，往往是在 GO 的第二层次。此外也有研究都挑选一些 Term，而后统计直接对应到该 Term 的基因或蛋白数。目的是展示数据集大概的 GO 功能情况，以下为几种不同风格的 GO 短信功能分类分析结果图形。</p>
 <ul>
 <li>图 1. 参考图注，GO categories assigned to all proteins. Y-axis represents the count of proteins. The proteins were categorized according to the annotation of GO, and the number of each category is displayed based on biological process, cellular components, and molecular functions.
-  <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrQ2o9YdnkHFAfphvfqvbNevCWvd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrQ2o9YdnkHFAfphvfqvbNevCWvd.png" /></a></li>
+  <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrQ2o9YdnkHFAfphvfqvbNevCWvd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrQ2o9YdnkHFAfphvfqvbNevCWvd.png" /></a></li>
 </ul>
 <hr />
 <ul>
 <li>图 2：风格 ２，３，４
-  <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhqOz1iKamtxZ7mIeKadSt-yfFpL.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhqOz1iKamtxZ7mIeKadSt-yfFpL.jpeg" /></a></li>
+  <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhqOz1iKamtxZ7mIeKadSt-yfFpL.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FhqOz1iKamtxZ7mIeKadSt-yfFpL.jpeg" /></a></li>
 </ul>
 <hr />
 <ul>
 <li>图３：风格５
-  <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtTfRE9prf5HUBMK7xM-1h7CFl0m.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtTfRE9prf5HUBMK7xM-1h7CFl0m.png" /></a></li>
+  <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FtTfRE9prf5HUBMK7xM-1h7CFl0m.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FtTfRE9prf5HUBMK7xM-1h7CFl0m.png" /></a></li>
 </ul>
 <h3 id="22-go-功能分类柱状图绘制">2.2 GO 功能分类柱状图绘制<a class="headerlink" href="#22-go-功能分类柱状图绘制" title="Permanent link">&para;</a></h3>
 <p>本图的绘制主要参考：<a href="http://www.biotrainee.com/thread-242-1-1.html。">http://www.biotrainee.com/thread-242-1-1.html。</a></p>
@@ -11531,23 +11531,23 @@ gplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) + geom_bar(stat
     theme(axis.text=element_text(face = &quot;bold&quot;, color=&quot;gray50&quot;)) + labs(title = &quot;The Most Enriched GO Terms&quot;)
 </code></pre></div>
 <p>得到 GO 功能分类柱状图如下：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnR20BEyMQXi_ig3eKArfNXfqH1n.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnR20BEyMQXi_ig3eKArfNXfqH1n.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FnR20BEyMQXi_ig3eKArfNXfqH1n.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FnR20BEyMQXi_ig3eKArfNXfqH1n.png" /></a></p>
 <h2 id="3-go-功能富集分析">3. GO 功能富集分析<a class="headerlink" href="#3-go-功能富集分析" title="Permanent link">&para;</a></h2>
 <h3 id="31-说明">3.1 说明<a class="headerlink" href="#31-说明" title="Permanent link">&para;</a></h3>
 <p>GO 功能富集目的是为了获得相对于本底参照显著富集的功能类别,通过该项分析可以找出在统计上显著富集的.该功能或者定位有可能与研究的目前有关。以下为几种不同风格的 GO 功能富集分析结果图形。</p>
 <ul>
 <li>图 4. 示例图 1. Top 10 enrichment GO categories. X-axis represents –log10 p-value. The count of proteins corresponds to circular size.
-  <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlmDKUUYgbSvBm-4aRaTMQAbl-Vd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlmDKUUYgbSvBm-4aRaTMQAbl-Vd.png" /></a></li>
+  <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FlmDKUUYgbSvBm-4aRaTMQAbl-Vd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FlmDKUUYgbSvBm-4aRaTMQAbl-Vd.png" /></a></li>
 </ul>
 <hr />
 <ul>
 <li>图 5. 示例图 2，分别的条状图显示 Top 10 enrichment GO categories.
-  <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuWMXEH3oKpGf19PSMl8anOg2jsx.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuWMXEH3oKpGf19PSMl8anOg2jsx.png" /></a></li>
+  <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuWMXEH3oKpGf19PSMl8anOg2jsx.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuWMXEH3oKpGf19PSMl8anOg2jsx.png" /></a></li>
 </ul>
 <hr />
 <ul>
 <li>图 6. 示例图 3，气泡图 Top 20 enrichment GO categories.
-  <a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjimEFhwg7j9uHD41P5QoNVZXaas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjimEFhwg7j9uHD41P5QoNVZXaas.png" /></a></li>
+  <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjimEFhwg7j9uHD41P5QoNVZXaas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FjimEFhwg7j9uHD41P5QoNVZXaas.png" /></a></li>
 </ul>
 <h2 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h2>
 <ol>
@@ -11577,7 +11577,7 @@ gplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) + geom_bar(stat
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

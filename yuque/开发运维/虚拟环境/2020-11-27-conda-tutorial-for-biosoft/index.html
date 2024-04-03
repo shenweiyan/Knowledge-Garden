@@ -11699,9 +11699,9 @@
 </ul>
 <p>最初接触到 Anaconda 是用于 Python 包的安装。Anaconda 囊括了 100 多个常用的 Python 包，一键式安装，解决 Python 包安装的痛苦。</p>
 <p>但后来发现，其还有更多的功能，尤其是其增加了 bionconda （<a href="https://bioconda.github.io/index.html">https://bioconda.github.io/index.html</a>）通道后，生物信息分析的 7925 多个软件都可以一键安装了（具体列表在：<a href="https://anaconda.org/bioconda/repo">https://anaconda.org/bioconda/repo</a>），免去了编译时间浪费和解决库文件安装的问题。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiVmAJzEocNOqjtiRRAnSqyeY1Pe.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiVmAJzEocNOqjtiRRAnSqyeY1Pe.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FiVmAJzEocNOqjtiRRAnSqyeY1Pe.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FiVmAJzEocNOqjtiRRAnSqyeY1Pe.png" /></a>
 另外其最有吸引力的是它的虚拟软件环境概念，可以简单的配置不同 Python 版本的环境、不同 Python 包的环境、不同 R 环境和 R 包的环境，对于生物信息软件繁杂的应用和频繁的更新提供了很大的便利。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlOefyuCt6xvvRxlcAszyQkBYPcl.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlOefyuCt6xvvRxlcAszyQkBYPcl.webp" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FlOefyuCt6xvvRxlcAszyQkBYPcl.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FlOefyuCt6xvvRxlcAszyQkBYPcl.webp" /></a></p>
 <h3 id="11-conda-安装和配置">1.1 Conda 安装和配置<a class="headerlink" href="#11-conda-安装和配置" title="Permanent link">&para;</a></h3>
 <p>在链接 <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a> 下载 Anaconda 或 Miniconda 对应版本的分发包之后，安装就是运行下面的命令，根据提示一步步操作，主要是修改安装路径：</p>
 <ul>
@@ -12215,7 +12215,7 @@ conda-unpack
 <p>个人用的是清华大学的镜像，除了上面提到的 <strong>json.decoder.JSONDecodeError</strong> 以外，在安装过程中还引发了 **ReadTimeoutError: HTTPSConnectionPool(host=&rsquo;pypi.tuna.tsinghua.edu.cn&rsquo;, port=443): Read timed out **异常，后来把默认的 pip 镜像换成阿里云的源，问题才得以解决。</p>
 <h2 id="22-condahttperror-http-000-connection-failed">2.2 CondaHTTPError: HTTP 000 CONNECTION FAILED<a class="headerlink" href="#22-condahttperror-http-000-connection-failed" title="Permanent link">&para;</a></h2>
 <p>通过 conda update conda 的方式把 base 环境的 conda 升级到 4.10.3 后，使用 conda create/install 等命令安装软件时发现一直提示 <strong>CondaHTTPError: HTTP 000 CONNECTION FAILED</strong>！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fnu_mYP_TGKymTOvRVoqRp0rzh_e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fnu_mYP_TGKymTOvRVoqRp0rzh_e.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fnu_mYP_TGKymTOvRVoqRp0rzh_e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fnu_mYP_TGKymTOvRVoqRp0rzh_e.png" /></a>
 在 <a href="https://github.com/conda/conda/issues/9746">https://github.com/conda/conda/issues/9746</a> 上有这个问题的一些讨论和解决方法，个人尝试过都没办法解决！最后，重装 conda 后，问题解决。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># If you want to update an existing installation, use the -u option.</span>
 $<span class="w"> </span>sh<span class="w"> </span>/Bioinfo/Pipeline/src/pkgs/Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>-u
@@ -12263,20 +12263,20 @@ mamba<span class="w"> </span>update<span class="w"> </span>mamba<span class="w">
 </ul>
 <h2 id="32-mamba-的使用">3.2 mamba 的使用<a class="headerlink" href="#32-mamba-的使用" title="Permanent link">&para;</a></h2>
 <p>安装完成之后，当你运行 <strong>mamba -V</strong> 查看其版本时会发现返回的是 Conda 的版本信息，这是因为 Mamba 的本质是对 Conda 功能的覆盖，因此我们在使用 Mamba 时其实只要将原有的 Conda 语句中的 <strong>conda</strong> 替换为 <strong>mamba</strong> 即可，譬如我们常用的 <strong>conda clean &ndash;all</strong>，即清空本地缓存安装包：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsE1SM3Q6qwaLNKQxBezL7i0mTo4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsE1SM3Q6qwaLNKQxBezL7i0mTo4.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsE1SM3Q6qwaLNKQxBezL7i0mTo4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsE1SM3Q6qwaLNKQxBezL7i0mTo4.png" /></a>
 很有意思的是 Mamba 在执行命令时会先打印出 logo 等信息，对应其名称<strong>黑曼巴</strong>\~</p>
 <p>当然 Mamba 并不是重写了 Conda 所有的功能，只是针对一些 Conda 低效的功能进行重写，并添加了一些实用的新功能，接下来我们来对这些知识进行学习。</p>
 <h3 id="1-加速下载">1. 加速下载<a class="headerlink" href="#1-加速下载" title="Permanent link">&para;</a></h3>
 <p>作为 Mamba 最核心的功能，Mamba 对 conda install 语句进行并行化改造，达到加速下载过程的目的。</p>
 <p>以下载 qgis 为例，使用 mamba install -c conda-forge qgis -y 代替以前的安装方式，执行命令后，Mamba 会在短暂获取资源下载链接之后，以并行的方式按计划同时下载多个资源，比老方法要快很多。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FobJkNs5kfza8egEv0RuIfFAIBn5.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FobJkNs5kfza8egEv0RuIfFAIBn5.webp" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FobJkNs5kfza8egEv0RuIfFAIBn5.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FobJkNs5kfza8egEv0RuIfFAIBn5.webp" /></a>
 对于其他涉及下载资源的命令譬如 conda update 同样适用，你可以自行体验。</p>
 <h3 id="2-查看指定库所有可用版本">2. 查看指定库所有可用版本<a class="headerlink" href="#2-查看指定库所有可用版本" title="Permanent link">&para;</a></h3>
 <p>这是 Mamba 异于 Conda 的新功能，使用 mamba repoquery search 库名可以查看指定库全部所有可用版本，以 pandas 为例：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvkpzTRITOKIYb5uTVBemvVBRqNh.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvkpzTRITOKIYb5uTVBemvVBRqNh.webp" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvkpzTRITOKIYb5uTVBemvVBRqNh.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FvkpzTRITOKIYb5uTVBemvVBRqNh.webp" /></a></p>
 <h3 id="3-查看依赖关系">3. 查看依赖关系<a class="headerlink" href="#3-查看依赖关系" title="Permanent link">&para;</a></h3>
 <p>Mamba 中还提供了 <strong>mamba repoquery depends</strong> 和 <strong>mamba repoquery whoneeds</strong>，分别用于查看指定库依赖哪些库，以及指定库被哪些库依赖，如官方文档的示例：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrPmq37pTOWBCl11ShGDJKgfPO61.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrPmq37pTOWBCl11ShGDJKgfPO61.webp" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrPmq37pTOWBCl11ShGDJKgfPO61.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrPmq37pTOWBCl11ShGDJKgfPO61.webp" /></a></p>
 <h1 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h1>
 <ol>
 <li>费弗里，《<a href="https://mp.weixin.qq.com/s/SGhKcD9zakXOInkZSmKX9A">Conda 太慢？试试这个加速工具！</a>》，Python 大数据分析</li>
@@ -12303,7 +12303,7 @@ mamba<span class="w"> </span>update<span class="w"> </span>mamba<span class="w">
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

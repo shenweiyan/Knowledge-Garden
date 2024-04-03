@@ -11294,13 +11294,13 @@
 <li>① 红色框：右侧管理器窗口</li>
 <li>② 绿色框：左侧栏</li>
 </ul>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgVW3X2VaHWXI527qCNVuCRgLoe_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="两处不同位置的文件夹" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgVW3X2VaHWXI527qCNVuCRgLoe_.png" title="两处不同位置的文件夹" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgVW3X2VaHWXI527qCNVuCRgLoe_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="两处不同位置的文件夹" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgVW3X2VaHWXI527qCNVuCRgLoe_.png" title="两处不同位置的文件夹" /></a></p>
 <p>个人用的是 Win10 专业版（21H1），网上找了不少方法都没能解决想要删除/隐藏资源管理器中的 &ldquo;<strong>图片/视频/文档/下载/音乐/桌面</strong>&rdquo; 这些文件夹的方法。</p>
 <p>有时候自己胡乱更改，甚至删除注册表，一不小心还会导致电脑出现各种异常，没有备份注册表的情况下就恢复不回来了！下面的解决方法，完整原文参考：《<a href="https://zhuanlan.zhihu.com/p/346784646">Win10 删除资源管理器“图片/视频/文档/下载/音乐/桌面&rdquo;等文件夹方法 - 知乎</a>》。</p>
 <h1 id="一打开注册表编辑器">一、打开注册表编辑器<a class="headerlink" href="#一打开注册表编辑器" title="Permanent link">&para;</a></h1>
 <p>按下 Win+R，输入 <strong>regedit</strong> 回车，打开注册表。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmhdMYm60Ele1bbGBjACm1iC-L3C.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmhdMYm60Ele1bbGBjACm1iC-L3C.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlYGLQE1L16xiDSxvm_Rw968n15m.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="两处文件夹的注册表根位置" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlYGLQE1L16xiDSxvm_Rw968n15m.png" title="两处文件夹的注册表根位置" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmhdMYm60Ele1bbGBjACm1iC-L3C.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmhdMYm60Ele1bbGBjACm1iC-L3C.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FlYGLQE1L16xiDSxvm_Rw968n15m.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="两处文件夹的注册表根位置" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FlYGLQE1L16xiDSxvm_Rw968n15m.png" title="两处文件夹的注册表根位置" /></a></p>
 <h1 id="二删除红色框-①-处的文件夹">二、删除红色框 ① 处的文件夹<a class="headerlink" href="#二删除红色框-①-处的文件夹" title="Permanent link">&para;</a></h1>
 <ol>
 <li>定位到以下位置：</li>
@@ -11315,7 +11315,7 @@
 |-NameSpace</p>
 <div class="highlight"><pre><span></span><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
 </code></pre></div>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fhi81vpR0oH2XW5MX_lG2fNCUf91.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="红色①处的注册表项" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fhi81vpR0oH2XW5MX_lG2fNCUf91.png" title="红色①处的注册表项" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fhi81vpR0oH2XW5MX_lG2fNCUf91.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="红色①处的注册表项" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fhi81vpR0oH2XW5MX_lG2fNCUf91.png" title="红色①处的注册表项" /></a></p>
 <ol>
 <li>
 <p>找到相应的键值进行删除操作（删除之前先做好备份），或者注释（推荐）。</p>
@@ -11330,9 +11330,9 @@
 </ul>
 </li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgXdxFb3Nax_8SBiKy8B1Wpof2MF.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="选中项右键选择删除或者左键选中，按 Delete 直接删除" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgXdxFb3Nax_8SBiKy8B1Wpof2MF.png" title="选中项右键选择删除或者左键选中，按 Delete 直接删除" /></a>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgXdxFb3Nax_8SBiKy8B1Wpof2MF.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="选中项右键选择删除或者左键选中，按 Delete 直接删除" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgXdxFb3Nax_8SBiKy8B1Wpof2MF.png" title="选中项右键选择删除或者左键选中，按 Delete 直接删除" /></a>
 如果不想删除，可以在每个注册表前边加一个减号“-”，同样起作用。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmGo2OdcMS9YLi5OOPFCESD8GeB9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2022.02.25-16.13.44.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmGo2OdcMS9YLi5OOPFCESD8GeB9.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmGo2OdcMS9YLi5OOPFCESD8GeB9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2022.02.25-16.13.44.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmGo2OdcMS9YLi5OOPFCESD8GeB9.png" /></a></p>
 <h1 id="三删除绿色框-②-处的文件夹">三、删除绿色框 ② 处的文件夹<a class="headerlink" href="#三删除绿色框-②-处的文件夹" title="Permanent link">&para;</a></h1>
 <ol>
 <li>定位以下位置：</li>
@@ -11346,7 +11346,7 @@
 |-Explorer
 |-MyComputer
 |-NameSpace
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fires9GSQz2Dv_Y625NOQ-Fq61IL.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fires9GSQz2Dv_Y625NOQ-Fq61IL.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fires9GSQz2Dv_Y625NOQ-Fq61IL.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fires9GSQz2Dv_Y625NOQ-Fq61IL.png" /></a></p>
 <ol>
 <li>
 <p>找到相应的键值进行删除操作（删除之前先做好备份），或者注释（推荐）。</p>
@@ -11363,11 +11363,11 @@
 </ol>
 <h1 id="四重启下-explorer-进程">四、重启下 explorer 进程<a class="headerlink" href="#四重启下-explorer-进程" title="Permanent link">&para;</a></h1>
 <p>打开任务管理器。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWNs94O60MPdU5JVk2-3fxt0wmK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="在任务栏空白处鼠标右键选择任务管理器" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWNs94O60MPdU5JVk2-3fxt0wmK.png" title="在任务栏空白处鼠标右键选择任务管理器" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpWNs94O60MPdU5JVk2-3fxt0wmK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="在任务栏空白处鼠标右键选择任务管理器" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpWNs94O60MPdU5JVk2-3fxt0wmK.png" title="在任务栏空白处鼠标右键选择任务管理器" /></a></p>
 <ol>
 <li>重新启动 &ldquo;Windows 资源管理器&rdquo;。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fvju7OJDsNuM1X5-3fCnBMRC1f7R.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fvju7OJDsNuM1X5-3fCnBMRC1f7R.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fvju7OJDsNuM1X5-3fCnBMRC1f7R.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fvju7OJDsNuM1X5-3fCnBMRC1f7R.png" /></a></p>
 <p>以上就是如何删除资源管理器中的图片/文档/音乐/视频等文件夹的操作方法，如果也有强迫症希望自己的资源管理器看着干干净净，可以试试这些方法。</p>
 <h1 id="五参考资料">五、参考资料<a class="headerlink" href="#五参考资料" title="Permanent link">&para;</a></h1>
 <ol>
@@ -11393,7 +11393,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

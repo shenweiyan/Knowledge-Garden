@@ -11379,7 +11379,7 @@
 
 <h3 id="github-fork-过程概述">Github Fork 过程概述<a class="headerlink" href="#github-fork-过程概述" title="Permanent link">&para;</a></h3>
 <p>在 Github 上有很多优秀的开源项目，相信每一位热衷于技术的朋友都会在 Github 上 Fork 一些感兴趣的项目，然后在本地修改并提交。本文以 Galaxy Project 下的 galaxy 仓库为例，在 Github 上 Fork 该项目，更新提交的一个完整过程如下图所示：</p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoTEC0UrbDMw2OuK_tZh5lzOjAU8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoTEC0UrbDMw2OuK_tZh5lzOjAU8.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FoTEC0UrbDMw2OuK_tZh5lzOjAU8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FoTEC0UrbDMw2OuK_tZh5lzOjAU8.png" /></a></p>
 <ol>
 <li>fork 一个项目，比如 galaxy，该操作会复制该项目的所有历史提交内容到个人仓库中，并生成一个相同的项目；</li>
 <li>clone 之前 fork 的项目到本地计算机中；</li>
@@ -11389,48 +11389,48 @@
 <li>创建 pull 请求，既可以把 fork 原始项目中别人的更新同步到自己的 github 仓库中，也可以提交个人更新的内容到 fork 的原始项目。</li>
 </ol>
 <p>我 fork 的  <a href="https://github.com/galaxyproject/galaxy">galaxyproject/galaxy</a>  项目如下：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuLbQzEQw_2qBwLaPfz2BBkBaipy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="1-shen-galaxy-master.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuLbQzEQw_2qBwLaPfz2BBkBaipy.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuLbQzEQw_2qBwLaPfz2BBkBaipy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="1-shen-galaxy-master.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FuLbQzEQw_2qBwLaPfz2BBkBaipy.png" /></a></p>
 <p><a href="https://github.com/galaxyproject/galaxy">galaxyproject/galaxy</a>  项目 master 版本最新进展如下，可以看到已经有了很大新的代码提交：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkQ-d450LKDnCnhGIjtNtnoVXN7R.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2-galaxyproject-master.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkQ-d450LKDnCnhGIjtNtnoVXN7R.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkQ-d450LKDnCnhGIjtNtnoVXN7R.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2-galaxyproject-master.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkQ-d450LKDnCnhGIjtNtnoVXN7R.png" /></a></p>
 <p>下面我们简单介绍一下，如何同被 fork 的项目保持同步更新，将以 galaxyproject/galaxy  项目为例。</p>
 <h3 id="fork-同步更新步骤">fork 同步更新步骤<a class="headerlink" href="#fork-同步更新步骤" title="Permanent link">&para;</a></h3>
 <ol>
 <li>打开自己的 github 中 fork 的项目，打开 Code 选项卡，点击下面的 <strong>&ldquo;New pull request&rdquo;</strong> 创建一个新的 pull 请求；</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjfr8h3daSvJkimzvCswOV_Kdmd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="3-new-pull-request.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frjfr8h3daSvJkimzvCswOV_Kdmd.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Frjfr8h3daSvJkimzvCswOV_Kdmd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="3-new-pull-request.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Frjfr8h3daSvJkimzvCswOV_Kdmd.png" /></a></p>
 <ol>
 <li>在 <strong>Comparing chanages</strong> 页面，如下图所示，这时 base fork 默认是你 fork 的项目，而 head fork 则默认是你自己的仓库。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqJK_irtxyxIKLRMj0gR8_360rA2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="5-compare-change.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqJK_irtxyxIKLRMj0gR8_360rA2.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqJK_irtxyxIKLRMj0gR8_360rA2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="5-compare-change.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqJK_irtxyxIKLRMj0gR8_360rA2.png" /></a></p>
 <ol>
 <li>在上图中进行选择（前面的 base-fork 选择自己的 github 仓库）后会出现如下图所示页面，这时需要点击 <strong>&ldquo;compare across forks&rdquo;</strong>，再一次进行选择。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqZx4b3roNh9ZeI14VqRyLPEiZVh.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="5.1-compare-fork.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqZx4b3roNh9ZeI14VqRyLPEiZVh.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqZx4b3roNh9ZeI14VqRyLPEiZVh.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="5.1-compare-fork.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqZx4b3roNh9ZeI14VqRyLPEiZVh.png" /></a></p>
 <ol>
 <li>具体选择如下：base:master 是自己仓库和分支，后面选择 head fork, compare:master 是你 fork 项目来源的仓库和分支，可以对比两个项目前后的变化情况。然后点击 <strong>&ldquo;Create pull request&rdquo;</strong>，创建新的 pull 请求。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnI99s09kYyCTUuXCsoa-wh-d7hj.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="compare-change.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnI99s09kYyCTUuXCsoa-wh-d7hj.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FnI99s09kYyCTUuXCsoa-wh-d7hj.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="compare-change.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FnI99s09kYyCTUuXCsoa-wh-d7hj.png" /></a></p>
 <ol>
 <li>填写标题（Title）和评论（Comment），并点击 Create pull request。Preview 可以预览评论效果，右侧有 5 个选项可以设置检阅用户（Reviewers）、分配给哪个用户（Assignees）、Labels 标签（bug、duplocate、enhancement、help wanted、invalid、question、wontfix，也支持自定义）、项目（Projects），以及里程碑事件（Milestone）。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsMlmWA_jPu4mt4ic5nx3vIBS5K7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pull-request-commit.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsMlmWA_jPu4mt4ic5nx3vIBS5K7.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsMlmWA_jPu4mt4ic5nx3vIBS5K7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pull-request-commit.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsMlmWA_jPu4mt4ic5nx3vIBS5K7.png" /></a></p>
 <ol>
 <li>点击 <strong>&ldquo;Create pull request&rdquo;</strong> 之后，就可以在 Pull request 中看到刚才提交的 comment，如下所示。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu8ECaQSoxmoY26-j4XZB5xq8lwa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="update-master.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu8ECaQSoxmoY26-j4XZB5xq8lwa.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu8ECaQSoxmoY26-j4XZB5xq8lwa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="update-master.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu8ECaQSoxmoY26-j4XZB5xq8lwa.png" /></a></p>
 <ol>
 <li>可以看到期间有很多的提交更新，往下翻可以找到如下图所示，点击** &ldquo;Merge pull request&rdquo;**。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiQUFpRTizMW1JamrEEeDUfruPsn.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-merge-master-pull-request.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiQUFpRTizMW1JamrEEeDUfruPsn.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FiQUFpRTizMW1JamrEEeDUfruPsn.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="6-merge-master-pull-request.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FiQUFpRTizMW1JamrEEeDUfruPsn.png" /></a></p>
 <ol>
 <li>填写 Merge 的评论并且提交，如果有冲突一定要先解决冲突，然后就全部 OK 了。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqSP4BB1N4wv5rIfi5XY9dQGlwEA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="7-confirm-merge.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqSP4BB1N4wv5rIfi5XY9dQGlwEA.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqSP4BB1N4wv5rIfi5XY9dQGlwEA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="7-confirm-merge.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FqSP4BB1N4wv5rIfi5XY9dQGlwEA.png" /></a></p>
 <ol>
 <li>最后，再次打开自己仓库的 galaxy 项目，可以看到项目已更新到最新版本，和最开始 galaxy 原始项目内容一致了。</li>
 </ol>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl89acRkvA2WUX_ZTLRB3dp4XDqk.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="8-galaxy-master-fork.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl89acRkvA2WUX_ZTLRB3dp4XDqk.png" /></a></p>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkQ-d450LKDnCnhGIjtNtnoVXN7R.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2-galaxyproject-master.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkQ-d450LKDnCnhGIjtNtnoVXN7R.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl89acRkvA2WUX_ZTLRB3dp4XDqk.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="8-galaxy-master-fork.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl89acRkvA2WUX_ZTLRB3dp4XDqk.png" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkQ-d450LKDnCnhGIjtNtnoVXN7R.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2-galaxyproject-master.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkQ-d450LKDnCnhGIjtNtnoVXN7R.png" /></a></p>
 <h3 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h3>
 <p>本文讲解了同步更新 Github 上 Fork 项目的其中一种方法，还有其他的方法比如可以删除个人 github 中 fork 的该项目然后重新 fork，这种方式不能合并自己已更新的代码；还有另外一种方式是在本地建立两个仓库，把两个远程库都 clone 到本地，然后拉取原 fork 项目更新到本地，合并更新，最后 push 到你个人的 github 即可。</p>
 
@@ -11453,7 +11453,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

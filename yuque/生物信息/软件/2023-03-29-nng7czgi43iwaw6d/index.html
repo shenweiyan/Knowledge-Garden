@@ -11379,11 +11379,11 @@
 
 <p>在 <a href="https://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/">https://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/</a> 这个页面中，UCSC 官方已经提供了很多已经编译好可以直接在 Unix/Linux 直接使用的 UCSC Genome Browser 的 Utils 工具集。
 但对于老旧的服务器，如 RHEL 6.X，这些编译好的工具可能会出现报错：
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu-E8bF-CKs3bw5pUMqihPL8nOEI.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu-E8bF-CKs3bw5pUMqihPL8nOEI.png" /></a>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu-E8bF-CKs3bw5pUMqihPL8nOEI.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu-E8bF-CKs3bw5pUMqihPL8nOEI.png" /></a>
 因此，可以通过源码编译安装的方法来解决。</p>
 <h2 id="源码文件">源码文件<a class="headerlink" href="#源码文件" title="Permanent link">&para;</a></h2>
 <p>UCSC Genome Browser 工具集对应的源码放在 <a href="https://hgdownload.cse.ucsc.edu/admin/">https://hgdownload.cse.ucsc.edu/admin/</a>，对应于 jksrc.vNNN.zip 文件。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoPLAPImyAFTqOXjsyHVUXtGvSuO.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoPLAPImyAFTqOXjsyHVUXtGvSuO.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FoPLAPImyAFTqOXjsyHVUXtGvSuO.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FoPLAPImyAFTqOXjsyHVUXtGvSuO.png" /></a></p>
 <h2 id="编译安装">编译安装<a class="headerlink" href="#编译安装" title="Permanent link">&para;</a></h2>
 <p>编译安装可以参考 <a href="https://github.com/ucscGenomeBrowser/kent/blob/master/README">https://github.com/ucscGenomeBrowser/kent/blob/master/README</a> 的说明。
 个人在 RHEL 6.5 x86_64 服务器中编译 jksrc.v400，执行<code>make utils</code>一步无法最终成功(错误如下)，但至少能在安装目录下得到一堆包括 blat/twoBitToFa/bigWigToWig 在内的可执行程序(虽然不是完全成功，但至少得到想要的程序)。</p>
@@ -11493,7 +11493,7 @@ make:<span class="w"> </span>***<span class="w"> </span><span class="o">[</span>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     

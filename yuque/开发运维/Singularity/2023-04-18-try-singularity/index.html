@@ -11607,7 +11607,7 @@ To allow unprivileged creation of user namespaces a kernel &gt;=3.8 is required,
 <p>When singularity/SingularityCE does not use setuid all container execution will use a user namespace.</p>
 <p>🔗 来源：<a href="https://docs.sylabs.io/guides/3.8/admin-guide/user_namespace.html">https://docs.sylabs.io/guides/3.8/admin-guide/user_namespace.html</a></p>
 </blockquote>
-<p><a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkpKd2AaoQ5kl1HM67TWhEeOrzoq.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="701e36aec39a4a3be99fe11548aa4da.jpg" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkpKd2AaoQ5kl1HM67TWhEeOrzoq.jpeg" /></a></p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkpKd2AaoQ5kl1HM67TWhEeOrzoq.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="701e36aec39a4a3be99fe11548aa4da.jpg" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkpKd2AaoQ5kl1HM67TWhEeOrzoq.jpeg" /></a></p>
 <blockquote>
 <p><strong>📢 知识点 - User namespace</strong></p>
 <p>User namespace 是 Linux 3.8 新增的一种 namespace，用于隔离安全相关的资源，包括 <strong>user IDs</strong> and <strong>group IDs</strong>，<strong>keys</strong>, 和 <strong>capabilities</strong>。同样一个用户的 user ID 和 group ID 在不同的 user namespace 中可以不一样(与 PID nanespace 类似)。换句话说，一个用户可以在一个 user namespace 中是普通用户，但在另一个 user namespace 中是超级用户。</p>
@@ -11637,7 +11637,7 @@ ERROR:<span class="w">   </span>unpackSIF<span class="w"> </span>failed:<span cl
 FATAL:<span class="w">   </span>While<span class="w"> </span>performing<span class="w"> </span>build:<span class="w"> </span>packer<span class="w"> </span>failed<span class="w"> </span>to<span class="w"> </span>pack:<span class="w"> </span>root<span class="w"> </span>filesystem<span class="w"> </span>extraction<span class="w"> </span>failed:<span class="w"> </span>could<span class="w"> </span>not<span class="w"> </span>extract<span class="w"> </span>squashfs<span class="w"> </span>data,<span class="w"> </span>unsquashfs<span class="w"> </span>not<span class="w"> </span>found
 </code></pre></div>
 <p>使用<code>yum install squashfs-tools</code>安装了<code>unsquashfs</code>并添加到 $PATH 中问题依然没法解决！！！
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbnpUiB0x8v8X1EhUpD3Xm7dznd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="16f4cadef5c03cdafaae5847f3e0672.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbnpUiB0x8v8X1EhUpD3Xm7dznd.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkbnpUiB0x8v8X1EhUpD3Xm7dznd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="16f4cadef5c03cdafaae5847f3e0672.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FkbnpUiB0x8v8X1EhUpD3Xm7dznd.png" /></a></p>
 <h3 id="源码编译">源码编译<a class="headerlink" href="#源码编译" title="Permanent link">&para;</a></h3>
 <p>最后还是选择从源码安装。</p>
 <h4 id="安装-go">安装 Go<a class="headerlink" href="#安装-go" title="Permanent link">&para;</a></h4>
@@ -11656,7 +11656,7 @@ $<span class="w"> </span>make<span class="w"> </span>-C<span class="w"> </span>.
 </code></pre></div>
 <h4 id="使用测试">使用测试<a class="headerlink" href="#使用测试" title="Permanent link">&para;</a></h4>
 <p>初步测试 singularity build 也能正常使用了。
-<a class="glightbox" href="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg7yJ8XqLya8z_7rI38Te4cVl3YG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg7yJ8XqLya8z_7rI38Te4cVl3YG.png" /></a></p>
+<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg7yJ8XqLya8z_7rI38Te4cVl3YG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg7yJ8XqLya8z_7rI38Te4cVl3YG.png" /></a></p>
 
 
 
@@ -11677,7 +11677,7 @@ $<span class="w"> </span>make<span class="w"> </span>-C<span class="w"> </span>.
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-03</span>
   </span>
 
     
