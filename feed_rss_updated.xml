@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 11 Apr 2024 02:27:08 -0000</pubDate>
-    <lastBuildDate>Thu, 11 Apr 2024 02:27:08 -0000</lastBuildDate>
+    <pubDate>Thu, 11 Apr 2024 05:07:50 -0000</pubDate>
+    <lastBuildDate>Thu, 11 Apr 2024 05:07:50 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -83,7 +83,7 @@
 &lt;p&gt;国内虽然不少人都在使用 Gitee，但 Gitee 时不时恶心你一下（前不久就无缘无故把我的 oschina 的账号封了，而且要加 QQ 群去申诉，最后我是直接通过邮件反馈解封了），而且有时候有些资源用起来限制太多，很麻烦。&lt;/p&gt;
 &lt;p&gt;极狐从 2024 年 1 月 2 日起要付费才能使用，1898元/人/年的价格估计会劝退 90% 的个人用户吧！&lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/res/</link>
-      <pubDate>Thu, 11 Apr 2024 02:25:41 +0000</pubDate>
+      <pubDate>Thu, 11 Apr 2024 05:06:29 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/res/</guid>
@@ -123,7 +123,7 @@
     &lt;img style=&#34;max-widrh:600px&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/portfolio/webstack-hugo.jpg&#34; alt=&#34;WebStack-Hugo&#34;&gt;
 &lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/work/</link>
-      <pubDate>Thu, 11 Apr 2024 02:25:41 +0000</pubDate>
+      <pubDate>Thu, 11 Apr 2024 05:06:29 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/work/</guid>
@@ -131,62 +131,21 @@
     </item>
     
     <item>
-      <title>Index</title>
+      <title>RSS 订阅插件 mkdocs-rss-plugin 的一些问题</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
       
       
       
-      
-      <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
-      <link>https://weiyan.cc/yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
-      <pubDate>Thu, 11 Apr 2024 02:25:41 +0000</pubDate>
+      <description>&lt;p&gt;聊一下 Mkdocs Material 的默认插件 &lt;a href=&#34;https://github.com/Guts/mkdocs-rss-plugin&#34;&gt;mkdocs-rss-plugin&lt;/a&gt; 在使用上的一些问题。&lt;/p&gt;</description>
+      <link>https://weiyan.cc/blog/discussions-65/</link>
+      <pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
-      <guid isPermaLink="true">https://weiyan.cc/yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Index</title>
-      
-      
-      
-      
-      <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
-      <link>https://weiyan.cc/yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</link>
-      <pubDate>Thu, 11 Apr 2024 02:25:41 +0000</pubDate>
-      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
-      
-      <guid isPermaLink="true">https://weiyan.cc/yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Index</title>
-      
-      
-      
-      
-      <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
-      <link>https://weiyan.cc/yuque/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-      <pubDate>Thu, 11 Apr 2024 02:25:41 +0000</pubDate>
-      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
-      
-      <guid isPermaLink="true">https://weiyan.cc/yuque/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Index</title>
-      
-      
-      
-      
-      <description>&lt;p&gt;本文件于 2023-07-20 02:03:16 自动生成！&lt;/p&gt;</description>
-      <link>https://weiyan.cc/yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Thu, 11 Apr 2024 02:25:41 +0000</pubDate>
-      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
-      
-      <guid isPermaLink="true">https://weiyan.cc/yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</guid>
+      <guid isPermaLink="true">https://weiyan.cc/blog/discussions-65/</guid>
       
     </item>
     
@@ -2661,6 +2620,44 @@ hugo -D 或者 hugo --minify&lt;/code&gt;&lt;/p&gt;
     </item>
     
     <item>
+      <title>数据可视化</title>
+      
+      
+        
+      <author>沈维燕</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;基于 R 和 Python 的数据可视化。&lt;/p&gt;</description>
+      <link>https://weiyan.cc/yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://weiyan.cc/yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Development 和 Operations</title>
+      
+      
+        
+      <author>沈维燕</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;DevOps 将开发 (Dev) 和运营 (Ops) 相结合，从而在应用程序规划、开发、交付和运营中统一人员、流程和技术。&lt;/p&gt;</description>
+      <link>https://weiyan.cc/yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://weiyan.cc/yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</guid>
+      
+    </item>
+    
+    <item>
       <title>Linux 专栏</title>
       
       
@@ -2687,6 +2684,25 @@ hugo -D 或者 hugo --minify&lt;/code&gt;&lt;/p&gt;
     </item>
     
     <item>
+      <title>数据库技术</title>
+      
+      
+        
+      <author>沈维燕</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;关于 MySQL、PostgreSQL，以及 SQLite 数据库的一些使用和介绍。&lt;/p&gt;</description>
+      <link>https://weiyan.cc/yuque/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://weiyan.cc/yuque/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      
+    </item>
+    
+    <item>
       <title>生物信息学</title>
       
       
@@ -2702,6 +2718,25 @@ hugo -D 或者 hugo --minify&lt;/code&gt;&lt;/p&gt;
       <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/</guid>
+      
+    </item>
+    
+    <item>
+      <title>代码改变世界</title>
+      
+      
+        
+      <author>沈维燕</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;Write the Code. Change the World.&lt;/p&gt;</description>
+      <link>https://weiyan.cc/yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://weiyan.cc/yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</guid>
       
     </item>
     
