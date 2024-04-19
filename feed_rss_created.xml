@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 18 Apr 2024 19:02:17 -0000</pubDate>
-    <lastBuildDate>Thu, 18 Apr 2024 19:02:17 -0000</lastBuildDate>
+    <pubDate>Fri, 19 Apr 2024 19:02:28 -0000</pubDate>
+    <lastBuildDate>Fri, 19 Apr 2024 19:02:28 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -83,7 +83,7 @@
 &lt;p&gt;国内虽然不少人都在使用 Gitee，但 Gitee 时不时恶心你一下（前不久就无缘无故把我的 oschina 的账号封了，而且要加 QQ 群去申诉，最后我是直接通过邮件反馈解封了），而且有时候有些资源用起来限制太多，很麻烦。&lt;/p&gt;
 &lt;p&gt;极狐从 2024 年 1 月 2 日起要付费才能使用，1898元/人/年的价格估计会劝退 90% 的个人用户吧！&lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/res/</link>
-      <pubDate>Wed, 17 Apr 2024 19:02:24 +0000</pubDate>
+      <pubDate>Thu, 18 Apr 2024 19:01:58 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/res/</guid>
@@ -123,7 +123,7 @@
     &lt;img style=&#34;max-widrh:600px&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/portfolio/webstack-hugo.jpg&#34; alt=&#34;WebStack-Hugo&#34;&gt;
 &lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/work/</link>
-      <pubDate>Wed, 17 Apr 2024 19:02:24 +0000</pubDate>
+      <pubDate>Thu, 18 Apr 2024 19:01:58 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/work/</guid>
@@ -1593,7 +1593,7 @@ menubar.add_cascade(label=&#34;帮助&#34;, menu=fmenu3)&lt;/p&gt;
 &lt;p&gt;top[&#39;menu&#39;]=menubar
 top.mainloop()
 ```&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh22i487OzvY-uSXvAuFs6rEXXvu.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://shub.weiyan.tech/yuque/elog-cookbook-img/Fh22i487OzvY-uSXvAuFs6rEXXvu.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;我们也可以确认一下是不是 Tk 本身的问题：
 &lt;code&gt;echo &#39;pack [button .h -text &#34;Hello, World! 显示中文&#34; -command exit]&#39; | wish&lt;/code&gt;
 - 正常显示
@@ -1624,9 +1624,9 @@ top.mainloop()
 &lt;/blockquote&gt;
 &lt;p&gt;Tcl 是&#34;工具控制语言（Tool Control Language）&#34;的缩写。Tk 是 Tcl &#34;图形工具箱&#34; 的扩展，它提供各种标准的 GUI 接口项，以利于迅速进行高级应用程序开发。&lt;/p&gt;
 &lt;p&gt;tkinter 包（&#34;Tk 接口&#34;）是 Tk GUI 工具包的标准 Python 接口。 Tk 和  tkinter 在大多数 Unix 平台以及 Windows 系统上都可用（Tk 本身不是 Python 的一部分，它在 ActiveState 中维护）。您可以通过从命令行运行  &lt;code&gt;python -m tkinter&lt;/code&gt;来检查  tkinter 是否已正确安装在系统上。如果已经安装该命令会打开一个简单的 Tk 界面，该界面除了让我们知道 tkinter 已正确安装，并且还显示安装了哪个版本的 Tcl/Tk，因此我们可以阅读特定于该版本的 Tcl/Tk 文档。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWx6rSTKaQ1BXXPQJzchNbviKYd.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://shub.weiyan.tech/yuque/elog-cookbook-img/FpWx6rSTKaQ1BXXPQJzchNbviKYd.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如果  tkinter  没有安装，则会提示找不到该包（注意在 Python 2 中该包包名为 Tkinter，Python 3 中为 tkinter）：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrRwzLFA1tIq2VfwS4p7i0dVLTjP.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://shub.weiyan.tech/yuque/elog-cookbook-img/FrRwzLFA1tIq2VfwS4p7i0dVLTjP.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;接下来我们将尝试在 Python 2/3 中安装 Tcl/Tk，并重新编译 Python 2/3，已完成 Tkinter 安装（tkinter 为 Python 的标准库，标准库的安装需要重新编译 Python ？）。&lt;/p&gt;
 &lt;h2&gt;ActiveTcl 安装&lt;/h2&gt;
 &lt;p&gt;ActiveTcl 是 ActiveState 发布的关于 Tcl/Tk 的发行版本，该发行版本包含了最新版本的 Tk 和 Tcl 程序，我们下载其免费的社区版本进行安装即可。&lt;/p&gt;
@@ -1731,9 +1731,9 @@ _tkinter&lt;/p&gt;
 &lt;p&gt;Python 2/3 重新编译完后，执行一下下面的命令即可显示 Tk 的 ui 界面，以及相应的 Tcl/Tk 版本。
 &lt;code&gt;python2 -m Tkinter   # python 2
 python3 -m tkinter   # python 3&lt;/code&gt;
-&lt;img alt=&#34;python2-m-Tkinter&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBtb14ZgZFZXIRhOdt6efbYz7fd.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;python2-m-Tkinter&#34; src=&#34;https://shub.weiyan.tech/yuque/elog-cookbook-img/FgBtb14ZgZFZXIRhOdt6efbYz7fd.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这时候，我们重新运行开头的 GUI 界面程序，可以看到中文已经正常显示：
-&lt;img alt=&#34;&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqRHUXczPdHrQjFUXNQr_Cg_j2B4.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;&#34; src=&#34;https://shub.weiyan.tech/yuque/elog-cookbook-img/FqRHUXczPdHrQjFUXNQr_Cg_j2B4.png&#34;&gt;&lt;/p&gt;
 &lt;h2&gt;参考资料&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Download And Install Tcl: ActiveTcl，&lt;a href=&#34;https://www.activestate.com/products/activetcl/downloads/&#34;&gt;https://www.activestate.com/products/activetcl/downloads/&lt;/a&gt;&lt;/li&gt;
@@ -2102,7 +2102,7 @@ LibreSSL 2.6.4 and earlier do not provide the necessary APIs, https://github.com
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;make&lt;/code&gt; 过程如果出现 &lt;code&gt;ModuleNotFoundError: No module named &#39;_ctypes&#39;&lt;/code&gt; 或者 &lt;code&gt;INFO: Could not locate ffi libs and/or headers&lt;/code&gt; 参考：&lt;a href=&#34;https://groups.google.com/forum/#!topic/comp.lang.python/npv-wzmytzo&#34;&gt;https://groups.google.com/forum/#!topic/comp.lang.python/npv-wzmytzo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmK7bCeEeGjfbl1UVdvHyw3Jg8Zj.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub.weiyan.tech/yuque/elog-cookbook-img/FmK7bCeEeGjfbl1UVdvHyw3Jg8Zj.png&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;对于低版本的 Python 如果指定 &lt;code&gt;--with-openssl=DIR&lt;/code&gt; 依然无法解决 ssl 模块的问题，可以参考修改 Modules/Setup.dist 文件（默认这块是注释的，放开注释即可。这块功能是开启 SSL 模块，不然会出现安装完毕后，提示找不到 ssl 模块的错误）再执行 configure，修改内容如下：&lt;/li&gt;
 &lt;/ul&gt;
@@ -2157,7 +2157,7 @@ cp libbz2.so.1.0.6 /usr/local/software/bzip2-1.0.6/lib/&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;bzip2 的官网  &lt;a href=&#34;http://www.bzip.org/&#34;&gt;http://www.bzip.org/&lt;/a&gt;  已经把 bzip2 的源码下载链接放到了  SourceForge，网络上一些从  &lt;a href=&#34;http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz&#34;&gt;http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz&lt;/a&gt;  下载的做法已经失效。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sourceforge.net/projects/bzip2/files/&#34;&gt;SourceForge&lt;/a&gt; 上 bzip2 的最新版本还是 1.0.6（Last modified 2018-11-3），更高级版本的 bzip2 我也不知道是否存在，也不知道能不能用。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvgxGWlVJSxOCvgXFo9BPOa3ODm5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub.weiyan.tech/yuque/elog-cookbook-img/FvgxGWlVJSxOCvgXFo9BPOa3ODm5.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;编译安装 Python-3.6.9：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;bash
 $ wget https://www.python.org/ftp/python/3.6.9/Python-3.6.9.tgz
