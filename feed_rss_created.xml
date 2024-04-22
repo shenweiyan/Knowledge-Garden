@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Sun, 21 Apr 2024 19:02:12 -0000</pubDate>
-    <lastBuildDate>Sun, 21 Apr 2024 19:02:12 -0000</lastBuildDate>
+    <pubDate>Mon, 22 Apr 2024 19:02:28 -0000</pubDate>
+    <lastBuildDate>Mon, 22 Apr 2024 19:02:28 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,44 @@
     
 
     
+    
+    <item>
+      <title>我的独立站点 Knowledge-Garden</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;使用 GitHub Discussions 写作文章大半年以来，越来越得心应手，最近起用了新的一个仓库，用于 &lt;a href=&#34;https://github.com/shenweiyan/Knowledge-Garden/discussions&#34;&gt;Knowledge-Garden&lt;/a&gt; 静态资源的保存和使用。&lt;/p&gt;</description>
+      <link>https://weiyan.cc/blog/discussions-69/</link>
+      <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
+      <source url="https://weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://weiyan.cc/blog/discussions-69/</guid>
+      
+    </item>
+    
+    <item>
+      <title>部署 PicX 图床到 Vercel</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;由于 &lt;a href=&#34;https://github.com/XPoet/picx&#34;&gt;PicX&lt;/a&gt; 自 v3.0 起，不再支持自由选择仓库和分支，统一使用内置的仓库和分支。所以出于自定义的仓库和分支使用需求，这里主要对 &lt;a href=&#34;https://github.com/XPoet/picx/tree/v2&#34;&gt;PicX v2.0&lt;/a&gt; 进行 Vercel 自定义部署。&lt;/p&gt;</description>
+      <link>https://weiyan.cc/blog/discussions-68/</link>
+      <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
+      <source url="https://weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://weiyan.cc/blog/discussions-68/</guid>
+      
+    </item>
     
     <item>
       <title>常用资源</title>
@@ -83,7 +121,7 @@
 &lt;p&gt;国内虽然不少人都在使用 Gitee，但 Gitee 时不时恶心你一下（前不久就无缘无故把我的 oschina 的账号封了，而且要加 QQ 群去申诉，最后我是直接通过邮件反馈解封了），而且有时候有些资源用起来限制太多，很麻烦。&lt;/p&gt;
 &lt;p&gt;极狐从 2024 年 1 月 2 日起要付费才能使用，1898元/人/年的价格估计会劝退 90% 的个人用户吧！&lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/res/</link>
-      <pubDate>Sat, 20 Apr 2024 19:04:16 +0000</pubDate>
+      <pubDate>Sun, 21 Apr 2024 19:01:54 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/res/</guid>
@@ -123,7 +161,7 @@
     &lt;img style=&#34;max-widrh:600px&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/portfolio/webstack-hugo.jpg&#34; alt=&#34;WebStack-Hugo&#34;&gt;
 &lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/work/</link>
-      <pubDate>Sat, 20 Apr 2024 19:04:16 +0000</pubDate>
+      <pubDate>Sun, 21 Apr 2024 19:01:54 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/work/</guid>
