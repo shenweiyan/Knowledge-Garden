@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Tue, 23 Apr 2024 19:02:38 -0000</pubDate>
-    <lastBuildDate>Tue, 23 Apr 2024 19:02:38 -0000</lastBuildDate>
+    <pubDate>Wed, 24 Apr 2024 06:43:29 -0000</pubDate>
+    <lastBuildDate>Wed, 24 Apr 2024 06:43:29 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -83,7 +83,7 @@
 &lt;p&gt;国内虽然不少人都在使用 Gitee，但 Gitee 时不时恶心你一下（前不久就无缘无故把我的 oschina 的账号封了，而且要加 QQ 群去申诉，最后我是直接通过邮件反馈解封了），而且有时候有些资源用起来限制太多，很麻烦。&lt;/p&gt;
 &lt;p&gt;极狐从 2024 年 1 月 2 日起要付费才能使用，1898元/人/年的价格估计会劝退 90% 的个人用户吧！&lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/res/</link>
-      <pubDate>Mon, 22 Apr 2024 19:02:09 +0000</pubDate>
+      <pubDate>Wed, 24 Apr 2024 06:41:55 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/res/</guid>
@@ -123,10 +123,29 @@
     &lt;img style=&#34;max-widrh:600px&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/portfolio/webstack-hugo.jpg&#34; alt=&#34;WebStack-Hugo&#34;&gt;
 &lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/work/</link>
-      <pubDate>Mon, 22 Apr 2024 19:02:09 +0000</pubDate>
+      <pubDate>Wed, 24 Apr 2024 06:41:55 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/work/</guid>
+      
+    </item>
+    
+    <item>
+      <title>寻找 GitHub 的替代品</title>
+      
+      
+        
+      <author>shenweiyan</author>
+        
+      
+      
+      
+      <description>&lt;p&gt;与其说是在寻找 GitHub 的替代品，倒不如说在寻找 GitHub 的备用站点 —— 以防万一 GitHub 哪天登不上去了，也不至于把托管在上面的东西都丢了，毕竟把所有的鸡蛋放在一个篮子里终究是很危险的。&lt;/p&gt;</description>
+      <link>https://weiyan.cc/blog/discussions-70/</link>
+      <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
+      
+      <guid isPermaLink="true">https://weiyan.cc/blog/discussions-70/</guid>
       
     </item>
     
@@ -361,32 +380,6 @@
     </item>
     
     <item>
-      <title>使用 Planemo 进行 Galaxy 工具开发</title>
-      
-      
-        
-      <author>shenweiyan</author>
-        
-      
-      
-      
-      <description>&lt;blockquote&gt;
-&lt;p&gt;说明：本文章原文发布于 《&lt;a href=&#34;https://www.yuque.com/shenweiyan/biox/planemo-for-galaxy&#34;&gt;使用 Planemo 进行 Galaxy 工具开发 - 语雀&lt;/a&gt;》，部分内容已更新。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;文章开始前，我们先了解一下 Planemo 到底是个什么东西。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Command-line utilities to assist in developing &lt;a href=&#34;http://galaxyproject.org/&#34;&gt;Galaxy&lt;/a&gt; and &lt;a href=&#34;https://www.commonwl.org/&#34;&gt;Common Workflow Language&lt;/a&gt; artifacts - including tools, workflows, and training materials.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;说白了，Planemo 就是用于 Galaxy 平台工具和 WDL 通用工作流语言相关产品辅助开发的一个命令行工具，这个程序集可以用于工具、流程，以及培训教材的开发。&lt;/p&gt;</description>
-      <link>https://weiyan.cc/discussions-57/</link>
-      <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
-      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
-      
-      <guid isPermaLink="true">https://weiyan.cc/discussions-57/</guid>
-      
-    </item>
-    
-    <item>
       <title>越来越难用的国内代码托管平台</title>
       
       
@@ -593,128 +586,6 @@
       <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/discussions-49/</guid>
-      
-    </item>
-    
-    <item>
-      <title>3211-支持的 Python 版本</title>
-      
-      
-        
-      <author>shenweiyan</author>
-        
-      
-      
-      
-      <description>&lt;blockquote&gt;
-&lt;p&gt;编译：&lt;a href=&#34;https://www.weiyan.cc&#34;&gt;沈维燕&lt;/a&gt;   &lt;br&gt;
-原文：&lt;a href=&#34;https://docs.galaxyproject.org/en/master/admin/python.html&#34;&gt;https://docs.galaxyproject.org/en/master/admin/python.html&lt;/a&gt;       &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Galaxy 的核心功能目前支持 Python &amp;gt;=3.7。&lt;/p&gt;
-&lt;p&gt;如果 Galaxy 排斥你正在使用的 Python 版本：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;完全删除 Galaxy 使用的 Python virtualenv（可以使用 &lt;code&gt;GALAXY_VIRTUAL_ENV&lt;/code&gt; 环境变量配置，默认为 &lt;code&gt;.venv&lt;/code&gt; ），例如： &lt;code&gt;rm -rf /path/to/galaxy/.venv&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;如果您在 conda 环境中使用 Python（可以使用 &lt;code&gt;GALAXY_CONDA_ENV&lt;/code&gt; 环境变量进行配置，默认为 &lt;code&gt;_galaxy_&lt;/code&gt;），请将其删除，例如： &lt;code&gt;conda env remove -n _galaxy_&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;让 Galaxy 知道要使用哪个 Python 的方法有以下几种：    &lt;/li&gt;
-&lt;li&gt;如果您想从 conda 使用 Python，只需激活 &lt;code&gt;base&lt;/code&gt; 环境，Galaxy 将为自己创建一个新的 conda 环境。&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;否则：    &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;确保安装了受支持的 Python 版本。&lt;/li&gt;
-&lt;li&gt;验证您要使用的 Python 解释器是否位于 &lt;code&gt;which -a python3 python&lt;/code&gt; 输出中的第一个位置（如果您使用的是 Galaxy &amp;lt;=19.09，则为 &lt;code&gt;which -a python&lt;/code&gt; ）。如果不是这种情况：     &lt;/li&gt;
-&lt;li&gt;如果您使用的是 Galaxy &amp;gt;= 20.01，只需执行： &lt;code&gt;export GALAXY_PYTHON=/path/to/python&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;如果你使用的是较旧版本的 Galaxy，你可以操控你的 shell 的 &lt;code&gt;PATH&lt;/code&gt; 变量，将正确的版本置于首位。你可以通过创建一个新目录，将 python 的符号链接添加到其中，并将该目录置于 PATH 的最前面来完成此操作：
-     &lt;code&gt;bash
-     % mkdir ~/galaxy-python
-     % ln -s /path/to/python ~/galaxy-python/python
-     % export PATH=~/galaxy-python:$PATH&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;从 Python 2 升级时，删除已编译的 &lt;code&gt;mako&lt;/code&gt; 模板：
-   &lt;code&gt;basn
-   % rm -rf /path/to/galaxy/database/compiled_templates/&lt;/code&gt;
-   这些模板将在启动 Galaxy 时自动重新生成。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;再次启动 Galaxy。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;!!! abstract &#34;注意&#34;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;如果您从源代码编译自己的 Python 解释器，请确保构建了 `ssl`、`sqlite3`、`curses` 和 `bz2` 模块，并且安装后可导入。这些 &#34;额外&#34; 模块是在编译过程的最后阶段构建的，并且是 Galaxy 框架所需的。如果在 Linux 上进行编译，您可能需要安装适用于 OpenSSL 和 Bzip2 的 `-dev` 包。您可能还需要使用共享库 (`--enable-shared`) 构建 Python。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;script src=&#34;https://giscus.app/client.js&#34;
-    data-repo=&#34;shenweiyan/Knowledge-Garden&#34;
-    data-repo-id=&#34;R_kgDOKgxWlg&#34;
-    data-mapping=&#34;number&#34;
-    data-term=&#34;47&#34;
-    data-reactions-enabled=&#34;1&#34;
-    data-emit-metadata=&#34;0&#34;
-    data-input-position=&#34;bottom&#34;
-    data-theme=&#34;light&#34;
-    data-lang=&#34;zh-CN&#34;
-    crossorigin=&#34;anonymous&#34;
-    async&gt;
-&lt;/script&gt;</description>
-      <link>https://weiyan.cc/discussions-47/</link>
-      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
-      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
-      
-      <guid isPermaLink="true">https://weiyan.cc/discussions-47/</guid>
-      
-    </item>
-    
-    <item>
-      <title>3212-框架依赖</title>
-      
-      
-        
-      <author>shenweiyan</author>
-        
-      
-      
-      
-      <description>&lt;blockquote&gt;
-&lt;p&gt;编译：&lt;a href=&#34;https://www.weiyan.cc&#34;&gt;Shen Weiyan&lt;/a&gt;    &lt;br&gt;
-原文：&lt;a href=&#34;https://docs.galaxyproject.org/en/master/admin/python.html&#34;&gt;https://docs.galaxyproject.org/en/master/admin/python.html&lt;/a&gt;      &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;script src=&#34;https://giscus.app/client.js&#34;
-    data-repo=&#34;shenweiyan/Knowledge-Garden&#34;
-    data-repo-id=&#34;R_kgDOKgxWlg&#34;
-    data-mapping=&#34;number&#34;
-    data-term=&#34;48&#34;
-    data-reactions-enabled=&#34;1&#34;
-    data-emit-metadata=&#34;0&#34;
-    data-input-position=&#34;bottom&#34;
-    data-theme=&#34;light&#34;
-    data-lang=&#34;zh-CN&#34;
-    crossorigin=&#34;anonymous&#34;
-    async&gt;
-&lt;/script&gt;</description>
-      <link>https://weiyan.cc/discussions-48/</link>
-      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
-      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
-      
-      <guid isPermaLink="true">https://weiyan.cc/discussions-48/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Galaxy Project 的 Sphinx 文档部署</title>
-      
-      
-        
-      <author>shenweiyan</author>
-        
-      
-      
-      
-      <description>&lt;p&gt;&lt;a href=&#34;https://docs.galaxyproject.org/&#34;&gt;https://docs.galaxyproject.org/&lt;/a&gt; 是 Galaxy Project 官方的文档地址链接，这是一个基于 &lt;a href=&#34;https://www.sphinx-doc.org/&#34;&gt;Sphinx&lt;/a&gt; + &lt;a href=&#34;https://readthedocs.org/&#34;&gt;Read the Docs&lt;/a&gt; 的文档站点。如果我们也想要创建一个这样一模一样的 Galaxy 文档需要怎么操作呢？&lt;/p&gt;</description>
-      <link>https://weiyan.cc/discussions-46/</link>
-      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
-      
-      <guid isPermaLink="true">https://weiyan.cc/discussions-46/</guid>
       
     </item>
     
@@ -2887,25 +2758,6 @@ hugo -D 或者 hugo --minify&lt;/code&gt;&lt;/p&gt;
       <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/flinks/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Galaxy Project 文档</title>
-      
-      
-        
-      <author>章鱼猫先生</author>
-        
-      
-      
-      
-      <description>&lt;p&gt;这是作者关于 Galaxy Project 的文档。目前正在努力更新中。&lt;/p&gt;</description>
-      <link>https://weiyan.cc/galaxy/</link>
-      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
-      <source url="https://weiyan.cc/feed_rss_updated.xml">维燕的知识花园</source>
-      
-      <guid isPermaLink="true">https://weiyan.cc/galaxy/</guid>
       
     </item>
     
