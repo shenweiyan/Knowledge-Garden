@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 25 Apr 2024 19:02:14 -0000</pubDate>
-    <lastBuildDate>Thu, 25 Apr 2024 19:02:14 -0000</lastBuildDate>
+    <pubDate>Fri, 26 Apr 2024 19:02:51 -0000</pubDate>
+    <lastBuildDate>Fri, 26 Apr 2024 19:02:51 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -83,7 +83,7 @@
 &lt;p&gt;国内虽然不少人都在使用 Gitee，但 Gitee 时不时恶心你一下（前不久就无缘无故把我的 oschina 的账号封了，而且要加 QQ 群去申诉，最后我是直接通过邮件反馈解封了），而且有时候有些资源用起来限制太多，很麻烦。&lt;/p&gt;
 &lt;p&gt;极狐从 2024 年 1 月 2 日起要付费才能使用，1898元/人/年的价格估计会劝退 90% 的个人用户吧！&lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/res/</link>
-      <pubDate>Wed, 24 Apr 2024 19:02:26 +0000</pubDate>
+      <pubDate>Thu, 25 Apr 2024 19:01:56 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/res/</guid>
@@ -123,7 +123,7 @@
     &lt;img style=&#34;max-widrh:600px&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/portfolio/webstack-hugo.jpg&#34; alt=&#34;WebStack-Hugo&#34;&gt;
 &lt;/p&gt;</description>
       <link>https://weiyan.cc/readme/work/</link>
-      <pubDate>Wed, 24 Apr 2024 19:02:26 +0000</pubDate>
+      <pubDate>Thu, 25 Apr 2024 19:01:56 +0000</pubDate>
       <source url="https://weiyan.cc/feed_rss_created.xml">维燕的知识花园</source>
       
       <guid isPermaLink="true">https://weiyan.cc/readme/work/</guid>
@@ -2239,7 +2239,7 @@ $ chmod -R 0760 /data/share&lt;/p&gt;
       
       <description>&lt;blockquote&gt;
 &lt;p&gt;Via：&lt;a href=&#34;https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag&#34;&gt;我给自己做了一个导航网站&lt;/a&gt; | &lt;a href=&#34;https://www.bioitee.com&#34;&gt;BioIT爱好者&lt;/a&gt;  &lt;br&gt;
-&lt;strong&gt;让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 &lt;a href=&#34;https://camo.githubusercontent.com/a0a10133ed4ec653ab71072c03c1a23d096c3c8261c9ae939ade3d521e2cf95a/68747470733a2f2f736875622d313235313730383731352e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f656c6f672d636f6f6b626f6f6b2d696d672f466834353377663644625a6f7175415f473677424d575333755947432e6a706567&#34;&gt;喝杯咖啡&lt;/a&gt; &amp;gt;.&amp;lt;&lt;/strong&gt;&lt;/p&gt;
+&lt;strong&gt;让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 &lt;a href=&#34;https://kg.weiyan.cc/0000/donate.webp&#34;&gt;喝杯咖啡&lt;/a&gt; &amp;gt;.&amp;lt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;主题开源地址&lt;/h2&gt;
 &lt;ul&gt;
@@ -2258,10 +2258,10 @@ $ chmod -R 0760 /data/share&lt;/p&gt;
 &lt;li&gt;经常在公司、家里（有时候还有其他的临时场所）更换电脑，每次同步书签（或者登陆一些导航网站）需要各种登陆，麻烦。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;说干就干，从 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;WebStack 的开源项目&lt;/a&gt;开始，断断续续的折腾了好几天，终于把轮子造起来了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/webstack-hugo-collapse.png&#34; width=800&gt;
-&lt;img src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/webstack-hugo-expand.png&#34; width=800&gt;
-&lt;img src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/webstack-hugo-search.png&#34; width=800&gt;
-&lt;img src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/webstack-hugo-phone.png&#34; alt=&#34;webstack-apple&#34; width=600&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kg.weiyan.cc/2023/11/webstack-hugo-collapse.png&#34; width=800&gt;
+&lt;img src=&#34;https://kg.weiyan.cc/2023/11/webstack-hugo-expand.png&#34; width=800&gt;
+&lt;img src=&#34;https://kg.weiyan.cc/2023/11/webstack-hugo-search.png&#34; width=800&gt;
+&lt;img src=&#34;https://kg.weiyan.cc/2023/11/webstack-hugo-phone.png&#34; alt=&#34;webstack-apple&#34; width=600&gt;&lt;/p&gt;
 &lt;h2&gt;跟其他导航网站有什么区别&lt;/h2&gt;
 &lt;p&gt;这是 Hugo 版 WebStack 主题。可以借助 Github/Gitee Pages 或者云平台直接托管部署，无需服务器。&lt;/p&gt;
 &lt;p&gt;本项目是基于纯静态的网址导航网站 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;webstack.cc&lt;/a&gt; 制作的 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 主题，其中部分代码参考了以下几个开源项目：&lt;/p&gt;
@@ -2309,11 +2309,11 @@ $ chmod -R 0760 /data/share&lt;/p&gt;
 &lt;p&gt;本安装部署在 Windows 7 x64 上测试没问题，相关操作同样适用于 Windows 10，如有任何问题，欢迎留言或者微信与我联系。&lt;/p&gt;
 &lt;h3&gt;第一，下载 hugo&lt;/h3&gt;
 &lt;p&gt;下载链接：&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;，在这里我们下载 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip&#34;&gt;hugo_0.89.4_Windows-64bit.zip&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkm43Bi3mi71qf16MaRdUJKjBWWx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;download-hugo-windows&#34; src=&#34;https://kg.weiyan.cc/2023/11/download-hugo-windows.png&#34;&gt;&lt;/p&gt;
 &lt;h3&gt;第二，解压&lt;/h3&gt;
 &lt;p&gt;我们把 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip&#34;&gt;hugo_0.89.4_Windows-64bit.zip&lt;/a&gt; 下载到 &lt;strong&gt;F:\WebStack&lt;/strong&gt; 目录下，然后解压到当前文件夹。&lt;/p&gt;
 &lt;p&gt;解压完成后，在该目录会多出 &lt;code&gt;hugo.exe&lt;/code&gt;、&lt;code&gt;LICENSE&lt;/code&gt;、&lt;code&gt;README.md&lt;/code&gt; 三个文件：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;unzip hugo_0.89.4_Windows-64bit&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBKVo5JoTzgOY1QsAczSYRmgv0k.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;unzip hugo_0.89.4_Windows-64bit&#34; src=&#34;https://kg.weiyan.cc/2023/11/unzip-hugo-0.89.4-windows-64bit.png&#34;&gt;&lt;/p&gt;
 &lt;h3&gt;第三，检测 hugo 是否安装成功&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;🏷️ 温馨提示：&lt;/strong&gt;&lt;/p&gt;
@@ -2323,51 +2323,51 @@ $ chmod -R 0760 /data/share&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;在 Windows 中使用 &lt;strong&gt;Win+R&lt;/strong&gt; 打开“&lt;strong&gt;运行&lt;/strong&gt;”对话框，在对话框中输入“&lt;strong&gt;cmd&lt;/strong&gt;”，点击确认。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmIW4HA2hWImM7IrtsdCtWwWqcdi.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;win-r-cmd&#34; src=&#34;https://kg.weiyan.cc/2023/11/win-r-cmd.png&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在 Windows 运行窗口，先切换盘符到 &lt;strong&gt;F&lt;/strong&gt; 盘，然后进入 hugo 的解压缩目录（&lt;strong&gt;F:\WebStack&lt;/strong&gt;），具体操作如下。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在光标处输入&lt;strong&gt;F:&lt;/strong&gt;，然后按回车；&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsp03gEdM-de5enU1ivNJInfUtHv.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;cmd-change-dir&#34; src=&#34;https://kg.weiyan.cc/2023/11/cmd-change-dir.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;我们就将盘符切换为 F 盘；&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnwKctq7i0hX_iWQgymrJge8BeSX.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;cmd-f-dir&#34; src=&#34;https://kg.weiyan.cc/2023/11/cmd-f-dir.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;接着输入 &lt;strong&gt;cd WebStack&lt;/strong&gt;，回车，就进入了 &lt;strong&gt;F:\WebStack&lt;/strong&gt; 目录；使用 &lt;strong&gt;ls&lt;/strong&gt; 可以看到当前目录下的文件。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqzY-gqYycHnCN43FlNkfWHYOvmc.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;webstack-win-ls&#34; src=&#34;https://kg.weiyan.cc/2023/11/webstack-win-ls.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;最后，输入 &lt;strong&gt;hugo.exe version&lt;/strong&gt;，回车，如图所示，则代表安装成功。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvT_Dc50_SaiA8SmT6Y62ENOhE0A.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;hugo-exe-version&#34; src=&#34;https://kg.weiyan.cc/2023/11/hugo-exe-version.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3&gt;第四，下载 WebStack-Hugo&lt;/h3&gt;
 &lt;p&gt;浏览器打开 &lt;a href=&#34;https://github.com/shenweiyan/WebStack-Hugo&#34;&gt;https://github.com/shenweiyan/WebStack-Hugo&lt;/a&gt;，点击 Code 下的 &lt;strong&gt;&#34;Download ZIP&#34;&lt;/strong&gt;，把 &lt;strong&gt;WebStack-hugo-main.zip&lt;/strong&gt; 下载到刚才 hugo 解压缩的目录（&lt;strong&gt;F:\WebStack&lt;/strong&gt;）。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;2022.09.26-11.47.12.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBB_DzuGlOUFs1Nt4iseGF6yhN0.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fqyg5wJJpttIrC7LVXg9bnCf6Wgv.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;webstack-download-zip&#34; src=&#34;https://kg.weiyan.cc/2023/11/webstack-download-zip.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;webstack-hugo-main-zip&#34; src=&#34;https://kg.weiyan.cc/2023/11/webstack-hugo-main-zip.png&#34;&gt;&lt;/p&gt;
 &lt;h3&gt;第五，解压和重命名&lt;/h3&gt;
 &lt;p&gt;把 &lt;strong&gt;WebStack-Hugo-main.zip&lt;/strong&gt; 解压到当前目录。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWA394pXnu7TxElb-XP4StAHp3T.png&#34;&gt;
-&lt;img alt=&#34;webstack.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtlBhjh4sOB7bHiz0eZU6zNVtfmX.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;webstack-hugo-main-unzip&#34; src=&#34;https://kg.weiyan.cc/2023/11/webstack-hugo-main-unzip.png&#34;&gt;
+&lt;img alt=&#34;webstack-hugo-main-rename&#34; src=&#34;https://kg.weiyan.cc/2023/11/webstack-hugo-main-rename.png&#34;&gt;&lt;/p&gt;
 &lt;h3&gt;第六，安装主题&lt;/h3&gt;
 &lt;p&gt;首先，进入 &lt;strong&gt;F:\WebStack&lt;/strong&gt; 目录；&lt;/p&gt;
 &lt;p&gt;然后，创建一个 &lt;strong&gt;themes&lt;/strong&gt; 的文件夹；&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fo3KJHf8MPeoCWDadu_eJcLWa6Er.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;create-themes-dir&#34; src=&#34;https://kg.weiyan.cc/2023/11/create-themes-dir.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;接着，把解压后的 WebStack-Hugo 整个文件夹移动到 themes 中。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvzuDBR38TFwp7O094GSMOm1BPGs.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;mv-webstack-hugo-to-themes&#34; src=&#34;https://kg.weiyan.cc/2023/11/mv-webstack-hugo-to-themes.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;第四，将 themes/WebStack-Hugo/exampleSite 目录下的所有文件复制到 hugo 站点根目录（即 F:\WebStack）。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpgjrR-xAq7fT8DRgT2iMyqGrPyZ.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;cp-examplesite&#34; src=&#34;https://kg.weiyan.cc/2023/11/cp-examplesite.png&#34;&gt;&lt;/p&gt;
 &lt;h3&gt;第七，启动预览&lt;/h3&gt;
 &lt;p&gt;在刚才已经打开的 Windows 命令运行窗口中，使用下面的命令执行 &lt;strong&gt;hugo server&lt;/strong&gt;，启动站点——Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;shell
 hugo.exe server&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjE4vkK_X_EIF9Via0K8rbuhHBFr.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;hugo-exe-server&#34; src=&#34;https://kg.weiyan.cc/2023/11/hugo-exe-server.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;最后，在浏览器中打开 &lt;a href=&#34;http://127.0.0.1:1313/&#34;&gt;&lt;strong&gt;http://127.0.0.1:1313/&lt;/strong&gt;&lt;/a&gt;，即可看到生成的站点。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FisfN1Ak2zU2xiyjXkjE-qkyHri3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;webstack-hugo-1313&#34; src=&#34;https://kg.weiyan.cc/2023/11/webstack-hugo-1313.png&#34;&gt;&lt;/p&gt;
 &lt;h2&gt;Linux 下安装部署&lt;/h2&gt;
 &lt;p&gt;安装完本 WebStack-Hugo 主题后，将 exampleSite 目录下的文件复制到 hugo 站点根目录，根据需要把 config.toml 的一些信息改成自己的，导航的网址信息可通过 data 目录下 webstack.yml 修改。&lt;/p&gt;
 &lt;p&gt;具体执行步骤如下：&lt;/p&gt;
@@ -2431,15 +2431,15 @@ hugo -D 或者 hugo --minify&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;左导航栏图标&lt;/h3&gt;
 &lt;p&gt;左侧、顶部导航栏图标用的都是 &lt;strong&gt;Font Awesome&lt;/strong&gt; 图标库 &lt;strong&gt;v5&lt;/strong&gt; 版本 &lt;strong&gt;Free&lt;/strong&gt; 的图标。链接如下：&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href=&#34;https://fontawesome.com/v5/search?o=r&amp;amp;m=free&#34;&gt;https://fontawesome.com/v5/search?o=r&amp;amp;m=free&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoHd7w72AykJGSrbzttHgGi4VqlY.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;fontawesome-v5-free&#34; src=&#34;https://kg.weiyan.cc/2023/11/fontawesome-v5-free.png&#34;&gt;&lt;/p&gt;
 &lt;h3&gt;调整头部搜索栏&lt;/h3&gt;
 &lt;p&gt;头部搜索栏的默认位置可以通过下面的方法进行修改。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;直接修改 &lt;strong&gt;layouts/partials/content_search.html&lt;/strong&gt;，调整对应部分的位置。&lt;/li&gt;
 &lt;li&gt;调整默认的搜索（即点击&#34;常用/搜索/工具 ....&#34; 时下指箭头的指向），把对应的 id 添加到对应的 label 里面。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoPMASsgrgPyFSsJy8HvPrgq8ELN.png&#34;&gt;
-&lt;img alt=&#34;2022.09.21-10.48.55.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp0fJmbfJVdg_hVP1ULdh_MmjCcX.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;set-default-search-bing&#34; src=&#34;https://kg.weiyan.cc/2023/11/set-default-search-bing.png&#34;&gt;
+&lt;img alt=&#34;view-default-search-bing&#34; src=&#34;https://kg.weiyan.cc/2023/11/view-default-search-bing.png&#34;&gt;&lt;/p&gt;
 &lt;h3&gt;自定义头部导航&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/shenweiyan/WebStack-Hugo&#34;&gt;WebStack-Hugo&lt;/a&gt; 把头部的导航菜单的各个信息集成在了 &lt;strong&gt;data/header.yml&lt;/strong&gt; 文件中，每个人可以根据自己的需要调整。&lt;/p&gt;
 &lt;p&gt;```yaml
@@ -2495,13 +2495,13 @@ hugo -D 或者 hugo --minify&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/iplaycode/webstack-hugo&#34;&gt;iplaycode/webstack-hugo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;感谢 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;WebStack&lt;/a&gt; 的作者 &lt;a href=&#34;https://twitter.com/decohack&#34;&gt;Viggo&lt;/a&gt; 的肯定和&lt;a href=&#34;https://twitter.com/decohack/status/1569188705478516738&#34;&gt;推广宣传&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuJQKMnwajVc-di8fIJO6Mu9w6a7.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;twitter-decohack-webstack-hugo&#34; src=&#34;https://kg.weiyan.cc/2023/11/twitter-decohack-webstack-hugo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;感谢以下所有朋友对本主题所做出的贡献。
 &lt;strong&gt;&lt;a href=&#34;https://github.com/yinhanghang&#34;&gt;@yanbeiyinhanghang&lt;/a&gt;&lt;/strong&gt;
 &lt;strong&gt;&lt;a href=&#34;https://github.com/jetsung&#34;&gt;@jetsung&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;赞赏&lt;/h2&gt;
 &lt;p&gt;如果你觉得本项目对你有所帮助，欢迎请作者喝杯热咖啡 &amp;gt;.&amp;lt;
-&lt;img alt=&#34;donate-wecaht-aliapy.jpg&#34; src=&#34;https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh453wf6DbZoquA_G6wBMWS3uYGC.jpeg&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;donate-wecaht-aliapy&#34; src=&#34;https://kg.weiyan.cc/0000/donate.webp&#34;&gt;&lt;/p&gt;
 &lt;h2&gt;反馈与交流&lt;/h2&gt;
 &lt;p&gt;最后，最重要的，秉承 WebStack 的宗旨，这是一个开源的公益项目，你可以拿来制作自己的网址导航，也可以做与导航无关的网站。&lt;/p&gt;
 &lt;p&gt;WebStack 有非常多的魔改版本，这是其中一个。&lt;/p&gt;
