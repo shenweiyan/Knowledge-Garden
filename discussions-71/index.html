@@ -9,34 +9,34 @@
         <meta name="description" content="记录 Bio+IT 相关知识，沉淀生活，记录点滴。">
       
       
-        <meta name="author" content="章鱼猫先生">
+        <meta name="author" content="Steven Shum">
       
       
-        <link rel="canonical" href="https://weiyan.cc/yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2019-07-04-clumpify/">
+        <link rel="canonical" href="https://weiyan.cc/discussions-71/">
       
       
-        <link rel="prev" href="../2019-08-05-bioconductor-orgdb/">
+        <link rel="prev" href="../discussions-10/">
       
       
-        <link rel="next" href="../2019-07-01-python-mygene/">
+        <link rel="next" href="../discussions-24/">
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../../../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../../../assets/logo.ico">
+      <link rel="icon" href="../assets/logo.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>一款能使压缩 fq 再缩小 30% 并加速后续分析的软件 - 维燕的知识花园</title>
+        <title>mamba 的两个分支 miniforge 和 mambaforge - 维燕的知识花园</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -55,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../css/extra.css">
+      <link rel="stylesheet" href="../css/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -73,7 +73,7 @@
     
     <meta name="referrer" content="no-referrer">
 
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -82,7 +82,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -100,11 +100,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#clumpify-工作原理" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -115,9 +110,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../.." title="维燕的知识花园" class="md-header__button md-logo" aria-label="维燕的知识花园" data-md-component="logo">
+    <a href=".." title="维燕的知识花园" class="md-header__button md-logo" aria-label="维燕的知识花园" data-md-component="logo">
       
-  <img src="../../../../assets/octocat.png" alt="logo">
+  <img src="../assets/octocat.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -134,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              一款能使压缩 fq 再缩小 30% 并加速后续分析的软件
+              mamba 的两个分支 miniforge 和 mambaforge
             
           </span>
         </div>
@@ -241,7 +236,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
     
@@ -256,11 +251,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../tech/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../tech/" class="md-tabs__link">
           
   
     
@@ -280,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../topic/" class="md-tabs__link">
+        <a href="../topic/" class="md-tabs__link">
           
   
     
@@ -300,7 +297,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+        <a href="../blog/" class="md-tabs__link">
           
   
     
@@ -316,13 +313,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../yuque/" class="md-tabs__link">
           
   
     
@@ -342,7 +337,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../note/" class="md-tabs__link">
+        <a href="../note/" class="md-tabs__link">
           
   
     
@@ -362,7 +357,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../message/" class="md-tabs__link">
+        <a href="../message/" class="md-tabs__link">
           
   
     
@@ -382,7 +377,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../readme/" class="md-tabs__link">
+        <a href="../readme/" class="md-tabs__link">
           
   
     
@@ -402,7 +397,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../flinks/" class="md-tabs__link">
+        <a href="../flinks/" class="md-tabs__link">
           
   
     
@@ -420,7 +415,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../feed_rss_created.xml" class="md-tabs__link">
+      <a href="../feed_rss_created.xml" class="md-tabs__link">
         
   
     
@@ -454,9 +449,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="维燕的知识花园" class="md-nav__button md-logo" aria-label="维燕的知识花园" data-md-component="logo">
+    <a href=".." title="维燕的知识花园" class="md-nav__button md-logo" aria-label="维燕的知识花园" data-md-component="logo">
       
-  <img src="../../../../assets/octocat.png" alt="logo">
+  <img src="../assets/octocat.png" alt="logo">
 
     </a>
     维燕的知识花园
@@ -483,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,6 +495,8 @@
       
   
   
+    
+  
   
   
     
@@ -522,21 +519,24 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../tech/" class="md-nav__link ">
+            <a href="../tech/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -547,13 +547,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             技术
@@ -580,10 +580,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -592,7 +595,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../tech/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/" class="md-nav__link ">
+            <a href="../tech/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -641,10 +644,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -653,7 +659,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../tech/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/" class="md-nav__link ">
+            <a href="../tech/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -664,7 +670,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -736,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-61/" class="md-nav__link">
+      <a href="../discussions-61/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -757,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-44/" class="md-nav__link">
+      <a href="../discussions-44/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -778,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-40/" class="md-nav__link">
+      <a href="../discussions-40/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -799,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-30/" class="md-nav__link">
+      <a href="../discussions-30/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,6 +839,8 @@
                 
   
   
+    
+  
   
   
     
@@ -857,19 +865,22 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../tech/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/" class="md-nav__link ">
+            <a href="../tech/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -880,13 +891,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             开发运维
@@ -944,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-10/" class="md-nav__link">
+      <a href="../discussions-10/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -970,8 +981,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -987,11 +1000,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
@@ -1005,7 +1018,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4_2">
             <span class="md-nav__icon md-icon"></span>
             虚拟环境
@@ -1016,10 +1029,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../discussions-71/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1028,6 +1048,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1040,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-24/" class="md-nav__link">
+      <a href="../discussions-24/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1117,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-60/" class="md-nav__link">
+      <a href="../discussions-60/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1138,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-25/" class="md-nav__link">
+      <a href="../discussions-25/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1159,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-9/" class="md-nav__link">
+      <a href="../discussions-9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1234,7 +1255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-49/" class="md-nav__link">
+      <a href="../discussions-49/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1311,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-27/" class="md-nav__link">
+      <a href="../discussions-27/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1332,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-12/" class="md-nav__link">
+      <a href="../discussions-12/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1353,7 +1374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-13/" class="md-nav__link">
+      <a href="../discussions-13/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,10 +1422,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1413,7 +1437,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../tech/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link ">
+            <a href="../tech/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1460,10 +1484,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1472,7 +1499,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../tech/%E5%8F%AF%E8%A7%86%E5%8C%96/" class="md-nav__link ">
+            <a href="../tech/%E5%8F%AF%E8%A7%86%E5%8C%96/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1540,7 +1567,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../topic/" class="md-nav__link ">
+            <a href="../topic/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1604,7 +1631,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../topic/galaxy/" class="md-nav__link ">
+            <a href="../topic/galaxy/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1637,7 +1664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../release" class="md-nav__link">
+      <a href="../release" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1704,7 +1731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-47/" class="md-nav__link">
+      <a href="../discussions-47/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1725,7 +1752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-48/" class="md-nav__link">
+      <a href="../discussions-48/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1754,7 +1781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../devel" class="md-nav__link">
+      <a href="../devel" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1821,7 +1848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-57/" class="md-nav__link">
+      <a href="../discussions-57/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1842,7 +1869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../discussions-46/" class="md-nav__link">
+      <a href="../discussions-46/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1913,7 +1940,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../blog/" class="md-nav__link ">
+            <a href="../blog/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1994,7 +2021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2017,7 +2044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2023/" class="md-nav__link">
+      <a href="../blog/archive/2023/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2098,7 +2125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/category/%E4%B9%B1%E5%BC%B9/" class="md-nav__link">
+      <a href="../blog/category/%E4%B9%B1%E5%BC%B9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2121,7 +2148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/category/%E5%A5%BD%E7%8E%A9/" class="md-nav__link">
+      <a href="../blog/category/%E5%A5%BD%E7%8E%A9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2144,7 +2171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/category/%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+      <a href="../blog/category/%E7%9F%A5%E8%AF%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2167,7 +2194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/category/%E8%B5%84%E8%AE%AF/" class="md-nav__link">
+      <a href="../blog/category/%E8%B5%84%E8%AE%AF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2200,8 +2227,6 @@
       
   
   
-    
-  
   
   
     
@@ -2226,24 +2251,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../" class="md-nav__link ">
+            <a href="../yuque/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2254,13 +2276,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             语雀
@@ -2273,8 +2295,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2301,22 +2321,19 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2327,13 +2344,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_2" id="__nav_5_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             生物信息
@@ -2344,10 +2361,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2383,11 +2398,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1" >
         
           
           <label class="md-nav__link" for="__nav_5_2_1" id="__nav_5_2_1_label" tabindex="0">
@@ -2401,7 +2416,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2_1">
             <span class="md-nav__icon md-icon"></span>
             软件
@@ -2415,7 +2430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2023-06-14-r-sf/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2023-06-14-r-sf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2436,7 +2451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2023-03-29-nng7czgi43iwaw6d/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2023-03-29-nng7czgi43iwaw6d/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2457,7 +2472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2023-03-23-rnafold/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2023-03-23-rnafold/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2478,7 +2493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2023-01-05-hru8nl3amnloeycg/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2023-01-05-hru8nl3amnloeycg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2499,7 +2514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2022-08-11-sds4gt/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2022-08-11-sds4gt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2520,7 +2535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2020-09-10-yu6mtk/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2020-09-10-yu6mtk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2541,7 +2556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2020-08-27-mb7tcg/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2020-08-27-mb7tcg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2562,7 +2577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2020-08-17-gdc-client-for-redhat-centos/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2020-08-17-gdc-client-for-redhat-centos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2583,7 +2598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2020-07-03-xo4ieg/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2020-07-03-xo4ieg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2604,7 +2619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2019-08-05-bioconductor-orgdb/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2019-08-05-bioconductor-orgdb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2622,28 +2637,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    一款能使压缩 fq 再缩小 30% 并加速后续分析的软件
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2019-07-04-clumpify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2652,111 +2649,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#clumpify-工作原理" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clumpify 工作原理
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clumpify-耗时" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clumpify 耗时
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#为什么能提升速度" class="md-nav__link">
-    <span class="md-ellipsis">
-      为什么能提升速度
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#什么时候怎么使用-clumpify" class="md-nav__link">
-    <span class="md-ellipsis">
-      什么时候怎么使用 Clumpify
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clumpify-使用与数据一致性检验" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clumpify 使用与数据一致性检验
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clumpify-使用注意事项" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clumpify 使用注意事项
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Clumpify 使用注意事项">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#内存设置" class="md-nav__link">
-    <span class="md-ellipsis">
-      内存设置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#重复数据删除" class="md-nav__link">
-    <span class="md-ellipsis">
-      重复数据删除
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#参考资料" class="md-nav__link">
-    <span class="md-ellipsis">
-      参考资料
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2769,7 +2661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2019-07-01-python-mygene/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%BD%AF%E4%BB%B6/2019-07-01-python-mygene/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2848,7 +2740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E8%B5%84%E6%BA%90/2021-08-03-xn57o7/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%B5%84%E6%BA%90/2021-08-03-xn57o7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2869,7 +2761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E8%B5%84%E6%BA%90/2020-06-23-baatnb/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%B5%84%E6%BA%90/2020-06-23-baatnb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2890,7 +2782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E8%B5%84%E6%BA%90/2020-05-28-bio-rss-feeds/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%B5%84%E6%BA%90/2020-05-28-bio-rss-feeds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2911,7 +2803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E8%B5%84%E6%BA%90/2019-05-29-bio-blogs-forums/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E8%B5%84%E6%BA%90/2019-05-29-bio-blogs-forums/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2984,7 +2876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E6%AF%94%E5%AF%B9/2019-12-03-ygnigy/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%AF%94%E5%AF%B9/2019-12-03-ygnigy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3059,7 +2951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E6%9D%82%E9%A1%B9/2022-12-16-mbk23ltbm8qq143z/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%9D%82%E9%A1%B9/2022-12-16-mbk23ltbm8qq143z/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3080,7 +2972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E6%9D%82%E9%A1%B9/2021-12-16-edam/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%9D%82%E9%A1%B9/2021-12-16-edam/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3157,7 +3049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E6%96%B9%E6%B3%95/2019-12-05-nvi8vg/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%96%B9%E6%B3%95/2019-12-05-nvi8vg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3178,7 +3070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E6%96%B9%E6%B3%95/2019-12-05-enrichment-analysis/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%96%B9%E6%B3%95/2019-12-05-enrichment-analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3199,7 +3091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E6%96%B9%E6%B3%95/2019-12-05-enrichment-analysis-differentiation/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%96%B9%E6%B3%95/2019-12-05-enrichment-analysis-differentiation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3274,7 +3166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E6%95%B0%E6%8D%AE/2023-03-27-qdlrkzttripr9wgg/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%95%B0%E6%8D%AE/2023-03-27-qdlrkzttripr9wgg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3295,7 +3187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E6%95%B0%E6%8D%AE/2021-09-26-unable-to-get-local-issuer-certifica/" class="md-nav__link">
+      <a href="../yuque/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%95%B0%E6%8D%AE/2021-09-26-unable-to-get-local-issuer-certifica/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3351,13 +3243,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -3366,7 +3255,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="md-nav__link ">
+            <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3377,7 +3266,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_3" id="__nav_5_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3443,7 +3332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/openEuler/2021-11-26-psetzg/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/openEuler/2021-11-26-psetzg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3464,7 +3353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/openEuler/2021-10-27-about-openeuler/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/openEuler/2021-10-27-about-openeuler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3541,7 +3430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/RHEL/2021-11-26-ut1tmm/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/RHEL/2021-11-26-ut1tmm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3562,7 +3451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/RHEL/2021-11-26-about-rhel/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/RHEL/2021-11-26-about-rhel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3687,7 +3576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/2021-11-26-imno9x/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/2021-11-26-imno9x/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3716,7 +3605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/2021-11-26-ytodmy/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/2021-11-26-ytodmy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3737,7 +3626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/2021-11-26-hlgbmo/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/2021-11-26-hlgbmo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3758,7 +3647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/2021-11-26-gyhb14/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/2021-11-26-gyhb14/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3779,7 +3668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/2021-10-21-about-debian-ubuntu/" class="md-nav__link">
+      <a href="../yuque/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Debian/2021-10-21-about-debian-ubuntu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3875,13 +3764,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -3890,7 +3776,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/" class="md-nav__link ">
+            <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3901,7 +3787,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_4" id="__nav_5_4_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3995,7 +3881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2022-11-07-dgw4bs/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2022-11-07-dgw4bs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4016,7 +3902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2022-05-26-biowebstack/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2022-05-26-biowebstack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4037,7 +3923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2021-12-09-mle18r/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2021-12-09-mle18r/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4058,7 +3944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2021-09-10-coding-ci-hugo/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2021-09-10-coding-ci-hugo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4079,7 +3965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2020-12-23-start-coding-pages/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2020-12-23-start-coding-pages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4100,7 +3986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2020-12-23-coding-net-custom-domain/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2020-12-23-coding-net-custom-domain/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4121,7 +4007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2020-10-21-cloudbase-note/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2020-10-21-cloudbase-note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4142,7 +4028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2020-09-24-qm3vml/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2020-09-24-qm3vml/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4163,7 +4049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-12-24-fl1z7t/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-12-24-fl1z7t/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4184,7 +4070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-12-04-coding-pages/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-12-04-coding-pages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4205,7 +4091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-08-28-disqus-for-hugo/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-08-28-disqus-for-hugo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4226,7 +4112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-08-08-build-hugo-blogs/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-08-08-build-hugo-blogs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4247,7 +4133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-08-07-flex-slider-and-raxus-slider/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-08-07-flex-slider-and-raxus-slider/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4268,7 +4154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-07-04-leanote-for-ecs-tutorial/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-07-04-leanote-for-ecs-tutorial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4289,7 +4175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-07-04-ecs-docker-wordpress-ssl/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-07-04-ecs-docker-wordpress-ssl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4310,7 +4196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-06-03-jekyll-add-page-view/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2019-06-03-jekyll-add-page-view/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4383,7 +4269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9B%86%E7%BE%A4/2019-07-13-hpc-experience-glibc/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E9%9B%86%E7%BE%A4/2019-07-13-hpc-experience-glibc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4458,7 +4344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%AF%AD%E9%9B%80%E6%8A%80%E5%B7%A7/2022-12-02-try-yuque-api/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%AF%AD%E9%9B%80%E6%8A%80%E5%B7%A7/2022-12-02-try-yuque-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4479,7 +4365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%AF%AD%E9%9B%80%E6%8A%80%E5%B7%A7/2019-08-08-sync-from-yuque-to-oss/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%AF%AD%E9%9B%80%E6%8A%80%E5%B7%A7/2019-08-08-sync-from-yuque-to-oss/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4572,7 +4458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2023-04-19-tkrdu8xnidryrmqa/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2023-04-19-tkrdu8xnidryrmqa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4593,7 +4479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2020-11-27-conda-tutorial-for-biosoft/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2020-11-27-conda-tutorial-for-biosoft/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4614,7 +4500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-12-30-jupyterlab-server-note/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-12-30-jupyterlab-server-note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4635,7 +4521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-17-jupyter-notebook-toturial-3/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-17-jupyter-notebook-toturial-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4656,7 +4542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-17-jupyter-notebook-toturial-2/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-17-jupyter-notebook-toturial-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4677,7 +4563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-17-jupyter-notebook-toturial-1/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-17-jupyter-notebook-toturial-1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4698,7 +4584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-04-anaconda-experience/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-04-anaconda-experience/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4719,7 +4605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-01-jupyter-notebook-tutorial/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-01-jupyter-notebook-tutorial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4740,7 +4626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-01-conda-env-roll-back/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-01-conda-env-roll-back/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4761,7 +4647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-01-cloud-services-for-jupyter-notebook/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-07-01-cloud-services-for-jupyter-notebook/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4782,7 +4668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-05-27-kgrnx4/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2019-05-27-kgrnx4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4861,7 +4747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%BC%96%E8%AF%91/2021-09-02-scl-devtoolset-note/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%BC%96%E8%AF%91/2021-09-02-scl-devtoolset-note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4882,7 +4768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%BC%96%E8%AF%91/2021-09-02-rpm-e-openssl/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%BC%96%E8%AF%91/2021-09-02-rpm-e-openssl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4903,7 +4789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%BC%96%E8%AF%91/2021-08-31-glibc/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%BC%96%E8%AF%91/2021-08-31-glibc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4924,7 +4810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%BC%96%E8%AF%91/2019-07-01-linux-gcc-install/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%BC%96%E8%AF%91/2019-07-01-linux-gcc-install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5003,7 +4889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/2020-08-21-install-confluence-on-centos/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/2020-08-21-install-confluence-on-centos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5024,7 +4910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/2020-08-04-zwtn5w/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/2020-08-04-zwtn5w/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5045,7 +4931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/2019-09-06-ga7bft/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/2019-09-06-ga7bft/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5066,7 +4952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/2019-07-01-rss-for-top-news/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/2019-07-01-rss-for-top-news/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5153,7 +5039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2022-12-01-chgoa2xahz44rkld/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2022-12-01-chgoa2xahz44rkld/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5174,7 +5060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2022-09-08-qyp3m9/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2022-09-08-qyp3m9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5195,7 +5081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2022-08-11-vbqgpm/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2022-08-11-vbqgpm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5216,7 +5102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2020-12-15-bcl2fastq-install/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2020-12-15-bcl2fastq-install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5237,7 +5123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2020-07-15-tm90c2/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2020-07-15-tm90c2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5258,7 +5144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2019-07-01-pyclone-install/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2019-07-01-pyclone-install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5279,7 +5165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2019-05-18-pyclone-install-1714572/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2019-05-18-pyclone-install-1714572/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5300,7 +5186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2019-05-18-kefse-install/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%94%9F%E4%BF%A1%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%BA%94%E7%94%A8/2019-05-18-kefse-install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5381,7 +5267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2021-12-10-github-sync/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2021-12-10-github-sync/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5402,7 +5288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2019-09-12-github-fork-update/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2019-09-12-github-fork-update/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5423,7 +5309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2019-08-21-github-badge/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2019-08-21-github-badge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5444,7 +5330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2019-05-10-git-usage/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2019-05-10-git-usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5465,7 +5351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2019-05-09-xpurpl/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/2019-05-09-xpurpl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5580,7 +5466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2022-08-18-rhel-9-no-hostkey-alg/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2022-08-18-rhel-9-no-hostkey-alg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5601,7 +5487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-10-08-ssh-config/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-10-08-ssh-config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5622,7 +5508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-09-30-cvm-migrate2rocky/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-09-30-cvm-migrate2rocky/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5643,7 +5529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-07-19-kaxskc/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-07-19-kaxskc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5664,7 +5550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-07-07-hydwuq/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-07-07-hydwuq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5685,7 +5571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-05-27-centos-rhel-6-7-timezone/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-05-27-centos-rhel-6-7-timezone/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5706,7 +5592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-02-20-ssl-issues/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2021-02-20-ssl-issues/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5727,7 +5613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-12-03-wek7vb/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-12-03-wek7vb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5748,7 +5634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-09-04-history-command/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-09-04-history-command/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5769,7 +5655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-06-03-bio-server-basic/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-06-03-bio-server-basic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5790,7 +5676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-05-18-nfs-umount/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-05-18-nfs-umount/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5811,7 +5697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-02-21-tar-issues-note/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2020-02-21-tar-issues-note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5832,7 +5718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-12-03-zks7y7/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-12-03-zks7y7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5853,7 +5739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-09-29-linux-acl-permission/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-09-29-linux-acl-permission/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5874,7 +5760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-09-23-alyun-change-os/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-09-23-alyun-change-os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5895,7 +5781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-25-fedora-redhat-centos/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-25-fedora-redhat-centos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5916,7 +5802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-19-ucig1a/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-19-ucig1a/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5937,7 +5823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-19-linux-lvm/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-19-linux-lvm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5958,7 +5844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-19-linux-lib-env/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-19-linux-lib-env/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5979,7 +5865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-01-ssh-attack/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-01-ssh-attack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6000,7 +5886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-01-security-for-centos-7/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-01-security-for-centos-7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6021,7 +5907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-01-centos-firewall/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/2019-07-01-centos-firewall/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6098,7 +5984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86/2023-05-16-wuxfef4ulf24w1op/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86/2023-05-16-wuxfef4ulf24w1op/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6119,7 +6005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86/2021-08-03-kswapd0/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86/2021-08-03-kswapd0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6140,7 +6026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86/2020-08-25-hpc-autoru/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86/2020-08-25-hpc-autoru/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6213,7 +6099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5%E4%BC%A0%E8%BE%93/2021-11-08-lrzsz/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5%E4%BC%A0%E8%BE%93/2021-11-08-lrzsz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6290,7 +6176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%95%B0%E6%8D%AE%E5%BA%93/2021-08-18-hgvs-pgsql/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%95%B0%E6%8D%AE%E5%BA%93/2021-08-18-hgvs-pgsql/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6311,7 +6197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%95%B0%E6%8D%AE%E5%BA%93/2021-01-19-guol49/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%95%B0%E6%8D%AE%E5%BA%93/2021-01-19-guol49/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6332,7 +6218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%95%B0%E6%8D%AE%E5%BA%93/2019-07-01-install-mysql-from-source/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E6%95%B0%E6%8D%AE%E5%BA%93/2019-07-01-install-mysql-from-source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6413,7 +6299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2023-02-13-gkthk7lbm82t1qrl/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2023-02-13-gkthk7lbm82t1qrl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6434,7 +6320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2022-09-15-xydp3a/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2022-09-15-xydp3a/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6455,7 +6341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2020-07-07-learn-imagemagick/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2020-07-07-learn-imagemagick/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6476,7 +6362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2019-07-01-tkinter-unicode-issues/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2019-07-01-tkinter-unicode-issues/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6497,7 +6383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2019-05-18-redhat-install-pyqt-4/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%9B%BE%E5%83%8F%E4%B8%8EGUI/2019-05-18-redhat-install-pyqt-4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6582,7 +6468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2021-11-16-301-redirects/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2021-11-16-301-redirects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6603,7 +6489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2021-02-04-aliyun-ssl-cert/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2021-02-04-aliyun-ssl-cert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6624,7 +6510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2020-06-05-pizow4/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2020-06-05-pizow4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6645,7 +6531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2019-12-23-domain-mail-qq-setting/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2019-12-23-domain-mail-qq-setting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6666,7 +6552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2019-07-01-windows-ports/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2019-07-01-windows-ports/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6687,7 +6573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2019-07-01-centos-7-nginx-cgi/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2019-07-01-centos-7-nginx-cgi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6708,7 +6594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2019-06-01-pypiserver-trial/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/2019-06-01-pypiserver-trial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6789,7 +6675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2021-07-06-tmbu15/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2021-07-06-tmbu15/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6810,7 +6696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2019-12-26-gulp-for-fancybox/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2019-12-26-gulp-for-fancybox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6831,7 +6717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2019-08-23-css-rem/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2019-08-23-css-rem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6852,7 +6738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2019-07-17-google-code-prettify/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2019-07-17-google-code-prettify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6873,7 +6759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2019-06-17-qrtsf1/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/%E5%89%8D%E7%AB%AF/2019-06-17-qrtsf1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6996,7 +6882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2023-03-28-0x0000142/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2023-03-28-0x0000142/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7017,7 +6903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2023-02-21-fg9x7zgnh5vzrycg/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2023-02-21-fg9x7zgnh5vzrycg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7038,7 +6924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-10-13-bz17cy/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-10-13-bz17cy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7059,7 +6945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-05-11-kf71lr/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-05-11-kf71lr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7080,7 +6966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-03-03-portx-ssh-client/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-03-03-portx-ssh-client/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7101,7 +6987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-02-25-wl23zw/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-02-25-wl23zw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7122,7 +7008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-02-15-pwh0lg/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-02-15-pwh0lg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7143,7 +7029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-01-20-my-tools/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-01-20-my-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7164,7 +7050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-01-13-mxrwo4/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2022-01-13-mxrwo4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7185,7 +7071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-08-25-tebxwh/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-08-25-tebxwh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7206,7 +7092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-04-21-microsoft-edge/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-04-21-microsoft-edge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7227,7 +7113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-03-16-chrome-bookmark-sync/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-03-16-chrome-bookmark-sync/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7248,7 +7134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-02-26-flameshot/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-02-26-flameshot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7269,7 +7155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-02-19-win-font/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2021-02-19-win-font/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7290,7 +7176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2020-06-17-inpaint/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2020-06-17-inpaint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7311,7 +7197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2020-04-29-hp5ywk/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2020-04-29-hp5ywk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7332,7 +7218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2020-04-17-mc5bkg/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2020-04-17-mc5bkg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7353,7 +7239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-12-24-caiyunapp/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-12-24-caiyunapp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7374,7 +7260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-11-13-obs/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-11-13-obs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7395,7 +7281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-07-17-bugs-of-aliyun-app/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-07-17-bugs-of-aliyun-app/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7416,7 +7302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-07-01-ai-logo-desig/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-07-01-ai-logo-desig/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7437,7 +7323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-06-28-firefox-quantum/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-06-28-firefox-quantum/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7458,7 +7344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-06-26-win-exe-list/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-06-26-win-exe-list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7479,7 +7365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-05-18-chrome-tutorial/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-05-18-chrome-tutorial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7500,7 +7386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-05-15-pdf-copy/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Windows/2019-05-15-pdf-copy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7573,7 +7459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/WebServer/2019-11-18-centos-install-nginx/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/WebServer/2019-11-18-centos-install-nginx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7646,7 +7532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Singularity/2023-04-18-try-singularity/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Singularity/2023-04-18-try-singularity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7743,7 +7629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2021-02-20-r-download-file/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2021-02-20-r-download-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7764,7 +7650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-06-19-r-download-file-ssl-error/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-06-19-r-download-file-ssl-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7785,7 +7671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-06-11-r-ssl-certificate/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-06-11-r-ssl-certificate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7806,7 +7692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-06-04-xxli8d/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-06-04-xxli8d/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7827,7 +7713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-05-25-rtools-install-mirrors/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-05-25-rtools-install-mirrors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7848,7 +7734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-03-05-venneuler-installation/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-03-05-venneuler-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7869,7 +7755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-01-14-ublsz7/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2020-01-14-ublsz7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7890,7 +7776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-07-15-r-ramigo/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-07-15-r-ramigo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7911,7 +7797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-07-01-install-latest-r-from-source/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-07-01-install-latest-r-from-source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7932,7 +7818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-07-01-bioconductor-packages/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-07-01-bioconductor-packages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7953,7 +7839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-05-25-qznkyp/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-05-25-qznkyp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7974,7 +7860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-05-24-nt820f/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-05-24-nt820f/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7995,7 +7881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-05-24-dadyai/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-05-24-dadyai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8072,7 +7958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Python/2020-05-09-uninstall-setup-py/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Python/2020-05-09-uninstall-setup-py/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8093,7 +7979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Python/2019-05-18-python-enable-shared/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Python/2019-05-18-python-enable-shared/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8114,7 +8000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Python/2019-05-18-install-python-from-source/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Python/2019-05-18-install-python-from-source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8189,7 +8075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Perl/2020-06-19-how-to-install-perl-modules/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Perl/2020-06-19-how-to-install-perl-modules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8210,7 +8096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Perl/2019-07-01-install-perl-from-source/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Perl/2019-07-01-install-perl-from-source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8285,7 +8171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/LaTeX/2020-02-10-linux-install-fonts/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/LaTeX/2020-02-10-linux-install-fonts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8306,7 +8192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/LaTeX/2019-07-01-latex-2018-tutorial/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/LaTeX/2019-07-01-latex-2018-tutorial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8393,7 +8279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2021-11-12-xmanager-power-suite-7/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2021-11-12-xmanager-power-suite-7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8414,7 +8300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2021-11-11-md2x-editor/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2021-11-11-md2x-editor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8435,7 +8321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2020-04-21-mobaxterm-installation/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2020-04-21-mobaxterm-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8456,7 +8342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-07-01-webterminal-for-linux/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-07-01-webterminal-for-linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8477,7 +8363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-07-01-vscode-remote-ssh/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-07-01-vscode-remote-ssh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8498,7 +8384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-07-01-irf3na/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-07-01-irf3na/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8519,7 +8405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-06-21-vscode-usage/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-06-21-vscode-usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8540,7 +8426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-05-18-how-to-use-vim/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/IDE/2019-05-18-how-to-use-vim/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8615,7 +8501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Docker/2021-06-10-docker-ngs/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Docker/2021-06-10-docker-ngs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8636,7 +8522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Docker/2021-06-03-recover-hub-account/" class="md-nav__link">
+      <a href="../yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/Docker/2021-06-03-recover-hub-account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8694,13 +8580,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -8709,7 +8592,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/" class="md-nav__link ">
+            <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -8720,7 +8603,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_5" id="__nav_5_5_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -8794,7 +8677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2022-09-09-screen/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2022-09-09-screen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8815,7 +8698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-12-03-xvwc74/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-12-03-xvwc74/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8836,7 +8719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-04-17-mv-skill/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-04-17-mv-skill/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8857,7 +8740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-02-13-shell-shift-note/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-02-13-shell-shift-note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8878,7 +8761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-01-13-shell-coding/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Shell/2020-01-13-shell-coding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8959,7 +8842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2020-03-18-tallkr/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2020-03-18-tallkr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8980,7 +8863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2020-02-27-r-fonts/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2020-02-27-r-fonts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9001,7 +8884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2019-12-05-lwsgg0/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2019-12-05-lwsgg0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9022,7 +8905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2019-10-19-uoepud/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2019-10-19-uoepud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9043,7 +8926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2019-07-01-r-packages-guide/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/R/2019-07-01-r-packages-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9144,7 +9027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2023-03-14-hsco916i48bzedk7/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2023-03-14-hsco916i48bzedk7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9165,7 +9048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2022-05-20-python-3-types-in-the-wild/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2022-05-20-python-3-types-in-the-wild/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9186,7 +9069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2022-04-21-ipython-magics/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2022-04-21-ipython-magics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9207,7 +9090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2022-04-19-gqksoi/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2022-04-19-gqksoi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9228,7 +9111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2021-12-07-plf2lq/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2021-12-07-plf2lq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9249,7 +9132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2020-02-18-xlrd-xlwt-notes/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2020-02-18-xlrd-xlwt-notes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9270,7 +9153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-10-16-pcfnsd/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-10-16-pcfnsd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9291,7 +9174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-09-21-how-to-use-datetime-in-python/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-09-21-how-to-use-datetime-in-python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9312,7 +9195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-09-19-xu2eg5/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-09-19-xu2eg5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9333,7 +9216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-07-01-python-file-directory-toturial/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-07-01-python-file-directory-toturial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9354,7 +9237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-06-11-iddn10/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-06-11-iddn10/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9375,7 +9258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-05-21-kzicg7/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-05-21-kzicg7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9396,7 +9279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-05-18-python-os-path/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-05-18-python-os-path/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9417,7 +9300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-05-18-python-match/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-05-18-python-match/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9438,7 +9321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-05-18-python-list-dict-tuple-skills/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Python/2019-05-18-python-list-dict-tuple-skills/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9511,7 +9394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Perl/2021-08-27-ec2340/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Perl/2021-08-27-ec2340/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9584,7 +9467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Go/2019-09-18-ygzmzn/" class="md-nav__link">
+      <a href="../yuque/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/Go/2019-09-18-ygzmzn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9634,13 +9517,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -9649,7 +9529,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link ">
+            <a href="../yuque/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -9660,7 +9540,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_6" id="__nav_5_6_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -9726,7 +9606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E6%95%B0%E6%8D%AE%E5%BA%93/PostgreSQL/2019-09-30-pgsql-usage/" class="md-nav__link">
+      <a href="../yuque/%E6%95%B0%E6%8D%AE%E5%BA%93/PostgreSQL/2019-09-30-pgsql-usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9778,13 +9658,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -9793,7 +9670,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../%E5%8F%AF%E8%A7%86%E5%8C%96/" class="md-nav__link ">
+            <a href="../yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -9804,7 +9681,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_7" id="__nav_5_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -9876,7 +9753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%8F%AF%E8%A7%86%E5%8C%96/R%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96/2020-05-25-covid-19-shiny-apps/" class="md-nav__link">
+      <a href="../yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/R%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96/2020-05-25-covid-19-shiny-apps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9897,7 +9774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%8F%AF%E8%A7%86%E5%8C%96/R%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96/2020-05-20-ggplot_plot_margin/" class="md-nav__link">
+      <a href="../yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/R%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96/2020-05-20-ggplot_plot_margin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9918,7 +9795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%8F%AF%E8%A7%86%E5%8C%96/R%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96/2020-03-19-ggplot2-piechart-note/" class="md-nav__link">
+      <a href="../yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/R%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96/2020-03-19-ggplot2-piechart-note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9939,7 +9816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%8F%AF%E8%A7%86%E5%8C%96/R%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96/2019-07-01-r-gganatogram/" class="md-nav__link">
+      <a href="../yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/R%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96/2019-07-01-r-gganatogram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10014,7 +9891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%8F%AF%E8%A7%86%E5%8C%96/Python%E5%8F%AF%E8%A7%86%E5%8C%96/2022-02-24-how-to-use-ggplot2-in-python/" class="md-nav__link">
+      <a href="../yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/Python%E5%8F%AF%E8%A7%86%E5%8C%96/2022-02-24-how-to-use-ggplot2-in-python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10035,7 +9912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%8F%AF%E8%A7%86%E5%8C%96/Python%E5%8F%AF%E8%A7%86%E5%8C%96/2019-10-12-tp85x1/" class="md-nav__link">
+      <a href="../yuque/%E5%8F%AF%E8%A7%86%E5%8C%96/Python%E5%8F%AF%E8%A7%86%E5%8C%96/2019-10-12-tp85x1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10190,7 +10067,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../note/" class="md-nav__link ">
+            <a href="../note/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -10223,7 +10100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2023-06-05-ava/" class="md-nav__link">
+      <a href="../note/2023-06-05-ava/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10244,7 +10121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2023-06-02-hot-hot-hot/" class="md-nav__link">
+      <a href="../note/2023-06-02-hot-hot-hot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10265,7 +10142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2023-05-10-find-my-pkm/" class="md-nav__link">
+      <a href="../note/2023-05-10-find-my-pkm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10286,7 +10163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2023-04-12-mp2yq/" class="md-nav__link">
+      <a href="../note/2023-04-12-mp2yq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10307,7 +10184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2023-03-16-do2zxwm9qv3uta33/" class="md-nav__link">
+      <a href="../note/2023-03-16-do2zxwm9qv3uta33/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10328,7 +10205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2023-02-15-ibgpiv1ucvta5o73/" class="md-nav__link">
+      <a href="../note/2023-02-15-ibgpiv1ucvta5o73/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10349,7 +10226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2023-02-07-all-in-yuque/" class="md-nav__link">
+      <a href="../note/2023-02-07-all-in-yuque/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10370,7 +10247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2023-01-12-summary-2022/" class="md-nav__link">
+      <a href="../note/2023-01-12-summary-2022/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10391,7 +10268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2022-12-21-covid-19-202212/" class="md-nav__link">
+      <a href="../note/2022-12-21-covid-19-202212/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10412,7 +10289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2022-12-19-qatar-world-cup-2022/" class="md-nav__link">
+      <a href="../note/2022-12-19-qatar-world-cup-2022/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10433,7 +10310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2022-11-02-note-note/" class="md-nav__link">
+      <a href="../note/2022-11-02-note-note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10454,7 +10331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2022-03-25-lfcpn2/" class="md-nav__link">
+      <a href="../note/2022-03-25-lfcpn2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10475,7 +10352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2022-01-10-domain-magic/" class="md-nav__link">
+      <a href="../note/2022-01-10-domain-magic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10496,7 +10373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2022-01-01-happy-new-year-2022/" class="md-nav__link">
+      <a href="../note/2022-01-01-happy-new-year-2022/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10517,7 +10394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-12-31-my-2021/" class="md-nav__link">
+      <a href="../note/2021-12-31-my-2021/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10538,7 +10415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-11-18-pinyin-sogou/" class="md-nav__link">
+      <a href="../note/2021-11-18-pinyin-sogou/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10559,7 +10436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-10-14-yuque-vip/" class="md-nav__link">
+      <a href="../note/2021-10-14-yuque-vip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10580,7 +10457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-09-30-kl4dca/" class="md-nav__link">
+      <a href="../note/2021-09-30-kl4dca/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10601,7 +10478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-09-22-mid-autumn-trip/" class="md-nav__link">
+      <a href="../note/2021-09-22-mid-autumn-trip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10622,7 +10499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-07-21-ycpgag/" class="md-nav__link">
+      <a href="../note/2021-07-21-ycpgag/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10643,7 +10520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-06-16-gz-covid-19/" class="md-nav__link">
+      <a href="../note/2021-06-16-gz-covid-19/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10664,7 +10541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-05-06-bbnxbn/" class="md-nav__link">
+      <a href="../note/2021-05-06-bbnxbn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10685,7 +10562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2021-04-23-wl2kww/" class="md-nav__link">
+      <a href="../note/2021-04-23-wl2kww/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10706,7 +10583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2020-12-31-happy-2020/" class="md-nav__link">
+      <a href="../note/2020-12-31-happy-2020/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10727,7 +10604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2020-08-20-qqmvht/" class="md-nav__link">
+      <a href="../note/2020-08-20-qqmvht/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10748,7 +10625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2020-07-14-vyymes/" class="md-nav__link">
+      <a href="../note/2020-07-14-vyymes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10769,7 +10646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2020-03-20-amvh8c/" class="md-nav__link">
+      <a href="../note/2020-03-20-amvh8c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10790,7 +10667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2020-03-16-rz7c3n/" class="md-nav__link">
+      <a href="../note/2020-03-16-rz7c3n/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10811,7 +10688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2020-03-13-whnegc/" class="md-nav__link">
+      <a href="../note/2020-03-13-whnegc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10832,7 +10709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2020-01-16-pct5pb/" class="md-nav__link">
+      <a href="../note/2020-01-16-pct5pb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10853,7 +10730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-12-13-kblu4x/" class="md-nav__link">
+      <a href="../note/2019-12-13-kblu4x/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10874,7 +10751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-12-04-housing/" class="md-nav__link">
+      <a href="../note/2019-12-04-housing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10895,7 +10772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-11-28-chicken-soup/" class="md-nav__link">
+      <a href="../note/2019-11-28-chicken-soup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10916,7 +10793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-11-06-writing/" class="md-nav__link">
+      <a href="../note/2019-11-06-writing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10937,7 +10814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-10-16-input/" class="md-nav__link">
+      <a href="../note/2019-10-16-input/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10958,7 +10835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-09-04-marriage-art/" class="md-nav__link">
+      <a href="../note/2019-09-04-marriage-art/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10979,7 +10856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-08-26-a-real-man/" class="md-nav__link">
+      <a href="../note/2019-08-26-a-real-man/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11000,7 +10877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-08-19-moc049/" class="md-nav__link">
+      <a href="../note/2019-08-19-moc049/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11021,7 +10898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-07-23-coding-cancel-account/" class="md-nav__link">
+      <a href="../note/2019-07-23-coding-cancel-account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11042,7 +10919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-07-08-unicom-broadband/" class="md-nav__link">
+      <a href="../note/2019-07-08-unicom-broadband/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11063,7 +10940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-07-08-to-be-good/" class="md-nav__link">
+      <a href="../note/2019-07-08-to-be-good/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11084,7 +10961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-07-01-focus-on-writing/" class="md-nav__link">
+      <a href="../note/2019-07-01-focus-on-writing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11105,7 +10982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-05-29-blogs-and-sites-collected/" class="md-nav__link">
+      <a href="../note/2019-05-29-blogs-and-sites-collected/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11126,7 +11003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../note/2019-04-29-funny-name/" class="md-nav__link">
+      <a href="../note/2019-04-29-funny-name/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11177,7 +11054,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../message/" class="md-nav__link ">
+            <a href="../message/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -11239,7 +11116,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../readme/" class="md-nav__link ">
+            <a href="../readme/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -11272,7 +11149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../readme/work/" class="md-nav__link">
+      <a href="../readme/work/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11293,7 +11170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../readme/res/" class="md-nav__link">
+      <a href="../readme/res/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11344,7 +11221,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../flinks/" class="md-nav__link ">
+            <a href="../flinks/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -11379,7 +11256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../feed_rss_created.xml" class="md-nav__link">
+      <a href="../feed_rss_created.xml" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11410,101 +11287,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#clumpify-工作原理" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clumpify 工作原理
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clumpify-耗时" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clumpify 耗时
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#为什么能提升速度" class="md-nav__link">
-    <span class="md-ellipsis">
-      为什么能提升速度
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#什么时候怎么使用-clumpify" class="md-nav__link">
-    <span class="md-ellipsis">
-      什么时候怎么使用 Clumpify
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clumpify-使用与数据一致性检验" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clumpify 使用与数据一致性检验
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clumpify-使用注意事项" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clumpify 使用注意事项
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Clumpify 使用注意事项">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#内存设置" class="md-nav__link">
-    <span class="md-ellipsis">
-      内存设置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#重复数据删除" class="md-nav__link">
-    <span class="md-ellipsis">
-      重复数据删除
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#参考资料" class="md-nav__link">
-    <span class="md-ellipsis">
-      参考资料
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -11518,7 +11300,7 @@
                   
 
   
-    <a href="https://github.com/shenweiyan/Knowledge-Garden/edit/main/docs/yuque/生物信息/软件/2019-07-04-clumpify.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/shenweiyan/Knowledge-Garden/edit/main/docs/tech/开发运维/虚拟环境/2024-04-28-mamba-的两个分支-miniforge-和-mambaforge-dis71.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -11527,102 +11309,40 @@
     
       
     
-    <a href="https://github.com/shenweiyan/Knowledge-Garden/raw/main/docs/yuque/生物信息/软件/2019-07-04-clumpify.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/shenweiyan/Knowledge-Garden/raw/main/docs/tech/开发运维/虚拟环境/2024-04-28-mamba-的两个分支-miniforge-和-mambaforge-dis71.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>一款能使压缩 fq 再缩小 30% 并加速后续分析的软件</h1>
+  <h1>mamba 的两个分支 miniforge 和 mambaforge</h1>
 
-<p>Clumpify 是 <a href="https://sourceforge.net/projects/bbmap/">BBMap</a> 工具包中的一个组件，它与其他工具略有不同的是 Clumpify 不会实际更改你的数据，只是重新排序以最大化 gzip 压缩。因此，输出文件仍然是完全兼容的 gzipped fastq 文件，而 Clumpify 除了使其更快之外，对下游分析也不会造成影响。 它使用起来非常简单：</p>
-<div class="highlight"><pre><span></span><code>clumpify.sh in=reads.fq.gz out=clumped.fq.gz reorder
-</code></pre></div>
-<p>This command assumes paired, interleaved reads or single-ended reads. But Clumpify also now works with paired reads in twin files like this:</p>
-<div class="highlight"><pre><span></span><code>clumpify.sh in1=r1.fq.gz in2=r2.fq.gz out1=clumped1.fq.gz out2=clumped2.fq.gz reorder
-</code></pre></div>
-<h2 id="clumpify-工作原理">Clumpify 工作原理<a class="headerlink" href="#clumpify-工作原理" title="Permanent link">&para;</a></h2>
-<p>Clumpify 的操作原理与使排序的 bam 文件小于未排序 bam 文件的原理相似 —— reads 被重新排序，以便具有相似序列的 reads 都集中在附近，从而使得 gzip 压缩更有效。但是与 bam 排序不同，在此过程中，配对的 pairs 会保持在一起，这样交错的文件（interleaved file）将保持交错，配对完好无损。另外一个与 bam 排序不同的是，Clumpify 不需要比对（mapping）和参考序列（reference），除非在非常特殊的情况下，Clumpify   可以使用任意少量的内存。 因此，与 mapping 比对相比，它的速度非常快且内存效率高，并且可以在不知道读取来自哪些生物体的情况下完成。</p>
-<p>在内部，Clumpify 形成了大量共享特殊 &lsquo;pivot&rsquo; kmers 的 reads 簇（团块），也就是说这些 reads 是重叠的（overlap）。接着，通过 reads 中的 kmer 位置进一步对这些团块进行分类，使得在一个团块内的 reads 都是位置分类的（position-sorted）。 最终结果是得到一个排序的 reads 块列表，在排序的 bam 的百分比左右产生压缩（yielding compression within a percent or so of sorted bam）。</p>
-<h2 id="clumpify-耗时">Clumpify 耗时<a class="headerlink" href="#clumpify-耗时" title="Permanent link">&para;</a></h2>
-<p>Clumpify 运行会非常快。如果所有数据都适合内存时，Clumpify 只需要一次读取和写入文件所需的时间。如果数据不能适合内存，则需要大约两倍的时间。 但是，我们的集群上有一个高性能的并行文件系统。 在某些文件系统或单个旋转磁盘上，当数据不适合内存时，可能需要几倍的时间，因为一次只能读取和写入多个文件。</p>
-<h2 id="为什么能提升速度">为什么能提升速度<a class="headerlink" href="#为什么能提升速度" title="Permanent link">&para;</a></h2>
-<p>有很多进程是具有 I/O 限制的。 例如，在多核处理器上，使用 BBDuk，BBMerge，Reformat 等去解压缩一个 gzipped fastq 文件通常会受到 gzip 解压缩的速率限制（rate-limited）（即使你使用 pigz，它在解压缩方面比 gzip 快得多）。 Gzip 解压缩似乎会受到每秒输入字节数的速率限制而不是输出，这意味着一个给定大小的原始文件，如果压缩 Y％，将更快地解压缩 X％（meaning that a raw file of a given size will decompress X% faster if it is compressed Y% smaller）；这里 X 和 Y 是成比例的，但不是 1 比 1。 在我的测试中，使用 Spades 和 Megahit 进行组装可以减少使用 Clumpified 输入所需的时间，而不仅仅是用于运行 Clumpify 所需的时间，这主要是因为两者都是 multi-kmer 组装软件（assemblers），它们多次读取输入文件（根据 Megahit 的作者， 由于缓存局部性）。 单纯的受 CPU 限制（CPU-limited）的程序和软件，如比对（mapping） 通常不会在速度方面受益太多（尽管仍然有点因为改进了缓存局部性）。</p>
-<h2 id="什么时候怎么使用-clumpify">什么时候怎么使用 Clumpify<a class="headerlink" href="#什么时候怎么使用-clumpify" title="Permanent link">&para;</a></h2>
-<p>如果您想要对压缩数据进行进一步压缩，请尽早进行（例如，在 raw reads 时）。 然后运行所有下游处理步骤，确保维持 read 顺序（例如，如果使用 BBDuk 进行 adapter-trimming 时，则使用 &ldquo;ordered&rdquo; 标志），以便保持 clump 顺序; 因此，所有中间文件都将受益于增加的压缩和增加的速度。 我建议在所有将进入长期存储的数据上运行 Clumpify，或者在有多个步骤和中间 gzip 压缩文件的长管道时运行 Clumpify。 此外，即使数据不会进入长期存储，如果正在使用共享文件系统或需要通过互联网发送文件，尽早运行 Clumpify 将节省带宽。 下面列举了我不会聚集数据的唯一时间。</p>
-<ol>
-<li>对于具有非常低 kmer 深度的 reads，由于覆盖率非常低（如 1x WGS）或超高错误率（如原始 PacBio 数据）。 它不会损坏任何东西，但也不会完成任何事情。</li>
-<li>对于大量扩增子数据。 这可能有效，也可能无效; 但如果你的所有的 reads 都被期望共享相同的 kmers，它们可能都会形成一个巨大的丛，再也没有任何东西可以实现。 同样，它不会损坏任何东西，如果从可变区域中随机选择 pivots ，它可能会增加压缩。</li>
-<li>当你的过程依赖 reads 的顺序时。如果你总是从文件中获取前一百万条 reads，假设它们在文件其余部分具有良好代表性，那么 Clumpify 将导致你的假设无效 —— 就像从分类的 bam 文件中获取前一百万条 reads 不具有代表性。 幸运的是，这绝不是一个好习惯，所以如果你现在正在这样做，现在无论如何都是改变你的流程的好机会。 随机子采样（Randomly subsampling）是一种更好的方法。</li>
-<li>If you are only going to read data fewer than \~3 times, it will never go into long-term storage, and it&rsquo;s being used on local disk so bandwidth is not an issue, there&rsquo;s no point in using Clumpify (or gzip, for that matter).</li>
-</ol>
-<h2 id="clumpify-使用与数据一致性检验">Clumpify 使用与数据一致性检验<a class="headerlink" href="#clumpify-使用与数据一致性检验" title="Permanent link">&para;</a></h2>
-<p>在实际测试用，使用 Hiseq2500 的 fastq 压缩数据 A，经 clumpify.sh 处理后得到压缩数据 B，但 A、B 解压出来的 fastq 数据 md5 是不一致的：</p>
-<div class="highlight"><pre><span></span><code># 本测试所所用 bbmap 版本：38.20
+<p>在安装 mamba 的时候在 <a href="https://github.com/conda-forge/miniforge/releases">release</a> 页面和<a href="https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html">官方的安装页面</a> 总是看到关于 miniforge 和 mambaforge 的选择问题，傻傻搞不明白。</p>
+<!-- more -->
 
-$ cp B1_CNE2T1_R1.fastq.gz test_R1.fastq.gz
-$ md5sum B1_CNE2T1_R1.fastq.gz test_R1.fastq.gz
-0dc5da3a25d4f27e1ff02d2924497f5e  B1_CNE2T1_R1.fastq.gz
-0dc5da3a25d4f27e1ff02d2924497f5e  test_R1.fastq.gz
-
-$ sh clumpify.sh in=test_R1.fastq.gz out=clumpify_test_R1.fastq.gz
-
-$ du -sh *
-701M    B1_CNE2T1_R1.fastq.gz
-515M    clumpify_test_R1.fastq.gz
-701M    test_R1.fastq.gz
-
-$ gzip -d test_R1.fastq.gz
-$ gzip -d clumpify_test_R1.fastq.gz
-
-$ ll
-total 8011828
--rw-r--r-- 1 shenweiyan bioinfo  734384226 Aug  9 16:39 B1_CNE2T1_R1.fastq.gz
--rw-r--r-- 1 shenweiyan bioinfo 3734854983 Aug  9 16:45 clumpify_test_R1.fastq
--rw-r--r-- 1 shenweiyan bioinfo 3734854983 Aug  9 16:40 test_R1.fastq
-
-$ md5sum test_R1.fastq clumpify_test_R1.fastq
-a3c411044914a671f88dd0976f29b237  test_R1.fastq
-cf3b381d95725f1c2ddd352e50f60832  clumpify_test_R1.fastq
-</code></pre></div>
-<p>其中的一个原因是，clumpify 其实只是将 Fastq 文件根据序列相似性进行了位置重排（有点类似 CD-hit 工作原理），以便使得文件压缩率达到最大，它并没有对文件内容做任何改动。它除了会使后续分析流程变快之外，没有任何副作用。为了验证这一点，我们把原始的 Fastq 和经 clumpify 处理后解压出来的 Fastq 进行重新排序，并对排序后的结果进行一致性检测：</p>
-<div class="highlight"><pre><span></span><code>$ sort test_R1.fastq &gt;sorted_test_R1.fastq
-$ sort clumpify_test_R1.fastq &gt;sorted_clumpify_test_R1.fastq
-
-$ ll
-total 15306476
--rw-r--r-- 1 shenweiyan bioinfo  734384226 Aug  9 16:39 B1_CNE2T1_R1.fastq.gz
--rw-r--r-- 1 shenweiyan bioinfo 3734854983 Aug  9 16:45 clumpify_test_R1.fastq
--rw-r--r-- 1 shenweiyan bioinfo 3734854983 Aug  9 17:43 sorted_clumpify_test_R1.fastq
--rw-r--r-- 1 shenweiyan bioinfo 3734854983 Aug  9 17:26 sorted_test_R1.fastq
--rw-r--r-- 1 shenweiyan bioinfo 3734854983 Aug  9 16:40 test_R1.fastq
-
-$ md5sum *
-0dc5da3a25d4f27e1ff02d2924497f5e  B1_CNE2T1_R1.fastq.gz
-cf3b381d95725f1c2ddd352e50f60832  clumpify_test_R1.fastq
-240f0aa5ec8be86b38908f8bb09fb21d  sorted_clumpify_test_R1.fastq
-240f0aa5ec8be86b38908f8bb09fb21d  sorted_test_R1.fastq
-a3c411044914a671f88dd0976f29b237  test_R1.fastq
-</code></pre></div>
-<p>可以看出来原始的 Fastq 和经 clumpify 处理后解压出来的 Fastq 重新排序后得到的结果是一致的，说明 clumpify 的确没有对文件内容做任何改动。</p>
-<p>因此，我们可以基于此建议对于数据需要长期存储，或者后续分析流程耗时较长的场景，数据下机之后首先用 clumpify 对 fastq 进行排序压缩，节省数据存储空间。</p>
-<h2 id="clumpify-使用注意事项">Clumpify 使用注意事项<a class="headerlink" href="#clumpify-使用注意事项" title="Permanent link">&para;</a></h2>
-<h3 id="内存设置">内存设置<a class="headerlink" href="#内存设置" title="Permanent link">&para;</a></h3>
-<p>实测 Clumpify 确实能显著减少 fastq 压缩文件的体积，这里注意一个参数 <strong>-Xmx</strong>：限制 JVM 使用的最大内存。一定要根据自己机器配置情况设置一下，不然 Clumpify 默认自动检测可用内存，如果处理的 Fastq 文件太大，会把机器内存都占满，就别再想跑别的程序了。</p>
-<h3 id="重复数据删除">重复数据删除<a class="headerlink" href="#重复数据删除" title="Permanent link">&para;</a></h3>
-<p>Clumpify 的 37.24 版本起，增加了一些很好的光学重复数据删除的改进。 它现在更快（many times faster in certain degenerate cases），并且提高了 NextSeq tile-edge duplicates 的精度。 具体来说，现在建议使用下面的方式进行删除处理：</p>
-<div class="highlight"><pre><span></span><code>clumpify.sh in=nextseq.fq.gz out=clumped.fq.gz dedupe optical spany adjacent
-</code></pre></div>
-<p>这将删除所有正常的光学 duplicates，以及所有的 tile-edge duplicates，但是如果它们位于相邻的 tile 中并且共享它们的 Y 坐标（within dupedist），而不是之前，它会仅仅将 reads 视为 tile-edge duplicates。 它们可以在任何 tiles 中并且可以共享它们的 X 坐标。 这意味着假阳性较少（PCR 或巧合重复被分类为光学/tile-edge 重复）。 这可能是因为在 NextSeq 上，tile-edge duplicates 仅存在于 tile X-edges 上，并且 duplicates 仅在相邻 tiles 之间。</p>
-<p>正常光学复制删除（HiSeq，MiSeq 等）应使用此命令：</p>
-<div class="highlight"><pre><span></span><code>clumpify.sh in=nextseq.fq.gz out=clumped.fq.gz dedupe optical
-</code></pre></div>
-<h2 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Brian Bushnell，《<a href="https://www.biostars.org/p/225338/">Tool: Introducing Clumpify: Create 30% Smaller, Faster Gzipped Fastq Files. And remove duplicates.</a>》，Biostars</li>
-<li>wangpeng905，《<a href="https://www.jianshu.com/p/13d0575fa08b">Linux 下提升生物信息分析工作效率的神器（持续更新）</a>》，简书</li>
-</ul>
+<p>参考：<a href="https://github.com/conda-forge/miniforge?tab=readme-ov-file#faq">https://github.com/conda-forge/miniforge?tab=readme-ov-file#faq</a></p>
+<blockquote>
+<p><strong>What&rsquo;s the difference between Mambaforge and Miniforge?</strong>  <br />
+After the release of Miniforge 23.3.1 in August 2023, Miniforge and Mambaforge are essentially identical. The only difference is the name of the installer and subsequently the default installation path.</p>
+<p>Before that release, Miniforge only shipped conda, while Mambaforge added mamba on top. Since Miniconda started shipping conda-libmamba-solver in July 2023, Miniforge followed suit and started shipping it too in August. At that point, since conda-libmamba-solver depends on libmambapy, the only difference between Miniforge and Mambaforge was the presence of the mamba Python package. To minimize surprises, we decided to add mamba to Miniforge too.    </p>
+<p><strong>Should I choose one or another going forward at the risk of one of them gettting deprecated?</strong>   <br />
+Given its wide usage, there are no plans to deprecate Mambaforge. If at some point we decide to deprecate Mambaforge, it will be appropriately announced and communicated with sufficient time in advance.</p>
+<p>That said, if you had to start using one today, we recommend to stick to Miniforge.</p>
+</blockquote>
+<script src="https://giscus.app/client.js"
+    data-repo="shenweiyan/Knowledge-Garden"
+    data-repo-id="R_kgDOKgxWlg"
+    data-mapping="number"
+    data-term="71"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
 
 
 
@@ -11643,7 +11363,7 @@ a3c411044914a671f88dd0976f29b237  test_R1.fastq
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-29</span>
   </span>
 
     
@@ -11681,7 +11401,7 @@ a3c411044914a671f88dd0976f29b237  test_R1.fastq
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../2019-08-05-bioconductor-orgdb/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Bioconductor org.Xx.eg.db 系列包">
+          <a href="../discussions-10/" class="md-footer__link md-footer__link--prev" aria-label="上一页: WebStack-Hugo | 一个静态响应式导航主题">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -11691,20 +11411,20 @@ a3c411044914a671f88dd0976f29b237  test_R1.fastq
                 上一页
               </span>
               <div class="md-ellipsis">
-                Bioconductor org.Xx.eg.db 系列包
+                WebStack-Hugo | 一个静态响应式导航主题
               </div>
             </div>
           </a>
         
         
           
-          <a href="../2019-07-01-python-mygene/" class="md-footer__link md-footer__link--next" aria-label="下一页: 使用 Python 中的 mygene 模块进行 ID 匹配">
+          <a href="../discussions-24/" class="md-footer__link md-footer__link--next" aria-label="下一页: Micro/Mamba 安装与注意事项">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                使用 Python 中的 mygene 模块进行 ID 匹配
+                Micro/Mamba 安装与注意事项
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -11798,12 +11518,12 @@ a3c411044914a671f88dd0976f29b237  test_R1.fastq
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "navigation.sections", "navigation.path", "content.action.edit", "content.action.view", "content.code.copy", "navigation.footer"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "navigation.sections", "navigation.path", "content.action.edit", "content.action.view", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
-        <script src="../../../../js/mathjax.js"></script>
+        <script src="../js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
