@@ -100,6 +100,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#miniforge-和-mambaforge" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1062,6 +1067,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    mamba 的两个分支 miniforge 和 mambaforge
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1071,6 +1087,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#miniforge-和-mambaforge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miniforge 和 Mambaforge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miniforge-和-miniconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miniforge 和 Miniconda
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一句话" class="md-nav__link">
+    <span class="md-ellipsis">
+      一句话
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -11310,6 +11370,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#miniforge-和-mambaforge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miniforge 和 Mambaforge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miniforge-和-miniconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miniforge 和 Miniconda
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一句话" class="md-nav__link">
+    <span class="md-ellipsis">
+      一句话
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -11344,15 +11439,26 @@
 <p>在安装 mamba 的时候在 <a href="https://github.com/conda-forge/miniforge/releases">release</a> 页面和<a href="https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html">官方的安装页面</a> 总是看到关于 miniforge 和 mambaforge 的选择问题，傻傻搞不明白。</p>
 <!-- more -->
 
+<h2 id="miniforge-和-mambaforge">Miniforge 和 Mambaforge<a class="headerlink" href="#miniforge-和-mambaforge" title="Permanent link">&para;</a></h2>
 <p>参考：<a href="https://github.com/conda-forge/miniforge?tab=readme-ov-file#faq">https://github.com/conda-forge/miniforge?tab=readme-ov-file#faq</a></p>
 <blockquote>
 <p><strong>What&rsquo;s the difference between Mambaforge and Miniforge?</strong>  <br />
 After the release of Miniforge 23.3.1 in August 2023, Miniforge and Mambaforge are essentially identical. The only difference is the name of the installer and subsequently the default installation path.</p>
+<p>2023 年 8 月发布 Miniforge 23.3.1 后，Miniforge 和 Mambaforge 基本相同。唯一的区别是安装程序的名称以及随后的默认安装路径(一个默认是 miniforge3，一个默认是 mambaforge3)。</p>
 <p>Before that release, Miniforge only shipped conda, while Mambaforge added mamba on top. Since Miniconda started shipping conda-libmamba-solver in July 2023, Miniforge followed suit and started shipping it too in August. At that point, since conda-libmamba-solver depends on libmambapy, the only difference between Miniforge and Mambaforge was the presence of the mamba Python package. To minimize surprises, we decided to add mamba to Miniforge too.    </p>
+<p>在之前的版本中，Miniforge 仅提供 conda，而 Mambaforge 在此基础上增加了 mamba。自 2023 年 7 月 Miniconda 开始提供 conda-libmamba-solver 以来，Miniforge 也紧随其后，于 8 月开始提供此功能。那时，由于 conda-libmamba-solver 依赖于libmambapy，Miniforge 和 Mambaforge 之间的唯一区别就是是否包含 mamba Pytho n包。为了尽量减少意外情况，我们决定也在 Miniforge 中添加 mamba。</p>
 <p><strong>Should I choose one or another going forward at the risk of one of them gettting deprecated?</strong>   <br />
 Given its wide usage, there are no plans to deprecate Mambaforge. If at some point we decide to deprecate Mambaforge, it will be appropriately announced and communicated with sufficient time in advance.</p>
+<p>鉴于 Mambaforge 的广泛使用，目前没有计划将其弃用。如果未来我们决定弃用 Mambaforge，我们会提前充分公告并通知相关用户。</p>
 <p>That said, if you had to start using one today, we recommend to stick to Miniforge.</p>
+<p>不过，如果你今天需要开始使用其中一个，我们建议你坚持使用 Miniforge。</p>
 </blockquote>
+<h2 id="miniforge-和-miniconda">Miniforge 和 Miniconda<a class="headerlink" href="#miniforge-和-miniconda" title="Permanent link">&para;</a></h2>
+<p>参考：<a href="https://bioconda.github.io/faqs.html#what-s-the-difference-between-anaconda-conda-miniconda-mamba-mambaforge-micromamba">What’s the difference between Anaconda, conda, Miniconda, mamba, Mambaforge, micromamba?</a> - bioconda#Faqs</p>
+<p>Miniforge 是社区 (conda-forge) 驱动的简约 conda 安装程序。Miniforge 与 Miniconda 类似，但预配置了 <code>conda-forge</code> 通道，并且所有包都来自 conda-forge 而不是 <code>defaults</code> 通道。现在它还包含了 mamba 和 libmamba。</p>
+<p>Miniconda 是公司 (Anaconda) 驱动的简约 conda 安装程序。随后的软件包安装来自 anaconda 频道（默认或其他）。</p>
+<h2 id="一句话">一句话<a class="headerlink" href="#一句话" title="Permanent link">&para;</a></h2>
+<p>总的一句话来说，Mambaforge 类似于 Miniforge，但将 mamba 安装到基础环境中。虽然没有严格弃用，但从 <strong>2023 年 9 月</strong>起不鼓励使用它（请参阅 miniforge 自述 <a href="https://github.com/conda-forge/miniforge">README</a> 文件）。</p>
 <script src="https://giscus.app/client.js"
     data-repo="shenweiyan/Knowledge-Garden"
     data-repo-id="R_kgDOKgxWlg"
@@ -11386,7 +11492,7 @@ Given its wide usage, there are no plans to deprecate Mambaforge. If at some poi
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-27</span>
   </span>
 
     
