@@ -44,6 +44,8 @@ def __main__():
         blogPostsDir.mkdir(parents=True, exist_ok=True)
 
     # 处理所有的 discussions
+    year_blogs_dict = {}
+
     if 'nodes' in discussionsDict.keys():
         discussionsList = discussionsDict['nodes']
         for discussion in discussionsList:
@@ -102,6 +104,34 @@ def __main__():
                 MD.write(metadata)
                 MD.write(discussion_body)
                 MD.write(comments)
+
+            create_year   = discussion_createdAt[0:4]
+            blog_full_url = f'./{slug_name}'
+            blog_title    = discussion_title
+            if create_year in year_blogs_dict:
+                year_blogs_dict[create_year].append([create_date, blog_title, blog_full_url])
+            else:
+                year_blogs_dict[create_year] = [[create_date, blog_title, blog_full_url]]
+
+    # 博客的归档头部信息
+    blog_index_meta = (f'---\n'
+                       f'vssue: ""\n'
+                       f'---\n\n'
+                       f'# 博客文章\n\n'
+                       f'这是首发于 [GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions)，并定期同步更新至 Material for MkDocs 本站点上的博客文章。\n\n'
+                       f'??? "本站点所有博客文章归档"\n\n')
+
+    # 保存博客的主页面输出结果
+    savedBlogIndex =  Path(outputDir).joinpath('blog/index.md') 
+
+    with open(savedBlogIndex, "w") as BlogIndex:
+        BlogIndex.write(blog_index_meta)
+        for year in sorted(year_blogs_dict.keys(), reverse=True):
+            # 按照年份从大到小排序
+            BlogIndex.write(f'    === "{year}"\n')
+            for each_blog in sorted(year_blogs_dict[year], key=lambda date: date[0], reverse=True):
+                # 按照创建时间从大到小排序
+                BlogIndex.write(f'        - {each_blog[0]} [{each_blog[1]}]({each_blog[2]}) \n')
 
 if __name__ == "__main__":
     __main__()

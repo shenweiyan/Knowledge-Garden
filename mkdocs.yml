@@ -55,6 +55,8 @@ markdown_extensions:
     - pymdownx.details
     - md_in_html
     - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
     - smarty
     - toc:
         permalink: True
