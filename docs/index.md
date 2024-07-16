@@ -75,8 +75,8 @@ template: home.html
 
 以下两个地址都可以访问本站点：     
 
-- [www.weiyan.cc](https://www.weiyan.cc)：基于 [Netlify](https://app.netlify.com/)，国内访问相对快一些；     
-- [doc.weiyan.cc](https://doc.weiyan.cc)：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟。
+- [weiyan.cc](https://www.weiyan.cc)：基于 [Netlify](https://app.netlify.com/)，国内访问相对快一些；     
+- [gh-pages.weiyan.cc](https://gh-pages.weiyan.cc)：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟。
 
 <p align="center">
     <img src="https://shub.weiyan.tech/mkdocs/kg-readme-cover.gif" alt><br>
