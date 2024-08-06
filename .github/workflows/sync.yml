@@ -21,6 +21,19 @@ jobs:
         env:
           GITHUB_REPOSITORY: shenweiyan/Knowledge-Garden
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Push to AtomGit Knowledge-Garden
+        run: |
+          remote_repo="https://weiyan:${ATOMGIT_PAT}@atomgit.com/${ATOMGIT_REPOSITORY}.git"
+          git remote add atomgit "${remote_repo}"
+          git show-ref
+          git branch --verbose
+          # publish all
+          git push --all --force atomgit
+          git push --tags --force atomgit
+        env:
+          ATOMGIT_REPOSITORY: weiyan/Knowledge-Garden
+          ATOMGIT_PAT: ${{ secrets.ATOM_PAT }}
           
       - name: Push to Gitcode Knowledge-Garden
         run: |
