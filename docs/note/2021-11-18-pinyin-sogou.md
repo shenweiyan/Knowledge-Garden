@@ -3,23 +3,23 @@ title: 搜狗拼音输入法
 urlname: 2021-11-18-pinyin-sogou
 author: 章鱼猫先生
 date: 2021-11-18
-updated: "2022-01-12 10:54:51"
+updated: 2024-08-14"
 ---
 
-这是关于输入法的第二篇乱弹笔记。专门聊一下我和搜狗输入法的那些事情~
+这是关于输入法的第二篇乱弹笔记。专门聊一下我和搜狗输入法的那些事情~    
 ![搜狗拼音输入法.png](https://shub.weiyan.tech/yuque/elog-notebook-img/FgzbAuzkS4vpjdfgkVnYQOP4eaEe.png)
 
-# 收藏的皮肤
+## 收藏的皮肤
 
 各大输入法的皮肤都很多，眼花缭乱。
 
 个人比较喜欢搜狗输入法的一款皮肤：[【鹿】四君子-兰 - 搜狗输入法 - 搜狗皮肤](https://pinyin.sogou.com/skins/detail/view/info/572400)，简洁，最重要的是纵向排列形 的状态栏不会把 Windows 的任务栏挡住！
 
-参考：[https://pinyin.sogou.com/images/help/s_mkskin/makeskin(s).pdf](<https://pinyin.sogou.com/images/help/s_mkskin/makeskin(s).pdf>)
+参考：[https://pinyin.sogou.com/images/help/s_mkskin/makeskin(s).pdf](<https://pinyin.sogou.com/images/help/s_mkskin/makeskin(s).pdf>)      
 ![image.png](https://shub.weiyan.tech/yuque/elog-notebook-img/FgRemRjcu9D3Th3yX0WllRBBAv1L.png)
 ![](https://shub.weiyan.tech/yuque/elog-notebook-img/FiGsKAnk4g1awYIMj6WdVD9eQ4fW.png)
 
-# 皮肤无法解压
+## 皮肤无法解压
 
 搜狗官网下载的皮肤基本都是没法用压缩软件打开的，具体原因参考《[搜狗输入法 .ssf 格式皮肤无法解压的原因 | Linux 区](https://linux.zone/5616/comment-page-1#comment-12770)》。
 
@@ -31,7 +31,7 @@ updated: "2022-01-12 10:54:51"
 >
 > 通过加密的方式来防止修改盗用、保护劳动者的著作权，这简直是肥佬斯托曼 [GNU 思想](https://www.linux.zone/archives/6211)的“死敌”啊，不得不表示支持！
 
-# 异常问题处理
+## 异常问题处理
 
 之前在《[输入法，哪一个才是我的菜？ · 语雀](https://www.yuque.com/shenweiyan/mind/input)》提到过搜狗中文输入法在 MobaXterm 异常的问题，有待修复。
 
