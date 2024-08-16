@@ -63,6 +63,10 @@ updated: 2024-03-21
 
     一个写了二十年博客，现居美国西雅图的女博主+码农。
 
+- __[墨迹心空](https://www.secondlife.love/)__
+
+    Life is coding.
+
 </div>
 
 <script src="https://giscus.app/client.js"

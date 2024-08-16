@@ -25,13 +25,13 @@ updated: 2024-03-21
 
 ## 当下
 
-正如个人在[语雀花园](https://www.yuque.com/shenweiyan)所说，2023年7月起个人大部分文章已经转移至 [GitHub](https://github.com/shenweiyan)，并同步至 [Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/) (后期主要在 [Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions) 和 [知识花园](https://weiyan.cc/) 进行写作与更新)，语雀会保持不定期更新！
+正如个人在[语雀花园](https://www.yuque.com/shenweiyan)所说，2023年7月起个人大部分文章已经转移至 [GitHub](https://github.com/shenweiyan)，并同步至 [Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/) (后期主要在 [Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions) 和 [知识花园](https://weiyan.cc/) 进行写作与更新)，语雀会保持不定期更新（基本已经停更）！
 
 现在的这个站点是基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，并整合了个人 **[语雀知识库](https://www.yuque.com/shenweiyan)** 几个主要知识库文章后形成的独立站点。
 
 ## 未来
 
-我希望 [WeiYan.CC](https://weiyan.cc/) 能成为我知识管理的最后一站，可能未来展现的形式或者选择用于部署的技术可能有所改变，但至少域名是不变的，通过这个域名你至少还能找到曾经我写下的那些字。
+我希望 [WeiYan.CC](https://weiyan.cc/) 能成为我知识管理的最后一站，虽然未来这些文章展现的形式，或者选择用于部署的技术有所改变，但至少域名是不变的（除非我能有幸注册到 com/cn/net/org 其中之一的主流域名），通过这个域名你至少还能找到曾经我写下的那些字。
 
 不忘初心，方得始终，希望下一个十年，还能在这里遇到一个曾经的我，看到曾经的文字。
 
@@ -49,7 +49,7 @@ updated: 2024-03-21
 
 个人目前用的比较多的沟通工具，一个是**邮箱**，另外一个是**微信**，你可以通过这两种方式直接和我联系。
 
-- 邮箱：<shen@weiyan.cc>
+- 邮箱：<shen@weiyan.cc>（或者 <shen@weiyan.tech>）
 - 微信：ishenweiyan（添加微信好友，请注明真实姓名）
 
 !!! tip "请备注真名实姓，让我感受到一个真实的人的气息"
