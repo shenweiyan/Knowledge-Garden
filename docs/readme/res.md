@@ -65,14 +65,14 @@ title: 资源
 
 主力还是 Windows，本地的代码编辑主力当然是 Visual Studio Code，强大易用。
 
-<img src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/tools/vscode.png" width=800 alt="VSCode">
+<img src="https://kg.weiyan.cc/0000/img/vscode-mac-2x-v2.webp" width=800 alt="VSCode">
 
 
 ### 终端
 
 尝试过 Putty/XShell/Tabby/SecureCRT，最终还是选择了 MobaXterm，不为别的，一个软件就包含了全部的功能，而且习惯了。
 
-<img src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/tools/mobaxterm.png" width=800 alt="MobaXterm">
+<img src="https://kg.weiyan.cc/0000/img/mobaxterm.webp" width=800 alt="MobaXterm">
 
 ### 托管
 
