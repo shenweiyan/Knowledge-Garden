@@ -47,11 +47,11 @@ title: 资源
 
 ## 邮件与沟通
 
-### QQ 邮箱
+### 飞书邮箱
 
-主力邮箱用的是 QQ 的 foxmail 别名邮箱，把 gmail/outlook/aliyun/163 ...... 这些的邮件都统一转发到了 QQ，网页端也好移动端也罢，方便省事。QQ 邮箱的日历、记事本、文件中转站都是我的最爱。
+以前的主力邮箱用的是 QQ 的 foxmail 别名邮箱，后来换成了 `vip.qq.com`（主要原因是我想要的邮箱名在 `qq.com` 和 `foxmail.com` 上已经被其他人抢占了），把 gmail/outlook/aliyun/163 ...... 这些的邮件都统一转发到了 QQ，网页端也好移动端也罢，方便省事。QQ 邮箱的日历、记事本、文件中转站都是我的最爱。唯一不满意的是登录网页端的安全验证非常恶心且难用。
 
-除了 QQ 邮箱外，阿里云个人邮箱和谷歌邮箱也有使用。
+现如今，主要在用飞书国际版（Lark Suite）的自定义域名邮箱（<shen@weiyan.tech>），容量大，限制少。除此以外外，阿里云个人邮箱和谷歌邮箱也有使用。
 
 ### 微信
 
@@ -65,21 +65,18 @@ title: 资源
 
 主力还是 Windows，本地的代码编辑主力当然是 Visual Studio Code，强大易用。
 
-<p align="center">
-    <img style="max-widrh:600px" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/tools/vscode.png" alt="VSCode">
-</p>
+<img src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/tools/vscode.png" width=800 alt="VSCode">
+
 
 ### 终端
 
 尝试过 Putty/XShell/Tabby/SecureCRT，最终还是选择了 MobaXterm，不为别的，一个软件就包含了全部的功能，而且习惯了。
 
-<p align="center">
-    <img style="max-widrh:600px" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/tools/mobaxterm.png" alt="MobaXterm">
-</p>
+<img src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/tools/mobaxterm.png" width=800 alt="MobaXterm">
 
 ### 托管
 
-目前还是选择 GitHub 吧！
+主力依旧是 GitHub 吧！AtomGit 和 GitCode 目前在作为备用选择。
 
 国内虽然不少人都在使用 Gitee，但 Gitee 时不时恶心你一下（前不久就无缘无故把我的 oschina 的账号封了，而且要加 QQ 群去申诉，最后我是直接通过邮件反馈解封了），而且有时候有些资源用起来限制太多，很麻烦。
 
