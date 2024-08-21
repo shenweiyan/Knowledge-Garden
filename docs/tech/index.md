@@ -5,7 +5,9 @@ date: 2023-07-24
 updated: "2024-01-24 08:08:08"
 ---
 
-技术私房菜，这是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关的文章集，大部分为原创。
+Bio & IT 技术私房菜。
+
+这是作者关于生物信息学、互联网 IT、运维开发、软件安装部署、测评使用等方向的文章集合，大部分为原创。
 
 1. 本节点的所有文章均来源于个人在 GitHub 的 "[Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/discussions)" 仓库讨论区。
 
