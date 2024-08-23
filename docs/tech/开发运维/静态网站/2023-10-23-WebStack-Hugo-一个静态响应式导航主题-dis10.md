@@ -11,7 +11,8 @@ labels: ['语雀', '1.3.25-静态网站']
 ---
 
 > Via：[我给自己做了一个导航网站](https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag) | [BioIT爱好者](https://www.bioitee.com)    
-> **让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 [喝杯咖啡](https://kg.weiyan.cc/0000/donate.webp) >.<**
+
+**让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 [喝杯咖啡](https://kg.weiyan.cc/0000/img/donate.webp) >.<**
 
 ## 主题开源地址
 - Gitee：[https://gitee.com/shenweiyan/WebStack-Hugo](https://gitee.com/shenweiyan/WebStack-Hugo)
@@ -306,7 +307,9 @@ hugo -D 或者 hugo --minify
 
 [Bio & IT 网址导航](https://nav.bioitee.com/)默认使用的是个人收集的网站图标，主要是查看网站源码、百度、谷歌等途径把对应导航的图标下载下来，这个方法比较原始繁琐，适合导航不是很多的情况。
 
-你也可以使用一为提供的的 [Favicon](https://www.iowen.cn/tag/favicon/) 图标 [API](https://www.iowen.cn/tag/api/)：[获取网站 Favicon - 免费API数据接口调用服务平台](https://api.iowen.cn/doc/favicon.html)。
+#### 一为
+
+你也可以使用一为提供的的 [Favicon](https://www.iowen.cn/tag/favicon/) 图标 [API](https://www.iowen.cn/tag/api/)：[获取网站 Favicon - 免费 API 数据接口调用服务平台](https://api.iowen.cn/doc/favicon.html)。
 
 **使用方法：**
 
@@ -321,6 +324,18 @@ https://api.iowen.cn/favicon/www.iowen.cn.png?refresh=true
 ```
 
 3. 将上方代码中的 `www.iowen.cn` 替换为你需要获取的网址域名。
+
+#### Favicon.im
+
+除了一为的 API，你也可以使用 <https://favicon.im/> 来在网页中插入其他网站的 Favicon 图片，可以放大显示。
+
+![favicon-im](https://kg.weiyan.cc/2024/08/favicon-im.webp)
+
+#### Favicon Extractor
+
+类似网站 [Favicon Downloader](https://www.faviconextractor.com/)，代码[开源](https://github.com/seadfeng/favicon-downloader)。
+
+![favicon-extractor](https://kg.weiyan.cc/2024/08/favicon-extractor.webp)
 
 
 ## 已知问题
@@ -339,14 +354,15 @@ https://api.iowen.cn/favicon/www.iowen.cn.png?refresh=true
 
 ![twitter-decohack-webstack-hugo](https://kg.weiyan.cc/2023/11/twitter-decohack-webstack-hugo.png)
 
-感谢以下所有朋友对本主题所做出的贡献。
-**[@yanbeiyinhanghang](https://github.com/yinhanghang)**
-**[@jetsung](https://github.com/jetsung)**
+感谢以下所有朋友对本主题所做出的贡献。       
+**[@yanbeiyinhanghang](https://github.com/yinhanghang)**      
+**[@jetsung](https://github.com/jetsung)**       
 
 ## 赞赏
 
-如果你觉得本项目对你有所帮助，欢迎请作者喝杯热咖啡 >.<
-![donate-wecaht-aliapy](https://kg.weiyan.cc/0000/donate.webp)
+如果你觉得本项目对你有所帮助，欢迎请作者喝杯热咖啡 >.<     
+
+![donate-wecaht-aliapy](https://kg.weiyan.cc/0000/img/donate.webp)
 
 ## 反馈与交流
 
