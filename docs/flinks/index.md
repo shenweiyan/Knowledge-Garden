@@ -67,6 +67,10 @@ updated: 2024-03-21
 
     Life is coding.
 
+- __[言成的个人博客](https://meethigher.top/)__
+
+    言成的个人博客网站，寓意为让我们相逢在更高处。
+
 </div>
 
 <script src="https://giscus.app/client.js"
