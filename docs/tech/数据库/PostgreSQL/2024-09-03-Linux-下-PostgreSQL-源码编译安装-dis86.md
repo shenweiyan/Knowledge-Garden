@@ -27,7 +27,7 @@ useradd postgres -g postgres         # 添加postgres用户
 passwd postgres                      # 设置postgres用户密码
 ```
 
-## 2. postgresql 安装
+## 2. 安装
 
 ```
 $ wget https://ftp.postgresql.org/pub/source/v10.0/postgresql-10.0.tar.gz
@@ -48,7 +48,7 @@ FAQ2：configure: error: zlib library not found
 $ yum install zlib-devel
 ```
 
-## 3. PostgreSQL 启动
+## 3. 启动
 
 ```
 ＃ 新建数据库数据文件目录
@@ -63,25 +63,25 @@ $ chown postgres:postgres /data/softwares/pgsql/log -R
  
 # 执行数据库初始化脚本
 $ su postgres
-bash-4.1$ /data/softwares/pgsql/bin/initdb --encoding=utf8 -D /data/softwares/pgsql/data
+$ /data/softwares/pgsql/bin/initdb --encoding=utf8 -D /data/softwares/pgsql/data
  
 # 启动 PostgreSQL 服务
-bash-4.1$ /data/softwares/pgsql/bin/pg_ctl -D /data/softwares/pgsql/data -l /data/softwares/pgsql/log/postgresql.log start    #postgres 用户下执行
+$ /data/softwares/pgsql/bin/pg_ctl -D /data/softwares/pgsql/data -l /data/softwares/pgsql/log/postgresql.log start    #postgres 用户下执行
  
 # 登录 PostgreSQL 数据库
-bash-4.1$ psql
+$ psql
 ```
 
 ![psql-db-list](https://kg.weiyan.cc/2024/09/psql-db-list.webp)
 
-## 4. PostgreSQL 重启
+## 4. 重启
 
 ```
 $ su postgres
-bash-4.1$ /data/softwares/pgsql/bin/pg_ctl -D /data/softwares/pgsql/data -l /data/softwares/pgsql/log/postgresql.log restart
+$ /data/softwares/pgsql/bin/pg_ctl -D /data/softwares/pgsql/data -l /data/softwares/pgsql/log/postgresql.log restart
 ```
 
-## 5. PostgreSQL 开机启动设置
+## 5. 设置开机启动
 
 解压后的 postgresql-x.x.x 下提供了基于 freebsd、linux、osx 3 个系统的 `postgresql` 启动命令。
 
