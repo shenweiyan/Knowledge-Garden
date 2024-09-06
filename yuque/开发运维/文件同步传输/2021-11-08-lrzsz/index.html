@@ -29,7 +29,7 @@
     
     
       
-        <title>文件传输命令 rz 与 sz 安装与使用 - 维燕的知识花园</title>
+        <title>使用 rz 和 sz 实现文件传输 - 维燕的知识花园</title>
       
     
     
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              文件传输命令 rz 与 sz 安装与使用
+              使用 rz 和 sz 实现文件传输
             
           </span>
         </div>
@@ -6253,18 +6253,113 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    使用 rz 和 sz 实现文件传输
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    文件传输命令 rz 与 sz 安装与使用
+    使用 rz 和 sz 实现文件传输
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#简介" class="md-nav__link">
+    <span class="md-ellipsis">
+      简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#特点" class="md-nav__link">
+    <span class="md-ellipsis">
+      特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#安装" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sz-下载案例" class="md-nav__link">
+    <span class="md-ellipsis">
+      sz 下载案例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rz-上传案例" class="md-nav__link">
+    <span class="md-ellipsis">
+      rz 上传案例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobaxterm-上使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      MobaXterm 上使用
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -11453,8 +11548,83 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#简介" class="md-nav__link">
+    <span class="md-ellipsis">
+      简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#特点" class="md-nav__link">
+    <span class="md-ellipsis">
+      特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#安装" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sz-下载案例" class="md-nav__link">
+    <span class="md-ellipsis">
+      sz 下载案例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rz-上传案例" class="md-nav__link">
+    <span class="md-ellipsis">
+      rz 上传案例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobaxterm-上使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      MobaXterm 上使用
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -11485,20 +11655,22 @@
   
 
 
-<h1 id="简介">简介<a class="headerlink" href="#简介" title="Permanent link">&para;</a></h1>
-<p><strong>rz</strong>，<strong>sz</strong> 是 GNU 免费工具 <strong>lrzsz</strong> 的两个子命令行程序，它们是 Linux/Unix 同 Windows 进行 ZModem 文件传输的命令行工具，但是 Windows 端需要支持 ZModem 的 telnet/ssh 客户端，比如 Xshell 或者 SecureCRT 下可以使用。</p>
+  <h1>使用 rz 和 sz 实现文件传输</h1>
+
+<h2 id="简介">简介<a class="headerlink" href="#简介" title="Permanent link">&para;</a></h2>
+<p><strong><code>rz</code></strong>，<strong><code>sz</code></strong> 是 GNU 免费工具 <strong><code>lrzsz</code></strong> 的两个子命令行程序，它们是 Linux/Unix 同 Windows 进行 ZModem 文件传输的命令行工具，但是 Windows 端需要支持 ZModem 的 telnet/ssh 客户端，比如 Xshell 或者 SecureCRT 下可以使用。</p>
 <p>官网：<a href="https://www.gnu.org/software/lrzsz/">https://www.gnu.org/software/lrzsz/</a></p>
-<p>网络有些文章说 Putty 和 MobaXterm 无法使用 lrzsz，其实通过安装插件 MobaXterm 是可以使用的，但体验没有 Xshell 或者 SecureCRT 好。</p>
+<p>网络有些文章说 Putty 和 MobaXterm 无法使用 <code>lrzsz</code>，其实通过安装插件 MobaXterm 是可以使用的，但体验没有 Xshell 或者 SecureCRT 好。</p>
 <blockquote>
 <p>lrzsz is a unix communication package providing the <a href="ftp://ftp.std.com/obi/Standards/FileTransfer/YMODEM8.DOC.1.Z">XMODEM, YMODEM</a> <a href="http://www.easysw.com/~mike/serial/zmodem.html">ZMODEM</a> file transfer protocols. lrzsz is a heavily rehacked version of the last public domain release of <a href="http://www.omen.com/">Omen Technologies</a> rzsz package, and is now <a href="http://www.gnu.ai.mit.edu/philosophy/free-sw.html">free software</a> and released under the <a href="http://www.gnu.ai.mit.edu/copyleft/gpl.html">GNU General Public Licence</a>.</p>
-<p>lrzsz 是一个提供 XMODEM、YMODEM、ZMODEM 文件传输协议的 unix communication package。 lrzsz 是 Omen Technologies rzsz 软件包最后一个公共领域版本的重整版，现在是免费软件，并在 GNU 通用公共许可证下发布。</p>
+<p><code>lrzsz</code> 是一个提供 XMODEM、YMODEM、ZMODEM 文件传输协议的 unix communication package。 <code>lrzsz</code> 是 Omen Technologies rzsz 软件包最后一个公共领域版本的重整版，现在是免费软件，并在 GNU 通用公共许可证下发布。</p>
 </blockquote>
 <p>这两个命令也很好区分：</p>
 <ul>
-<li>sz：将选定的文件发送（send）到本地机器，s 作为 send 的简写；</li>
-<li>rz：运行该命令会弹出一个文件选择窗口，从本地选择文件上传到服务器(receive)，r 作为 receive 的简写。</li>
+<li>sz：将选定的文件发送 (send) 到本地机器，s 作为 send 的简写；</li>
+<li>rz：运行该命令会弹出一个文件选择窗口，从本地选择文件上传 (receive) 到服务器，r 作为 receive 的简写。</li>
 </ul>
-<h1 id="特点">特点<a class="headerlink" href="#特点" title="Permanent link">&para;</a></h1>
+<h2 id="特点">特点<a class="headerlink" href="#特点" title="Permanent link">&para;</a></h2>
 <p>Features of lrzsz：</p>
 <ul>
 <li>非常便携，使用 GNU autoconf 自动配置。</li>
@@ -11506,11 +11678,11 @@
 <li>高达 8KB 的块大小 (ZMODEM8K)。</li>
 <li>国际化（使用 GNU gettext）。德语翻译的程序输出（German translation of the programs output exists）。</li>
 <li>远比原始来源更安全。</li>
-<li>高性能。<code>make vcheck-z</code>可以查看 BPS 速率 - 我最近看到每秒 1.4 MB 通过管道传输大文件 (on a I586/133 system. Beat that!)。</li>
+<li>高性能。<code>make vcheck-z</code> 可以查看 BPS 速率 - 我最近看到每秒 1.4 MB 通过管道传输大文件 (on a I586/133 system. Beat that!)。</li>
 <li>良好的块大小计算（尝试根据发生的错误数量计算最佳块大小）。</li>
 <li>它是免费软件。</li>
 </ul>
-<h1 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h1>
+<h2 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h2>
 <p>安装也比较容易，这里以 openEuler 系统为例：</p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>lrzsz
 </code></pre></div>
@@ -11523,8 +11695,8 @@ $<span class="w"> </span>$<span class="w"> </span>./configure<span class="w"> </
 $<span class="w"> </span>make
 $<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
-<h1 id="使用">使用<a class="headerlink" href="#使用" title="Permanent link">&para;</a></h1>
-<p>首先利用 Xshell 登录服务器，然后就可以直接使用 rz 与 sz 了。sz 与 rz 有很多选项参数，但是基本不用设置也可以。</p>
+<h2 id="使用">使用<a class="headerlink" href="#使用" title="Permanent link">&para;</a></h2>
+<p>首先利用 Xshell 登录服务器，然后就可以直接使用 <code>rz</code> 与 <code>sz</code> 了。<code>sz</code> 与 <code>rz</code> 有很多选项参数，但是基本不用设置也可以。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sz<span class="w"> </span>--help
 $<span class="w"> </span>rz<span class="w"> </span>--help
 -+,<span class="w"> </span>--append<span class="w">            </span><span class="c1">#将文件内容追加到已存在的同名文件</span>
@@ -11542,16 +11714,16 @@ $<span class="w"> </span>rz<span class="w"> </span>--help
 <span class="w">      </span>--ymodem<span class="w">          </span><span class="c1">#使用YMODEM协议</span>
 -Z,<span class="w"> </span>--zmodem<span class="w">            </span><span class="c1">#使用ZMODEM协议</span>
 </code></pre></div>
-<h2 id="sz-下载案例"><strong>sz 下载案例</strong><a class="headerlink" href="#sz-下载案例" title="Permanent link">&para;</a></h2>
+<h3 id="sz-下载案例">sz 下载案例<a class="headerlink" href="#sz-下载案例" title="Permanent link">&para;</a></h3>
 <p>将两个文件传输到本地，直接 sz 发送，后面接文件名，回车之后就会弹出 Windows 对话框，选择要保存的位置即可，然后就开始传输了（一般传输小文件比较好）。
 <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmS5BFdZPqw2HzVYsTJWzeqYPT5_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FmS5BFdZPqw2HzVYsTJWzeqYPT5_.png" /></a></p>
-<h2 id="rz-上传案例">rz 上传案例<a class="headerlink" href="#rz-上传案例" title="Permanent link">&para;</a></h2>
+<h3 id="rz-上传案例">rz 上传案例<a class="headerlink" href="#rz-上传案例" title="Permanent link">&para;</a></h3>
 <p>直接在命令行输入 rz 命令，稍后就会弹出 Windows 对话框，选择要上传的文件，确认之后就开始传输了。
 <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrdDeUAQEyMJP5_7SEWZz4vAunp1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FrdDeUAQEyMJP5_7SEWZz4vAunp1.png" /></a>
 <a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgyAQ4sZh3xxzFjemYlYGM8ZJSD0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FgyAQ4sZh3xxzFjemYlYGM8ZJSD0.png" /></a></p>
-<h1 id="mobaxterm-上使用">MobaXterm 上使用<a class="headerlink" href="#mobaxterm-上使用" title="Permanent link">&para;</a></h1>
-<p>不是所有工具都支持 rz 与 sz，必须支持 ZModem 协议才行，例如 putty 不能使用 rz 与 sz。MobaXterm 默认也不支持 rz 与 sz，但可以通过安装插件实现。</p>
-<p>首先，下载 CygUtils.plugin 和 lrzsz 插件，放到 mobaxterm.exe 目录。</p>
+<h2 id="mobaxterm-上使用">MobaXterm 上使用<a class="headerlink" href="#mobaxterm-上使用" title="Permanent link">&para;</a></h2>
+<p>不是所有工具都支持 <code>rz</code> 与 <code>sz</code>，必须支持 ZModem 协议才行，例如 putty 不能使用 <code>rz</code> 与 <code>sz</code>。MobaXterm 默认也不支持 <code>rz</code> 与 <code>sz</code>，但可以通过安装插件实现。</p>
+<p>首先，下载 <code>CygUtils.plugin</code> 和 <code>lrzsz</code> 插件，放到 <code>mobaxterm.exe</code> 目录。</p>
 <ul>
 <li>网址：<a href="https://mobaxterm.mobatek.net/plugins.html">https://mobaxterm.mobatek.net/plugins.html</a></li>
 <li>插件：CygUtils.plugin，Lrzsz</li>
@@ -11581,7 +11753,7 @@ $<span class="w"> </span>rz<span class="w"> </span>--help
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-06</span>
   </span>
 
     
