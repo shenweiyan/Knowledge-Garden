@@ -19,8 +19,9 @@ updated: 2024-09-10
 
 相比 PhotoShop 和 GIMP 提供的图形用户接口 (GUI) 编辑图像，ImageMagick 通过一组命令行工具来操作图片，更有助于批量化的图片处理。你当然可以用 PhotoShop 或 GIMP 这样的软件来处理图像。没人禁止你这么做，就像没人禁止你用大炮打蚊子一样。不过依我看，打蚊子最好还是用电蚊拍，而要处理大量图像的话，尤其当你只想批量转换一些图片格式，或者批量生成缩略图，调整分辨率，我推荐 ImageMagick。
 
-**支持的程序语言：** Perl, C, C++, Python, PHP, R 等。
-[**ImageMagick 接口**](https://imagemagick.org/script/develop.php)**：**[PerlMagick](https://imagemagick.org/script/develop.php#perl) (Perl), [IMagick](https://imagemagick.org/script/develop.php#php) (PHP), [PythonMagick](https://imagemagick.org/script/develop.php#python) (Python), [magick](https://imagemagick.org/script/develop.php#r) (R), 等。
+**支持的程序语言**：Perl, C, C++, Python, PHP, R 等。     
+
+[**ImageMagick 接口**](https://imagemagick.org/script/develop.php)：[PerlMagick](https://imagemagick.org/script/develop.php#perl) (Perl), [IMagick](https://imagemagick.org/script/develop.php#php) (PHP), [PythonMagick](https://imagemagick.org/script/develop.php#python) (Python), [magick](https://imagemagick.org/script/develop.php#r) (R), 等。
 
 ## 1. 安装 ImageMagick
 
