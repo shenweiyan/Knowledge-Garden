@@ -3,7 +3,7 @@ title: ImageMagick 图像处理安装与使用
 urlname: 2020-07-07-learn-imagemagick
 author: 章鱼猫先生
 date: 2020-07-07
-updated: "2021-10-29 11:05:12"
+updated: 2024-09-10
 ---
 
 什么是 ImageMagick，先来看一段官网的介绍。
@@ -34,12 +34,12 @@ updated: "2021-10-29 11:05:12"
 # 安装依赖
 $ yum -y install bzip2-devel freetype-devel libjpeg-devel libpng-devel libtiff-devel giflib-devel zlib-devel ghostscript-devel djvulibre-devel libwmf-devel jasper-devel libtool-ltdl-devel libX11-devel libXext-devel libXt-devel lcms-devel libxml2-devel librsvg2-devel OpenEXR-devel php-devel
 
-# 可以直接通过 github 下载
-$ git clone https://github.com/ImageMagick/ImageMagick.git ImageMagick-7.1.0
+# 可以直接通过 github 下载最新版本
+$ git clone https://github.com/ImageMagick/ImageMagick.git 
 
-# 安装 ImageMagick
-$ wget https://www.imagemagick.org/download/ImageMagick.tar.gz
-$ tar zvxf ImageMagick.tar.gz
+# 下载并安装制定版本 ImageMagick
+$ wget https://download.imagemagick.org/archive/releases/ImageMagick-7.0.10-23.tar.xz
+$ tar xvJf ImageMagick-7.0.10-23.tar.xz
 $ cd ImageMagick-7.0.10-23
 $ ./configure --prefix=/data/software/imagemagick-7.0.10-23
 $ make
@@ -48,7 +48,7 @@ $ make install
 
 ### 1.2 conda 安装
 
-没有 root 的权限，使用 conda 安装 ImageMagick 是最快捷有效的方式，推荐使用。
+没有 root 的权限，使用 `conda` 安装 ImageMagick 是最快捷有效的方式，推荐使用。
 
 ```bash
 $ conda search imagemagick
@@ -59,17 +59,15 @@ $ conda create -n imagemagick imagemagick
 
 ImageMagick 的使用网络上教程非常非常多，这里就不一一再重复了，需要的自己去百度或者谷歌。说几点使用过程中的小发现。
 
-1.  从 ImageMagick 7 起，magick 命令替换了原来的 convert 命令，但 convert 命令依然可以使用。
+1. 从 ImageMagick 7 起，`magick` 命令替换了原来的 `convert` 命令，但 `convert` 命令依然可以使用。       
+   ![imagemagick-7.0.10-23.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjVqFwYsqGwrbxwL3YgEK2z9C5wu.png)
 
-![imagemagick-7.0.10-23.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjVqFwYsqGwrbxwL3YgEK2z9C5wu.png)
-
-2.  ImageMagick 6.7.8-9 版本的 convert 命令存在一些 bug，例如本人在执行 PDF→TIFF 的转换过程经常会出现一些莫名其妙的报错；升级成 7.0.10-23 的 magick 后，恢复正常！
-3.  ImageMagick 中的 convert/magick 一个命令就包含了超过 200 多个子命令（参数），功能非常强悍，也让人眼花缭乱。
-4.  convert/magick 不同的参数排列顺序，有时候会得到截然不同的处理性能和效果，这是让人非常头疼的一个问题，有时候你都不知道这个参数到底是放在输入文件前，还是放在输入文件后！
-5.  正常来说，一个图片当总像素大小保持不变，提高 dpi 会导致图片的物理尺寸变小。在 ImageMagick 中以 dpi 为变量，如何保证总像素大小不变前提下，自动转换图片格式，目前没找到更好的解决方法。![像素-dpi.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkQpB1Ot1G8fM73zjHqNXB5uCUet.png)
+2. ImageMagick 6.7.8-9 版本的 `convert` 命令存在一些 bug，例如本人在执行 PDF→TIFF 的转换过程经常会出现一些莫名其妙的报错；升级成 7.0.10-23 的 `magick` 后，恢复正常！
+3. ImageMagick 中的 `convert`/`magick` 一个命令就包含了超过 200 多个子命令（参数），功能非常强悍，也让人眼花缭乱。
+4. `convert`/`magick` 不同的参数排列顺序，有时候会得到截然不同的处理性能和效果，这是让人非常头疼的一个问题，有时候你都不知道这个参数到底是放在输入文件前，还是放在输入文件后！
+5. 正常来说，一个图片当总像素大小保持不变，提高 dpi 会导致图片的物理尺寸变小。在 ImageMagick 中以 dpi 为变量，如何保证总像素大小不变前提下，自动转换图片格式，目前没找到更好的解决方法。
+   ![ImageMagick-dpi](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkQpB1Ot1G8fM73zjHqNXB5uCUet.png)
 
 ## 3. 题外话
 
 一般的杂志期刊对于投稿图片都是有要求的，如果想要得到发文级别分辨率和尺寸的图片，除了在画图时进行参数设置，或手动 PS 以外，或许还有一些可以自动完成这一系列操作的平台，或者 AI 神器吧！遗憾的是，目前我还没找到！
-
-拭目以待\~\~
