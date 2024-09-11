@@ -121,7 +121,6 @@ make install
 ```
 
 2. 安装 `magick` 包
-
 ```bash
 # export PATH=/home/shenweiyan/software/ImageMagick-7.0.10-24/bin:$PATH
 # export PKG_CONFIG_PATH=/home/shenweiyan/software/ImageMagick-7.0.10-24/lib/pkgconfig:$PKG_CONFIG_PATH
@@ -133,7 +132,6 @@ make install
 ```
 
 3. 根据提示，先安装缺失的 `meme` 包，然后再安装 `yyplot`。
-
 ```r
 > library(remotes)
 > options("repos"=c(CRAN="https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
