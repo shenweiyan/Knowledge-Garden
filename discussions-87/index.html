@@ -11640,26 +11640,28 @@
 </code></pre></div>
 最终解决方案：</p>
 <ol>
-<li>手动安装 <code>ggimage_0.3.1</code>。</li>
-</ol>
+<li>
+<p>手动安装 <code>ggimage_0.3.1</code>。
 <div class="highlight"><pre><span></span><code><span class="n">pkg</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&#39;http://cran.r-project.org/src/contrib/Archive/ggimage/ggimage_0.3.1.tar.gz&#39;</span>
 <span class="nf">install.packages</span><span class="p">(</span><span class="n">pkg</span><span class="p">,</span><span class="w"> </span><span class="n">repos</span><span class="o">=</span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="o">=</span><span class="s">&quot;source&quot;</span><span class="p">)</span>
-</code></pre></div>
-<ol>
-<li>配置必要环境</li>
-</ol>
+</code></pre></div></p>
+</li>
+<li>
+<p>配置必要环境。
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/home/shenweiyan/software/ImageMagick-7.0.10/bin:<span class="nv">$PATH</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span>/home/shenweiyan/software/ImageMagick-7.0.10/lib/pkgconfig:<span class="nv">$PKG_CONFIG_PATH</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/home/shenweiyan/software/ImageMagick-7.0.10/lib:<span class="nv">$LD_LIBRARY_PATH</span>
-</code></pre></div>
-<ol>
-<li>安装。根据提示，先安装缺失的 <code>meme</code> 包，然后再安装 <code>yyplot</code>。</li>
-</ol>
+</code></pre></div></p>
+</li>
+<li>
+<p>安装。根据提示，先安装缺失的 <code>meme</code> 包，然后再安装 <code>yyplot</code>。
 <div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">library</span><span class="p">(</span><span class="n">remotes</span><span class="p">)</span>
 <span class="o">&gt;</span><span class="w"> </span><span class="nf">options</span><span class="p">(</span><span class="s">&quot;repos&quot;</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="n">CRAN</span><span class="o">=</span><span class="s">&quot;https://mirrors.tuna.tsinghua.edu.cn/CRAN/&quot;</span><span class="p">))</span>
 <span class="o">&gt;</span><span class="w"> </span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;meme&#39;</span><span class="p">)</span>
 <span class="o">&gt;</span><span class="w"> </span><span class="n">remotes</span><span class="o">::</span><span class="nf">install_github</span><span class="p">(</span><span class="s">&quot;GuangchuangYu/yyplot&quot;</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></p>
+</li>
+</ol>
 <h2 id="r-430-安装">R-4.3.0 安装<a class="headerlink" href="#r-430-安装" title="Permanent link">&para;</a></h2>
 <p>R-4.3.0 安装 <code>magick_2.8.4</code> 会出现 <a href="https://github.com/ropensci/magick/issues/166">ropensci/magick#166</a> 的问题。根据 <a href="https://github.com/ropensci/magick/issues/166#issuecomment-457875591">ropensci/magick#166#issuecomment-457875591</a> 的描述，<strong>编译 ImageMagick 的 gcc 需要跟编译 R 的 gcc 保持版本一致</strong>。</p>
 <ol>
@@ -11726,7 +11728,7 @@ make<span class="w"> </span>install
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-11</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-12</span>
   </span>
 
     
