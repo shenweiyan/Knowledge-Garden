@@ -83,14 +83,12 @@ Save workspace image? [y/n/c]: n
 最终解决方案：
 
 1. 手动安装 `ggimage_0.3.1`。
-
 ```r
 pkg <- 'http://cran.r-project.org/src/contrib/Archive/ggimage/ggimage_0.3.1.tar.gz'
 install.packages(pkg, repos=NULL, type="source")
 ```
 
-2. 配置必要环境
-
+2. 配置必要环境。
 ```bash
 export PATH=/home/shenweiyan/software/ImageMagick-7.0.10/bin:$PATH
 export PKG_CONFIG_PATH=/home/shenweiyan/software/ImageMagick-7.0.10/lib/pkgconfig:$PKG_CONFIG_PATH
@@ -98,7 +96,6 @@ export LD_LIBRARY_PATH=/home/shenweiyan/software/ImageMagick-7.0.10/lib:$LD_LIBR
 ```
 
 3. 安装。根据提示，先安装缺失的 `meme` 包，然后再安装 `yyplot`。
-
 ```r
 > library(remotes)
 > options("repos"=c(CRAN="https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
