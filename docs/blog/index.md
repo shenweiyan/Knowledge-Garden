@@ -9,6 +9,7 @@ vssue: ""
 ??? "本站点所有博客文章归档"
 
     === "2024"
+        - 2024-09-24 [All in one](./discussions-88) 
         - 2024-08-20 [诛仙](./discussions-84) 
         - 2024-08-12 [解决 GitHub 提交次数多导致仓库体积过大的问题](./discussions-83) 
         - 2024-07-29 [巴黎奥运](./discussions-82) 
