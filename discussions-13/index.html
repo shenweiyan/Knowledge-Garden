@@ -1561,7 +1561,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="_sqlite3">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#系统已安装-sqlite3" class="md-nav__link">
@@ -1588,25 +1589,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="配置 sqlite3">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-配置环境" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 配置环境
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-调整源码或编译" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 调整源码或编译
-    </span>
-  </a>
-  
 </li>
         
       </ul>
@@ -1623,20 +1605,14 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_tkinter" class="md-nav__link">
     <span class="md-ellipsis">
       _tkinter
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="_tkinter">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_dbm" class="md-nav__link">
@@ -11727,7 +11703,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="_sqlite3">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#系统已安装-sqlite3" class="md-nav__link">
@@ -11754,25 +11731,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="配置 sqlite3">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-配置环境" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 配置环境
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-调整源码或编译" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 调整源码或编译
-    </span>
-  </a>
-  
 </li>
         
       </ul>
@@ -11789,20 +11747,14 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_tkinter" class="md-nav__link">
     <span class="md-ellipsis">
       _tkinter
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="_tkinter">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_dbm" class="md-nav__link">
@@ -12032,7 +11984,7 @@ built<span class="w"> </span>by<span class="w"> </span>the<span class="w"> </spa
 _abc<span class="w">                  </span>atexit<span class="w">                </span><span class="nb">pwd</span>
 <span class="nb">time</span>
 </code></pre></div>
-<h3 id="系统已安装-sqlite3">系统已安装 sqlite3<a class="headerlink" href="#系统已安装-sqlite3" title="Permanent link">&para;</a></h3>
+<h4 id="系统已安装-sqlite3">系统已安装 sqlite3<a class="headerlink" href="#系统已安装-sqlite3" title="Permanent link">&para;</a></h4>
 <p>如果执行 <strong>rpm -qa|grep sqlite</strong> 看到 sqlite 和 sqlite-devel 都已经安装（libsqlite3.so 默认保存在 /usr/lib64 下； <code>sqlite3.h</code> 默认保存在 <code>/usr/include</code> 下）。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sqlite3<span class="w"> </span>-version
 <span class="m">3</span>.6.20
@@ -12044,7 +11996,7 @@ $<span class="w"> </span>ll<span class="w"> </span>/usr/include/sqlite3.h
 -rw-r--r--<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span>263K<span class="w"> </span>Nov<span class="w"> </span><span class="m">25</span><span class="w">  </span><span class="m">2009</span><span class="w"> </span>/usr/include/sqlite3.h
 </code></pre></div>
 <p>但是，执行 <code>make</code> 依然出现以上报错，参考下面的方法《<a href="https://stackoverflow.com/questions/32779768/python-build-from-source-cannot-build-optional-module-sqlite3">python build from source: cannot build optional module sqlite3 - Stack Overflow</a>》。</p>
-<h3 id="手动安装-sqlite3">手动安装 sqlite3<a class="headerlink" href="#手动安装-sqlite3" title="Permanent link">&para;</a></h3>
+<h4 id="手动安装-sqlite3">手动安装 sqlite3<a class="headerlink" href="#手动安装-sqlite3" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz<span class="w"> </span>--no-check-certificate
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>sqlite-autoconf-3360000.tar.gz
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>sqlite-autoconf-3360000
@@ -12052,11 +12004,13 @@ $<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class=
 $<span class="w"> </span>make
 $<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
-<h3 id="配置-sqlite3">配置 sqlite3<a class="headerlink" href="#配置-sqlite3" title="Permanent link">&para;</a></h3>
-<h4 id="1-配置环境">1. 配置环境<a class="headerlink" href="#1-配置环境" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/lib:<span class="nv">$LD_LIBRARY_PATH</span>
+<h4 id="配置-sqlite3">配置 sqlite3<a class="headerlink" href="#配置-sqlite3" title="Permanent link">&para;</a></h4>
+<ol>
+<li>配置环境</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/lib:<span class="nv">$LD_LIBRARY_PATH</span>
 </code></pre></div>
-<h4 id="2-调整源码或编译">2. 调整源码或编译<a class="headerlink" href="#2-调整源码或编译" title="Permanent link">&para;</a></h4>
+2. 调整源码或编译</p>
 <p>对于 3.11.x 以上版本的 Python 可以在 <code>configure</code> 指定自定义安装的 sqlite3 路径解决 <code>_sqlite3</code> 依赖。
 <div class="highlight"><pre><span></span><code>./configure ... \
     LDFLAGS=&quot;-L/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/lib&quot; \
@@ -12114,7 +12068,7 @@ make<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </
     --with-openssl=/Bioinfo/Pipeline/SoftWare/openssl-1.1.1 \
     --with-openssl-rpath=/Bioinfo/Pipeline/SoftWare/openssl-1.1.1/lib \
 </code></pre></div></p>
-<h2 id="_tkinter">_tkinter<a class="headerlink" href="#_tkinter" title="Permanent link">&para;</a></h2>
+<h3 id="_tkinter">_tkinter<a class="headerlink" href="#_tkinter" title="Permanent link">&para;</a></h3>
 <p>Tkinter 模块缺失是一个比较棘手的问题，为此专门写了一篇文章来介绍这个问题。</p>
 <p>具体请参考：<a href="https://github.com/shenweiyan/Knowledge-Garden/discussions/12">Python 中 tkinter 源码安装使用与中文乱码 - Knowledge-Garden#12</a></p>
 <h3 id="_dbm">_dbm<a class="headerlink" href="#_dbm" title="Permanent link">&para;</a></h3>
@@ -12421,7 +12375,7 @@ $<span class="w"> </span>make<span class="w"> </span>install
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-15</span>
   </span>
 
     
