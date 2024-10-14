@@ -199,7 +199,7 @@ make install
 
 这里以 Python-3.11.6 为例，参考 [Python 3.11.0 install doesn’t recognize homebrew Tcl/Tk due to --with-tcltk-libs, --with-tcltk-includes switches being removed from 3.11 - pyenv#2499](https://github.com/pyenv/pyenv/issues/2499)，在编译安装过程中使用 `TCLTK_CFLAGS` 和 `TCLTK_LIBS` 解决 `_tkinter` 缺失的问题。
 ```
-export TCLTK_LIBS="-L/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/lib -ltcl8.6 -ltk8.6"
+export TCLTK_LIBS="-L/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/lib -ltcl8.6 -ltk8.6"  # 8.5.x 版本，需改为 -ltcl8.5 -ltk8.5
 export TCLTK_CFLAGS="-I/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/include"
 
 cd Python-3.11.6
