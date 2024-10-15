@@ -209,6 +209,10 @@ make && make install
 
 ![python3-confiigure-tkinter-yes](https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/KGarden/2023/python-3-tkinter.png)
 
+对于 Python 3.10.x (及以下版本，如 Python-3.9.18)，`configure` 中 `--with-tcltk-includes` 和 `--with-tcltk-libs` 的具体使用参考 <https://bugs.python.org/issue21887>：  
+   
+![tcltk-issue-21887-msg](https://kg.weiyan.cc/2024/10/tcltk-issue-21887-msg.webp)
+
 ### Python 2
 
 想要在 Python 2.7 安装 Tkinter，需要在编译过程中通过 `--with-tcltk-includes` 和 `--with-tcltk-libs` 中指定 ActiveTcl 的头文件以及库所在路径。
@@ -218,7 +222,7 @@ make && make install
 ```bash
 $ tar zvxf Python-2.7.15.tgz
 $ cd Python-2.7.15
-$ ./configure --prefix=/usr/local/software/python-2.7 --with-tcltk-includes='-I/usr/local/software/ActiveTcl-8.6/include' --with-tcltk-libs='/usr/local/software/ActiveTcl-8.6/lib/libtcl8.6.so /usr/local/software/ActiveTcl-8.6/lib/libtk8.6.so' --enable-optimizations
+$ ./configure --prefix=/usr/local/software/python-2.7 --with-tcltk-includes='-I/usr/local/software/ActiveTcl-8.6/include' --with-tcltk-libs='-L/usr/local/software/ActiveTcl-8.6/lib -ltcl8.6 -ltk8.6' --enable-optimizations
 $ make
 
 ......
