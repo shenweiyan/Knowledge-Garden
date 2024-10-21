@@ -11712,21 +11712,21 @@
 
   <h1>Galaxy 平台 release_24.x 升级之路</h1>
 
-<p>记录一下 Galaxy 分析平台从 release_20.09 升级到 release_24.0，横跨九个发布版本的升级之路。</p>
+<p>记录一下 Galaxy 分析平台从 <strong>release_20.09</strong> 升级到 <strong>release_24.0</strong>，横跨九个发布版本的升级之路。</p>
 <!-- more -->
 
 <h2 id="为什么要升级">为什么要升级<a class="headerlink" href="#为什么要升级" title="Permanent link">&para;</a></h2>
 <p>很主要的一个原因是随着新技术的更新，旧版本的使用可能会存在一些安全隐患，尤其对于提供互联网公开访问的平台。新版本的升级有助于捕获并应用所有先前的安全更新，以确保平台的安全性。</p>
 <h2 id="版本选择">版本选择<a class="headerlink" href="#版本选择" title="Permanent link">&para;</a></h2>
-<p>最开始选择的是 <a href="https://docs.galaxyproject.org/en/master/releases/24.1_announce_user.html">release_24.1</a> 版本，但好不容易安装完成后才发现，这个新版本中增加了一个常规途径下无法隐藏的 Activity Bar Interface，一时间无法忍受。
+<p>最开始选择的是 <a href="https://docs.galaxyproject.org/en/master/releases/24.1_announce_user.html">release_24.1</a> 版本，但好不容易安装完成后才发现，这个新版本中增加了一个常规途径下无法隐藏的 <strong>Activity Bar Interface</strong>，一时间无法忍受。
 <a class="glightbox" href="https://kg.weiyan.cc/2024/10/23.1-activity-bar.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="23.1-activity-bar" src="https://kg.weiyan.cc/2024/10/23.1-activity-bar.png" /></a>   <br />
 <a class="glightbox" href="https://kg.weiyan.cc/2024/10/galaxy-24.1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="galaxy-24.1" src="https://kg.weiyan.cc/2024/10/galaxy-24.1.png" /></a></p>
 <p>第二个原因是，后台 PostgreSQL 数据库的升级遇到了 <a href="https://help.galaxyproject.org/t/database-upgrade-error/13687">function gen_random_uuid() does not exist</a> 异常，一下子没法解决也不想去升级 PostgreSQL 版本。</p>
-<p>所以，最终选择了从 release_20.09 升级到次新的 release_24.0 版本方案。</p>
+<p>所以，最终选择了从 <strong>release_20.09</strong> 升级到次新的 <strong>release_24.0</strong> 版本方案。</p>
 <h2 id="安装系统环境">安装系统环境<a class="headerlink" href="#安装系统环境" title="Permanent link">&para;</a></h2>
 <p>这里以 release_24.1 作为示例，该环境要求同样适用于 release_24.0。</p>
-<p>Galaxy release_24.1 默认安装 node-v18.12.1，参考：run.sh → ./scripts/common_startup_functions.sh → ./scripts/common_startup.sh → nodeenv -n &ldquo;$NODE_VERSION&rdquo; -p 的安装代码。</p>
-<p>node-v18.12.1 下载地址：https://nodejs.org/download/release/v18.12.1/</p>
+<p>Galaxy release_24.1 默认安装 node-v18.12.1，参考：<code>run.sh</code> → <code>./scripts/common_startup_functions.sh</code> → <code>./scripts/common_startup.sh</code> → <code>nodeenv -n "$NODE_VERSION" -p</code> 的安装代码。</p>
+<p>node-v18.12.1 下载地址：<a href="https://nodejs.org/download/release/v18.12.1/">https://nodejs.org/download/release/v18.12.1/</a></p>
 <p>node-v18.12.1 要求 g++ 8.3.0 or clang++ 8.0.0：  <br />
 <a class="glightbox" href="https://kg.weiyan.cc/2024/10/node-v18.12.1-gcc.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="node-v18.12.1-gcc" src="https://kg.weiyan.cc/2024/10/node-v18.12.1-gcc.webp" /></a></p>
 <p>可以通过安装 Devtoolset 的方式解决：    </p>
@@ -11798,8 +11798,8 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <h2 id="pip-源">pip 源<a class="headerlink" href="#pip-源" title="Permanent link">&para;</a></h2>
 <p>Galaxy 在安装 <code>requirements.txt</code> 的时候默认使用下面两个源：</p>
 <ul>
-<li>https://wheels.galaxyproject.org/simple</li>
-<li>https://pypi.python.org/simple</li>
+<li><a href="https://wheels.galaxyproject.org/simple">https://wheels.galaxyproject.org/simple</a></li>
+<li><a href="https://pypi.python.org/simple">https://pypi.python.org/simple</a></li>
 </ul>
 <p>对于国内服务器，可以考虑更换为阿里云或者清华大学的 pip 源。可以：</p>
 <ul>
@@ -11818,21 +11818,10 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <h2 id="数据库升级">数据库升级<a class="headerlink" href="#数据库升级" title="Permanent link">&para;</a></h2>
 <p>这是本次 Galaxy 核心版本升级时候遇到的最大问题。</p>
 <p>由于 Galaxy 在 release_21.05 新增加了一个 <a href="https://github.com/galaxyproject/galaxy/pull/11914"><code>history_audit</code></a> 数据表，release_20.09 的数据库直接执行 <code>sh manage_db.sh upgrade</code> 升级的时候 <code>history_audit</code> 数据表并不会一并创建和更新，因此最终导致在 Galaxy 服务启动的时候发生错误。</p>
-<p>这应该是数据库升级时候的一个bug，经过摸索发现，目前可以通过分步升级的方式解决。</p>
-<ol>
-<li>先把 release_21.05 的 repo clone 下来，然后 build .venv 环境。
-   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>release_21.05<span class="w"> </span>https://github.com/galaxyproject/galaxy.git
-<span class="nb">cd</span><span class="w"> </span>galaxy
-virtualenv<span class="w"> </span>-p<span class="w"> </span>python3<span class="w"> </span>.venv
-.<span class="w"> </span>.venv/bin/activate
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-pip<span class="w"> </span>install<span class="w"> </span>psycopg2<span class="w"> </span>
-</code></pre></div></li>
-<li><code>.venv</code> 环境和 <code>requirements</code> 安装好后，在 <code>config/galaxy.yml</code> 配置好 <code>database_connection</code>。    </li>
-<li>执行 <code>sh manage_db.sh upgrade</code>，就可以成功把 postgresql database 从 20.09 升级到 21.05，这时候升级的数据后台中就可以看到新增加的 &ldquo;history_audit&rdquo; 数据库表了。  <br />
-<a class="glightbox" href="https://kg.weiyan.cc/2024/10/manage-db-21.05.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="manage-db-21.05" src="https://kg.weiyan.cc/2024/10/manage-db-21.05.png" /></a></li>
-<li>使用同样的方式把 21.05 版本的数据库再 upgrade 升级到 24.0 就可以了。</li>
-</ol>
+<p>这应该是数据库升级时候的一个bug，经过摸索发现，目前可以参考下面的文章，通过分步升级的方式解决。</p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/arRZ-3mMrpUIsXYuqg4sGQ">https://mp.weixin.qq.com/s/arRZ-3mMrpUIsXYuqg4sGQ</a></li>
+</ul>
 <p>以上解决方法，参考：<a href="https://github.com/galaxyproject/galaxy/issues/19016">galaxyproject/galaxy #19016</a>   </p>
 <p><a class="glightbox" href="https://kg.weiyan.cc/2024/10/galaxy-issues-19016.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="galaxy-issues-19016" src="https://kg.weiyan.cc/2024/10/galaxy-issues-19016.png" /></a></p>
 <h2 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h2>
@@ -11870,7 +11859,7 @@ pip<span class="w"> </span>install<span class="w"> </span>psycopg2<span class="w
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-22</span>
   </span>
 
     
