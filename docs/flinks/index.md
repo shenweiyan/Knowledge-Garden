@@ -71,6 +71,10 @@ updated: 2024-03-21
 
     言成的个人博客网站，寓意为让我们相逢在更高处。
 
+- __[Pepper的博客](https://uioqps.github.io/)__
+
+    生命留给有价值的事物才能创造价值。
+
 </div>
 
 <script src="https://giscus.app/client.js"

@@ -10,7 +10,7 @@ categories:
 labels: ['3.1.x-GalaxyOther']
 ---
 
-记录一下 Galaxy 分析平台从 release_20.09 升级到 release_24.0，横跨九个发布版本的升级之路。
+记录一下 Galaxy 分析平台从 **release_20.09** 升级到 **release_24.0**，横跨九个发布版本的升级之路。
 
 <!-- more -->
 
@@ -20,21 +20,21 @@ labels: ['3.1.x-GalaxyOther']
 
 ## 版本选择
 
-最开始选择的是 [release_24.1](https://docs.galaxyproject.org/en/master/releases/24.1_announce_user.html) 版本，但好不容易安装完成后才发现，这个新版本中增加了一个常规途径下无法隐藏的 Activity Bar Interface，一时间无法忍受。
+最开始选择的是 [release_24.1](https://docs.galaxyproject.org/en/master/releases/24.1_announce_user.html) 版本，但好不容易安装完成后才发现，这个新版本中增加了一个常规途径下无法隐藏的 **Activity Bar Interface**，一时间无法忍受。
 ![23.1-activity-bar](https://kg.weiyan.cc/2024/10/23.1-activity-bar.png)     
 ![galaxy-24.1](https://kg.weiyan.cc/2024/10/galaxy-24.1.png)
 
 第二个原因是，后台 PostgreSQL 数据库的升级遇到了 [function gen_random_uuid() does not exist](https://help.galaxyproject.org/t/database-upgrade-error/13687) 异常，一下子没法解决也不想去升级 PostgreSQL 版本。
 
-所以，最终选择了从 release_20.09 升级到次新的 release_24.0 版本方案。
+所以，最终选择了从 **release_20.09** 升级到次新的 **release_24.0** 版本方案。
 
 ## 安装系统环境
 
 这里以 release_24.1 作为示例，该环境要求同样适用于 release_24.0。
 
-Galaxy release_24.1 默认安装 node-v18.12.1，参考：run.sh → ./scripts/common_startup_functions.sh → ./scripts/common_startup.sh → nodeenv -n "$NODE_VERSION" -p 的安装代码。
+Galaxy release_24.1 默认安装 node-v18.12.1，参考：`run.sh` → `./scripts/common_startup_functions.sh` → `./scripts/common_startup.sh` → `nodeenv -n "$NODE_VERSION" -p` 的安装代码。
 
-node-v18.12.1 下载地址：https://nodejs.org/download/release/v18.12.1/
+node-v18.12.1 下载地址：<https://nodejs.org/download/release/v18.12.1/>
 
 node-v18.12.1 要求 g++ 8.3.0 or clang++ 8.0.0：    
 ![node-v18.12.1-gcc](https://kg.weiyan.cc/2024/10/node-v18.12.1-gcc.webp)
@@ -133,8 +133,8 @@ export PATH=/home/shenweiyan/software/node-v18.12.1/bin:$PATH
 
 Galaxy 在安装 `requirements.txt` 的时候默认使用下面两个源：
 
-- https://wheels.galaxyproject.org/simple
-- https://pypi.python.org/simple
+- <https://wheels.galaxyproject.org/simple>
+- <https://pypi.python.org/simple>
 
 对于国内服务器，可以考虑更换为阿里云或者清华大学的 pip 源。可以：
 
@@ -155,21 +155,9 @@ Galaxy 在安装 `requirements.txt` 的时候默认使用下面两个源：
 
 由于 Galaxy 在 release_21.05 新增加了一个 [`history_audit`](https://github.com/galaxyproject/galaxy/pull/11914) 数据表，release_20.09 的数据库直接执行 `sh manage_db.sh upgrade` 升级的时候 `history_audit` 数据表并不会一并创建和更新，因此最终导致在 Galaxy 服务启动的时候发生错误。
 
-这应该是数据库升级时候的一个bug，经过摸索发现，目前可以通过分步升级的方式解决。
+这应该是数据库升级时候的一个bug，经过摸索发现，目前可以参考下面的文章，通过分步升级的方式解决。
 
-1. 先把 release_21.05 的 repo clone 下来，然后 build .venv 环境。
-   ```bash
-   git clone -b release_21.05 https://github.com/galaxyproject/galaxy.git
-   cd galaxy
-   virtualenv -p python3 .venv
-   . .venv/bin/activate
-   pip install -r requirements.txt
-   pip install psycopg2 
-   ```
-2. `.venv` 环境和 `requirements` 安装好后，在 `config/galaxy.yml` 配置好 `database_connection`。    
-3. 执行 `sh manage_db.sh upgrade`，就可以成功把 postgresql database 从 20.09 升级到 21.05，这时候升级的数据后台中就可以看到新增加的 "history_audit" 数据库表了。    
-   ![manage-db-21.05](https://kg.weiyan.cc/2024/10/manage-db-21.05.png)
-4. 使用同样的方式把 21.05 版本的数据库再 upgrade 升级到 24.0 就可以了。
+- <https://mp.weixin.qq.com/s/arRZ-3mMrpUIsXYuqg4sGQ>
 
 以上解决方法，参考：[galaxyproject/galaxy #19016](https://github.com/galaxyproject/galaxy/issues/19016)   
   
