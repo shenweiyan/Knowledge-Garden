@@ -29,7 +29,7 @@
     
     
       
-        <title>Linux 服务器更换主板后网卡识别失败处理方法 - 维燕的知识花园</title>
+        <title>RHEL 6.X 更换主板后网卡识别失败处理方法 - 维燕的知识花园</title>
       
     
     
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-无法识别到-eth0-eth1-等网卡设备" class="md-skip">
+        <a href="#1-识别不到网卡设备" class="md-skip">
           跳转至
         </a>
       
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linux 服务器更换主板后网卡识别失败处理方法
+              RHEL 6.X 更换主板后网卡识别失败处理方法
             
           </span>
         </div>
@@ -5944,7 +5944,7 @@
           
   
   <span class="md-ellipsis">
-    Linux 服务器更换主板后网卡识别失败处理方法
+    RHEL 6.X 更换主板后网卡识别失败处理方法
   </span>
   
 
@@ -5955,7 +5955,7 @@
         
   
   <span class="md-ellipsis">
-    Linux 服务器更换主板后网卡识别失败处理方法
+    RHEL 6.X 更换主板后网卡识别失败处理方法
   </span>
   
 
@@ -5975,9 +5975,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-无法识别到-eth0-eth1-等网卡设备" class="md-nav__link">
+  <a href="#1-识别不到网卡设备" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 无法识别到 eth0 eth1 等网卡设备
+      1. 识别不到网卡设备
     </span>
   </a>
   
@@ -11578,9 +11578,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-无法识别到-eth0-eth1-等网卡设备" class="md-nav__link">
+  <a href="#1-识别不到网卡设备" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 无法识别到 eth0 eth1 等网卡设备
+      1. 识别不到网卡设备
     </span>
   </a>
   
@@ -11653,17 +11653,17 @@
   
 
 
-  <h1>Linux 服务器更换主板后网卡识别失败处理方法</h1>
+  <h1>RHEL 6.X 更换主板后网卡识别失败处理方法</h1>
 
-<p>上周日，由于断电，公司所在的集群服务器在关机断电重启后，发现唯一的一个登陆节点主板出现了故障，以致于 log 节点的 Red Hat Enterprise 6  系统无法启动。 <br />
-<a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsBJMj7aTqfSBLGU8HM1bGf9GmXx.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="03.jpg" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsBJMj7aTqfSBLGU8HM1bGf9GmXx.jpeg" /></a></p>
+<p>上周日，由于断电导致公司所在的集群服务器在关机断电重启后，发现唯一的一个登陆节点主板出现了故障，以致于 log 节点的 Red Hat Enterprise 6  系统无法启动。 </p>
+<p><a class="glightbox" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsBJMj7aTqfSBLGU8HM1bGf9GmXx.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="03.jpg" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsBJMj7aTqfSBLGU8HM1bGf9GmXx.jpeg" /></a></p>
 <p>由于集群是生信所有分析工作的基础，我们所用的 IBM LSF 集群一共又 30 多个计算节点，其中还包括了 2 个大内存 fat 节点，log 节点挂掉后，整个生信部门几十号人的工作都没法正常进行，情况可谓是非常紧迫。负责硬件的同时在加班加点联系供应商更换主板后，终于可以把系统启动起来，但是问题也来了：</p>
 <ul>
-<li>系统启动后一直提示 &ldquo;Network is unreachable&rdquo; 错误，log 无法跟计算、管理、存储等节点进行网络连接！</li>
+<li>系统启动后一直提示 <strong>&ldquo;Network is unreachable&rdquo;</strong> 错误，log 无法跟计算、管理、存储等节点进行网络连接！</li>
 <li>供应商负责硬件更换后就走人了，系统层面各种服务还是需要自己去解决。</li>
 </ul>
 <p>这个文章主要参考<a href="https://home.cnblogs.com/u/kevingrace/">散尽浮华</a>(高级 Linux 运维工程师)在博客园的相关文章，对 Linux 服务器更换主板后，网卡识别失败的处理进行一下记录与分享，以作备忘。</p>
-<h2 id="1-无法识别到-eth0-eth1-等网卡设备">1. 无法识别到 eth0 eth1 等网卡设备<a class="headerlink" href="#1-无法识别到-eth0-eth1-等网卡设备" title="Permanent link">&para;</a></h2>
+<h2 id="1-识别不到网卡设备">1. 识别不到网卡设备<a class="headerlink" href="#1-识别不到网卡设备" title="Permanent link">&para;</a></h2>
 <p>公司 IDC 机房里的一台线上服务器硬件报警，最后排查发现服务器主板坏了，随即联系厂商进行更换主板，最后更换后，登录服务器，发现网卡绑定及 ip 信息都在，但是 ip 却 ping 不通了，进一步排查，重启网卡，提示之前的 eth0 和 eth1 网卡设备发现不了了，也就是说服务器主板更换后，之前的网卡设备都识别不了了！</p>
 <p>主板更换后，重启并登陆服务器，发现之前的网卡设备（eth0、eth1、eth2、eth3）都没有了！</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@kevin01<span class="w"> </span>~<span class="o">]</span><span class="c1"># ifconfig -a</span>
@@ -11834,15 +11834,13 @@ PING<span class="w"> </span><span class="m">192</span>.168.10.23<span class="w">
 <p><strong>有时候重启后还是出现以上情况，对比之前的 <code>/etc/udev/rules.d/70-persistent-net.rules</code> 文件，新的文件 mac 地址和 name 已经改变，name=eth0 和之前 name=em1 的名字不同！</strong></p>
 </div>
 <h2 id="4-后话">4. 后话<a class="headerlink" href="#4-后话" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>如果你的服务器有 4 个网卡，重启后对比之前的 <code>/etc/udev/rules.d/70-persistent-net.rules</code> 文件，发现新文件 mac 地址和 name 已经改变，name 变成了 name=eth4，name=eth5，name=eth6，name=eth7，这也是正常的。使用 <code>ifconfig -a</code> 命令也是同样的道理。</p>
-<p>此外，如果你在  <code>/etc/sysconfig/network-scripts/</code> 中分别使用  ifcfg-eth0、ifcfg-eth1、ifcfg-eth2、ifcfg-eth3 对四个网卡进行 IP、网关等做了绑定，你需要：</p>
+<p>如果你的服务器有 4 个网卡，重启后对比之前的 <code>/etc/udev/rules.d/70-persistent-net.rules</code> 文件，发现新文件 mac 地址和 name 已经改变，但 name 变成了 name=eth4，name=eth5，name=eth6，name=eth7，这也是正常的。使用 <code>ifconfig -a</code> 命令也是同样的道理。</p>
+<p>此外，如果你在 <code>/etc/sysconfig/network-scripts/</code> 中分别使用 ifcfg-eth0、ifcfg-eth1、ifcfg-eth2、ifcfg-eth3 对四个网卡进行 IP、网关等做了绑定，你需要：</p>
 <ul>
-<li>分别把这四个文件名改为  ifcfg-eth4、ifcfg-eth5、ifcfg-eth6、ifcfg-eth7，并把其中的 MAC 地址(HWADDR)改为对应的新 MAC 地址；</li>
-<li>或者，把  <code>/etc/udev/rules.d/70-persistent-net.rules</code> 文件中的 name 分别改成 name=eth0，name=eth1，name=eth2，name=eth3，同时修改  ifcfg-eth0、ifcfg-eth1、ifcfg-eth2、ifcfg-eth3 文件中对应的 MAC 地址(HWADDR)；</li>
+<li>分别把这四个文件名改为 ifcfg-eth4、ifcfg-eth5、ifcfg-eth6、ifcfg-eth7，并把其中的 MAC 地址 (HWADDR) 改为对应的新 MAC 地址；</li>
+<li>或者，把 <code>/etc/udev/rules.d/70-persistent-net.rules</code> 文件中的 name 分别改成 name=eth0，name=eth1，name=eth2，name=eth3，同时修改 ifcfg-eth0、ifcfg-eth1、ifcfg-eth2、ifcfg-eth3 文件中对应的 MAC 地址(HWADDR)；</li>
 <li>重启网络服务。</li>
 </ul>
-</blockquote>
 <h2 id="5-参考资料">5. 参考资料<a class="headerlink" href="#5-参考资料" title="Permanent link">&para;</a></h2>
 <ul>
 <li>散尽浮华，《<a href="https://www.cnblogs.com/kevingrace/p/8524664.html">Linux 服务器更换主板后，网卡识别失败的处理方法</a>》，博客园</li>
