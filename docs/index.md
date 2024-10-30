@@ -79,7 +79,7 @@ template: home.html
 - [gh-pages.weiyan.cc](https://gh-pages.weiyan.cc)：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟。
 
 <p align="center">
-    <img src="https://shub.weiyan.tech/mkdocs/kg-readme-cover.gif" alt><br>
+    <img src="https://shub.weiyan.tech/mkdocs/kg-readme-cover.gif" alt='readme-cover'><br>
 </p>
 
 !!! abstract "希望所有读到此博客文章的读者都有所收获"
