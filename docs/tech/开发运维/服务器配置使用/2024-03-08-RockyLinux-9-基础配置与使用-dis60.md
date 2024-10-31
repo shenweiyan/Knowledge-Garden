@@ -80,12 +80,17 @@ sudo dnf install epel-release
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ```
 
-## Htop
+## Htop 和 Btop
 
-[Htop](https://htop.dev/) 是一个基于 C 编写的跨平台的交互式流程查看器，相比系统自带的 `top` 更加直观好用。 
+[Htop](https://htop.dev/) 是一个基于 C 编写的跨平台的交互式流程查看器，`htop` 是 `top` 的一个增强替代品，提供了更加友好的用户界面和更多的功能，相比系统自带的 `top` 更加直观好用。 
 
 ```bash
 sudo dnf install htop
+```
+
+`btop` 也是一个改进版的 Linux top 命令，这个命令不仅列出了各种系统使用情况，包括内存、磁盘、网络和进程，而且还允许与鼠标互动。即使是在服务器安装上，你也可以在 `btop` 上指指点点，以树形方式查看进程，隐藏或显示某些显示，并访问选项菜单，在那里你可以调整显示的外观和感觉。
+```bash
+sudo dnf install btop
 ```
 
 ## Docker 安装与使用
