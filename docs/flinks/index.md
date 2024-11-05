@@ -75,6 +75,10 @@ updated: 2024-03-21
 
     生命留给有价值的事物才能创造价值。
 
+- __[LINUX DO](https://linux.do/?source=weiyan_cc)__
+
+    新的理想型社区。
+
 </div>
 
 <script src="https://giscus.app/client.js"

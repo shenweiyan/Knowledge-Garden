@@ -12,16 +12,17 @@ labels: ['语雀', '1.3.25-静态网站']
 
 > Via：[我给自己做了一个导航网站](https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag) | [BioIT爱好者](https://www.bioitee.com)    
 
-**让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 [喝杯咖啡](https://kg.weiyan.cc/0000/img/donate.webp) >.<**
+<br/>
+
+**📢 让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 [喝杯咖啡](https://kg.weiyan.cc/0000/img/donate.webp) >.<**
 
 ## 主题开源地址    
-- GitHub：[https://github.com/shenweiyan/WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo)   
-- Gitee：[https://gitee.com/shenweiyan/WebStack-Hugo](https://gitee.com/shenweiyan/WebStack-Hugo)
+
+[**GitHub**](https://github.com/shenweiyan/WebStack-Hugo) | [**Gitee**](https://gitee.com/shenweiyan/WebStack-Hugo) | [**GitCode**](https://gitcode.com/shenweiyan/WebStack-Hugo)
 
 ## 主题展示地址
 
-- [https://www.bioit.top/](https://www.bioit.top/) - WebStack-Hugo 网址导航
-- [https://hao.bioitee.com/](https://hao.bioitee.com/) - 生信网址导航
+[**WebStack-Hugo 网址导航**](https://bioit.top/) | [**生信网址导航**](https://hao.bioitee.com/) 
 
 ## 为什么做这个网站
 
