@@ -27,7 +27,7 @@ vssue: ""
         - 2024-04-22 [我的独立站点 Knowledge-Garden](./discussions-69) 
         - 2024-04-22 [部署 PicX 图床到 Vercel](./discussions-68) 
         - 2024-04-15 [国内静态部署与托管平台](./discussions-67) 
-        - 2024-04-11 [备案接入信息与实际接入信息不符](./discussions-66) 
+        - 2024-04-11 [阿里云域名备案与使用](./discussions-66) 
         - 2024-04-11 [RSS 订阅插件 mkdocs-rss-plugin 的一些问题](./discussions-65) 
         - 2024-04-07 [无趣的人](./discussions-64) 
         - 2024-03-29 [腾讯云 cos 也被盗刷了](./discussions-63) 
