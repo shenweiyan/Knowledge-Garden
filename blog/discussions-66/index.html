@@ -11704,6 +11704,9 @@
 <p><a class="glightbox" href="https://static.weiyan.tech/2024/04/beian-weiyan-cc.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="beian-weiyan-cc.webp" src="https://static.weiyan.tech/2024/04/beian-weiyan-cc.webp" /></a></p>
 <p>目前，参考知乎《<a href="https://zhuanlan.zhihu.com/p/516077564">阿里云服务器备案域名会掉吗</a>》的方法 —— 先把目前 <code>weiyan.cc</code> 下的一到两个子域名增加一个 A 记录绑定到阿里云的 ECS 公网 IP，主域名继续按目前的要求通过 CNAME 绑定 <a href="https://weiyan.netlify.app">weiyan.netlify.app</a>。</p>
 <p>再看看后续是否有影响。</p>
+<ul>
+<li>2024年11月28日，半年过去了，这个方法好像的确可以。</li>
+</ul>
 <h2 id="已备案域名未使用阿里云中国内地节点服务器">已备案域名未使用阿里云中国内地节点服务器<a class="headerlink" href="#已备案域名未使用阿里云中国内地节点服务器" title="Permanent link">&para;</a></h2>
 <p>这是 2024-11-19 收到的阿里云消息，发现个人博客类网站现在用起真的是门槛越来越高。</p>
 <blockquote>
@@ -11711,6 +11714,9 @@
 </blockquote>
 <p><a class="glightbox" href="https://kg.weiyan.cc/2024/11/beian-aliyun-server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="beian-aliyun-server" src="https://kg.weiyan.cc/2024/11/beian-aliyun-server.png" /></a></p>
 <p>参考了一些人的<a href="https://blog.csdn.net/qq_36759224/article/details/104210934">方法</a>：将你的域名添加一个二级域名，解析到某些阿里云国内节点服务器上就行了。例如我博客域名为 <code>www.abcde.com</code>，就可以添加一个或者两个 A 记录，记录值为阿里云国内节点服务器的 IP。然后隔一段时间访问一下 <code>1.abcde.com</code> 或者 <code>2.abcde.com</code> ，确保有一点儿访问量就行了。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 用最简单的方式在服务器开启一个 HTML </span>
+nohup<span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span>--cgi<span class="w"> </span><span class="m">80</span><span class="w"> </span><span class="p">&amp;</span>
+</code></pre></div>
 <p>也有人说，必须是 <code>www</code> 和根域名，其他不行，先试试二级域名吧！</p>
 <p>目前尚不清楚这样的做法是否能确保备案不失效，如果备案失效，很可能导致域名被墙的，根据网络上一些人的说法，默认不影响站点访问，但是个别城市的运营商会屏蔽（和你没关系，是他们一刀切了国外 IP 的解析）。</p>
 <script src="https://giscus.app/client.js"
@@ -11746,7 +11752,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-29</span>
   </span>
 
     
