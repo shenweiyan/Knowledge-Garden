@@ -79,6 +79,10 @@ updated: 2024-03-21
 
     新的理想型社区。
 
+- __[Wanjin Hu (胡万金)](https://wanjinhu.github.io/)__
+
+    思考人生，探索世界，知行合一。
+
 </div>
 
 <script src="https://giscus.app/client.js"
