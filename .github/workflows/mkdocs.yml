@@ -1,0 +1,67 @@
+name: mkdocs-deploy
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+      - cron: '0 19 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v4
+
+      - name: Git config
+        run: |
+          git config --global user.name "shenweiyan"
+          git config --global user.email "weiyanshum@gmail.com"
+
+      - name: Git Pull
+        run: git pull
+
+      - name: Install Python3
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requirements
+        run: pip3 install requests python-slugify pytz PyYaml
+
+      - name: Get All Discussions
+        run: python3 script/getAllDiscussions.py -r shenweiyan/Knowledge-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }} -o docs/Discussions.txt
+
+      - name: Generate blog posts 
+        run: python3 script/discussions2blog.py -i docs/Discussions.txt
+
+      - name: Generate mkdocs posts
+        run: python3 script/discussions2mkdocs.py -i docs/Discussions.txt -c nav4dir.yml
+
+      - name: Generate mkdocs special pages
+        run: python3 script/discussions4pages.py -i docs/Discussions.txt
+
+      - name: Commit files
+        run: |
+          current="`TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S'`"
+          message="Add Changes By GitHub Actions: $current (CST/UTC-8)"
+          echo "$message" > update.log          
+          git add --all
+          git commit -a -m "$message" 
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          branch: main
+
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install -r requirements.txt
+      - run: mkdocs gh-deploy --force
