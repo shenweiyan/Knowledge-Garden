@@ -6,7 +6,7 @@
   ![订阅 GitHub Discussions](https://shub.weiyan.tech/website/watch-github-discussions.png)
 
 - 从 RSS 订阅 Discussions          
-  <https://github.com/shenweiyan/Knowledge-Garden/discussions.atom>
+  <https://github.com/shenweiyan/Digital-Garden/discussions.atom>
 
 ## 特别说明
 
