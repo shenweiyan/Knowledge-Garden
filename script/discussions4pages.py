@@ -55,7 +55,7 @@ def __main__():
 
             # 使用 giscus 加载评论
             comments = ( f'\n\n<script src="https://giscus.app/client.js"\n'
-                         f'\tdata-repo="shenweiyan/Knowledge-Garden"\n'
+                         f'\tdata-repo="shenweiyan/Digital-Garden"\n'
                          f'\tdata-repo-id="R_kgDOKgxWlg"\n'
                          f'\tdata-mapping="number"\n'
                          f'\tdata-term="{discussion_number}"\n'

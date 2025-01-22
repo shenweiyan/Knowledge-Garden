@@ -11,7 +11,7 @@ updated: "2024-03-18"
   <p align="center">"感谢你的支持，我们一定会越来越好"</p>
 </div>
 
-语雀，是一个非常优秀的文档和知识库工具，也曾经是个人知识和文档记录的一个非常重要的平台。但由于工作和其他的一些原因，逐渐从[语雀](https://www.yuque.com/shenweiyan)转移到了 [GitHub](https://github.com/shenweiyan/Knowledge-Garden/)，作为历史文章的一个备份，你可以通过下面的链接访问我的语雀花园主页。
+语雀，是一个非常优秀的文档和知识库工具，也曾经是个人知识和文档记录的一个非常重要的平台。但由于工作和其他的一些原因，逐渐从[语雀](https://www.yuque.com/shenweiyan)转移到了 [GitHub](https://github.com/shenweiyan/Digital-Garden/)，作为历史文章的一个备份，你可以通过下面的链接访问我的语雀花园主页。
 
 <!--p style="text-align:center"><a href="https://www.yuque.com/shenweiyan" target="_blank">章鱼猫先生 - 语雀</a></p-->
 

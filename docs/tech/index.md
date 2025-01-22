@@ -9,9 +9,9 @@ Bio & IT 技术私房菜。
 
 这作者关于生物信息学、互联网 IT、运维开发、软件安装部署、测评使用等方向的文章集合，大部分为原创。
 
-1. 本节点的所有文章均来源于个人在 GitHub 的 "[Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/discussions)" 仓库讨论区。
+1. 本节点的所有文章均来源于个人在 GitHub 的 "[Digital-Garden](https://github.com/shenweiyan/Digital-Garden/discussions)" 仓库讨论区。
 
-2. 基于 [GitHub Actions](https://github.com/shenweiyan/Knowledge-Garden/blob/main/.github/workflows/mkdocs.yml) + 一系列 [Python script](https://github.com/shenweiyan/Knowledge-Garden/tree/main/script) 实现每天同步更新与部署。
+2. 基于 [GitHub Actions](https://github.com/shenweiyan/Digital-Garden/blob/main/.github/workflows/mkdocs.yml) + 一系列 [Python script](https://github.com/shenweiyan/Digital-Garden/tree/main/script) 实现每天同步更新与部署。
 
 
 ## 正确的打开方式

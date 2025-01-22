@@ -87,7 +87,7 @@ updated: 2024-03-21
 </div>
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="5"

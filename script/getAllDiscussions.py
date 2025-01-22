@@ -74,7 +74,7 @@ def get_discussions(query, url, headers):
 
 def __main__():
     usage  = "usage: python3 %prog [options] \n\nExample:\n"
-    usage  = usage + "    python3 %prog -r <shenweiyan/Knowledge-Garden> -t <github token> -o out.txt"
+    usage  = usage + "    python3 %prog -r <shenweiyan/Digital-Garden> -t <github token> -o out.txt"
     usage  = usage + "\n\nDescription:\n"
     usage  = usage + "    1. Fetch GitHub discussions data to mkdocs."
     parser = optparse.OptionParser(usage=usage)

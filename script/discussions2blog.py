@@ -85,7 +85,7 @@ def __main__():
             
             # 使用 giscus 加载评论
             comments = ( f'\n\n<script src="https://giscus.app/client.js"\n'
-                         f'\tdata-repo="shenweiyan/Knowledge-Garden"\n'
+                         f'\tdata-repo="shenweiyan/Digital-Garden"\n'
                          f'\tdata-repo-id="R_kgDOKgxWlg"\n'
                          f'\tdata-mapping="number"\n'
                          f'\tdata-term="{discussion_number}"\n'
@@ -118,7 +118,7 @@ def __main__():
                        f'vssue: ""\n'
                        f'---\n\n'
                        f'# 博客文章\n\n'
-                       f'这是首发于 [GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions)，并定期同步更新至 Material for MkDocs 本站点上的博客文章。\n\n'
+                       f'这是首发于 [GitHub Discussions](https://github.com/shenweiyan/Digital-Garden/discussions)，并定期同步更新至 Material for MkDocs 本站点上的博客文章。\n\n'
                        f'??? "本站点所有博客文章归档"\n\n')
 
     # 保存博客的主页面输出结果

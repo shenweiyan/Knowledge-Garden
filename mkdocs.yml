@@ -1,14 +1,14 @@
 site_dir: "site"
 site_url: https://weiyan.cc/
-site_name: 维燕的知识花园
+site_name: 维燕的数字花园
 site_description: '记录 Bio+IT 相关知识，沉淀生活，记录点滴。'
 
 # Docs 
 docs_dir: "docs"
 
 # Repository
-repo_name: Knowledge-Garden
-repo_url: https://github.com/shenweiyan/Knowledge-Garden/
+repo_name: Digital-Garden
+repo_url: https://github.com/shenweiyan/Digital-Garden/
 edit_uri: edit/main/docs/
 site_author: Steven Shum
 
