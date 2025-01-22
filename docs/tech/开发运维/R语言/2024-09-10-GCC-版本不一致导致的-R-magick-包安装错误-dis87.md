@@ -2,7 +2,7 @@
 title: GCC 版本不一致导致的 R magick 包安装错误
 number: 87
 slug: discussions-87/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/87
+url: https://github.com/shenweiyan/Digital-Garden/discussions/87
 date: 2024-09-10
 authors: [shenweiyan]
 categories: 
@@ -137,7 +137,7 @@ make install
 ```
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="87"

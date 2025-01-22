@@ -2,7 +2,7 @@
 title: MkDocs Material 安装部署和使用
 number: 37
 slug: discussions-37/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/37
+url: https://github.com/shenweiyan/Digital-Garden/discussions/37
 date: 2023-12-06
 authors: [shenweiyan]
 categories: 
@@ -72,7 +72,7 @@ $ mkdocs serve -a 0.0.0.0:8000
     内置隐私插件(privacy plugin) 在 [9.5.0](https://github.com/squidfunk/mkdocs-material/releases/tag/9.5.0) 中已经k可以正常使用了，下一个值得期待的就是该插件的 [`assets_exclude`](https://squidfunk.github.io/mkdocs-material/plugins/privacy/#config.assets_exclude) 功能！
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="37"

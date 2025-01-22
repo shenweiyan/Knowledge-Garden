@@ -2,7 +2,7 @@
 title: WebStack-Hugo | 一个静态响应式导航主题
 number: 10
 slug: discussions-10/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/10
+url: https://github.com/shenweiyan/Digital-Garden/discussions/10
 date: 2023-10-23
 authors: [shenweiyan]
 categories: 
@@ -378,7 +378,7 @@ WebStack 有非常多的魔改版本，这是其中一个。
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="10"

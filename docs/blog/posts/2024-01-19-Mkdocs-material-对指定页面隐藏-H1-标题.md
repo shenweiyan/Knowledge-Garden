@@ -2,7 +2,7 @@
 title: Mkdocs material 对指定页面隐藏 H1 标题
 number: 53
 slug: discussions-53/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/53
+url: https://github.com/shenweiyan/Digital-Garden/discussions/53
 date: 2024-01-19
 authors: [shenweiyan]
 categories: 
@@ -86,7 +86,7 @@ template: home.html
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="53"

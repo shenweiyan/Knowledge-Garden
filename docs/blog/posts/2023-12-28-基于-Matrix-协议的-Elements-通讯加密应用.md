@@ -2,7 +2,7 @@
 title: 基于 Matrix 协议的 Elements 通讯加密应用
 number: 42
 slug: discussions-42/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/42
+url: https://github.com/shenweiyan/Digital-Garden/discussions/42
 date: 2023-12-28
 authors: [shenweiyan]
 categories: 
@@ -19,7 +19,7 @@ Element 是 Matrix 官方性质的，基于 Web 技术的 Matrix 客户端实现
 Element 可以和 GitHub 的仓库实现关联，把 GitHub 仓库的诸多信息同步到 Element。
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="42"

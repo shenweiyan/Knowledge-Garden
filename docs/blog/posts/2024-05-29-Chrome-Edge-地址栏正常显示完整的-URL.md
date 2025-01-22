@@ -2,7 +2,7 @@
 title: Chrome/Edge 地址栏正常显示完整的 URL
 number: 74
 slug: discussions-74/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/74
+url: https://github.com/shenweiyan/Digital-Garden/discussions/74
 date: 2024-05-29
 authors: [shenweiyan]
 categories: 
@@ -34,7 +34,7 @@ Google Chrome 对于这个问题的解决方法很简单：在 URL 地址栏点�
 3. 重启浏览器后地址栏就可以显示完整 URL 了。
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="74"

@@ -2,7 +2,7 @@
 title: 兆碱基中关于 Kb、KB、Bps、bps 的区别
 number: 20
 slug: discussions-20/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/20
+url: https://github.com/shenweiyan/Digital-Garden/discussions/20
 date: 2023-11-23
 authors: [shenweiyan]
 categories: 
@@ -113,7 +113,7 @@ bps 是通常用来**衡量带宽**的单位，常见于表示数据机及网络
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="20"

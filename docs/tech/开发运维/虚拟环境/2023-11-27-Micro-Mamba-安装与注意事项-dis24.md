@@ -2,7 +2,7 @@
 title: Micro/Mamba 安装与注意事项
 number: 24
 slug: discussions-24/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/24
+url: https://github.com/shenweiyan/Digital-Garden/discussions/24
 date: 2023-11-27
 authors: [shenweiyan]
 categories: 
@@ -131,7 +131,7 @@ micromamba config set channel_priority strict
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="24"

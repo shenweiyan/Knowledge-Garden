@@ -2,7 +2,7 @@
 title: 使用 Planemo 进行 Galaxy 工具开发
 number: 57
 slug: discussions-57/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/57
+url: https://github.com/shenweiyan/Digital-Garden/discussions/57
 date: 2024-02-04
 authors: [shenweiyan]
 categories: 
@@ -766,7 +766,7 @@ Options: -q INT    mask bases with quality lower than INT [0]
 - [Cheetah templating](https://cheetahtemplate.org/users_guide/index.html)
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="57"

@@ -2,7 +2,7 @@
 title: Galaxy 平台 release_24.x 升级之路
 number: 90
 slug: discussions-90/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/90
+url: https://github.com/shenweiyan/Digital-Garden/discussions/90
 date: 2024-10-18
 authors: [shenweiyan]
 categories: 
@@ -169,7 +169,7 @@ Galaxy 在安装 `requirements.txt` 的时候默认使用下面两个源：
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="90"

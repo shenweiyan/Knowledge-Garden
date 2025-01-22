@@ -2,7 +2,7 @@
 title: 不要使用 requirements.txt
 number: 44
 slug: discussions-44/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/44
+url: https://github.com/shenweiyan/Digital-Garden/discussions/44
 date: 2024-01-03
 authors: [shenweiyan]
 categories: 
@@ -82,7 +82,7 @@ Clojure 社区通过始终使用明确的版本而不是版本范围来解决了
 相比之下，在 Python 和 Node.js 社区，通常期望库列出其依赖项的版本范围，而软件包管理工具会抱怨版本不匹配的问题。
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="44"

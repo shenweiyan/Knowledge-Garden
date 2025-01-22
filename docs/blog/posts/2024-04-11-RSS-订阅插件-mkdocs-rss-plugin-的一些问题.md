@@ -2,7 +2,7 @@
 title: RSS 订阅插件 mkdocs-rss-plugin 的一些问题
 number: 65
 slug: discussions-65/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/65
+url: https://github.com/shenweiyan/Digital-Garden/discussions/65
 date: 2024-04-11
 authors: [shenweiyan]
 categories: 
@@ -33,7 +33,7 @@ plugins:
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="65"

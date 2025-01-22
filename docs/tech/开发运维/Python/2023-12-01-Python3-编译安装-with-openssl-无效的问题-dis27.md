@@ -2,7 +2,7 @@
 title: Python3 编译安装 --with-openssl 无效的问题
 number: 27
 slug: discussions-27/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/27
+url: https://github.com/shenweiyan/Digital-Garden/discussions/27
 date: 2023-12-01
 authors: [shenweiyan]
 categories: 
@@ -90,7 +90,7 @@ OpenSSL 3.0.10 1 Aug 2023
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="27"

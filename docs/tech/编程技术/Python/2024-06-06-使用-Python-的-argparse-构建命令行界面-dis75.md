@@ -2,7 +2,7 @@
 title: 使用 Python 的 argparse 构建命令行界面
 number: 75
 slug: discussions-75/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/75
+url: https://github.com/shenweiyan/Digital-Garden/discussions/75
 date: 2024-06-06
 authors: [shenweiyan]
 categories: 
@@ -750,7 +750,7 @@ abbreviate.py: error: unrecognized arguments: --argument 42
 `action` 参数可以接受几个可能的值。以下是这些可能值的列表及其含义：
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="75"

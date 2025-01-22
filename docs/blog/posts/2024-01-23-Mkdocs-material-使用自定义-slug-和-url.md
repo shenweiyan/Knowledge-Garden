@@ -2,7 +2,7 @@
 title: Mkdocs material 使用自定义 slug 和 url
 number: 54
 slug: discussions-54/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/54
+url: https://github.com/shenweiyan/Digital-Garden/discussions/54
 date: 2024-01-23
 authors: [shenweiyan]
 categories: 
@@ -21,7 +21,7 @@ Mkdocs material 目前我是没看到有什么具体的插件解决这个问题�
 - 会重复读取任务，如果文件非常多，会降低相对于文件量的整体性能。
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="54"

@@ -2,7 +2,7 @@
 title: MkDocs Material  的一些使用与问题汇总
 number: 52
 slug: discussions-52/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/52
+url: https://github.com/shenweiyan/Digital-Garden/discussions/52
 date: 2024-01-18
 authors: [shenweiyan]
 categories: 
@@ -18,7 +18,7 @@ labels: []
    - [How to disable converting non-english header links to numbers?#4682](https://github.com/squidfunk/mkdocs-material/discussions/4682)
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="52"

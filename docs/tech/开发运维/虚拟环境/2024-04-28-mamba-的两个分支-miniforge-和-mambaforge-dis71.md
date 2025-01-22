@@ -2,7 +2,7 @@
 title: mamba 的两个分支 miniforge 和 mambaforge
 number: 71
 slug: discussions-71/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/71
+url: https://github.com/shenweiyan/Digital-Garden/discussions/71
 date: 2024-04-28
 authors: [shenweiyan]
 categories: 
@@ -52,7 +52,7 @@ Miniconda 是公司 (Anaconda) 驱动的简约 conda 安装程序。随后的软
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="71"

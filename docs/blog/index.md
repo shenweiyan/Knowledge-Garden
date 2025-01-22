@@ -28,7 +28,7 @@ vssue: ""
         - 2024-05-21 [适合我的 RSS 阅读器](./discussions-73) 
         - 2024-05-16 [Twitter](./discussions-72) 
         - 2024-04-24 [寻找 GitHub 的替代品](./discussions-70) 
-        - 2024-04-22 [我的独立站点 Digital-Garden](./discussions-69) 
+        - 2024-04-22 [我的独立站点 Knowledge-Garden](./discussions-69) 
         - 2024-04-22 [部署 PicX 图床到 Vercel](./discussions-68) 
         - 2024-04-15 [国内静态部署与托管平台](./discussions-67) 
         - 2024-04-11 [阿里云域名备案与使用](./discussions-66) 

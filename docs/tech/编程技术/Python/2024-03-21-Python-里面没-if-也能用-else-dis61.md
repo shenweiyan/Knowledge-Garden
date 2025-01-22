@@ -2,7 +2,7 @@
 title: Python 里面没 if 也能用 else
 number: 61
 slug: discussions-61/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/61
+url: https://github.com/shenweiyan/Digital-Garden/discussions/61
 date: 2024-03-21
 authors: [shenweiyan]
 categories: 
@@ -133,7 +133,7 @@ divide(2077, 0)
 但是，我不建议您在生产中频繁应用它们，因为使用鲜为人知的功能可能会降低可读性并使您的同事感到困惑。但理解并随意应用它们会给你的同事留下深刻的印象，并巩固你作为 "Python 大师" 的地位。 😎
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="61"

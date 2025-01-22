@@ -2,7 +2,7 @@
 title: GitHub Discussions 使用与思考
 number: 38
 slug: discussions-38/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/38
+url: https://github.com/shenweiyan/Digital-Garden/discussions/38
 date: 2023-12-06
 authors: [shenweiyan]
 categories: 
@@ -144,7 +144,7 @@ GitHub Discussions 的 API 操作主要依赖 [GitHub GraphQL API](https://docs.
 拥抱 GitHub Discussions 的一个前提是你可以随时登录 GitHub，如果你已经解决了这个问题，也想着像我一样 Using Github discussions as your blog engine，那么你可以参考一下我的 [shenweiyan/Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/) 仓库。
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="38"

@@ -2,7 +2,7 @@
 title: Python 中 tkinter 源码安装使用与中文乱码
 number: 12
 slug: discussions-12/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/12
+url: https://github.com/shenweiyan/Digital-Garden/discussions/12
 date: 2023-11-02
 authors: [shenweiyan]
 categories: 
@@ -273,7 +273,7 @@ python3 -m tkinter   # python 3
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="12"

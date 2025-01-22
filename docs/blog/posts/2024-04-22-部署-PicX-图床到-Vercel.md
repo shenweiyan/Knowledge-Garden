@@ -2,7 +2,7 @@
 title: 部署 PicX 图床到 Vercel
 number: 68
 slug: discussions-68/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/68
+url: https://github.com/shenweiyan/Digital-Garden/discussions/68
 date: 2024-04-22
 authors: [shenweiyan]
 categories: 
@@ -37,7 +37,7 @@ labels: []
 ![picx-weiyan-cc](https://kg.weiyan.cc/2024/05/picx-weiyan-cc.webp)
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="68"

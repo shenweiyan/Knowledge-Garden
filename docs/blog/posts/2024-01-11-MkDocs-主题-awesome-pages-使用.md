@@ -2,7 +2,7 @@
 title: MkDocs 主题 awesome-pages 使用
 number: 51
 slug: discussions-51/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/51
+url: https://github.com/shenweiyan/Digital-Garden/discussions/51
 date: 2024-01-11
 authors: [shenweiyan]
 categories: 
@@ -59,7 +59,7 @@ docs/
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="51"

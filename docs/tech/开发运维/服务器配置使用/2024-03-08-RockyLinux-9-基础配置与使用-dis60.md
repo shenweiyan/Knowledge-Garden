@@ -2,7 +2,7 @@
 title: RockyLinux 9 基础配置与使用
 number: 60
 slug: discussions-60/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/60
+url: https://github.com/shenweiyan/Digital-Garden/discussions/60
 date: 2024-03-08
 authors: [shenweiyan]
 categories: 
@@ -137,7 +137,7 @@ sudo dnf install btop
   ```
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="60"

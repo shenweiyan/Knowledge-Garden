@@ -2,7 +2,7 @@
 title: Linux 下 PostgreSQL 源码编译安装
 number: 86
 slug: discussions-86/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/86
+url: https://github.com/shenweiyan/Digital-Garden/discussions/86
 date: 2024-09-03
 authors: [shenweiyan]
 categories: 
@@ -167,7 +167,7 @@ service postgresql restart
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="86"

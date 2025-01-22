@@ -2,7 +2,7 @@
 title: 苹果字体 PingFang SC 的一些踩坑记录
 number: 49
 slug: discussions-49/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/49
+url: https://github.com/shenweiyan/Digital-Garden/discussions/49
 date: 2024-01-09
 authors: [shenweiyan]
 categories: 
@@ -81,7 +81,7 @@ body {
 2. 科技猎手2023，《[电脑安装新字体，浏览器字体全变了，如何删除正在使用的苹方字体](https://www.bilibili.com/video/BV1nc411575s/)》 - 哔哩哔哩
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="49"

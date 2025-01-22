@@ -2,7 +2,7 @@
 title: Galaxy Project 的 Sphinx 文档部署
 number: 46
 slug: discussions-46/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/46
+url: https://github.com/shenweiyan/Digital-Garden/discussions/46
 date: 2024-01-05
 authors: [shenweiyan]
 categories: 
@@ -113,7 +113,7 @@ The HTML pages are in build/html.
 最后生成的静态文件都保存在了 `build/html` 目录，我们可以借助 NGINX 或者其他 Pages 就可以直接看到一个一模一样对应当前 Repo 版本的 Galaxy Project 文档了。
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="46"

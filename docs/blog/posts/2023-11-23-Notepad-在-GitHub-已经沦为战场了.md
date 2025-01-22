@@ -2,7 +2,7 @@
 title: Notepad++ 在 GitHub 已经沦为战场了
 number: 22
 slug: discussions-22/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/22
+url: https://github.com/shenweiyan/Digital-Garden/discussions/22
 date: 2023-11-23
 authors: [shenweiyan]
 categories: 
@@ -53,7 +53,7 @@ Notepad++ 的 "Free Uyghur" 出来以后，Notepad++ 所在的 Github 瞬间被�
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="22"

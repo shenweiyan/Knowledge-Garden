@@ -2,7 +2,7 @@
 title: GitHub Actions 更新 Submodule
 number: 93
 slug: discussions-93/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/93
+url: https://github.com/shenweiyan/Digital-Garden/discussions/93
 date: 2024-11-06
 authors: [shenweiyan]
 categories: 
@@ -70,7 +70,7 @@ jobs:
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="93"

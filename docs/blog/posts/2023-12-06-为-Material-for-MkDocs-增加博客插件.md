@@ -2,7 +2,7 @@
 title: 为 Material for MkDocs 增加博客插件
 number: 36
 slug: discussions-36/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/36
+url: https://github.com/shenweiyan/Digital-Garden/discussions/36
 date: 2023-12-06
 authors: [shenweiyan]
 categories: 
@@ -61,7 +61,7 @@ Material for MkDocs 使构建博客变得非常容易，无论是作为文档的
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="36"

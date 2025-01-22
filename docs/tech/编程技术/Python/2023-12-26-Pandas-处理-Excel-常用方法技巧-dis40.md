@@ -2,7 +2,7 @@
 title: Pandas 处理 Excel 常用方法技巧
 number: 40
 slug: discussions-40/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/40
+url: https://github.com/shenweiyan/Digital-Garden/discussions/40
 date: 2023-12-26
 authors: [shenweiyan]
 categories: 
@@ -99,7 +99,7 @@ print(sheet_names)
 3. 《[pandas.read_excel — pandas 2.1.4 documentation](https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html)》，[pandas documentation — pandas 2.1.4 documentation](https://pandas.pydata.org/docs/index.html)
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="40"

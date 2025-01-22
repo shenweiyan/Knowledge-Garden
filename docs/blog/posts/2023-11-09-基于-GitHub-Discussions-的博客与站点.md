@@ -2,7 +2,7 @@
 title: 基于 GitHub Discussions 的博客与站点
 number: 15
 slug: discussions-15/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/15
+url: https://github.com/shenweiyan/Digital-Garden/discussions/15
 date: 2023-11-09
 authors: [shenweiyan]
 categories: 
@@ -23,7 +23,7 @@ GitHub Discussions 是一个可以在每个 GitHub 仓库上启用的论坛。�
 - [Pure](https://github.com/LeetaoGoooo/pure) 一个基于 Github Discussion 的极简博客
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="15"

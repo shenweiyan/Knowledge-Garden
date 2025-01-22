@@ -2,7 +2,7 @@
 title: Python 导出公众号文章为 Markdown
 number: 7
 slug: discussions-7/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/7
+url: https://github.com/shenweiyan/Digital-Garden/discussions/7
 date: 2023-10-19
 authors: [shenweiyan]
 categories: 
@@ -78,7 +78,7 @@ Python 导出公众号文章为 Markdown 最后的一步工作就是解析上一
 
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="7"

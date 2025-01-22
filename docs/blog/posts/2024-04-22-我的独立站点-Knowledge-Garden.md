@@ -2,7 +2,7 @@
 title: 我的独立站点 Knowledge-Garden
 number: 69
 slug: discussions-69/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/69
+url: https://github.com/shenweiyan/Digital-Garden/discussions/69
 date: 2024-04-22
 authors: [shenweiyan]
 categories: 
@@ -29,7 +29,7 @@ labels: []
 所以目前的解决方法就是 GitHub + [PicX](https://github.com/shenweiyan/Knowledge-Garden/discussions/68) + Cloudflare Pages 进行组合，GitHub 单个仓库 5G 的存储空间应该应该也足够使用了，如果实在不够了再来考虑其他方案。
 
 <script src="https://giscus.app/client.js"
-	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo="shenweiyan/Digital-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
 	data-term="69"
