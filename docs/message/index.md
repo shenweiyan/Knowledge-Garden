@@ -5,7 +5,7 @@ date: 2023-07-24
 updated: 2024-03-21
 ---
 
-如果你通过本人的博文/平台学到了一点东西，那么对我最好的奖赏就是请你也尝试教我些东西。你可以通过邮箱、微信，或者移步到 “[GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions/16)” 写下您的建议，或者向我提问。
+如果你通过本人的博文/平台学到了一点东西，那么对我最好的奖赏就是请你也尝试教我些东西。你可以通过邮箱、微信，或者移步到 “[GitHub Discussions](https://github.com/shenweiyan/Digital-Garden/discussions/16)” 写下您的建议，或者向我提问。
 
 感谢你的一路支持！
 

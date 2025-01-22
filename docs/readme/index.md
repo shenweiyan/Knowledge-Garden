@@ -25,7 +25,7 @@ updated: 2024-03-21
 
 ## 当下
 
-正如个人在[语雀花园](https://www.yuque.com/shenweiyan)所说，2023年7月起个人大部分文章已经转移至 [GitHub](https://github.com/shenweiyan)，并同步至 [Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/) (后期主要在 [Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions) 和 [知识花园](https://weiyan.cc/) 进行写作与更新)，语雀会保持不定期更新（基本已经停更）！
+正如个人在[语雀花园](https://www.yuque.com/shenweiyan)所说，2023年7月起个人大部分文章已经转移至 [GitHub](https://github.com/shenweiyan)，并同步至 [Knowledge-Garden](https://github.com/shenweiyan/Digital-Garden/) (后期主要在 [Discussions](https://github.com/shenweiyan/Digital-Garden/discussions) 和 [维燕的数字花园](https://weiyan.cc/) 进行写作与更新)，语雀会保持不定期更新（基本已经停更）！
 
 现在的这个站点是基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，并整合了个人 **[语雀知识库](https://www.yuque.com/shenweiyan)** 几个主要知识库文章后形成的独立站点。
 
